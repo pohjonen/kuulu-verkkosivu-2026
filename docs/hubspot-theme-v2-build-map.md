@@ -50,11 +50,22 @@ Nämä tiedostot määrittävät mitä ei saa rikkoa ja miten julkaisu tehdään
 Nämä tiedostot ohjaavat HubSpotin käytännön bootstrap-vaihetta:
 
 - `docs/hubspot-auth-bootstrap.md`
+- `docs/hubspot-post-auth-handoff.md`
 - `hubspot/README.md`
 - `scripts/hubspot_bootstrap_status.sh`
 - `scripts/hubspot_fetch_current_theme.sh`
 - `scripts/hubspot_clone_v2_theme.sh`
 - `scripts/hubspot_watch_v2.sh`
+
+### Fetch- ja source-match -totuus
+
+Nämä tiedostot varmistavat, että oikea HubSpot source theme on haettu ennen forkkausta:
+
+- `docs/generated/kuulu-public-asset-signature.json`
+- `docs/generated/kuulu-public-asset-signature.md`
+- `docs/hubspot-source-theme-match-playbook.md`
+- `scripts/generate_public_asset_signature.py`
+- `scripts/compare_source_theme_to_public_signature.py`
 
 ---
 
@@ -70,6 +81,17 @@ Tuotokset:
 
 - `docs/generated/kuulu-public-site-inventory.csv`
 - `docs/generated/kuulu-public-site-inventory.json`
+
+### Vaihe A2 — julkinen asset-signature
+
+Nykyinen julkinen HubSpot-asset-fingerprint tuotetaan:
+
+- `scripts/generate_public_asset_signature.py`
+
+Tuotokset:
+
+- `docs/generated/kuulu-public-asset-signature.json`
+- `docs/generated/kuulu-public-asset-signature.md`
 
 ### Vaihe B — v2-manifestit
 
@@ -142,6 +164,16 @@ Tuotos:
 
 - `hubspot/kuulu-theme-v2-blueprint/`
 
+### Vaihe E — ensimmäisen aallon HubSpot-build-data
+
+Ensimmäisen aallon sivujen HubSpot-ystävällinen build-data tuotetaan:
+
+- `scripts/generate_first_wave_hs_data.py`
+
+Tuotokset:
+
+- `docs/generated/kuulu-first-wave-hs-data.json`
+
 ---
 
 ## 3. Blueprintin rooli
@@ -169,14 +201,20 @@ Heti kun `hs account auth` onnistuu tai teeman export saadaan, käytännön eten
 1. aja `scripts/hubspot_bootstrap_status.sh`
 2. tee source-theme fetch:
    - `bash scripts/hubspot_fetch_current_theme.sh <remote-theme-path>`
-3. auditoi fetched theme tämän avulla:
+3. vertaile fetched themea julkiseen signatuuriin:
+   - `python3 scripts/compare_source_theme_to_public_signature.py hubspot/source-theme`
+   - `docs/hubspot-source-theme-match-playbook.md`
+4. auditoi fetched theme tämän avulla:
    - `docs/hubspot-theme-audit-checklist.md`
-4. tee oikea v2-klooni:
+5. tee oikea v2-klooni:
    - `bash scripts/hubspot_clone_v2_theme.sh source-theme kuulu-theme-v2`
-5. vertaa oikeaa kloonia blueprintiin:
+6. vertaa oikeaa kloonia blueprintiin:
    - `hubspot/kuulu-theme-v2-blueprint/`
-6. siirrä blueprintin moduuli- ja templatepäätökset oikeaan `hubspot/kuulu-theme-v2/`-hakemistoon
-7. käynnistä turvallinen watch oikeaan v2-polkuun:
+7. käytä ensimmäisen aallon build-dataa:
+   - `docs/generated/kuulu-first-wave-hs-data.json`
+   - `docs/hubspot-first-wave-build-checklist.md`
+8. siirrä blueprintin moduuli- ja templatepäätökset oikeaan `hubspot/kuulu-theme-v2/`-hakemistoon
+9. käynnistä turvallinen watch oikeaan v2-polkuun:
    - `bash scripts/hubspot_watch_v2.sh <local-src> <remote-dest>`
 
 ---
@@ -201,9 +239,11 @@ Tämän projektin build map on:
 
 1. dokumentaatio määrittää strategian ja rakennepäätökset
 2. generaattorit muuttavat päätökset koneellisiksi manifesteiksi
-3. blueprint näyttää turvallisen v2-runon paikallisesti
-4. vasta auth/exportin jälkeen oikea HubSpot-teema auditoidaan ja kloonataan
-5. blueprintin päätökset siirretään oikeaan v2-teemaan, ei toisin päin
+3. julkinen asset-signature auttaa tunnistamaan oikean source themen
+4. blueprint näyttää turvallisen v2-runon paikallisesti
+5. vasta auth/exportin jälkeen oikea HubSpot-teema matchataan, auditoidaan ja kloonataan
+6. ensimmäisen aallon HS-data ohjaa käytännön buildiä
+7. blueprintin päätökset siirretään oikeaan v2-teemaan, ei toisin päin
 
 Tärkein sääntö:
 

@@ -1,0 +1,147 @@
+{
+  "portal_ids": [
+    "450584"
+  ],
+  "portal_id": "450584",
+  "pages": [
+    {
+      "label": "homepage",
+      "url": "https://www.kuulu.fi/",
+      "theme_guess": "cinematic-uusi",
+      "asset_urls": [
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/364312088794/1775562209401/template_design-tokens.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362069580010/1775562210053/template_cinematic.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362253381874/1775562208699/template_cinematic-responsive.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/364617933008/1775562213630/template_module-fixes.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/365048233162/1773672159680/module_cinematic_early_bird.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362074461372/1775562218822/template_main.min.js"
+      ],
+      "asset_names": [
+        "template_design-tokens.min.css",
+        "template_cinematic.min.css",
+        "template_cinematic-responsive.min.css",
+        "template_module-fixes.min.css",
+        "module_cinematic_early_bird.min.css",
+        "template_main.min.js"
+      ]
+    },
+    {
+      "label": "video-service",
+      "url": "https://www.kuulu.fi/videotuotanto",
+      "theme_guess": "cinematic-uusi",
+      "asset_urls": [
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/364312088794/1775562209401/template_design-tokens.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362069580010/1775562210053/template_cinematic.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362253381874/1775562208699/template_cinematic-responsive.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/364617933008/1775562213630/template_module-fixes.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/365048233162/1773672159680/module_cinematic_early_bird.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/366531238137/1775106035150/module_cinematic_rich_pricing.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362074461372/1775562218822/template_main.min.js"
+      ],
+      "asset_names": [
+        "template_design-tokens.min.css",
+        "template_cinematic.min.css",
+        "template_cinematic-responsive.min.css",
+        "template_module-fixes.min.css",
+        "module_cinematic_early_bird.min.css",
+        "module_cinematic_rich_pricing.min.css",
+        "template_main.min.js"
+      ]
+    },
+    {
+      "label": "training",
+      "url": "https://www.kuulu.fi/koulutus",
+      "theme_guess": "legacy-vaalea",
+      "asset_urls": [
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/68326608903/1775110266138/template_styles.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/24985177886/1744324044393/module_Vast_FAQ_Module.min.css",
+        "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/24985177886/1744324044393/module_Vast_FAQ_Module.min.js"
+      ],
+      "asset_names": [
+        "template_styles.min.css",
+        "module_Vast_FAQ_Module.min.css",
+        "module_Vast_FAQ_Module.min.js"
+      ]
+    },
+    {
+      "label": "service",
+      "url": "https://www.kuulu.fi/digimarkkinointi",
+      "theme_guess": "legacy-vaalea",
+      "asset_urls": [
+        "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/68326608903/1775110266138/template_styles.min.css"
+      ],
+      "asset_names": [
+        "template_styles.min.css"
+      ]
+    },
+    {
+      "label": "reference-index",
+      "url": "https://www.kuulu.fi/case-studies",
+      "theme_guess": "muu/sekalainen",
+      "asset_urls": [],
+      "asset_names": []
+    }
+  ],
+  "generated_assets": [
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/24985177886/1744324044393/module_Vast_FAQ_Module.min.css",
+      "filename": "module_Vast_FAQ_Module.min.css"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/24985177886/1744324044393/module_Vast_FAQ_Module.min.js",
+      "filename": "module_Vast_FAQ_Module.min.js"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/365048233162/1773672159680/module_cinematic_early_bird.min.css",
+      "filename": "module_cinematic_early_bird.min.css"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/module_assets/1/366531238137/1775106035150/module_cinematic_rich_pricing.min.css",
+      "filename": "module_cinematic_rich_pricing.min.css"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362069580010/1775562210053/template_cinematic.min.css",
+      "filename": "template_cinematic.min.css"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362074461372/1775562218822/template_main.min.js",
+      "filename": "template_main.min.js"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/362253381874/1775562208699/template_cinematic-responsive.min.css",
+      "filename": "template_cinematic-responsive.min.css"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/364312088794/1775562209401/template_design-tokens.min.css",
+      "filename": "template_design-tokens.min.css"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/364617933008/1775562213630/template_module-fixes.min.css",
+      "filename": "template_module-fixes.min.css"
+    },
+    {
+      "url": "https://www.kuulu.fi/hubfs/hub_generated/template_assets/1/68326608903/1775110266138/template_styles.min.css",
+      "filename": "template_styles.min.css"
+    }
+  ],
+  "summary": {
+    "page_count": 5,
+    "unique_asset_count": 10,
+    "unique_asset_names": [
+      "module_Vast_FAQ_Module.min.css",
+      "module_Vast_FAQ_Module.min.js",
+      "module_cinematic_early_bird.min.css",
+      "module_cinematic_rich_pricing.min.css",
+      "template_cinematic-responsive.min.css",
+      "template_cinematic.min.css",
+      "template_design-tokens.min.css",
+      "template_main.min.js",
+      "template_module-fixes.min.css",
+      "template_styles.min.css"
+    ]
+  },
+  "match_strategy": {
+    "primary": "Compare fetched source theme assets/templates/modules against unique asset names and page-specific theme_guess values.",
+    "secondary": "Use page-level asset sets to identify likely templates or shared asset bundles after source theme export."
+  }
+}
