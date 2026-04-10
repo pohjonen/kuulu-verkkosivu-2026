@@ -19,7 +19,7 @@ Pääperiaate:
 
 Suositeltu järjestys:
 
-1. `hs auth`
+1. `hs init`
 2. `hs doctor`
 3. `hs account list`
 4. `hs account info`
@@ -35,14 +35,33 @@ Suositeltu järjestys:
 ## 2.1 Ensisijainen komento
 
 ```bash
-hs auth
+hs init
 ```
 
-Tai jos henkilökohtainen access key on käytössä:
+Tämän ympäristön testissä juuri `hs init` osoittautui turvallisimmaksi lähtöpisteeksi, koska se:
+
+- käynnistää interaktiivisen auth-flow’n
+- auttaa luomaan tarvittavan konfiguraation
+- tekee samalla selväksi, puuttuuko henkilökohtainen access key
+
+HubSpot CLI:n nykyinen käytännön käyttäytyminen tässä ympäristössä:
+
+- `hs account auth` ilman konfiguraatiota ei vienyt suoraan eteenpäin
+- `hs init` käynnisti henkilökohtaisen access keyn setup-dialogin
+
+Jos henkilökohtainen access key on jo tiedossa, vaihtoehtoinen polku on:
 
 ```bash
 hs auth --auth-type personalaccesskey --personal-access-key "<KEY>"
 ```
+
+Jos käytetään interaktiivista flow’ta, odotettavissa on tyyppisesti:
+
+- valinta:
+  - avaa HubSpot, kopioi personal access key
+  - syötä olemassa oleva personal access key
+
+Ilman avainta auth ei valmistu, joten tämä on edelleen todellinen blocker siihen asti kunnes käyttäjä syöttää keyn tai toimittaa exportin.
 
 ## 2.2 Heti authin jälkeen
 
@@ -89,6 +108,26 @@ hs account info
 ```
 
 Jos tilejä on useita, projektissa ei pidä luottaa globaaliin oletukseen.
+
+### 3.3 Jos workspaceen syntyy tyhjä `hubspot.config.yml`
+
+Probe- tai init-kokeilujen jälkeen workspaceen voi ilmestyä tiedosto:
+
+- `hubspot.config.yml`
+
+Jos sen sisältö on vain:
+
+```yml
+portals: []
+```
+
+se ei ole käyttökelpoinen konfiguraatio vaan tyhjä bootstrap-jälki.
+
+Tällöin:
+
+1. poista tai korvaa tiedosto ennen seuraavaa oikeaa auth-yritystä
+2. älä commitoi sitä repositorioon
+3. tee varsinainen auth vasta tämän jälkeen
 
 ---
 
@@ -219,7 +258,7 @@ jos et ole 100 % varma, mikä remote path on.
 Kun käyttäjä / auth on valmis:
 
 ```bash
-hs auth
+hs init
 hs doctor --output-dir ./.hs-diagnostics
 hs account list
 hs account info
@@ -251,7 +290,7 @@ Ei tehdä:
 
 Turvallinen HubSpot bootstrap tässä projektissa on:
 
-1. auth
+1. init/auth
 2. diagnostiikka
 3. account override
 4. source theme fetch

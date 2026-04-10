@@ -35,9 +35,15 @@ if [ -f "$HOME/.hscli/config.yml" ]; then
 fi
 if [ -f "/workspace/hubspot.config.yml" ]; then
   echo "/workspace/hubspot.config.yml"
+  if grep -q "portals: \[\]" "/workspace/hubspot.config.yml"; then
+    echo "  -> Warning: local hubspot.config.yml is present but empty (portals: [])."
+    echo "     Remove or replace it before attempting real auth/bootstrap."
+  fi
 fi
 echo
 
 echo "[5/5] Recommended next step"
-echo "Run: hs account auth"
+echo "Run: hs init"
+echo "If you already have a personal access key, you can also use:"
+echo "  hs auth --auth-type personalaccesskey --personal-access-key \"<KEY>\""
 echo "Then: bash scripts/hubspot_fetch_current_theme.sh <remote-theme-path>"
