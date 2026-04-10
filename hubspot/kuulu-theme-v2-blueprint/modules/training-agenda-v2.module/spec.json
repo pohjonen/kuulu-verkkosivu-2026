@@ -1,6 +1,7 @@
 {
   "module": "training-agenda-v2",
   "module_key": "training-agenda-v2",
+  "category": "specialized",
   "used_on": [
     "training-landing-v2"
   ],
@@ -9,6 +10,13 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "agenda_items"
+  ],
+  "optional_fields": [
+    "intro_text"
   ],
   "build_wave": 3,
   "depends_on": [

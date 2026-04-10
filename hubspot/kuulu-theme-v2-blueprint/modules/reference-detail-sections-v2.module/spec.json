@@ -1,6 +1,7 @@
 {
   "module": "reference-detail-sections-v2",
   "module_key": "reference-detail-sections-v2",
+  "category": "specialized",
   "used_on": [
     "reference-detail-v2"
   ],
@@ -10,6 +11,19 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "case_hero",
+    "key_facts",
+    "challenge",
+    "solution",
+    "execution",
+    "results",
+    "testimonial",
+    "final_cta"
+  ],
+  "optional_fields": [
+    "related_cases"
   ],
   "build_wave": 4,
   "depends_on": [

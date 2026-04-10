@@ -1,0 +1,63 @@
+{
+  "module_label": "problem-grid-v2",
+  "build_wave": 1,
+  "field_groups": [
+    {
+      "name": "content",
+      "label": "Content",
+      "help_text": "Blueprint group for problem-grid-v2: content"
+    },
+    {
+      "name": "layout",
+      "label": "Layout",
+      "help_text": "Blueprint group for problem-grid-v2: layout"
+    },
+    {
+      "name": "style",
+      "label": "Style",
+      "help_text": "Blueprint group for problem-grid-v2: style"
+    },
+    {
+      "name": "advanced",
+      "label": "Advanced",
+      "help_text": "Blueprint group for problem-grid-v2: advanced"
+    }
+  ],
+  "required_fields": [
+    {
+      "name": "section_tag",
+      "label": "Section Tag",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "heading",
+      "label": "Heading",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "cards",
+      "label": "Cards",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    }
+  ],
+  "optional_fields": [
+    {
+      "name": "intro_text",
+      "label": "Intro Text",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    }
+  ],
+  "guardrails": {
+    "card_min": 3,
+    "card_max": 6,
+    "supports_free_rich_text": false
+  },
+  "notes": [
+    "Blueprint-only scaffold. Convert into valid HubSpot fields.json in the real v2 theme.",
+    "Keep editor guardrails strict; do not expose free-form styling without a strong reason."
+  ]
+}

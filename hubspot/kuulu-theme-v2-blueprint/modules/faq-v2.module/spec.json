@@ -1,6 +1,7 @@
 {
   "module": "faq-v2",
   "module_key": "faq-v2",
+  "category": "specialized",
   "used_on": [
     "training-landing-v2",
     "service-landing-v2",
@@ -12,6 +13,11 @@
     "style",
     "advanced"
   ],
+  "required_fields": [
+    "heading",
+    "faq_items"
+  ],
+  "optional_fields": [],
   "build_wave": 3,
   "depends_on": [
     "accordion-v2"

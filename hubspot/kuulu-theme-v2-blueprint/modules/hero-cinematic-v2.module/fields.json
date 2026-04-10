@@ -1,0 +1,133 @@
+{
+  "module_label": "hero-cinematic-v2",
+  "build_wave": 1,
+  "field_groups": [
+    {
+      "name": "content",
+      "label": "Content",
+      "help_text": "Blueprint group for hero-cinematic-v2: content"
+    },
+    {
+      "name": "cta",
+      "label": "Cta",
+      "help_text": "Blueprint group for hero-cinematic-v2: cta"
+    },
+    {
+      "name": "media",
+      "label": "Media",
+      "help_text": "Blueprint group for hero-cinematic-v2: media"
+    },
+    {
+      "name": "layout",
+      "label": "Layout",
+      "help_text": "Blueprint group for hero-cinematic-v2: layout"
+    },
+    {
+      "name": "style",
+      "label": "Style",
+      "help_text": "Blueprint group for hero-cinematic-v2: style"
+    },
+    {
+      "name": "advanced",
+      "label": "Advanced",
+      "help_text": "Blueprint group for hero-cinematic-v2: advanced"
+    }
+  ],
+  "required_fields": [
+    {
+      "name": "section_tag",
+      "label": "Section Tag",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "heading",
+      "label": "Heading",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "lead_text",
+      "label": "Lead Text",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "primary_cta_label",
+      "label": "Primary Cta Label",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "primary_cta_link",
+      "label": "Primary Cta Link",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    }
+  ],
+  "optional_fields": [
+    {
+      "name": "highlight_phrase",
+      "label": "Highlight Phrase",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "secondary_cta_label",
+      "label": "Secondary Cta Label",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "secondary_cta_link",
+      "label": "Secondary Cta Link",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "eyebrow",
+      "label": "Eyebrow",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "supporting_bullets",
+      "label": "Supporting Bullets",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "trust_row",
+      "label": "Trust Row",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "desktop_media",
+      "label": "Desktop Media",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "mobile_media",
+      "label": "Mobile Media",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "background_variant",
+      "label": "Background Variant",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    }
+  ],
+  "guardrails": {
+    "max_ctas": 2,
+    "max_media_slots": 1,
+    "supports_free_rich_text": false
+  },
+  "notes": [
+    "Blueprint-only scaffold. Convert into valid HubSpot fields.json in the real v2 theme.",
+    "Keep editor guardrails strict; do not expose free-form styling without a strong reason."
+  ]
+}

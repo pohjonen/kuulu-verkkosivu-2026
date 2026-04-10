@@ -1,6 +1,7 @@
 {
   "module": "process-steps-v2",
   "module_key": "process-steps-v2",
+  "category": "system",
   "used_on": [
     "homepage-v2",
     "service-landing-v2",
@@ -12,6 +13,13 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "steps"
+  ],
+  "optional_fields": [
+    "intro_text"
   ],
   "build_wave": 2,
   "depends_on": [

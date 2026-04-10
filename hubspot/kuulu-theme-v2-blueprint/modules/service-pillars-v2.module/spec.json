@@ -1,6 +1,7 @@
 {
   "module": "service-pillars-v2",
   "module_key": "service-pillars-v2",
+  "category": "foundation",
   "used_on": [
     "homepage-v2",
     "service-landing-v2",
@@ -14,6 +15,15 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "cards"
+  ],
+  "optional_fields": [
+    "intro_text",
+    "card_media",
+    "card_micro_cta"
   ],
   "build_wave": 1,
   "depends_on": [

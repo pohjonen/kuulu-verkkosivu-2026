@@ -1,6 +1,7 @@
 {
   "module": "team-grid-v2",
   "module_key": "team-grid-v2",
+  "category": "specialized",
   "used_on": [
     "company-info-v2",
     "person-profile-v2"
@@ -12,6 +13,11 @@
     "style",
     "advanced"
   ],
+  "required_fields": [
+    "heading",
+    "people"
+  ],
+  "optional_fields": [],
   "build_wave": 3,
   "depends_on": [
     "people-card-v2",

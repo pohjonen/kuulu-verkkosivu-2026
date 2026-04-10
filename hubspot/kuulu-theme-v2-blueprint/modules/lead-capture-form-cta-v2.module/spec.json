@@ -1,6 +1,7 @@
 {
   "module_key": "lead-capture-form-cta-v2",
   "module": "lead-capture-form-cta-v2",
+  "category": "system",
   "used_on": [
     "company-info-v2"
   ],
@@ -11,6 +12,19 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "primary_cta_label",
+    "primary_cta_link"
+  ],
+  "optional_fields": [
+    "lead_text",
+    "form_id",
+    "desktop_media",
+    "mobile_media",
+    "secondary_cta_label",
+    "secondary_cta_link"
   ],
   "build_wave": 2,
   "depends_on": [

@@ -1,6 +1,7 @@
 {
   "module": "video-model-comparison-v2",
   "module_key": "video-model-comparison-v2",
+  "category": "specialized",
   "used_on": [
     "video-service-landing-v2"
   ],
@@ -11,6 +12,13 @@
     "style",
     "advanced"
   ],
+  "required_fields": [
+    "section_tag",
+    "heading",
+    "intro_text",
+    "model_cards"
+  ],
+  "optional_fields": [],
   "build_wave": 3,
   "depends_on": [
     "card-grid-v2",

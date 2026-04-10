@@ -1,6 +1,7 @@
 {
   "module": "hero-cinematic-v2",
   "module_key": "hero-cinematic-v2",
+  "category": "foundation",
   "used_on": [
     "homepage-v2",
     "service-landing-v2",
@@ -16,6 +17,24 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "section_tag",
+    "heading",
+    "lead_text",
+    "primary_cta_label",
+    "primary_cta_link"
+  ],
+  "optional_fields": [
+    "highlight_phrase",
+    "secondary_cta_label",
+    "secondary_cta_link",
+    "eyebrow",
+    "supporting_bullets",
+    "trust_row",
+    "desktop_media",
+    "mobile_media",
+    "background_variant"
   ],
   "build_wave": 1,
   "depends_on": [

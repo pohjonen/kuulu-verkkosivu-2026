@@ -157,6 +157,63 @@ def module_js_placeholder(module):
 """
 
 
+def module_fields_blueprint(module):
+    field_groups = []
+    for group in module.get("field_groups", []):
+        field_groups.append(
+            {
+                "name": group,
+                "label": group.replace("-", " ").replace("_", " ").title(),
+                "help_text": f"Blueprint group for {module['module_key']}: {group}",
+            }
+        )
+
+    required_fields = module.get("required_fields") or []
+    optional_fields = module.get("optional_fields") or []
+
+    return {
+        "module_label": module["module_key"],
+        "build_wave": module.get("build_wave"),
+        "field_groups": field_groups,
+        "required_fields": [
+            {
+                "name": field,
+                "label": field.replace("_", " ").title(),
+                "required": True,
+                "type_hint": "determine in real HubSpot implementation",
+            }
+            for field in required_fields
+        ],
+        "optional_fields": [
+            {
+                "name": field,
+                "label": field.replace("_", " ").title(),
+                "required": False,
+                "type_hint": "determine in real HubSpot implementation",
+            }
+            for field in optional_fields
+        ],
+        "guardrails": module.get("guardrails", {}),
+        "notes": [
+            "Blueprint-only scaffold. Convert into valid HubSpot fields.json in the real v2 theme.",
+            "Keep editor guardrails strict; do not expose free-form styling without a strong reason.",
+        ],
+    }
+
+
+def module_meta_blueprint(module):
+    return {
+        "label": module["module_key"],
+        "icon": "module",
+        "categories": ["kuulu-v2", module.get("category", "uncategorized")],
+        "is_available_for_new_content": False,
+        "blueprint_only": True,
+        "notes": [
+            "Generated as a local planning scaffold before real HubSpot module implementation.",
+        ],
+    }
+
+
 def main():
     pages = load(PAGES_PATH)
     modules = load(MODULES_PATH)
@@ -174,6 +231,8 @@ def main():
         module_dir = OUT / "modules" / f'{module["module_key"]}.module'
         write(module_dir / "README.md", module_readme(module))
         write_json(module_dir / "spec.json", module)
+        write_json(module_dir / "fields.json", module_fields_blueprint(module))
+        write_json(module_dir / "meta.json", module_meta_blueprint(module))
         write(module_dir / "module.html", module_html_placeholder(module))
         write(module_dir / "module.css", module_css_placeholder(module))
         write(module_dir / "module.js", module_js_placeholder(module))

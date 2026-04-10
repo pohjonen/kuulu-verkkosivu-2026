@@ -1,6 +1,7 @@
 {
   "module": "final-cta-v2",
   "module_key": "final-cta-v2",
+  "category": "foundation",
   "used_on": [
     "homepage-v2",
     "service-landing-v2",
@@ -16,6 +17,17 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "lead_text",
+    "primary_cta_label",
+    "primary_cta_link"
+  ],
+  "optional_fields": [
+    "secondary_cta_label",
+    "secondary_cta_link",
+    "trust_line"
   ],
   "build_wave": 1,
   "depends_on": [

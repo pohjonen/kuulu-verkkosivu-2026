@@ -1,6 +1,7 @@
 {
   "module": "contact-info-v2",
   "module_key": "contact-info-v2",
+  "category": "specialized",
   "used_on": [
     "company-info-v2"
   ],
@@ -10,6 +11,14 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "office_cards"
+  ],
+  "optional_fields": [
+    "billing_info_rich_text",
+    "meeting_link",
+    "form_id"
   ],
   "build_wave": 3,
   "depends_on": [

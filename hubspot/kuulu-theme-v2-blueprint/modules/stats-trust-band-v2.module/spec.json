@@ -1,6 +1,7 @@
 {
   "module": "stats-trust-band-v2",
   "module_key": "stats-trust-band-v2",
+  "category": "system",
   "used_on": [
     "homepage-v2",
     "training-landing-v2",
@@ -12,6 +13,13 @@
     "layout",
     "style",
     "advanced"
+  ],
+  "required_fields": [
+    "stat_items"
+  ],
+  "optional_fields": [
+    "section_tag",
+    "heading"
   ],
   "build_wave": 2,
   "depends_on": [
