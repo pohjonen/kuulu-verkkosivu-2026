@@ -1,0 +1,399 @@
+{
+  "page_id": "v2_digimarkkinointi__service",
+  "template": "service-landing-v2",
+  "preview_slug": "/v2-digimarkkinointi",
+  "url": "https://www.kuulu.fi/digimarkkinointi",
+  "page_type": "service",
+  "current_theme": "legacy-vaalea",
+  "primary_goal": "Clarify how this service solves a specific growth bottleneck: Digimarkkinointi Oulu ja Helsinki - Kuulu.",
+  "core_message": "Näy. Kuulu. Tee tulosta. Digimarkkinointi Oulu ja Helsinki - Kuulu Should map to pullonkaulat and system logic.",
+  "hero_direction": {
+    "headline": "Näy. Kuulu. Tee tulosta.",
+    "supporting_angle": "Sivu näyttää miten palvelu ratkaisee kitkan eikä jää irralliseksi toimenpiteeksi.",
+    "cta_goal": "sparraus tai tarjous"
+  },
+  "mandatory_signals": [
+    "Palvelu kytkeytyy selvästi pullonkaulaan",
+    "Sisältö ei jää irralliseksi listaukseksi",
+    "Seuraava askel on selkeä"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_digimarkkinointi__service__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "problem-grid-v2",
+      "module_instance_key": "v2_digimarkkinointi__service__problem-grid-v2__2",
+      "content_job": "Apply problem-grid-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "audience-split-v2",
+      "module_instance_key": "v2_digimarkkinointi__service__audience-split-v2__3",
+      "content_job": "Apply audience-split-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "service-pillars-v2",
+      "module_instance_key": "v2_digimarkkinointi__service__service-pillars-v2__4",
+      "content_job": "Apply service-pillars-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 5,
+      "module": "process-steps-v2",
+      "module_instance_key": "v2_digimarkkinointi__service__process-steps-v2__5",
+      "content_job": "Apply process-steps-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 6,
+      "module": "reference-grid-v2",
+      "module_instance_key": "v2_digimarkkinointi__service__reference-grid-v2__6",
+      "content_job": "Apply reference-grid-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 7,
+      "module": "faq-v2",
+      "module_instance_key": "v2_digimarkkinointi__service__faq-v2__7",
+      "content_job": "Apply faq-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 8,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_digimarkkinointi__service__final-cta-v2__8",
+      "content_job": "Apply final-cta-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Digimarkkinointi Oulu ja Helsinki - Kuulu",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Näy. Kuulu. Tee tulosta."
+      },
+      {
+        "level": "h2",
+        "text": "Voisimmeko olla se kumppani, joka vie markkinointinne uudelle tasolle?"
+      },
+      {
+        "level": "h2",
+        "text": "Me Kuululla tiedämme, että haluat tehdä markkinointia, joka huomataan."
+      },
+      {
+        "level": "h2",
+        "text": "Luovaa ja asiantuntevaa digimarkkinointia"
+      },
+      {
+        "level": "h2",
+        "text": "Varaa alta keskusteluaika tai pyydä tarjous!"
+      },
+      {
+        "level": "h3",
+        "text": "Vaikuttava brändi"
+      },
+      {
+        "level": "h3",
+        "text": "Toimivat sisällöt"
+      },
+      {
+        "level": "h3",
+        "text": "Kuulumanageri"
+      },
+      {
+        "level": "h3",
+        "text": "Näin sen teemme"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Yksi kumppani, kaikki markkinoinnin palaset. Meiltä saat kaikki sisällöt saman katon alta: videot, podcastit, mainokset, verkkosivusisällöt. Ota yhteyttä, niin sunnitellaan paras markkinoinnin kokonaisuus juuri teille!",
+      "Liian moni yritys tekee markkinointia sirpaleisina toimenpiteinä – ilman, että kokonaisuus vie kohti selkeitä tuloksia. Tämä näkyy kassassa ja turhauttaa.",
+      "Me olemme parhaimmillamme silloin, kun voimme yhdistää digimarkkinoinnin, vaikuttavat videot ja käytännönläheiset koulutukset yhdeksi kokonaisuudeksi, joka tekee markkinastanne näkyvän ja houkuttelevan.",
+      "Tuloksellinen markkinointi syntyy selkeästä tarinasta, vaikuttavasta brändistä ja tunnistettavista sisällöistä, joita toteutetaan oikeissa kanavissa ja oikealla hetkellä.",
+      "Autamme vuosittain yli 500 yritystä rakentamaan markkinointia, joka toimii – niin verkossa, videolla kuin tiimin osaamista kehittämällä. Kun nämä yhdistetään, syntyy vaikutus, joka näkyy ja tuntuu.",
+      "Jos haluat markkinointia, joka saa asiakkaasi pysähtymään ja toimimaan, aloitetaan keskustelu jo tänään.",
+      "Vaikuttava brändi Brändi, jolla on toivottu vaikutus.",
+      "Autamme sinua sanoittamaan brändisi peruspilarit ja vahvuudet, yhdistäen ne kohderyhmäsi tarpeisiin, toiveisiin ja odotuksiin. Tämän jälkeen luomme brändinmukaiset materiaalit, joiden avulla brändinhallinta on helppoa.​",
+      "Brändistrategiat​ Bränditarina​ Brändin identiteetti​",
+      "Toimivat sisällöt Sisällöt, joiden avulla jaat tarinaasi ja kasvatat liiketoimintaasi​.",
+      "Ydinosaamistamme ovat erottuvat, strategiset ja tuloksia tuottavat sisällöt. ​",
+      "Autamme teitä kertomaan tarinanne luovien videoiden, kiinnostavien artikkelien, erottuvien somesisältöjen sekä strategisesti suunniteltujen mainoskampanjoiden avulla. ​",
+      "Tarinallisuus ja asiakaslähtöisyys kulkee kaikessa mukana.​",
+      "Kuulumanageri Osaaminen, joka vie kohti tuloksia.",
+      "Autamme sinua lisäämään omaa osaamistasi tarjoamalla koulutuksia ja sparrailua, strategiasta viestintään, sisällöntuotannosta markkinoinnin työkaluihin ja tekoälyn hyödyntämiseen.​",
+      "​ Varmistamalla tiimisi osaamisen, resursoit viisaasti, markkinoit tehokkaasti ja saavutat tuloksia nopeammin.​",
+      "Euroopan ensimmäinen sertifioitu StoryBrand-toimisto",
+      "Yli 10 vuoden kokemus digimarkkinoinnista",
+      "Vuosittain yli 500 yritystä asiakkaana",
+      "Varaa 30 minuutin tapaaminen, jossa käydään läpi mitä teette, mitkä ovat haasteesi ja kuinka voimme auttaa. Aletaan hommiin! Työ alkaa aloituspalaverilla, jossa selkeytetään markkinoinnin ja myynnin yhdistävä yhteinen viesti ja tavoitteet, jonka pohjalta toimiva markkinointi voidaan rakentaa.",
+      "Nauti tuloksista, joita syntyy, kun markkinointisi aktivoi uusia asiakkaita ja tuo lisää myyntiä.",
+      "Solar Kaihdin kasvatti verkkokauppansa myynnin 10-kertaiseksi Kuulun strategisella digimarkkinoinnilla. Toimitusjohtaja kertoo yhteistyön tuloksista.",
+      "Kerro lyhyesti millaisia markkinointihaasteita teillä on. Voit myös laittaa linkkejä esim. www-sivuillenne ja somekanaviin.",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/digimarkkinointi?hsLang=fi-fi#hs_cos_wrapper_widget_1661891494328_",
+        "label": "Ota yhteyttä"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 20,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/kuulu-auttoi-elisaa-tavoittamaan-70000-nuorta-superdigikoululla",
+        "target_type": "reference-detail",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/kuulu-energiequelle-tehokas-visuaalinen-viestinta",
+        "target_type": "reference-detail",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/solar-kaihdin-kymmenkertaisti-verkkokauppamyynnin-kuulun-avulla",
+        "target_type": "reference-detail",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi",
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "legal",
+        "labels": [
+          "Tietosuojaseloste"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ],
+        "strength": "navigational"
+      }
+    ]
+  }
+}

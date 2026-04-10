@@ -1,0 +1,214 @@
+{
+  "packets": [
+    {
+      "page_id": "v2_etusivu__homepage",
+      "path": "docs/generated/all-page-build-packets/v2_etusivu__homepage.json",
+      "module_count": 8,
+      "link_count": 16
+    },
+    {
+      "page_id": "v2_koulutus__training",
+      "path": "docs/generated/all-page-build-packets/v2_koulutus__training.json",
+      "module_count": 8,
+      "link_count": 18
+    },
+    {
+      "page_id": "v2_tekoalyn_mestarikurssi__training",
+      "path": "docs/generated/all-page-build-packets/v2_tekoalyn_mestarikurssi__training.json",
+      "module_count": 8,
+      "link_count": 19
+    },
+    {
+      "page_id": "v2_tekoalyn_perjantaipulssi__training",
+      "path": "docs/generated/all-page-build-packets/v2_tekoalyn_perjantaipulssi__training.json",
+      "module_count": 8,
+      "link_count": 20
+    },
+    {
+      "page_id": "v2_zero_click_ajan_digimarkkinointi__training",
+      "path": "docs/generated/all-page-build-packets/v2_zero_click_ajan_digimarkkinointi__training.json",
+      "module_count": 8,
+      "link_count": 14
+    },
+    {
+      "page_id": "v2_digimarkkinointi__service",
+      "path": "docs/generated/all-page-build-packets/v2_digimarkkinointi__service.json",
+      "module_count": 8,
+      "link_count": 20
+    },
+    {
+      "page_id": "v2_energia_alan_markkinointi__service",
+      "path": "docs/generated/all-page-build-packets/v2_energia_alan_markkinointi__service.json",
+      "module_count": 8,
+      "link_count": 18
+    },
+    {
+      "page_id": "v2_someauditointi__service",
+      "path": "docs/generated/all-page-build-packets/v2_someauditointi__service.json",
+      "module_count": 8,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_google_ads_mainonta__service",
+      "path": "docs/generated/all-page-build-packets/v2_google_ads_mainonta__service.json",
+      "module_count": 8,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_videotuotanto__video-service",
+      "path": "docs/generated/all-page-build-packets/v2_videotuotanto__video-service.json",
+      "module_count": 9,
+      "link_count": 16
+    },
+    {
+      "page_id": "v2_brandivideo__video-service",
+      "path": "docs/generated/all-page-build-packets/v2_brandivideo__video-service.json",
+      "module_count": 9,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_tv_mainos_tuotanto__video-service",
+      "path": "docs/generated/all-page-build-packets/v2_tv_mainos_tuotanto__video-service.json",
+      "module_count": 9,
+      "link_count": 16
+    },
+    {
+      "page_id": "v2_videotuotanto_vanha__video-service",
+      "path": "docs/generated/all-page-build-packets/v2_videotuotanto_vanha__video-service.json",
+      "module_count": 9,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_case_studies__reference-index",
+      "path": "docs/generated/all-page-build-packets/v2_case_studies__reference-index.json",
+      "module_count": 3,
+      "link_count": 18
+    },
+    {
+      "page_id": "v2_asiakasreferenssit__reference-index",
+      "path": "docs/generated/all-page-build-packets/v2_asiakasreferenssit__reference-index.json",
+      "module_count": 3,
+      "link_count": 28
+    },
+    {
+      "page_id": "v2_yhteystiedot__company-info",
+      "path": "docs/generated/all-page-build-packets/v2_yhteystiedot__company-info.json",
+      "module_count": 5,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_tietosuojaseloste__legal",
+      "path": "docs/generated/all-page-build-packets/v2_tietosuojaseloste__legal.json",
+      "module_count": 3,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_tekoaly_markkinoinnin_ja_myynnin_tukena__training",
+      "path": "docs/generated/all-page-build-packets/v2_tekoaly_markkinoinnin_ja_myynnin_tukena__training.json",
+      "module_count": 8,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_ihmiset_jonna_muurinen__person-profile",
+      "path": "docs/generated/all-page-build-packets/v2_ihmiset_jonna_muurinen__person-profile.json",
+      "module_count": 4,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_ihmiset_ville_pohjonen__person-profile",
+      "path": "docs/generated/all-page-build-packets/v2_ihmiset_ville_pohjonen__person-profile.json",
+      "module_count": 4,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training",
+      "path": "docs/generated/all-page-build-packets/v2_projektinhallinta_tekoalylla_perjantaipulssi__training.json",
+      "module_count": 8,
+      "link_count": 16
+    },
+    {
+      "page_id": "v2_case_solar_kaihdin__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_solar_kaihdin__reference-detail.json",
+      "module_count": 4,
+      "link_count": 15
+    },
+    {
+      "page_id": "v2_case_elisa_superdigikoulu__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_elisa_superdigikoulu__reference-detail.json",
+      "module_count": 4,
+      "link_count": 15
+    },
+    {
+      "page_id": "v2_case_energiequelle__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_energiequelle__reference-detail.json",
+      "module_count": 4,
+      "link_count": 15
+    },
+    {
+      "page_id": "v2_case_vestera__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_vestera__reference-detail.json",
+      "module_count": 4,
+      "link_count": 18
+    },
+    {
+      "page_id": "v2_case_haaga_helia__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_haaga_helia__reference-detail.json",
+      "module_count": 4,
+      "link_count": 18
+    },
+    {
+      "page_id": "v2_case_ruokamies__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_ruokamies__reference-detail.json",
+      "module_count": 4,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_case_seta__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_seta__reference-detail.json",
+      "module_count": 4,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_case_akateeminen_kirjakauppa__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_akateeminen_kirjakauppa__reference-detail.json",
+      "module_count": 4,
+      "link_count": 18
+    },
+    {
+      "page_id": "v2_case_sievi_cobra__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_sievi_cobra__reference-detail.json",
+      "module_count": 4,
+      "link_count": 18
+    },
+    {
+      "page_id": "v2_case_ruustinna__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_ruustinna__reference-detail.json",
+      "module_count": 4,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_case_intersport_tripla__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_intersport_tripla__reference-detail.json",
+      "module_count": 4,
+      "link_count": 17
+    },
+    {
+      "page_id": "v2_case_sievin_jalkine__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_sievin_jalkine__reference-detail.json",
+      "module_count": 4,
+      "link_count": 18
+    },
+    {
+      "page_id": "v2_case_nestor_cables__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_nestor_cables__reference-detail.json",
+      "module_count": 4,
+      "link_count": 19
+    },
+    {
+      "page_id": "v2_case_lahitapiola__reference-detail",
+      "path": "docs/generated/all-page-build-packets/v2_case_lahitapiola__reference-detail.json",
+      "module_count": 4,
+      "link_count": 18
+    }
+  ]
+}

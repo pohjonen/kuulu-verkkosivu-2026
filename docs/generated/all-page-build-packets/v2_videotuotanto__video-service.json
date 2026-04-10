@@ -1,0 +1,474 @@
+{
+  "page_id": "v2_videotuotanto__video-service",
+  "template": "video-service-landing-v2",
+  "preview_slug": "/v2-videotuotanto",
+  "url": "https://www.kuulu.fi/videotuotanto",
+  "page_type": "video-service",
+  "current_theme": "cinematic-uusi",
+  "primary_goal": "Show how video production supports brand, trust and demand capture: Videotuotanto - Kuulu.",
+  "core_message": "Muut myyvät videoita. Me myymme tuloksia. Videotuotanto - Kuulu Must show captured / hybrid / AI production models.",
+  "hero_direction": {
+    "headline": "Muut myyvät videoita. Me myymme tuloksia.",
+    "supporting_angle": "Video ei ole irrallinen tuotanto, vaan kasvukoneiston polttoainetta.",
+    "cta_goal": "sparraus tai tarjous"
+  },
+  "mandatory_signals": [
+    "Captured / hybrid / AI näkyvät selkeästi",
+    "Aitous ja skaala näkyvät yhtä aikaa",
+    "Video kytkeytyy liiketoimintatuloksiin"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "problem-grid-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__problem-grid-v2__2",
+      "content_job": "Apply problem-grid-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "video-model-comparison-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__video-model-comparison-v2__3",
+      "content_job": "Apply video-model-comparison-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "service-pillars-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__service-pillars-v2__4",
+      "content_job": "Apply service-pillars-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 5,
+      "module": "process-steps-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__process-steps-v2__5",
+      "content_job": "Apply process-steps-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 6,
+      "module": "stats-trust-band-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__stats-trust-band-v2__6",
+      "content_job": "Apply stats-trust-band-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 7,
+      "module": "reference-grid-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__reference-grid-v2__7",
+      "content_job": "Apply reference-grid-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 8,
+      "module": "faq-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__faq-v2__8",
+      "content_job": "Apply faq-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 9,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_videotuotanto__video-service__final-cta-v2__9",
+      "content_job": "Apply final-cta-v2 to page type video-service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Videotuotanto - Kuulu",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Muut myyvät videoita. Me myymme tuloksia."
+      },
+      {
+        "level": "h2",
+        "text": "Varaa sparraus — kerro tarpeesi"
+      },
+      {
+        "level": "h2",
+        "text": "Tunnistatko nämä?"
+      },
+      {
+        "level": "h2",
+        "text": "Kolme tapaa tuottaa videota. Yksi kumppani."
+      },
+      {
+        "level": "h2",
+        "text": "Yksi kuvauspäivä = kuukauden sisällöt"
+      },
+      {
+        "level": "h2",
+        "text": "Näin Kuulussa tehdään videota"
+      },
+      {
+        "level": "h2",
+        "text": "Lukuja, ei lupauksia"
+      },
+      {
+        "level": "h2",
+        "text": "Katso mitä olemme tehneet"
+      },
+      {
+        "level": "h2",
+        "text": "Seuraava video ei saa jäädä hyllylle"
+      },
+      {
+        "level": "h3",
+        "text": "Kuvattu tuotanto"
+      },
+      {
+        "level": "h3",
+        "text": "AI-tehostettu tuotanto"
+      },
+      {
+        "level": "h3",
+        "text": "1. Tavoite ja jakelusuunnitelma ennen kameraa"
+      },
+      {
+        "level": "h3",
+        "text": "2. Konsepti ja käsikirjoitus"
+      },
+      {
+        "level": "h3",
+        "text": "3. Tuotanto: kuvattu, AI tai molemmat"
+      },
+      {
+        "level": "h3",
+        "text": "4. Kanavaversiot"
+      },
+      {
+        "level": "h3",
+        "text": "Fingersoft – 13 Years of Neckflips"
+      },
+      {
+        "level": "h3",
+        "text": "Elisa – Lapsuus on parasta livenä"
+      },
+      {
+        "level": "h3",
+        "text": "Bittium / Faros – Tuotevalokuvaus & markkinointivideo"
+      },
+      {
+        "level": "h3",
+        "text": "Sievi – Sääyhteistyö TV-mainos"
+      }
+    ],
+    "paragraphs": [
+      "Videotuotanto on investointi. Investointi tuottaa vain jos sisältö nähdään, kuullaan ja ohjaa ostajaa eteenpäin.",
+      "Me varmistamme sen — formaatista ja budjetista riippumatta.",
+      "Saat konkreettisen ehdotuksen sisällöstä, aikataulusta ja hinnasta 1–2 arkipäivässä. Ei myyntipuhetta.",
+      "⚠️ Lomake ID puuttuu. Aseta se moduulin asetuksissa (HubSpot → Marketing → Forms → valitse lomake → Form ID).",
+      "Oikea malli riippuu tavoitteesta, ei budjetista. Valitse alta tai tule sparraukseen — ehdotamme sopivan mallin.",
+      "Yritysvideot, haastattelut, kampanjavideot ja tapahtumatuotannot. Parhaimmillaan kun tarvitaan aitoja ihmisiä, aitoja ympäristöjä ja tunneyhteyttä katsojaan.",
+      "Kuulu Visual Flow -järjestelmämme: brändivärit ja identiteetti syötetään järjestelmään, ja jokainen tuotos on 100 % brändinmukainen. Parhaimmillaan kun tarvitaan volyymia, nopeutta ja skaalautuvuutta.",
+      "Ratkaisee yleisimmän ongelman",
+      "Kuvattu materiaali yhdistettynä tekoälyllä tehostettuihin visuaaleihin. Yksi kuvauspäivä tuottaa raakamateriaalia, josta syntyy somevideoklippejä, kanavaversiot, tuotekuvat ja kampanjamateriaalit. Algoritmit vaativat sisältöä joka viikko — tämä malli ratkaisee sen ilman, että budjetti moninkertaistuu.",
+      "Suurin osa videotoimistoista myy tuotantopäiviä. Me myymme tuloksia. Konkreettinen ero: jakelusuunnitelma ja kanavaversiot tehdään ennen kameraa, ei jälkikäteen.",
+      "Mitä videon pitää saada aikaan? Mihin kanaviin se menee? Millä budjetilla jaetaan? Nämä päätetään ensin. Formaatti ja tuotantomalli valitaan tavoitteen perusteella.",
+      "Tarinankerronnan viitekehyksellä rakennettu käsikirjoitus, jossa asiakkaasi on sankari ja yrityksesi on opas. Hyväksytät käsikirjoituksen ennen tuotantoa.",
+      "Toteutus sovitun konseptin mukaan. Kuvauspäivän aikataulu on suunniteltu minuuttitarkkuudella etukäteen — kuvauspaikalla ei polteta aikaa improvisointiin.",
+      "Jokaisesta videosta tuotetaan versiot kaikkiin kanaviin: 16:9, 1:1, 9:16. Tekstitetyt, lyhytversiot, someversiot. Yksi tuotanto, monta lopputuotetta.",
+      "14 000+ videota. 10 vuotta. 200+ yritysasiakasta.",
+      "Tarinankerrontaan erikoistunut toimisto. Asiakkaita mm.: Elisa, iLOQ, Bittium, Coronaria, NordFuel, Energiequelle, Sievi, Haaga-Helia, Administer, Monidor, Pohjolan Matka — ja kymmenet muut pienistä startup-yhtiöistä pörssiyhtiöihin.",
+      "Case-kohtainen portfolio: media, haaste, ratkaisu, tulokset ja tiimi.",
+      "Pitkä dokumentti + 20 lyhytvideota samasta tuotantokokonaisuudesta.",
+      "13 vuoden tarina piti kertoa aidosti ilman corporate-sävyä, samalla tuottaen runsaasti lyhyttä someformaatin sisältöä.",
+      "Dokkariformaatti + 20 lyhytvideota. AI-avusteinen esituotanto nopeutti ideointia, käsikirjoitusta ja tuotantosuunnitelmaa.",
+      "Ville Pohjonen, Samuli Luoso, Kasperi Kivistö, Kiril, Ville Laitinen",
+      "Arvolatautunut aihe vaikuttavaksi konseptiksi ilman syyllistävää sävyä.",
+      "Miten puhua alle 9-vuotiaiden älypuhelimista kiinnostavasti niin, että vanhemmat pysähtyvät aiheen äärelle?",
+      "Puhelinkupla-konsepti + kampanjasivusto + vaikuttajayhteistyö (PapiPike, Rapfaija).",
+      "Ville Pohjonen, Tiina Stjerna-Kinnunen, Samuli Luoso, Sami Harjunen, Ville Laitinen, Tuomas Hautamäki",
+      "Uusi visuaalinen ilme + markkinointivideo + viranomaisohjevideo samassa kokonaisuudessa.",
+      "Aiempi materiaali vanhentunut. Potilaat ja lääkärit piti tavoittaa yhtä aikaa samalla tuotannolla.",
+      "Monipaikkainen tuotanto (klinikka, koti, ulkoilu, studio) + animaatiot ja käyttöohjevideo viranomaisvaatimuksiin.",
+      "Bittium: Suvi, Jani, Jussi-Pekka · Kuulu tuotanto- ja luovatiimi",
+      "Kotimarkkinaan tuotettu tunnistettava TV-mainos osana pitkäaikaista yhteistyötä."
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min",
+        "label": "VARAA MAKSUTON SPARRAUS (30 MIN)"
+      },
+      {
+        "href": "https://vimeo.com/1170936912/2068661740",
+        "label": "KATSO SHOWREEL 2026"
+      },
+      {
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min",
+        "label": "VARAA SPARRAUS"
+      },
+      {
+        "href": "#referenssit",
+        "label": "KATSO AI-ESIMERKKEJÄ"
+      },
+      {
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min",
+        "label": "Varaa maksuton sparraus"
+      },
+      {
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min",
+        "label": "Katso esimerkkejä"
+      },
+      {
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min",
+        "label": "Aloita yhteistyö"
+      },
+      {
+        "href": "https://vimeo.com/1157471754/482415f800",
+        "label": "LUE LISÄÄ"
+      },
+      {
+        "href": "https://elisa.fi/parastalivena",
+        "label": "LUE LISÄÄ"
+      },
+      {
+        "href": "https://www.kuulu.fi/videotuotanto",
+        "label": "LUE LISÄÄ"
+      },
+      {
+        "href": "https://vimeo.com/1138842390/d986f2a69a",
+        "label": "LUE LISÄÄ"
+      },
+      {
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min",
+        "label": "VARAA SPARRAUS (30 MIN, MAKSUTON)"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 16,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "legal",
+        "labels": [
+          "Tietosuojaseloste"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt",
+          "LUE LISÄÄ",
+          "Videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero Click -ajan digimarkkinointi"
+        ],
+        "strength": "navigational"
+      }
+    ]
+  }
+}

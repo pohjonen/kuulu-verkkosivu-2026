@@ -1,0 +1,304 @@
+{
+  "page_id": "v2_asiakasreferenssit__reference-index",
+  "template": "reference-index-v2",
+  "preview_slug": "/v2-asiakasreferenssit",
+  "url": "https://www.kuulu.fi/asiakasreferenssit",
+  "page_type": "reference-index",
+  "current_theme": "legacy-vaalea",
+  "primary_goal": "Make references easy to browse and compare: Kuulun referenssit.",
+  "core_message": "Hyvä työ kuuluu kauas - Kokemuksia Kuulusta Kuulun referenssit May remain separate editorial index or be consolidated later.",
+  "hero_direction": {
+    "headline": "Hyvä työ kuuluu kauas - Kokemuksia Kuulusta",
+    "supporting_angle": "Referenssien pitää todistaa, ei vain näyttää hyvältä.",
+    "cta_goal": "sparraus tai referensseihin tutustuminen"
+  },
+  "mandatory_signals": [
+    "Caseja voi selata nopeasti",
+    "Haaste / ratkaisu / tulos on löydettävissä"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_asiakasreferenssit__reference-index__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type reference-index using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "reference-grid-v2",
+      "module_instance_key": "v2_asiakasreferenssit__reference-index__reference-grid-v2__2",
+      "content_job": "Apply reference-grid-v2 to page type reference-index using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_asiakasreferenssit__reference-index__final-cta-v2__3",
+      "content_job": "Apply final-cta-v2 to page type reference-index using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": null,
+    "headings": [],
+    "paragraphs": [],
+    "cta_candidates": []
+  },
+  "link_map": {
+    "link_count": 28,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/intersport-tripla-uskalla-olla-oma-itsesi",
+        "target_type": "reference-detail",
+        "labels": [
+          "Intersport Tripla – Työnantajamielikuvan vahvistaminen"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/akateeminen-kirjakauppa-brandin-tarinan-selkeytys",
+        "target_type": "reference-detail",
+        "labels": [
+          "Akateeminen Kirjakauppa - Storybrand-tarinan luominen ja työpajat"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/haaga-helia-tekoalykuvapankki",
+        "target_type": "reference-detail",
+        "labels": [
+          "Haaga-Helia – Tekoälykuvapankki"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/lahitapiola",
+        "target_type": "reference-detail",
+        "labels": [
+          "LähiTapiola – hakukoneystävällinen sisältöuudistus"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/nestor-cables-brandays-ja-yritysvideot",
+        "target_type": "reference-detail",
+        "labels": [
+          "Nestor Cables: Brändin kirkastus ja kaksi yritysvideota"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/ruustinna-brandays-tarina-visuaalinen-ilme-ja-lanseerauskampanja",
+        "target_type": "reference-detail",
+        "labels": [
+          "K-Market Ruukin Ruustinna-olut: brändi, tarina, visuaalinen ilme ja lanseerauskampanja"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/sievin-jalkine-digimarkkinointi",
+        "target_type": "reference-detail",
+        "labels": [
+          "Sievin Jalkine: Digimarkkinoinnin palvelut ja videotuotannot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/sievinjalkine-cobrawoman-videotuotanto",
+        "target_type": "reference-detail",
+        "labels": [
+          "Sievin jalkine – brändin tunnettuuden kasvattaminen"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/vestera-oy-markkinoinnin-kumppanuus",
+        "target_type": "reference-detail",
+        "labels": [
+          "Vestera Oy - Pitkäaikainen markkinoinnin kumppanuus"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/ruokamies-sisaltopankki-ja-brandin-kirkastus-kiireiselle-kauppiaalle",
+        "target_type": "reference-detail",
+        "labels": [
+          "Ruokamies ja K-Supermarket Ritaharju – Sisältöpankki ja brändin kirkastus"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/seta-vaikuttava-videoprojekti-nakyvyytta-sateenkaarijarjestoille",
+        "target_type": "reference-detail",
+        "labels": [
+          "Seta – Vaikuttava videoprojekti"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "legal",
+        "labels": [
+          "Tietosuojaseloste"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ],
+        "strength": "navigational"
+      }
+    ]
+  }
+}
