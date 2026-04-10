@@ -1,0 +1,520 @@
+{
+  "cutover_order_description": [
+    "1 = video-service",
+    "2 = training",
+    "3 = service",
+    "4 = reference-index",
+    "5 = reference-detail",
+    "6 = company-info and legal",
+    "7 = person-profile",
+    "8 = homepage last"
+  ],
+  "waves": {
+    "8": [
+      {
+        "url": "https://www.kuulu.fi/",
+        "preview_slug": "/v2-etusivu",
+        "page_type": "homepage",
+        "v2_template": "homepage-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "forms",
+          "video-embed",
+          "mobile-layout"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "url": "https://www.kuulu.fi/koulutus",
+        "preview_slug": "/v2-koulutus",
+        "page_type": "training",
+        "v2_template": "training-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "preview_slug": "/v2-tekoalyn-mestarikurssi",
+        "page_type": "training",
+        "v2_template": "training-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "preview_slug": "/v2-tekoalyn-perjantaipulssi",
+        "page_type": "training",
+        "v2_template": "training-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "preview_slug": "/v2-zero-click-ajan-digimarkkinointi",
+        "page_type": "training",
+        "v2_template": "training-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "forms",
+          "no-video-check",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/tekoaly-markkinoinnin-ja-myynnin-tukena",
+        "preview_slug": "/v2-tekoaly-markkinoinnin-ja-myynnin-tukena",
+        "page_type": "training",
+        "v2_template": "training-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/projektinhallinta-tekoalylla-perjantaipulssi-17.4.2026-kuulu",
+        "preview_slug": "/v2-projektinhallinta-tekoalylla-perjantaipulssi",
+        "page_type": "training",
+        "v2_template": "training-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "no-video-check",
+          "mobile-layout"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "url": "https://www.kuulu.fi/digimarkkinointi",
+        "preview_slug": "/v2-digimarkkinointi",
+        "page_type": "service",
+        "v2_template": "service-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "preview_slug": "/v2-energia-alan-markkinointi",
+        "page_type": "service",
+        "v2_template": "service-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "preview_slug": "/v2-someauditointi",
+        "page_type": "service",
+        "v2_template": "service-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/google-ads-mainonta",
+        "preview_slug": "/v2-google-ads-mainonta",
+        "page_type": "service",
+        "v2_template": "service-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      }
+    ],
+    "1": [
+      {
+        "url": "https://www.kuulu.fi/videotuotanto",
+        "preview_slug": "/v2-videotuotanto",
+        "page_type": "video-service",
+        "v2_template": "video-service-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/brandivideo",
+        "preview_slug": "/v2-brandivideo",
+        "page_type": "video-service",
+        "v2_template": "video-service-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "preview_slug": "/v2-tv-mainos-tuotanto",
+        "page_type": "video-service",
+        "v2_template": "video-service-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "forms",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "preview_slug": "/v2-videotuotanto-vanha",
+        "page_type": "video-service",
+        "v2_template": "video-service-landing-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "url": "https://www.kuulu.fi/case-studies",
+        "preview_slug": "/v2-case-studies",
+        "page_type": "reference-index",
+        "v2_template": "reference-index-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "no-video-check",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/asiakasreferenssit",
+        "preview_slug": "/v2-asiakasreferenssit",
+        "page_type": "reference-index",
+        "v2_template": "reference-index-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "url": "https://www.kuulu.fi/yhteystiedot",
+        "preview_slug": "/v2-yhteystiedot",
+        "page_type": "company-info",
+        "v2_template": "company-info-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/tietosuojaseloste",
+        "preview_slug": "/v2-tietosuojaseloste",
+        "page_type": "legal",
+        "v2_template": "legal-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "url": "https://www.kuulu.fi/ihmiset/jonna-muurinen",
+        "preview_slug": "/v2-ihmiset-jonna-muurinen",
+        "page_type": "person-profile",
+        "v2_template": "person-profile-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/ihmiset/ville-pohjonen",
+        "preview_slug": "/v2-ihmiset-ville-pohjonen",
+        "page_type": "person-profile",
+        "v2_template": "person-profile-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "url": "https://www.kuulu.fi/case-studies/solar-kaihdin-kymmenkertaisti-verkkokauppamyynnin-kuulun-avulla",
+        "preview_slug": "/v2-case-solar-kaihdin",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "no-video-check",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/case-studies/kuulu-auttoi-elisaa-tavoittamaan-70000-nuorta-superdigikoululla",
+        "preview_slug": "/v2-case-elisa-superdigikoulu",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "no-video-check",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/case-studies/kuulu-energiequelle-tehokas-visuaalinen-viestinta",
+        "preview_slug": "/v2-case-energiequelle",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "no-video-check",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/referenssit/vestera-oy-markkinoinnin-kumppanuus",
+        "preview_slug": "/v2-case-vestera",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/referenssit/haaga-helia-tekoalykuvapankki",
+        "preview_slug": "/v2-case-haaga-helia",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/ruokamies-sisaltopankki-ja-brandin-kirkastus-kiireiselle-kauppiaalle",
+        "preview_slug": "/v2-case-ruokamies",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/seta-vaikuttava-videoprojekti-nakyvyytta-sateenkaarijarjestoille",
+        "preview_slug": "/v2-case-seta",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/referenssit/akateeminen-kirjakauppa-brandin-tarinan-selkeytys",
+        "preview_slug": "/v2-case-akateeminen-kirjakauppa",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/referenssit/sievinjalkine-cobrawoman-videotuotanto",
+        "preview_slug": "/v2-case-sievi-cobra",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/referenssit/ruustinna-brandays-tarina-visuaalinen-ilme-ja-lanseerauskampanja",
+        "preview_slug": "/v2-case-ruustinna",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/intersport-tripla-uskalla-olla-oma-itsesi",
+        "preview_slug": "/v2-case-intersport-tripla",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/referenssit/sievin-jalkine-digimarkkinointi",
+        "preview_slug": "/v2-case-sievin-jalkine",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/referenssit/nestor-cables-brandays-ja-yritysvideot",
+        "preview_slug": "/v2-case-nestor-cables",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      },
+      {
+        "url": "https://www.kuulu.fi/referenssit/lahitapiola",
+        "preview_slug": "/v2-case-lahitapiola",
+        "page_type": "reference-detail",
+        "v2_template": "reference-detail-v2",
+        "must_check": [
+          "title",
+          "h1",
+          "cta-links",
+          "no-form-check",
+          "video-embed",
+          "mobile-layout"
+        ]
+      }
+    ]
+  }
+}
