@@ -159,10 +159,15 @@ Tuotokset:
 Paikallinen turvallinen runko tuotetaan:
 
 - `scripts/bootstrap_v2_blueprint.py`
+- `scripts/validate_blueprint_scaffold.py`
 
 Tuotos:
 
 - `hubspot/kuulu-theme-v2-blueprint/`
+
+Validointi:
+
+- `python3 scripts/validate_blueprint_scaffold.py`
 
 ### Vaihe E — ensimmäisen aallon HubSpot-build-data
 
@@ -247,9 +252,35 @@ Tämän projektin build map on:
 6. ensimmäisen aallon HS-data ohjaa käytännön buildiä
 7. blueprintin päätökset siirretään oikeaan v2-teemaan, ei toisin päin
 
+## 6.1 Blueprintin hygieniasääntö
+
+Blueprint pitää pystyä generoimaan aina puhtaaksi ilman jäämiä vanhoista tiedostoista.
+
+Siksi käytetään:
+
+- `scripts/bootstrap_v2_blueprint.py`
+- `scripts/validate_blueprint_scaffold.py`
+
+Toimintatapa:
+
+1. blueprint-hakemisto siivotaan ennen uudelleengenerointia
+2. scaffold generoidaan manifesteistä
+3. validaattori tarkistaa:
+   - template-määrän
+   - globaalien partialien olemassaolon
+   - global scaffoldit
+   - moduulihakemistot
+   - theme asset -rungon
+
+Näin blueprint pysyy luotettavana välitasona eikä siihen jää vanhoista ajokerroista harhatiedostoja.
+
 Tärkein sääntö:
 
 > Dokumentaatio ja blueprint ohjaavat toteutusta, mutta oikeaan live-teemaan kosketaan vasta auditoinnin jälkeen.
+
+Lisäsääntö:
+
+> Blueprint regeneroidaan aina siivotusti. Vanhat placeholderit tai virheelliset tiedostonimet eivät saa jäädä elämään rinnalle ja hämärtää oikeaa rakennetta.
 
 ---
 

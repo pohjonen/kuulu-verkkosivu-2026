@@ -15,7 +15,7 @@ Se on generoitu manifesteistä:
 
 ## Sisältö
 
-- 6 ensimmäisen aallon v2-sivua blueprint-muodossa
+- 6 inventoidun ei-blogi-sivuston v2-sivua blueprint-muodossa
 - 15 moduulia blueprint-muodossa
 
 ## Huomio

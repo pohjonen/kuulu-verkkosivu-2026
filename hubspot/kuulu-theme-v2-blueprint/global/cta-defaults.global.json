@@ -1,0 +1,8 @@
+{
+  "label": "cta-defaults",
+  "defaults": {
+    "primary_variant": "kuulu-button-primary",
+    "max_buttons_per_section": 2,
+    "meeting_cta_copy": "VARAA SPARRAUS"
+  }
+}
