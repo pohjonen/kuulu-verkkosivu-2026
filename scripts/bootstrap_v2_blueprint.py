@@ -83,6 +83,173 @@ def bootstrap_theme_manifest():
     }
 
 
+def blueprint_theme_json():
+    return {
+        "label": "Kuulu Theme V2 Blueprint",
+        "preview_path": "./templates/homepage-v2.html",
+        "version": 1,
+        "author": "AI scaffold for Kuulu v2",
+        "documentation": [
+            "docs/hubspot-theme-token-map.md",
+            "docs/hubspot-module-hubl-mapping.md",
+        ],
+        "token_strategy": {
+            "background": {
+                "primary": "#0a0a0a",
+                "surface": "#141414",
+            },
+            "accent": {
+                "primary": "#00FF87",
+                "mid": "#00D46A",
+                "deep": "#009F4E",
+            },
+            "text": {
+                "primary": "#FFFFFF",
+                "secondary": "#A0A0A0",
+                "dim": "#6B6B6B",
+            },
+            "fonts": {
+                "display": "Bebas Neue",
+                "body": "Inter",
+                "mono": "JetBrains Mono",
+            },
+        },
+        "notes": [
+            "Blueprint-only theme.json placeholder before real source theme export.",
+            "Map these tokens into the fetched source theme, do not treat this file as production-ready.",
+        ],
+    }
+
+
+def blueprint_base_css():
+    return """/* Kuulu v2 blueprint base tokens
+ * Replace and merge into the real fetched theme after audit.
+ */
+
+:root {
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #141414;
+  --color-accent-primary: #00FF87;
+  --color-accent-mid: #00D46A;
+  --color-accent-deep: #009F4E;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A0A0A0;
+  --color-text-dim: #6B6B6B;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius-card: 24px;
+  --radius-section: 32px;
+  --radius-button: 50px;
+  --radius-input: 8px;
+
+  --glow-lg: 0 0 60px rgba(0,255,135,0.3);
+  --glow-sm: 0 0 30px rgba(0,255,135,0.2);
+  --shadow-card: 0 25px 50px -12px rgba(0,0,0,0.7);
+  --transition-default: 0.3s ease;
+}
+"""
+
+
+def blueprint_theme_base_css():
+    return """/* Kuulu v2 blueprint base styles
+ * Keep this layer lightweight and token-driven.
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+a {
+  color: var(--color-accent-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+"""
+
+
+def blueprint_theme_utilities_css():
+    return """/* Kuulu v2 blueprint utility styles */
+
+.kuulu-container {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.kuulu-text-gradient {
+  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-deep));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.kuulu-surface-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-card);
+}
+
+.kuulu-aurora-soft {
+  background:
+    radial-gradient(circle at top left, rgba(0,255,135,0.12), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0,212,106,0.08), transparent 42%),
+    var(--color-bg-primary);
+}
+"""
+
+
+def blueprint_theme_components_css():
+    return """/* Kuulu v2 blueprint component defaults */
+
+.kuulu-button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.4rem;
+  border-radius: var(--radius-button);
+  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-deep));
+  color: #0a0a0a;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--glow-sm);
+  text-decoration: none;
+}
+
+.kuulu-card {
+  border-radius: var(--radius-card);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-card);
+}
+"""
+
+
+def blueprint_base_js():
+    return """// Kuulu v2 blueprint base JS
+// Keep real implementation lightweight and progressive.
+
+document.documentElement.dataset.kuuluV2Blueprint = 'true';
+"""
+
+
 def template_placeholder(page):
     sections = "\n".join(f"  - {section}" for section in page["section_stack"])
     sources = "\n".join(f"  - {source}" for source in page.get("content_sources", []))
@@ -221,8 +388,14 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     write(OUT / "README.md", bootstrap_readme(pages, modules))
     write_json(OUT / "blueprint.json", bootstrap_theme_manifest())
+    write_json(OUT / "theme.json", blueprint_theme_json())
     write_json(OUT / "manifests" / "pages.json", pages)
     write_json(OUT / "manifests" / "modules.json", modules)
+    write(OUT / "assets" / "css" / "theme-tokens.css", blueprint_base_css())
+    write(OUT / "assets" / "css" / "theme-base.css", blueprint_theme_base_css())
+    write(OUT / "assets" / "css" / "theme-utilities.css", blueprint_theme_utilities_css())
+    write(OUT / "assets" / "css" / "theme-components.css", blueprint_theme_components_css())
+    write(OUT / "assets" / "js" / "theme-base.js", blueprint_base_js())
 
     for page in pages:
         write(OUT / "templates" / f'{page["template"]}.html', template_placeholder(page))
