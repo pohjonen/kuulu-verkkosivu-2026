@@ -86,6 +86,40 @@ Validointi:
 
 - `scripts/validate_v2_manifests.py`
 
+### Vaihe B2 — first wave content packit
+
+Ensimmäisen aallon sisältörunko tuotetaan:
+
+- `scripts/generate_first_wave_content_packs.py`
+
+Tuotokset:
+
+- `docs/generated/kuulu-first-wave-content-packs.json`
+- `docs/kuulu-first-wave-content-packs.md`
+
+### Vaihe B3 — HubSpot-friendly first wave data
+
+Ensimmäisen aallon HubSpot-työdata tuotetaan:
+
+- `scripts/generate_first_wave_hs_data.py`
+
+Tuotokset:
+
+- `docs/generated/kuulu-first-wave-hs-data.json`
+- `docs/hubspot-first-wave-build-checklist.md`
+
+### Vaihe B2 — first wave content + HubSpot data
+
+Ensimmäisen aallon sisältö- ja täyttödata tuotetaan:
+
+- `scripts/generate_first_wave_content_packs.py`
+- `scripts/generate_first_wave_hs_data.py`
+
+Tuotokset:
+
+- `docs/generated/kuulu-first-wave-content-packs.json`
+- `docs/generated/kuulu-first-wave-hs-data.json`
+
 ### Vaihe C — cutover-rekisterit
 
 Julkaisun ja slug-päätösten koneellinen rekisteri tuotetaan:
@@ -174,3 +208,13 @@ Tämän projektin build map on:
 Tärkein sääntö:
 
 > Dokumentaatio ja blueprint ohjaavat toteutusta, mutta oikeaan live-teemaan kosketaan vasta auditoinnin jälkeen.
+
+---
+
+## 7. Post-auth handoff
+
+Kun auth on tehty tai teema on exportoitu, käytä lisäksi:
+
+- `docs/hubspot-post-auth-handoff.md`
+
+Se toimii käytännön “ensimmäiset 60 minuuttia” -ohjeena execution-vaiheen käynnistämiseen oikeassa HubSpot-ympäristössä.

@@ -23,5 +23,6 @@
     "https://www.kuulu.fi/case-studies",
     "https://www.kuulu.fi/yhteystiedot"
   ],
-  "next_blocker": "Run hs account auth or provide current HubSpot theme export."
+  "next_blocker": "Run hs account auth or provide current HubSpot theme export.",
+  "next_operational_step": "Execute docs/hubspot-post-auth-handoff.md from top to bottom once auth/export is available."
 }
