@@ -35,3 +35,21 @@ Väliaikaiset fetch-exportit, jos niitä tarvitaan auditointiin tai vertailuun.
 ## Turvallisuussääntö
 
 `source-theme/` toimii vertailupisteenä. Kaikki varsinainen kehitys tapahtuu `kuulu-theme-v2/`-hakemistossa, jotta nykyisen live-rakenteen ylikirjoittamisen riski pienenee.
+
+## Bootstrap authin jälkeen
+
+Kun HubSpot-auth on tehty onnistuneesti, etenemisjärjestys on tämä:
+
+1. aja `hs doctor` ja tallenna diagnostiikka
+2. varmista oikea account `hs account list` + `hs account info`
+3. tee tarvittaessa paikallinen override:
+   - `hs account create-override <account>`
+4. hae nykyinen teema aina ensin `source-theme/`-hakemistoon
+5. tee v2-klooni vasta tämän jälkeen erilliseen `kuulu-theme-v2/`-hakemistoon
+6. käytä watch/upload-työtä vain v2-kohteeseen, ei koskaan lähdeteemaan
+
+Suositellut helperit:
+
+- `scripts/hubspot_fetch_current_theme.sh`
+- `scripts/hubspot_clone_v2_theme.sh`
+- `scripts/hubspot_watch_v2.sh`
