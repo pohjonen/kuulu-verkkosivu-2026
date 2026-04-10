@@ -339,6 +339,93 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "104591091840",
+    "content_name": "tv-mainokset   cinematic-body",
+    "content_path": "tv-mainos-tuotanto hs-content-name-tv-mainokset   cinematic-body",
+    "hs_form_count": 1,
+    "form_ids": [
+      "805f07bd-a002-45f0-9aa5-af329327fcba"
+    ],
+    "meeting_links": [
+      "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+    ],
+    "video_embeds": [
+      "https://vimeo.com/1138842390/d986f2a69a",
+      "https://vimeo.com/1157471754/482415f800"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Pyydä tarjous TV-mainoksesta",
+        "href": "https://www.kuulu.fi/tv-mainos-tuotanto#lomake"
+      },
+      {
+        "label": "Katso TV-mainosvideot",
+        "href": "https://www.kuulu.fi/tv-mainos-tuotanto#referenssit"
+      },
+      {
+        "label": "VARAA SPARRAUS",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "TUTUSTU DIGIMARKKINOINTIIN",
+        "href": "https://www.kuulu.fi/digimarkkinointi?hsLang=fi-fi"
+      },
+      {
+        "label": "Varaa kartoitus",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "Pyydä tarjous",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "Aloita yhteistyö",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "Aloita yhteistyö",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "PYYDÄ TARJOUS",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://vimeo.com/1157471754/482415f800"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://elisa.fi/parastalivena"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://www.kuulu.fi/videotuotanto?hsLang=fi-fi"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://vimeo.com/1138842390/d986f2a69a"
+      },
+      {
+        "label": "Pyydä tarjous",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "Katso asiakasreferenssit",
+        "href": "https://www.kuulu.fi/asiakasreferenssit?hsLang=fi-fi"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 16,
     "internal_links": [

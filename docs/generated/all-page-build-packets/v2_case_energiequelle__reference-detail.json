@@ -158,6 +158,38 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "178938014284",
+    "content_name": "kuulu-auttaa-energiequellea-viestimään-tehokkaasti   theme-overrides",
+    "content_path": "case-studies-dynamic-slug hs-content-name-kuulu-auttaa-energiequellea-viestimään-tehokkaasti   theme-overrides",
+    "hs_form_count": 0,
+    "form_ids": [],
+    "meeting_links": [],
+    "video_embeds": [],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 15,
     "internal_links": [

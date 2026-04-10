@@ -321,6 +321,82 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "362002860280",
+    "content_name": "etusivu-uusi   cinematic-body",
+    "content_path": " hs-content-name-etusivu-uusi   cinematic-body",
+    "hs_form_count": 1,
+    "form_ids": [
+      "2600d24e-4777-40ee-8116-05419ed1de13"
+    ],
+    "meeting_links": [
+      "https://hubspot.kuulu.fi/meetings/tiina-stjerna-kinnunen/tiina-30min-teams?hsLang=fi-fi",
+      "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+    ],
+    "video_embeds": [
+      "https://vimeo.com/1138842390/d986f2a69a",
+      "https://vimeo.com/1157471754/482415f800"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "VARAA SPARRAUS",
+        "href": "https://hubspot.kuulu.fi/meetings/tiina-stjerna-kinnunen/tiina-30min-teams?hsLang=fi-fi"
+      },
+      {
+        "label": "Tutustu ja osallistu Zero Click -koulutukseen",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi?hsLang=fi-fi"
+      },
+      {
+        "label": "VARAA SPARRAUS",
+        "href": "https://hubspot.kuulu.fi/meetings/tiina-stjerna-kinnunen/tiina-30min-teams?hsLang=fi-fi"
+      },
+      {
+        "label": "VARAA SPARRAUS",
+        "href": "https://hubspot.kuulu.fi/meetings/tiina-stjerna-kinnunen/tiina-30min-teams?hsLang=fi-fi"
+      },
+      {
+        "label": "Aloita auditoinnilla",
+        "href": "https://hubspot.kuulu.fi/meetings/tiina-stjerna-kinnunen/tiina-30min-teams?hsLang=fi-fi"
+      },
+      {
+        "label": "VARAA SPARRAUS",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://vimeo.com/1157471754/482415f800"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://elisa.fi/parastalivena"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://www.kuulu.fi/videotuotanto?hsLang=fi-fi"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://vimeo.com/1138842390/d986f2a69a"
+      },
+      {
+        "label": "Varaa sparraus (30 min)",
+        "href": "https://hubspot.kuulu.fi/meetings/tiina-stjerna-kinnunen/tiina-30min-teams?hsLang=fi-fi"
+      },
+      {
+        "label": "Ilmoittaudu Zero Click -koulutukseen",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi?hsLang=fi-fi"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 16,
     "internal_links": [

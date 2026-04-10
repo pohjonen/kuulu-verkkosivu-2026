@@ -247,6 +247,40 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "",
+    "content_name": "",
+    "content_path": "",
+    "hs_form_count": 0,
+    "form_ids": [],
+    "meeting_links": [
+      "https://7052064.fs1.hubspotusercontent-na1.net/hubfs/7052064/hub_generated/module_assets/1/-33947244299/1775507758521/module_meetings.min.css",
+      "https://meetings.hubspot.com/tuomasmuurinen/energia360"
+    ],
+    "video_embeds": [
+      "https://www.kuulu.fi/hubfs/website_files/icons/green_mask_youtube.svg",
+      "https://www.youtube.com/c/KuuluFi"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Varaa ilmainen konsultaatio Kuulun energiatiimiltä",
+        "href": "https://meetings.hubspot.com/tuomasmuurinen/energia360"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 18,
     "internal_links": [

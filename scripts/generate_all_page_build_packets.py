@@ -18,6 +18,7 @@ GENERATED = ROOT / "docs" / "generated"
 INVENTORY = GENERATED / "kuulu-public-site-inventory.json"
 LINK_GRAPH = GENERATED / "kuulu-full-link-graph.json"
 SOURCE_EXTRACTS = GENERATED / "kuulu-all-source-extracts.json"
+CMS_METADATA = GENERATED / "kuulu-public-cms-metadata.json"
 FIRST_WAVE_PACKETS = GENERATED / "first-wave-page-build-packets" / "index.json"
 OUT_DIR = GENERATED / "all-page-build-packets"
 
@@ -269,11 +270,16 @@ def source_extract_by_url(extracts: list[dict]) -> dict[str, dict]:
     return {item["url"]: item for item in extracts}
 
 
-def page_packet(row: dict, link_map: dict, source_extracts: dict) -> dict:
+def cms_metadata_by_url(items: list[dict]) -> dict[str, dict]:
+    return {item["url"]: item for item in items}
+
+
+def page_packet(row: dict, link_map: dict, source_extracts: dict, cms_index: dict) -> dict:
     modules = DEFAULT_MODULE_STACKS.get(row["page_type"], ["hero-cinematic-v2", "final-cta-v2"])
     page_id = slug_to_page_id(row["preview_slug"], row["page_type"])
     extract = source_extracts.get(row["url"], {})
     link_data = link_map.get(row["url"], {"link_count": 0, "internal_links": []})
+    cms = cms_index.get(row["url"], {})
 
     return {
         "page_id": page_id,
@@ -299,6 +305,17 @@ def page_packet(row: dict, link_map: dict, source_extracts: dict) -> dict:
             "paragraphs": extract.get("paragraphs", []),
             "cta_candidates": extract.get("cta_candidates", []),
         },
+        "cms_metadata": {
+            "portal_id": cms.get("portal_id"),
+            "content_id": cms.get("content_id"),
+            "content_name": cms.get("content_name"),
+            "content_path": cms.get("content_path"),
+            "hs_form_count": cms.get("hs_form_count"),
+            "form_ids": cms.get("form_ids", []),
+            "meeting_links": cms.get("meeting_links", []),
+            "video_embeds": cms.get("video_embeds", []),
+            "cta_links": cms.get("cta_links", []),
+        },
         "link_map": {
             "link_count": link_data.get("link_count", 0),
             "internal_links": link_data.get("internal_links", []),
@@ -310,17 +327,19 @@ def main():
     inventory = load_json(INVENTORY)
     link_graph = load_json(LINK_GRAPH)
     source_extracts = load_json(SOURCE_EXTRACTS)
+    cms_metadata = load_json(CMS_METADATA)
 
     OUT_DIR = GENERATED / "all-page-build-packets"
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     link_index = link_map_by_url(link_graph)
     extract_index = source_extract_by_url(source_extracts)
+    cms_index = cms_metadata_by_url(cms_metadata)
 
     packets_summary = []
 
     for row in inventory:
-        packet = page_packet(row, link_index, extract_index)
+        packet = page_packet(row, link_index, extract_index, cms_index)
         path = OUT_DIR / f"{packet['page_id']}.json"
         write_json(path, packet)
         packets_summary.append(

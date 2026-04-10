@@ -135,6 +135,40 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "",
+    "content_name": "",
+    "content_path": "",
+    "hs_form_count": 0,
+    "form_ids": [
+      "805f07bd-a002-45f0-9aa5-af329327fcba"
+    ],
+    "meeting_links": [],
+    "video_embeds": [
+      "https://player.vimeo.com/video/304163540?h=ceeda4f4de&amp;app_id=122963",
+      "https://www.kuulu.fi/hubfs/website_files/icons/green_mask_youtube.svg",
+      "https://www.youtube.com/c/KuuluFi"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä digimarkkinointipalveluista",
+        "href": "https://www.kuulu.fi/referenssit/sievin-jalkine-digimarkkinointi?hsLang=fi-fi#hs_cos_wrapper_widget_1661894025506"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 18,
     "internal_links": [

@@ -64,6 +64,7 @@ Jokainen sivukohtainen packet kokoaa yhteen:
 - page settings
 - module plan
 - source extract
+- cms metadata
 - link map
 
 Tämä tekee jokaisesta sivusta itsenäisen toteutusbriefin.
@@ -84,7 +85,8 @@ Kun oikea HubSpot-teema on fetchattu ja `kuulu-theme-v2` on luotu:
    - `mandatory_signals`
    ohjaamaan sisältöä
 5. käytä `source_extract`-osaa live-sivun sisällöllisen arvon säilyttämiseen
-6. käytä `link_map`-osaa varmistamaan, että sisäiset polut säilyvät
+6. käytä `cms_metadata`-osaa varmistamaan, että formit, meeting-linkit, content-id:t ja video-embedit eivät huku
+7. käytä `link_map`-osaa varmistamaan, että sisäiset polut säilyvät
 
 ---
 
@@ -114,6 +116,24 @@ Packet auttaa muuntamaan vanhan sivun uuteen templateen niin, että:
 - slug säilyy
 - viesti normalisoituu
 - rakenne muuttuu ilman että sivu menettää käyttäjäpolun
+
+### 4.4 Formit, meeting-linkit ja embedit
+
+Packet sisältää nyt myös julkisesta HTML:stä poimitun `cms_metadata`-kerroksen.
+
+Tämä auttaa erityisesti:
+
+- landingeissa joissa on HubSpot-formeja
+- yhteystietosivuissa joissa on kriittisiä yhteydenottopolkuja
+- video-/training-sivuissa joissa on embedejä tai toistuvia CTA-ankkureita
+
+Näin toteutuksessa voidaan tarkistaa yhdestä tiedostosta:
+
+- content ID -vihjeet
+- form ID:t
+- meeting-linkit
+- video-embedit
+- CTA-linkit
 
 ---
 

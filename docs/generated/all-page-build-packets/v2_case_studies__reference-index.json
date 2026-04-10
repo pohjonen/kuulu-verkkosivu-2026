@@ -99,6 +99,38 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "178937565309",
+    "content_name": "case-study-listing-page-178938943607   theme-overrides",
+    "content_path": "case-studies hs-content-name-case-study-listing-page-178938943607   theme-overrides",
+    "hs_form_count": 0,
+    "form_ids": [],
+    "meeting_links": [],
+    "video_embeds": [],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=en"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 18,
     "internal_links": [

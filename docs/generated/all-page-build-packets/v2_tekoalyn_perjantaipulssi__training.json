@@ -330,6 +330,47 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "",
+    "content_name": "",
+    "content_path": "",
+    "hs_form_count": 0,
+    "form_ids": [
+      "ea859762-96e2-423e-98a7-91baf82ace94"
+    ],
+    "meeting_links": [],
+    "video_embeds": [
+      "https://www.kuulu.fi/hubfs/website_files/icons/green_mask_youtube.svg",
+      "https://www.youtube.com/c/KuuluFi"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/tekoalyn-perjantaipulssi?hsLang=fi-fi#ilmoittaudu"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/tekoalyn-perjantaipulssi#ilmoittaudu"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/tekoalyn-perjantaipulssi#ilmoittaudu"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 20,
     "internal_links": [

@@ -241,6 +241,45 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "",
+    "content_name": "",
+    "content_path": "",
+    "hs_form_count": 0,
+    "form_ids": [
+      "805f07bd-a002-45f0-9aa5-af329327fcba"
+    ],
+    "meeting_links": [],
+    "video_embeds": [
+      "https://player.vimeo.com/video/171727577?h=7c28009a67&amp;app_id=122963",
+      "https://player.vimeo.com/video/193399780?h=ec9ea9e56d&amp;app_id=122963",
+      "https://player.vimeo.com/video/196412997?h=51e1d00273&amp;app_id=122963",
+      "https://player.vimeo.com/video/230921448?h=c0d19cdefb&amp;app_id=122963",
+      "https://player.vimeo.com/video/299870406?h=ff74b70ddf&amp;app_id=122963",
+      "https://player.vimeo.com/video/516683380?h=463fcbb280&amp;app_id=122963",
+      "https://www.kuulu.fi/hubfs/website_files/icons/green_mask_youtube.svg",
+      "https://www.youtube.com/c/KuuluFi"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Pyydä tarjous videotuotannosta",
+        "href": "https://www.kuulu.fi/videotuotanto?hsLang=fi-fi#hs_cos_wrapper_widget_1661894025506_"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 17,
     "internal_links": [

@@ -336,6 +336,90 @@
       }
     ]
   },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "236240559329",
+    "content_name": "videotuotannot-pääländäri   cinematic-body",
+    "content_path": "videotuotanto hs-content-name-videotuotannot-pääländäri   cinematic-body",
+    "hs_form_count": 0,
+    "form_ids": [
+      "805f07bd-a002-45f0-9aa5-af329327fcba"
+    ],
+    "meeting_links": [
+      "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+    ],
+    "video_embeds": [
+      "https://vimeo.com/1138842390/d986f2a69a",
+      "https://vimeo.com/1157471754/482415f800",
+      "https://vimeo.com/1170936912/2068661740"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "VARAA MAKSUTON SPARRAUS (30 MIN)",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "KATSO SHOWREEL 2026",
+        "href": "https://vimeo.com/1170936912/2068661740"
+      },
+      {
+        "label": "VARAA SPARRAUS",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "KATSO AI-ESIMERKKEJÄ",
+        "href": "https://www.kuulu.fi/videotuotanto#referenssit"
+      },
+      {
+        "label": "Varaa maksuton sparraus",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "Katso esimerkkejä",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "Aloita yhteistyö",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "VARAA SPARRAUS",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://vimeo.com/1157471754/482415f800"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://elisa.fi/parastalivena"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://www.kuulu.fi/videotuotanto"
+      },
+      {
+        "label": "LUE LISÄÄ",
+        "href": "https://vimeo.com/1138842390/d986f2a69a"
+      },
+      {
+        "label": "VARAA SPARRAUS (30 MIN, MAKSUTON)",
+        "href": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+      },
+      {
+        "label": "KATSO SHOWREEL 2026",
+        "href": "https://vimeo.com/1170936912/2068661740"
+      }
+    ]
+  },
   "link_map": {
     "link_count": 16,
     "internal_links": [
