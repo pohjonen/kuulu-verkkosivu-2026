@@ -1,0 +1,34 @@
+{
+  "module": "video-model-comparison-v2",
+  "module_key": "video-model-comparison-v2",
+  "used_on": [
+    "video-service-landing-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "build_wave": 3,
+  "depends_on": [
+    "card-grid-v2",
+    "media-wrapper-v2"
+  ],
+  "field_groups": [
+    "content",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "fixed_cards": 3,
+    "locked_order": [
+      "captured",
+      "hybrid",
+      "ai-enhanced"
+    ]
+  }
+}

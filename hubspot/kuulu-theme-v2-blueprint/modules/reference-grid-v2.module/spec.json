@@ -1,0 +1,38 @@
+{
+  "module": "reference-grid-v2",
+  "module_key": "reference-grid-v2",
+  "used_on": [
+    "homepage-v2",
+    "service-landing-v2",
+    "video-service-landing-v2",
+    "reference-index-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "cta",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "build_wave": 2,
+  "depends_on": [
+    "image-card-v2",
+    "safe-link-field-v2"
+  ],
+  "field_groups": [
+    "content",
+    "cta",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "supports_free_rich_text": false,
+    "link_types": [
+      "internal_page",
+      "validated_url"
+    ]
+  }
+}

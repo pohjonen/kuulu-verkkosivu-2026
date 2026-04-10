@@ -1,0 +1,16 @@
+{
+  "name": "kuulu-theme-v2-blueprint",
+  "type": "local-blueprint",
+  "status": "pre-export",
+  "source_of_truth": [
+    "docs/kuulu-content-principles.md",
+    "docs/kuulu-module-field-model.md",
+    "docs/kuulu-first-wave-section-stacks.md",
+    "docs/generated/kuulu-v2-page-manifest.json",
+    "docs/generated/kuulu-v2-module-manifest.json"
+  ],
+  "notes": [
+    "Do not upload this blueprint directly as production theme.",
+    "Use this blueprint to map modules/templates into the real fetched source theme."
+  ]
+}

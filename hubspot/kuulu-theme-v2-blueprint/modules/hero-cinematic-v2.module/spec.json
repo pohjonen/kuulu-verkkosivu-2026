@@ -1,0 +1,39 @@
+{
+  "module": "hero-cinematic-v2",
+  "module_key": "hero-cinematic-v2",
+  "used_on": [
+    "homepage-v2",
+    "service-landing-v2",
+    "training-landing-v2",
+    "video-service-landing-v2",
+    "reference-detail-v2",
+    "company-info-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "cta",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "build_wave": 1,
+  "depends_on": [
+    "theme-tokens-v2",
+    "cta-patterns-v2",
+    "media-wrapper-v2"
+  ],
+  "field_groups": [
+    "content",
+    "cta",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "max_ctas": 2,
+    "max_media_slots": 1,
+    "supports_free_rich_text": false
+  }
+}

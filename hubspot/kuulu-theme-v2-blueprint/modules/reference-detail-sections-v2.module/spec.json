@@ -1,0 +1,39 @@
+{
+  "module": "reference-detail-sections-v2",
+  "module_key": "reference-detail-sections-v2",
+  "used_on": [
+    "reference-detail-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "build_wave": 4,
+  "depends_on": [
+    "hero-cinematic-v2",
+    "stats-trust-band-v2",
+    "final-cta-v2"
+  ],
+  "field_groups": [
+    "content",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "enforced_order": [
+      "case-hero",
+      "key-facts",
+      "challenge",
+      "solution",
+      "execution",
+      "results",
+      "testimonial",
+      "cta"
+    ]
+  }
+}

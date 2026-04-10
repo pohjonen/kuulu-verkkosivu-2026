@@ -1,0 +1,38 @@
+{
+  "module_key": "lead-capture-form-cta-v2",
+  "module": "lead-capture-form-cta-v2",
+  "used_on": [
+    "company-info-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "cta",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "build_wave": 2,
+  "depends_on": [
+    "cta-patterns-v2",
+    "form-selector-v2",
+    "safe-link-field-v2"
+  ],
+  "field_groups": [
+    "content",
+    "cta",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "requires_primary_cta_or_form": true,
+    "supported_media_modes": [
+      "none",
+      "image",
+      "icon"
+    ],
+    "supports_free_rich_text": false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "module": "problem-grid-v2",
+  "module_key": "problem-grid-v2",
+  "used_on": [
+    "homepage-v2",
+    "service-landing-v2",
+    "training-landing-v2",
+    "video-service-landing-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "build_wave": 1,
+  "depends_on": [
+    "icon-system-v2",
+    "card-surface-v2"
+  ],
+  "field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "card_min": 3,
+    "card_max": 6,
+    "supports_free_rich_text": false
+  }
+}

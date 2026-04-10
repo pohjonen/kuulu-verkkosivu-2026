@@ -1,0 +1,36 @@
+{
+  "module": "final-cta-v2",
+  "module_key": "final-cta-v2",
+  "used_on": [
+    "homepage-v2",
+    "service-landing-v2",
+    "training-landing-v2",
+    "video-service-landing-v2",
+    "reference-index-v2",
+    "reference-detail-v2",
+    "company-info-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "cta",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "build_wave": 1,
+  "depends_on": [
+    "cta-patterns-v2",
+    "spacing-tokens-v2"
+  ],
+  "field_groups": [
+    "content",
+    "cta",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "max_ctas": 2,
+    "supports_free_rich_text": false
+  }
+}
