@@ -86,10 +86,95 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Ville Pohjonen",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Ville Pohjonen"
+      },
+      {
+        "level": "h2",
+        "text": "PODCAST: Tekoäly on täällä"
+      },
+      {
+        "level": "h2",
+        "text": "Äänen ja musiikin merkitys videoissa – panosta tunteisiin ja laatuun"
+      },
+      {
+        "level": "h2",
+        "text": "Helppo videokalusto yritykselle – tällainen on hyvä videokalusto"
+      },
+      {
+        "level": "h2",
+        "text": "Facebook Live -perusteet ja 7 tehovinkkiä – tässä livestriimauksen ABC"
+      },
+      {
+        "level": "h2",
+        "text": "8 vinkkiä parempiin yritysvideoihin – markkinoi tehokkaasti videoilla"
+      },
+      {
+        "level": "h2",
+        "text": "Yritysvideo tehokkaaksi tunteiden avulla – tunteet mainosvideoilla"
+      },
+      {
+        "level": "h2",
+        "text": "Parhaat ohjelmat videokuvaukseen älypuhelimella – katso lista parhaista"
+      },
+      {
+        "level": "h3",
+        "text": "Luova johtaja ja omistaja"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Jo vuodesta 2011 lähtien olen toiminut yrittäjänä ja luonut innovatiivisia ratkaisuja yrityksille, jotka hakevat kasvua ja tunnustusta. Yli 12 vuoden kokemuksellani liiketoiminnasta ja luovuudesta olen erikoistunut:",
+      "Meriittini:",
+      "Olen myös saanut arvokasta kokemusta TV-puolelta erilaisissa TV-tuotannoissa, jotka ovat laajentaneet näkemystäni ja osaamistani visuaalisen tarinankerronnan alueella.",
+      "Vahvuuteni on yhdistää visio ja toteutus, joka näkyy monissa onnistuneissa video-projekteissa sekä kyky ymmärtää asiakkaiden tarpeita ja muuntaa ne luoviksi ratkaisuiksi.",
+      "ville@kuulu.fi",
+      "040 509 7129",
+      "24 lokakuuta 2023",
+      "Tekoälyn kehitys nopeutuu ja mahdollisuudet laajenevat. Kuuntele tai lue podcastistamme erilaisista työkaluista ja niiden hyödyntämisestä.",
+      "Kuinka suuri painoarvo äänellä ja musiikilla on videoissa? Ääni luo 70 % videon tunnelmasta, eli sen merkitys on todella tärkeä. Lue lisää blogista.",
+      "9 helmikuuta 2019",
+      "Parhaat helppokäyttöiset videotyövälineet, joilla yrityksen oma videomarkkinointi onnistuu. Hyvä kalusto kuvaan, ääneen, valoihin ja lisävarusteisiin.",
+      "24 tammikuuta 2018",
+      "Facebook Liven suurin etu verrattuna muihin julkaisumuotoihin on välitön vuorovaikutusmahdollisuus seuraajiesi kanssa. Ota haltuun livelähetyksen perusteet.",
+      "4 heinäkuuta 2017",
+      "Yritysvideo on yksi tehokkaimmista markkinointivälineistä. Tärkeintä on ymmärtää jokaisen videon käyttötarkoitus ja kohderyhmä. Lue yritysvideovinkit!",
+      "8 maaliskuuta 2017",
+      "Tunteet ohjaavat ihmisten päätöksentekoa. Tässä vinkkejä siihen kuinka yritysvideot ja mainosvideot saavat vaikuttavuutta!",
+      "12 toukokuuta 2016",
+      "Videon tekeminen puhelimella on jo suhteellisen vaivatonta. Hyvällä ohjelmalla teet videoita helposti ja vieläpä niin, että jälki on hyvää. Tässä blogissa on listattu kamera-, editointi-, grafiikat-, multimedia- ja audio-sovellukset, joiden avulla teet hyviä videoita puhelimellasi!",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/aanen-ja-musiikin-merkitys-videoissa?hsLang=fi-fi",
+        "label": "Äänen ja musiikin merkitys videoissa – panosta tunteisiin ja laatuun Kuinka suuri painoarvo äänellä ja musiikilla on videoissa? Ääni luo 70 % videon tunnelmasta, eli sen merkitys on todella tärkeä. Lue lisää blogista."
+      },
+      {
+        "href": "https://blog.kuulu.fi/parhaat-ohjelmat-videokuvaukseen-alypuhelimella?hsLang=fi-fi",
+        "label": "12 toukokuuta 2016 Parhaat ohjelmat videokuvaukseen älypuhelimella – katso lista parhaista Videon tekeminen puhelimella on jo suhteellisen vaivatonta. Hyvällä ohjelmalla teet videoita helposti ja vieläpä niin, että jälki on hyvää. Tässä blogissa on listattu kamera-, editointi-, grafiikat-, multimedia- ja audio-sovellukset, joiden avulla teet hyviä videoita puhelimellasi!"
+      }
+    ]
   },
   "link_map": {
     "link_count": 17,

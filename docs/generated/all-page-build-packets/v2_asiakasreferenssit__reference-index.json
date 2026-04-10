@@ -67,10 +67,52 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Kuulun referenssit",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Hyvä työ kuuluu kauas - Kokemuksia Kuulusta"
+      },
+      {
+        "level": "h2",
+        "text": "Kuulu on strategian mukaisiin ja tuloksia tuoviin sisältöihin erikoistunut digimarkkinointitoimisto"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Toimistomme sijaitsevat Oulussa ja Helsingissä. Toimimme koko maassa. Suunnitellut, kiinnostavat ja tuloksia tuovat sisällöt eri muodoissaan ovat ydinosaamistamme. Lue alta lisää palveluistamme.",
+      "Haaga-Helia – Tekoälykuvapankki",
+      "Ruokamies ja K-Supermarket Ritaharju – Sisältöpankki ja brändin kirkastus",
+      "Seta – Vaikuttava videoprojekti",
+      "Akateeminen Kirjakauppa - Storybrand-tarinan luominen ja työpajat",
+      "Sievin jalkine – brändin tunnettuuden kasvattaminen",
+      "Vestera Oy - Pitkäaikainen markkinoinnin kumppanuus",
+      "K-Market Ruukin Ruustinna-olut: brändi, tarina, visuaalinen ilme ja lanseerauskampanja",
+      "Intersport Tripla – Työnantajamielikuvan vahvistaminen",
+      "Sievin Jalkine: Digimarkkinoinnin palvelut ja videotuotannot",
+      "Nestor Cables: Brändin kirkastus ja kaksi yritysvideota",
+      "LähiTapiola – hakukoneystävällinen sisältöuudistus",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      }
+    ]
   },
   "link_map": {
     "link_count": 28,

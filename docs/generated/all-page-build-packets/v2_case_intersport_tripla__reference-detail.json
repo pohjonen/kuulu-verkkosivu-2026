@@ -82,10 +82,89 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Intersport Tripla - Uskalla olla oma itsesi",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Uskalla olla oma itsesi"
+      },
+      {
+        "level": "h2",
+        "text": "Lähtökohdat ja haaste"
+      },
+      {
+        "level": "h2",
+        "text": "Tavoite"
+      },
+      {
+        "level": "h2",
+        "text": "Strategia / insight"
+      },
+      {
+        "level": "h2",
+        "text": "Luova ratkaisu"
+      },
+      {
+        "level": "h2",
+        "text": "Tulokset"
+      },
+      {
+        "level": "h2",
+        "text": "Jatkoa konseptille"
+      },
+      {
+        "level": "h2",
+        "text": "Tekijät"
+      },
+      {
+        "level": "h3",
+        "text": "Videon teema herättää keskustelua"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Kuvittele yhdenvertainen ja välittävämpi työelämä, jossa jokainen voi olla oma itsensä. Se on Intersport Triplan tavoite.",
+      "Valitettavan moni kokee, ettei uskalla olla oma itsensä työpaikallaan, koska työelämässä ei ymmärretä monimuotoisuutta ja sen rikkautta. Tämä näkyy vahvasti (työ)hyvinvoinnissa, ja lopulta myös huonona asiakaskokemuksena",
+      "Intersport Triplan vahvaan arvopohjaan kuuluu yhdenvertaisuus sekä välittäminen. Työyhteisö on kuin perhe – ja perhe pitää huolta omistaan.",
+      "Kauppiaat Hanna Kuoppala ja Karina Niki Lasarjan-Kuoppala halusivat luoda Intersportista tasa-arvoisen ja välittävän ympäristön, jossa ongelmiakaan ei tarvitsisi peitellä. Usein he ovatkin auttaneet työntekijöitään myös henkilökohtaisen elämän haasteissa.",
+      "\"Esimerkiksi raha- tai päihdeongelmia, hankalia kotiolosuhteita tai parisuhdeongelmia. Joskus on viikonloppunakin tullut nuorelta puhelu, että nyt on tyttö- tai poikaystävän kanssa mennyt poikki ja sen takia tuntuu vaikealta tulla töihin. On tosi hienoa, että uskalletaan kertoa. Yhdessä sitten mietimme, kuinka tästä mennään eteenpäin\", Hanna kertoo.",
+      "Työyhteisön välittävä ilmapiiri näkyy kauas. \"Turvallinen työpaikka on sellainen, jossa sinua arvostetaan ja taustatiimi on tukena aina, jokaisena päivänä\", kertoo liikkeessä myyjänä työskentelevä Otso Riiali .",
+      "Uskalla olla oma itsesi -konseptilla haluttiin nostaa esille työelämän yhdenvertaisuuden tärkeyttä ja herättää yhteiskunnallista keskustelua aiheesta.",
+      "Intersport Triplan tavoitteena on luoda välittävämpää työelämää, jossa jokainen kohdataan yksilönä ja kaikki uskaltavat olla oma itsensä.",
+      "Todellista vaikuttavuutta herätetään aidoilla persoonilla ja oikeilla tarinoilla.",
+      "Videosarja, joka nostaa kaupan yhteisön äänen kuuluviin ja antaa heille tilaa kertoa ajatuksiaan aiheesta.",
+      "Intersport Triplan työyhteisön identiteetti on vahvistunut : \"Me kaikki vaikutuimme nähdessämme videon ekaa kertaa – hei mehän ollaan aika hyviä tässä\", kauppias Hanna Kuoppala kertoo.",
+      "Yritys on saanut juuri heidän yhteisöönsä sopivia työhakemuksia ja tehnyt niiden pohjalta onnistuneita rekrytointeja . Hakijat ovat kommentoineet videota positiivisesti. Konsepti on toiminut vahvana tukijalkana työnantajamielikuvan rakentamisessa .",
+      "Sosiaalisessa mediassa video on tavoittanut noin 95 000 henkilöä ja herättänyt positiivisia reaktioita.",
+      "Intersport Triplan Hannaa haastateltiin Pirkka-lehteen nuorten tukemisesta työelämässä. Lue artikkeli Pirkan sivustolla.",
+      "Hanna ja Otso pyydettiin vierailemaan Lähtijät-podcastin hyväntekeväisyysjaksoon , jonka aiheena oli #liikaa – eli juurikin se, että kokee olevansa vääränlainen työelämässä.",
+      "Podcastin tarina jatkuu myös K-ryhmän omassa Kehittyvä kauppa -ammattilehdessä.",
+      "Alkuperäisidea / asiakas Intersport Tripla",
+      "Konseptointi Markkinointiviestintätoimisto Kuulu Oy",
+      "Videoiden suunnittelu ja tuotanto Markkinointiviestintätoimisto Kuulu Oy",
+      "Jakelu Intersport Tripla",
+      "Konsepti osallistuu Grand One -kilpailuun kategoriassa Paras yhdenvertaisuutta edistävä työ .",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      }
+    ]
   },
   "link_map": {
     "link_count": 17,

@@ -161,10 +161,42 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Brändivideot - Kuulu",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Brändivideo, joka koskettaa"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Kerro koskettavia tarinoita yrityksestäsi ja jätä muistijälki, jota on vaikea unohtaa! Brändi on mielikuva, joka elää kaikkien niiden mielessä, jotka sen kokevat. Asiakkaiden, työntekijöiden, median, yhteistyökumppaneiden ja muiden sidosryhmien.",
+      "Brändivideot mahdollistavat vahvemman yhteyden yrityksesi ja asiakkaidesi välillä. Se kertoo kohdeyleisöllesi kuka olet ja mitä edustat. Video on viestinnän voimakkain kerrontamuoto, koska se herättää katsojassa tunteita. Vahvat tunteet jättävät syvän muistijäljen. Näin pystyt tavoittelemaan kohdeyleisön top-of-mindia – eli päälimmäisenä mielessä olemista!",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/brandivideo?hsLang=fi-fi#hs_cos_wrapper_widget_1661894025506_",
+        "label": "Pyydä tarjous videotuotannosta"
+      }
+    ]
   },
   "link_map": {
     "link_count": 17,

@@ -146,10 +146,64 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Tekoäly markkinoinnin ja myynnin tukena -koulutukset",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Tekoälyn hyödyntäminen markkinoinnissa ja myynnissä -koulutukset"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoäly markkinoinnissa - koulutus, joka vie yrityksesi seuraavalle tasolle"
+      },
+      {
+        "level": "h3",
+        "text": "Meidän koulutuksissamme opit helppotajuisesti"
+      },
+      {
+        "level": "h3",
+        "text": "Voit valita koulutuksen joko"
+      },
+      {
+        "level": "h3",
+        "text": "Jos sinua kiinnostavat yleisesti markkinoinnissa käytettävät tekoälytyökalut, katso tämä video"
+      },
+      {
+        "level": "h3",
+        "text": "Jos sinua kiinnostavat yleisesti markkinoinnissa käytettävät visuaaliset tekoälytyökalut, katso tämä video"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Markkinointi ja myynti hyötyvät tekoälyn käyttämisestä valtavasti. Rutiinityöt vähenevät, sisällöntuotanto helpottuu ja isojen tietomassojen käsittely nopeutuu.",
+      "Se, joka ottaa parhaiten tekoälyn tarjoamat mahdollisuudet haltuun, moninkertaistaa markkinoinnin ja myynnin ponnistelujen tulokset!",
+      "Haluatko oppia, miten voit hyödyntää tekoälyä markkinoinnissa? Haluatko saada parempia tuloksia kohdennetulla ja personoidulla sisällöllä? Haluatko pysyä ajan tasalla markkinoinnin uusimmista trendeistä ja teknologioista?",
+      "Jos vastasit kyllä, olet tullut oikeaan paikkaan. Meillä on tarjolla koulutuksia, jotka opettavat sinulle kaiken, mitä sinun tarvitsee tietää tekoälyn käytöstä markkinoinnissa.",
+      "Tekoäly on muuttanut markkinoinnin pelikenttää. Se tarjoaa mahdollisuuksia analysoida dataa, ymmärtää asiakkaita, luoda kiinnostavaa sisältöä ja optimoida kampanjoita. Tekoäly auttaa sinua saavuttamaan paremman ROI:n ja erottumaan kilpailijoistasi.",
+      "Meidän kouluttajamme ovat alan asiantuntijoita, jotka ovat työskennelleet erilaisten tekoälytyökalujen kanssa. He jakavat sinulle käytännön esimerkkejä, vinkkejä ja parhaita käytäntöjä. He vastaavat myös kaikkiin kysymyksiisi ja auttavat sinua soveltamaan oppimaasi omaan yritykseesi.",
+      "Koulutuksemme ovat räätälöitävissä eri tasoisille osallistujille ja eri alojen yrityksille. Voimme järjestää koulutuksen joko verkossa tai paikan päällä. Voit valita joko yhden päivän tai useamman päivän kestävän koulutuksen.",
+      "Älä jää jälkeen markkinoinnin kehityksestä. Ota yhteyttä meihin jo tänään ja varaa paikkasi seuraavaan koulutukseemme. Tämä on investointi, joka maksaa itsensä takaisin moninkertaisesti.",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      }
+    ]
   },
   "link_map": {
     "link_count": 17,

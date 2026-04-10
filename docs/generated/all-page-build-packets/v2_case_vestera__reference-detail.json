@@ -82,10 +82,77 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Asiakastarina - Vestera Oy: digimarkkinointi, blogitekstit, kohdevideot ja valokuvaus",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Vestera Oy"
+      },
+      {
+        "level": "h2",
+        "text": "Pitkäaikainen markkinoinnin kumppanuus"
+      },
+      {
+        "level": "h2",
+        "text": "Sisällöntuotanto"
+      },
+      {
+        "level": "h2",
+        "text": "Asiakasreferenssivideot"
+      },
+      {
+        "level": "h2",
+        "text": "Kohteiden valokuvaus ympäri Suomen"
+      },
+      {
+        "level": "h2",
+        "text": "Ota yhteyttä"
+      },
+      {
+        "level": "h3",
+        "text": "Tarvitsetteko tekin markkinointiapua?"
+      },
+      {
+        "level": "h3",
+        "text": "Ota yhteyttä alla olevalla lomakkeella niin jutellaan!"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Jatkuvat digimarkkinoinnin palvelut, kuukausittaiset blogitekstit, kohdevideot ja kohteiden valokuvaus - pitkäaikainen markkinoinnin kumppanuus yli 4 vuoden ajan (2017-2022).",
+      "Vestera Oy (ent. Rakennusliike Tikakoski) ja Kuulu tekivät pitkäjänteistä markkinoinnin yhteistyötä yli neljä vuotta (2017-2022). Raisiossa, Oulunsalossa ja Vantaalla toimipaikkaansa pitävä päivä- ja hoivakotirakentamiseen erikoistunut rakennusliike hankki meiltä jatkuvia digimarkkinoinnin palveluita, laajempia tekstisisältöjä, videoita ja valokuvia.",
+      "Alla olevalla videolla myyntijohtaja Jorma Juurikka kertoo yhteistyöstämme:",
+      "Kuulun markkinoinnin suunnittelijat ja copywriterit tekevät säännöllistä sisällöntuotantoa Vesteran Facebook- ja LinkedIn-kanaviin. Digimanageripalvelu sisältää digimarkkinoinnin toimenpiteistä:",
+      "Lisäksi toteutimme joka kuukausi ilmestyvän asiakasreferenssiartikkelin sekä teimme myös lehdistötiedotteita, viestintäsuunnitelmia sekä esitteiden tekstityötä ja taittoa.",
+      "”Kuulun tekemät asiakasreferenssivideot ovat olleet aivan loistavia. Niistä saatu palaute asiakkailta tai seuraajilta on ollut poikkeuksetta erittäin hyvää.”",
+      "Jorma Juurikka, myyntijohtaja",
+      "Tässä tuottamiamme referenssivideoita:",
+      "Osana säännöllistä sisällöntuotantoa valokuvasimme valmistuneita kohteita ympäri Suomea. Alla esimerkkejä valokuvatuotannoistamme.",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/referenssit/vestera-oy-markkinoinnin-kumppanuus?hsLang=fi-fi#hs_cos_wrapper_widget_1661894025506",
+        "label": "Ota yhteyttä digimarkkinointipalveluista ja videotuotannoista"
+      }
+    ]
   },
   "link_map": {
     "link_count": 18,

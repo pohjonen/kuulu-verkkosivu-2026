@@ -82,10 +82,85 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "LähiTapiola referenssit",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "LähiTapiola"
+      },
+      {
+        "level": "h2",
+        "text": "LähiTapiola – hakukoneystävällinen sisältöuudistus"
+      },
+      {
+        "level": "h2",
+        "text": "Katso videolta, mitä LähiTapiolan liiketoiminnan kehityspäällikkö Eija Puotinen kertoo yhteistyöstämme"
+      },
+      {
+        "level": "h2",
+        "text": "Kiinnostuitko sisältöuudistuksesta yrityksesi verkkosivuille?"
+      },
+      {
+        "level": "h2",
+        "text": "Ota yhteyttä"
+      },
+      {
+        "level": "h3",
+        "text": "Tavoite"
+      },
+      {
+        "level": "h3",
+        "text": "Asiakkaan haaste"
+      },
+      {
+        "level": "h3",
+        "text": "Projektin ajankohta"
+      },
+      {
+        "level": "h3",
+        "text": "Uudistuksen sisältö"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Hakukoneystävällinen sivustouudistus",
+      "Uudistaa LähiTapiolan valitut tuotesivut ajan tasalle ja parantaa niiden konversiota ja hakukonenäkyvyyttä.",
+      "Uusittavia sivuja oli paljon, joten niiden uusimiseen tarvittiin aikaa ja osaamista.",
+      "Syyskuusta 2018 helmikuuhun 2019",
+      "”Kuulu auttoi meitä löytämään ongelman ytimen ja selkiyttämään ratkaisun sieltä.”",
+      "– Eija Puotinen LähiTapiolan liiketoiminnan kehityspäällikkö",
+      "Toteutimme LähiTapiolalle kokonaisvaltaisen sisältöuudistuksen halutuille tuotesivuille.",
+      "Uudistukseen kuuluivat",
+      "Suunnittelimme sivujen sisällön olemassa olevia visuaalisia elementtejä hyödyntäen. Haastattelimme kunkin LähiTapiolan tuotteen asiantuntijan ja kirjoitimme sisällön sen pohjalta. Hoidimme myös sisältöjen lisäämisen julkaisujärjestelmään sekä sivujen julkaisun.",
+      "Lopputuotteena LähiTapiola sai sekä hakukoneystävällisesti uudistetut tuotesivut että yhtenäisen ilmeen tuotesivuillensa.",
+      "Haluatko sinäkin yrityksesi verkkosivuille sisältöuudistuksen, jossa on huomioitu sekä hakukonenäkyvyys että käyttäjäystävällisyys? Ota yhteyttä ja katsotaan yhdessä, miten voisimme auttaa.",
+      "K-Market Ruukin Ruustinna-olut: brändi, tarina, visuaalinen ilme ja lanseerauskampanja",
+      "Sievin Jalkine: Digimarkkinoinnin palvelut ja videotuotanto",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://palvelut.kuulu.fi/tarinankerronta?hsLang=fi-fi",
+        "label": "Lue lisää Storybrand -palvelustamme"
+      }
+    ]
   },
   "link_map": {
     "link_count": 18,

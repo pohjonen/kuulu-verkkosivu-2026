@@ -146,10 +146,63 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Google Ads -mainonta",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Google Ads -mainonta"
+      },
+      {
+        "level": "h2",
+        "text": "Tulosta Google Ads -mainonnalla"
+      },
+      {
+        "level": "h2",
+        "text": "Pyydä tarjous Google Ads -mainonnasta"
+      },
+      {
+        "level": "h3",
+        "text": "5 syytä käyttää hakusanamainontaa:"
+      },
+      {
+        "level": "h3",
+        "text": "Googlen hakusanamainonta on kustannustehokasta"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Löydytkö, kun palveluitanne etsitään? Lähes kaikki hankinnat alkavat Googlesta, siellä kannattaa olla näkyvissä!",
+      "Googlea käytävät kaikki – myös sinun asiakkaasi. Saat meiltä Google Ads -paketin, johon kuuluu jatkuva mainonnan suunnittelu ja toteutus. Kaikki mainonnan tekijämme ovat Google-sertifioituja, eli Googlen omat laatukriteerit täyttäviä mainostajia.",
+      "Lisäksi teemme mainonnan seurantaa ja optimointia tulosten mukaan. Raportoimme kuukausittain mainonnan tuloksista sinulle Teams-tapaamisessa, jotta saamme viimeisimmän tiedon liiketoimintasi mainonnan tarpeista ja sinulla on tieto, mitä tuloksia mainonta Googlessa yrityksellesi tuo.",
+      "Googlen hakusanamainonta on tehokasta etenkin kun on tarkoitus lisätä myyntiä. Teho perustuu siihen, että mainoksesi näkyy Googlen tuloksissa silloin, kun asiakas etsii vastausta ongelmaansa. Ja mikä parasta, Googlen hakusanamainonta perustuu ”Pay per click”-malliin, eli maksat vain, kun joku klikkaa mainostasi.",
+      "Kun Google Ads -mainokset tekee oikein ja huolella, se on kustannustehokasta ja kannattavaa markkinointia. Hakusanamainonta tuo uusia asiakkaita yrityksellesi. Google Ads -mainonta on kustannustehokas ja tarkkaan kohdennettu tapa hankkia uusia asiakkaita.",
+      "Me teemme yrityksellesi suunnitellun ja kohdennetun hakusanamainonnan. Seuraamme kampanjoita ja teemme niihin tarvittavat muutokset optimoidaksemme tulokset. Mainostamme juuri niin kuin haluat tulla löydetyksi.",
+      "Tule siis löydetyksi tänään!",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/google-ads-mainonta?hsLang=fi-fi#hs_cos_wrapper_widget_1661894025506_",
+        "label": "Pyydä tarjous Google Ads -mainonnasta"
+      }
+    ]
   },
   "link_map": {
     "link_count": 17,

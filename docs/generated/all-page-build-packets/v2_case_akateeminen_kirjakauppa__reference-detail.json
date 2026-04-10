@@ -82,10 +82,63 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Akateeminen Kirjakauppa - Kuulun referenssit",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Akateeminen Kirjakauppa"
+      },
+      {
+        "level": "h2",
+        "text": "Ota yhteyttä"
+      },
+      {
+        "level": "h3",
+        "text": "Yhteistyöstämme kannattaa katsoa alla oleva video, silloin kuulet vielä paljon enemmän!"
+      },
+      {
+        "level": "h3",
+        "text": "Kiinnostuitko yrityksen tarinan kirkastamisesta ja tarinan kertomisesta tehokkaammin asiakkaille? Lue lisää brändäyspalveluistamme!"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Työpajat brändin tarinan ja markkinoinnin selkeyttämiseksi",
+      "Akateeminen Kirjakauppa toivoi digimarkkinointiinsa pölläytystä ja pientä uudistamista, jotta siihen saataisiin selkeyttä ja suunnitelmallisuutta. Visuaalinen ilme heillä oli uudistumassa, joten tarina auttoi myös visuaalisen ilmeen uudistukseen.",
+      "Toteutimme Akateemisen Kirjakaupan viestintää tekeville työntekijöille kaksi työpajaa ja niiden välissä teimme syväsukelluksen yrityksen markkinoinnin ja verkkokaupan analytiikkaan. Syväanalyysi auttoi ymmärtämään minkälaisia asioita kannattaa korostaa yrityksen markkinoinnissa.",
+      "Työpajoissa mietittiin Akateemisen Kirjakaupan",
+      "Akateemisen Kirjakaupan markkinoinnista, Nicole Flink kertoo yhteistyöstä:",
+      "” Kuulu auttoi nykytilanteen kartoittamisessa ja tavoitteiden asettamisessa sekä itse markkinointisuunnitelman tekemisessä.",
+      "Ollaan hyödynnetty työpajoissa syntynyttä markkinointitarinaa ihan joka päiväisessä markkinoinnissa ja viestinnässä. Meillä on viisi eri myymälää ja jokaisessa eri tekijöitä, niin olemme saaneet yhtenäisen sävelen tekemiseen. Siihen on myös aina hyvä palata, koska siinä määritellään mitä me tehdään, miksi me tehdään ja kenelle me tehdään.",
+      "Me tehdään nykyisin erilaista sisältöä kuin ennen työpajoja – nykyisin meillä on enemmän asiakkaalle suunnattua sisältöä: mietitään tarkasti mitä asiakas haluaa ja tarvitsee. ”",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '6724ce09-af0d-4362-b167-3c35f9d3a554', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "K-Market Ruukin Ruustinna-olut: brändi, tarina, visuaalinen ilme ja lanseerauskampanja",
+      "Sievin Jalkine: Digimarkkinoinnin palvelut ja videotuotanto",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://palvelut.kuulu.fi/tarinankerronta?hsLang=fi-fi",
+        "label": "Lue lisää brändäyspalveluistamme"
+      }
+    ]
   },
   "link_map": {
     "link_count": 18,

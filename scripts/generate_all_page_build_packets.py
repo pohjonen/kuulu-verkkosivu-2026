@@ -17,7 +17,7 @@ GENERATED = ROOT / "docs" / "generated"
 
 INVENTORY = GENERATED / "kuulu-public-site-inventory.json"
 LINK_GRAPH = GENERATED / "kuulu-full-link-graph.json"
-SOURCE_EXTRACTS = GENERATED / "kuulu-first-wave-source-extracts.json"
+SOURCE_EXTRACTS = GENERATED / "kuulu-all-source-extracts.json"
 FIRST_WAVE_PACKETS = GENERATED / "first-wave-page-build-packets" / "index.json"
 OUT_DIR = GENERATED / "all-page-build-packets"
 

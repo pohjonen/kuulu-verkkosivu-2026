@@ -82,10 +82,62 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Ruokamies – Sisältöpankki ja brändin kirkastus kiireiselle kauppiaalle",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Brändin kirkastus ja sisältöpankki"
+      },
+      {
+        "level": "h2",
+        "text": "Brändin kirkastaminen ja tarinankerronta"
+      },
+      {
+        "level": "h2",
+        "text": "Monipuolista sisältöä markkinointiin"
+      },
+      {
+        "level": "h2",
+        "text": "Yhteistyön sujuvuus ja jatkuva kehitys"
+      },
+      {
+        "level": "h2",
+        "text": "Innostunut tiimi ja onnistunut lopputulos"
+      },
+      {
+        "level": "h3",
+        "text": "Katso alta, minkälaisia visuaalisia elementtejä Ruokamiehelle tehtiin"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Kuulu auttoi Ruokamiestä ja K-Supermarket Ritaharjua brändin kirkastamisessa ja sisältöpankin luomisessa, tuoden selkeyttä markkinointiin ja tehokkuutta arkeen.",
+      "Yhteistyö Kuulun kanssa alkoi tarpeesta luoda selkeämpi bränditarina niin Hämäläiselle itselleen Ruokamiehenä kuin K-Supermarket Ritaharjulle. Kuulun tiimi auttoi Hämäläistä kirkastamaan liikeidean ja kehittämään iskeviä onelinereita, jotka resonoivat kohdeyleisön kanssa. \"Saatiin hyviä onelainereita ja selkeytettiin meidän liikeidea,\" Hämäläinen toteaa tyytyväisenä.",
+      "Markkinointiin tarvittiin myös konkreettista materiaalia, jota voitaisiin hyödyntää eri kanavissa. Kuulu tuotti sisältöpankin, joka sisälsi videoita niin kaupasta kuin studiosta. Näitä videoita Hämäläinen voi nyt hyödyntää somessa ja myymälämarkkinoinnissa. \"Tarvitsin hyviä ja helposti käytettäviä ratkaisuja, joita voidaan soveltaa arjen kiireiden keskellä. Kuulun avulla saatiin tosi paljon apua ja materiaalia, mitä voidaan hyödyntää sujuvasti.\"",
+      "Kuulun prosessi sai kiitosta selkeydestään ja järjestelmällisyydestään. Hämäläisen mukaan Kuulun tiimi kartoitti tarkasti tarpeet, asiakaskunnan ja mahdolliset ongelmakohdat. Tämä mahdollisti bränditarinan luomisen johdonmukaisesti ja täsmällisesti. \"Työpajojen, sparrausten ja viestittelyn myötä edettiin tasaisesti ja aikataulut pitivät. Kaikki sujui suunnitelman mukaan,\" Hämäläinen kehuu.",
+      "Hämäläinen nostaa esiin erityisesti sen, kuinka mukava ja innostunut Kuulun tiimi oli. \"Yhteistyössä parasta oli selkeä kommunikaatio ja fiilis, että kaikki olivat aidosti mukana. Ei tuntunut siltä, että olisin vain pieni osa isoa kokonaisuutta, vaan jokainen osa-alue hoidettiin huolella.\"",
+      "Lopputuloksena K-Supermarket Ritaharjulla on nyt selkeä bränditarina ja runsas määrä visuaalista materiaalia, jota voidaan käyttää markkinoinnin tukena. Hämäläinen suosittelee Kuulua kaikille, jotka tarvitsevat tukea brändin kirkastamisessa ja markkinointimateriaalien tuotannossa: \"Suosittelen ehdottomasti Kuulua, jos haluatte selkeyttää brändiänne tai kaipaatte apua markkinointiin.\"",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      }
+    ]
   },
   "link_map": {
     "link_count": 17,

@@ -82,10 +82,75 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "K-market Ruukin Ruustinna-olut: brändi, tarina, visuaalinen ilme ja lanseerauskampanja - Kuulu",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "K-market Ruukin Ruustinna-olut"
+      },
+      {
+        "level": "h2",
+        "text": "Tarina ja slogan"
+      },
+      {
+        "level": "h2",
+        "text": "Visuaalinen ilme"
+      },
+      {
+        "level": "h2",
+        "text": "Lanseerauskampanja"
+      },
+      {
+        "level": "h2",
+        "text": "Referenssivideo: katso mitä asiakas itse kertoo"
+      },
+      {
+        "level": "h2",
+        "text": "Tarvitsetteko tekin markkinointiapua?"
+      },
+      {
+        "level": "h2",
+        "text": "Ota yhteyttä"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Brändi, tarina, visuaalinen ilme ja lanseerauskampanja",
+      "”Ruustinna on rakkaudentunnustus Ruukille!”",
+      "K-Market Ruukin kauppias, Katja Korvanen , halusi tehdä ruukkilaisille oman oluen kunnianosoituksena kotiseudulleen. Paljasjalkainen ruukkilainen kauppias kaipaisi apua brändin luomisessa ja tarinankerronnassa, etiketin visuaalisessa ilmeessä ja materiaaleissa sekä oluen lanseerauskampanjassa.",
+      "Kun oluen nimeksi päätettiin valita Ruukinkosken Ruustinna alueen vahvojen ja rohkeiden naisten kunniaksi, copywriterimme, Titta Vilpa, kirjoitti Ruustinnan tarinan:",
+      "Ruukinkosken ruustinna on topakka rovastin vaimo ja tarmokas pappilan emäntä, joka toimii esikuvana koko kirkonkylän väelle. Hän pitää silmällä pappilan palvelusväkeä, kaitsee kuutta touhukasta lastaan, kasvattaa ruusuja pappilan puutarhassa ja järjestää keittiöpiikojensa avustuksella päivälliskutsuja paikalliselle herrasväelle ja säätyläisille sekä nimi- ja syntymäpäiväjuhlia oman suvun jäsenille. Onpa ruustinnan päivällispöydässä nähty pohjoiseen matkannut piispakin. Ruustinnan kuuluisat päivällispöydät notkuvat herkkuja – on vasikanpaistia, sillisalaattia ja lihapasteijoita. Kaiken kruunaa pappilan omassa maakellarissa viileänä säilyvä olut, joka hivelee makunystyröitä ja saa kiitokset kauempaakin tulleiden matkalaisten suusta raikkaasta ja miedosti maltaisesta maustaan.",
+      "Ja keksi sloganin : SE RUUKIMPI OLUT.",
+      "AD:mme, Henna Kuvaja, pääsi luomaan Ruustinnan visuaalisen ilmeen: ” Yhdistin e tiketissä uutta ja vanhaa. Fontti ja kuvituksen tekstuuri on retrohenkinen, väriyhdistelmä moderni ja ehkä tavallaan myös yllättävä yhdistettynä Ruustinnan tarinaan. Halusin luoda oluelle mahdollisimman yksinkertaisen, mutta kuitenkin erottuvan visun.”",
+      "Kun valmis tölkki oli saatu panimosta, visuaalinen sisällöntuottajamme, Mikael Kunnari, vei Ruustinnan kesäiselle hiekkarannalle, aitan portaille ja veden ääreen valokuvia ja videota varten.",
+      "Tämän jälkeen markkinoinnin asiantuntijamme, Heljä Kokko, hoiti kuukauden lanseerauskampanjan K-Market Ruukin Facebook-sivulla. Kampanjan tavoitteena oli saada Ruukinkosken Ruustinna -olut mahdollisimman monen tietoisuuteen Ruukissa ja lähialueilla. Kampanja tavoitti yhteensä 61 101 henkilöä ja sai aikaan tuhansia klikkauksia K-market Ruukin Facebook-sivulle. Tämä on Ruukin alueellavaltava määrä ihmisiä, sillä pelkästään Ruukissa asuu alle viisi tuhatta asukasta",
+      "Katja-kauppias kiittelee yhteistyötä Kuulun kanssa erityisesti siksi, että hommat hoituivat kerralla kuntoon.",
+      "”Myimme 1500 litraa omaa olutta tällaisesta pienestä kaupasta yhden kesäkauden aikana. Sehän on just se tulos, mitä haettiin!”",
+      "Käsikirjoitus ja tuotanto Titta Vilpa, kuvaus ja editointi Mikael Kunnari",
+      "Kuulun tiimi:",
+      "Luova johtaja: Ville Pohjonen Asiakkuusvastaava: Miia Pieniniemi Copywriter: Titta Vilpa AD: Henna Kuvaja Kuvat + video: Mikael Kunnari FB-kampanja: Heljä Kokko",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '8b58ec86-7a7f-4981-bb57-87338bf2fbce', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      }
+    ]
   },
   "link_map": {
     "link_count": 17,

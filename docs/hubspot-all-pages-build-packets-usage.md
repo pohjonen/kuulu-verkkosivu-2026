@@ -15,7 +15,17 @@ Generoiva skripti:
 
 ---
 
-## 1. Mikä ero on first wave packetin ja all-pages packetin välillä
+## 1. Mitkä lähdetiedostot syöttävät all-pages packetit
+
+All-pages packetit yhdistävät nyt nämä generated-lähteet:
+
+- `docs/generated/kuulu-public-site-inventory.json`
+- `docs/generated/kuulu-full-link-graph.json`
+- `docs/generated/kuulu-all-source-extracts.json`
+
+Ensimmäisen aallon packetit ovat edelleen tarkempi “golden path”, mutta koko sivuston packetit käyttävät nyt koko inventaarion laajuista source extract -dataa.
+
+## 2. Mikä ero on first wave packetin ja all-pages packetin välillä
 
 ### First wave packet
 
@@ -37,7 +47,7 @@ All-pages packetit ovat erityisen hyödyllisiä, kun build etenee ensimmäisen a
 
 ---
 
-## 2. Mitä all-pages packet sisältää
+## 3. Mitä all-pages packet sisältää
 
 Jokainen sivukohtainen packet kokoaa yhteen:
 
@@ -60,7 +70,7 @@ Tämä tekee jokaisesta sivusta itsenäisen toteutusbriefin.
 
 ---
 
-## 3. Käyttö authin jälkeen
+## 4. Käyttö authin jälkeen
 
 Kun oikea HubSpot-teema on fetchattu ja `kuulu-theme-v2` on luotu:
 
@@ -78,7 +88,7 @@ Kun oikea HubSpot-teema on fetchattu ja `kuulu-theme-v2` on luotu:
 
 ---
 
-## 4. Mihin tätä kannattaa käyttää erityisesti
+## 5. Mihin tätä kannattaa käyttää erityisesti
 
 ### 4.1 Referenssidetailit
 
@@ -107,7 +117,7 @@ Packet auttaa muuntamaan vanhan sivun uuteen templateen niin, että:
 
 ---
 
-## 5. Yhteenveto
+## 6. Yhteenveto
 
 All-pages packetit ovat koko ei-blogi-sivuston laajuinen toteutuskerros.
 

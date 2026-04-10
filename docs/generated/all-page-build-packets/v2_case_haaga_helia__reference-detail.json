@@ -82,10 +82,80 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Haaga-Helia Tekoälykuvapankki - Kuulun referenssit",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Haaga-Helia"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälykuvapankki ratkaisi Haaga-Helian viestinnän kuvahaasteet"
+      },
+      {
+        "level": "h2",
+        "text": "Tarve monipuoliselle kuvasisällölle"
+      },
+      {
+        "level": "h2",
+        "text": "Nopea ja joustava prosessi"
+      },
+      {
+        "level": "h2",
+        "text": "Brändinmukaista kuvasisältöä, vaikeasti kuvattavista aiheista"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälykuvapankki on otettu positiivisesti vastaan"
+      },
+      {
+        "level": "h2",
+        "text": "Lue lisää Tekoälykuvapankista"
+      },
+      {
+        "level": "h2",
+        "text": "Ota yhteyttä"
+      },
+      {
+        "level": "h3",
+        "text": "Tältä kuvat näyttävät käytännössä"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Tekoälykuvapankki toi Haaga-Helialle nopean ja monipuolisen ratkaisun viestinnän kuvahaasteisiin, erityisesti abstrakteihin ja vaikeasti kuvattaviin aiheisiin.",
+      "Kuvia tarvittiin nopeasti ja paljon. Haaga-Helian viestintä nojaa visuaaliseen sisältöön, jota käytetään laajasti muun muassa uutiskirjeissä, PowerPoint-esityksissä, markkinointimateriaaleissa sekä sisäisessä viestinnässä. Erityisen haastaviksi osoittautuivat abstraktit ja sensitiiviset aiheet, kuten mielenterveys ja hyvinvointi. – Emme halunneet käyttää oikeita ihmisiä näiden teemojen kuvituksessa, sillä kukaan ei halua tulla leimatuksi jonkun aiheen puolestapuhujaksi, Huuskonen selittää. Tekoälyn avulla luodut avatar-hahmot tarjosivat ratkaisun tähän, tuoden visuaalista tukea ilman, että kenenkään kasvot yhdistetään herkkään aiheeseen.",
+      "Tekoälykuvapankin luomisprosessi oli sujuva ja tehokas. Haaga-Helian tiimi täytti ensin esitietolomakkeen, jossa he määrittelivät, minkä tyyppisiä kuvia he tarvitsivat ja mihin tarkoitukseen. Tämä vaihe auttoi kirkastamaan kuvatarpeet ja varmistamaan, että lopputulos vastaisi odotuksia. – Annoimme värikartat ja vanhat brändikuvat tekoälylle käyttöön, ja niiden avulla luotiin kuvia, jotka olivat täysin meidän tyyliä. Asiakas saa 400–700 kuvaa, riippuen hieman aiheiden määrästä, ja asiakas valitsee lopulta näistä itse 50 kpl.",
+      "Tekoälykuvapankista saatu palaute on ollut erittäin positiivista. – Saatiin monipuolistettua meidän vanhaa kuvapankkia ja lisäksi kuvitettiin sellaisia aiheita, joihin ennen ei ollut helppoa löytää kuvia, Huuskonen iloitsee. Kuvapankki on nyt laajasti käytössä Haaga-Helian sisäisessä ja ulkoisessa viestinnässä, ja sen avulla he voivat vastata entistä paremmin organisaation monipuolisiin visuaalisiin tarpeisiin.",
+      "Haaga-Helia aikoo jatkaa tekoälykuvien käyttöä myös tulevaisuudessa, ja se tulee toimimaan rinnakkain perinteisten valokuvien kanssa. \"Vaikka tekoälykuvat ovat erinomainen lisä visuaaliseen viestintäämme, ihmiskontakti on meille tärkeää, ja haluamme edelleen käyttää oikeita ihmisiä kuvissa. Nämä kaksi tyyliä tukevat toisiaan,\" Huuskonen summaa.",
+      "Haaga-Helian Linkedin",
+      "K-Market Ruukin Ruustinna-olut: brändi, tarina, visuaalinen ilme ja lanseerauskampanja",
+      "Sievin Jalkine: Digimarkkinoinnin palvelut ja videotuotanto",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://palvelut.kuulu.fi/tekoaly-kuvapankki?hsLang=fi-fi",
+        "label": "Lue lisää tekoälykuvapankistamme"
+      }
+    ]
   },
   "link_map": {
     "link_count": 18,

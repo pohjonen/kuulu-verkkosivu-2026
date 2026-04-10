@@ -152,10 +152,94 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Videotuotanto - Kuulu",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Videoita, joilla menestyt."
+      },
+      {
+        "level": "h2",
+        "text": "Katso linkkien kautta tekemiämme videoita"
+      },
+      {
+        "level": "h2",
+        "text": "Mainosvideot"
+      },
+      {
+        "level": "h2",
+        "text": "Yritysvideot"
+      },
+      {
+        "level": "h2",
+        "text": "Animaatiot"
+      },
+      {
+        "level": "h2",
+        "text": "Referenssivideot"
+      },
+      {
+        "level": "h2",
+        "text": "Tapahtumakuvaus"
+      },
+      {
+        "level": "h2",
+        "text": "Ilmakuvaus"
+      },
+      {
+        "level": "h2",
+        "text": "Musiikkivideot"
+      },
+      {
+        "level": "h2",
+        "text": "360-videot"
+      },
+      {
+        "level": "h2",
+        "text": "Pyydä tarjous videotuotannosta"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Saat tuottamiemme videoiden avulla enemmän asiakkaita, tyytyväisempiä työntekijöitä ja lisää myyntiä , koska kuuluisalle kaikki on helpompaa.",
+      "Animaatiot Mainosvideot Yritysvideot Yhdistys- ja hankevideot GIF-animaatiot Matkailuvideot",
+      "Muita palveluitamme: Valokuvaus, graafinen suunnittelu ja äänituotanto.",
+      "Teemme mainosvideoita televisioon, elokuvateattereihin, festareille, www-sivuille tai sosiaalisen median mainontaan. Mainosvideosarja voi olla tehokas tapa saavuttaa erilaisia kohderyhmiä.",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '99bb36aa-3efd-43c4-bb27-d241951f0c27', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "Esittele yrityksesi toimintaa, palveluita, tuotteita tai henkilöstöä videomuodossa.",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '18637655-8476-4643-a21e-5b174cb0d2d1', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "Animaatiot elävöittävät markkinointivideoitasi ja niillä on helppo havainnollistaa palveluitanne. Animaation avulla voidaan yksinkertaistaa palvelunkuvaukset helposti.",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, 'abd148c6-71c7-477b-a421-8234d1a9da81', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "Tuo onnistumiset asiakkaiden kanssa tietoon. Voimme kuvata asiakkaidenne kertomuksia tai tekemiänne tuotteita tai palveluita tyytyväisten asiakkaiden käyttämänä. Referenssivideot vakuuttavat muutkin potentiaalit asiakkaanne ostamaan juuri teiltä!",
+      "Kuvaamme tapahtumissa yleistä tunnelmaa seuraavan kerran markkinointia varten. Voimme kuvata joko videoita tai ottaa valokuvia tai sekä että, aivan toiveidenne mukaisesti!",
+      "Someen istuvat ja televisioon sopivat! Ja mikä parasta, me saamme videonne myös tehokkaasti levitettyä, sillä olemme myös someammattilaisia ja tiedämme parhaat ja tehokkaimmat videonlevityskanavat!",
+      "Meillä on useampi musiikkivideoihin erikoistunut videosisällöntuottaja, joten kerro tarpeesi, niin saadaan juuri teille sopiva musavideo tekeille!",
+      "Haluatko kuvata ympäristöäsi kokonaisvaltaisesti? Joka suuntaan kuvaavat 360-videot sopivat erityisesti rakennusalalle, kiinteistövälitykseen, sisustussuunnittelijoille ja tapahtumiin.",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/videotuotanto?hsLang=fi-fi#hs_cos_wrapper_widget_1661894025506_",
+        "label": "Pyydä tarjous videotuotannosta"
+      }
+    ]
   },
   "link_map": {
     "link_count": 17,

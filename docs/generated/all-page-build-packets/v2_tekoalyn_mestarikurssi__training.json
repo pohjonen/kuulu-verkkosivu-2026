@@ -146,10 +146,139 @@
     }
   ],
   "source_extract": {
-    "title": null,
-    "headings": [],
-    "paragraphs": [],
-    "cta_candidates": []
+    "title": "Tekoälyn mestarikurssi",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Tekoälyn mestarikurssi"
+      },
+      {
+        "level": "h2",
+        "text": "Mitä on luvassa? Katso alta kurssin esittelyvideo - kouluttajien kertomana!"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälyn Mestarikurssi - koulutus, joka vie yrityksesi seuraavalle tasolle"
+      },
+      {
+        "level": "h2",
+        "text": "Ilmoittaudu Tekoälyn mestarikurssille"
+      },
+      {
+        "level": "h3",
+        "text": "Miksi osallistua?"
+      },
+      {
+        "level": "h3",
+        "text": "Mitä saat?"
+      },
+      {
+        "level": "h3",
+        "text": "Kenelle?"
+      },
+      {
+        "level": "h3",
+        "text": "Kurssin sisältö:"
+      },
+      {
+        "level": "h3",
+        "text": "Tekoälyn käyttökohteet, työkalut ja promptaus - Jonna"
+      },
+      {
+        "level": "h3",
+        "text": "Tekoäly kilpailija-analyysissä, markkinatutkimuksessa ja asiakasprofiloinnissa - Jonna"
+      },
+      {
+        "level": "h3",
+        "text": "Tekoäly sisällöntuotannossa ja hakukoneoptimoinnissa - Jonna"
+      },
+      {
+        "level": "h3",
+        "text": "MyGPT-assistentit ja tekoälyagentit - Jonna"
+      },
+      {
+        "level": "h3",
+        "text": "Visuaalinen materiaali 1 – mahdollisuudet - Ville"
+      },
+      {
+        "level": "h3",
+        "text": "Visuaalinen materiaali 2 – perustaidot haltuun - Ville"
+      },
+      {
+        "level": "h3",
+        "text": "Visuaalinen materiaali 3 – soveltaminen käytäntöön - Ville"
+      },
+      {
+        "level": "h3",
+        "text": "Seuraavan Mestarikurssin aikataulu:"
+      },
+      {
+        "level": "h3",
+        "text": "Mestarikurssin seuraava ryhmä starttaa elokuussa!"
+      },
+      {
+        "level": "h3",
+        "text": "Toteutus ja hinta"
+      },
+      {
+        "level": "h3",
+        "text": "Meidän koulutuksissamme opit helppotajuisesti"
+      },
+      {
+        "level": "h3",
+        "text": "Probot Oy:n AD Minna Haarala:"
+      },
+      {
+        "level": "h3",
+        "text": "Iin kunnan hyvinvointijohtaja, Janne Puolitaival:"
+      },
+      {
+        "level": "h3",
+        "text": "Osfysion toimitusjohtaja Jarkko Auno:"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Haluatko pysyä ajan hermolla ja varmistaa, että tiimisi hyödyntää tekoälyn tarjoamat mahdollisuudet täysimääräisesti? Tiedämme, että aikasi on arvokasta ja tehtävälistasi pitkä. Siksi olemme koonneet sinulle 7 etäkoulutuskerran intensiivikurssin , joka antaa sinulle ja tiimillesi konkreettiset työkalut ja taidot tekoälyn hyödyntämiseen markkinoinnissa , viestinnässä sekä liiketoiminnan kehittämisessä .",
+      "Seuraava ryhmä aloittaa 27.8.2026. Ilmoittautuminen on jo käynnissä!",
+      "Kysymyksiin vastaa Kuulun koulutusvastaava Teija Lämpsä, 040 5534 558 tai teija@kuulu.fi",
+      "Tämä kurssi on suunnattu erityisesti keskisuurten ja suurten yritysten asiantuntijoille, päälliköille, johtajille ja kokonaisille tiimeille, jotka haluavat varmistaa, että he ovat tekoälyn käytössä eturintamassa. Tai kasvuhalukkaille yrittäjille, joilla ei ole määrättömästi aikaa käytettävissä tekoälytyökalujen itsenäiseen kokeiluun.",
+      "Tämä päivä luo vahvan perustan tekoälyn hyödyntämiselle asiantuntijatyössä. Tutustut siihen, missä tilanteissa tekoäly tuo arvoa, mitä työkaluja kannattaa käyttää ja miten promptausta kehitetään.",
+      "Tämän päivän aikana keskityt strategiseen suunnitteluun: kilpailija-analyysiin, markkinatutkimukseen ja asiakasprofilointiin. Teet harjoituksia, jotka tuovat konkreettisia oivalluksia omaan työarkeesi.",
+      "Tässä osiossa keskityt sisällön suunnitteluun ja optimointiin tekoälyn avulla. Rakennat sisältösuunnitelman ja harjoittelet SEO:n hyödyntämistä tekoälyavusteisesti.",
+      "Opit rakentamaan omia tekoälyassistentteja. Päivän aikana rakennat MyGPT-agentin, jota voit hyödyntää myynnissä, markkinoinnissa, asiakaspalvelussa ja koulutuksessa.",
+      "Ensimmäinen visupäivä kartoittaa tekoälykuvien ja -videoiden mahdollisuudet. Tutustut työkaluihin ja niiden käytön rajoihin sekä pääset meittimään, miten niitä voidaan hyödyntää organisaatiossasi.",
+      "Toinen visupäivä pureutuu promptaamiseen, ikonien generointiin ja iteratiiviseen työskentelyyn. Päivän aikana luodaan ensimmäiset omat kuvat ja graafiset elementit.",
+      "Kolmas visupäivä vie visuaalisen tekoälytyön osaksi arkea. Pääset tekemään omaa projektia ja rakentamaan prosesseja organisaation käyttöön.",
+      "Kouluttajamme ovat alan asiantuntijoita, jotka ovat työskennelleet erilaisten tekoälytyökalujen kanssa. He jakavat sinulle käytännön esimerkkejä, vinkkejä ja parhaita käytäntöjä. He vastaavat myös kaikkiin kysymyksiisi ja auttavat sinua soveltamaan oppimaasi omaan yritykseesi.",
+      "Älä jää jälkeen markkinoinnin kehityksestä. Ota yhteyttä meihin jo tänään ja varaa paikkasi seuraavaan koulutukseemme. Tämä on investointi, joka maksaa itsensä takaisin moninkertaisesti.",
+      "Jotta saat kurssista täyden hyödyn, sinulla tulee olla joku maksullisen lisenssin tekoälytyökalu käytössäsi.",
+      "Kurssilla käydään läpi mm. ChatGPT, Copilot, Gemini, Claude, Perplexity sekä visuaalityökaluja (esim. Midjourney, Nano Banana, Adobe Firefly, Canva AI). Osaan työkaluista voi tarvita maksullisen lisenssin – kurssin sisältöä voi kuitenkin soveltaa myös ilman kaikkia maksullisia versioita.",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "/tekoalyn-perjantaipulssi?hsLang=fi-fi",
+        "label": "Tutustu Perjantaipulssiin täällä!"
+      }
+    ]
   },
   "link_map": {
     "link_count": 19,
