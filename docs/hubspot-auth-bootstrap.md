@@ -46,8 +46,10 @@ Tämän ympäristön testissä juuri `hs init` osoittautui turvallisimmaksi läh
 
 HubSpot CLI:n nykyinen käytännön käyttäytyminen tässä ympäristössä:
 
-- `hs account auth` ilman konfiguraatiota ei vienyt suoraan eteenpäin
-- `hs init` käynnisti henkilökohtaisen access keyn setup-dialogin
+- `hs account auth` käynnistää interaktiivisen personal access key -dialogin
+- `hs init` käynnistää saman personal access key -setupin
+- `hs auth --auth-type personalaccesskey --personal-access-key "<KEY>"` ei ole tässä ympäristössä oikea pääpolku, koska CLI ohjaa käyttämään `hs account auth` -mallia
+- jos avainta ei syötetä, auth pysähtyy interaktiiviseen vaiheeseen eikä konfiguraatio valmistu
 
 Jos henkilökohtainen access key on jo tiedossa, vaihtoehtoinen polku on:
 
@@ -62,6 +64,18 @@ Jos käytetään interaktiivista flow’ta, odotettavissa on tyyppisesti:
   - syötä olemassa oleva personal access key
 
 Ilman avainta auth ei valmistu, joten tämä on edelleen todellinen blocker siihen asti kunnes käyttäjä syöttää keyn tai toimittaa exportin.
+
+### 2.1.1 Käytännössä havaittu blocker tässä ympäristössä
+
+Testatut polut:
+
+- `hs init` → avaa interaktiivisen personal access key -flow’n
+- `hs account auth` → avaa interaktiivisen personal access key -flow’n
+- `hs auth --auth-type personalaccesskey --personal-access-key "<KEY>"` → ei ole käytännössä suositeltu polku tässä CLI-konfiguraatiomallissa
+
+Johtopäätös:
+
+> Auth on teknisesti käynnistettävissä, mutta ilman oikeaa personal access keytä tai valmista exporttia emme voi edetä fetch-vaiheeseen.
 
 ## 2.2 Heti authin jälkeen
 
