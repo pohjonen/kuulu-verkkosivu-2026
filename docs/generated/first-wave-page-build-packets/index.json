@@ -1,0 +1,40 @@
+{
+  "packets": [
+    {
+      "page_id": "homepage-v2",
+      "path": "docs/generated/first-wave-page-build-packets/homepage-v2.json",
+      "module_count": 8,
+      "link_count": 20
+    },
+    {
+      "page_id": "video-service-v2",
+      "path": "docs/generated/first-wave-page-build-packets/video-service-v2.json",
+      "module_count": 9,
+      "link_count": 20
+    },
+    {
+      "page_id": "training-v2",
+      "path": "docs/generated/first-wave-page-build-packets/training-v2.json",
+      "module_count": 8,
+      "link_count": 22
+    },
+    {
+      "page_id": "digimarkkinointi-v2",
+      "path": "docs/generated/first-wave-page-build-packets/digimarkkinointi-v2.json",
+      "module_count": 8,
+      "link_count": 24
+    },
+    {
+      "page_id": "case-studies-v2",
+      "path": "docs/generated/first-wave-page-build-packets/case-studies-v2.json",
+      "module_count": 4,
+      "link_count": 22
+    },
+    {
+      "page_id": "yhteystiedot-v2",
+      "path": "docs/generated/first-wave-page-build-packets/yhteystiedot-v2.json",
+      "module_count": 5,
+      "link_count": 21
+    }
+  ]
+}
