@@ -50,4 +50,8 @@ python3 "/workspace/scripts/bootstrap_v2_blueprint.py"
 python3 "/workspace/scripts/validate_blueprint_scaffold.py"
 echo
 
+echo "[11/11] Cross-artifact consistency"
+python3 "/workspace/scripts/validate_preauth_artifacts.py"
+echo
+
 echo "Refresh complete."
