@@ -86,6 +86,26 @@ Kirjaa heti fetchin jälkeen:
 - oliko kyseessä theme root vai pelkkä osakansio
 - onko rakenne odotetun kaltainen
 
+### 3.3 Aja source match + audit yhdellä runnerilla
+
+Suositus:
+
+```bash
+bash scripts/run_post_auth_audit.sh hubspot/source-theme
+```
+
+Tämä kokoaa yhteen:
+
+- bootstrap-statuksen
+- julkisen asset-signaturen matchin
+- fetched sourcen rakenteellisen auditoinnin
+
+Lopputuloksena saat yhteen paikkaan:
+
+- `docs/generated/post-auth-audit/public-signature-match.txt`
+- `docs/generated/post-auth-audit/source-theme-audit.json`
+- `docs/generated/post-auth-audit/source-theme-audit.md`
+
 ---
 
 ## 4. Ensimmäinen oikea audit

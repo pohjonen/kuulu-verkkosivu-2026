@@ -204,17 +204,19 @@ Heti kun `hs account auth` onnistuu tai teeman export saadaan, käytännön eten
 3. vertaile fetched themea julkiseen signatuuriin:
    - `python3 scripts/compare_source_theme_to_public_signature.py hubspot/source-theme`
    - `docs/hubspot-source-theme-match-playbook.md`
-4. auditoi fetched theme tämän avulla:
+4. aja koottu post-auth audit runner:
+   - `bash scripts/run_post_auth_audit.sh hubspot/source-theme`
+5. auditoi fetched theme tämän avulla:
    - `docs/hubspot-theme-audit-checklist.md`
-5. tee oikea v2-klooni:
+6. tee oikea v2-klooni:
    - `bash scripts/hubspot_clone_v2_theme.sh source-theme kuulu-theme-v2`
-6. vertaa oikeaa kloonia blueprintiin:
+7. vertaa oikeaa kloonia blueprintiin:
    - `hubspot/kuulu-theme-v2-blueprint/`
-7. käytä ensimmäisen aallon build-dataa:
+8. käytä ensimmäisen aallon build-dataa:
    - `docs/generated/kuulu-first-wave-hs-data.json`
    - `docs/hubspot-first-wave-build-checklist.md`
-8. siirrä blueprintin moduuli- ja templatepäätökset oikeaan `hubspot/kuulu-theme-v2/`-hakemistoon
-9. käynnistä turvallinen watch oikeaan v2-polkuun:
+9. siirrä blueprintin moduuli- ja templatepäätökset oikeaan `hubspot/kuulu-theme-v2/`-hakemistoon
+10. käynnistä turvallinen watch oikeaan v2-polkuun:
    - `bash scripts/hubspot_watch_v2.sh <local-src> <remote-dest>`
 
 ---
