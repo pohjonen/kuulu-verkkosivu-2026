@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "source_theme": "hubspot/source-theme",
+  "entries": [
+    {
+      "source_module": "cinematic_hero.module",
+      "target_module": "hero-cinematic-v2",
+      "target_role": "hero",
+      "exists": true,
+      "meta": {
+        "label": "01 – Hero-osio",
+        "categories": [
+          "media"
+        ],
+        "content_types": [
+          "LANDING_PAGE",
+          "SITE_PAGE"
+        ],
+        "global": false,
+        "is_available_for_new_content": true
+      },
+      "highlight_fields": [
+        {
+          "name": "background_type",
+          "label": "Taustan tyyppi",
+          "type": "choice",
+          "default": "video_url",
+          "choices": [
+            [
+              "video_url",
+              "Videon URL"
+            ],
+            [
+              "video_file",
+              "Videotiedosto (upload)"
+            ],
+            [
+              "image",
+              "Taustakuva"
+            ]
+          ],
+          "help_text": "Valitse haluatko käyttää videon URL-osoitetta, ladata videotiedoston vai käyttää taustakuvaa."
+        },
+        {
+          "name": "background_video_url",
+          "label": "Taustavideon URL",
+          "type": "text",
+          "default": "https://www.kuulu.fi/hubfs/Kuulu%20Showreel%202025%20l%C3%A4nd%C3%A4ri%202_1080p.mp4",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "background_video_file",
+          "label": "Videotiedosto",
+          "type": "file",
+          "default": null,
+          "choices": null,
+          "help_text": "Lataa tai valitse videotiedosto tiedostohallinnasta."
+        },
+        {
+          "name": "background_image",
+          "label": "Taustakuva",
+          "type": "image",
+          "default": {
+            "src": "",
+            "alt": "Taustakuva"
+          },
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "section_tag",
+          "label": "Osion tunniste",
+          "type": "text",
+          "default": "// SYSTEMAATTINEN MARKKINOINTIKONEISTO",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "headline",
+          "label": "Pääotsikko",
+          "type": "text",
+          "default": "Markkinointia, joka tuottaa liidejä ja rakentaa brändiä",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "headline_highlight",
+          "label": "Otsikon korostusosa (vihreä)",
+          "type": "text",
+          "default": "— ennustettavasti",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "lead_text",
+          "label": "Ingressi",
+          "type": "text",
+          "default": "Lopeta arvaileminen. Rakennamme teille markkinointikoneiston, joka yhdistää videon, digin ja tekoälyn mitattaviksi tuloksiksi.",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "sub_text",
+          "label": "Alateksti",
+          "type": "text",
+          "default": "Ei enää yksittäisiä projekteja, vaan systeemi joka toimii kuukaudesta toiseen.",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "cta_primary_text",
+          "label": "Ensisijainen CTA -teksti",
+          "type": "text",
+          "default": "VARAA SPARRAUS",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "cta_primary_url",
+          "label": "Ensisijainen CTA -linkki",
+          "type": "text",
+          "default": "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "cta_secondary_text",
+          "label": "Toissijainen CTA -teksti",
+          "type": "text",
+          "default": "Ilmoittaudu maksuttomaan webinaariin",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "cta_secondary_url",
+          "label": "Toissijainen CTA -linkki",
+          "type": "text",
+          "default": "#zero-click-earlybird",
+          "choices": null,
+          "help_text": null
+        }
+      ],
+      "paths": {
+        "module_dir": "hubspot/source-theme/modules/cinematic_hero.module",
+        "fields_json": "hubspot/source-theme/modules/cinematic_hero.module/fields.json",
+        "meta_json": "hubspot/source-theme/modules/cinematic_hero.module/meta.json",
+        "module_html": "hubspot/source-theme/modules/cinematic_hero.module/module.html"
+      },
+      "notes": [
+        "Use this only as seed/reference data for v2 forking.",
+        "Do not modify the source module directly."
+      ]
+    },
+    {
+      "source_module": "cinematic_problem_list.module",
+      "target_module": "problem-grid-v2",
+      "target_role": "problem-grid",
+      "exists": true,
+      "meta": {
+        "label": "03 – Listaus (kuvake + teksti)",
+        "categories": [
+          "body_content",
+          "text"
+        ],
+        "content_types": [
+          "SITE_PAGE"
+        ],
+        "global": false,
+        "is_available_for_new_content": true
+      },
+      "highlight_fields": [
+        {
+          "name": "section_tag",
+          "label": "Osion tagi",
+          "type": "text",
+          "default": "// Ongelma",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "headline",
+          "label": "Pääotsikko",
+          "type": "text",
+          "default": "Tunnistatko tämän",
+          "choices": null,
+          "help_text": null
+        }
+      ],
+      "paths": {
+        "module_dir": "hubspot/source-theme/modules/cinematic_problem_list.module",
+        "fields_json": "hubspot/source-theme/modules/cinematic_problem_list.module/fields.json",
+        "meta_json": "hubspot/source-theme/modules/cinematic_problem_list.module/meta.json",
+        "module_html": "hubspot/source-theme/modules/cinematic_problem_list.module/module.html"
+      },
+      "notes": [
+        "Use this only as seed/reference data for v2 forking.",
+        "Do not modify the source module directly."
+      ]
+    },
+    {
+      "source_module": "cinematic_two_engines.module",
+      "target_module": "service-pillars-v2",
+      "target_role": "two-engines-to-pillars",
+      "exists": true,
+      "meta": {
+        "label": "04 – Korttipari",
+        "categories": [
+          "body_content"
+        ],
+        "content_types": [
+          "SITE_PAGE"
+        ],
+        "global": false,
+        "is_available_for_new_content": true
+      },
+      "highlight_fields": [
+        {
+          "name": "section_tag",
+          "label": "Osion tunniste",
+          "type": "text",
+          "default": "// Ratkaisu",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "headline",
+          "label": "Pääotsikko",
+          "type": "text",
+          "default": "Kaksi konetta, ",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "intro_text",
+          "label": "Ingressi",
+          "type": "text",
+          "default": "Emme myy projekteja, vaan tuloksia. Rakennamme kaksi moottoria, jotka toimivat saumattomasti yhteen: toinen tuo kauppaa, toinen rakentaa luottamusta.",
+          "choices": null,
+          "help_text": null
+        }
+      ],
+      "paths": {
+        "module_dir": "hubspot/source-theme/modules/cinematic_two_engines.module",
+        "fields_json": "hubspot/source-theme/modules/cinematic_two_engines.module/fields.json",
+        "meta_json": "hubspot/source-theme/modules/cinematic_two_engines.module/meta.json",
+        "module_html": "hubspot/source-theme/modules/cinematic_two_engines.module/module.html"
+      },
+      "notes": [
+        "Use this only as seed/reference data for v2 forking.",
+        "Do not modify the source module directly."
+      ]
+    },
+    {
+      "source_module": "cinematic_metrics.module",
+      "target_module": "stats-trust-band-v2",
+      "target_role": "metrics",
+      "exists": true,
+      "meta": {
+        "label": "07 – Mittarit + kuva",
+        "categories": [
+          "body_content"
+        ],
+        "content_types": [
+          "SITE_PAGE"
+        ],
+        "global": false,
+        "is_available_for_new_content": true
+      },
+      "highlight_fields": [
+        {
+          "name": "section_tag",
+          "label": "Osion tunniste",
+          "type": "text",
+          "default": "// Lopputulos",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "headline",
+          "label": "Pääotsikko",
+          "type": "text",
+          "default": "Mittaamme ",
+          "choices": null,
+          "help_text": null
+        }
+      ],
+      "paths": {
+        "module_dir": "hubspot/source-theme/modules/cinematic_metrics.module",
+        "fields_json": "hubspot/source-theme/modules/cinematic_metrics.module/fields.json",
+        "meta_json": "hubspot/source-theme/modules/cinematic_metrics.module/meta.json",
+        "module_html": "hubspot/source-theme/modules/cinematic_metrics.module/module.html"
+      },
+      "notes": [
+        "Use this only as seed/reference data for v2 forking.",
+        "Do not modify the source module directly."
+      ]
+    },
+    {
+      "source_module": "cinematic_koulutus_form.module",
+      "target_module": "lead-capture-form-cta-v2",
+      "target_role": "form-cta",
+      "exists": true,
+      "meta": {
+        "label": "12 – Koulutusyhteydenotto (lomake)",
+        "categories": [
+          "forms_and_buttons"
+        ],
+        "content_types": [
+          "SITE_PAGE"
+        ],
+        "global": false,
+        "is_available_for_new_content": true
+      },
+      "highlight_fields": [
+        {
+          "name": "section_tag",
+          "label": "Osion tunniste",
+          "type": "text",
+          "default": "// Ota yhteyttä",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "headline",
+          "label": "Pääotsikko",
+          "type": "text",
+          "default": "Pyydä tarjous",
+          "choices": null,
+          "help_text": null
+        },
+        {
+          "name": "form_id",
+          "label": "HubSpot Form ID",
+          "type": "text",
+          "default": "805f07bd-a002-45f0-9aa5-af329327fcba",
+          "choices": null,
+          "help_text": null
+        }
+      ],
+      "paths": {
+        "module_dir": "hubspot/source-theme/modules/cinematic_koulutus_form.module",
+        "fields_json": "hubspot/source-theme/modules/cinematic_koulutus_form.module/fields.json",
+        "meta_json": "hubspot/source-theme/modules/cinematic_koulutus_form.module/meta.json",
+        "module_html": "hubspot/source-theme/modules/cinematic_koulutus_form.module/module.html"
+      },
+      "notes": [
+        "Use this only as seed/reference data for v2 forking.",
+        "Do not modify the source module directly."
+      ]
+    }
+  ]
+}
