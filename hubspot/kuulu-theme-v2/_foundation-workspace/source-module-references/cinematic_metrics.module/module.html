@@ -1,0 +1,52 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media_block() %}
+  {% set mt = module.media_type|default("image") %}
+  {% if mt == "image" %}
+    {% if module.image and module.image.src %}
+      <img src="{{ module.image.src }}" alt="{{ module.image.alt|default('') }}" style="width: 100%; height: auto; display: block;">
+    {% else %}
+      <img src="{{ get_asset_url('../../images/v4/dashboard-v3.png') }}" alt="Mittaamme koko suppilon" style="width: 100%; height: auto; display: block;">
+    {% endif %}
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% else %}
+    <img src="{{ get_asset_url('../../images/v4/dashboard-v3.png') }}" alt="Mittaamme koko suppilon" style="width: 100%; height: auto; display: block;">
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("image") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("left") %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+  <div class="blob-shape-1" style="top: -30%; left: -20%;"></div>
+  <div class="blob-shape-2" style="bottom: -40%; right: -20%;"></div>
+  <div class="glow-orb" style="width: 500px; height: 500px; top: 20%; right: 10%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="cinematic-section-rounded glass-card" style="border: 1px solid rgba(0,255,135,0.15);">
+      <div class="grid-2" style="gap: 3rem; align-items: center;">
+        <div style="order: {% if has_media and mp == 'right' %}1{% else %}2{% endif %};">
+          <span class="section-tag">{{ module.section_tag }}</span>
+          <h2 class="section-header">{{ module.headline }} <span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+          <p style="color: var(--cinematic-text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">{{ module.lead_text }}</p>
+          <p style="color: var(--cinematic-text); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">{{ module.body_text }}</p>
+          {% if module.cta_text and module.cta_url %}
+          <div style="margin-top: 2rem;">
+            <a href="{{ module.cta_url }}" class="btn-cinematic-primary">{{ module.cta_text }}</a>
+          </div>
+          {% endif %}
+        </div>
+        {% if has_media %}
+        <div style="order: {% if mp == 'right' %}2{% else %}1{% endif %}; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green); border: 1px solid rgba(255,255,255,0.1);">
+          {{ render_media_block() }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

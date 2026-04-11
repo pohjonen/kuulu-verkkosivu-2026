@@ -1,0 +1,60 @@
+{
+  "source_theme": "hubspot/source-theme",
+  "v2_theme": "hubspot/kuulu-theme-v2",
+  "workspace_root": "hubspot/kuulu-theme-v2/_foundation-workspace",
+  "foundation_modules": [
+    {
+      "source_module": "cinematic_hero.module",
+      "target_module": "hero-cinematic-v2",
+      "decision": "fork-to-v2",
+      "copied_to": "_foundation-workspace/source-module-references/cinematic_hero.module"
+    },
+    {
+      "source_module": "cinematic_problem_list.module",
+      "target_module": "problem-grid-v2",
+      "decision": "fork-to-v2",
+      "copied_to": "_foundation-workspace/source-module-references/cinematic_problem_list.module"
+    },
+    {
+      "source_module": "cinematic_two_engines.module",
+      "target_module": "service-pillars-v2",
+      "decision": "fork-to-v2",
+      "copied_to": "_foundation-workspace/source-module-references/cinematic_two_engines.module"
+    },
+    {
+      "source_module": "cinematic_metrics.module",
+      "target_module": "stats-trust-band-v2",
+      "decision": "fork-to-v2",
+      "copied_to": "_foundation-workspace/source-module-references/cinematic_metrics.module"
+    },
+    {
+      "source_module": "cinematic_koulutus_form.module",
+      "target_module": "lead-capture-form-cta-v2",
+      "decision": "fork-to-v2",
+      "copied_to": "_foundation-workspace/source-module-references/cinematic_koulutus_form.module"
+    },
+    {
+      "source_module": "services-grid.module",
+      "target_module": "service-pillars-v2",
+      "decision": "fork-to-v2",
+      "copied_to": "_foundation-workspace/source-module-references/services-grid.module"
+    },
+    {
+      "source_module": "video-showcase.module",
+      "target_module": "reference-grid-v2",
+      "decision": "fork-to-v2",
+      "copied_to": "_foundation-workspace/source-module-references/video-showcase.module"
+    },
+    {
+      "source_module": "person-profile.module",
+      "target_module": "person-profile-v2",
+      "decision": "fork-to-v2",
+      "copied_to": "_foundation-workspace/source-module-references/person-profile.module"
+    }
+  ],
+  "notes": [
+    "Source module references are copied here read-only for comparison.",
+    "Do not edit hubspot/source-theme directly.",
+    "Actual implementation work must happen in hubspot/kuulu-theme-v2 only."
+  ]
+}
