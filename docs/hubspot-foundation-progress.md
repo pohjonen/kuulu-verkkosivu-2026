@@ -100,14 +100,40 @@ Lähtömoduuli:
 
 - `hubspot/source-theme/modules/cinematic_koulutus_form.module`
 
+## Ensimmäinen oikea v2-sivukokonaisuus
+
+### `homepage-v2`
+
+Polut:
+
+- `hubspot/kuulu-theme-v2/templates/homepage-v2.html`
+- `hubspot/kuulu-theme-v2/templates/layouts/base-cinematic-v2.html`
+- `hubspot/kuulu-theme-v2/templates/partials/header-cinematic-v2.html`
+- `hubspot/kuulu-theme-v2/templates/partials/footer-cinematic-v2.html`
+
+Tässä vaiheessa:
+
+- ensimmäinen oikea v2-template on kytketty foundation-moduuleihin
+- nykyisen cinematic-etusivun rakenteesta on tehty turvallinen v2-versio paikalliseen klooniin
+- header ja footer on kopioitu v2-partialeiksi, jotta niitä voidaan myöhemmin siistiä rikkomatta source-themeä
+
+Kytketyt foundation-moduulit:
+
+- `hero-cinematic-v2`
+- `problem-grid-v2`
+- `service-pillars-v2`
+- `stats-trust-band-v2`
+- `lead-capture-form-cta-v2`
+
 ## Mitä ei ole vielä tehty
 
 Tässä vaiheessa ei ole vielä:
 
 - uploadattu mitään HubSpotiin
 - watchattu mitään remote-polkuun
-- kytketty näitä moduuleita v2-templateihin remote-puolella
+- kytketty näitä moduuleita remote-puolen v2-sivuihin
 - tehty lopullista fields.json-hienosäätöä todellisen editorikokemuksen perusteella
+- siivottu v2-headeriä ja v2-footeria täysin pois source-lähtöisestä sisällöstä
 
 ## Foundation-aallon tämänhetkinen tila
 
@@ -144,4 +170,4 @@ Seuraaviin ei kosketa:
 
 Nyt projekti on siirtynyt dokumentaatiovaiheesta ensimmäisiin oikeisiin v2-moduuliforkkeihin.
 
-Ensimmäiset kaksi foundation-moduulia ovat olemassa paikallisessa v2-kloonissa, ja seuraava vaihe on laajentaa tätä foundation-kerrosta edelleen ennen sivukohtaista kokoamista.
+Ensimmäinen foundation-kerros on nyt olemassa ja ensimmäinen oikea v2-sivukokonaisuus (`homepage-v2`) on koottu paikalliseen klooniin. Seuraava vaihe on syventää moduuliforkkeja ja rakentaa seuraavat v2-sivut samalla mallilla.
