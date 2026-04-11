@@ -1,0 +1,214 @@
+[
+  {
+    "name": "content_group",
+    "label": "Sisältö",
+    "type": "group",
+    "children": [
+      {
+        "name": "section_tag",
+        "label": "Osion tunniste",
+        "type": "text",
+        "default": "// Ratkaisu"
+      },
+      {
+        "name": "heading",
+        "label": "Pääotsikko",
+        "type": "text",
+        "required": true,
+        "default": "Kaksi konetta, yksi tavoite"
+      },
+      {
+        "name": "highlight_text",
+        "label": "Korostusteksti",
+        "type": "text",
+        "default": "yksi tavoite"
+      },
+      {
+        "name": "intro_text",
+        "label": "Ingressi",
+        "type": "textarea",
+        "default": "Emme myy projekteja, vaan tuloksia. Rakennamme koneiston, jossa näkyvyys ja kysynnän kotiutus toimivat yhdessä."
+      },
+      {
+        "name": "cards",
+        "label": "Pilarikortit",
+        "type": "group",
+        "occurrence": {
+          "min": 2,
+          "max": 4,
+          "sorting_label_field": "title",
+          "default": 2
+        },
+        "children": [
+          {
+            "name": "icon_class",
+            "label": "Ikoni (Font Awesome)",
+            "type": "text",
+            "default": "fas fa-rocket"
+          },
+          {
+            "name": "title",
+            "label": "Otsikko",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "subtitle",
+            "label": "Alaotsikko",
+            "type": "text",
+            "default": ""
+          },
+          {
+            "name": "description",
+            "label": "Kuvaus",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "benefits",
+            "label": "Hyötylista",
+            "type": "group",
+            "occurrence": {
+              "min": 0,
+              "max": 5,
+              "sorting_label_field": "text",
+              "default": 3
+            },
+            "children": [
+              {
+                "name": "text",
+                "label": "Teksti",
+                "type": "text",
+                "default": ""
+              }
+            ]
+          },
+          {
+            "name": "cta_text",
+            "label": "Kortin CTA",
+            "type": "text",
+            "default": ""
+          },
+          {
+            "name": "cta_link",
+            "label": "Kortin CTA linkki",
+            "type": "link",
+            "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "media_group",
+    "label": "Media",
+    "type": "group",
+    "children": [
+      {
+        "name": "show_media",
+        "label": "Näytä media",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": true
+      },
+      {
+        "name": "media_type",
+        "label": "Median tyyppi",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          ["image", "Kuva"],
+          ["video_url", "Videon URL"],
+          ["video_file", "Videotiedosto"],
+          ["none", "Ei mediaa"]
+        ],
+        "default": "image",
+        "visibility": {
+          "controlling_field_path": "media_group.show_media",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "main_image",
+        "label": "Pääkuva",
+        "type": "image",
+        "responsive": true,
+        "resizable": true,
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "image",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "video_url",
+        "label": "Videon URL",
+        "type": "text",
+        "default": "",
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "video_url",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "video_file",
+        "label": "Videotiedosto",
+        "type": "file",
+        "picker": "file",
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "video_file",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "media_position",
+        "label": "Median sijainti",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          ["top", "Ylhäällä"],
+          ["before_cards", "Korttien yläpuolella"]
+        ],
+        "default": "before_cards",
+        "visibility": {
+          "controlling_field_path": "media_group.show_media",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        }
+      }
+    ]
+  },
+  {
+    "name": "style_group",
+    "label": "Tyyli",
+    "type": "group",
+    "children": [
+      {
+        "name": "background_variant",
+        "label": "Taustavariantti",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          ["gradient-section-tl", "Top-left glow"],
+          ["gradient-section-dark", "Dark gradient"],
+          ["gradient-section-deep", "Deep gradient"]
+        ],
+        "default": "gradient-section-tl"
+      },
+      {
+        "name": "surface_style",
+        "label": "Pintatyyli",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          ["glass-card", "Glass"],
+          ["solid-card", "Solid"]
+        ],
+        "default": "glass-card"
+      }
+    ]
+  }
+]

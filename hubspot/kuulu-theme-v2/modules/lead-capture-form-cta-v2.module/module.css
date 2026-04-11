@@ -1,0 +1,88 @@
+.kuulu-form-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: start;
+}
+
+.kuulu-form-cta__content {
+  display: grid;
+  gap: 1rem;
+}
+
+.kuulu-form-cta__text {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.kuulu-form-cta__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.kuulu-form-cta__stat {
+  padding: 1rem;
+  text-align: center;
+}
+
+.kuulu-form-cta__stat-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.kuulu-form-cta__stat-label {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+}
+
+.kuulu-form-cta__rep {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.kuulu-form-cta__rep img {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.kuulu-form-cta__rep strong,
+.kuulu-form-cta__rep span {
+  display: block;
+}
+
+.kuulu-form-cta__rep span {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.kuulu-form-cta__form {
+  padding: 1.5rem;
+}
+
+.kuulu-form-cta__fallback {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .kuulu-form-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .kuulu-form-cta__stats {
+    grid-template-columns: 1fr;
+  }
+}

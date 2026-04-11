@@ -1,0 +1,170 @@
+[
+  {
+    "name": "content_group",
+    "label": "Sisältö",
+    "type": "group",
+    "children": [
+      {
+        "name": "section_tag",
+        "label": "Osion tunniste",
+        "type": "text",
+        "default": "// Ota yhteyttä"
+      },
+      {
+        "name": "heading",
+        "label": "Pääotsikko",
+        "type": "text",
+        "required": true,
+        "default": "Pyydä tarjous"
+      },
+      {
+        "name": "highlight_text",
+        "label": "Korostusteksti",
+        "type": "text",
+        "default": "koulutuksesta"
+      },
+      {
+        "name": "description",
+        "label": "Tekstirivit",
+        "type": "group",
+        "occurrence": {
+          "min": 1,
+          "max": 4,
+          "sorting_label_field": "text",
+          "default": 3
+        },
+        "children": [
+          {
+            "name": "text",
+            "label": "Teksti",
+            "type": "textarea",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "stats",
+        "label": "Statit",
+        "type": "group",
+        "occurrence": {
+          "min": 0,
+          "max": 3,
+          "sorting_label_field": "label",
+          "default": 3
+        },
+        "children": [
+          {
+            "name": "value",
+            "label": "Arvo",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "label",
+            "label": "Selite",
+            "type": "text",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "rep_name",
+        "label": "Edustajan nimi",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "rep_subtitle",
+        "label": "Edustajan alaotsikko",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "rep_image",
+        "label": "Edustajan kuva",
+        "type": "image",
+        "responsive": true,
+        "resizable": true
+      }
+    ]
+  },
+  {
+    "name": "form_group",
+    "label": "Lomake",
+    "type": "group",
+    "children": [
+      {
+        "name": "form_mode",
+        "label": "Näyttötapa",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          ["embed", "Upotettu lomake"],
+          ["cta_only", "Vain CTA-linkki"]
+        ],
+        "default": "embed"
+      },
+      {
+        "name": "portal_id",
+        "label": "Portal ID",
+        "type": "text",
+        "default": "450584"
+      },
+      {
+        "name": "form_id",
+        "label": "HubSpot Form ID",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "form_region",
+        "label": "HubSpot alue",
+        "type": "text",
+        "default": "eu1"
+      },
+      {
+        "name": "form_target_id",
+        "label": "Lomakkeen target ID",
+        "type": "text",
+        "default": "kuulu-form-target"
+      },
+      {
+        "name": "success_message",
+        "label": "Onnistumisviesti",
+        "type": "textarea",
+        "default": "Kiitos yhteydenotostasi! Olemme sinuun yhteydessä mahdollisimman pian."
+      },
+      {
+        "name": "cta_label",
+        "label": "Vaihtoehtoinen CTA",
+        "type": "text",
+        "default": "VARAA SPARRAUS"
+      },
+      {
+        "name": "cta_link",
+        "label": "Vaihtoehtoinen CTA linkki",
+        "type": "link",
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"]
+      }
+    ]
+  },
+  {
+    "name": "style_group",
+    "label": "Tyyli",
+    "type": "group",
+    "children": [
+      {
+        "name": "background_variant",
+        "label": "Taustavariantti",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          ["gradient-section-tl", "Top-left glow"],
+          ["gradient-section-dark", "Dark gradient"],
+          ["gradient-section-deep", "Deep gradient"]
+        ],
+        "default": "gradient-section-tl"
+      }
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+{% macro render_media(module) %}
+  {% if module.media_group.media_type == "image" and module.media_group.main_image.src %}
+    <img src="{{ module.media_group.main_image.src }}" alt="{{ module.media_group.main_image.alt|default('') }}">
+  {% elif module.media_group.media_type == "video_file" and module.media_group.video_file %}
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="{{ module.media_group.video_file }}" type="video/mp4">
+    </video>
+  {% elif module.media_group.media_type == "video_url" and module.media_group.video_url %}
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="{{ module.media_group.video_url }}" type="video/mp4">
+    </video>
+  {% endif %}
+{% endmacro %}
+
+{% set cards = module.content_group.cards or [] %}
+{% set show_media = module.media_group.show_media and module.media_group.media_type != "none" %}
+
+<section class="cinematic-section {{ module.style_group.background_variant|default('gradient-section-tl') }}" id="services">
+  <div class="kuulu-container">
+    <div class="kuulu-service-pillars {% if module.style_group.surface_style == 'glass-card' %}kuulu-surface-glass{% else %}kuulu-card{% endif %}">
+      {% if module.content_group.section_tag %}
+        <span class="section-tag">{{ module.content_group.section_tag }}</span>
+      {% endif %}
+
+      {% if module.content_group.heading %}
+        <h2 class="section-header">
+          {{ module.content_group.heading }}
+          {% if module.content_group.highlight_text %}
+            <span class="kuulu-text-gradient"> {{ module.content_group.highlight_text }}</span>
+          {% endif %}
+        </h2>
+      {% endif %}
+
+      {% if module.content_group.intro_text %}
+        <p class="kuulu-service-pillars__intro">{{ module.content_group.intro_text }}</p>
+      {% endif %}
+
+      {% if show_media and module.media_group.media_position == "before_cards" %}
+        <div class="kuulu-service-pillars__media">
+          {{ render_media(module) }}
+        </div>
+      {% endif %}
+
+      <div class="kuulu-service-pillars__grid">
+        {% for card in cards %}
+          <article class="kuulu-service-pillars__card kuulu-card">
+            <div class="kuulu-service-pillars__icon" aria-hidden="true">
+              <i class="{{ card.icon_class|default('fas fa-circle') }}"></i>
+            </div>
+
+            {% if card.title %}
+              <h3 class="kuulu-service-pillars__title">{{ card.title }}</h3>
+            {% endif %}
+            {% if card.subtitle %}
+              <p class="kuulu-service-pillars__subtitle">{{ card.subtitle }}</p>
+            {% endif %}
+            {% if card.description %}
+              <p class="kuulu-service-pillars__description">{{ card.description }}</p>
+            {% endif %}
+
+            {% if card.benefits %}
+              <ul class="kuulu-service-pillars__benefits">
+                {% for benefit in card.benefits %}
+                  {% if benefit.text %}
+                    <li>{{ benefit.text }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+
+            {% if card.cta_text and card.cta_link.url.href %}
+              <a href="{{ card.cta_link.url.href }}" class="kuulu-button-secondary">
+                {{ card.cta_text }}
+              </a>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

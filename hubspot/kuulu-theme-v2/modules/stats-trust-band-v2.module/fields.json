@@ -1,0 +1,179 @@
+[
+  {
+    "name": "content_group",
+    "label": "Sisältö",
+    "type": "group",
+    "children": [
+      {
+        "name": "section_tag",
+        "label": "Osion tunniste",
+        "type": "text",
+        "default": "// Lopputulos"
+      },
+      {
+        "name": "heading",
+        "label": "Pääotsikko",
+        "type": "text",
+        "required": true,
+        "default": "Mittaamme koko suppilon"
+      },
+      {
+        "name": "highlight_text",
+        "label": "Korostusteksti",
+        "type": "text",
+        "default": "koko suppilon"
+      },
+      {
+        "name": "lead_text",
+        "label": "Ingressi",
+        "type": "textarea",
+        "default": "Zero Click -aikakaudella pelkkä sivuliikenne ei kerro totuutta."
+      },
+      {
+        "name": "body_text",
+        "label": "Leipäteksti",
+        "type": "textarea",
+        "default": "Mittaamme vaikuttavuutta, ostopotentiaalia ja kaupallisia tuloksia niin, että yhteys markkinoinnin ja myynnin välillä näkyy."
+      },
+      {
+        "name": "stat_items",
+        "label": "Statit",
+        "type": "group",
+        "occurrence": {
+          "min": 2,
+          "max": 5,
+          "sorting_label_field": "label",
+          "default": 3
+        },
+        "children": [
+          {
+            "name": "value",
+            "label": "Arvo",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "label",
+            "label": "Selite",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "context",
+            "label": "Lisäkonteksti",
+            "type": "text",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "name": "cta_text",
+        "label": "CTA teksti",
+        "type": "text",
+        "default": "VARAA SPARRAUS"
+      },
+      {
+        "name": "cta_link",
+        "label": "CTA linkki",
+        "type": "link",
+        "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG"]
+      }
+    ]
+  },
+  {
+    "name": "media_group",
+    "label": "Media",
+    "type": "group",
+    "children": [
+      {
+        "name": "show_media",
+        "label": "Näytä media",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": true
+      },
+      {
+        "name": "media_type",
+        "label": "Median tyyppi",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          ["image", "Kuva"],
+          ["video_url", "Videon URL"],
+          ["video_file", "Videotiedosto"],
+          ["none", "Ei mediaa"]
+        ],
+        "default": "image",
+        "visibility": {
+          "controlling_field_path": "media_group.show_media",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "image",
+        "label": "Kuva",
+        "type": "image",
+        "responsive": true,
+        "resizable": true,
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "image",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "video_url",
+        "label": "Videon URL",
+        "type": "text",
+        "default": "",
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "video_url",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "video_file",
+        "label": "Videotiedosto",
+        "type": "file",
+        "picker": "file",
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "video_file",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "media_position",
+        "label": "Median sijainti",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          ["left", "Vasen"],
+          ["right", "Oikea"]
+        ],
+        "default": "left"
+      }
+    ]
+  },
+  {
+    "name": "style_group",
+    "label": "Tyyli",
+    "type": "group",
+    "children": [
+      {
+        "name": "background_variant",
+        "label": "Taustavariantti",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          ["gradient-section-dark", "Dark gradient"],
+          ["gradient-section-deep", "Deep gradient"],
+          ["gradient-section-tl", "Top-left glow"]
+        ],
+        "default": "gradient-section-dark"
+      }
+    ]
+  }
+]

@@ -48,6 +48,58 @@ Lähtömoduuli:
 
 - `hubspot/source-theme/modules/cinematic_problem_list.module`
 
+### 3. `service-pillars-v2`
+
+Polku:
+
+- `hubspot/kuulu-theme-v2/modules/service-pillars-v2.module/`
+
+Tässä vaiheessa moduuli on rakennettu source-teeman kaksimoottori- ja palvelukorttirakenteiden pohjalta niin, että:
+
+- pilarit ovat rakenteisia repeater-kortteja
+- icon / subtitle / benefits / CTA on erotettu selkeästi editorikenttiin
+- media on valinnainen ja kontrolloitu
+- rakenne nojaa v2-token- ja utility-ajatteluun
+
+Lähtömoduulit:
+
+- `hubspot/source-theme/modules/cinematic_two_engines.module`
+- `hubspot/source-theme/modules/services-grid.module`
+
+### 4. `stats-trust-band-v2`
+
+Polku:
+
+- `hubspot/kuulu-theme-v2/modules/stats-trust-band-v2.module/`
+
+Tässä vaiheessa moduuli on rakennettu source-teeman metrics-rakenteen pohjalta niin, että:
+
+- statit on siirretty repeater-pohjaiseen malliin
+- media on erotettu omaksi kenttäryhmäkseen
+- CTA on hallittu ja valinnainen
+- rakenne toimii luottamus- ja mittariosioihin useilla sivutyypeillä
+
+Lähtömoduuli:
+
+- `hubspot/source-theme/modules/cinematic_metrics.module`
+
+### 5. `lead-capture-form-cta-v2`
+
+Polku:
+
+- `hubspot/kuulu-theme-v2/modules/lead-capture-form-cta-v2.module/`
+
+Tässä vaiheessa moduuli on rakennettu source-teeman koulutuslomakemoduulin pohjalta niin, että:
+
+- kuvaus, statit ja edustajablokki ovat rakenteisia kenttiä
+- form-mode voidaan vaihtaa upotetun lomakkeen ja CTA-fallbackin välillä
+- form-id, region, portal-id ja success-message ovat editorin hallinnassa
+- moduuli nojaa v2-token-rakenteeseen eikä live-sourceen
+
+Lähtömoduuli:
+
+- `hubspot/source-theme/modules/cinematic_koulutus_form.module`
+
 ## Mitä ei ole vielä tehty
 
 Tässä vaiheessa ei ole vielä:
@@ -57,21 +109,25 @@ Tässä vaiheessa ei ole vielä:
 - kytketty näitä moduuleita v2-templateihin remote-puolella
 - tehty lopullista fields.json-hienosäätöä todellisen editorikokemuksen perusteella
 
-## Seuraavat foundation-moduulit
+## Foundation-aallon tämänhetkinen tila
 
-Luontevat seuraavat moduulit:
-
-1. `service-pillars-v2`
-2. `stats-trust-band-v2`
-3. `lead-capture-form-cta-v2`
-
-Näin saadaan kasaan ensimmäinen oikeasti käyttökelpoinen foundation-aalto:
+Tähän mennessä foundation-aallosta on olemassa:
 
 - hero
 - problem
 - pillars
 - stats
 - form CTA
+
+Tämä muodostaa ensimmäisen oikeasti käyttökelpoisen v2-peruskerroksen.
+
+## Seuraavat luontevat moduulit
+
+Luontevat seuraavat moduulit tämän jälkeen:
+
+1. `reference-grid-v2`
+2. `training-agenda-v2`
+3. `team-grid-v2`
 
 ## Turvallisuussääntö
 

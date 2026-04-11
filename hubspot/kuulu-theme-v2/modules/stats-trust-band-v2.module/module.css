@@ -1,0 +1,90 @@
+.kuulu-stats-band {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.kuulu-stats-band.has-media {
+  grid-template-columns: 1fr 1fr;
+}
+
+.kuulu-stats-band.media-right .kuulu-stats-band__media {
+  order: 2;
+}
+
+.kuulu-stats-band__media {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-card);
+}
+
+.kuulu-stats-band__media img,
+.kuulu-stats-band__media video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.kuulu-stats-band__content {
+  display: grid;
+  gap: 1rem;
+}
+
+.kuulu-stats-band__lead {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.kuulu-stats-band__body {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.kuulu-stats-band__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.kuulu-stats-band__item {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.kuulu-stats-band__value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+}
+
+.kuulu-stats-band__label {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--color-text-primary);
+}
+
+.kuulu-stats-band__context {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .kuulu-stats-band,
+  .kuulu-stats-band.has-media {
+    grid-template-columns: 1fr;
+  }
+
+  .kuulu-stats-band__grid {
+    grid-template-columns: 1fr;
+  }
+}

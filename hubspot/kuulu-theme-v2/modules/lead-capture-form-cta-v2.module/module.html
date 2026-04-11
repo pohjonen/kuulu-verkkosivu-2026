@@ -1,0 +1,81 @@
+{% set form_mode = module.form_group.form_mode|default("embed") %}
+{% set target_id = module.form_group.form_target_id|default("kuulu-form-target") %}
+{% set descriptions = module.content_group.description or [] %}
+{% set stats = module.content_group.stats or [] %}
+
+<section class="cinematic-section {{ module.style_group.background_variant|default('gradient-section-tl') }}" id="ota-yhteytta">
+  <div class="kuulu-container">
+    <div class="kuulu-form-cta kuuluu-surface-glass">
+      <div class="kuulu-form-cta__content">
+        {% if module.content_group.section_tag %}
+          <span class="section-tag">{{ module.content_group.section_tag }}</span>
+        {% endif %}
+
+        <h2 class="section-header">
+          {{ module.content_group.heading }}
+          {% if module.content_group.highlight_text %}
+            <span class="kuulu-text-gradient"> {{ module.content_group.highlight_text }}</span>
+          {% endif %}
+        </h2>
+
+        {% for item in descriptions %}
+          {% if item.text %}
+            <p class="kuulu-form-cta__text">{{ item.text }}</p>
+          {% endif %}
+        {% endfor %}
+
+        {% if stats %}
+          <div class="kuulu-form-cta__stats">
+            {% for item in stats %}
+              {% if item.value and item.label %}
+                <article class="kuulu-card kuulu-form-cta__stat">
+                  <span class="kuulu-form-cta__stat-value kuulu-text-gradient">{{ item.value }}</span>
+                  <span class="kuulu-form-cta__stat-label">{{ item.label }}</span>
+                </article>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if module.content_group.rep_name or module.content_group.rep_subtitle %}
+          <div class="kuulu-form-cta__rep kuulu-card">
+            {% if module.content_group.rep_image.src %}
+              <img src="{{ module.content_group.rep_image.src }}" alt="{{ module.content_group.rep_image.alt|default(module.content_group.rep_name) }}">
+            {% endif %}
+            <div>
+              {% if module.content_group.rep_name %}
+                <strong>{{ module.content_group.rep_name }}</strong>
+              {% endif %}
+              {% if module.content_group.rep_subtitle %}
+                <span>{{ module.content_group.rep_subtitle }}</span>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="kuulu-form-cta__form kuulu-card">
+        {% if form_mode == "embed" and module.form_group.form_id %}
+          <div id="{{ target_id }}"></div>
+          <script charset="utf-8" src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "{{ module.form_group.form_region|default('eu1') }}",
+              portalId: "{{ module.form_group.portal_id|default('450584') }}",
+              formId: "{{ module.form_group.form_id }}",
+              target: "#{{ target_id }}",
+              css: "",
+              inlineMessage: "{{ module.form_group.success_message|default('Kiitos yhteydenotostasi! Olemme sinuun yhteydessä mahdollisimman pian.')|escape }}"
+            });
+          </script>
+        {% elif module.form_group.cta_label and module.form_group.cta_link.url.href %}
+          <a href="{{ module.form_group.cta_link.url.href }}" class="kuulu-button-primary">
+            {{ module.form_group.cta_label }}
+          </a>
+        {% else %}
+          <p class="kuulu-form-cta__fallback">Lisää form ID tai vaihtoehtoinen CTA-linkki moduulin asetuksiin.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

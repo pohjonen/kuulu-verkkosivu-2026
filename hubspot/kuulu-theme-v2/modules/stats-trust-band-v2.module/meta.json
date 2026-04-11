@@ -1,0 +1,9 @@
+{
+  "label": "Kuulu V2 – Stats Trust Band",
+  "global": false,
+  "content_types": ["LANDING_PAGE", "SITE_PAGE"],
+  "host_template_types": ["ANY"],
+  "categories": ["kuulu-v2", "foundation", "body_content"],
+  "is_available_for_new_content": true,
+  "icon": "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/chart.svg"
+}

@@ -1,0 +1,105 @@
+.kuulu-service-pillars {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.kuulu-service-pillars__intro {
+  color: var(--color-text-secondary);
+  max-width: 70ch;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.kuulu-service-pillars__media {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-card);
+}
+
+.kuulu-service-pillars__media img,
+.kuulu-service-pillars__media video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.kuulu-service-pillars__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.kuulu-service-pillars__card {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.kuulu-service-pillars__icon {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-deep));
+  color: #0a0a0a;
+  box-shadow: var(--glow-sm);
+  font-size: 1.6rem;
+}
+
+.kuulu-service-pillars__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.kuulu-service-pillars__subtitle {
+  margin: -0.5rem 0 0;
+  color: var(--color-accent-primary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kuulu-service-pillars__description {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.kuulu-service-pillars__benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.kuulu-service-pillars__benefits li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--color-text-primary);
+}
+
+.kuulu-service-pillars__benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-primary);
+}
+
+@media (max-width: 768px) {
+  .kuulu-service-pillars {
+    padding: 1.5rem;
+  }
+
+  .kuulu-service-pillars__grid {
+    grid-template-columns: 1fr;
+  }
+}

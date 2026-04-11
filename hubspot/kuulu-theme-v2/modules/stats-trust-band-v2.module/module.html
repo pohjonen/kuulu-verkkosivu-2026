@@ -1,0 +1,71 @@
+{% macro render_media(module) %}
+  {% if module.media_group.media_type == "image" and module.media_group.image.src %}
+    <img src="{{ module.media_group.image.src }}" alt="{{ module.media_group.image.alt|default('') }}">
+  {% elif module.media_group.media_type == "video_file" and module.media_group.video_file %}
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="{{ module.media_group.video_file }}" type="video/mp4">
+    </video>
+  {% elif module.media_group.media_type == "video_url" and module.media_group.video_url %}
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="{{ module.media_group.video_url }}" type="video/mp4">
+    </video>
+  {% endif %}
+{% endmacro %}
+
+{% set has_media = module.media_group.show_media and module.media_group.media_type != "none" %}
+{% set stat_items = module.content_group.stat_items or [] %}
+{% set media_right = module.media_group.media_position == "right" %}
+
+<section class="cinematic-section {{ module.style_group.background_variant|default('gradient-section-dark') }}">
+  <div class="kuulu-container">
+    <div class="kuulu-stats-band kuuluu-surface-glass {% if has_media %}has-media{% endif %} {% if media_right %}media-right{% endif %}">
+      {% if has_media %}
+        <div class="kuulu-stats-band__media">
+          {{ render_media(module) }}
+        </div>
+      {% endif %}
+
+      <div class="kuulu-stats-band__content">
+        {% if module.content_group.section_tag %}
+          <span class="section-tag">{{ module.content_group.section_tag }}</span>
+        {% endif %}
+
+        <h2 class="section-header">
+          {{ module.content_group.heading }}
+          {% if module.content_group.highlight_text %}
+            <span class="kuulu-text-gradient"> {{ module.content_group.highlight_text }}</span>
+          {% endif %}
+        </h2>
+
+        {% if module.content_group.lead_text %}
+          <p class="kuulu-stats-band__lead">{{ module.content_group.lead_text }}</p>
+        {% endif %}
+        {% if module.content_group.body_text %}
+          <p class="kuulu-stats-band__body">{{ module.content_group.body_text }}</p>
+        {% endif %}
+
+        {% if stat_items %}
+          <div class="kuulu-stats-band__grid">
+            {% for item in stat_items %}
+              {% if item.value and item.label %}
+                <article class="kuulu-stats-band__item kuulu-card">
+                  <span class="kuulu-stats-band__value kuulu-text-gradient">{{ item.value }}</span>
+                  <strong class="kuulu-stats-band__label">{{ item.label }}</strong>
+                  {% if item.context %}
+                    <span class="kuulu-stats-band__context">{{ item.context }}</span>
+                  {% endif %}
+                </article>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if module.content_group.cta_text and module.content_group.cta_link.url.href %}
+          <a href="{{ module.content_group.cta_link.url.href }}" class="kuulu-button-primary">
+            {{ module.content_group.cta_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
