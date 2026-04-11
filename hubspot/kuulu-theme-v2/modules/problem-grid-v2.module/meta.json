@@ -1,0 +1,27 @@
+{
+  "content_tags": [
+    {
+      "name": "KUULU_V2",
+      "source": "USER"
+    },
+    {
+      "name": "FOUNDATION",
+      "source": "USER"
+    }
+  ],
+  "global": false,
+  "content_types": [
+    "LANDING_PAGE",
+    "SITE_PAGE"
+  ],
+  "host_template_types": [
+    "ANY"
+  ],
+  "categories": [
+    "body_content",
+    "text"
+  ],
+  "label": "Kuulu v2 – Problem Grid",
+  "icon": "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/list.svg",
+  "is_available_for_new_content": true
+}

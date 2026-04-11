@@ -1,0 +1,115 @@
+{% set media_mode = module.media_group.background_variant|default("video_url") %}
+{% set panel_style = module.style_group.surface_style|default("glass") %}
+{% set alignment = module.layout_group.alignment|default("center") %}
+{% set content_width = module.layout_group.content_width|default("normal") %}
+{% set show_grain = module.style_group.show_grain|default(true) %}
+{% set show_aurora = module.style_group.show_aurora|default(true) %}
+{% set has_secondary_cta = module.cta_group.secondary_cta_label and module.cta_group.secondary_cta_link.url.href %}
+{% set stat_items = module.content_group.trust_row if module.content_group.trust_row else [] %}
+{% set panel_classes = "kuulu-hero-cinematic__panel kuulu-surface-glass" %}
+{% if panel_style == "dark" %}
+  {% set panel_classes = panel_classes ~ " kuuluu-hero-cinematic__panel--dark" %}
+{% elif panel_style == "transparent" %}
+  {% set panel_classes = panel_classes ~ " kuuluu-hero-cinematic__panel--transparent" %}
+{% endif %}
+{% set section_classes = "kuulu-hero-cinematic" %}
+{% if show_aurora %}
+  {% set section_classes = section_classes ~ " kuuluu-hero-cinematic--aurora" %}
+{% endif %}
+{% if alignment == "left" %}
+  {% set section_classes = section_classes ~ " kuuluu-hero-cinematic--left" %}
+{% endif %}
+{% if content_width == "narrow" %}
+  {% set section_classes = section_classes ~ " kuuluu-hero-cinematic--narrow" %}
+{% elif content_width == "wide" %}
+  {% set section_classes = section_classes ~ " kuuluu-hero-cinematic--wide" %}
+{% endif %}
+
+<section class="{{ section_classes }}">
+  <div class="kuulu-hero-cinematic__media">
+    {% if media_mode == "image" and module.media_group.background_image.src %}
+      <img
+        class="kuulu-hero-cinematic__background-image"
+        src="{{ module.media_group.background_image.src }}"
+        alt="{{ module.media_group.background_image.alt|default('') }}"
+        loading="eager">
+    {% elif media_mode == "video_file" and module.media_group.background_video_file %}
+      <video class="kuulu-hero-cinematic__background-video" autoplay muted loop playsinline preload="auto">
+        <source src="{{ module.media_group.background_video_file }}" type="video/mp4">
+      </video>
+    {% elif media_mode == "video_url" and module.media_group.background_video_url %}
+      <video class="kuulu-hero-cinematic__background-video" autoplay muted loop playsinline preload="auto">
+        <source src="{{ module.media_group.background_video_url }}" type="video/mp4">
+      </video>
+    {% endif %}
+    <div class="kuulu-hero-cinematic__overlay"></div>
+  </div>
+  {% if show_grain %}
+    <div class="kuulu-hero-cinematic__grain"></div>
+  {% endif %}
+
+  <div class="kuulu-container kuulu-hero-cinematic__container">
+    <div class="{{ panel_classes }}">
+      {% if module.content_group.section_tag %}
+        <span class="kuulu-section-tag">{{ module.content_group.section_tag }}</span>
+      {% endif %}
+
+      {% if module.content_group.eyebrow %}
+        <p class="kuulu-hero-cinematic__eyebrow">{{ module.content_group.eyebrow }}</p>
+      {% endif %}
+
+      {% if module.content_group.heading %}
+        <h1 class="kuulu-hero-cinematic__headline">
+          {{ module.content_group.heading }}
+          {% if module.content_group.highlight_phrase %}
+            <span class="kuulu-text-gradient">{{ module.content_group.highlight_phrase }}</span>
+          {% endif %}
+        </h1>
+      {% endif %}
+
+      {% if module.content_group.lead_text %}
+        <p class="kuulu-hero-cinematic__lead">{{ module.content_group.lead_text }}</p>
+      {% endif %}
+
+      {% if module.content_group.supporting_text %}
+        <p class="kuulu-hero-cinematic__sub">{{ module.content_group.supporting_text }}</p>
+      {% endif %}
+
+      {% if module.content_group.supporting_bullets %}
+        <ul class="kuulu-hero-cinematic__bullets">
+          {% for bullet in module.content_group.supporting_bullets %}
+            {% if bullet.text %}
+              <li>{{ bullet.text }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <div class="kuulu-hero-cinematic__cta-row{% if not has_secondary_cta %} kuuluu-hero-cinematic__cta-row--single{% endif %}">
+        {% if module.cta_group.primary_cta_label and module.cta_group.primary_cta_link.url.href %}
+          <a class="kuulu-button-primary" href="{{ module.cta_group.primary_cta_link.url.href }}">
+            {{ module.cta_group.primary_cta_label }}
+          </a>
+        {% endif %}
+        {% if has_secondary_cta %}
+          <a class="kuulu-button-secondary" href="{{ module.cta_group.secondary_cta_link.url.href }}">
+            {{ module.cta_group.secondary_cta_label }}
+          </a>
+        {% endif %}
+      </div>
+
+      {% if stat_items|length > 0 %}
+        <div class="kuulu-hero-cinematic__stats">
+          {% for item in stat_items %}
+            {% if item.value and item.label %}
+              <div class="kuulu-hero-cinematic__stat">
+                <span class="kuulu-hero-cinematic__stat-value kuulu-text-gradient">{{ item.value }}</span>
+                <span class="kuulu-hero-cinematic__stat-label">{{ item.label }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

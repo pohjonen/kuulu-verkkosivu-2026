@@ -1,0 +1,213 @@
+[
+  {
+    "name": "content_group",
+    "label": "Content",
+    "type": "group",
+    "children": [
+      {
+        "name": "section_tag",
+        "label": "Osion tunniste",
+        "type": "text",
+        "default": "// Ongelma"
+      },
+      {
+        "name": "heading",
+        "label": "Pääotsikko",
+        "type": "text",
+        "required": true,
+        "default": "Tunnistatko nämä?"
+      },
+      {
+        "name": "highlight_text",
+        "label": "Korostusteksti",
+        "type": "text",
+        "default": "kitkat"
+      },
+      {
+        "name": "intro_text",
+        "label": "Ingressi",
+        "type": "textarea",
+        "default": "Puramme näkyviin ne kipupisteet, jotka estävät sisältöä, näkyvyyttä ja liidejä toimimasta yhdessä."
+      },
+      {
+        "name": "items",
+        "label": "Ongelmakortit",
+        "type": "group",
+        "occurrence": {
+          "min": 3,
+          "max": 6,
+          "sorting_label_field": "title",
+          "default": 3
+        },
+        "children": [
+          {
+            "name": "icon_style",
+            "label": "Ikonityyli",
+            "type": "choice",
+            "display": "select",
+            "choices": [
+              ["cross", "Ruksi"],
+              ["warning", "Varoitus"],
+              ["arrow", "Nuoli"],
+              ["number", "Numero"]
+            ],
+            "default": "cross"
+          },
+          {
+            "name": "title",
+            "label": "Otsikko",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "description",
+            "label": "Kuvaus",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "supporting_line",
+            "label": "Lisärivi",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "media_group",
+    "label": "Media",
+    "type": "group",
+    "children": [
+      {
+        "name": "show_media",
+        "label": "Näytä media",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": true
+      },
+      {
+        "name": "media_type",
+        "label": "Median tyyppi",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          ["image", "Kuva"],
+          ["video_url", "Videon URL"],
+          ["video_file", "Videotiedosto"],
+          ["none", "Ei mediaa"]
+        ],
+        "default": "image",
+        "visibility": {
+          "controlling_field_path": "media_group.show_media",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "image",
+        "label": "Kuva",
+        "type": "image",
+        "responsive": true,
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "image",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "video_url",
+        "label": "Videon URL",
+        "type": "text",
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "video_url",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "video_file",
+        "label": "Videotiedosto",
+        "type": "file",
+        "picker": "file",
+        "visibility": {
+          "controlling_field_path": "media_group.media_type",
+          "controlling_value_regex": "video_file",
+          "operator": "EQUAL"
+        }
+      },
+      {
+        "name": "media_position",
+        "label": "Median sijainti",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          ["left", "Vasen"],
+          ["right", "Oikea"]
+        ],
+        "default": "right",
+        "visibility": {
+          "controlling_field_path": "media_group.show_media",
+          "controlling_value_regex": "true",
+          "operator": "EQUAL"
+        }
+      }
+    ]
+  },
+  {
+    "name": "style_group",
+    "label": "Style",
+    "type": "group",
+    "children": [
+      {
+        "name": "background_variant",
+        "label": "Taustavariantti",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          ["gradient-section-deep", "Deep gradient"],
+          ["gradient-section-dark", "Dark gradient"],
+          ["gradient-section-tl", "Top-left glow"]
+        ],
+        "default": "gradient-section-deep"
+      },
+      {
+        "name": "surface_style",
+        "label": "Pintatyyli",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          ["glass-card", "Glass"],
+          ["solid-card", "Solid"]
+        ],
+        "default": "glass-card"
+      }
+    ]
+  },
+  {
+    "name": "advanced_group",
+    "label": "Advanced",
+    "type": "group",
+    "children": [
+      {
+        "name": "anchor_id",
+        "label": "Anchor ID",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "tracking_label",
+        "label": "Tracking label",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "hide_on_mobile",
+        "label": "Piilota mobiilissa",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": false
+      }
+    ]
+  }
+]

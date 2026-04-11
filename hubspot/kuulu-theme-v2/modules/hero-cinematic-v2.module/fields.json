@@ -1,0 +1,343 @@
+[
+  {
+    "name": "content_group",
+    "label": "Sisältö",
+    "type": "group",
+    "children": [
+      {
+        "name": "section_tag",
+        "label": "Section tag",
+        "type": "text",
+        "default": "// SYSTEMAATTINEN MARKKINOINTIKONEISTO"
+      },
+      {
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "heading",
+        "label": "Pääotsikko",
+        "type": "text",
+        "default": "Kukaan ei klikkaa. Ja kauppa käy."
+      },
+      {
+        "name": "highlight_phrase",
+        "label": "Korostusosa",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "lead_text",
+        "label": "Ingressi",
+        "type": "textarea",
+        "default": "Vanha klikkiajattelu ei enää riitä. Brändi, sisältö ja kysynnän kotiutus pitää rakentaa samaan koneistoon."
+      },
+      {
+        "name": "supporting_text",
+        "label": "Tukiteksti",
+        "type": "textarea",
+        "default": ""
+      },
+      {
+        "name": "supporting_bullets",
+        "label": "Tukilistat",
+        "type": "group",
+        "repeater": true,
+        "children": [
+          {
+            "name": "text",
+            "label": "Teksti",
+            "type": "text",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "name": "trust_row",
+        "label": "Trust row",
+        "type": "group",
+        "repeater": true,
+        "children": [
+          {
+            "name": "value",
+            "label": "Arvo",
+            "type": "text",
+            "default": ""
+          },
+          {
+            "name": "label",
+            "label": "Selite",
+            "type": "text",
+            "default": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "cta_group",
+    "label": "CTA",
+    "type": "group",
+    "children": [
+      {
+        "name": "cta_primary",
+        "label": "Ensisijainen CTA",
+        "type": "group",
+        "children": [
+          {
+            "name": "text",
+            "label": "Teksti",
+            "type": "text",
+            "default": "VARAA SPARRAUS"
+          },
+          {
+            "name": "link",
+            "label": "Linkki",
+            "type": "link",
+            "supported_types": [
+              "EXTERNAL",
+              "CONTENT",
+              "FILE",
+              "EMAIL_ADDRESS",
+              "BLOG"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cta_secondary",
+        "label": "Toissijainen CTA",
+        "type": "group",
+        "children": [
+          {
+            "name": "enabled",
+            "label": "Näytä toissijainen CTA",
+            "type": "boolean",
+            "display": "checkbox",
+            "default": false
+          },
+          {
+            "name": "text",
+            "label": "Teksti",
+            "type": "text",
+            "default": ""
+          },
+          {
+            "name": "link",
+            "label": "Linkki",
+            "type": "link",
+            "supported_types": [
+              "EXTERNAL",
+              "CONTENT",
+              "FILE",
+              "EMAIL_ADDRESS",
+              "BLOG"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "media_group",
+    "label": "Media",
+    "type": "group",
+    "children": [
+      {
+        "name": "background_variant",
+        "label": "Taustavariantti",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          [
+            "video_url",
+            "Taustavideo URL"
+          ],
+          [
+            "video_file",
+            "Videotiedosto"
+          ],
+          [
+            "image",
+            "Taustakuva"
+          ],
+          [
+            "none",
+            "Ei mediaa"
+          ]
+        ],
+        "default": "video_url"
+      },
+      {
+        "name": "background_video_url",
+        "label": "Videon URL",
+        "type": "text",
+        "default": "",
+        "visibility": {
+          "controlling_field": "media_group.background_variant",
+          "operator": "EQUAL",
+          "controlling_value_regex": "video_url"
+        }
+      },
+      {
+        "name": "background_video_file",
+        "label": "Videotiedosto",
+        "type": "file",
+        "picker": "file",
+        "visibility": {
+          "controlling_field": "media_group.background_variant",
+          "operator": "EQUAL",
+          "controlling_value_regex": "video_file"
+        }
+      },
+      {
+        "name": "background_image",
+        "label": "Taustakuva",
+        "type": "image",
+        "responsive": true,
+        "resizable": true,
+        "visibility": {
+          "controlling_field": "media_group.background_variant",
+          "operator": "EQUAL",
+          "controlling_value_regex": "image"
+        }
+      },
+      {
+        "name": "overlay_strength",
+        "label": "Overlayn voimakkuus",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          [
+            "soft",
+            "Pehmeä"
+          ],
+          [
+            "medium",
+            "Normaali"
+          ],
+          [
+            "strong",
+            "Vahva"
+          ]
+        ],
+        "default": "medium"
+      }
+    ]
+  },
+  {
+    "name": "layout_group",
+    "label": "Layout",
+    "type": "group",
+    "children": [
+      {
+        "name": "alignment",
+        "label": "Sisällön kohdistus",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          [
+            "left",
+            "Vasen"
+          ],
+          [
+            "center",
+            "Keskitetty"
+          ]
+        ],
+        "default": "center"
+      },
+      {
+        "name": "content_width",
+        "label": "Sisällön leveys",
+        "type": "choice",
+        "display": "radio",
+        "choices": [
+          [
+            "narrow",
+            "Kapea"
+          ],
+          [
+            "normal",
+            "Normaali"
+          ],
+          [
+            "wide",
+            "Leveä"
+          ]
+        ],
+        "default": "normal"
+      }
+    ]
+  },
+  {
+    "name": "style_group",
+    "label": "Tyyli",
+    "type": "group",
+    "children": [
+      {
+        "name": "surface_style",
+        "label": "Surface-tyyli",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          [
+            "glass",
+            "Glass"
+          ],
+          [
+            "dark",
+            "Dark"
+          ],
+          [
+            "transparent",
+            "Transparent"
+          ]
+        ],
+        "default": "glass"
+      },
+      {
+        "name": "show_grain",
+        "label": "Näytä grain",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": true
+      },
+      {
+        "name": "show_aurora",
+        "label": "Näytä aurora",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "advanced_group",
+    "label": "Advanced",
+    "type": "group",
+    "children": [
+      {
+        "name": "anchor_id",
+        "label": "Anchor ID",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "tracking_label",
+        "label": "Tracking label",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "name": "hide_on_mobile",
+        "label": "Piilota mobiilissa",
+        "type": "boolean",
+        "display": "checkbox",
+        "default": false
+      }
+    ]
+  }
+]

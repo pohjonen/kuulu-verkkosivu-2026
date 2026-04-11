@@ -1,0 +1,88 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media_block() %}
+  {% if module.media_group.show_media %}
+    {% if module.media_group.media_type == "image" and module.media_group.image.src %}
+      <img src="{{ module.media_group.image.src }}" alt="{{ module.media_group.image.alt|default('') }}">
+    {% elif module.media_group.media_type == "video_url" and module.media_group.video_url %}
+      <div class="kuulu-problem-media__video">
+        <iframe src="{{ module.media_group.video_url }}" title="{{ module.content_group.heading|default('Video') }}" loading="lazy" allowfullscreen></iframe>
+      </div>
+    {% elif module.media_group.media_type == "video_file" and module.media_group.video_file %}
+      <video controls preload="metadata">
+        <source src="{{ module.media_group.video_file }}" type="video/mp4">
+      </video>
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+
+{% set cards = module.content_group.items or [] %}
+{% set has_media = module.media_group.show_media and module.media_group.media_type != "none" %}
+{% set media_left = module.media_group.media_position == "left" %}
+{% set background_variant = module.style_group.background_variant|default("gradient-section-deep") %}
+{% set surface_style = module.style_group.surface_style|default("glass-card") %}
+
+<section class="cinematic-section {% if background_variant %}{{ background_variant }}{% endif %} section-with-blobs grain-section">
+  <div class="blob-shape-1"></div>
+  <div class="blob-shape-2"></div>
+
+  <div class="kuulu-container">
+    <div class="kuulu-problem-grid {% if has_media %}has-media{% endif %} {% if media_left %}media-left{% endif %}">
+      <div class="kuulu-problem-grid__content {{ surface_style }}">
+        {% if module.content_group.section_tag %}
+          <span class="section-tag">{{ module.content_group.section_tag }}</span>
+        {% endif %}
+
+        {% if module.content_group.heading %}
+          <h2 class="section-header">
+            {{ module.content_group.heading }}
+            {% if module.content_group.highlight_text %}
+              <span class="kuulu-text-gradient">{{ module.content_group.highlight_text }}</span>
+            {% endif %}
+          </h2>
+        {% endif %}
+
+        {% if module.content_group.intro_text %}
+          <p class="kuulu-problem-grid__intro">{{ module.content_group.intro_text }}</p>
+        {% endif %}
+
+        <ul class="kuulu-problem-list">
+          {% for item in cards %}
+            <li class="kuulu-problem-item">
+              <span class="kuulu-problem-icon" aria-hidden="true">
+                {% if item.icon_style == "number" %}
+                  {{ loop.index }}
+                {% elif item.icon_style == "warning" %}
+                  &#9888;
+                {% elif item.icon_style == "arrow" %}
+                  &#8594;
+                {% else %}
+                  &#10005;
+                {% endif %}
+              </span>
+              <div>
+                {% if item.title %}
+                  <strong class="kuulu-problem-title">{{ item.title }}</strong>
+                {% endif %}
+                {% if item.description %}
+                  <p class="kuulu-problem-desc">{{ item.description }}</p>
+                {% endif %}
+                {% if item.supporting_line %}
+                  <p class="kuulu-problem-supporting">{{ item.supporting_line }}</p>
+                {% endif %}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      {% if has_media %}
+        <div class="kuulu-problem-media">
+          {{ render_media_block() }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

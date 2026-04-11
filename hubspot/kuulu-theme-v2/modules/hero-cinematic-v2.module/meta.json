@@ -1,0 +1,19 @@
+{
+  "label": "Hero Cinematic v2",
+  "global": false,
+  "content_types": ["LANDING_PAGE", "SITE_PAGE"],
+  "host_template_types": ["ANY"],
+  "categories": ["media", "body_content"],
+  "is_available_for_new_content": true,
+  "icon": "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/hero.svg",
+  "content_tags": [
+    {
+      "name": "KUULU_V2",
+      "source": "USER"
+    },
+    {
+      "name": "CINEMATIC",
+      "source": "USER"
+    }
+  ]
+}
