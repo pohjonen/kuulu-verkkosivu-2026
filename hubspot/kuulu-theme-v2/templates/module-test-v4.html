@@ -1,0 +1,645 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Module Test v4 (kaikki moduulit)
+  screenshotPath: ../images/template-previews/ThemeChallengeHome.png
+-->
+{% extends './layouts/base-cinematic.html' %}
+
+{% block body %}
+{# HubSpot validation: {{ standard_header_includes }} {{ standard_footer_includes }} #}
+
+{# DEBUG: inline page-level CSS override for service cards #}
+<style>
+/* PAGE-LEVEL FIX v1 — service card rounded corners */
+.sc-card {
+  border-radius: 20px !important;
+  padding: 2rem !important;
+  background: rgba(255,255,255,0.03) !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.sc-card:hover {
+  border-color: rgba(0,255,135,0.15) !important;
+  background: rgba(255,255,255,0.04) !important;
+}
+.sc-card::before, .sc-card::after {
+  content: none !important;
+  display: none !important;
+}
+/* DEBUG marker — if you see red outline, CSS is applied */
+.sc-card { outline: 3px solid red !important; }
+</style>
+
+{% include './partials/aurora-overlay.html' %}
+
+{# 0. NOTIFICATION BAR #}
+{% set notif_text = 'Uusi koulutus: Tekoälyn Mestarikurssi alkaa maaliskuussa 2026!' %}
+{% set notif_url = '/koulutus/tekoalyn-mestarikurssi' %}
+{% set notif_btn_text = 'Ilmoittaudu' %}
+{% set notif_style = 'green' %}
+{% set notif_dismissable = true %}
+{% include './partials/notification-bar.html' %}
+
+{% include './partials/header-cinematic.html' %}
+
+{# 1. HERO #}
+{% set hero_tag = '// Moduulitesti v4' %}
+{% set hero_title = 'Kaikki moduulit <span class="text-gradient-green">yhdella sivulla</span>' %}
+{% set hero_subtitle = 'Testisivu jossa jokainen partiaali on esimerkkidatalla. Yhteensa 27 moduulia.' %}
+{% set hero_cta_1 = '' %}
+{% include './partials/hero-section.html' %}
+
+<div id="video-section">
+{# 2. VIDEO EMBED #}
+{% set video_tag = '// Katso video' %}
+{% set video_title = 'Miten <span class="text-gradient-green">tyoskentelemme</span>' %}
+{% set video_description = 'Katso 2 minuutin esittelyvideo Kuulun tiimista ja palveluista.' %}
+{% set video_url = 'https://www.youtube.com/embed/dQw4w9WgXcQ' %}
+{% set video_dark_bg = true %}
+{% include './partials/video-embed.html' %}
+</div>
+
+<div id="twocol-section">
+{# 3. TWO COLUMN CONTENT #}
+{% set twocol_tag = '// Tarina' %}
+{% set twocol_title = 'Suomen monipuolisin <span class="text-gradient-green">markkinointitalo</span>' %}
+{% set twocol_text = '<p>Kuulu on ainoa suomalainen toimisto, joka yhdistaa <strong>videotuotannon, tekoalyn ja digimarkkinoinnin</strong> saman katon alle. 40+ asiantuntijaa, 2 studiota, 65+ palvelua.</p><p>Kuulu Flow -mallimme tekee markkinoinnista joustavaa: valitse vapaasti palvelut kuukausittain, maksa vain siita mita kaytat.</p>' %}
+{% set twocol_image = 'https://picsum.photos/seed/team1/800/600' %}
+{% set twocol_image_alt = 'Kuulun tiimi tyoskentelemassa' %}
+{% set twocol_btn_text = 'Lue lisaa meista' %}
+{% set twocol_btn_url = '#' %}
+{% include './partials/two-column-content.html' %}
+</div>
+
+<div id="icon-section">
+{# 4. ICON TEXT GRID #}
+{% set it_tag = '// Etumme' %}
+{% set it_title = 'Miksi valita <span class="text-gradient-green">Kuulu</span>' %}
+{% set it_columns = 3 %}
+{% set it_1_icon = 'fas fa-film' %}
+{% set it_1_title = 'Video + AI + Marketing' %}
+{% set it_1_text = 'Ainoa suomalainen toimisto joka hallitsee kaikki kolme.' %}
+{% set it_2_icon = 'fas fa-tachometer-alt' %}
+{% set it_2_title = 'Nopeus' %}
+{% set it_2_text = 'Ensimmaiset sisallot pyorivat viikossa.' %}
+{% set it_3_icon = 'fas fa-chart-line' %}
+{% set it_3_title = 'Data ohjaa' %}
+{% set it_3_text = 'Reaaliaikainen dashboard nayttaa tulokset heti.' %}
+{% set it_4_icon = 'fas fa-sync' %}
+{% set it_4_title = 'Joustava malli' %}
+{% set it_4_text = 'Kuulu Flow: kuukausi kerrallaan, 65+ palvelua.' %}
+{% set it_5_icon = 'fas fa-users' %}
+{% set it_5_title = '40+ asiantuntijaa' %}
+{% set it_5_text = 'Koko markkinointiosasto kaytossasi.' %}
+{% set it_6_icon = 'fas fa-medal' %}
+{% set it_6_title = '15+ vuotta' %}
+{% set it_6_text = 'Kokemusta digimarkkinoinnista ja videotuotannosta.' %}
+{% include './partials/icon-text-grid.html' %}
+</div>
+
+<div id="comp-section">
+{# 5. COMPARISON TABLE #}
+{% set comp_tag = '// Vertailu' %}
+{% set comp_title = 'Kuulu Flow <span class="text-gradient-green">vs. perinteinen</span> malli' %}
+{% set comp_description = 'Katso miten joustava krediittimalli eroaa perinteisesta toimistomallista.' %}
+{% set comp_col_left = 'Perinteinen' %}
+{% set comp_col_right = 'Kuulu Flow' %}
+{% set comp_1_label = 'Sitoutuminen' %}
+{% set comp_1_left = '12 kk sopimus' %}
+{% set comp_1_right = 'Kuukausi kerrallaan' %}
+{% set comp_2_label = 'Joustavuus' %}
+{% set comp_2_left = 'Kiintea paketti' %}
+{% set comp_2_right = 'Valitse vapaasti 65+ palvelusta' %}
+{% set comp_3_label = 'Tiimi' %}
+{% set comp_3_left = '1-2 henkiloa' %}
+{% set comp_3_right = '40+ asiantuntijaa' %}
+{% set comp_4_label = 'Videotuotanto' %}
+{% set comp_4_left = 'Ei' %}
+{% set comp_4_right = 'Kylla' %}
+{% set comp_5_label = 'AI-osaaminen' %}
+{% set comp_5_left = 'Ei' %}
+{% set comp_5_right = 'Kylla' %}
+{% set comp_6_label = 'Lapinakyvyys' %}
+{% set comp_6_left = 'Kvartaaliraportti' %}
+{% set comp_6_right = 'Reaaliaikainen dashboard' %}
+{% set comp_7_label = 'Hinta' %}
+{% set comp_7_left = '8 000-15 000 EUR/kk' %}
+{% set comp_7_right = 'Alk. 2 900 EUR/kk' %}
+{% set comp_highlight_right = true %}
+{% set comp_cta_text = 'Katso hinnoittelu' %}
+{% set comp_cta_url = '#pricing-section' %}
+{% include './partials/comparison-table.html' %}
+</div>
+
+<div id="stats-section">
+{# 6. ANIMATED COUNTER #}
+{% set ac_tag = '// Lukuina' %}
+{% set ac_title = 'Tuloksia <span class="text-gradient-green">numeroina</span>' %}
+{% set ac_1_number = '500' %}
+{% set ac_1_suffix = '+' %}
+{% set ac_1_label = 'tyytyvaista asiakasta' %}
+{% set ac_1_icon = 'fas fa-building' %}
+{% set ac_2_number = '98' %}
+{% set ac_2_suffix = '%' %}
+{% set ac_2_label = 'suosittelee Kuulua' %}
+{% set ac_2_icon = 'fas fa-star' %}
+{% set ac_3_number = '3000' %}
+{% set ac_3_suffix = '+' %}
+{% set ac_3_label = 'tuotettua videota' %}
+{% set ac_3_icon = 'fas fa-video' %}
+{% set ac_4_number = '15' %}
+{% set ac_4_suffix = '' %}
+{% set ac_4_label = 'vuotta kokemusta' %}
+{% set ac_4_icon = 'fas fa-trophy' %}
+{% set ac_dark_bg = true %}
+{% set ac_duration = 2000 %}
+{% include './partials/animated-counter.html' %}
+</div>
+
+{# 7. MARQUEE LOGOS #}
+{% set mq_tag = '// Luotettu kumppani' %}
+{% set mq_title = 'Asiakkaitamme ja <span class="text-gradient-green">kumppaneitamme</span>' %}
+{% set mq_speed = 35 %}
+{% set mq_logo_1 = 'https://cdn.brandfetch.io/tosibox.com/w/512/h/100/theme/light/logo' %}
+{% set mq_alt_1 = 'Tosibox' %}
+{% set mq_logo_2 = 'https://cdn.brandfetch.io/bittium.com/w/512/h/100/theme/light/logo' %}
+{% set mq_alt_2 = 'Bittium' %}
+{% set mq_logo_3 = 'https://cdn.brandfetch.io/polar.com/w/512/h/100/theme/light/logo' %}
+{% set mq_alt_3 = 'Polar' %}
+{% set mq_logo_4 = 'https://cdn.brandfetch.io/nokia.com/w/512/h/100/theme/light/logo' %}
+{% set mq_alt_4 = 'Nokia' %}
+{% set mq_logo_5 = 'https://cdn.brandfetch.io/leca.fi/w/512/h/100/theme/light/logo' %}
+{% set mq_alt_5 = 'Leca' %}
+{% set mq_logo_6 = 'https://cdn.brandfetch.io/berner.fi/w/512/h/100/theme/light/logo' %}
+{% set mq_alt_6 = 'Berner' %}
+{% set mq_logo_7 = 'https://cdn.brandfetch.io/abb.com/w/512/h/100/theme/light/logo' %}
+{% set mq_alt_7 = 'ABB' %}
+{% set mq_logo_8 = 'https://cdn.brandfetch.io/verkkokauppa.com/w/512/h/100/theme/light/logo' %}
+{% set mq_alt_8 = 'Verkkokauppa.com' %}
+{% set mq_pause_on_hover = true %}
+{% include './partials/marquee-logos.html' %}
+
+<div id="service-section">
+{# 8. SERVICE CARDS #}
+{% set cards_tag = '// Palvelut' %}
+{% set cards_title = 'Mita kaikkea <span class="text-gradient-green">tarjoamme</span>' %}
+{% set cards_description = 'Kaikki markkinoinnin osa-alueet yhdesta paikasta.' %}
+{% set card_1_icon = 'fas fa-video' %}
+{% set card_1_title = 'Videotuotanto' %}
+{% set card_1_text = 'Brandivideot, mainokset, animaatiot, lyhytvideot.' %}
+{% set card_1_url = '#' %}
+{% set card_2_icon = 'fas fa-bullhorn' %}
+{% set card_2_title = 'Digimarkkinointi' %}
+{% set card_2_text = 'Google Ads, Meta, LinkedIn. SEO ja analytiikka.' %}
+{% set card_2_url = '#' %}
+{% set card_3_icon = 'fas fa-robot' %}
+{% set card_3_title = 'Tekoalyratkaisut' %}
+{% set card_3_text = 'MyGPT-botit, AI-videot, AI-kuvapankit.' %}
+{% set card_3_url = '#' %}
+{% set card_4_icon = 'fas fa-graduation-cap' %}
+{% set card_4_title = 'Koulutukset' %}
+{% set card_4_text = 'Perjantaipulssista Mestarikurssiin.' %}
+{% set card_4_url = '#' %}
+{% set card_5_icon = 'fas fa-camera' %}
+{% set card_5_title = 'Valokuvaus' %}
+{% set card_5_text = 'Brandi-, tuote- ja tapahtumavalokuvaus.' %}
+{% set card_5_url = '#' %}
+{% set card_6_icon = 'fas fa-chess' %}
+{% set card_6_title = 'Strategia' %}
+{% set card_6_text = 'StoryBrand-tyopajat, sisaltostrategiat.' %}
+{% set card_6_url = '#' %}
+{% set cards_dark_bg = true %}
+{% include './partials/service-cards.html' %}
+</div>
+
+<div id="ba-section">
+{# 9. BEFORE-AFTER #}
+{% set ba_tag = '// Muutos' %}
+{% set ba_title = 'Ennen ja <span class="text-gradient-green">jalkeen</span> Kuulua' %}
+{% set ba_description = 'Nain Lead Engine muutti eraan B2B-yrityksen markkinoinnin.' %}
+{% set ba_before_title = 'Ennen Kuulua' %}
+{% set ba_before_icon = 'fas fa-times-circle' %}
+{% set ba_before_items = 'Satunnaisia somepostauksia;;Ei mitattavia tuloksia;;3 eri toimistoa eri asioille;;Budjetit perustui arvauksiin;;Markkinointi irtonaista myynnista' %}
+{% set ba_after_title = 'Kuulun jalkeen' %}
+{% set ba_after_icon = 'fas fa-check-circle' %}
+{% set ba_after_items = '15 sisaltoa/kk systemaattisesti;;Dashboard nayttaa ROIn reaaliajassa;;1 tiimi, kaikki osaamisalueet;;Joka euro seurataan ja optimoidaan;;Markkinointi tuottaa liideja myynnille' %}
+{% set ba_after_stat = '+340% liideja' %}
+{% set ba_cta_text = 'Katso lisaa tuloksia' %}
+{% set ba_cta_url = '#ref-section' %}
+{% include './partials/before-after.html' %}
+</div>
+
+<div id="pricing-section">
+{# 10. RICH PRICING CARDS #}
+{% set pc_tag = '// Hinnoittelu' %}
+{% set pc_title = 'Valitse sinulle <span class="text-gradient-green">sopiva taso</span>' %}
+{% set pc_description = 'Kuulu Flow - joustava krediittimalli. Ei pitkia sopimuksia.' %}
+{% set pc_1_name = 'STARTER' %}
+{% set pc_1_price = '2 900' %}
+{% set pc_1_unit = 'EUR/kk' %}
+{% set pc_1_desc = '10 krediittia kuukaudessa' %}
+{% set pc_1_features = 'Sisallontuotanto (some + blogi);;Kanavien hallinta;;Kuukausiraportointi;;Oma yhteyshenkilö;;Chat-tuki arkisin' %}
+{% set pc_1_cta = 'Aloita Starter' %}
+{% set pc_1_url = '#ota-yhteytta' %}
+{% set pc_2_name = 'GROWTH' %}
+{% set pc_2_price = '4 900' %}
+{% set pc_2_unit = 'EUR/kk' %}
+{% set pc_2_desc = '20 krediittia kuukaudessa' %}
+{% set pc_2_features = 'Kaikki Starter-ominaisuudet;;Videotuotanto (2 videota/kk);;Mainoskampanjat (Google + Meta);;AI-sisallot ja -kuvat;;Reaaliaikainen dashboard;;Kvartaalikatsaus tiimin kanssa' %}
+{% set pc_2_cta = 'Suosituin - Aloita Growth' %}
+{% set pc_2_url = '#ota-yhteytta' %}
+{% set pc_2_highlight = true %}
+{% set pc_3_name = 'SCALE' %}
+{% set pc_3_price = '7 900' %}
+{% set pc_3_unit = 'EUR/kk' %}
+{% set pc_3_desc = '40 krediittia kuukaudessa' %}
+{% set pc_3_features = 'Kaikki Growth-ominaisuudet;;Rajaton videotuotanto;;LinkedIn Ads + ABM-kampanjat;;Strateginen sparraus kuukausittain;;Dedikoidut 2 asiantuntijaa;;Priority-tuki 24/7' %}
+{% set pc_3_cta = 'Aloita Scale' %}
+{% set pc_3_url = '#ota-yhteytta' %}
+{% set pc_footer = 'Kaikki hinnat alv 0 %. Ei sitovaa sopimusta.' %}
+{% include './partials/pricing-cards.html' %}
+</div>
+
+<div id="process-section">
+{# 11. PROCESS STEPS #}
+{% set process_tag = '// Tuotantoprosessi' %}
+{% set process_title = 'Nain videotuotanto <span class="text-gradient-green">etenee</span>' %}
+{% set step_1_title = 'Briiffi & suunnittelu' %}
+{% set step_1_text = 'Kartoitamme tavoitteet, kohderyhman ja viestin.' %}
+{% set step_2_title = 'Kuvaukset' %}
+{% set step_2_text = 'Kuvaamme omissa studioissa tai lokaatiossa.' %}
+{% set step_3_title = 'Editointi & efektit' %}
+{% set step_3_text = 'Leikkaus, varimaarittely, grafiikat ja aanisuunnittelu.' %}
+{% set step_4_title = 'Julkaisu & jakelu' %}
+{% set step_4_text = 'Toimitetaan kaikissa tarvittavissa formaateissa.' %}
+{% include './partials/process-steps.html' %}
+</div>
+
+<div id="timeline-section">
+{# 12. TIMELINE #}
+{% set tl_tag = '// Prosessi' %}
+{% set tl_title = 'Nain yhteistyo <span class="text-gradient-green">etenee</span>' %}
+{% set tl_description = 'Ensimmaiset sisallot pyorivat jo viikossa.' %}
+{% set tl_1_title = 'Maksuton sparraus' %}
+{% set tl_1_text = 'Kartoitamme tavoitteesi, kohderyhmasi ja nykytilan.' %}
+{% set tl_1_icon = 'fas fa-comments' %}
+{% set tl_2_title = 'Strategia & suunnitelma' %}
+{% set tl_2_text = 'Rakennamme kuukausisuunnitelman: sisallot, kanavat, budjetit.' %}
+{% set tl_2_icon = 'fas fa-map' %}
+{% set tl_3_title = 'Tuotanto kaynnistyy' %}
+{% set tl_3_text = 'Tiimi aloittaa sisallontuotannon ensimmaisella viikolla.' %}
+{% set tl_3_icon = 'fas fa-rocket' %}
+{% set tl_4_title = 'Mittaus & optimointi' %}
+{% set tl_4_text = 'Seuraamme tuloksia reaaliajassa ja optimoimme jatkuvasti.' %}
+{% set tl_4_icon = 'fas fa-chart-line' %}
+{% set tl_5_title = 'Skaalaus' %}
+{% set tl_5_text = 'Lisaamme kanavia ja volyymia tulosten kasvaessa.' %}
+{% set tl_5_icon = 'fas fa-expand-arrows-alt' %}
+{% include './partials/timeline.html' %}
+</div>
+
+<div id="testimonials-section">
+{# 13. TESTIMONIAL SLIDER #}
+{% set ts_tag = '// Kokemuksia' %}
+{% set ts_title = 'Asiakkaat <span class="text-gradient-green">kertovat</span>' %}
+{% set ts_1_quote = 'Kuulun tiimi ylitti kaikki odotuksemme. Liidimaara kasvoi 240 % ja CPA laski 35 %.' %}
+{% set ts_1_name = 'Maria Virtanen' %}
+{% set ts_1_role = 'Markkinointijohtaja' %}
+{% set ts_1_company = 'TechCo Finland' %}
+{% set ts_1_image = 'https://i.pravatar.cc/200?img=1' %}
+{% set ts_2_quote = 'Dashboard nayttaa reaaliajassa mihin rahat menevat ja mita tuloksia saamme.' %}
+{% set ts_2_name = 'Juha Korhonen' %}
+{% set ts_2_role = 'Toimitusjohtaja' %}
+{% set ts_2_company = 'Nordic Solutions Oy' %}
+{% set ts_2_image = 'https://i.pravatar.cc/200?img=3' %}
+{% set ts_3_quote = 'Kuulu on kuin oma markkinointiosastomme. Video, some, mainonta, AI - kaikki yhdesta paikasta.' %}
+{% set ts_3_name = 'Anna Laine' %}
+{% set ts_3_role = 'Myyntijohtaja' %}
+{% set ts_3_company = 'IndustrialTech' %}
+{% set ts_3_image = 'https://i.pravatar.cc/200?img=5' %}
+{% set ts_autoplay = true %}
+{% set ts_interval = 6000 %}
+{% include './partials/testimonial-slider.html' %}
+</div>
+
+<div id="portfolio-section">
+{# 14. PORTFOLIO GRID #}
+{% set portfolio_tag = '// Portfolio' %}
+{% set portfolio_title = 'Tuoreimmat <span class="text-gradient-green">tyomme</span>' %}
+{% set portfolio_description = 'Klikkaa tyota nahdaksesi lisaa.' %}
+{% set portfolio_columns = 3 %}
+{% set portfolio_filter = true %}
+{% set pf_1_image = 'https://picsum.photos/seed/pf1/600/450' %}
+{% set pf_1_title = 'Polar - Brandivideo' %}
+{% set pf_1_category = 'Video' %}
+{% set pf_1_client = 'Polar Electro' %}
+{% set pf_1_url = '#' %}
+{% set pf_1_video = 'true' %}
+{% set pf_2_image = 'https://picsum.photos/seed/pf2/600/450' %}
+{% set pf_2_title = 'Nokia - Somestrategia' %}
+{% set pf_2_category = 'Markkinointi' %}
+{% set pf_2_client = 'Nokia' %}
+{% set pf_2_url = '#' %}
+{% set pf_3_image = 'https://picsum.photos/seed/pf3/600/450' %}
+{% set pf_3_title = 'ABB - MyGPT-botti' %}
+{% set pf_3_category = 'AI' %}
+{% set pf_3_client = 'ABB' %}
+{% set pf_3_url = '#' %}
+{% set pf_4_image = 'https://picsum.photos/seed/pf4/600/450' %}
+{% set pf_4_title = 'Bittium - Kampanjavideo' %}
+{% set pf_4_category = 'Video' %}
+{% set pf_4_client = 'Bittium' %}
+{% set pf_4_url = '#' %}
+{% set pf_5_image = 'https://picsum.photos/seed/pf5/600/450' %}
+{% set pf_5_title = 'Oulun Energia - Content Engine' %}
+{% set pf_5_category = 'Markkinointi' %}
+{% set pf_5_client = 'Oulun Energia' %}
+{% set pf_5_url = '#' %}
+{% set pf_6_image = 'https://picsum.photos/seed/pf6/600/450' %}
+{% set pf_6_title = 'Leca - Tuotekuvaukset' %}
+{% set pf_6_category = 'Valokuvaus' %}
+{% set pf_6_client = 'Leca' %}
+{% set pf_6_url = '#' %}
+{% include './partials/portfolio-grid.html' %}
+</div>
+
+<div id="gallery-section">
+{# 15. MEDIA GALLERY #}
+{% set gallery_tag = '// Galleria' %}
+{% set gallery_title = 'Kuvia ja videoita <span class="text-gradient-green">studiollamme</span>' %}
+{% set gallery_description = 'Klikkaa kuvaa avataksesi lightboxin.' %}
+{% set gallery_columns = 3 %}
+{% set gallery_layout = 'masonry' %}
+{% set media_1_src = 'https://picsum.photos/seed/studio1/800/600' %}
+{% set media_1_caption = 'Kuulun studio Oulu' %}
+{% set media_2_src = 'https://picsum.photos/seed/camera1/800/600' %}
+{% set media_2_caption = 'Kuvauskalustoa' %}
+{% set media_3_src = 'https://www.youtube.com/embed/dQw4w9WgXcQ' %}
+{% set media_3_type = 'video' %}
+{% set media_3_thumb = 'https://picsum.photos/seed/video1/800/600' %}
+{% set media_3_caption = 'Making of - brandivideo' %}
+{% set media_4_src = 'https://picsum.photos/seed/lights1/800/600' %}
+{% set media_4_caption = 'Valaisu studiolla' %}
+{% set media_5_src = 'https://picsum.photos/seed/edit1/800/600' %}
+{% set media_5_caption = 'Editointipiste' %}
+{% set media_6_src = 'https://picsum.photos/seed/event1/800/600' %}
+{% set media_6_caption = 'Koulutustilaisuus' %}
+{% include './partials/media-gallery.html' %}
+</div>
+
+<div id="bento-section">
+{# 16. BENTO GRID #}
+{% set bg_tag = '// Miksi Kuulu' %}
+{% set bg_title = 'Kaikki yhdesta <span class="text-gradient-green">paikasta</span>' %}
+{% set bg_description = '40+ asiantuntijaa, 2 studiota, 65+ palvelua.' %}
+{% set bg_1_title = 'Video + AI + Markkinointi' %}
+{% set bg_1_text = 'Ainoa suomalainen toimisto joka hallitsee kaikki kolme.' %}
+{% set bg_1_icon = 'fas fa-film' %}
+{% set bg_1_size = 'large' %}
+{% set bg_2_title = '2 studiota' %}
+{% set bg_2_text = 'Oulu & Helsinki.' %}
+{% set bg_2_icon = 'fas fa-building' %}
+{% set bg_3_title = '15+ vuotta' %}
+{% set bg_3_text = 'Kokemusta digimarkkinoinnista.' %}
+{% set bg_3_icon = 'fas fa-trophy' %}
+{% set bg_4_title = 'Reaaliaikainen data' %}
+{% set bg_4_text = 'Dashboard joka nayttaa tulokset heti.' %}
+{% set bg_4_icon = 'fas fa-chart-bar' %}
+{% set bg_4_size = 'large' %}
+{% set bg_5_title = 'Joustava malli' %}
+{% set bg_5_text = 'Kuulu Flow: kuukausi kerrallaan.' %}
+{% set bg_5_icon = 'fas fa-sync' %}
+{% include './partials/bento-grid.html' %}
+</div>
+
+<div id="ref-section">
+{# 17. REFERENCE GRID #}
+{% set ref_tag = '// Asiakascaset' %}
+{% set ref_title = 'Tuloksia <span class="text-gradient-green">eri toimialoilta</span>' %}
+{% set ref_1_url = '#' %}
+{% set ref_1_image = 'https://picsum.photos/seed/ref1/1200/500' %}
+{% set ref_1_title = 'Oulun Energia - +340% orgaaninen nakyvyys' %}
+{% set ref_1_size = 'featured' %}
+{% set ref_2_url = '#' %}
+{% set ref_2_image = 'https://picsum.photos/seed/ref2/800/400' %}
+{% set ref_2_title = 'Nokia - Somestrategia Pohjoismaissa' %}
+{% set ref_2_size = 'wide' %}
+{% set ref_3_url = '#' %}
+{% set ref_3_image = 'https://picsum.photos/seed/ref3/600/400' %}
+{% set ref_3_title = 'Polar - Brandivideo' %}
+{% set ref_3_size = 'half' %}
+{% set ref_4_url = '#' %}
+{% set ref_4_image = 'https://picsum.photos/seed/ref4/600/400' %}
+{% set ref_4_title = 'ABB - MyGPT-botti' %}
+{% set ref_4_size = 'half' %}
+{% include './partials/reference-grid.html' %}
+</div>
+
+<div id="case-section">
+{# 18. CASE STUDY CARD #}
+{% set cs_tag = '// Referenssi' %}
+{% set cs_client = 'Oulun Energia' %}
+{% set cs_image = 'https://picsum.photos/seed/case1/800/600' %}
+{% set cs_challenge = 'Sosiaalisen median lasnaolo oli hajanainen ja mittaamaton.' %}
+{% set cs_solution = 'Rakensimme Content Enginen: 15 sisaltoa/kk, mainosstrategia ja dashboard.' %}
+{% set cs_result_1_number = '+340%' %}
+{% set cs_result_1_label = 'orgaaninen nakyvyys' %}
+{% set cs_result_2_number = '+180%' %}
+{% set cs_result_2_label = 'verkkosivuliikenne' %}
+{% set cs_result_3_number = '45' %}
+{% set cs_result_3_label = 'liidiä / kvartaali' %}
+{% set cs_quote = 'Kuulun tiimi toi markkinointiimme systemaattisuuden jota olimme etsineet.' %}
+{% set cs_quote_author = 'Markkinointipäällikkö, Oulun Energia' %}
+{% set cs_url = '#' %}
+{% set cs_cta = 'Lue koko tarina' %}
+{% include './partials/case-study-card.html' %}
+</div>
+
+<div id="team-section">
+{# 19. TEAM GRID #}
+{% set team_tag = '// Tiimimme' %}
+{% set team_title = 'Kuulun <span class="text-gradient-green">asiantuntijat</span>' %}
+{% set member_1_image = 'https://i.pravatar.cc/400?img=1' %}
+{% set member_1_name = 'Jonna Muurinen' %}
+{% set member_1_role = 'CEO & Perustaja' %}
+{% set member_1_email = 'jonna@kuulu.fi' %}
+{% set member_2_image = 'https://i.pravatar.cc/400?img=3' %}
+{% set member_2_name = 'Mikko Korhonen' %}
+{% set member_2_role = 'Head of Video' %}
+{% set member_2_email = 'mikko@kuulu.fi' %}
+{% set member_3_image = 'https://i.pravatar.cc/400?img=5' %}
+{% set member_3_name = 'Anna Laine' %}
+{% set member_3_role = 'Creative Director' %}
+{% set member_3_email = 'anna@kuulu.fi' %}
+{% set member_4_image = 'https://i.pravatar.cc/400?img=8' %}
+{% set member_4_name = 'Tero Virtanen' %}
+{% set member_4_role = 'Head of AI' %}
+{% set member_4_email = 'tero@kuulu.fi' %}
+{% include './partials/team-grid.html' %}
+</div>
+
+<div id="accordion-section">
+{# 20. ACCORDION CARDS #}
+{% set acc_tag = '// Palvelut yksityiskohtaisesti' %}
+{% set acc_title = 'Mita kaikkea <span class="text-gradient-green">teemme</span>' %}
+{% set acc_description = 'Klikkaa korttia nahdaksesi lisatiedot.' %}
+{% set acc_1_icon = 'fas fa-video' %}
+{% set acc_1_title = 'Videotuotanto' %}
+{% set acc_1_short = 'Brandivideot, mainokset, lyhytvideot, animaatiot.' %}
+{% set acc_1_long = 'Tuotamme kaiken brandivideoista TV-mainoksiin. Kaksi studiota, cinematic-laatu.' %}
+{% set acc_1_url = '#' %}
+{% set acc_1_cta = 'Katso videotuotanto' %}
+{% set acc_2_icon = 'fas fa-bullhorn' %}
+{% set acc_2_title = 'Digimarkkinointi' %}
+{% set acc_2_short = 'Google Ads, Meta, LinkedIn.' %}
+{% set acc_2_long = 'Hallinnoimme mainoskampanjoita kaikissa kanavissa. Data ohjaa.' %}
+{% set acc_2_url = '#' %}
+{% set acc_2_cta = 'Katso digimarkkinointi' %}
+{% set acc_3_icon = 'fas fa-robot' %}
+{% set acc_3_title = 'Tekoalyratkaisut' %}
+{% set acc_3_short = 'MyGPT-botit, AI-videot, AI-kuvapankit.' %}
+{% set acc_3_long = 'Raataloidyt AI-tyokalut yrityksellesi.' %}
+{% set acc_3_url = '#' %}
+{% set acc_3_cta = 'Katso tekoalyratkaisut' %}
+{% set acc_4_icon = 'fas fa-graduation-cap' %}
+{% set acc_4_title = 'Koulutukset' %}
+{% set acc_4_short = 'Tekoaly, some, strategia.' %}
+{% set acc_4_long = 'Perjantaipulssista Mestarikurssiin.' %}
+{% set acc_4_url = '#' %}
+{% set acc_4_cta = 'Katso koulutukset' %}
+{% include './partials/accordion-cards.html' %}
+</div>
+
+{# 21. RICH TEXT BLOCK #}
+{% set rt_tag = '// Tarina' %}
+{% set rt_title = 'Kuulun <span class="text-gradient-green">tarina</span>' %}
+{% set rt_content = '<p>Kuulu perustettiin 2010 Oulussa yhdella missiolla: <strong>tehda asiakkaistamme kuuluisia</strong>.</p><h3>Miksi olemme erilaisia</h3><p>Emme ole perinteinen mainostoimisto. Olemme ainoa suomalainen toimisto joka yhdistaa videotuotannon, tekoalyn ja digimarkkinoinnin.</p><blockquote>Markkinoinnin ei pitaisi olla arvaus. Sen pitaisi olla jarjestelma.</blockquote><ul><li>500+ tyytyvaista asiakasta</li><li>3 000+ tuotettua videota</li><li>40+ asiantuntijaa</li><li>2 studiota</li></ul>' %}
+{% set rt_max_width = '720px' %}
+{% include './partials/rich-text.html' %}
+
+<div id="faq-section">
+{# 22. FAQ ACCORDION #}
+{% set faq_tag = '// UKK' %}
+{% set faq_title = 'Usein kysytyt <span class="text-gradient-green">kysymykset</span>' %}
+{% set faq_1_q = 'Mika on Kuulu Flow?' %}
+{% set faq_1_a = 'Joustava krediittimalli jossa valitset kuukausittain mita palveluja tarvitset. Ei pitkia sopimuksia.' %}
+{% set faq_2_q = 'Paljonko palvelut maksavat?' %}
+{% set faq_2_a = 'Kuulu Flow alkaa 2 900 EUR/kk. Growth 4 900 EUR/kk ja Scale 7 900 EUR/kk. Alv 0 %.' %}
+{% set faq_3_q = 'Kuinka nopeasti paasemme alkuun?' %}
+{% set faq_3_a = 'Ensimmaiset sisallot pyorivat jo viikossa. Videot 2-4 viikon sisalla.' %}
+{% set faq_4_q = 'Voiko Kuulua testata ilman sitoumusta?' %}
+{% set faq_4_a = 'Kylla! Varaa maksuton 45 min sparraus. Ensimmainen kuukausi on riskiton.' %}
+{% set faq_5_q = 'Mita yhteen krediittiin sisaltyy?' %}
+{% set faq_5_a = 'Yksi krediitti vastaa noin 1h asiantuntijatyota. Eri palveluilla on eri krediittihinta.' %}
+{% set faq_6_q = 'Toimiiko Kuulu kansainvalisesti?' %}
+{% set faq_6_a = 'Kylla! Palvelemme useita kansainvalisia asiakkaita. Sisallot kaikilla kielilla.' %}
+{% include './partials/faq-accordion.html' %}
+</div>
+
+<div id="roi-section">
+{# 23. ROI CALCULATOR #}
+{% set roi_tag = '// Laske saastosi' %}
+{% set roi_title = 'Paljonko <span class="text-gradient-green">saastaisit</span> Kuulu Flow:lla?' %}
+{% set roi_description = 'Vertaa in-house-tiimin kokonaiskustannuksia Kuulu Flow -malliin.' %}
+{% set roi_slider_1_label = 'Markkinointibudjetti (EUR/kk)' %}
+{% set roi_slider_1_min = '2000' %}
+{% set roi_slider_1_max = '30000' %}
+{% set roi_slider_1_default = '8000' %}
+{% set roi_slider_1_step = '500' %}
+{% set roi_slider_2_label = 'In-house henkilot (lkm)' %}
+{% set roi_slider_2_min = '1' %}
+{% set roi_slider_2_max = '10' %}
+{% set roi_slider_2_default = '3' %}
+{% set roi_slider_2_step = '1' %}
+{% set roi_slider_3_label = 'Sisaltoja / kuukausi' %}
+{% set roi_slider_3_min = '5' %}
+{% set roi_slider_3_max = '60' %}
+{% set roi_slider_3_default = '15' %}
+{% set roi_slider_3_step = '5' %}
+{% set roi_avg_salary = '4500' %}
+{% set roi_flow_base = '2900' %}
+{% set roi_cta = 'Varaa sparraus' %}
+{% set roi_cta_url = '#ota-yhteytta' %}
+{% include './partials/roi-calculator.html' %}
+</div>
+
+<div id="hscroll-section">
+{# 24. HORIZONTAL SCROLL #}
+{% set hs_tag = '// Tutustu' %}
+{% set hs_title = 'Palvelumme <span class="text-gradient-green">kategorioittain</span>' %}
+{% set hs_description = 'Selaa vaakatasossa tai klikkaa nuolia.' %}
+{% set hs_1_title = 'Videotuotanto' %}
+{% set hs_1_text = 'Brandivideot, mainokset, animaatiot, lyhytvideot.' %}
+{% set hs_1_icon = 'fas fa-video' %}
+{% set hs_1_image = 'https://picsum.photos/seed/ref3/600/400' %}
+{% set hs_1_url = '#' %}
+{% set hs_2_title = 'Digimarkkinointi' %}
+{% set hs_2_text = 'SEO, Google Ads, Meta Ads, LinkedIn Ads.' %}
+{% set hs_2_icon = 'fas fa-bullhorn' %}
+{% set hs_2_image = 'https://picsum.photos/seed/hs2/600/400' %}
+{% set hs_2_url = '#' %}
+{% set hs_3_title = 'Tekoalyratkaisut' %}
+{% set hs_3_text = 'MyGPT-botit, AI-videot, AI-kuvapankit.' %}
+{% set hs_3_icon = 'fas fa-robot' %}
+{% set hs_3_image = 'https://picsum.photos/seed/ref4/600/400' %}
+{% set hs_3_url = '#' %}
+{% set hs_4_title = 'Koulutukset' %}
+{% set hs_4_text = 'Tekoaly, some, strategia.' %}
+{% set hs_4_icon = 'fas fa-graduation-cap' %}
+{% set hs_4_image = 'https://picsum.photos/seed/hs5/600/400' %}
+{% set hs_4_url = '#' %}
+{% set hs_5_title = 'Strategia' %}
+{% set hs_5_text = 'StoryBrand-tyopajat, sisaltostrategiat.' %}
+{% set hs_5_icon = 'fas fa-chess' %}
+{% set hs_5_image = 'https://picsum.photos/seed/hs4/600/400' %}
+{% set hs_5_url = '#' %}
+{% set hs_6_title = 'Valokuvaus' %}
+{% set hs_6_text = 'Brandi-, tuote- ja tapahtumavalokuvaus.' %}
+{% set hs_6_icon = 'fas fa-camera' %}
+{% set hs_6_image = 'https://picsum.photos/seed/hs6/600/400' %}
+{% set hs_6_url = '#' %}
+{% include './partials/horizontal-scroll.html' %}
+</div>
+
+<div id="nl-section">
+{# 25. NEWSLETTER CTA #}
+{% set nl_tag = '// Pysy ajan tasalla' %}
+{% set nl_title = 'Tilaa <span class="text-gradient-green">Kuulun uutiskirje</span>' %}
+{% set nl_description = 'Saat blogiartikkelit ja digimarkkinoinnin kuulumiset suoraan sahkopostiisi.' %}
+{% include './partials/newsletter-cta.html' %}
+</div>
+
+{# 26. FLOATING CTA #}
+{% set float_text = 'Varaa maksuton sparraus' %}
+{% set float_url = '#ota-yhteytta' %}
+{% set float_icon = 'fas fa-calendar-alt' %}
+{% set float_secondary_text = 'Tai soita: 044 974 4365' %}
+{% set float_secondary_url = 'tel:+358449744365' %}
+{% set float_show_after = 600 %}
+{% include './partials/floating-cta.html' %}
+
+{# 27. STICKY NAV #}
+{% set sn_items = 'Video:#video-section;;Esittely:#twocol-section;;Edut:#icon-section;;Vertailu:#comp-section;;Luvut:#stats-section;;Palvelut:#service-section;;Ennen/jalkeen:#ba-section;;Hinnoittelu:#pricing-section;;Prosessi:#process-section;;Aikajana:#timeline-section;;Kokemuksia:#testimonials-section;;Portfolio:#portfolio-section;;Galleria:#gallery-section;;Miksi Kuulu:#bento-section;;Referenssit:#ref-section;;Case:#case-section;;Tiimi:#team-section;;Accordion:#accordion-section;;FAQ:#faq-section;;ROI:#roi-section;;Scroll:#hscroll-section;;Uutiskirje:#nl-section' %}
+{% set sn_nav_title = 'Moduulit' %}
+{% include './partials/sticky-nav.html' %}
+
+{# CTA BANNER (lopussa) #}
+{% set cta_tag = '// Aloitetaan' %}
+{% set cta_title = 'Haluatko nahda, mita Kuulu voisi tehda <span class="text-gradient-green">sinun yrityksellesi?</span>' %}
+{% set cta_description = 'Varaa maksuton 45 min sparraus. Ei sitoumuksia.' %}
+{% set cta_primary_text = 'Varaa sparraus' %}
+{% set cta_primary_url = '#ota-yhteytta' %}
+{% set cta_secondary_text = 'Katso referenssit' %}
+{% set cta_secondary_url = '#ref-section' %}
+{% include './partials/cta-banner.html' %}
+
+{% include './partials/footer-cinematic.html' %}
+{% include './partials/scroll-animations.html' %}
+{% include './partials/scripts-cinematic.html' %}
+{% endblock %}

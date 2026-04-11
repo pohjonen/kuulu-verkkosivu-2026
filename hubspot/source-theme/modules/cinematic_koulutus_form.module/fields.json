@@ -1,0 +1,212 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Ota yhteyttä"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Pyydä tarjous"
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa (vihreä)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "koulutuksesta"
+}, {
+  "id" : "description_1",
+  "name" : "description_1",
+  "label" : "Kuvaus 1",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Saat meiltä 1–2 arkipäivässä ehdotuksen koulutuksesta, sisällöistä, kestosta ja hinnasta."
+}, {
+  "id" : "description_2",
+  "name" : "description_2",
+  "label" : "Kuvaus 2",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Pyydä alla olevalla lomakkeella tarjous ja kerro meille tarpeistasi ja rakennamme teille nopeassa aikataulussa sopivan ratkaisun."
+}, {
+  "id" : "description_3",
+  "name" : "description_3",
+  "label" : "Kuvaus 3",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Pidämme noin 300 koulutusta vuodessa, ja 98 % palautteen antaneista koulutettavista suosittelisi meitä edelleen."
+}, {
+  "id" : "stat_1_value",
+  "name" : "stat_1_value",
+  "label" : "Tilasto 1 – arvo",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "300+"
+}, {
+  "id" : "stat_1_label",
+  "name" : "stat_1_label",
+  "label" : "Tilasto 1 – teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "koulutusta/v"
+}, {
+  "id" : "stat_2_value",
+  "name" : "stat_2_value",
+  "label" : "Tilasto 2 – arvo",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "98%"
+}, {
+  "id" : "stat_2_label",
+  "name" : "stat_2_label",
+  "label" : "Tilasto 2 – teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "suosittelisi"
+}, {
+  "id" : "stat_3_value",
+  "name" : "stat_3_value",
+  "label" : "Tilasto 3 – arvo",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "10+"
+}, {
+  "id" : "stat_3_label",
+  "name" : "stat_3_label",
+  "label" : "Tilasto 3 – teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "vuotta kokemusta"
+}, {
+  "id" : "rep_name",
+  "name" : "rep_name",
+  "label" : "Edustajan nimi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Koulutustalon edustaja"
+}, {
+  "id" : "rep_subtitle",
+  "name" : "rep_subtitle",
+  "label" : "Edustajan alaotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Vastaa koulutustiedusteluihin arkisin"
+}, {
+  "id" : "rep_image",
+  "name" : "rep_image",
+  "label" : "Edustajan kuva",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "form_portal_id",
+  "name" : "form_portal_id",
+  "label" : "HubSpot Portal ID",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "450584"
+}, {
+  "id" : "form_id",
+  "name" : "form_id",
+  "label" : "HubSpot Form ID",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "805f07bd-a002-45f0-9aa5-af329327fcba"
+}, {
+  "id" : "form_region",
+  "name" : "form_region",
+  "label" : "HubSpot alue",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "eu1"
+}, {
+  "id" : "form_target_id",
+  "name" : "form_target_id",
+  "label" : "Lomakkeen kohdediv ID",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "hs-form-koulutus"
+}, {
+  "id" : "form_success_message",
+  "name" : "form_success_message",
+  "label" : "Onnistumisviesti (HTML)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "<p><strong>Hei, kiitokset yhteydenotostasi, olemme sinuun yhteydessä niin pian kuin mahdollista!</strong></p>"
+} ]

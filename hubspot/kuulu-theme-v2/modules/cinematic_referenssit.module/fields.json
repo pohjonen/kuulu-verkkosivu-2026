@@ -1,0 +1,293 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Referenssit"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Katso, miten asiakkaamme"
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa (vihreä)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "hyötyvät"
+}, {
+  "id" : "case_1_image",
+  "name" : "case_1_image",
+  "label" : "Case 1 – Kuva",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "case_1_badge",
+  "name" : "case_1_badge",
+  "label" : "Case 1 – Badge",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tekoäly"
+}, {
+  "id" : "case_1_title",
+  "name" : "case_1_title",
+  "label" : "Case 1 – Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Haaga-Helia Tekoälykuvapankki"
+}, {
+  "id" : "case_1_description",
+  "name" : "case_1_description",
+  "label" : "Case 1 – Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tekoälyllä tuotettu kuvapankki korkeakoululle."
+}, {
+  "id" : "case_1_link_url",
+  "name" : "case_1_link_url",
+  "label" : "Case 1 – Linkin URL",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.kuulu.fi/referenssit/haaga-helia-tekoalykuvapankki"
+}, {
+  "id" : "case_1_link_text",
+  "name" : "case_1_link_text",
+  "label" : "Case 1 – Linkin teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "LUE LISÄÄ"
+}, {
+  "id" : "case_2_image",
+  "name" : "case_2_image",
+  "label" : "Case 2 – Kuva",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "case_2_badge",
+  "name" : "case_2_badge",
+  "label" : "Case 2 – Badge",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Visuaalinen viestintä"
+}, {
+  "id" : "case_2_title",
+  "name" : "case_2_title",
+  "label" : "Case 2 – Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Energiequellen visuaalinen viestintä"
+}, {
+  "id" : "case_2_description",
+  "name" : "case_2_description",
+  "label" : "Case 2 – Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tehokas visuaalinen viestintä energia-alan yritykselle."
+}, {
+  "id" : "case_2_link_url",
+  "name" : "case_2_link_url",
+  "label" : "Case 2 – Linkin URL",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.kuulu.fi/case-studies/kuulu-energiequelle-tehokas-visuaalinen-viestinta"
+}, {
+  "id" : "case_2_link_text",
+  "name" : "case_2_link_text",
+  "label" : "Case 2 – Linkin teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "LUE LISÄÄ"
+}, {
+  "id" : "cta_text",
+  "name" : "cta_text",
+  "label" : "CTA – Teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Kokemuksia Kuulusta"
+}, {
+  "id" : "cta_url",
+  "name" : "cta_url",
+  "label" : "CTA – URL",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.kuulu.fi/case-studies"
+}, {
+  "id" : "media_type",
+  "name" : "media_type",
+  "label" : "Media (osion kuva/video)",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "none", "Ei mediaa" ], [ "image", "Kuva" ], [ "video_url", "Video (URL)" ], [ "video_file", "Video (upload)" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "none"
+}, {
+  "id" : "media_position",
+  "name" : "media_position",
+  "label" : "Median sijainti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image|video_url|video_file",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null
+  },
+  "display" : "radio",
+  "choices" : [ [ "left", "Vasen" ], [ "right", "Oikea" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "right"
+}, {
+  "id" : "media_image",
+  "name" : "media_image",
+  "label" : "Kuva",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "media_video_url",
+  "name" : "media_video_url",
+  "label" : "Videon URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_url",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "picker" : "file",
+  "id" : "media_video_file",
+  "name" : "media_video_file",
+  "label" : "Videotiedosto",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_file",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "file"
+} ]

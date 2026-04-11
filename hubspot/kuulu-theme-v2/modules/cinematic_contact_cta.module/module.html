@@ -1,0 +1,56 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media() %}
+  {% set mt = module.media_type|default("none") %}
+  {% if mt == "image" and module.media_image and module.media_image.src %}
+    <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt|default('') }}" style="width: 100%; height: auto; display: block; border-radius: 16px;">
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("none") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+
+<style>
+.cta-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+@media (max-width: 768px) { .cta-media-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="cinematic-section section-with-blobs gradient-section-tl grain-section" id="contact">
+  <div class="glow-orb" style="width: 800px; height: 800px; top: -300px; left: 50%; transform: translateX(-50%);"></div>
+  <div class="glow-orb-subtle" style="width: 400px; height: 400px; bottom: 0; left: -100px;"></div>
+  <div class="glow-orb-subtle" style="width: 400px; height: 400px; bottom: 0; right: -100px;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="contact-section-cinematic glass-card" style="text-align: center; max-width: {% if has_media %}1100px{% else %}800px{% endif %}; margin: 0 auto; padding: 4rem;">
+      {% if has_media %}
+      <div class="cta-media-grid" style="text-align: left;">
+        {% if mp == "left" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+        <div style="text-align: center;">
+      {% endif %}
+
+      <span class="section-tag">{{ module.section_tag }}</span>
+      <h2 class="section-header">{{ module.headline }} <span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+      <p style="color: var(--cinematic-text-muted); margin-bottom: 2rem; font-size: 1.1rem;">{{ module.description }}</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; align-items: stretch; flex-wrap: wrap; width: 100%;">
+        {% if module.cta_primary_text %}
+        <a href="{{ module.cta_primary_url }}" class="btn-cinematic-primary" style="font-size: 1.25rem; padding: 1.25rem 2.5rem; white-space: normal; text-align: center; flex: 1 1 280px; min-width: 240px;">{{ module.cta_primary_text }}</a>
+        {% endif %}
+        {% if module.cta_count == "2" and module.cta_secondary_text %}
+        <a href="{{ module.cta_secondary_url }}" class="btn-cinematic-outline" style="font-size: 1.25rem; padding: 1.25rem 2.5rem; white-space: normal; text-align: center; flex: 1 1 280px; min-width: 240px;">{{ module.cta_secondary_text }}</a>
+        {% endif %}
+      </div>
+
+      {% if has_media %}
+        </div>
+        {% if mp == "right" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

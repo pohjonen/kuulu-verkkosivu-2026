@@ -1,0 +1,130 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Comparison Table - Us vs Them"
+-->
+{#
+  Vertailutaulukko -partiaali ("Meillä vs. Muilla")
+
+  Käyttö:
+    {% set comp_tag = '// Vertailu' %}
+    {% set comp_title = 'Kuulu Flow <span class="text-gradient-green">vs. perinteinen</span>' %}
+    {% set comp_col_left = 'Perinteinen malli' %}
+    {% set comp_col_right = 'Kuulu Flow' %}
+    {% set comp_1_label = 'Sitoutuminen' %}
+    {% set comp_1_left = '12 kk sopimus' %}
+    {% set comp_1_right = 'Kuukausi kerrallaan' %}
+    {% set comp_2_label = 'Joustavuus' %}
+    {% set comp_2_left = 'Kiinteä paketti' %}
+    {% set comp_2_right = 'Valitse vapaasti' %}
+    ... (max 8 riviä)
+    {% set comp_highlight_right = true %}
+    {% include './partials/comparison-table.html' %}
+#}
+
+{% set ct_tag = comp_tag|default('') %}
+{% set ct_title = comp_title|default('') %}
+{% set ct_desc = comp_description|default('') %}
+{% set ct_left = comp_col_left|default('Perinteinen') %}
+{% set ct_right = comp_col_right|default('Kuulu') %}
+{% set ct_highlight = comp_highlight_right|default(true) %}
+
+{% set r1_l = comp_1_label|default('') %}
+{% set r1_a = comp_1_left|default('') %}
+{% set r1_b = comp_1_right|default('') %}
+{% set r2_l = comp_2_label|default('') %}
+{% set r2_a = comp_2_left|default('') %}
+{% set r2_b = comp_2_right|default('') %}
+{% set r3_l = comp_3_label|default('') %}
+{% set r3_a = comp_3_left|default('') %}
+{% set r3_b = comp_3_right|default('') %}
+{% set r4_l = comp_4_label|default('') %}
+{% set r4_a = comp_4_left|default('') %}
+{% set r4_b = comp_4_right|default('') %}
+{% set r5_l = comp_5_label|default('') %}
+{% set r5_a = comp_5_left|default('') %}
+{% set r5_b = comp_5_right|default('') %}
+{% set r6_l = comp_6_label|default('') %}
+{% set r6_a = comp_6_left|default('') %}
+{% set r6_b = comp_6_right|default('') %}
+{% set r7_l = comp_7_label|default('') %}
+{% set r7_a = comp_7_left|default('') %}
+{% set r7_b = comp_7_right|default('') %}
+{% set r8_l = comp_8_label|default('') %}
+{% set r8_a = comp_8_left|default('') %}
+{% set r8_b = comp_8_right|default('') %}
+
+{% set ct_btn = comp_cta_text|default('') %}
+{% set ct_btn_url = comp_cta_url|default('#') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    {% if ct_tag %}<span class="section-tag">{{ ct_tag }}</span>{% endif %}
+    {% if ct_title %}<h2 class="section-header">{{ ct_title }}</h2>{% endif %}
+    {% if ct_desc %}<p style="color: var(--cinematic-text-muted); max-width: 650px; margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.7;">{{ ct_desc }}</p>{% endif %}
+
+    <div class="ct-wrapper" style="max-width: 800px; margin: 0 auto;">
+      <div class="ct-table" style="border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
+
+        <div class="ct-header" style="display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 0;">
+          <div style="padding: 1.25rem 1.5rem; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.08);"></div>
+          <div style="padding: 1.25rem 1rem; text-align: center; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.08); border-left: 1px solid rgba(255,255,255,0.06);">
+            <span style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; color: var(--cinematic-text-muted); text-transform: uppercase; letter-spacing: 0.05em;">{{ ct_left }}</span>
+          </div>
+          <div style="padding: 1.25rem 1rem; text-align: center; border-bottom: 1px solid rgba(0,255,135,0.2); border-left: 1px solid rgba(255,255,255,0.06);{% if ct_highlight %} background: rgba(0,255,135,0.05);{% else %} background: rgba(255,255,255,0.03);{% endif %}">
+            <span style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;{% if ct_highlight %} color: var(--cinematic-green);{% else %} color: var(--cinematic-text-muted);{% endif %} text-transform: uppercase; letter-spacing: 0.05em;">{{ ct_right }}</span>
+          </div>
+        </div>
+
+        {% macro row(label, left_val, right_val, highlight) %}
+        {% if label %}
+        <div class="ct-row" style="display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 0; border-bottom: 1px solid rgba(255,255,255,0.05); transition: background 0.2s;">
+          <div style="padding: 1rem 1.5rem; font-weight: 600; font-size: 0.9rem; color: var(--cinematic-text); display: flex; align-items: center;">{{ label }}</div>
+          <div style="padding: 1rem; text-align: center; color: var(--cinematic-text-muted); font-size: 0.88rem; border-left: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center;">
+            {% if left_val == '✗' or left_val == '✘' or left_val == 'x' or left_val == 'X' %}
+              <span style="color: rgba(255,80,80,0.8); font-size: 1.1rem;">✗</span>
+            {% elif left_val == '✓' or left_val == '✔' %}
+              <span style="color: var(--cinematic-green); font-size: 1.1rem;">✓</span>
+            {% else %}
+              {{ left_val }}
+            {% endif %}
+          </div>
+          <div style="padding: 1rem; text-align: center; font-size: 0.88rem; border-left: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center;{% if highlight %} background: rgba(0,255,135,0.03); color: var(--cinematic-text);{% else %} color: var(--cinematic-text);{% endif %}">
+            {% if right_val == '✗' or right_val == '✘' or right_val == 'x' or right_val == 'X' %}
+              <span style="color: rgba(255,80,80,0.8); font-size: 1.1rem;">✗</span>
+            {% elif right_val == '✓' or right_val == '✔' %}
+              <span style="color: var(--cinematic-green); font-size: 1.1rem; font-weight: 700;">✓</span>
+            {% else %}
+              <span{% if highlight %} style="font-weight: 600; color: var(--cinematic-green);"{% endif %}>{{ right_val }}</span>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+        {% endmacro %}
+
+        {{ row(r1_l, r1_a, r1_b, ct_highlight) }}
+        {{ row(r2_l, r2_a, r2_b, ct_highlight) }}
+        {{ row(r3_l, r3_a, r3_b, ct_highlight) }}
+        {{ row(r4_l, r4_a, r4_b, ct_highlight) }}
+        {{ row(r5_l, r5_a, r5_b, ct_highlight) }}
+        {{ row(r6_l, r6_a, r6_b, ct_highlight) }}
+        {{ row(r7_l, r7_a, r7_b, ct_highlight) }}
+        {{ row(r8_l, r8_a, r8_b, ct_highlight) }}
+      </div>
+
+      {% if ct_btn %}
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="{{ ct_btn_url }}" class="btn-cinematic-primary">{{ ct_btn }}</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+.ct-row:hover { background: rgba(255,255,255,0.02); }
+@media (max-width: 640px) {
+  .ct-header, .ct-row { grid-template-columns: 1fr 1fr 1fr !important; }
+  .ct-header > div, .ct-row > div { padding: 0.75rem 0.5rem !important; font-size: 0.78rem !important; }
+}
+</style>

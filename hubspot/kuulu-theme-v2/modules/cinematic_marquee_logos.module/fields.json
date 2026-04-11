@@ -1,0 +1,127 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Asiakkaat"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "He luottavat "
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "meihin"
+}, {
+  "id" : "logos",
+  "name" : "logos",
+  "label" : "Logot",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 4,
+    "max" : 20,
+    "sorting_label_field" : null,
+    "default" : 8
+  },
+  "children" : [ {
+    "id" : "logo_image",
+    "name" : "logo_image",
+    "label" : "Logokuva",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "display_width" : null,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : "Logo"
+    }
+  }, {
+    "id" : "logo_name",
+    "name" : "logo_name",
+    "label" : "Yrityksen nimi (alt-teksti)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Yritys"
+  }, {
+    "id" : "logo_link",
+    "name" : "logo_link",
+    "label" : "Linkki (valinnainen)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : ""
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ ]
+}, {
+  "id" : "scroll_speed",
+  "name" : "scroll_speed",
+  "label" : "Scrollausnopeus (sekuntia per kierros)",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 30
+}, {
+  "id" : "pause_on_hover",
+  "name" : "pause_on_hover",
+  "label" : "Pysäytä hover-tilassa",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "logo_height",
+  "name" : "logo_height",
+  "label" : "Logojen korkeus (px)",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 60
+}, {
+  "id" : "grayscale",
+  "name" : "grayscale",
+  "label" : "Harmaasävy (hover palauttaa värin)",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+} ]

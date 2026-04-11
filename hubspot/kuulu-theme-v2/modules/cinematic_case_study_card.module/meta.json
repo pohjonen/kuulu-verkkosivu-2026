@@ -1,0 +1,12 @@
+{
+  "content_tags" : [ {
+    "name" : "CINEMATIC",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 382165002483,
+  "label" : "Cinematic Case Study Card",
+  "is_available_for_new_content" : true
+}

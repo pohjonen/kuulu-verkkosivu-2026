@@ -1,0 +1,714 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Perjantaipulssi Test 2026-02-11
+-->
+{% extends './layouts/base-cinematic.html' %}
+
+{% block body %}
+<!-- Aurora Background -->
+<div class="aurora-background"></div>
+
+<div class="cinematic-page has-aurora-bg">
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Kuulu Mega Menu Navigation (identical to homepage) -->
+  <header class="header custom-header cinematic-header">
+    <div class="custom-header__container">
+        <div class="custom-header__logo">
+          <a href="https://www.kuulu.fi" aria-label="Kuulu - Etusivu">
+            <img src="https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png" alt="Kuulu Lettermark Logo">
+          </a>
+        </div>
+        <nav class="custom-header__navigation" aria-label="Main navigation">
+            <ul role="menu">
+                <li role="none">
+                    <a href="https://www.kuulu.fi/koulutus" aria-haspopup="true" aria-expanded="false" role="menuitem">Koulutus</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/copilotin-kiihdytyskaista"><div class="mega-menu-icon"><i class="fas fa-graduation-cap"></i></div><div class="mega-menu-text"><h4>Copilotin kiihdytyskaista</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi"><div class="mega-menu-icon"><i class="fas fa-graduation-cap"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-perjantaipulssi"><div class="mega-menu-icon"><i class="fas fa-lightbulb"></i></div><div class="mega-menu-text"><h4>Tekoälyn Perjantaipulssi</h4></div></a></li>
+                                <li class="mega-menu-item" style="padding-top: 0.75rem; margin-top: 0.25rem; border-top: 1px solid rgba(255,255,255,0.12);">
+                                  <div class="mega-menu-text"><h4 style="margin:0; color: var(--cinematic-green); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em;">Jäsenille</h4></div>
+                                </li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (01-26)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-8-jasenille-10-2025"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (10-2025)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-08-2025"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (08-2025)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Copilotin Kiihdytyskaista - Jäsenille (12-25)</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <a href="https://www.kuulu.fi/digimarkkinointi" aria-haspopup="true" aria-expanded="false" role="menuitem">Digimarkkinointi</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/tarinankerronta"><div class="mega-menu-icon"><i class="fas fa-bullhorn"></i></div><div class="mega-menu-text"><h4>Brändäys ja tarinankerronta</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/sisaltopankki"><div class="mega-menu-icon"><i class="fas fa-database"></i></div><div class="mega-menu-text"><h4>Sisältöpankki</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/tekoaly-kuvapankki"><div class="mega-menu-icon"><i class="fas fa-robot"></i></div><div class="mega-menu-text"><h4>Tekoälykuvapankki</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/liidien-hankinta"><div class="mega-menu-icon"><i class="fas fa-magnet"></i></div><div class="mega-menu-text"><h4>Liidien hankinta</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/rekrymarkkinointi"><div class="mega-menu-icon"><i class="fas fa-users"></i></div><div class="mega-menu-text"><h4>Rekrymarkkinointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/energia-alan-markkinointi"><div class="mega-menu-icon"><i class="fas fa-bolt"></i></div><div class="mega-menu-text"><h4>Energia-alan markkinointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi"><div class="mega-menu-icon"><i class="fas fa-search"></i></div><div class="mega-menu-text"><h4>Someauditointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/hakukoneoptimointi-ja-seo-analyysi"><div class="mega-menu-icon"><i class="fas fa-chart-line"></i></div><div class="mega-menu-text"><h4>SEO Analyysi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/google-ads-mainonta"><div class="mega-menu-icon"><i class="fab fa-google"></i></div><div class="mega-menu-text"><h4>Google Ads</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/kuulunautti"><div class="mega-menu-icon"><i class="fas fa-user-astronaut"></i></div><div class="mega-menu-text"><h4>Kuulunautti</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <a href="https://www.kuulu.fi/videotuotanto" aria-haspopup="true" aria-expanded="false" role="menuitem">Videosisällöt</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/fi-fi/yritysvideot"><div class="mega-menu-icon"><i class="fas fa-video"></i></div><div class="mega-menu-text"><h4>Yritysvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/animaatiot"><div class="mega-menu-icon"><i class="fas fa-film"></i></div><div class="mega-menu-text"><h4>Animaatiot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/brandivideo"><div class="mega-menu-icon"><i class="fas fa-gem"></i></div><div class="mega-menu-text"><h4>Brändivideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/mainosvideot"><div class="mega-menu-icon"><i class="fas fa-play-circle"></i></div><div class="mega-menu-text"><h4>Mainosvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tv-mainos-tuotanto"><div class="mega-menu-icon"><i class="fas fa-tv"></i></div><div class="mega-menu-text"><h4>TV-mainosvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/yhdistys-ja-hankevideot"><div class="mega-menu-icon"><i class="fas fa-hands-helping"></i></div><div class="mega-menu-text"><h4>Yhdistys- ja hankevideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/gif-animaatiot-markkinointiin"><div class="mega-menu-icon"><i class="fas fa-file-video"></i></div><div class="mega-menu-text"><h4>Gif-animaatiot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/matkailuvideot"><div class="mega-menu-icon"><i class="fas fa-plane"></i></div><div class="mega-menu-text"><h4>Matkailuvideot</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none"><a href="https://www.kuulu.fi/case-studies" role="menuitem">Kokemuksia Kuulusta</a></li>
+                <li role="none"><a href="https://blog.kuulu.fi" role="menuitem">Blogi</a></li>
+                <li role="none"><a href="https://mukaantiimiin.kuulu.fi/" role="menuitem">Mukaan tiimiin</a></li>
+                <li role="none"><a href="https://www.kuulu.fi/case-studies" role="menuitem">Asiakas caset</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <div class="hamburger" id="mobile-menu-toggle" role="button" tabindex="0" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-nav-panel">
+            <span></span><span></span><span></span>
+          </div>
+          <div id="mobile-nav-panel" class="mobile-nav__panel" role="dialog" aria-modal="true" hidden>
+            <ul class="mobile-nav__list">
+              <li>
+                <a href="https://www.kuulu.fi/koulutus">Koulutus</a>
+                <ul style="list-style:none; margin:0.5rem 0 0 0.75rem; padding:0 0 0 0.75rem; border-left:1px solid rgba(255,255,255,0.2);">
+                  <li style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--cinematic-green); margin:0.25rem 0 0.5rem 0;">Jäsenille</li>
+                  <li><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26" style="font-size:0.95rem;">Tekoälyn Mestarikurssi (01-26)</a></li>
+                  <li><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-8-jasenille-10-2025" style="font-size:0.95rem;">Tekoälyn Mestarikurssi (10-2025)</a></li>
+                  <li><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-08-2025" style="font-size:0.95rem;">Tekoälyn Mestarikurssi (08-2025)</a></li>
+                  <li><a href="https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25" style="font-size:0.95rem;">Copilotin Kiihdytyskaista (12-25)</a></li>
+                </ul>
+              </li>
+              <li><a href="https://www.kuulu.fi/digimarkkinointi">Digimarkkinointi</a></li>
+              <li><a href="https://www.kuulu.fi/videotuotanto">Videosisällöt</a></li>
+              <li><a href="https://www.kuulu.fi/case-studies">Kokemuksia Kuulusta</a></li>
+              <li><a href="https://blog.kuulu.fi">Blogi</a></li>
+              <li><a href="https://mukaantiimiin.kuulu.fi">Mukaan tiimiin</a></li>
+              <li><a href="https://www.kuulu.fi/case-studies">Asiakas caset</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="ota-yhteytta-button">
+           <a href="https://www.kuulu.fi/yhteystiedot" class="ota-yhteytta-btn">
+                <span class="ota-yhteytta-text">Ota yhteyttä</span>
+           </a>
+        </div>
+    </div>
+  </header>
+  <div class="header-observer-sentinel"></div>
+
+  <!-- ============================================== -->
+  <!-- HERO SECTION -->
+  <!-- ============================================== -->
+  <section class="cinematic-hero" style="position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 100vh; padding: 2rem; padding-top: clamp(6rem, 12vh, 15vh);">
+    <!-- Background Video -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden;">
+      <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); object-fit: cover; opacity: 0.3;">
+        <source src="https://www.kuulu.fi/hubfs/hf_20260211_182811_6d577076-c6fb-479f-bc4a-77b4dcd6054b.mp4" type="video/mp4">
+      </video>
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(5,10,5,0.6) 0%, rgba(5,10,5,0.85) 70%, rgba(5,10,5,1) 100%);"></div>
+    </div>
+    <div class="hero-glass-box" style="width: min(100%, 800px); max-width: 800px; box-sizing: border-box; text-align: center; z-index: 3; position: relative; margin: 0 auto;">
+      <span class="section-tag">// KUUKAUSITTAINEN TEKOÄLYKOULUTUS</span>
+      <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); margin: 1rem 0; letter-spacing: 0.02em;">
+        Tekoälyn <span class="text-gradient-green">Perjantaipulssi</span>
+      </h1>
+      <p style="color: var(--cinematic-text); line-height: 1.7; margin-bottom: 1rem; font-size: 1.15rem;">
+        Tekoälykoulutus, joka pitää sinut mukana tekoälyn kehityksessä ilman tietoähkyä tai turhaa ajanhukkaa.
+      </p>
+      <p style="color: var(--cinematic-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
+        Sopii markkinoijille, myyjille, johtajille ja asiantuntijoille, jotka haluavat hyödyntää tekoälyä työnsä tehostamisessa.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; align-items: stretch; flex-wrap: wrap; width: 100%;">
+        <a href="#ilmoittaudu" class="btn-cinematic-primary" style="white-space: normal; text-align: center; flex: 1 1 260px; min-width: 220px;">Ilmoittaudu nyt</a>
+      </div>
+      <!-- Stats -->
+      <div style="display: flex; gap: 3rem; justify-content: center; margin-top: 2rem;">
+        <div style="text-align: center;">
+          <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">11</span>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin-top: 0.25rem;">live-webinaaria/v</p>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">1,5h</span>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin-top: 0.25rem;">kuukaudessa</p>
+        </div>
+        <div style="text-align: center;">
+          <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">33k+</span>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin-top: 0.25rem;">valmennettua</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- WHY + WHAT YOU GET (2-column) -->
+  <!-- ============================================== -->
+  <section class="cinematic-section">
+    <div class="container-cinematic">
+      <div class="pp-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+        <!-- Left: Why -->
+        <div>
+          <span class="section-tag">// Miksi Perjantaipulssi</span>
+          <h2 class="section-header" style="font-size: 2rem;">Selkeyttä <span class="text-gradient-green">tekoälyviidakkoon</span></h2>
+          <p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            Tekoäly kehittyy hurjaa vauhtia. Autamme sinua hyödyntämään sen mahdollisuudet käytännössä, tarjoamalla testattuja työkaluja ja työnkulkuja markkinointiin, viestintään ja myyntiin.
+          </p>
+          <p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            <a href="/ihmiset/jonna-muurinen" target="_blank" style="color: var(--cinematic-green); text-decoration: none;">Jonna Muurinen</a> ja <a href="/ihmiset/ville-pohjonen" target="_blank" style="color: var(--cinematic-green); text-decoration: none;">Ville Pohjonen</a> ovat valmentaneet yli 33 000 ammattilaista yli 300:ssa tekoälykoulutuksessa. Tämä käytännön kokemus on Perjantaipulssin perusta.
+          </p>
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.4rem; margin: 2rem 0 1rem 0;">Mitä hyötyä sinulle?</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; color: var(--cinematic-text);">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> Säästät aikaa ja lisäät tehokkuutta
+            </li>
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; color: var(--cinematic-text);">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> Pysyt mukana tekoälyn kehityksessä
+            </li>
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem; color: var(--cinematic-text);">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> Opit heti käyttöönotettavia ratkaisuja
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem; color: var(--cinematic-text);">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> Kehität strategista tekoälyosaamistasi
+            </li>
+          </ul>
+        </div>
+        <!-- Right: What you get + pricing -->
+        <div>
+          <div class="hero-glass-box" style="padding: 2.5rem;">
+            <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.6rem; margin-bottom: 1.5rem;">Mitä saat?</h3>
+            <ul style="list-style: none; padding: 0; margin: 0 0 2rem 0;">
+              <li style="margin-bottom: 1rem; display: flex; gap: 1rem; color: var(--cinematic-text);">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fas fa-video" style="color: var(--cinematic-green); font-size: 0.9rem;"></i>
+                </div>
+                <div><strong>11 live-webinaaria</strong><br><span style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Perjantaisin klo 13–14.30</span></div>
+              </li>
+              <li style="margin-bottom: 1rem; display: flex; gap: 1rem; color: var(--cinematic-text);">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fas fa-play-circle" style="color: var(--cinematic-green); font-size: 0.9rem;"></i>
+                </div>
+                <div><strong>Kaikki tallenteet</strong><br><span style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Käytettävissäsi 3 kk webinaarin jälkeen</span></div>
+              </li>
+              <li style="margin-bottom: 1rem; display: flex; gap: 1rem; color: var(--cinematic-text);">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fas fa-file-alt" style="color: var(--cinematic-green); font-size: 0.9rem;"></i>
+                </div>
+                <div><strong>Materiaalit</strong><br><span style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Käytännön vinkkeineen ja tehtävineen</span></div>
+              </li>
+              <li style="display: flex; gap: 1rem; color: var(--cinematic-text);">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fas fa-calendar-check" style="color: var(--cinematic-green); font-size: 0.9rem;"></i>
+                </div>
+                <div><strong>Aloita milloin vain</strong><br><span style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Jäsenyys voimassa vuoden liittymisestä</span></div>
+              </li>
+            </ul>
+            <!-- Pricing -->
+            <div style="background: rgba(0,255,135,0.05); border: 1px solid rgba(0,255,135,0.15); border-radius: 16px; padding: 1.5rem; text-align: center; margin-bottom: 1.5rem;">
+              <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">1 200 €</span>
+              <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; margin-top: 0.25rem;">1 506 € sis. alv</p>
+            </div>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              <strong style="color: var(--cinematic-text);">Tiesitkö?</strong> Perjantaipulssin vuosijäsenyys sisältyy <a href="/tekoalyn-mestarikurssi" target="_blank" style="color: var(--cinematic-green); text-decoration: none;">Tekoälyn Mestarikurssiin</a>.
+            </p>
+            <a href="#ilmoittaudu" class="btn-cinematic-primary" style="width: 100%; justify-content: center;">Ilmoittaudu nyt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- 2026 SCHEDULE -->
+  <!-- ============================================== -->
+  <section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+    <div class="container-cinematic" style="position: relative; z-index: 10;">
+      <span class="section-tag">// Ohjelma 2026</span>
+      <h2 class="section-header">Mitä opin tekoälystä <span class="text-gradient-green">vuonna 2026?</span></h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
+        <!-- Jan -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 16.1.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Tammikuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Tekoälylliset työnkulut ja automaatiot</p>
+        </div>
+        <!-- Feb -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 13.2.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Helmikuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Tekoälykoodaus – ratkaisuja ilman ohjelmointitaustaa</p>
+        </div>
+        <!-- Mar -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 13.3.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Maaliskuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Assistentti, workflow vai agentti? Erot, hyödyt ja 3 agenttiesimerkkiä</p>
+        </div>
+        <!-- Apr -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 17.4.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Huhtikuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Projektinhallinta tekoälyllä</p>
+        </div>
+        <!-- May -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 8.5.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Toukokuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Myyntitiimi tekoälyllä – prosessin tehostus alusta loppuun</p>
+        </div>
+        <!-- Jun -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 12.6.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Kesäkuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Sisältösuunnittelu tekoälyn avulla: asiakaspolku ja tarpeet</p>
+        </div>
+        <!-- Aug -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 14.8.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Elokuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Palvelumuotoilu ja tekoäly – parempia ratkaisuja asiakkaille</p>
+        </div>
+        <!-- Sep -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 18.9.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Syyskuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Markkinointi- tai myyntikampanja tekoälyn avulla</p>
+        </div>
+        <!-- Oct -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 16.10.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Lokakuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Somesisällöt tekoälyllä</p>
+        </div>
+        <!-- Nov -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 13.11.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Marraskuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Somevideoiden editointi, käsittely ja tekstitys tekoälyllä</p>
+        </div>
+        <!-- Dec -->
+        <div class="hero-glass-box" style="padding: 1.5rem;">
+          <span style="color: var(--cinematic-green); font-family: var(--font-mono); font-size: 0.8rem;">PE 18.12.</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 0.5rem 0 0.25rem;">Joulukuu</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Tekoäly strategiatyön ja suunnittelun apuna</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- TESTIMONIAL -->
+  <!-- ============================================== -->
+  <section class="cinematic-section">
+    <div class="container-cinematic">
+      <div class="hero-glass-box" style="padding: 3rem; text-align: center; max-width: 800px; margin: 0 auto;">
+        <div style="color: var(--cinematic-green); font-size: 3rem; line-height: 1; margin-bottom: 1rem;">&ldquo;</div>
+        <p style="color: var(--cinematic-text); font-size: 1.2rem; line-height: 1.8; font-style: italic; margin-bottom: 1.5rem;">
+          Perjantaipulssi on sopivan tasoinen silmien ja korvien avaaja siihen, mitä kaikkea tekoälyllä voi tehdä.
+        </p>
+        <div>
+          <p style="color: var(--cinematic-text); font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">Elina Ranta</p>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem;">Asiakkuus- ja myyntijohtaja, UKI-arkkitehdit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- FOR WHOM + TRAINERS (2-column) -->
+  <!-- ============================================== -->
+  <section class="cinematic-section section-with-blobs gradient-section-deep grain-section">
+    <div class="container-cinematic" style="position: relative; z-index: 10;">
+      <div class="pp-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+        <!-- Left: For whom -->
+        <div class="hero-glass-box" style="padding: 2.5rem;">
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.6rem; margin-bottom: 1.5rem;">Sopiiko Perjantaipulssi minulle?</h3>
+          <p style="color: var(--cinematic-green); font-weight: 600; margin-bottom: 1rem;">Kyllä, jos:</p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 0.75rem; color: var(--cinematic-text); font-size: 0.95rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green); margin-top: 0.15rem;"></i> Olet markkinoinnin-, myynnin- tai viestinnän ammattilainen
+            </li>
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 0.75rem; color: var(--cinematic-text); font-size: 0.95rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green); margin-top: 0.15rem;"></i> Haluat tuoda tekoälyn osaksi arkea
+            </li>
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 0.75rem; color: var(--cinematic-text); font-size: 0.95rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green); margin-top: 0.15rem;"></i> Haluat pysyä ajan tasalla ilman itse-opiskelua
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; color: var(--cinematic-text); font-size: 0.95rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green); margin-top: 0.15rem;"></i> Haluat konkreettisia työkaluja, et teoriaa
+            </li>
+          </ul>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6;">
+            <strong style="color: var(--cinematic-text);">Ei vaadi:</strong> Ohjelmointiosaamista tai osallistumista jokaiseen live-webinaariin (tallenteet käytössäsi).
+          </p>
+        </div>
+        <!-- Right: Trainers -->
+        <div class="hero-glass-box" style="padding: 2.5rem;">
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.6rem; margin-bottom: 1.5rem;">Kouluttajat</h3>
+          <div style="border-radius: 16px; overflow: hidden; margin-bottom: 1.5rem;">
+            <img src="https://www.kuulu.fi/hubfs/ville-ja-jonna-perjantaipulssi.png" alt="Jonna Muurinen ja Ville Pohjonen - Kuulun tekoälyasiantuntijat" style="display: block; width: 100%; height: auto;">
+          </div>
+          <p style="color: var(--cinematic-text); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Jonna Muurinen ja Ville Pohjonen</p>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
+            Kuulun tekoälyasiantuntijat, jotka ovat valmentaneet yli 33 000 ammattilaista tekoälyn käyttöön. 300+ toteutettua koulutusta antaa vahvan käytännön näkökulman jokaiseen webinaariin.
+          </p>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">
+            Perjantaipulssia vetävät myös muut Kuulun liikkeenjohdon, viestinnän ja markkinoinnin ammattilaiset, jotka hyödyntävät tekoälyä päivittäin työssään.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- VIDEO TESTIMONIALS -->
+  <!-- ============================================== -->
+  <section class="cinematic-section">
+    <div class="container-cinematic">
+      <span class="section-tag">// Kokemuksia</span>
+      <h2 class="section-header">Osallistujien <span class="text-gradient-green">kokemukset</span></h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <!-- Video 1 -->
+        <div class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <div style="position: relative; padding-bottom: 56.25%; overflow: hidden;">
+            <iframe src="https://play-eu1.hubspotvideo.com/v/450584/id/287165409515?play_button_color=ffffff" allow="autoplay; fullscreen;" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" title="Janne Puolitaival referenssi" loading="lazy"></iframe>
+          </div>
+          <div style="padding: 1.25rem;">
+            <p style="color: var(--cinematic-text); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Janne Puolitaival</p>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.8rem;">Hyvinvointijohtaja, Iin kunta</p>
+          </div>
+        </div>
+        <!-- Video 2 -->
+        <div class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <div style="position: relative; padding-bottom: 56.25%; overflow: hidden;">
+            <iframe src="https://play-eu1.hubspotvideo.com/v/450584/id/287141169351?play_button_color=ffffff" allow="autoplay; fullscreen;" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" title="Minna Haarala referenssi" loading="lazy"></iframe>
+          </div>
+          <div style="padding: 1.25rem;">
+            <p style="color: var(--cinematic-text); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Minna Haarala</p>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.8rem;">AD, Probot</p>
+          </div>
+        </div>
+        <!-- Video 3 -->
+        <div class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <div style="position: relative; padding-bottom: 56.25%; overflow: hidden;">
+            <iframe src="https://play-eu1.hubspotvideo.com/v/450584/id/169322638383?play_button_color=ffffff" allow="autoplay; fullscreen;" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" title="Jarkko Auno referenssi" loading="lazy"></iframe>
+          </div>
+          <div style="padding: 1.25rem;">
+            <p style="color: var(--cinematic-text); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">Jarkko Auno</p>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.8rem;">Toimitusjohtaja, Oulunseudun fysioterapia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- FAQ SECTION -->
+  <!-- ============================================== -->
+  <section class="cinematic-section section-with-blobs gradient-section-tl grain-section">
+    <div class="container-cinematic" style="position: relative; z-index: 10;">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <span class="section-tag">// UKK</span>
+        <h2 class="section-header">Usein kysytyt <span class="text-gradient-green">kysymykset</span></h2>
+
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 2rem;">
+          <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+            <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+              <span>Pitääkö minun osallistua kaikkiin live-webinaareihin?</span>
+              <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+            </summary>
+            <div style="padding: 0 1.5rem 1.25rem;">
+              <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">Ei. Saat tallenteet ja materiaalit kaikista webinaareista käyttöösi koulutuspäivän jälkeen. Webinaareja pääset katsomaan tallenteelta 3 kk jälkikäteen.</p>
+            </div>
+          </details>
+          <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+            <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+              <span>Voinko aloittaa kesken vuoden?</span>
+              <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+            </summary>
+            <div style="padding: 0 1.5rem 1.25rem;">
+              <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">Kyllä. Jäsenyys on voimassa vuoden siitä hetkestä, kun liityt mukaan.</p>
+            </div>
+          </details>
+          <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+            <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+              <span>Tarvitsenko teknistä osaamista tai ohjelmointitaitoja?</span>
+              <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+            </summary>
+            <div style="padding: 0 1.5rem 1.25rem;">
+              <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">Et. Koulutukset on suunniteltu ammattilaisille, joilla ei ole teknistä taustaa.</p>
+            </div>
+          </details>
+          <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+            <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+              <span>Miten maksaminen tapahtuu?</span>
+              <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+            </summary>
+            <div style="padding: 0 1.5rem 1.25rem;">
+              <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">Laskutamme yhdessä erässä, maksuehto 10 päivää. Voit maksaa myös luottokortilla Holvissa – kirjoita lomakkeeseen "maksan kortilla", niin saat maksulinkin.</p>
+            </div>
+          </details>
+          <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+            <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+              <span>Entä jos en ole tyytyväinen?</span>
+              <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+            </summary>
+            <div style="padding: 0 1.5rem 1.25rem;">
+              <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">Saat rahasi takaisin ensimmäisen koulutuskerran jälkeen, jos et ole tyytyväinen.</p>
+            </div>
+          </details>
+          <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+            <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+              <span>Tuleeko uusi Perjantaipulssi joka kuukausi?</span>
+              <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+            </summary>
+            <div style="padding: 0 1.5rem 1.25rem;">
+              <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">Melkein. Heinäkuu on meillä asiantuntijoiden lomakuukausi ja silloin emme järjestä Perjantaipulssia.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- REGISTRATION FORM -->
+  <!-- ============================================== -->
+  <section class="cinematic-section" id="ilmoittaudu">
+    <div class="container-cinematic">
+      <div class="pp-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+        <!-- Left -->
+        <div>
+          <span class="section-tag">// Ilmoittaudu</span>
+          <h2 class="section-header">Ilmoittaudu Tekoälyn <span class="text-gradient-green">Perjantaipulssiin</span></h2>
+          <p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1rem;">
+            Hinta: <strong style="color: var(--cinematic-text);">1 200 €</strong> (1 506 € sis. alv)
+          </p>
+          <p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1rem;">
+            Kerro ilmoittautumislomakkeella, haluatko maksaa kortilla vai laskulla.
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 2rem 0; color: var(--cinematic-text);">
+            <li style="margin-bottom: 0.5rem;">✓ 11 live-webinaaria + tallenteet 3 kk</li>
+            <li style="margin-bottom: 0.5rem;">✓ Kaikki materiaalit käyttöösi</li>
+            <li>✓ Tyytyväisyystakuu</li>
+          </ul>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.95rem;">
+            <strong style="color: var(--cinematic-text);">Kysyttävää?</strong> Laita viestiä Teijalle: <a href="mailto:teija@kuulu.fi" style="color: var(--cinematic-green); text-decoration: none;">teija@kuulu.fi</a>
+          </p>
+        </div>
+        <!-- Right: Form -->
+        <div>
+          <div class="hero-glass-box" style="padding: 2rem;">
+            <div id="hs-form-perjantaipulssi"></div>
+            <script charset="utf-8" src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                region: "eu1",
+                portalId: "450584",
+                formId: "ea859762-96e2-423e-98a7-91baf82ace94",
+                target: "#hs-form-perjantaipulssi",
+                css: "",
+                inlineMessage: "<p>Kiitos ilmoittautumisesta Tekoälyn Perjantaipulssin vuosijäseneksi!</p><p>Olemme sinuun pian yhteydessä.</p><p>Jos sinulla on kysyttävää, voit laittaa viestiä teija@kuulu.fi.</p>"
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary span:last-child { transform: rotate(45deg); }
+    @media (max-width: 768px) {
+      .pp-grid-2col { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+  <!-- ============================================== -->
+  <!-- FOOTER (identical to homepage) -->
+  <!-- ============================================== -->
+  <footer class="footer cinematic-footer">
+    <div class="footer__container">
+      <div class="footer__top-section">
+        <div class="row-fluid span12">
+          <div class="footer__info column span4">
+            <div class="footer__logo">
+              <a href="https://www.kuulu.fi">
+                <img src="https://www.kuulu.fi/hs-fs/hubfs/Kuulu_logo_RGB-4.png?width=100&height=103" alt="Kuulu Logo" width="100" height="103">
+              </a>
+            </div>
+            <p style="color: var(--cinematic-text-muted); margin: 1rem 0; line-height: 1.6;">
+              Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.
+            </p>
+          </div>
+          <div class="footer__navigation column span5">
+            <div class="footer-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <a href="https://www.kuulu.fi/koulutus" class="footer-tag">Koulutukset</a>
+              <a href="https://www.kuulu.fi/digimarkkinointi" class="footer-tag">Digimarkkinointi</a>
+              <a href="https://www.kuulu.fi/videotuotanto" class="footer-tag">Videotuotanto</a>
+              <a href="https://www.kuulu.fi/asiakasreferenssit" class="footer-tag">Referenssit</a>
+              <a href="https://www.kuulu.fi/tietosuojaseloste" class="footer-tag">Tietosuojaseloste</a>
+              <a href="https://blog.kuulu.fi/" class="footer-tag">Kuulun blogi</a>
+            </div>
+          </div>
+          <div class="footer__offices column span3">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div>
+                <h4 style="font-family: var(--font-display); color: var(--cinematic-green); font-size: 1rem; margin-bottom: 0.5rem;">OULU</h4>
+                <p style="color: var(--cinematic-text-muted); font-size: 0.875rem; line-height: 1.5;">Vanhantullinkatu 4<br>90100 Oulu</p>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-display); color: var(--cinematic-green); font-size: 1rem; margin-bottom: 0.5rem;">HELSINKI</h4>
+                <p style="color: var(--cinematic-text-muted); font-size: 0.875rem; line-height: 1.5;">Konepajankuja 7 D<br>00510 Helsinki</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom-section">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin: 0;">Copyright &copy; Markkinointiviestintätoimisto Kuulu Oy 2026. All Rights Reserved.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/kuulu/" class="social-links__link" target="_blank" rel="noopener"><span class="social-links__icon"><i class="fab fa-linkedin-in"></i></span></a>
+            <a href="https://www.instagram.com/kuulu.fi/" class="social-links__link" target="_blank" rel="noopener"><span class="social-links__icon"><i class="fab fa-instagram"></i></span></a>
+            <a href="https://www.facebook.com/Kuulu/" class="social-links__link" target="_blank" rel="noopener"><span class="social-links__icon"><i class="fab fa-facebook-f"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const mobilePanel = document.getElementById('mobile-nav-panel');
+      if (mobileToggle && mobilePanel) {
+        mobileToggle.addEventListener('click', function() {
+          const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+          mobileToggle.setAttribute('aria-expanded', !isExpanded);
+          mobilePanel.hidden = isExpanded;
+          mobilePanel.style.maxHeight = isExpanded ? '0px' : '500px';
+        });
+      }
+    });
+  </script>
+
+  <script src="https://js-eu1.hsforms.net/forms/embed/450584.js" defer></script>
+
+  <!-- Interactive cursor glow + ambient scroll lights -->
+  <canvas id="cursor-glow-canvas"></canvas>
+  <script>
+  (function() {
+    'use strict';
+    var canvas = document.getElementById('cursor-glow-canvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var mouse = { x: -500, y: -500 };
+    var smoothMouse = { x: -500, y: -500 };
+    var scrollY = 0;
+    var prevScrollY = 0;
+    var scrollSpeed = 0;
+    var raf;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    function resize() {
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = window.innerWidth + 'px';
+      canvas.style.height = window.innerHeight + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    document.addEventListener('mousemove', function(e) { mouse.x = e.clientX; mouse.y = e.clientY; });
+    document.addEventListener('mouseleave', function() { mouse.x = -500; mouse.y = -500; });
+    window.addEventListener('scroll', function() { scrollY = window.pageYOffset || document.documentElement.scrollTop; });
+    var particles = [];
+    var particleCount = 6;
+    for (var i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight,
+        baseX: Math.random() * window.innerWidth, baseY: Math.random() * window.innerHeight,
+        size: 150 + Math.random() * 250, speed: 0.0003 + Math.random() * 0.0005,
+        offset: Math.random() * Math.PI * 2, opacity: 0.03 + Math.random() * 0.04,
+        hue: 140 + Math.random() * 30, drift: 80 + Math.random() * 120
+      });
+    }
+    function draw(time) {
+      smoothMouse.x += (mouse.x - smoothMouse.x) * 0.06;
+      smoothMouse.y += (mouse.y - smoothMouse.y) * 0.06;
+      scrollSpeed = Math.abs(scrollY - prevScrollY);
+      prevScrollY += (scrollY - prevScrollY) * 0.1;
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i]; var t = time * p.speed + p.offset;
+        p.x = p.baseX + Math.sin(t) * p.drift + Math.cos(t * 0.7) * (p.drift * 0.5);
+        p.y = p.baseY + Math.cos(t * 0.8) * p.drift + Math.sin(t * 0.5) * (p.drift * 0.3);
+        var scrollOffset = (prevScrollY * (0.02 + i * 0.01)) % window.innerHeight;
+        var drawY = ((p.y - scrollOffset) % (window.innerHeight + p.size * 2));
+        if (drawY < -p.size) drawY += window.innerHeight + p.size * 2;
+        var dx = smoothMouse.x - p.x; var dy = smoothMouse.y - drawY;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        var influence = Math.max(0, 1 - dist / 500);
+        var reactiveOpacity = p.opacity + influence * 0.04;
+        var reactiveSize = p.size + influence * 40 + Math.min(scrollSpeed, 10) * 2;
+        var gradient = ctx.createRadialGradient(p.x, drawY, 0, p.x, drawY, reactiveSize);
+        gradient.addColorStop(0, 'hsla(' + p.hue + ', 80%, 45%, ' + (reactiveOpacity * 1.2) + ')');
+        gradient.addColorStop(0.4, 'hsla(' + p.hue + ', 70%, 35%, ' + (reactiveOpacity * 0.6) + ')');
+        gradient.addColorStop(1, 'hsla(' + p.hue + ', 60%, 25%, 0)');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(p.x - reactiveSize, drawY - reactiveSize, reactiveSize * 2, reactiveSize * 2);
+      }
+      if (smoothMouse.x > -100 && smoothMouse.y > -100) {
+        var glowSize = 250 + Math.min(scrollSpeed, 15) * 8;
+        var cursorGrad = ctx.createRadialGradient(smoothMouse.x, smoothMouse.y, 0, smoothMouse.x, smoothMouse.y, glowSize);
+        cursorGrad.addColorStop(0, 'rgba(0, 220, 110, 0.10)');
+        cursorGrad.addColorStop(0.3, 'rgba(0, 200, 100, 0.05)');
+        cursorGrad.addColorStop(0.6, 'rgba(0, 180, 90, 0.02)');
+        cursorGrad.addColorStop(1, 'rgba(0, 160, 80, 0)');
+        ctx.fillStyle = cursorGrad;
+        ctx.fillRect(smoothMouse.x - glowSize, smoothMouse.y - glowSize, glowSize * 2, glowSize * 2);
+      }
+      raf = requestAnimationFrame(draw);
+    }
+    raf = requestAnimationFrame(draw);
+    window.addEventListener('resize', function() {
+      for (var i = 0; i < particles.length; i++) {
+        particles[i].baseX = Math.random() * window.innerWidth;
+        particles[i].baseY = Math.random() * window.innerHeight;
+      }
+    });
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) cancelAnimationFrame(raf); else raf = requestAnimationFrame(draw);
+    });
+  })();
+  </script>
+
+</div>
+{% endblock body %}

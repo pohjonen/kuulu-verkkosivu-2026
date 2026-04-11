@@ -1,0 +1,54 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<section class="services-grid">
+  <div class="container">
+    {% if module.section_title %}
+      <div class="section-header">
+        <h2 class="section-title">{{ module.section_title }}</h2>
+        {% if module.section_subtitle %}
+          <p class="section-subtitle">{{ module.section_subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+    
+    <div class="services-container">
+      <div class="service-card">
+        {% if module.service_1_title %}
+          <h3 class="service-title">{{ module.service_1_title }}</h3>
+        {% endif %}
+        {% if module.service_1_description %}
+          <p class="service-description">{{ module.service_1_description }}</p>
+        {% endif %}
+        {% if module.service_1_link %}
+          <a href="{{ module.service_1_link }}" class="service-link">Lue lisää</a>
+        {% endif %}
+      </div>
+      
+      <div class="service-card">
+        {% if module.service_2_title %}
+          <h3 class="service-title">{{ module.service_2_title }}</h3>
+        {% endif %}
+        {% if module.service_2_description %}
+          <p class="service-description">{{ module.service_2_description }}</p>
+        {% endif %}
+        {% if module.service_2_link %}
+          <a href="{{ module.service_2_link }}" class="service-link">Lue lisää</a>
+        {% endif %}
+      </div>
+      
+      <div class="service-card">
+        {% if module.service_3_title %}
+          <h3 class="service-title">{{ module.service_3_title }}</h3>
+        {% endif %}
+        {% if module.service_3_description %}
+          <p class="service-description">{{ module.service_3_description }}</p>
+        {% endif %}
+        {% if module.service_3_link %}
+          <a href="{{ module.service_3_link }}" class="service-link">Lue lisää</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section> 

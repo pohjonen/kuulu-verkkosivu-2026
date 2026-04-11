@@ -1,0 +1,196 @@
+/* Service Cards: rounded corners and proper padding */
+.cinematic-page .cinematic-section .container-cinematic .sc-grid .sc-card,
+.cinematic-page.has-aurora-bg .cinematic-section .container-cinematic .sc-grid .sc-card {
+  border-radius: 20px !important;
+  padding: 2rem !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.cinematic-page .cinematic-section .container-cinematic .sc-grid .sc-card:hover {
+  border-color: rgba(0, 255, 135, 0.15) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+@media (max-width: 640px) {
+  .cinematic-page .cinematic-section .container-cinematic .sc-grid .sc-card {
+    padding: 1.5rem !important;
+    border-radius: 16px !important;
+  }
+}
+
+/* Startti/Koneisto -napit: pysyvät boksin sisällä, keskellä pohjalla */
+.cinematic-page .grid-2 .hero-glass-box {
+  min-width: 0;
+}
+.cinematic-page .grid-2 .hero-glass-box .btn-cinematic-outline,
+.cinematic-page .grid-2 .hero-glass-box .btn-cinematic-primary {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 02 – Lomakeosio: CTA-kuva toimii linkkinä, mikään overlay ei estä klikkausta */
+.early-bird-cta-image {
+  position: relative;
+  z-index: 2;
+}
+.early-bird-cta-image .early-bird-cta-link {
+  display: block !important;
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 10 !important;
+  pointer-events: auto !important;
+}
+.early-bird-cta-image .early-bird-cta-link img {
+  pointer-events: none;
+}
+
+/* ===== MOBIILIVALIKKO – kattaa molemmat body-luokat ===== */
+.cinematic-body .mobile-nav,
+.cinematic-page .mobile-nav {
+  display: none;
+  position: relative;
+}
+
+.cinematic-body .hamburger,
+.cinematic-page .hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+  min-width: 45px;
+  min-height: 45px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  z-index: 1000;
+  position: relative;
+}
+
+.cinematic-body .hamburger span,
+.cinematic-page .hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.cinematic-body .hamburger.is-open span:nth-child(1),
+.cinematic-page .hamburger.is-open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.cinematic-body .hamburger.is-open span:nth-child(2),
+.cinematic-page .hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.cinematic-body .hamburger.is-open span:nth-child(3),
+.cinematic-page .hamburger.is-open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Paneeli – täyttää koko näytön, kiinteä musta tausta */
+.cinematic-body .mobile-nav__panel,
+.cinematic-page .mobile-nav__panel {
+  display: none !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: #0a0a0a !important;
+  z-index: 998 !important;
+  overflow-y: auto !important;
+  padding: 80px 1.5rem 3rem !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Uusi JS: is-active-luokka */
+.cinematic-body .mobile-nav__panel.is-active,
+.cinematic-page .mobile-nav__panel.is-active {
+  display: block !important;
+}
+
+/* Vanha JS: maxHeight=500px kun valikko auki */
+.cinematic-body .mobile-nav__panel[style*="500px"],
+.cinematic-page .mobile-nav__panel[style*="500px"] {
+  display: block !important;
+  max-height: none !important;
+}
+
+/* Body scroll lukko */
+body.nav-open {
+  overflow: hidden !important;
+}
+
+/* Valikkolinkit */
+.cinematic-body .mobile-nav__list,
+.cinematic-page .mobile-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cinematic-body .mobile-nav__list > li > a,
+.cinematic-page .mobile-nav__list > li > a {
+  display: block;
+  padding: 1rem 0.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  letter-spacing: 0.02em;
+}
+
+.cinematic-body .mobile-nav__list > li > ul li a,
+.cinematic-page .mobile-nav__list > li > ul li a {
+  font-size: 0.95rem;
+  padding: 0.5rem 0.5rem;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  display: block;
+}
+
+.cinematic-body .mobile-nav__list li a:hover,
+.cinematic-page .mobile-nav__list li a:hover {
+  color: var(--cinematic-green, #00ff87);
+}
+
+/* Hamburger paneelin päällä */
+.cinematic-body #mobile-menu-toggle,
+.cinematic-page #mobile-menu-toggle {
+  position: relative;
+  z-index: 1000 !important;
+}
+
+/* Submenu-otsikko (esim. "Jäsenille") */
+.cinematic-body .mobile-nav__submenu-label,
+.cinematic-page .mobile-nav__submenu-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cinematic-green, #00ff87);
+  padding: 0.75rem 0.5rem 0.25rem;
+  display: block;
+}
+
+/* Näytä hamburger mobiililla */
+@media (max-width: 1024px) {
+  .cinematic-body .mobile-nav,
+  .cinematic-page .mobile-nav {
+    display: flex !important;
+    align-items: center;
+  }
+  .cinematic-body .hamburger,
+  .cinematic-page .hamburger {
+    display: flex !important;
+  }
+}

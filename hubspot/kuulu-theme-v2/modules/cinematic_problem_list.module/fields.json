@@ -1,0 +1,281 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Ongelma"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tunnistatko tämän"
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Korostus (vihreä)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "noidankehän?"
+}, {
+  "id" : "problem_1_title",
+  "name" : "problem_1_title",
+  "label" : "Ongelma 1 otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Verkkosivukävijät romahtavat"
+}, {
+  "id" : "problem_1_description",
+  "name" : "problem_1_description",
+  "label" : "Ongelma 1 kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Zero-click aikakaudella vanhat mittarit eivät toimi. Asiakkaat tekevät päätöksen somessa, eivätkä tule sivuille."
+}, {
+  "id" : "problem_2_title",
+  "name" : "problem_2_title",
+  "label" : "Ongelma 2 otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Kilpailijat näkyvät, te ette"
+}, {
+  "id" : "problem_2_description",
+  "name" : "problem_2_description",
+  "label" : "Ongelma 2 kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Muut ovat aktiivisia LinkedInissä ja TikTokissa. Teidän brändinne loistaa poissaolollaan."
+}, {
+  "id" : "problem_3_title",
+  "name" : "problem_3_title",
+  "label" : "Ongelma 3 otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Videot jäävät hyllylle"
+}, {
+  "id" : "problem_3_description",
+  "name" : "problem_3_description",
+  "label" : "Ongelma 3 kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Teette hienoja videoita, mutta kukaan ei osaa sanoa, toivatko ne yhtään kauppaa."
+}, {
+  "id" : "problem_4_title",
+  "name" : "problem_4_title",
+  "label" : "Ongelma 4 otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Projektit alkavat ja loppuvat"
+}, {
+  "id" : "problem_4_description",
+  "name" : "problem_4_description",
+  "label" : "Ongelma 4 kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Markkinointi on sarja yksittäisiä kampanjoita ilman jatkuvuutta. Joka kerta aloitatte alusta."
+}, {
+  "id" : "problem_5_title",
+  "name" : "problem_5_title",
+  "label" : "Ongelma 5 otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tekoäly luo painetta"
+}, {
+  "id" : "problem_5_description",
+  "name" : "problem_5_description",
+  "label" : "Ongelma 5 kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Pitäisi tehdä enemmän ja nopeammin, mutta suunta puuttuu. Työmäärä kasvaa, tulokset eivät."
+}, {
+  "id" : "problem_6_title",
+  "name" : "problem_6_title",
+  "label" : "Ongelma 6 otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Kuilu myynnin ja markkinoinnin välillä"
+}, {
+  "id" : "problem_6_description",
+  "name" : "problem_6_description",
+  "label" : "Ongelma 6 kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Markkinointi puhuu brändistä, myynti liideistä. Yhteinen kieli puuttuu."
+}, {
+  "id" : "icon_style",
+  "name" : "icon_style",
+  "label" : "Ikonityyli",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "cross", "✗ Risti (ongelma)" ], [ "check", "✓ Ruksi (hyöty/palvelu)" ], [ "arrow", "→ Nuoli" ], [ "bullet", "● Piste" ], [ "warning", "⚠ Varoitus" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "cross"
+}, {
+  "id" : "icon_color",
+  "name" : "icon_color",
+  "label" : "Ikoniväri (valinnainen)",
+  "required" : false,
+  "locked" : false,
+  "display" : "colorpicker",
+  "display_width" : null,
+  "type" : "color",
+  "default" : {
+    "color" : null,
+    "opacity" : null,
+    "hex" : null,
+    "rgba" : null,
+    "rgb" : null
+  }
+}, {
+  "id" : "media_type",
+  "name" : "media_type",
+  "label" : "Media",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "none", "Ei mediaa" ], [ "image", "Kuva" ], [ "video_url", "Video (URL)" ], [ "video_file", "Video (upload)" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "image"
+}, {
+  "id" : "media_position",
+  "name" : "media_position",
+  "label" : "Median sijainti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image|video_url|video_file",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null
+  },
+  "display" : "radio",
+  "choices" : [ [ "left", "Vasen" ], [ "right", "Oikea" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "right"
+}, {
+  "id" : "image",
+  "name" : "image",
+  "label" : "Kuva",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "media_video_url",
+  "name" : "media_video_url",
+  "label" : "Videon URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_url",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "picker" : "file",
+  "id" : "media_video_file",
+  "name" : "media_video_file",
+  "label" : "Videotiedosto",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_file",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "file"
+} ]

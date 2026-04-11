@@ -1,0 +1,79 @@
+<section class="cinematic-marquee-logos">
+  <div class="marquee-container">
+    {% if module.section_tag %}
+    <div class="section-tag">{{ module.section_tag }}</div>
+    {% endif %}
+
+    <h2 class="marquee-headline">
+      {{ module.headline }}<span class="highlight">{{ module.headline_highlight }}</span>
+    </h2>
+
+    <div class="marquee-wrapper"
+         data-pause-on-hover="{{ module.pause_on_hover }}"
+         data-scroll-speed="{{ module.scroll_speed|default(30) }}">
+      <div class="marquee-track">
+        {% for logo in module.logos %}
+        <div class="logo-item{% if module.grayscale %} grayscale{% endif %}">
+          {% if logo.logo_image and logo.logo_image.src %}
+          <img src="{{ logo.logo_image.src }}"
+               alt="{{ logo.logo_image.alt or logo.logo_name }}"
+               style="height: {{ module.logo_height|default(60) }}px; width: auto;"
+               loading="lazy">
+          {% else %}
+          <span class="logo-placeholder" style="height: {{ module.logo_height|default(60) }}px; display: inline-flex; align-items: center; padding: 0 16px; font-size: 14px; color: rgba(255,255,255,0.5); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px;">{{ logo.logo_name or "Logo" }}</span>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+        <!-- Duplicate for seamless loop -->
+        {% for logo in module.logos %}
+        <div class="logo-item{% if module.grayscale %} grayscale{% endif %}">
+          {% if logo.logo_image and logo.logo_image.src %}
+          <img src="{{ logo.logo_image.src }}"
+               alt="{{ logo.logo_image.alt or logo.logo_name }}"
+               style="height: {{ module.logo_height|default(60) }}px; width: auto;"
+               loading="lazy">
+          {% else %}
+          <span class="logo-placeholder" style="height: {{ module.logo_height|default(60) }}px; display: inline-flex; align-items: center; padding: 0 16px; font-size: 14px; color: rgba(255,255,255,0.5); border: 1px dashed rgba(255,255,255,0.2); border-radius: 8px;">{{ logo.logo_name or "Logo" }}</span>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  function initMarquee() {
+    const wrappers = document.querySelectorAll('.marquee-wrapper');
+
+    wrappers.forEach(wrapper => {
+      const track = wrapper.querySelector('.marquee-track');
+      const pauseOnHover = wrapper.getAttribute('data-pause-on-hover') === 'true';
+      const scrollSpeed = parseInt(wrapper.getAttribute('data-scroll-speed')) || 30;
+
+      if (!track) return;
+
+      // Set animation duration
+      track.style.animationDuration = scrollSpeed + 's';
+
+      // Pause on hover
+      if (pauseOnHover) {
+        wrapper.addEventListener('mouseenter', () => {
+          track.style.animationPlayState = 'paused';
+        });
+        wrapper.addEventListener('mouseleave', () => {
+          track.style.animationPlayState = 'running';
+        });
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMarquee);
+  } else {
+    initMarquee();
+  }
+})();
+</script>

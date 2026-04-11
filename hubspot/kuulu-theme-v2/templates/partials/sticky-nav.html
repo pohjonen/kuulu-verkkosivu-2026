@@ -1,0 +1,139 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Sticky Nav - Table of Contents"
+-->
+{#
+  Kiinnittyvä sivunavigaatio / sisällysluettelo
+
+  Käyttö:
+    {% set sn_items = 'Yleiskatsaus:#yleiskatsaus;;Palvelut:#palvelut;;Prosessi:#prosessi;;Hinnoittelu:#hinnoittelu;;UKK:#ukk;;Yhteystiedot:#ota-yhteytta' %}
+    {% include './partials/sticky-nav.html' %}
+
+    Itemit erotetaan ;;-merkinnällä. Formaatti: Otsikko:Ankkuri
+    Sivun osioihin pitää lisätä vastaavat id-attribuutit.
+#}
+
+{% set items_str = sn_items|default('') %}
+{% set sn_title = sn_nav_title|default('Sisältö') %}
+
+<nav class="sn-nav" id="snNav" aria-label="Sivunavigaatio">
+  <div class="sn-inner">
+    <span class="sn-title">{{ sn_title }}</span>
+    {% if items_str %}
+    <ul class="sn-list">
+      {% for item in items_str|split(';;') %}
+      {% set parts = item|split(':') %}
+      {% if parts|length >= 2 %}
+      <li>
+        <a href="{{ parts[1] }}" class="sn-link" data-target="{{ parts[1]|replace('#','') }}">
+          <span class="sn-indicator"></span>
+          {{ parts[0]|trim }}
+        </a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</nav>
+
+<style>
+.sn-nav {
+  position: fixed; left: 2rem; top: 50%; transform: translateY(-50%);
+  z-index: 100; opacity: 0; pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.sn-nav.visible { opacity: 1; pointer-events: all; }
+.sn-inner {
+  background: rgba(10,10,10,0.8); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 16px;
+  padding: 1.25rem 1rem; min-width: 160px;
+}
+.sn-title {
+  font-family: var(--font-display); font-size: 0.65rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em; color: var(--cinematic-text-muted);
+  display: block; margin-bottom: 0.75rem; padding-left: 0.5rem;
+}
+.sn-list { list-style: none; padding: 0; margin: 0; }
+.sn-list li { margin-bottom: 0.15rem; }
+.sn-link {
+  display: flex; align-items: center; gap: 0.6rem;
+  color: var(--cinematic-text-muted); font-size: 0.78rem; font-weight: 500;
+  text-decoration: none; padding: 0.4rem 0.5rem; border-radius: 8px;
+  transition: all 0.3s;
+}
+.sn-link:hover { color: var(--cinematic-text); background: rgba(255,255,255,0.04); }
+.sn-link.active { color: var(--cinematic-green); font-weight: 600; }
+.sn-indicator {
+  width: 3px; height: 16px; border-radius: 2px;
+  background: rgba(255,255,255,0.1); flex-shrink: 0;
+  transition: all 0.3s;
+}
+.sn-link.active .sn-indicator {
+  background: var(--cinematic-green); box-shadow: 0 0 8px rgba(0,255,135,0.3);
+}
+
+@media (max-width: 1280px) {
+  .sn-nav { display: none; }
+}
+</style>
+
+<script>
+(function() {
+  var nav = document.getElementById('snNav');
+  if (!nav) return;
+  var links = nav.querySelectorAll('.sn-link');
+  var sections = [];
+
+  links.forEach(function(link) {
+    var id = link.getAttribute('data-target');
+    var el = document.getElementById(id);
+    if (el) sections.push({ el: el, link: link });
+  });
+
+  if (!sections.length) return;
+
+  var showThreshold = 400;
+  var ticking = false;
+
+  function update() {
+    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    var winH = window.innerHeight;
+
+    if (scrollY > showThreshold) {
+      nav.classList.add('visible');
+    } else {
+      nav.classList.remove('visible');
+    }
+
+    var active = null;
+    sections.forEach(function(s) {
+      var rect = s.el.getBoundingClientRect();
+      if (rect.top <= winH * 0.4) active = s;
+    });
+
+    links.forEach(function(l) { l.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+
+  update();
+
+  links.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var id = this.getAttribute('data-target');
+      var target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+})();
+</script>

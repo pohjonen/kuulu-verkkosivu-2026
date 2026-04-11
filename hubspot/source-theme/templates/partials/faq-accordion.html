@@ -1,0 +1,119 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "FAQ Accordion"
+-->
+{#
+  UKK / FAQ Haitari -partiaali
+
+  Käyttö:
+    {% include './partials/faq-accordion.html' with {
+      faq_tag: '// UKK',
+      faq_title: 'Usein kysytyt <span class="text-gradient-green">kysymykset</span>',
+      faq_1_q: 'Ensimmäinen kysymys?',
+      faq_1_a: 'Vastaus ensimmäiseen kysymykseen.',
+      faq_2_q: 'Toinen kysymys?',
+      faq_2_a: 'Vastaus toiseen kysymykseen.',
+      faq_3_q: 'Kolmas kysymys?',
+      faq_3_a: 'Vastaus kolmanteen kysymykseen.'
+    } %}
+#}
+
+{% set active_tag = faq_tag|default('// UKK') %}
+{% set active_title = faq_title|default('Usein kysytyt <span class="text-gradient-green">kysymykset</span>') %}
+
+{% set q1 = faq_1_q|default('') %}
+{% set a1 = faq_1_a|default('') %}
+{% set q2 = faq_2_q|default('') %}
+{% set a2 = faq_2_a|default('') %}
+{% set q3 = faq_3_q|default('') %}
+{% set a3 = faq_3_a|default('') %}
+{% set q4 = faq_4_q|default('') %}
+{% set a4 = faq_4_a|default('') %}
+{% set q5 = faq_5_q|default('') %}
+{% set a5 = faq_5_a|default('') %}
+{% set q6 = faq_6_q|default('') %}
+{% set a6 = faq_6_a|default('') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <div class="cinematic-section-rounded glass-card" style="max-width: 800px; margin: 0 auto;">
+      <span class="section-tag">{{ active_tag }}</span>
+      <h2 class="section-header">{{ active_title }}</h2>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 2rem;">
+        {% if q1 %}
+        <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+            <span>{{ q1 }}</span>
+            <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+          </summary>
+          <div style="padding: 0 1.5rem 1.25rem;">
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">{{ a1 }}</p>
+          </div>
+        </details>
+        {% endif %}
+        {% if q2 %}
+        <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+            <span>{{ q2 }}</span>
+            <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+          </summary>
+          <div style="padding: 0 1.5rem 1.25rem;">
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">{{ a2 }}</p>
+          </div>
+        </details>
+        {% endif %}
+        {% if q3 %}
+        <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+            <span>{{ q3 }}</span>
+            <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+          </summary>
+          <div style="padding: 0 1.5rem 1.25rem;">
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">{{ a3 }}</p>
+          </div>
+        </details>
+        {% endif %}
+        {% if q4 %}
+        <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+            <span>{{ q4 }}</span>
+            <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+          </summary>
+          <div style="padding: 0 1.5rem 1.25rem;">
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">{{ a4 }}</p>
+          </div>
+        </details>
+        {% endif %}
+        {% if q5 %}
+        <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+            <span>{{ q5 }}</span>
+            <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+          </summary>
+          <div style="padding: 0 1.5rem 1.25rem;">
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">{{ a5 }}</p>
+          </div>
+        </details>
+        {% endif %}
+        {% if q6 %}
+        <details class="hero-glass-box" style="padding: 0; overflow: hidden;">
+          <summary style="padding: 1.25rem 1.5rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--cinematic-text); font-weight: 600; font-size: 1rem;">
+            <span>{{ q6 }}</span>
+            <span style="color: var(--cinematic-green); font-size: 1.2rem; transition: transform 0.3s;">+</span>
+          </summary>
+          <div style="padding: 0 1.5rem 1.25rem;">
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.7;">{{ a6 }}</p>
+          </div>
+        </details>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+details summary::-webkit-details-marker { display: none; }
+details[open] summary span:last-child { transform: rotate(45deg); }
+</style>

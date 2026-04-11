@@ -1,0 +1,251 @@
+.cinematic-accordion-cards {
+  padding: 120px 0;
+  background: var(--cinematic-bg);
+  position: relative;
+}
+
+.cinematic-accordion-cards .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cinematic-accordion-cards .section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.cinematic-accordion-cards .section-title {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--cinematic-text);
+  margin: 0 0 16px 0;
+  line-height: 1.1;
+}
+
+.cinematic-accordion-cards .section-subtitle {
+  font-size: 1.15rem;
+  color: var(--cinematic-text-muted);
+  margin: 0;
+}
+
+.accordion-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.accordion-grid.columns-1 {
+  grid-template-columns: 1fr;
+}
+
+.accordion-grid.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.accordion-card {
+  background: rgba(5, 15, 10, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, var(--cinematic-green), rgba(0, 255, 135, 0.25));
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.accordion-card:hover {
+  border-color: rgba(0, 255, 135, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-card.active {
+  border-color: rgba(0, 255, 135, 0.4);
+  box-shadow: 0 0 0 1px rgba(0, 255, 135, 0.2);
+}
+
+.accordion-card.active::before {
+  opacity: 0.12;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.accordion-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  color: var(--cinematic-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.accordion-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.accordion-card.active .accordion-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.6));
+}
+
+.accordion-title {
+  flex: 1;
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--cinematic-text);
+  margin: 0;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.accordion-card.active .accordion-title {
+  color: var(--cinematic-green);
+}
+
+.accordion-toggle {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.accordion-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-card.active .accordion-toggle {
+  color: var(--cinematic-green);
+  transform: rotate(45deg);
+}
+
+.toggle-line {
+  transition: all 0.3s ease;
+}
+
+.accordion-card.active .toggle-line.vertical {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-inner {
+  padding: 0 32px 32px 32px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.accordion-inner p {
+  margin: 0 0 12px 0;
+}
+
+.accordion-inner p:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-inner ul,
+.accordion-inner ol {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.accordion-inner li {
+  margin-bottom: 8px;
+}
+
+/* With icon, indent content to align with title */
+.accordion-card:has(.accordion-icon) .accordion-inner {
+  padding-left: 84px; /* 32px + 32px icon + 20px gap */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cinematic-accordion-cards {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .section-header {
+    margin-bottom: 48px;
+  }
+
+  .accordion-grid.columns-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .accordion-header {
+    padding: 20px 24px;
+    gap: 16px;
+  }
+
+  .accordion-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .accordion-title {
+    font-size: 18px;
+  }
+
+  .accordion-inner {
+    padding: 0 24px 24px 24px;
+    font-size: 15px;
+  }
+
+  .accordion-card:has(.accordion-icon) .accordion-inner {
+    padding-left: 68px; /* 24px + 28px icon + 16px gap */
+  }
+}

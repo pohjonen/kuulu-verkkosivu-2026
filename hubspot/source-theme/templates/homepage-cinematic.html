@@ -1,0 +1,703 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+  label: "Etusivu - Cinematic (2026)"
+-->
+{% extends "./layouts/base-cinematic.html" %}
+
+{% block body %}
+<!-- Aurora Background (outside cinematic-page for fixed positioning) -->
+<div class="aurora-background"></div>
+
+<div class="cinematic-page has-aurora-bg">
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Kuulu Mega Menu Navigation (from videotuotanto) -->
+  <header class="header custom-header cinematic-header">
+    <div class="custom-header__container">
+        <div class="custom-header__logo">
+          <a href="https://www.kuulu.fi" aria-label="Kuulu - Etusivu">
+            <img src="https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png" alt="Kuulu Lettermark Logo">
+          </a>
+        </div>
+        <nav class="custom-header__navigation" aria-label="Main navigation">
+            <ul role="menu">
+                <li role="none">
+                    <a href="https://www.kuulu.fi/koulutus" aria-haspopup="true" aria-expanded="false" role="menuitem">Koulutus</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/copilotin-kiihdytyskaista"><div class="mega-menu-icon"><i class="fas fa-graduation-cap"></i></div><div class="mega-menu-text"><h4>Copilotin kiihdytyskaista</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi"><div class="mega-menu-icon"><i class="fas fa-graduation-cap"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-perjantaipulssi"><div class="mega-menu-icon"><i class="fas fa-lightbulb"></i></div><div class="mega-menu-text"><h4>Tekoälyn Perjantaipulssi</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <a href="https://www.kuulu.fi/digimarkkinointi" aria-haspopup="true" aria-expanded="false" role="menuitem">Digimarkkinointi</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/tarinankerronta"><div class="mega-menu-icon"><i class="fas fa-bullhorn"></i></div><div class="mega-menu-text"><h4>Brändäys ja tarinankerronta</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/sisaltopankki"><div class="mega-menu-icon"><i class="fas fa-database"></i></div><div class="mega-menu-text"><h4>Sisältöpankki</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/tekoaly-kuvapankki"><div class="mega-menu-icon"><i class="fas fa-robot"></i></div><div class="mega-menu-text"><h4>Tekoälykuvapankki</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/liidien-hankinta"><div class="mega-menu-icon"><i class="fas fa-magnet"></i></div><div class="mega-menu-text"><h4>Liidien hankinta</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/rekrymarkkinointi"><div class="mega-menu-icon"><i class="fas fa-users"></i></div><div class="mega-menu-text"><h4>Rekrymarkkinointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/energia-alan-markkinointi"><div class="mega-menu-icon"><i class="fas fa-bolt"></i></div><div class="mega-menu-text"><h4>Energia-alan markkinointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi"><div class="mega-menu-icon"><i class="fas fa-search"></i></div><div class="mega-menu-text"><h4>Someauditointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/hakukoneoptimointi-ja-seo-analyysi"><div class="mega-menu-icon"><i class="fas fa-chart-line"></i></div><div class="mega-menu-text"><h4>SEO Analyysi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/google-ads-mainonta"><div class="mega-menu-icon"><i class="fab fa-google"></i></div><div class="mega-menu-text"><h4>Google Ads</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/kuulunautti"><div class="mega-menu-icon"><i class="fas fa-user-astronaut"></i></div><div class="mega-menu-text"><h4>Kuulunautti</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <a href="https://www.kuulu.fi/videotuotanto" aria-haspopup="true" aria-expanded="false" role="menuitem">Videosisällöt</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/fi-fi/yritysvideot"><div class="mega-menu-icon"><i class="fas fa-video"></i></div><div class="mega-menu-text"><h4>Yritysvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/animaatiot"><div class="mega-menu-icon"><i class="fas fa-film"></i></div><div class="mega-menu-text"><h4>Animaatiot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/brandivideo"><div class="mega-menu-icon"><i class="fas fa-gem"></i></div><div class="mega-menu-text"><h4>Brändivideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/mainosvideot"><div class="mega-menu-icon"><i class="fas fa-play-circle"></i></div><div class="mega-menu-text"><h4>Mainosvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tv-mainos-tuotanto"><div class="mega-menu-icon"><i class="fas fa-tv"></i></div><div class="mega-menu-text"><h4>TV-mainosvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/yhdistys-ja-hankevideot"><div class="mega-menu-icon"><i class="fas fa-hands-helping"></i></div><div class="mega-menu-text"><h4>Yhdistys- ja hankevideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/gif-animaatiot-markkinointiin"><div class="mega-menu-icon"><i class="fas fa-file-video"></i></div><div class="mega-menu-text"><h4>Gif-animaatiot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/matkailuvideot"><div class="mega-menu-icon"><i class="fas fa-plane"></i></div><div class="mega-menu-text"><h4>Matkailuvideot</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none"><a href="https://www.kuulu.fi/asiakasreferenssit" role="menuitem">Kokemuksia Kuulusta</a></li>
+                <li role="none"><a href="https://blog.kuulu.fi" role="menuitem">Blogi</a></li>
+                <li role="none"><a href="https://mukaantiimiin.kuulu.fi/" role="menuitem">Mukaan tiimiin</a></li>
+                <li role="none"><a href="https://www.kuulu.fi/case-studies" role="menuitem">Asiakas caset</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <div class="hamburger" id="mobile-menu-toggle" role="button" tabindex="0" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-nav-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="mobile-nav-panel" class="mobile-nav__panel" role="dialog" aria-modal="true" hidden>
+            <ul class="mobile-nav__list">
+              <li><a href="https://www.kuulu.fi/koulutus">Koulutus</a></li>
+              <li><a href="https://www.kuulu.fi/digimarkkinointi">Digimarkkinointi</a></li>
+              <li><a href="https://www.kuulu.fi/videotuotanto">Videosisällöt</a></li>
+              <li><a href="https://www.kuulu.fi/asiakasreferenssit">Kokemuksia Kuulusta</a></li>
+              <li><a href="https://blog.kuulu.fi">Blogi</a></li>
+              <li><a href="https://mukaantiimiin.kuulu.fi">Mukaan tiimiin</a></li>
+              <li><a href="https://www.kuulu.fi/case-studies">Asiakas caset</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="ota-yhteytta-button">
+           <a href="https://www.kuulu.fi/yhteystiedot" class="ota-yhteytta-btn">
+                <span class="ota-yhteytta-text">Ota yhteyttä</span>
+           </a>
+        </div>
+    </div>
+  </header>
+  <div class="header-observer-sentinel"></div>
+
+  <!-- Hero Section with Background Video -->
+  <section class="cinematic-hero" style="position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: 100vh; padding: 2rem; padding-top: 15vh;">
+    <!-- Background Video -->
+    <div class="hero-video-background">
+      <video autoplay muted loop playsinline>
+        <source src="https://www.kuulu.fi/hubfs/Kuulu%20Showreel%202025%20l%C3%A4nd%C3%A4ri%202_1080p.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+    
+    <!-- Hero Content -->
+    <div class="hero-glass-box" style="max-width: 750px; text-align: center; z-index: 3; position: relative; margin: 0 auto;">
+      <span class="section-tag">// DIGIMARKKINOINTI- JA VIDEOTOIMISTO</span>
+      <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); margin: 1rem 0; letter-spacing: 0.02em;">
+        Markkinointia,<br><span class="text-gradient-green">joka tuottaa liidejä</span>
+      </h1>
+      <p style="color: var(--cinematic-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+        Markkinointitiimisi on ylityöllistetty. Sisällöntuotanto on hajanaista. Tuloksia on vaikea mitata. Kuulostaa tutulta?
+      </p>
+      <p style="color: var(--cinematic-text); line-height: 1.7; margin-bottom: 1.5rem;">
+        Kuulu rakentaa yrityksellesi tekoälyllä tehostetun sisältökoneiston, joka tuottaa liidejä järjestelmällisesti. Ei enää tulipalojen sammuttelua, vaan hallittua kasvua.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: nowrap;">
+        <a href="https://www.kuulu.fi/yhteystiedot" class="btn-cinematic-primary" style="white-space: nowrap;">Varaa maksuton sparraus</a>
+        <a href="https://blog.kuulu.fi/" class="btn-cinematic-outline" style="white-space: nowrap;">Lue markkinointivinkit blogista</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section - Markkinoinnin noidankehä -->
+  <section class="cinematic-section section-with-blobs gradient-section-deep grain-section">
+    <!-- Organic blob shapes -->
+    <div class="blob-shape-1"></div>
+    <div class="blob-shape-2"></div>
+    <div class="glow-orb" style="width: 600px; height: 600px; top: 30%; right: -200px;"></div>
+    <div class="glow-orb-subtle" style="width: 400px; height: 400px; bottom: 10%; left: -100px;"></div>
+    
+    <div class="container-cinematic" style="position: relative; z-index: 10;">
+      <div class="cinematic-section-rounded glass-card">
+        <span class="section-tag">// Ongelma, jonka ratkaisemme</span>
+        <h2 class="section-header">Markkinoinnin <span class="text-gradient-green">noidankehä on todellinen</span></h2>
+        <p style="color: var(--cinematic-text-muted); max-width: 700px; margin-bottom: 3rem;">
+          85 % markkinointipäälliköistä pitää systemaattisen sisällöntuotannon puutetta suurimpana haasteenaan. Tunnistamme tilanteen:
+        </p>
+        
+        <div class="grid-2" style="gap: 2rem; margin-bottom: 2rem;">
+          <div class="hero-glass-box">
+            <div style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-arrow-trend-down" style="font-size: 1.5rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.75rem;">Markkinointi ei tuota tarpeeksi liidejä</h3>
+          </div>
+          
+          <div class="hero-glass-box">
+            <div style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-puzzle-piece" style="font-size: 1.5rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.75rem;">Sisällöntuotanto on hajanaista ilman strategista kokonaisuutta</h3>
+          </div>
+          
+          <div class="hero-glass-box">
+            <div style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-battery-empty" style="font-size: 1.5rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.75rem;">Tiimi on ylikuormittunut, mutta tulokset eivät näy</h3>
+          </div>
+          
+          <div class="hero-glass-box">
+            <div style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-eye-slash" style="font-size: 1.5rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.75rem;">Tunnettuus on heikko, ja viesti hukkuu massaan</h3>
+          </div>
+        </div>
+        
+        <p style="color: var(--cinematic-text-muted); text-align: center; font-style: italic; max-width: 600px; margin: 0 auto;">
+          Olet vastuussa tuloksista, mutta et hallitse työkaluja. Painostetaan tekemään enemmän, mutta kukaan ei kerro mitä.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section - Kaksi moottoria -->
+  <section class="cinematic-section section-with-blobs gradient-section-tl grain-section" id="services">
+    <!-- Organic blob shapes -->
+    <div class="glow-orb" style="width: 700px; height: 700px; top: -200px; left: 50%; transform: translateX(-50%);"></div>
+    <div class="blob-shape-3"></div>
+    <div class="glow-orb-subtle" style="width: 500px; height: 500px; bottom: -150px; right: -100px;"></div>
+    
+    <div class="container-cinematic" style="position: relative; z-index: 10;">
+      <span class="section-tag">// Ratkaisu</span>
+      <h2 class="section-header">Kaksi moottoria <span class="text-gradient-green">kasvun tueksi</span></h2>
+      
+      <div class="grid-2" style="gap: 3rem; margin-top: 3rem;">
+        <!-- Content Engine -->
+        <div class="hero-glass-box" style="padding: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 70px; height: 70px; background: var(--gradient-green); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-cogs" style="font-size: 1.75rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.75rem; margin: 0;">Kuulu Content Engine</h3>
+          </div>
+          <p style="color: var(--cinematic-text-muted); margin-bottom: 1.5rem; font-size: 1.1rem;">
+            Systemaattinen sisällöntuotantokoneisto markkinointipäälliköille. Tekoälyllä tehostettu prosessi, joka tuottaa strategista sisältöä jatkuvasti.
+          </p>
+          <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin-bottom: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i>
+              Brändinäkyvyys kasvaa johdonmukaisesti
+            </li>
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i>
+              Sisällöntuotanto ei kuormita tiimiäsi
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i>
+              Laatu pysyy tasaisena
+            </li>
+          </ul>
+          <a href="https://www.kuulu.fi/digimarkkinointi" class="btn-cinematic-outline" style="display: inline-block;">Lue lisää Content Enginestä</a>
+        </div>
+        
+        <!-- Lead Engine -->
+        <div class="hero-glass-box" style="padding: 2.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 70px; height: 70px; background: var(--gradient-green); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-rocket" style="font-size: 1.75rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.75rem; margin: 0;">Kuulu Lead Engine</h3>
+          </div>
+          <p style="color: var(--cinematic-text-muted); margin-bottom: 1.5rem; font-size: 1.1rem;">
+            Liidikoneisto myyntijohtajille. Rakennamme systeemin, joka tuottaa marketing qualified ja sales qualified liidejä mitattavasti.
+          </p>
+          <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin-bottom: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i>
+              Myyntiputki täyttyy tasaisesti
+            </li>
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i>
+              Tulokset näkyvät dashboardilla reaaliajassa
+            </li>
+            <li style="display: flex; align-items: center; gap: 0.75rem;">
+              <i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i>
+              Markkinointi ja myynti puhaltavat samaan suuntaan
+            </li>
+          </ul>
+          <a href="https://www.kuulu.fi/yhteystiedot" class="btn-cinematic-primary" style="display: inline-block;">Varaa sparraus Lead Enginestä</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palvelumalli Section -->
+  <section class="cinematic-section">
+    <div class="container-cinematic">
+      <div class="cinematic-section-rounded">
+        <span class="section-tag">// Kuulun palvelumalli</span>
+        <h2 class="section-header">Kolme tapaa <span class="text-gradient-green">tehdä yhteistyötä</span></h2>
+        
+        <div class="grid-3" style="margin-top: 3rem; margin-bottom: 3rem;">
+          <div class="hero-glass-box" style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--cinematic-surface); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid var(--cinematic-green);">
+              <i class="fas fa-handshake" style="font-size: 2rem; color: var(--cinematic-green);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.75rem;">Strategiset kumppanuudet</h3>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Ulkoistettu markkinointiosasto. Toimimme pitkäjänteisenä kumppanina, joka vastaa markkinoinnin kokonaisuudesta.
+            </p>
+          </div>
+          
+          <div class="hero-glass-box" style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--cinematic-surface); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid var(--cinematic-green);">
+              <i class="fas fa-sync-alt" style="font-size: 2rem; color: var(--cinematic-green);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.75rem;">Skaalautuvat moottorit</h3>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Content Engine ja Lead Engine. Tekoälyllä tehostettuja jatkuvia palveluita, jotka tuottavat tuloksia kuukausittain.
+            </p>
+          </div>
+          
+          <div class="hero-glass-box" style="text-align: center;">
+            <div style="width: 80px; height: 80px; background: var(--cinematic-surface); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 2px solid var(--cinematic-green);">
+              <i class="fas fa-project-diagram" style="font-size: 2rem; color: var(--cinematic-green);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.75rem;">Projektikohtaiset palvelut</h3>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Yksittäiset toteutukset: videot, kampanjat, koulutukset. Hyvä tapa aloittaa yhteistyö.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Palvelulinkit -->
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://palvelut.kuulu.fi/tarinankerronta" class="btn-cinematic-outline">Brändäys ja tarinankerronta</a>
+          <a href="https://www.kuulu.fi/koulutus" class="btn-cinematic-outline">Konsultointi ja koulutus</a>
+          <a href="https://palvelut.kuulu.fi/rekrymarkkinointi" class="btn-cinematic-outline">Rekrymarkkinointi</a>
+          <a href="https://www.kuulu.fi/energia-alan-markkinointi" class="btn-cinematic-outline">Energia-alan markkinointi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kuulu Info Section -->
+  <section class="cinematic-section">
+    <div class="container-cinematic">
+      <div class="hero-glass-box" style="text-align: center; max-width: 900px; margin: 0 auto; padding: 3rem;">
+        <span class="section-tag">// Kuulu</span>
+        <h2 class="section-header">Digimarkkinointi- ja <span class="text-gradient-green">videotoimisto</span></h2>
+        <p style="color: var(--cinematic-text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+          Toimistomme sijaitsevat <strong style="color: var(--cinematic-text);">Oulussa ja Helsingissä</strong>. Toimimme koko Suomessa.
+        </p>
+        <p style="color: var(--cinematic-text-muted); font-size: 1.1rem; line-height: 1.8;">
+          Autamme vuosittain yli <strong class="text-gradient-green">500 yritystä</strong> rakentamaan markkinointia, joka toimii. Olemme <strong style="color: var(--cinematic-text);">Euroopan ensimmäinen sertifioitu StoryBrand-toimisto</strong> ja yli 10 vuoden kokemuksella tiedämme, mikä toimii.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Koulutukset Section -->
+  <section class="cinematic-section" id="koulutukset">
+    <div class="container-cinematic">
+      <span class="section-tag">// Ajankohtaiset koulutukset</span>
+      <h2 class="section-header">Tekoäly-, some- ja <span class="text-gradient-green">digimarkkinointikoulutukset</span></h2>
+      <p style="color: var(--cinematic-text-muted); max-width: 600px; margin-bottom: 2rem;">
+        Tekoälykoulutukset, somekoulutukset ja digimarkkinoinnin valmennukset.
+      </p>
+      <a href="https://www.kuulu.fi/koulutus" class="btn-cinematic-primary">Katso koulutukset</a>
+    </div>
+  </section>
+
+  <!-- Referenssit Section -->
+  <section class="cinematic-section" id="portfolio">
+    <div class="container-cinematic">
+      <div class="cinematic-section-rounded">
+        <span class="section-tag">// Referenssit</span>
+        <h2 class="section-header">Katso, miten asiakkaamme <span class="text-gradient-green">hyötyvät</span></h2>
+        
+        <div class="case-grid" style="margin-top: 3rem;">
+          <div class="case-card">
+            <div class="case-image">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="Haaga-Helia Tekoälykuvapankki">
+            </div>
+            <div class="case-content">
+              <span class="case-badge">Tekoäly</span>
+              <h3 class="case-title">Haaga-Helia Tekoälykuvapankki</h3>
+              <p class="case-description">Tekoälyllä tuotettu kuvapankki korkeakoululle.</p>
+              <a href="https://www.kuulu.fi/referenssit/haaga-helia-tekoalykuvapankki" style="color: var(--cinematic-green); text-decoration: none; font-weight: 500;">
+                Lue lisää <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="case-card">
+            <div class="case-image">
+              <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop" alt="Energiequellen visuaalinen viestintä">
+            </div>
+            <div class="case-content">
+              <span class="case-badge">Visuaalinen viestintä</span>
+              <h3 class="case-title">Energiequellen visuaalinen viestintä</h3>
+              <p class="case-description">Tehokas visuaalinen viestintä energia-alan yritykselle.</p>
+              <a href="https://www.kuulu.fi/case-studies/kuulu-energiequelle-tehokas-visuaalinen-viestinta" style="color: var(--cinematic-green); text-decoration: none; font-weight: 500;">
+                Lue lisää <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="https://www.kuulu.fi/asiakasreferenssit" class="btn-cinematic-primary">Kokemuksia Kuulusta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogi Section -->
+  <section class="cinematic-section">
+    <div class="container-cinematic">
+      <span class="section-tag">// Kuulun blogi</span>
+      <h2 class="section-header">Vinkkejä <span class="text-gradient-green">markkinointiin</span></h2>
+      <p style="color: var(--cinematic-text-muted); max-width: 700px; margin-bottom: 2rem;">
+        Vinkkejä digimarkkinointiin, videotuotantoihin ja tekoälyn hyödyntämiseen markkinoinnissa.
+      </p>
+      <a href="https://blog.kuulu.fi/" class="btn-cinematic-primary">Kuulun Blogi</a>
+    </div>
+  </section>
+
+  <!-- Miksi Kuulu Section -->
+  <section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+    <!-- Organic blob shapes -->
+    <div class="blob-shape-1" style="top: -30%; left: -20%;"></div>
+    <div class="blob-shape-2" style="bottom: -40%; right: -20%;"></div>
+    <div class="glow-orb" style="width: 500px; height: 500px; top: 20%; right: 10%;"></div>
+    
+    <div class="container-cinematic" style="position: relative; z-index: 10;">
+      <div class="cinematic-section-rounded glass-card">
+        <span class="section-tag">// Miksi Kuulu?</span>
+        <h2 class="section-header">Kolme syytä <span class="text-gradient-green">valita meidät</span></h2>
+        
+        <div class="grid-3" style="margin-top: 3rem;">
+          <div class="hero-glass-box">
+            <div style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-chart-bar" style="font-size: 1.5rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.75rem;">Myymme tuloksia, emme tunteja</h3>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Emme myy yksittäisen henkilön työtunteja, vaan tiimin kapasiteettia ja menetelmää, joka tuottaa tuloksia. Tekoälytyökalujen ja ihmistyön yhdistelmä tarkoittaa, että saat enemmän vähemmällä.
+            </p>
+          </div>
+          
+          <div class="hero-glass-box">
+            <div style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-tachometer-alt" style="font-size: 1.5rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.75rem;">Mittaaminen on sisäänrakennettu</h3>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Zero-klikkiajan markkinoinnissa mittaaminen on muuttunut. Seuraamme sitoutumista, tallennuksia, keskusteluja ja yksityisviestejä. Saat yhden dashboardin, josta näet markkinoinnin tuloksellisuuden reaaliajassa.
+            </p>
+          </div>
+          
+          <div class="hero-glass-box">
+            <div style="width: 60px; height: 60px; background: var(--gradient-green); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: var(--shadow-green-sm);">
+              <i class="fas fa-seedling" style="font-size: 1.5rem; color: var(--cinematic-bg);"></i>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.75rem;">Voit aloittaa yhdestä osa-alueesta</h3>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Ei tarvitse laittaa kaikkia munia samaan koriin. Voit aloittaa pilottijaksolla ja laajentaa jatkuvaan kumppanuuteen, kun näet tulokset.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="cinematic-section section-with-blobs gradient-section-tl grain-section" id="contact">
+    <!-- Organic blob shapes -->
+    <div class="glow-orb" style="width: 800px; height: 800px; top: -300px; left: 50%; transform: translateX(-50%);"></div>
+    <div class="glow-orb-subtle" style="width: 400px; height: 400px; bottom: 0; left: -100px;"></div>
+    <div class="glow-orb-subtle" style="width: 400px; height: 400px; bottom: 0; right: -100px;"></div>
+    
+    <div class="container-cinematic" style="position: relative; z-index: 10;">
+      <div class="contact-section-cinematic glass-card" style="text-align: center; max-width: 800px; margin: 0 auto; padding: 4rem;">
+        <span class="section-tag">// Ota yhteyttä</span>
+        <h2 class="section-header">Autamme mielellämme <span class="text-gradient-green">markkinoinnissa</span></h2>
+        <p style="color: var(--cinematic-text-muted); margin-bottom: 2rem; font-size: 1.1rem;">
+          Autamme mielellämme markkinointiin liittyvissä asioissa.
+        </p>
+        <a href="https://www.kuulu.fi/yhteystiedot" class="btn-cinematic-primary" style="font-size: 1.25rem; padding: 1.25rem 2.5rem;">Varaa maksuton 30 min sparraus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kuulu Footer -->
+  <footer class="footer cinematic-footer">
+    <div class="footer__container">
+      <div class="footer__top-section">
+        <div class="row-fluid span12">
+          <!-- Logo & Info -->
+          <div class="footer__info column span4">
+            <div class="footer__logo">
+              <a href="https://www.kuulu.fi">
+                <img src="https://www.kuulu.fi/hs-fs/hubfs/Kuulu_logo_RGB-4.png?width=100&height=103" alt="Kuulu Logo" width="100" height="103">
+              </a>
+            </div>
+            <p style="color: var(--cinematic-text-muted); margin: 1rem 0; line-height: 1.6;">
+              Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.
+            </p>
+          </div>
+          
+          <!-- Footer Links -->
+          <div class="footer__navigation column span5">
+            <div class="footer-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <a href="https://www.kuulu.fi/koulutus" class="footer-tag">Koulutukset</a>
+              <a href="https://www.kuulu.fi/digimarkkinointi" class="footer-tag">Digimarkkinointi</a>
+              <a href="https://www.kuulu.fi/videotuotanto" class="footer-tag">Videotuotanto</a>
+              <a href="https://www.kuulu.fi/asiakasreferenssit" class="footer-tag">Referenssit</a>
+              <a href="https://www.kuulu.fi/tietosuojaseloste" class="footer-tag">Tietosuojaseloste</a>
+              <a href="https://blog.kuulu.fi/" class="footer-tag">Kuulun blogi</a>
+            </div>
+          </div>
+          
+          <!-- Offices -->
+          <div class="footer__offices column span3">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div>
+                <h4 style="font-family: var(--font-display); color: var(--cinematic-green); font-size: 1rem; margin-bottom: 0.5rem;">OULU</h4>
+                <p style="color: var(--cinematic-text-muted); font-size: 0.875rem; line-height: 1.5;">
+                  Vanhantullinkatu 4<br>90100 Oulu
+                </p>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-display); color: var(--cinematic-green); font-size: 1rem; margin-bottom: 0.5rem;">HELSINKI</h4>
+                <p style="color: var(--cinematic-text-muted); font-size: 0.875rem; line-height: 1.5;">
+                  Konepajankuja 7 D<br>00510 Helsinki
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom-section">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin: 0;">
+            Copyright © Markkinointiviestintätoimisto Kuulu Oy 2026. All Rights Reserved.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/kuulu/" class="social-links__link" target="_blank" rel="noopener">
+              <span class="social-links__icon"><i class="fab fa-linkedin-in"></i></span>
+            </a>
+            <a href="https://www.instagram.com/kuulu.fi/" class="social-links__link" target="_blank" rel="noopener">
+              <span class="social-links__icon"><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="https://www.facebook.com/Kuulu/" class="social-links__link" target="_blank" rel="noopener">
+              <span class="social-links__icon"><i class="fab fa-facebook-f"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const mobilePanel = document.getElementById('mobile-nav-panel');
+      
+      if (mobileToggle && mobilePanel) {
+        mobileToggle.addEventListener('click', function() {
+          const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+          mobileToggle.setAttribute('aria-expanded', !isExpanded);
+          mobilePanel.hidden = isExpanded;
+          mobilePanel.style.maxHeight = isExpanded ? '0px' : '500px';
+        });
+      }
+    });
+  </script>
+
+  <!-- Interactive cursor glow + ambient scroll lights -->
+  <canvas id="cursor-glow-canvas"></canvas>
+  <script>
+  (function() {
+    'use strict';
+    
+    // ===== CURSOR GLOW (Canvas-based) =====
+    var canvas = document.getElementById('cursor-glow-canvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    
+    var mouse = { x: -500, y: -500 };
+    var smoothMouse = { x: -500, y: -500 };
+    var scrollY = 0;
+    var prevScrollY = 0;
+    var scrollSpeed = 0;
+    var raf;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    
+    function resize() {
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = window.innerWidth + 'px';
+      canvas.style.height = window.innerHeight + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    
+    document.addEventListener('mousemove', function(e) {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+    
+    document.addEventListener('mouseleave', function() {
+      mouse.x = -500;
+      mouse.y = -500;
+    });
+    
+    window.addEventListener('scroll', function() {
+      scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    });
+    
+    // ===== AMBIENT LIGHT PARTICLES =====
+    var particles = [];
+    var particleCount = 6;
+    
+    for (var i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        baseX: Math.random() * window.innerWidth,
+        baseY: Math.random() * window.innerHeight,
+        size: 150 + Math.random() * 250,
+        speed: 0.0003 + Math.random() * 0.0005,
+        offset: Math.random() * Math.PI * 2,
+        opacity: 0.03 + Math.random() * 0.04,
+        hue: 140 + Math.random() * 30,
+        drift: 80 + Math.random() * 120
+      });
+    }
+    
+    function draw(time) {
+      // Smooth mouse following
+      smoothMouse.x += (mouse.x - smoothMouse.x) * 0.06;
+      smoothMouse.y += (mouse.y - smoothMouse.y) * 0.06;
+      
+      // Scroll speed for reactive effects
+      scrollSpeed = Math.abs(scrollY - prevScrollY);
+      prevScrollY += (scrollY - prevScrollY) * 0.1;
+      
+      // Clear
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      
+      // Draw ambient floating particles
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        var t = time * p.speed + p.offset;
+        
+        // Organic floating motion
+        p.x = p.baseX + Math.sin(t) * p.drift + Math.cos(t * 0.7) * (p.drift * 0.5);
+        p.y = p.baseY + Math.cos(t * 0.8) * p.drift + Math.sin(t * 0.5) * (p.drift * 0.3);
+        
+        // Parallax from scroll
+        var scrollOffset = (prevScrollY * (0.02 + i * 0.01)) % window.innerHeight;
+        var drawY = ((p.y - scrollOffset) % (window.innerHeight + p.size * 2));
+        if (drawY < -p.size) drawY += window.innerHeight + p.size * 2;
+        
+        // React to mouse proximity
+        var dx = smoothMouse.x - p.x;
+        var dy = smoothMouse.y - drawY;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        var influence = Math.max(0, 1 - dist / 500);
+        var reactiveOpacity = p.opacity + influence * 0.04;
+        var reactiveSize = p.size + influence * 40 + Math.min(scrollSpeed, 10) * 2;
+        
+        // Draw soft glow
+        var gradient = ctx.createRadialGradient(p.x, drawY, 0, p.x, drawY, reactiveSize);
+        gradient.addColorStop(0, 'hsla(' + p.hue + ', 80%, 45%, ' + (reactiveOpacity * 1.2) + ')');
+        gradient.addColorStop(0.4, 'hsla(' + p.hue + ', 70%, 35%, ' + (reactiveOpacity * 0.6) + ')');
+        gradient.addColorStop(1, 'hsla(' + p.hue + ', 60%, 25%, 0)');
+        
+        ctx.fillStyle = gradient;
+        ctx.fillRect(p.x - reactiveSize, drawY - reactiveSize, reactiveSize * 2, reactiveSize * 2);
+      }
+      
+      // Draw cursor glow (only if mouse is on screen)
+      if (smoothMouse.x > -100 && smoothMouse.y > -100) {
+        var glowSize = 250 + Math.min(scrollSpeed, 15) * 8;
+        var cursorGrad = ctx.createRadialGradient(
+          smoothMouse.x, smoothMouse.y, 0,
+          smoothMouse.x, smoothMouse.y, glowSize
+        );
+        cursorGrad.addColorStop(0, 'rgba(0, 220, 110, 0.10)');
+        cursorGrad.addColorStop(0.3, 'rgba(0, 200, 100, 0.05)');
+        cursorGrad.addColorStop(0.6, 'rgba(0, 180, 90, 0.02)');
+        cursorGrad.addColorStop(1, 'rgba(0, 160, 80, 0)');
+        
+        ctx.fillStyle = cursorGrad;
+        ctx.fillRect(
+          smoothMouse.x - glowSize,
+          smoothMouse.y - glowSize,
+          glowSize * 2,
+          glowSize * 2
+        );
+      }
+      
+      raf = requestAnimationFrame(draw);
+    }
+    
+    // Start animation
+    raf = requestAnimationFrame(draw);
+    
+    // Reposition particles on resize
+    window.addEventListener('resize', function() {
+      for (var i = 0; i < particles.length; i++) {
+        particles[i].baseX = Math.random() * window.innerWidth;
+        particles[i].baseY = Math.random() * window.innerHeight;
+      }
+    });
+    
+    // Pause when tab not visible
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        cancelAnimationFrame(raf);
+      } else {
+        raf = requestAnimationFrame(draw);
+      }
+    });
+  })();
+  </script>
+
+</div>
+{% endblock body %}

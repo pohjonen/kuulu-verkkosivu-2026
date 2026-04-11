@@ -1,0 +1,14 @@
+{
+  "content_tags" : [ {
+    "name" : "CINEMATIC",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "SITE_PAGE" ],
+  "categories" : [ "forms_and_buttons" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 382165002484,
+  "label" : "11 – CTA-osio",
+  "icon" : "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/contact.svg",
+  "is_available_for_new_content" : true
+}

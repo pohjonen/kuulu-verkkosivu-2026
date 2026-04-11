@@ -1,0 +1,185 @@
+[ {
+  "id" : "logo_image",
+  "name" : "logo_image",
+  "label" : "Logokuva",
+  "required" : false,
+  "locked" : true,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.kuulu.fi/hs-fs/hubfs/Kuulu_logo_RGB-4.png?width=100&height=103",
+    "alt" : "Kuulu Logo",
+    "width" : 100,
+    "height" : 103
+  }
+}, {
+  "id" : "logo_url",
+  "name" : "logo_url",
+  "label" : "Logon linkki",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.kuulu.fi"
+}, {
+  "id" : "description",
+  "name" : "description",
+  "label" : "Yrityksen lyhyt kuvaus",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia."
+}, {
+  "id" : "footer_links",
+  "name" : "footer_links",
+  "label" : "Footer-tagit (navigointilinkit)",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 12,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "nav_label",
+    "name" : "nav_label",
+    "label" : "Teksti",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Linkki"
+  }, {
+    "id" : "nav_url",
+    "name" : "nav_url",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "#"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ ]
+}, {
+  "id" : "offices",
+  "name" : "offices",
+  "label" : "Toimistot",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "city",
+    "name" : "city",
+    "label" : "Kaupunki (isolla, esim. OULU)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "OULU"
+  }, {
+    "id" : "street",
+    "name" : "street",
+    "label" : "Katuosoite",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Vanhantullinkatu 4"
+  }, {
+    "id" : "postal",
+    "name" : "postal",
+    "label" : "Postinumero ja kaupunki",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "90100 Oulu"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ ]
+}, {
+  "id" : "social_links",
+  "name" : "social_links",
+  "label" : "Some-linkit",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "social_icon",
+    "name" : "social_icon",
+    "label" : "Font Awesome -luokka (esim. fab fa-linkedin-in)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "fab fa-linkedin-in"
+  }, {
+    "id" : "social_url",
+    "name" : "social_url",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "https://www.linkedin.com/company/kuulu/"
+  }, {
+    "id" : "social_label",
+    "name" : "social_label",
+    "label" : "Saavutettavuusteksti (aria-label)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "LinkedIn"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ ]
+}, {
+  "id" : "copyright_text",
+  "name" : "copyright_text",
+  "label" : "Copyright-teksti",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Copyright © Markkinointiviestintätoimisto Kuulu Oy 2026. All Rights Reserved."
+} ]

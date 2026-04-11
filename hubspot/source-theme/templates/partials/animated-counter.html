@@ -1,0 +1,146 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Animated Counter - Stats with CountUp"
+-->
+{#
+  Animoitu laskuri -partiaali (parannettu stats-section)
+
+  Käyttö:
+    {% set ac_tag = '// Lukuina' %}
+    {% set ac_title = 'Tuloksia <span class="text-gradient-green">numeroina</span>' %}
+    {% set ac_1_number = '500' %}
+    {% set ac_1_suffix = '+' %}
+    {% set ac_1_label = 'tyytyväistä asiakasta' %}
+    {% set ac_1_icon = 'fas fa-building' %}
+    {% set ac_2_number = '98' %}
+    {% set ac_2_suffix = '%' %}
+    {% set ac_2_label = 'suosittelee' %}
+    {% set ac_3_number = '3000' %}
+    {% set ac_3_suffix = '+' %}
+    {% set ac_3_label = 'tuotettua sisältöä' %}
+    {% set ac_4_number = '15' %}
+    {% set ac_4_suffix = '+' %}
+    {% set ac_4_label = 'vuotta kokemusta' %}
+    {% set ac_dark_bg = true %}
+    {% include './partials/animated-counter.html' %}
+#}
+
+{% set a_tag = ac_tag|default('// Lukuina') %}
+{% set a_title = ac_title|default('') %}
+{% set a_desc = ac_description|default('') %}
+{% set a_dark = ac_dark_bg|default(true) %}
+{% set a_duration = ac_duration|default(2000) %}
+
+{% set n1 = ac_1_number|default('') %}
+{% set s1 = ac_1_suffix|default('') %}
+{% set p1 = ac_1_prefix|default('') %}
+{% set l1 = ac_1_label|default('') %}
+{% set i1 = ac_1_icon|default('') %}
+
+{% set n2 = ac_2_number|default('') %}
+{% set s2 = ac_2_suffix|default('') %}
+{% set p2 = ac_2_prefix|default('') %}
+{% set l2 = ac_2_label|default('') %}
+{% set i2 = ac_2_icon|default('') %}
+
+{% set n3 = ac_3_number|default('') %}
+{% set s3 = ac_3_suffix|default('') %}
+{% set p3 = ac_3_prefix|default('') %}
+{% set l3 = ac_3_label|default('') %}
+{% set i3 = ac_3_icon|default('') %}
+
+{% set n4 = ac_4_number|default('') %}
+{% set s4 = ac_4_suffix|default('') %}
+{% set p4 = ac_4_prefix|default('') %}
+{% set l4 = ac_4_label|default('') %}
+{% set i4 = ac_4_icon|default('') %}
+
+{% set n5 = ac_5_number|default('') %}
+{% set s5 = ac_5_suffix|default('') %}
+{% set p5 = ac_5_prefix|default('') %}
+{% set l5 = ac_5_label|default('') %}
+{% set i5 = ac_5_icon|default('') %}
+
+<section class="cinematic-section{% if a_dark %} section-with-blobs gradient-section-dark grain-section{% endif %}">
+  {% if a_dark %}
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  {% endif %}
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    {% if a_tag %}<span class="section-tag">{{ a_tag }}</span>{% endif %}
+    {% if a_title %}<h2 class="section-header">{{ a_title }}</h2>{% endif %}
+    {% if a_desc %}<p style="color: var(--cinematic-text-muted); max-width: 650px; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.7;">{{ a_desc }}</p>{% endif %}
+
+    <div class="ac-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+
+      {% macro counter_card(num, prefix, suffix, label, icon, duration) %}
+      {% if num %}
+      <div class="hero-glass-box ac-card" style="padding: 2rem; text-align: center;">
+        {% if icon %}
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(0,255,135,0.08); border: 1px solid rgba(0,255,135,0.15); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+          <i class="{{ icon }}" style="font-size: 1.1rem; color: var(--cinematic-green);"></i>
+        </div>
+        {% endif %}
+        <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); line-height: 1;" class="text-gradient-green">
+          <span class="ac-prefix">{{ prefix }}</span><span class="ac-value" data-target="{{ num }}" data-duration="{{ duration }}">0</span><span class="ac-suffix">{{ suffix }}</span>
+        </div>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.88rem; margin-top: 0.6rem; line-height: 1.4;">{{ label }}</p>
+      </div>
+      {% endif %}
+      {% endmacro %}
+
+      {{ counter_card(n1, p1, s1, l1, i1, a_duration) }}
+      {{ counter_card(n2, p2, s2, l2, i2, a_duration) }}
+      {{ counter_card(n3, p3, s3, l3, i3, a_duration) }}
+      {{ counter_card(n4, p4, s4, l4, i4, a_duration) }}
+      {{ counter_card(n5, p5, s5, l5, i5, a_duration) }}
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var animated = false;
+  function animateCounters() {
+    if (animated) return;
+    var els = document.querySelectorAll('.ac-value');
+    if (!els.length) return;
+    animated = true;
+    els.forEach(function(el) {
+      var target = parseFloat(el.getAttribute('data-target'));
+      var duration = parseInt(el.getAttribute('data-duration')) || 2000;
+      var start = 0;
+      var startTime = null;
+      var isFloat = target % 1 !== 0;
+
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = Math.floor(eased * target);
+        if (isFloat) current = parseFloat((eased * target).toFixed(1));
+        el.textContent = current.toLocaleString('fi-FI');
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = isFloat ? target.toLocaleString('fi-FI') : Math.floor(target).toLocaleString('fi-FI');
+        }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  var grid = document.querySelector('.ac-grid');
+  if (grid) observer.observe(grid);
+})();
+</script>

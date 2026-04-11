@@ -1,0 +1,38 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Spacing Divider - Section Separator"
+-->
+{#
+  Välitila / jakaja -partiaali
+
+  Käyttö:
+    {% set divider_height = '4rem' %}
+    {% set divider_style = 'line' %}
+    {% set divider_glow = true %}
+    {% include './partials/spacing-divider.html' %}
+
+    Tyylit: 'none' (tyhjä tila), 'line' (ohut viiva), 'gradient' (gradient-viiva), 'dots' (pisteet)
+#}
+
+{% set d_height = divider_height|default('4rem') %}
+{% set d_style = divider_style|default('none') %}
+{% set d_glow = divider_glow|default(false) %}
+
+<div class="section-divider" style="padding: {{ d_height }} 0; display: flex; align-items: center; justify-content: center;">
+  {% if d_style == 'line' %}
+  <div style="width: 100%; max-width: 1200px; height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); margin: 0 2rem;{% if d_glow %} box-shadow: 0 0 10px rgba(0, 255, 135, 0.1);{% endif %}"></div>
+
+  {% elif d_style == 'gradient' %}
+  <div style="width: 100%; max-width: 1200px; height: 2px; background: linear-gradient(to right, transparent, var(--cinematic-green), transparent); margin: 0 2rem; opacity: 0.4;{% if d_glow %} box-shadow: 0 0 20px rgba(0, 255, 135, 0.2);{% endif %}"></div>
+
+  {% elif d_style == 'dots' %}
+  <div style="display: flex; gap: 0.75rem; align-items: center;">
+    <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(0, 255, 135, 0.3);"></span>
+    <span style="width: 6px; height: 6px; border-radius: 50%; background: rgba(0, 255, 135, 0.5);"></span>
+    <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(0, 255, 135, 0.3);"></span>
+  </div>
+
+  {% endif %}
+  {# d_style == 'none': pelkkä tyhjä tila, ei mitään visuaalista #}
+</div>

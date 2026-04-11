@@ -1,0 +1,64 @@
+/* Inline HubSpot form – button + text styling */
+#zero-click-earlybird-form .hs-submit .hs-button,
+#zero-click-earlybird-form input[type="submit"],
+#zero-click-earlybird-form .hs_submit .hs-button,
+#zero-click-earlybird-form button[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+  color: var(--cinematic-bg) !important;
+  background: linear-gradient(135deg, #00ff87, #00e676) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 30px rgba(0, 255, 135, 0.3);
+  margin-top: 1rem;
+  width: auto;
+}
+#zero-click-earlybird-form .hs-submit .hs-button:hover,
+#zero-click-earlybird-form input[type="submit"]:hover,
+#zero-click-earlybird-form .hs_submit .hs-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 50px rgba(0, 255, 135, 0.5);
+}
+
+/* Form labels – white text */
+#zero-click-earlybird-form .hs-form-field > label {
+  color: var(--cinematic-text) !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+}
+
+/* Radio & checkbox labels */
+#zero-click-earlybird-form .hs-form-radio-display span,
+#zero-click-earlybird-form .hs-form-booleancheckbox-display span,
+#zero-click-earlybird-form .hs-form-checkbox-display span,
+#zero-click-earlybird-form .hs-form-radio label span,
+#zero-click-earlybird-form .hs-form-checkbox label span {
+  color: var(--cinematic-text) !important;
+}
+
+/* Rich text / legal consent – muted white */
+#zero-click-earlybird-form .hs-richtext,
+#zero-click-earlybird-form .hs-richtext p,
+#zero-click-earlybird-form .legal-consent-container,
+#zero-click-earlybird-form .legal-consent-container p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+#zero-click-earlybird-form .hs-richtext a,
+#zero-click-earlybird-form .legal-consent-container a {
+  color: #00e676 !important;
+}
+
+/* Error messages */
+#zero-click-earlybird-form .hs-error-msgs {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+}

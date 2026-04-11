@@ -1,0 +1,57 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Client Logos Showcase"
+-->
+{#
+  Asiakaslogot -partiaali
+
+  Käyttö:
+    {% include './partials/client-logos.html' with {
+      logos_tag: '// Asiakkaitamme',
+      logos_title: '<span class="text-gradient-green">Asiakkaitamme</span>',
+      logo_1_src: 'https://example.com/logo1.png',
+      logo_1_alt: 'Asiakas 1',
+      logo_2_src: 'https://example.com/logo2.png',
+      logo_2_alt: 'Asiakas 2'
+    } %}
+#}
+
+{% set active_tag = logos_tag|default('// Asiakkaitamme') %}
+{% set active_title = logos_title|default('<span class="text-gradient-green">Asiakkaitamme</span>') %}
+
+{% set l1_src = logo_1_src|default('') %}
+{% set l1_alt = logo_1_alt|default('Asiakas') %}
+{% set l2_src = logo_2_src|default('') %}
+{% set l2_alt = logo_2_alt|default('Asiakas') %}
+{% set l3_src = logo_3_src|default('') %}
+{% set l3_alt = logo_3_alt|default('Asiakas') %}
+{% set l4_src = logo_4_src|default('') %}
+{% set l4_alt = logo_4_alt|default('Asiakas') %}
+{% set l5_src = logo_5_src|default('') %}
+{% set l5_alt = logo_5_alt|default('Asiakas') %}
+{% set l6_src = logo_6_src|default('') %}
+{% set l6_alt = logo_6_alt|default('Asiakas') %}
+{% set l7_src = logo_7_src|default('') %}
+{% set l7_alt = logo_7_alt|default('Asiakas') %}
+{% set l8_src = logo_8_src|default('') %}
+{% set l8_alt = logo_8_alt|default('Asiakas') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <div style="text-align: center;">
+      <span class="section-tag">{{ active_tag }}</span>
+      <h2 class="section-header">{{ active_title }}</h2>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3rem; margin-top: 2rem; opacity: 0.7;">
+      {% if l1_src %}<img src="{{ l1_src }}" alt="{{ l1_alt }}" style="height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; transition: opacity 0.3s;" loading="lazy" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">{% endif %}
+      {% if l2_src %}<img src="{{ l2_src }}" alt="{{ l2_alt }}" style="height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; transition: opacity 0.3s;" loading="lazy" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">{% endif %}
+      {% if l3_src %}<img src="{{ l3_src }}" alt="{{ l3_alt }}" style="height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; transition: opacity 0.3s;" loading="lazy" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">{% endif %}
+      {% if l4_src %}<img src="{{ l4_src }}" alt="{{ l4_alt }}" style="height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; transition: opacity 0.3s;" loading="lazy" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">{% endif %}
+      {% if l5_src %}<img src="{{ l5_src }}" alt="{{ l5_alt }}" style="height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; transition: opacity 0.3s;" loading="lazy" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">{% endif %}
+      {% if l6_src %}<img src="{{ l6_src }}" alt="{{ l6_alt }}" style="height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; transition: opacity 0.3s;" loading="lazy" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">{% endif %}
+      {% if l7_src %}<img src="{{ l7_src }}" alt="{{ l7_alt }}" style="height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; transition: opacity 0.3s;" loading="lazy" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">{% endif %}
+      {% if l8_src %}<img src="{{ l8_src }}" alt="{{ l8_alt }}" style="height: 60px; width: auto; filter: brightness(0) invert(1); opacity: 0.6; transition: opacity 0.3s;" loading="lazy" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">{% endif %}
+    </div>
+  </div>
+</section>

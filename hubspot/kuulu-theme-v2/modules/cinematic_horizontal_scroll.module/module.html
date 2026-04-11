@@ -1,0 +1,124 @@
+<section class="cinematic-horizontal-scroll">
+  <div class="container-wide">
+    {% if module.section_title %}
+      <div class="section-header">
+        <h2 class="section-title">{{ module.section_title }}</h2>
+        {% if module.section_subtitle %}
+          <p class="section-subtitle">{{ module.section_subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% set cards_list = module.cards if module.cards and module.cards|length > 0 else [{"title":"Digimarkkinointi","description":"<p>Strategia ja sisältö – yhden kumppanin kautta.</p>","link_text":"LUE LISÄÄ"},{"title":"Videotuotanto","description":"<p>Mainokset ja case videot.</p>","link_text":"LUE LISÄÄ"},{"title":"Koulutus","description":"<p>Live- ja verkkokoulutukset.</p>","link_text":"LUE LISÄÄ"}] %}
+    <div class="scroll-container" data-total="{{ cards_list|length }}">
+      <div class="scroll-track">
+        {% for card in cards_list %}
+          <div class="scroll-card" data-index="{{ loop.index0 }}">
+            <div class="card-media">
+              {% if card.image and card.image.src %}
+                <img src="{{ card.image.src }}" alt="{{ card.image.alt or card.title }}" loading="lazy">
+              {% elif card.icon_svg %}
+                <div class="card-icon">
+                  {{ card.icon_svg }}
+                </div>
+              {% else %}
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="{{ card.title or 'Palvelu' }}" loading="lazy">
+              {% endif %}
+            </div>
+
+            <div class="card-content">
+              {% if card.title %}<h3 class="card-title">{{ card.title }}</h3>{% endif %}
+              {% if card.description %}
+                <div class="card-description">
+                  {{ card.description }}
+                </div>
+              {% endif %}
+
+              <a href="{{ card.link_url.href if card.link_url and card.link_url.href else '#' }}" class="card-link">
+                <span>{{ card.link_text or 'LUE LISÄÄ' }}</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="scroll-progress">
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="progress-text">
+        <span class="current-slide">1</span> / <span class="total-slides">{{ cards_list|length }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const containers = document.querySelectorAll('.cinematic-horizontal-scroll');
+  
+  containers.forEach(container => {
+    const scrollContainer = container.querySelector('.scroll-container');
+    const scrollTrack = container.querySelector('.scroll-track');
+    const cards = container.querySelectorAll('.scroll-card');
+    const progressFill = container.querySelector('.progress-fill');
+    const currentSlideEl = container.querySelector('.current-slide');
+    const totalSlides = scrollContainer.dataset.total;
+
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    function updateProgress() {
+      const scrollWidth = scrollTrack.scrollWidth - scrollTrack.clientWidth;
+      const scrolled = scrollTrack.scrollLeft;
+      const percentage = (scrolled / scrollWidth) * 100;
+      
+      progressFill.style.width = percentage + '%';
+      
+      // Update current slide number
+      const cardWidth = cards[0].offsetWidth + 32; // card width + gap
+      const currentIndex = Math.round(scrolled / cardWidth) + 1;
+      currentSlideEl.textContent = Math.min(currentIndex, totalSlides);
+    }
+
+    // Mouse drag scrolling
+    scrollTrack.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      scrollTrack.style.cursor = 'grabbing';
+      scrollTrack.style.userSelect = 'none';
+      startX = e.pageX - scrollTrack.offsetLeft;
+      scrollLeft = scrollTrack.scrollLeft;
+    });
+
+    scrollTrack.addEventListener('mouseleave', () => {
+      isDragging = false;
+      scrollTrack.style.cursor = 'grab';
+    });
+
+    scrollTrack.addEventListener('mouseup', () => {
+      isDragging = false;
+      scrollTrack.style.cursor = 'grab';
+    });
+
+    scrollTrack.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - scrollTrack.offsetLeft;
+      const walk = (x - startX) * 2;
+      scrollTrack.scrollLeft = scrollLeft - walk;
+    });
+
+    // Touch scrolling is native, just update progress
+    scrollTrack.addEventListener('scroll', updateProgress, { passive: true });
+
+    // Initial progress update
+    updateProgress();
+  });
+})();
+</script>

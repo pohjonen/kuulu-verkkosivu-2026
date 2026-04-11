@@ -1,0 +1,120 @@
+/* ============================================
+   KUULU 2026 — DESIGN TOKENS (Single Source of Truth)
+   ============================================
+   Tämä tiedosto määrittää kaikki design tokenit:
+   värit, fontit, varjot, reunukset, spacing, animaatiot.
+   
+   KAIKKI muut CSS-tiedostot viittaavat näihin muuttujiin.
+   Älä määritä samoja muuttujia muualla.
+   ============================================ */
+
+/* ========== FONT IMPORTS (vain kerran) ========== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ========== ROOT TOKENS ========== */
+:root {
+  /* ---- Brand Colors ---- */
+  --kuulu-green: #009F4E;
+  --kuulu-green-light: #66C595;
+  --kuulu-green-dark: #005F2F;
+  --kuulu-orange: #FF7900;
+  --kuulu-orange-light: #FBB083;
+  --kuulu-soft-peach: #F9AE8F;
+  --kuulu-electric-tq: #00E5C6;
+
+  /* ---- Deep Surfaces ---- */
+  --kuulu-midnight-teal: #002E27;
+  --kuulu-gunmetal: #122125;
+  --kuulu-ink-black: #0B0D0C;
+
+  /* ---- Neutrals ---- */
+  --kuulu-off-white: #F4F1EA;
+  --kuulu-ash-grey: #C8CFD0;
+  --kuulu-cream: #FEF9F6;
+  --kuulu-white: #FFFFFF;
+  --kuulu-black: #1A1A1A;
+  --kuulu-gray: #666666;
+  --kuulu-gray-light: #F5F5F5;
+
+  /* ---- Functional ---- */
+  --success-green: #10B97E;
+  --warning-amber: #FFB200;
+  --error-red: #FF4E42;
+
+  /* ---- Cinematic Dark Theme Colors ---- */
+  --cinematic-bg: #0A0A0A;
+  --cinematic-bg-light: #141414;
+  --cinematic-bg-card: rgba(5, 15, 10, 0.55);
+  --cinematic-surface: #1E1E1E;
+  --cinematic-text: #FFFFFF;
+  --cinematic-text-muted: #B8B8B8;
+  --cinematic-text-dim: #8D8D8D;
+
+  /* ---- Cinematic Green Accent ---- */
+  --cinematic-green: #00FF87;
+  --cinematic-green-mid: #00D46A;
+  --cinematic-green-deep: #009F4E;
+  --cinematic-green-dark: #006633;
+
+  /* ---- Gradients ---- */
+  --gradient-green: linear-gradient(135deg, #00FF87 0%, #009F4E 100%);
+  --gradient-dark: linear-gradient(180deg, #0A0A0A 0%, #111111 100%);
+  --gradient-card: linear-gradient(145deg, rgba(5, 18, 10, 0.5) 0%, rgba(3, 12, 7, 0.6) 100%);
+  --kuulu-gradient: linear-gradient(135deg, var(--kuulu-green) 0%, var(--kuulu-green-dark) 100%);
+  --kuulu-gradient-orange: linear-gradient(135deg, var(--kuulu-orange) 0%, var(--kuulu-orange-light) 100%);
+
+  /* ---- Shadows ---- */
+  --shadow-green: 0 0 60px rgba(0, 255, 135, 0.3);
+  --shadow-green-sm: 0 0 30px rgba(0, 255, 135, 0.2);
+  --shadow-card: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  --shadow-elevated: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
+
+  /* ---- Borders ---- */
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-green: rgba(0, 255, 135, 0.4);
+
+  /* ---- Typography ---- */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --font-body-alt: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* ---- Spacing ---- */
+  --space-xs: 0.25rem;   /* 4px */
+  --space-sm: 0.5rem;    /* 8px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4rem;     /* 64px */
+  --space-4xl: 6rem;     /* 96px */
+  --space-section: 5rem; /* 80px */
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-spring: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---- Z-Index Scale ---- */
+  --z-base: 1;
+  --z-above: 10;
+  --z-header: 100;
+  --z-overlay: 500;
+  --z-modal: 1000;
+  --z-notification: 9999;
+
+  /* ---- Layout ---- */
+  --container-max: 1200px;
+  --container-wide: 1400px;
+  --container-narrow: 800px;
+  --header-height: 80px;
+}

@@ -1,0 +1,91 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Process Steps - Numbered Timeline"
+-->
+{#
+  Prosessivaiheet / aikajana -partiaali
+
+  Käyttö:
+    {% include './partials/process-steps.html' with {
+      process_tag: '// Tuotantoprosessi',
+      process_title: 'Näin <span class="text-gradient-green">etenee</span>',
+      step_1_title: 'Suunnittelu',
+      step_1_text: 'Kartoitamme tavoitteet.',
+      step_2_title: 'Toteutus',
+      step_2_text: 'Rakennamme ratkaisun.',
+      step_3_title: 'Optimointi',
+      step_3_text: 'Hienosäädämme tuloksia.',
+      step_4_title: 'Raportointi',
+      step_4_text: 'Raportoimme tulokset.'
+    } %}
+#}
+
+{% set active_tag = process_tag|default('// Prosessi') %}
+{% set active_title = process_title|default('Näin <span class="text-gradient-green">työskentelemme</span>') %}
+
+{% set s1_t = step_1_title|default('') %}
+{% set s1_d = step_1_text|default('') %}
+{% set s2_t = step_2_title|default('') %}
+{% set s2_d = step_2_text|default('') %}
+{% set s3_t = step_3_title|default('') %}
+{% set s3_d = step_3_text|default('') %}
+{% set s4_t = step_4_title|default('') %}
+{% set s4_d = step_4_text|default('') %}
+{% set s5_t = step_5_title|default('') %}
+{% set s5_d = step_5_text|default('') %}
+{% set s6_t = step_6_title|default('') %}
+{% set s6_d = step_6_text|default('') %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <span class="section-tag">{{ active_tag }}</span>
+    <h2 class="section-header">{{ active_title }}</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      {% if s1_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0, 255, 135, 0.1); border: 1px solid rgba(0, 255, 135, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">1</div>
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.05rem; margin-bottom: 0.75rem;">{{ s1_t }}</h3>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6;">{{ s1_d }}</p>
+      </div>
+      {% endif %}
+      {% if s2_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0, 255, 135, 0.1); border: 1px solid rgba(0, 255, 135, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">2</div>
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.05rem; margin-bottom: 0.75rem;">{{ s2_t }}</h3>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6;">{{ s2_d }}</p>
+      </div>
+      {% endif %}
+      {% if s3_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0, 255, 135, 0.1); border: 1px solid rgba(0, 255, 135, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">3</div>
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.05rem; margin-bottom: 0.75rem;">{{ s3_t }}</h3>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6;">{{ s3_d }}</p>
+      </div>
+      {% endif %}
+      {% if s4_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0, 255, 135, 0.1); border: 1px solid rgba(0, 255, 135, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">4</div>
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.05rem; margin-bottom: 0.75rem;">{{ s4_t }}</h3>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6;">{{ s4_d }}</p>
+      </div>
+      {% endif %}
+      {% if s5_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0, 255, 135, 0.1); border: 1px solid rgba(0, 255, 135, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">5</div>
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.05rem; margin-bottom: 0.75rem;">{{ s5_t }}</h3>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6;">{{ s5_d }}</p>
+      </div>
+      {% endif %}
+      {% if s6_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0, 255, 135, 0.1); border: 1px solid rgba(0, 255, 135, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">6</div>
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.05rem; margin-bottom: 0.75rem;">{{ s6_t }}</h3>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6;">{{ s6_d }}</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,166 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Portfolio Grid - Showcase Works"
+-->
+{# Portfolio grid - tukee 9 itemia, kategoriafiltteriä, video play -ikonia #}
+
+{% set p_tag = portfolio_tag|default('// Portfolio') %}
+{% set p_title = portfolio_title|default('Tuoreimmat <span class="text-gradient-green">tyomme</span>') %}
+{% set p_desc = portfolio_description|default('') %}
+{% set p_cols = portfolio_columns|default(3) %}
+{% set p_filter = portfolio_filter|default(false) %}
+
+{% set pf1_img = pf_1_image|default('') %}
+{% set pf1_t = pf_1_title|default('') %}
+{% set pf1_cat = pf_1_category|default('') %}
+{% set pf1_cl = pf_1_client|default('') %}
+{% set pf1_u = pf_1_url|default('#') %}
+{% set pf1_vid = pf_1_video|default('') %}
+{% set pf2_img = pf_2_image|default('') %}
+{% set pf2_t = pf_2_title|default('') %}
+{% set pf2_cat = pf_2_category|default('') %}
+{% set pf2_cl = pf_2_client|default('') %}
+{% set pf2_u = pf_2_url|default('#') %}
+{% set pf2_vid = pf_2_video|default('') %}
+{% set pf3_img = pf_3_image|default('') %}
+{% set pf3_t = pf_3_title|default('') %}
+{% set pf3_cat = pf_3_category|default('') %}
+{% set pf3_cl = pf_3_client|default('') %}
+{% set pf3_u = pf_3_url|default('#') %}
+{% set pf3_vid = pf_3_video|default('') %}
+{% set pf4_img = pf_4_image|default('') %}
+{% set pf4_t = pf_4_title|default('') %}
+{% set pf4_cat = pf_4_category|default('') %}
+{% set pf4_cl = pf_4_client|default('') %}
+{% set pf4_u = pf_4_url|default('#') %}
+{% set pf5_img = pf_5_image|default('') %}
+{% set pf5_t = pf_5_title|default('') %}
+{% set pf5_cat = pf_5_category|default('') %}
+{% set pf5_cl = pf_5_client|default('') %}
+{% set pf5_u = pf_5_url|default('#') %}
+{% set pf6_img = pf_6_image|default('') %}
+{% set pf6_t = pf_6_title|default('') %}
+{% set pf6_cat = pf_6_category|default('') %}
+{% set pf6_cl = pf_6_client|default('') %}
+{% set pf6_u = pf_6_url|default('#') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <span class="section-tag">{{ p_tag }}</span>
+    <h2 class="section-header">{{ p_title }}</h2>
+    {% if p_desc %}
+    <p style="color: var(--cinematic-text-muted); max-width: 700px; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.7;">{{ p_desc }}</p>
+    {% endif %}
+
+    {% if p_filter %}
+    <div class="portfolio-filters" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem;">
+      <button class="pf-fbtn active" data-filter="all" onclick="filterPortfolio('all',this)">Kaikki</button>
+      {% if pf1_cat %}<button class="pf-fbtn" data-filter="{{ pf1_cat }}" onclick="filterPortfolio('{{ pf1_cat }}',this)">{{ pf1_cat }}</button>{% endif %}
+      {% if pf2_cat and pf2_cat != pf1_cat %}<button class="pf-fbtn" data-filter="{{ pf2_cat }}" onclick="filterPortfolio('{{ pf2_cat }}',this)">{{ pf2_cat }}</button>{% endif %}
+      {% if pf3_cat and pf3_cat != pf1_cat and pf3_cat != pf2_cat %}<button class="pf-fbtn" data-filter="{{ pf3_cat }}" onclick="filterPortfolio('{{ pf3_cat }}',this)">{{ pf3_cat }}</button>{% endif %}
+    </div>
+    {% endif %}
+
+    <div class="pf-grid" style="display: grid; grid-template-columns: repeat({{ p_cols }}, 1fr); gap: 1.25rem;">
+
+      {% if pf1_t %}
+      <a href="{{ pf1_u }}" class="pf-card" data-cat="{{ pf1_cat }}">
+        {% if pf1_img %}<img src="{{ pf1_img }}" alt="{{ pf1_t }}" loading="lazy">{% endif %}
+        {% if pf1_vid %}<div class="pf-play"></div>{% endif %}
+        <div class="pf-info">
+          {% if pf1_cat %}<span class="pf-badge">{{ pf1_cat }}</span>{% endif %}
+          <h3>{{ pf1_t }}</h3>
+          {% if pf1_cl %}<p>{{ pf1_cl }}</p>{% endif %}
+        </div>
+      </a>
+      {% endif %}
+
+      {% if pf2_t %}
+      <a href="{{ pf2_u }}" class="pf-card" data-cat="{{ pf2_cat }}">
+        {% if pf2_img %}<img src="{{ pf2_img }}" alt="{{ pf2_t }}" loading="lazy">{% endif %}
+        {% if pf2_vid %}<div class="pf-play"></div>{% endif %}
+        <div class="pf-info">
+          {% if pf2_cat %}<span class="pf-badge">{{ pf2_cat }}</span>{% endif %}
+          <h3>{{ pf2_t }}</h3>
+          {% if pf2_cl %}<p>{{ pf2_cl }}</p>{% endif %}
+        </div>
+      </a>
+      {% endif %}
+
+      {% if pf3_t %}
+      <a href="{{ pf3_u }}" class="pf-card" data-cat="{{ pf3_cat }}">
+        {% if pf3_img %}<img src="{{ pf3_img }}" alt="{{ pf3_t }}" loading="lazy">{% endif %}
+        {% if pf3_vid %}<div class="pf-play"></div>{% endif %}
+        <div class="pf-info">
+          {% if pf3_cat %}<span class="pf-badge">{{ pf3_cat }}</span>{% endif %}
+          <h3>{{ pf3_t }}</h3>
+          {% if pf3_cl %}<p>{{ pf3_cl }}</p>{% endif %}
+        </div>
+      </a>
+      {% endif %}
+
+      {% if pf4_t %}
+      <a href="{{ pf4_u }}" class="pf-card" data-cat="{{ pf4_cat }}">
+        {% if pf4_img %}<img src="{{ pf4_img }}" alt="{{ pf4_t }}" loading="lazy">{% endif %}
+        <div class="pf-info">
+          {% if pf4_cat %}<span class="pf-badge">{{ pf4_cat }}</span>{% endif %}
+          <h3>{{ pf4_t }}</h3>
+          {% if pf4_cl %}<p>{{ pf4_cl }}</p>{% endif %}
+        </div>
+      </a>
+      {% endif %}
+
+      {% if pf5_t %}
+      <a href="{{ pf5_u }}" class="pf-card" data-cat="{{ pf5_cat }}">
+        {% if pf5_img %}<img src="{{ pf5_img }}" alt="{{ pf5_t }}" loading="lazy">{% endif %}
+        <div class="pf-info">
+          {% if pf5_cat %}<span class="pf-badge">{{ pf5_cat }}</span>{% endif %}
+          <h3>{{ pf5_t }}</h3>
+          {% if pf5_cl %}<p>{{ pf5_cl }}</p>{% endif %}
+        </div>
+      </a>
+      {% endif %}
+
+      {% if pf6_t %}
+      <a href="{{ pf6_u }}" class="pf-card" data-cat="{{ pf6_cat }}">
+        {% if pf6_img %}<img src="{{ pf6_img }}" alt="{{ pf6_t }}" loading="lazy">{% endif %}
+        <div class="pf-info">
+          {% if pf6_cat %}<span class="pf-badge">{{ pf6_cat }}</span>{% endif %}
+          <h3>{{ pf6_t }}</h3>
+          {% if pf6_cl %}<p>{{ pf6_cl }}</p>{% endif %}
+        </div>
+      </a>
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+<style>
+.pf-card { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; display: block; text-decoration: none; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); }
+.pf-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.pf-card:hover img { transform: scale(1.05); }
+.pf-info { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,10,5,0.95) 0%, rgba(0,10,5,0.3) 50%, transparent 70%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; }
+.pf-badge { display: inline-block; background: rgba(0,255,135,0.15); color: var(--cinematic-green); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.2rem 0.6rem; border-radius: 100px; border: 1px solid rgba(0,255,135,0.2); margin-bottom: 0.5rem; width: fit-content; }
+.pf-info h3 { font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin: 0 0 0.25rem; line-height: 1.3; }
+.pf-info p { color: var(--cinematic-text-muted); font-size: 0.8rem; margin: 0; }
+.pf-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 64px; height: 64px; background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); z-index: 5; transition: all 0.3s; }
+.pf-play::after { content: ''; position: absolute; top: 50%; left: 54%; transform: translate(-50%,-50%); width: 0; height: 0; border-style: solid; border-width: 10px 0 10px 18px; border-color: transparent transparent transparent var(--cinematic-green); }
+.pf-card:hover .pf-play { background: var(--cinematic-green); border-color: var(--cinematic-green); }
+.pf-card:hover .pf-play::after { border-color: transparent transparent transparent #0a0a0a; }
+.pf-fbtn { background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.8rem; font-weight: 500; cursor: pointer; transition: all 0.3s; }
+.pf-fbtn.active { background: var(--cinematic-green); color: #0a0a0a; border-color: var(--cinematic-green); font-weight: 700; }
+@media (max-width: 1024px) { .pf-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+@media (max-width: 640px) { .pf-grid { grid-template-columns: 1fr !important; } }
+</style>
+
+<script>
+function filterPortfolio(cat, btn) {
+  document.querySelectorAll('.pf-fbtn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.pf-card').forEach(function(c) {
+    c.style.display = (cat === 'all' || c.getAttribute('data-cat') === cat) ? 'block' : 'none';
+  });
+}
+</script>

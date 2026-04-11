@@ -1,0 +1,186 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Pricing Cards - Rich with Features"
+-->
+{#
+  Hinnoittelukortit -partiaali (ominaisuuslista + CTA per kortti)
+
+  Käyttö:
+    {% set pc_tag = '// Hinnoittelu' %}
+    {% set pc_title = 'Valitse sinulle <span class="text-gradient-green">sopiva taso</span>' %}
+    {% set pc_1_name = 'STARTER' %}
+    {% set pc_1_price = '2 900' %}
+    {% set pc_1_unit = '€/kk' %}
+    {% set pc_1_desc = '10 krediittiä kuukaudessa' %}
+    {% set pc_1_features = 'Sisällöntuotanto;;Somekanavien hallinta;;Kuukausiraportointi;;Oma yhteyshenkilö' %}
+    {% set pc_1_cta = 'Aloita nyt' %}
+    {% set pc_1_url = '#ota-yhteytta' %}
+    {% set pc_2_name = 'GROWTH' %}
+    {% set pc_2_price = '4 900' %}
+    {% set pc_2_unit = '€/kk' %}
+    {% set pc_2_desc = '20 krediittiä kuukaudessa' %}
+    {% set pc_2_features = 'Kaikki Starter-ominaisuudet;;Videotuotanto;;Mainoskampanjat;;AI-sisällöt;;Dashboard' %}
+    {% set pc_2_cta = 'Suosituin — Aloita nyt' %}
+    {% set pc_2_url = '#ota-yhteytta' %}
+    {% set pc_2_highlight = true %}
+    ... (max 4 tasoa)
+    {% include './partials/pricing-cards.html' %}
+
+    Ominaisuudet erotetaan ;;-merkinnällä: feature1;;feature2;;feature3
+#}
+
+{% set p_tag = pc_tag|default('') %}
+{% set p_title = pc_title|default('') %}
+{% set p_desc = pc_description|default('') %}
+{% set p_footer = pc_footer|default('') %}
+
+{% set t1_name = pc_1_name|default('') %}
+{% set t1_price = pc_1_price|default('') %}
+{% set t1_unit = pc_1_unit|default('') %}
+{% set t1_desc = pc_1_desc|default('') %}
+{% set t1_features = pc_1_features|default('') %}
+{% set t1_cta = pc_1_cta|default('') %}
+{% set t1_url = pc_1_url|default('#') %}
+{% set t1_hl = pc_1_highlight|default(false) %}
+
+{% set t2_name = pc_2_name|default('') %}
+{% set t2_price = pc_2_price|default('') %}
+{% set t2_unit = pc_2_unit|default('') %}
+{% set t2_desc = pc_2_desc|default('') %}
+{% set t2_features = pc_2_features|default('') %}
+{% set t2_cta = pc_2_cta|default('') %}
+{% set t2_url = pc_2_url|default('#') %}
+{% set t2_hl = pc_2_highlight|default(false) %}
+
+{% set t3_name = pc_3_name|default('') %}
+{% set t3_price = pc_3_price|default('') %}
+{% set t3_unit = pc_3_unit|default('') %}
+{% set t3_desc = pc_3_desc|default('') %}
+{% set t3_features = pc_3_features|default('') %}
+{% set t3_cta = pc_3_cta|default('') %}
+{% set t3_url = pc_3_url|default('#') %}
+{% set t3_hl = pc_3_highlight|default(false) %}
+
+{% set t4_name = pc_4_name|default('') %}
+{% set t4_price = pc_4_price|default('') %}
+{% set t4_unit = pc_4_unit|default('') %}
+{% set t4_desc = pc_4_desc|default('') %}
+{% set t4_features = pc_4_features|default('') %}
+{% set t4_cta = pc_4_cta|default('') %}
+{% set t4_url = pc_4_url|default('#') %}
+{% set t4_hl = pc_4_highlight|default(false) %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    {% if p_tag %}<span class="section-tag">{{ p_tag }}</span>{% endif %}
+    {% if p_title %}<h2 class="section-header">{{ p_title }}</h2>{% endif %}
+    {% if p_desc %}<p style="color: var(--cinematic-text-muted); max-width: 650px; margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.7;">{{ p_desc }}</p>{% endif %}
+
+    <div class="pc-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; align-items: stretch;">
+
+      {% macro price_card(name, price, unit, desc, features_str, cta, url, highlight) %}
+      {% if name %}
+      <div class="pc-card{% if highlight %} pc-highlighted{% endif %}">
+        {% if highlight %}
+        <div class="pc-badge">Suosituin</div>
+        {% endif %}
+        <div class="pc-header">
+          <h3 class="pc-name">{{ name }}</h3>
+          {% if price %}
+          <div class="pc-price">
+            <span class="pc-amount">{{ price }}</span>
+            {% if unit %}<span class="pc-unit">{{ unit }}</span>{% endif %}
+          </div>
+          {% endif %}
+          {% if desc %}<p class="pc-desc">{{ desc }}</p>{% endif %}
+        </div>
+        {% if features_str %}
+        <ul class="pc-features">
+          {% for feat in features_str|split(';;') %}
+          <li><span class="pc-check">✓</span> {{ feat|trim }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if cta %}
+        <div class="pc-footer">
+          <a href="{{ url }}" class="{% if highlight %}btn-cinematic-primary{% else %}btn-cinematic-secondary{% endif %} pc-cta">{{ cta }}</a>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% endmacro %}
+
+      {{ price_card(t1_name, t1_price, t1_unit, t1_desc, t1_features, t1_cta, t1_url, t1_hl) }}
+      {{ price_card(t2_name, t2_price, t2_unit, t2_desc, t2_features, t2_cta, t2_url, t2_hl) }}
+      {{ price_card(t3_name, t3_price, t3_unit, t3_desc, t3_features, t3_cta, t3_url, t3_hl) }}
+      {{ price_card(t4_name, t4_price, t4_unit, t4_desc, t4_features, t4_cta, t4_url, t4_hl) }}
+    </div>
+
+    {% if p_footer %}
+    <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; margin-top: 1.5rem; text-align: center;">{{ p_footer }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+.pc-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px; padding: 2.5rem 2rem 2rem;
+  display: flex; flex-direction: column; position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.pc-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+.pc-highlighted {
+  border-color: rgba(0,255,135,0.3);
+  background: rgba(0,255,135,0.04);
+  box-shadow: 0 0 40px rgba(0,255,135,0.06);
+}
+.pc-badge {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  background: var(--cinematic-green); color: #0a0a0a;
+  font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 0.3rem 1rem; border-radius: 100px; white-space: nowrap;
+}
+.pc-header { text-align: center; margin-bottom: 1.5rem; }
+.pc-name {
+  font-family: var(--font-display); font-size: 1rem; font-weight: 700;
+  color: var(--cinematic-text); text-transform: uppercase; letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+.pc-price { margin-bottom: 0.5rem; }
+.pc-amount {
+  font-family: var(--font-display); font-size: 2.5rem; font-weight: 800;
+  background: var(--gradient-green);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.pc-unit { color: var(--cinematic-text-muted); font-size: 0.9rem; margin-left: 0.25rem; }
+.pc-desc { color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.5; }
+.pc-features {
+  list-style: none; padding: 0; margin: 0 0 2rem; flex: 1;
+  border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.5rem;
+}
+.pc-features li {
+  color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.5;
+  padding: 0.4rem 0; display: flex; align-items: flex-start; gap: 0.6rem;
+}
+.pc-check { color: var(--cinematic-green); font-size: 0.9rem; flex-shrink: 0; margin-top: 0.1rem; }
+.pc-footer { text-align: center; margin-top: auto; }
+.pc-cta,
+.cinematic-page .pc-cta,
+.cinematic-page .body-container .pc-cta {
+  width: 100% !important; display: block !important; text-align: center !important;
+  font-size: 0.88rem !important; padding: 0.85rem 1.5rem !important;
+  box-sizing: border-box !important; border-radius: 12px !important;
+  white-space: normal !important; line-height: 1.4 !important;
+}
+@media (max-width: 640px) {
+  .pc-card { padding: 2rem 1.25rem 1.5rem; }
+  .pc-cta,
+  .cinematic-page .pc-cta { padding: 0.7rem 1rem !important; font-size: 0.8rem !important; }
+  .pc-amount { font-size: 2rem; }
+}
+</style>

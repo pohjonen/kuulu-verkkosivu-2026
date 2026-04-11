@@ -1,0 +1,123 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Accordion Cards - Expandable Service Grid"
+-->
+{#
+  Laajenevat palvelukortit -partiaali
+
+  Käyttö:
+    {% set acc_tag = '// Palvelut' %}
+    {% set acc_title = 'Mitä <span class="text-gradient-green">teemme</span>' %}
+    {% set acc_1_icon = 'fas fa-video' %}
+    {% set acc_1_title = 'Videotuotanto' %}
+    {% set acc_1_short = 'Brändivideot, mainokset, lyhytvideot.' %}
+    {% set acc_1_long = 'Tuotamme kaiken brändivideoista TV-mainoksiin. Kaksi studiota (Oulu & Helsinki). 24 fps cinematic-laatu. AI-tehostettu prosessi.' %}
+    {% set acc_1_url = '/palvelut/videotuotanto' %}
+    {% set acc_1_cta = 'Katso palvelu →' %}
+    ... (max 6 korttia)
+    {% include './partials/accordion-cards.html' %}
+#}
+
+{% set a_tag = acc_tag|default('') %}
+{% set a_title = acc_title|default('') %}
+{% set a_desc = acc_description|default('') %}
+
+{% set cards = [] %}
+{% if acc_1_title|default('') %}{% set cards = cards + [{'icon': acc_1_icon|default(''), 'title': acc_1_title, 'short': acc_1_short|default(''), 'long': acc_1_long|default(''), 'url': acc_1_url|default(''), 'cta': acc_1_cta|default(''), 'image': acc_1_image|default('')}] %}{% endif %}
+{% if acc_2_title|default('') %}{% set cards = cards + [{'icon': acc_2_icon|default(''), 'title': acc_2_title, 'short': acc_2_short|default(''), 'long': acc_2_long|default(''), 'url': acc_2_url|default(''), 'cta': acc_2_cta|default(''), 'image': acc_2_image|default('')}] %}{% endif %}
+{% if acc_3_title|default('') %}{% set cards = cards + [{'icon': acc_3_icon|default(''), 'title': acc_3_title, 'short': acc_3_short|default(''), 'long': acc_3_long|default(''), 'url': acc_3_url|default(''), 'cta': acc_3_cta|default(''), 'image': acc_3_image|default('')}] %}{% endif %}
+{% if acc_4_title|default('') %}{% set cards = cards + [{'icon': acc_4_icon|default(''), 'title': acc_4_title, 'short': acc_4_short|default(''), 'long': acc_4_long|default(''), 'url': acc_4_url|default(''), 'cta': acc_4_cta|default(''), 'image': acc_4_image|default('')}] %}{% endif %}
+{% if acc_5_title|default('') %}{% set cards = cards + [{'icon': acc_5_icon|default(''), 'title': acc_5_title, 'short': acc_5_short|default(''), 'long': acc_5_long|default(''), 'url': acc_5_url|default(''), 'cta': acc_5_cta|default(''), 'image': acc_5_image|default('')}] %}{% endif %}
+{% if acc_6_title|default('') %}{% set cards = cards + [{'icon': acc_6_icon|default(''), 'title': acc_6_title, 'short': acc_6_short|default(''), 'long': acc_6_long|default(''), 'url': acc_6_url|default(''), 'cta': acc_6_cta|default(''), 'image': acc_6_image|default('')}] %}{% endif %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    {% if a_tag %}<span class="section-tag">{{ a_tag }}</span>{% endif %}
+    {% if a_title %}<h2 class="section-header">{{ a_title }}</h2>{% endif %}
+    {% if a_desc %}<p style="color: var(--cinematic-text-muted); max-width: 650px; margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.7;">{{ a_desc }}</p>{% endif %}
+
+    <div class="acg-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem;">
+      {% for card in cards %}
+      <div class="acg-card" onclick="toggleAccCard(this)">
+        <div class="acg-header">
+          {% if card.icon %}
+          <div class="acg-icon"><i class="{{ card.icon }}"></i></div>
+          {% endif %}
+          <div class="acg-header-text">
+            <h3 class="acg-title">{{ card.title }}</h3>
+            {% if card.short %}<p class="acg-short">{{ card.short }}</p>{% endif %}
+          </div>
+          <div class="acg-toggle"><span>+</span></div>
+        </div>
+        <div class="acg-body">
+          {% if card.image %}
+          <img src="{{ card.image }}" alt="{{ card.title }}" class="acg-body-img" loading="lazy">
+          {% endif %}
+          {% if card.long %}<p class="acg-long">{{ card.long }}</p>{% endif %}
+          {% if card.cta and card.url %}
+          <a href="{{ card.url }}" class="acg-cta" onclick="event.stopPropagation();">{{ card.cta }}</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.acg-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px; overflow: hidden; cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.acg-card:hover { border-color: rgba(0,255,135,0.15); }
+.acg-card.open { border-color: rgba(0,255,135,0.25); box-shadow: 0 4px 20px rgba(0,255,135,0.05); }
+.acg-header {
+  display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 1.75rem;
+}
+.acg-icon {
+  width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0;
+  background: rgba(0,255,135,0.08); border: 1px solid rgba(0,255,135,0.15);
+  display: flex; align-items: center; justify-content: center;
+}
+.acg-icon i { font-size: 1rem; color: var(--cinematic-green); }
+.acg-header-text { flex: 1; }
+.acg-title {
+  font-family: var(--font-display); color: var(--cinematic-text);
+  font-size: 1.05rem; font-weight: 700; margin: 0 0 0.25rem;
+}
+.acg-short { color: var(--cinematic-text-muted); font-size: 0.85rem; line-height: 1.5; margin: 0; }
+.acg-toggle {
+  width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s;
+}
+.acg-toggle span {
+  color: var(--cinematic-green); font-size: 1.2rem; font-weight: 300;
+  transition: transform 0.3s; display: block; line-height: 1;
+}
+.acg-card.open .acg-toggle { background: var(--cinematic-green); border-color: var(--cinematic-green); }
+.acg-card.open .acg-toggle span { color: #0a0a0a; transform: rotate(45deg); }
+.acg-body {
+  max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0 1.75rem;
+}
+.acg-card.open .acg-body { max-height: 500px; padding-bottom: 1.75rem; }
+.acg-body-img { width: 100%; border-radius: 12px; margin-bottom: 1rem; }
+.acg-long { color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.7; margin: 0 0 1rem; }
+.acg-cta {
+  display: inline-flex; align-items: center;
+  color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600;
+  text-decoration: none; transition: opacity 0.3s;
+}
+.acg-cta:hover { opacity: 0.8; }
+</style>
+
+<script>
+function toggleAccCard(card) {
+  var isOpen = card.classList.contains('open');
+  card.classList.toggle('open');
+}
+</script>

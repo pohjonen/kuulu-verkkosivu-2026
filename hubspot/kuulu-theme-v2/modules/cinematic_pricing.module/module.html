@@ -1,0 +1,121 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% set has_media = module.media_type and module.media_type != "none" %}
+{% set media_left = has_media and module.media_position == "left" %}
+
+{% macro render_media() %}
+  <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green);">
+    {% if module.media_type == "image" and module.media_image.src %}
+      <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt }}" style="width: 100%; height: auto; display: block;">
+    {% elif module.media_type == "video_url" and module.media_video_url %}
+      <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+        <source src="{{ module.media_video_url }}" type="video/mp4">
+      </video>
+    {% elif module.media_type == "video_file" and module.media_video_file %}
+      <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+        <source src="{{ module.media_video_file }}" type="video/mp4">
+      </video>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+{% macro render_content() %}
+  <div>
+    {% if module.section_tag %}
+      <span class="section-tag">{{ module.section_tag }}</span>
+    {% endif %}
+    {% if module.headline %}
+      <h2 class="section-header">{{ module.headline }}{% if module.headline_highlight %} <span class="text-gradient-green">{{ module.headline_highlight }}</span>{% endif %}</h2>
+    {% endif %}
+
+    {# Ajankohta #}
+    {% if module.date_text %}
+      <p style="color: #ffffff; font-size: 1.3rem; font-weight: 600; margin-bottom: 1.5rem; font-family: var(--font-display);">
+        <i class="fas fa-calendar-alt" style="color: var(--cinematic-green); margin-right: 0.5rem;"></i>{{ module.date_text }}
+      </p>
+    {% endif %}
+
+    {# Hintakortti #}
+    {% if module.price %}
+      <div style="
+        background: rgba(0, 80, 40, 0.4);
+        border: 1px solid rgba(0, 255, 135, 0.3);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      ">
+        <div style="
+          font-size: clamp(2.5rem, 6vw, 3.5rem);
+          font-weight: 800;
+          font-family: var(--font-display);
+          background: linear-gradient(135deg, #00ff87, #00e676);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          line-height: 1.1;
+          margin-bottom: 0.5rem;
+        ">{{ module.price }}</div>
+        {% if module.price_note %}
+          <p style="color: rgba(255, 255, 255, 0.65); font-size: 1rem; margin: 0;">{{ module.price_note }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {# Lisätiedot #}
+    {% if module.content_body %}
+      <div class="cinematic-rich-text-body pricing-details" style="color: #ffffff; font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+        {{ module.content_body }}
+      </div>
+    {% endif %}
+
+    {# CTA-napit #}
+    {% if module.cta_count != "0" %}
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; {% if not has_media %}justify-content: center;{% endif %}">
+        {% if module.cta_primary_text %}
+          <a href="{{ module.cta_primary_url }}" class="btn-cinematic-primary" style="white-space: normal; text-align: center;">{{ module.cta_primary_text }}</a>
+        {% endif %}
+        {% if module.cta_count == "2" and module.cta_secondary_text %}
+          <a href="{{ module.cta_secondary_url }}" class="btn-cinematic-outline" style="white-space: normal; text-align: center;">{{ module.cta_secondary_text }}</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+<section class="cinematic-section grain-section">
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="cinematic-section-rounded glass-card" style="{% if not has_media %}max-width: 800px; margin: 0 auto;{% endif %}">
+
+      {% if has_media %}
+      <div class="pricing-media-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        {% if media_left %}
+          {{ render_media() }}
+          {{ render_content() }}
+        {% else %}
+          {{ render_content() }}
+          {{ render_media() }}
+        {% endif %}
+      </div>
+      {% else %}
+        {{ render_content() }}
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .pricing-details ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+  .pricing-details li { margin-bottom: 0.5rem; color: #ffffff; }
+  .pricing-details strong { color: #ffffff; }
+  .pricing-details a { color: var(--cinematic-green); text-decoration: underline; }
+
+  @media (max-width: 768px) {
+    .pricing-media-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

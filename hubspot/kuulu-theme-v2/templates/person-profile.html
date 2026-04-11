@@ -1,0 +1,261 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_meta.html_title or "Henkilöprofiili - Kuulu" }}</title>
+  <meta name="description" content="{{ page_meta.meta_description or 'Henkilökohtainen profiili Kuulun tiimistä.' }}">
+  
+  <!-- HubSpot CSS -->
+  {{ require_css(get_asset_url('css/main.css')) }}
+  {{ require_css(get_asset_url('css/responsive.css')) }}
+  
+  <!-- HubSpot JS -->
+  {{ require_js(get_asset_url('js/main.js')) }}
+</head>
+<body class="person-profile-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="/">
+            <img src="{{ get_asset_url('images/kuulu-logo.png') }}" alt="Kuulu" onerror="this.style.display='none'">
+            <span class="logo-text">Kuulu</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="/">Etusivu</a></li>
+            <li><a href="/tiimi">Tiimi</a></li>
+            <li><a href="/palvelut">Palvelut</a></li>
+            <li><a href="/yhteystiedot">Yhteystiedot</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="person-hero">
+    <div class="container">
+      <div class="person-hero-content">
+        <div class="person-image">
+          {% if content.person_image %}
+            <img src="{{ content.person_image }}" alt="{{ content.person_name }}" class="profile-image">
+          {% else %}
+            <div class="profile-placeholder">
+              <i class="fas fa-user"></i>
+            </div>
+          {% endif %}
+        </div>
+        <div class="person-info">
+          <h1 class="person-name">{{ content.person_name }}</h1>
+          <p class="person-title">{{ content.person_title }}</p>
+          {% if content.person_department %}
+            <p class="person-department">{{ content.person_department }}</p>
+          {% endif %}
+          <div class="person-social">
+            {% if content.linkedin_url %}
+              <a href="{{ content.linkedin_url }}" target="_blank" class="social-link linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            {% endif %}
+            {% if content.twitter_url %}
+              <a href="{{ content.twitter_url }}" target="_blank" class="social-link twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            {% endif %}
+            {% if content.email %}
+              <a href="mailto:{{ content.email }}" class="social-link email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="person-about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Tietoja minusta</h2>
+          {{ content.person_bio }}
+        </div>
+        <div class="about-stats">
+          {% if content.years_experience %}
+            <div class="stat-item">
+              <div class="stat-number">{{ content.years_experience }}</div>
+              <div class="stat-label">vuotta kokemusta</div>
+            </div>
+          {% endif %}
+          {% if content.projects_completed %}
+            <div class="stat-item">
+              <div class="stat-number">{{ content.projects_completed }}</div>
+              <div class="stat-label">projektia toteutettu</div>
+            </div>
+          {% endif %}
+          {% if content.specializations %}
+            <div class="stat-item">
+              <div class="stat-number">{{ content.specializations|length }}</div>
+              <div class="stat-label">erikoisalaa</div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Section -->
+  {% if content.expertise_areas %}
+  <section class="person-expertise">
+    <div class="container">
+      <h2>Osaamiseni</h2>
+      <div class="expertise-grid">
+        {% for area in content.expertise_areas %}
+          <div class="expertise-item">
+            <div class="expertise-icon">
+              <i class="{{ area.icon }}"></i>
+            </div>
+            <h3>{{ area.title }}</h3>
+            <p>{{ area.description }}</p>
+            {% if area.skills %}
+              <div class="skills-list">
+                {% for skill in area.skills %}
+                  <span class="skill-tag">{{ skill }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Experience Section -->
+  {% if content.experience %}
+  <section class="person-experience">
+    <div class="container">
+      <h2>Kokemus</h2>
+      <div class="timeline">
+        {% for exp in content.experience %}
+          <div class="timeline-item">
+            <div class="timeline-date">{{ exp.period }}</div>
+            <div class="timeline-content">
+              <h3>{{ exp.title }}</h3>
+              <p class="timeline-company">{{ exp.company }}</p>
+              <p>{{ exp.description }}</p>
+              {% if exp.achievements %}
+                <ul class="achievements-list">
+                  {% for achievement in exp.achievements %}
+                    <li>{{ achievement }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Portfolio Section -->
+  {% if content.portfolio_projects %}
+  <section class="person-portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        {% for project in content.portfolio_projects %}
+          <div class="portfolio-item">
+            {% if project.image %}
+              <div class="portfolio-image">
+                <img src="{{ project.image }}" alt="{{ project.title }}">
+              </div>
+            {% endif %}
+            <div class="portfolio-content">
+              <h3>{{ project.title }}</h3>
+              <p>{{ project.description }}</p>
+              {% if project.technologies %}
+                <div class="project-tech">
+                  {% for tech in project.technologies %}
+                    <span class="tech-tag">{{ tech }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+              {% if project.link %}
+                <a href="{{ project.link }}" target="_blank" class="project-link">Katso projekti</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Contact Section -->
+  <section class="person-contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Ota yhteyttä</h2>
+        <p>Haluatko kuulla lisää tai keskustella projektista? Ota rohkeasti yhteyttä!</p>
+        <div class="contact-methods">
+          {% if content.email %}
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:{{ content.email }}">{{ content.email }}</a>
+            </div>
+          {% endif %}
+          {% if content.phone %}
+            <div class="contact-method">
+              <i class="fas fa-phone"></i>
+              <a href="tel:{{ content.phone }}">{{ content.phone }}</a>
+            </div>
+          {% endif %}
+          {% if content.calendar_link %}
+            <div class="contact-method">
+              <i class="fas fa-calendar"></i>
+              <a href="{{ content.calendar_link }}" target="_blank">Varaa aika</a>
+            </div>
+          {% endif %}
+        </div>
+        <a href="/yhteystiedot" class="btn btn-primary">Yhteystiedot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span>Kuulu</span>
+        </div>
+        <div class="footer-links">
+          <a href="/">Etusivu</a>
+          <a href="/tiimi">Tiimi</a>
+          <a href="/palvelut">Palvelut</a>
+          <a href="/yhteystiedot">Yhteystiedot</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kuulu. Kaikki oikeudet pidätetään.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html> 

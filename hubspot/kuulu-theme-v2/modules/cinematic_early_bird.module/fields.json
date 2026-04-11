@@ -1,0 +1,268 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Ilmoittaudu"
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Korostus (vihreä)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "koulutukseen"
+}, {
+  "id" : "description",
+  "name" : "description",
+  "label" : "Kuvaus (lomakkeen yläpuolella)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Täytä tietosi alla ja ilmoittaudu mukaan."
+}, {
+  "id" : "benefit_1",
+  "name" : "benefit_1",
+  "label" : "Etu 1",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "benefit_2",
+  "name" : "benefit_2",
+  "label" : "Etu 2",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "benefit_3",
+  "name" : "benefit_3",
+  "label" : "Etu 3",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "benefit_4",
+  "name" : "benefit_4",
+  "label" : "Etu 4",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "benefit_5",
+  "name" : "benefit_5",
+  "label" : "Etu 5",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "portal_id",
+  "name" : "portal_id",
+  "label" : "HubSpot Portal ID",
+  "help_text" : "Kuulun portaali-ID on 450584. Löytyy HubSpotista: Settings → Account → Portal ID.",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "450584"
+}, {
+  "id" : "form_id",
+  "name" : "form_id",
+  "label" : "HubSpot Lomake ID (Form GUID)",
+  "help_text" : "Lomakkeen yksilöivä tunniste (GUID). Löydät sen: HubSpot → Marketing → Forms → valitse lomake → Actions → Share → Form ID. Muoto: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "section_id",
+  "name" : "section_id",
+  "label" : "Osion ankkuri-ID",
+  "help_text" : "Käytetään sivun sisäisessä linkityksessä, esim. #ilmoittautuminen. Ei saa sisältää välilyöntejä.",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "ilmoittautuminen"
+}, {
+  "id" : "cta_image",
+  "name" : "cta_image",
+  "label" : "CTA-kuva (valinnainen)",
+  "help_text" : "Jos haluat näyttää mainoskuvan lomakkeen vieressä, lataa se tähän. Jos jätetään tyhjäksi, lomake näkyy täysleveänä.",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : ""
+  }
+}, {
+  "id" : "cta_link_url",
+  "name" : "cta_link_url",
+  "label" : "CTA-kuvan linkki (URL)",
+  "help_text" : "Valinnainen linkki CTA-kuvaa klikattaessa. Jätä tyhjäksi jos kuvasta ei haluta linkkiä.",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "cta_image_position",
+  "name" : "cta_image_position",
+  "label" : "CTA-kuvan sijainti",
+  "help_text" : "Kumpi puoli CTA-kuva on suhteessa lomakkeeseen.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "cta_image",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : ".+",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null
+  },
+  "display" : "radio",
+  "choices" : [ [ "left", "Vasemmalla" ], [ "right", "Oikealla" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "left"
+}, {
+  "id" : "media_type",
+  "name" : "media_type",
+  "label" : "Media (valinnainen)",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "none", "Ei mediaa" ], [ "image", "Kuva" ], [ "video_url", "Video (URL)" ], [ "video_file", "Video (tiedosto)" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "none"
+}, {
+  "id" : "media_position",
+  "name" : "media_position",
+  "label" : "Median sijainti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image|video_url|video_file",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null
+  },
+  "display" : "radio",
+  "choices" : [ [ "right", "Oikealla" ], [ "left", "Vasemmalla" ], [ "above", "Yläpuolella" ], [ "below", "Alapuolella" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "right"
+}, {
+  "id" : "media_image",
+  "name" : "media_image",
+  "label" : "Kuva",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : ""
+  }
+}, {
+  "id" : "media_video_url",
+  "name" : "media_video_url",
+  "label" : "Videon URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_url",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "picker" : "file",
+  "id" : "media_video_file",
+  "name" : "media_video_file",
+  "label" : "Videotiedosto",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_file",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "file"
+} ]

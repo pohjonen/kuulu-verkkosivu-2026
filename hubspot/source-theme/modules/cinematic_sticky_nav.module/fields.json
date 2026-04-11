@@ -1,0 +1,76 @@
+[ {
+  "id" : "nav_items",
+  "name" : "nav_items",
+  "label" : "Navigaatio-linkit",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "item_label",
+    "name" : "item_label",
+    "label" : "Linkin teksti",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Osio"
+  }, {
+    "id" : "anchor",
+    "name" : "anchor",
+    "label" : "Anchor ID (ilman #)",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "osio-1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ {
+    "item_label" : "Hero",
+    "anchor" : "hero"
+  }, {
+    "item_label" : "Palvelut",
+    "anchor" : "palvelut"
+  }, {
+    "item_label" : "Referenssit",
+    "anchor" : "referenssit"
+  }, {
+    "item_label" : "Yhteystiedot",
+    "anchor" : "yhteystiedot"
+  } ]
+}, {
+  "id" : "show_progress",
+  "name" : "show_progress",
+  "label" : "Näytä progress bar",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "position",
+  "name" : "position",
+  "label" : "Sijainti",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "Vasen" ], [ "right", "Oikea" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "right"
+} ]

@@ -1,0 +1,93 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Marquee Logos - Auto-scrolling Client Logos"
+-->
+{#
+  Automaattisesti scrollaavat asiakaslogot -partiaali
+
+  Käyttö:
+    {% set mq_tag = '// Luotettu kumppani' %}
+    {% set mq_title = 'Asiakkaitamme ja <span class="text-gradient-green">kumppaneitamme</span>' %}
+    {% set mq_speed = 30 %}
+    {% set mq_logo_1 = 'https://cdn.brandfetch.io/oulunenergia.fi/w/512/h/100/theme/light/logo' %}
+    {% set mq_alt_1 = 'Oulun Energia' %}
+    {% set mq_logo_2 = 'https://cdn.brandfetch.io/tosibox.com/w/512/h/100/theme/light/logo' %}
+    {% set mq_alt_2 = 'Tosibox' %}
+    ... (max 12 logoa)
+    {% include './partials/marquee-logos.html' %}
+#}
+
+{% set m_tag = mq_tag|default('') %}
+{% set m_title = mq_title|default('') %}
+{% set m_speed = mq_speed|default(30) %}
+{% set m_pause = mq_pause_on_hover|default(true) %}
+
+{% set logos = [] %}
+{% if mq_logo_1|default('') %}{% set logos = logos + [{'src': mq_logo_1, 'alt': mq_alt_1|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_2|default('') %}{% set logos = logos + [{'src': mq_logo_2, 'alt': mq_alt_2|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_3|default('') %}{% set logos = logos + [{'src': mq_logo_3, 'alt': mq_alt_3|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_4|default('') %}{% set logos = logos + [{'src': mq_logo_4, 'alt': mq_alt_4|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_5|default('') %}{% set logos = logos + [{'src': mq_logo_5, 'alt': mq_alt_5|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_6|default('') %}{% set logos = logos + [{'src': mq_logo_6, 'alt': mq_alt_6|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_7|default('') %}{% set logos = logos + [{'src': mq_logo_7, 'alt': mq_alt_7|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_8|default('') %}{% set logos = logos + [{'src': mq_logo_8, 'alt': mq_alt_8|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_9|default('') %}{% set logos = logos + [{'src': mq_logo_9, 'alt': mq_alt_9|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_10|default('') %}{% set logos = logos + [{'src': mq_logo_10, 'alt': mq_alt_10|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_11|default('') %}{% set logos = logos + [{'src': mq_logo_11, 'alt': mq_alt_11|default('Asiakas')}] %}{% endif %}
+{% if mq_logo_12|default('') %}{% set logos = logos + [{'src': mq_logo_12, 'alt': mq_alt_12|default('Asiakas')}] %}{% endif %}
+
+<section class="cinematic-section" style="overflow: hidden;">
+  <div class="container-cinematic">
+    {% if m_tag %}<span class="section-tag" style="text-align: center; display: block;">{{ m_tag }}</span>{% endif %}
+    {% if m_title %}<h2 class="section-header" style="text-align: center;">{{ m_title }}</h2>{% endif %}
+  </div>
+
+  <div class="mq-track-wrapper" style="position: relative; margin-top: 2rem; overflow: hidden;">
+    <div class="mq-track"{% if m_pause %} onmouseenter="this.style.animationPlayState='paused'" onmouseleave="this.style.animationPlayState='running'"{% endif %} style="animation-duration: {{ m_speed }}s;">
+      {% for logo in logos %}
+      <div class="mq-logo-item">
+        <img src="{{ logo.src }}" alt="{{ logo.alt }}" loading="lazy">
+      </div>
+      {% endfor %}
+      {% for logo in logos %}
+      <div class="mq-logo-item" aria-hidden="true">
+        <img src="{{ logo.src }}" alt="{{ logo.alt }}" loading="lazy">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.mq-track-wrapper {
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+.mq-track {
+  display: flex; align-items: center; gap: 4rem; white-space: nowrap;
+  animation: mq-scroll linear infinite;
+  width: max-content;
+}
+.mq-logo-item {
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  height: 48px; min-width: 120px;
+}
+.mq-logo-item img {
+  height: 40px; width: auto; max-width: 160px;
+  filter: brightness(0) invert(1); opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.mq-logo-item img:hover { opacity: 1; }
+
+@keyframes mq-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 640px) {
+  .mq-track { gap: 2.5rem; }
+  .mq-logo-item img { height: 30px; max-width: 120px; }
+}
+</style>

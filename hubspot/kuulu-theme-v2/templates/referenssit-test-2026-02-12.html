@@ -1,0 +1,551 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Referenssit Test 2026-02-12
+  screenshotPath: ../images/template-previews/ThemeChallengeHome.png
+-->
+{% extends './layouts/base-cinematic.html' %}
+
+{% block body %}
+<!-- Aurora Background -->
+<div class="aurora-background"></div>
+
+<div class="cinematic-page has-aurora-bg">
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Kuulu Mega Menu Navigation -->
+  <header class="header custom-header cinematic-header">
+    <div class="custom-header__container">
+        <div class="custom-header__logo">
+          <a href="https://www.kuulu.fi" aria-label="Kuulu - Etusivu">
+            <img src="https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png" alt="Kuulu Lettermark Logo">
+          </a>
+        </div>
+        <nav class="custom-header__navigation" aria-label="Main navigation">
+            <ul role="menu">
+                <li role="none">
+                    <a href="https://www.kuulu.fi/koulutus" aria-haspopup="true" aria-expanded="false" role="menuitem">Koulutus</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/copilotin-kiihdytyskaista"><div class="mega-menu-icon"><i class="fas fa-graduation-cap"></i></div><div class="mega-menu-text"><h4>Copilotin kiihdytyskaista</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi"><div class="mega-menu-icon"><i class="fas fa-graduation-cap"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-perjantaipulssi"><div class="mega-menu-icon"><i class="fas fa-lightbulb"></i></div><div class="mega-menu-text"><h4>Tekoälyn Perjantaipulssi</h4></div></a></li>
+                                <li class="mega-menu-item" style="padding-top: 0.75rem; margin-top: 0.25rem; border-top: 1px solid rgba(255,255,255,0.12);">
+                                  <div class="mega-menu-text"><h4 style="margin:0; color: var(--cinematic-green); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em;">Jäsenille</h4></div>
+                                </li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (01-26)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-8-jasenille-10-2025"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (10-2025)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-08-2025"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (08-2025)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Copilotin Kiihdytyskaista - Jäsenille (12-25)</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <a href="https://www.kuulu.fi/digimarkkinointi" aria-haspopup="true" aria-expanded="false" role="menuitem">Digimarkkinointi</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/tarinankerronta"><div class="mega-menu-icon"><i class="fas fa-bullhorn"></i></div><div class="mega-menu-text"><h4>Brändäys ja tarinankerronta</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/sisaltopankki"><div class="mega-menu-icon"><i class="fas fa-database"></i></div><div class="mega-menu-text"><h4>Sisältöpankki</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/tekoaly-kuvapankki"><div class="mega-menu-icon"><i class="fas fa-robot"></i></div><div class="mega-menu-text"><h4>Tekoälykuvapankki</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/liidien-hankinta"><div class="mega-menu-icon"><i class="fas fa-magnet"></i></div><div class="mega-menu-text"><h4>Liidien hankinta</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/rekrymarkkinointi"><div class="mega-menu-icon"><i class="fas fa-users"></i></div><div class="mega-menu-text"><h4>Rekrymarkkinointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/energia-alan-markkinointi"><div class="mega-menu-icon"><i class="fas fa-bolt"></i></div><div class="mega-menu-text"><h4>Energia-alan markkinointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi"><div class="mega-menu-icon"><i class="fas fa-search"></i></div><div class="mega-menu-text"><h4>Someauditointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/hakukoneoptimointi-ja-seo-analyysi"><div class="mega-menu-icon"><i class="fas fa-chart-line"></i></div><div class="mega-menu-text"><h4>SEO Analyysi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/google-ads-mainonta"><div class="mega-menu-icon"><i class="fab fa-google"></i></div><div class="mega-menu-text"><h4>Google Ads</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/kuulunautti"><div class="mega-menu-icon"><i class="fas fa-user-astronaut"></i></div><div class="mega-menu-text"><h4>Kuulunautti</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <a href="https://www.kuulu.fi/videotuotanto" aria-haspopup="true" aria-expanded="false" role="menuitem">Videosisällöt</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/fi-fi/yritysvideot"><div class="mega-menu-icon"><i class="fas fa-video"></i></div><div class="mega-menu-text"><h4>Yritysvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/animaatiot"><div class="mega-menu-icon"><i class="fas fa-film"></i></div><div class="mega-menu-text"><h4>Animaatiot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/brandivideo"><div class="mega-menu-icon"><i class="fas fa-gem"></i></div><div class="mega-menu-text"><h4>Brändivideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/mainosvideot"><div class="mega-menu-icon"><i class="fas fa-play-circle"></i></div><div class="mega-menu-text"><h4>Mainosvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tv-mainos-tuotanto"><div class="mega-menu-icon"><i class="fas fa-tv"></i></div><div class="mega-menu-text"><h4>TV-mainosvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/yhdistys-ja-hankevideot"><div class="mega-menu-icon"><i class="fas fa-hands-helping"></i></div><div class="mega-menu-text"><h4>Yhdistys- ja hankevideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/gif-animaatiot-markkinointiin"><div class="mega-menu-icon"><i class="fas fa-file-video"></i></div><div class="mega-menu-text"><h4>Gif-animaatiot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/matkailuvideot"><div class="mega-menu-icon"><i class="fas fa-plane"></i></div><div class="mega-menu-text"><h4>Matkailuvideot</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none"><a href="https://www.kuulu.fi/case-studies" role="menuitem">Kokemuksia Kuulusta</a></li>
+                <li role="none"><a href="https://blog.kuulu.fi" role="menuitem">Blogi</a></li>
+                <li role="none"><a href="https://mukaantiimiin.kuulu.fi/" role="menuitem">Mukaan tiimiin</a></li>
+                <li role="none"><a href="https://www.kuulu.fi/case-studies" role="menuitem">Asiakas caset</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <div class="hamburger" id="mobile-menu-toggle" role="button" tabindex="0" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-nav-panel">
+            <span></span><span></span><span></span>
+          </div>
+          <div id="mobile-nav-panel" class="mobile-nav__panel" role="dialog" aria-modal="true" hidden>
+            <ul class="mobile-nav__list">
+              <li><a href="https://www.kuulu.fi/koulutus">Koulutus</a></li>
+              <li><a href="https://www.kuulu.fi/digimarkkinointi">Digimarkkinointi</a></li>
+              <li><a href="https://www.kuulu.fi/videotuotanto">Videosisällöt</a></li>
+              <li><a href="https://www.kuulu.fi/case-studies">Kokemuksia Kuulusta</a></li>
+              <li><a href="https://blog.kuulu.fi">Blogi</a></li>
+              <li><a href="https://mukaantiimiin.kuulu.fi">Mukaan tiimiin</a></li>
+              <li><a href="https://www.kuulu.fi/case-studies">Asiakas caset</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="ota-yhteytta-button">
+           <a href="https://www.kuulu.fi/yhteystiedot" class="ota-yhteytta-btn">
+                <span class="ota-yhteytta-text">Ota yhteyttä</span>
+           </a>
+        </div>
+    </div>
+  </header>
+  <div class="header-observer-sentinel"></div>
+
+  <!-- ============================================== -->
+  <!-- HERO -->
+  <!-- ============================================== -->
+  <section class="cinematic-hero" style="min-height: 60vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+    <div class="container-cinematic" style="position: relative; z-index: 10; text-align: center; max-width: 900px; margin: 0 auto; padding: 4rem 1.5rem;">
+      <span class="section-tag">// Kokemuksia Kuulusta</span>
+      <h1 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; margin-bottom: 1.5rem; letter-spacing: -0.02em;">
+        Hyvä työ <span class="text-gradient-green">kuuluu kauas</span>
+      </h1>
+      <p style="color: var(--cinematic-text-muted); font-size: clamp(1rem, 2vw, 1.15rem); line-height: 1.8; max-width: 700px; margin: 0 auto 2rem;">
+        Olemme koonneet tähän muutamia asiakkaitamme eri aloilta. Klikkaa referenssin kohdalta, niin pääset itse asiakaskertomukseen ja näet videon! Kysy lisää referensseistämme!
+      </p>
+      <a href="#ota-yhteytta" class="btn-cinematic-primary">Ota yhteyttä</a>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- INTRO TEXT -->
+  <!-- ============================================== -->
+  <section class="cinematic-section">
+    <div class="container-cinematic" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.3; margin-bottom: 1rem;">
+        Kuulu on strategian mukaisiin ja <span class="text-gradient-green">tuloksia tuoviin sisältöihin</span> erikoistunut digimarkkinointitoimisto
+      </h2>
+      <p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.8;">
+        Toimistomme sijaitsevat Oulussa ja Helsingissä. Toimimme koko maassa. Suunnitellut, kiinnostavat ja tuloksia tuovat sisällöt eri muodoissaan ovat ydinosaamistamme. Tutustu alta referensseihimme.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- REFERENSSIT GRID -->
+  <!-- ============================================== -->
+  <section class="cinematic-section">
+    <div class="container-cinematic">
+      <style>
+        .ref-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.25rem;
+        }
+        .ref-card {
+          position: relative;
+          border-radius: 16px;
+          overflow: hidden;
+          aspect-ratio: 16 / 10;
+          background-size: cover;
+          background-position: center;
+          border: 1px solid rgba(0, 255, 135, 0.08);
+          transition: all 0.4s ease;
+          text-decoration: none;
+          display: block;
+        }
+        .ref-card::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(180deg, transparent 30%, rgba(2, 12, 6, 0.85) 100%);
+          transition: all 0.4s ease;
+          z-index: 1;
+        }
+        .ref-card:hover {
+          border-color: rgba(0, 255, 135, 0.25);
+          transform: translateY(-4px);
+          box-shadow: 0 12px 40px rgba(0, 255, 135, 0.12);
+        }
+        .ref-card:hover::before {
+          background: linear-gradient(180deg, transparent 10%, rgba(2, 12, 6, 0.9) 100%);
+        }
+        .ref-card-content {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 1.5rem;
+          z-index: 2;
+        }
+        .ref-card-content p {
+          font-family: var(--font-display);
+          color: var(--cinematic-text);
+          font-size: 1rem;
+          line-height: 1.4;
+          margin: 0;
+        }
+        .ref-card-content .ref-arrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          color: var(--cinematic-green);
+          font-size: 0.85rem;
+          margin-top: 0.5rem;
+          opacity: 0;
+          transform: translateX(-10px);
+          transition: all 0.3s ease;
+        }
+        .ref-card:hover .ref-arrow {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        /* Full-width featured card */
+        .ref-card.ref-featured {
+          grid-column: 1 / -1;
+          aspect-ratio: 21 / 8;
+        }
+        /* Half-width cards */
+        .ref-card.ref-half {
+          grid-column: span 1;
+        }
+        /* Two-column span */
+        .ref-card.ref-wide {
+          grid-column: span 2;
+        }
+        @media (max-width: 768px) {
+          .ref-grid {
+            grid-template-columns: 1fr;
+          }
+          .ref-card.ref-featured,
+          .ref-card.ref-wide,
+          .ref-card.ref-half {
+            grid-column: 1 / -1;
+          }
+          .ref-card {
+            aspect-ratio: 16 / 10;
+          }
+        }
+      </style>
+
+      <div class="ref-grid">
+        <!-- 1. Haaga-Helia (featured - full width) -->
+        <a href="https://www.kuulu.fi/referenssit/haaga-helia-tekoalykuvapankki" target="_blank" rel="noopener" class="ref-card ref-featured" style="background-image: url('https://www.kuulu.fi/hubfs/Asiakasreferenssi%20Haaga-Helian%20Teko%C3%A4lykuvapankki.webp');">
+          <div class="ref-card-content">
+            <p>Haaga-Helia – Tekoälykuvapankki</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 2. Ruokamies (wide) -->
+        <a href="https://www.kuulu.fi/ruokamies-sisaltopankki-ja-brandin-kirkastus-kiireiselle-kauppiaalle" target="_blank" rel="noopener" class="ref-card ref-wide" style="background-image: url('https://www.kuulu.fi/hubfs/Ruokamies%20ja%20Ritaharjun%20K-Supermarket%20br%C3%A4ndin%20kirkastus%20Kuulu%20asiakasreferenssi-1.webp');">
+          <div class="ref-card-content">
+            <p>Ruokamies ja K-Supermarket Ritaharju – Sisältöpankki ja brändin kirkastus</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 3. Seta -->
+        <a href="https://www.kuulu.fi/seta-vaikuttava-videoprojekti-nakyvyytta-sateenkaarijarjestoille" target="_blank" rel="noopener" class="ref-card ref-half" style="background-image: url('https://www.kuulu.fi/hubfs/Seta%20asiakasreferenssi%281%29.webp');">
+          <div class="ref-card-content">
+            <p>Seta – Vaikuttava videoprojekti</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 4. Akateeminen Kirjakauppa -->
+        <a href="https://www.kuulu.fi/referenssit/akateeminen-kirjakauppa-brandin-tarinan-selkeytys/" target="_blank" rel="noopener" class="ref-card ref-half" style="background-image: url('https://www.kuulu.fi/hs-fs/hubfs/website_files/images/Akateeminen-kirjakauppa-storybrand-referenssi%20%281%29.jpg?width=1200&quality=low');">
+          <div class="ref-card-content">
+            <p>Akateeminen Kirjakauppa – Storybrand-tarinan luominen ja työpajat</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 5. Sievin jalkine - CobraWoman (wide) -->
+        <a href="https://www.kuulu.fi/referenssit/sievinjalkine-cobrawoman-videotuotanto" target="_blank" rel="noopener" class="ref-card ref-wide" style="background-image: url('https://www.kuulu.fi/hubfs/Cobra%20Woman%20refe.webp');">
+          <div class="ref-card-content">
+            <p>Sievin jalkine – brändin tunnettuuden kasvattaminen</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 6. Vestera -->
+        <a href="https://www.kuulu.fi/referenssit/vestera-oy-markkinoinnin-kumppanuus" target="_blank" rel="noopener" class="ref-card ref-half" style="background-image: url('https://www.kuulu.fi/hubfs/Tikakoski_Kalajoki-20.webp');">
+          <div class="ref-card-content">
+            <p>Vestera Oy – Pitkäaikainen markkinoinnin kumppanuus</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 7. Ruustinna -->
+        <a href="https://www.kuulu.fi/referenssit/ruustinna-brandays-tarina-visuaalinen-ilme-ja-lanseerauskampanja/" target="_blank" rel="noopener" class="ref-card ref-half" style="background-image: url('https://www.kuulu.fi/hs-fs/hubfs/website_files/images/ruukinkosken-ruustinna-1.jpg?width=1200&quality=low');">
+          <div class="ref-card-content">
+            <p>K-Market Ruukin Ruustinna-olut: brändi, tarina, visuaalinen ilme ja lanseerauskampanja</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 8. Intersport Tripla (wide) -->
+        <a href="https://www.kuulu.fi/intersport-tripla-uskalla-olla-oma-itsesi" target="_blank" rel="noopener" class="ref-card ref-wide" style="background-image: url('https://www.kuulu.fi/hubfs/GRAND%20ONE.00_56_18_05.Still055.webp');">
+          <div class="ref-card-content">
+            <p>Intersport Tripla – Työnantajamielikuvan vahvistaminen</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 9. Sievin Jalkine digi -->
+        <a href="https://www.kuulu.fi/referenssit/sievin-jalkine-digimarkkinointi/" target="_blank" rel="noopener" class="ref-card ref-half" style="background-image: url('https://www.kuulu.fi/hs-fs/hubfs/website_files/images/sievin_jalkine_kuulu.jpg?width=1200&quality=low');">
+          <div class="ref-card-content">
+            <p>Sievin Jalkine: Digimarkkinoinnin palvelut ja videotuotannot</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 10. Nestor Cables -->
+        <a href="https://www.kuulu.fi/referenssit/nestor-cables-brandays-ja-yritysvideot" target="_blank" rel="noopener" class="ref-card ref-half" style="background-image: url('https://www.kuulu.fi/hs-fs/hubfs/website_files/images/Asiakasreferenssi-Nestor-Cables.jpg?width=1200&quality=low');">
+          <div class="ref-card-content">
+            <p>Nestor Cables: Brändin kirkastus ja kaksi yritysvideota</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 11. LähiTapiola (featured - full width) -->
+        <a href="https://www.kuulu.fi/referenssit/lahitapiola" target="_blank" rel="noopener" class="ref-card ref-featured" style="background-image: url('https://www.kuulu.fi/hs-fs/hubfs/website_files/images/kuulu-sisaltouudistus-lahitapiola.png?width=1200&quality=low');">
+          <div class="ref-card-content">
+            <p>LähiTapiola – hakukoneystävällinen sisältöuudistus</p>
+            <span class="ref-arrow">Lue lisää <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- CTA / OTA YHTEYTTÄ -->
+  <!-- ============================================== -->
+  <section class="cinematic-section" id="ota-yhteytta">
+    <div class="container-cinematic" style="text-align: center; max-width: 700px; margin: 0 auto;">
+      <span class="section-tag">// Kiinnostuitko?</span>
+      <h2 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; margin-bottom: 1rem;">
+        Haluatko <span class="text-gradient-green">kuulla lisää</span> referensseistämme?
+      </h2>
+      <p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+        Kerromme mielellämme lisää töistämme ja siitä, miten voimme auttaa sinua. Ota yhteyttä niin jutellaan!
+      </p>
+      <div class="hero-glass-box" style="padding: 2rem; max-width: 550px; margin: 0 auto; position: relative; z-index: 5;">
+        <div id="hs-form-referenssit"></div>
+        <script src="https://js-eu1.hsforms.net/forms/embed/450584.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "eu1",
+            portalId: "450584",
+            formId: "805f07bd-a002-45f0-9aa5-af329327fcba",
+            target: "#hs-form-referenssit",
+            css: "",
+            inlineMessage: "<p><strong>Hei, kiitokset yhteydenotostasi, olemme sinuun yhteydessä niin pian kuin mahdollista! Terveisin Kuulun väki.</strong></p>"
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- FOOTER -->
+  <!-- ============================================== -->
+  <footer class="footer cinematic-footer">
+    <div class="footer__container">
+      <div class="footer__top-section">
+        <div class="row-fluid span12">
+          <div class="footer__info column span4">
+            <div class="footer__logo">
+              <a href="https://www.kuulu.fi">
+                <img src="https://www.kuulu.fi/hs-fs/hubfs/Kuulu_logo_RGB-4.png?width=100&height=103" alt="Kuulu Logo" width="100" height="103">
+              </a>
+            </div>
+            <p style="color: var(--cinematic-text-muted); margin: 1rem 0; line-height: 1.6;">
+              Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.
+            </p>
+          </div>
+          
+          <div class="footer__navigation column span5">
+            <div class="footer-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <a href="https://www.kuulu.fi/koulutus" class="footer-tag">Koulutukset</a>
+              <a href="https://www.kuulu.fi/digimarkkinointi" class="footer-tag">Digimarkkinointi</a>
+              <a href="https://www.kuulu.fi/videotuotanto" class="footer-tag">Videotuotanto</a>
+              <a href="https://www.kuulu.fi/asiakasreferenssit" class="footer-tag">Referenssit</a>
+              <a href="https://www.kuulu.fi/tietosuojaseloste" class="footer-tag">Tietosuojaseloste</a>
+              <a href="https://blog.kuulu.fi/" class="footer-tag">Kuulun blogi</a>
+            </div>
+          </div>
+          
+          <div class="footer__offices column span3">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div>
+                <h4 style="font-family: var(--font-display); color: var(--cinematic-green); font-size: 1rem; margin-bottom: 0.5rem;">OULU</h4>
+                <p style="color: var(--cinematic-text-muted); font-size: 0.875rem; line-height: 1.5;">
+                  Vanhantullinkatu 4<br>90100 Oulu
+                </p>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-display); color: var(--cinematic-green); font-size: 1rem; margin-bottom: 0.5rem;">HELSINKI</h4>
+                <p style="color: var(--cinematic-text-muted); font-size: 0.875rem; line-height: 1.5;">
+                  Konepajankuja 7 D<br>00510 Helsinki
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom-section">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin: 0;">
+            Copyright &copy; Markkinointiviestintätoimisto Kuulu Oy 2026. All Rights Reserved.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/kuulu/" class="social-links__link" target="_blank" rel="noopener">
+              <span class="social-links__icon"><i class="fab fa-linkedin-in"></i></span>
+            </a>
+            <a href="https://www.instagram.com/kuulu.fi/" class="social-links__link" target="_blank" rel="noopener">
+              <span class="social-links__icon"><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="https://www.facebook.com/Kuulu/" class="social-links__link" target="_blank" rel="noopener">
+              <span class="social-links__icon"><i class="fab fa-facebook-f"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var mobileToggle = document.getElementById('mobile-menu-toggle');
+      var mobilePanel = document.getElementById('mobile-nav-panel');
+      
+      if (mobileToggle && mobilePanel) {
+        mobileToggle.addEventListener('click', function() {
+          var isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+          mobileToggle.setAttribute('aria-expanded', !isExpanded);
+          mobilePanel.hidden = isExpanded;
+          mobilePanel.style.maxHeight = isExpanded ? '0px' : '500px';
+        });
+      }
+    });
+  </script>
+
+  <!-- Interactive cursor glow + ambient scroll lights -->
+  <canvas id="cursor-glow-canvas"></canvas>
+  <script>
+  (function() {
+    'use strict';
+    var canvas = document.getElementById('cursor-glow-canvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var mouse = { x: -500, y: -500 };
+    var smoothMouse = { x: -500, y: -500 };
+    var scrollY = 0;
+    var prevScrollY = 0;
+    var scrollSpeed = 0;
+    var raf;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    
+    function resize() {
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = window.innerWidth + 'px';
+      canvas.style.height = window.innerHeight + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    document.addEventListener('mousemove', function(e) { mouse.x = e.clientX; mouse.y = e.clientY; });
+    document.addEventListener('mouseleave', function() { mouse.x = -500; mouse.y = -500; });
+    window.addEventListener('scroll', function() { scrollY = window.pageYOffset || document.documentElement.scrollTop; });
+    
+    var particles = [];
+    var particleCount = 6;
+    for (var i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        baseX: Math.random() * window.innerWidth,
+        baseY: Math.random() * window.innerHeight,
+        size: 150 + Math.random() * 250,
+        speed: 0.0003 + Math.random() * 0.0005,
+        offset: Math.random() * Math.PI * 2,
+        opacity: 0.03 + Math.random() * 0.04,
+        hue: 140 + Math.random() * 30,
+        drift: 80 + Math.random() * 120
+      });
+    }
+    
+    function draw(time) {
+      smoothMouse.x += (mouse.x - smoothMouse.x) * 0.06;
+      smoothMouse.y += (mouse.y - smoothMouse.y) * 0.06;
+      scrollSpeed = Math.abs(scrollY - prevScrollY);
+      prevScrollY += (scrollY - prevScrollY) * 0.1;
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        var t = time * p.speed + p.offset;
+        p.x = p.baseX + Math.sin(t) * p.drift + Math.cos(t * 0.7) * (p.drift * 0.5);
+        p.y = p.baseY + Math.cos(t * 0.8) * p.drift + Math.sin(t * 0.5) * (p.drift * 0.3);
+        var scrollOffset = (prevScrollY * (0.02 + i * 0.01)) % window.innerHeight;
+        var drawY = ((p.y - scrollOffset) % (window.innerHeight + p.size * 2));
+        if (drawY < -p.size) drawY += window.innerHeight + p.size * 2;
+        var dx = smoothMouse.x - p.x;
+        var dy = smoothMouse.y - drawY;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        var influence = Math.max(0, 1 - dist / 500);
+        var reactiveOpacity = p.opacity + influence * 0.04;
+        var reactiveSize = p.size + influence * 40 + Math.min(scrollSpeed, 10) * 2;
+        var gradient = ctx.createRadialGradient(p.x, drawY, 0, p.x, drawY, reactiveSize);
+        gradient.addColorStop(0, 'hsla(' + p.hue + ', 80%, 45%, ' + (reactiveOpacity * 1.2) + ')');
+        gradient.addColorStop(0.4, 'hsla(' + p.hue + ', 70%, 35%, ' + (reactiveOpacity * 0.6) + ')');
+        gradient.addColorStop(1, 'hsla(' + p.hue + ', 60%, 25%, 0)');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(p.x - reactiveSize, drawY - reactiveSize, reactiveSize * 2, reactiveSize * 2);
+      }
+      
+      if (smoothMouse.x > -100 && smoothMouse.y > -100) {
+        var glowSize = 250 + Math.min(scrollSpeed, 15) * 8;
+        var cursorGrad = ctx.createRadialGradient(smoothMouse.x, smoothMouse.y, 0, smoothMouse.x, smoothMouse.y, glowSize);
+        cursorGrad.addColorStop(0, 'rgba(0, 220, 110, 0.10)');
+        cursorGrad.addColorStop(0.3, 'rgba(0, 200, 100, 0.05)');
+        cursorGrad.addColorStop(0.6, 'rgba(0, 180, 90, 0.02)');
+        cursorGrad.addColorStop(1, 'rgba(0, 160, 80, 0)');
+        ctx.fillStyle = cursorGrad;
+        ctx.fillRect(smoothMouse.x - glowSize, smoothMouse.y - glowSize, glowSize * 2, glowSize * 2);
+      }
+      raf = requestAnimationFrame(draw);
+    }
+    raf = requestAnimationFrame(draw);
+    window.addEventListener('resize', function() {
+      for (var i = 0; i < particles.length; i++) {
+        particles[i].baseX = Math.random() * window.innerWidth;
+        particles[i].baseY = Math.random() * window.innerHeight;
+      }
+    });
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) cancelAnimationFrame(raf); else raf = requestAnimationFrame(draw);
+    });
+  })();
+  </script>
+
+</div>
+{% endblock body %}

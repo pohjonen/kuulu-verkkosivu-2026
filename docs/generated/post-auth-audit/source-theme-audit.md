@@ -1,0 +1,233 @@
+# Fetched source theme audit
+
+- Source path: `/workspace/hubspot/source-theme`
+- Files: 350
+- Templates: 135
+- Modules: 39
+- Assets: 175
+- High risk items: 28
+- Matched public assets: 0
+
+## Theme signals
+
+- `has_theme_json`: `True`
+- `has_header_like_files`: `True`
+- `has_footer_like_files`: `True`
+- `has_navigation_like_files`: `True`
+- `has_cinematic_signal`: `True`
+- `has_token_signal`: `True`
+- `has_legacy_style_signal`: `False`
+
+## Matched public asset filenames
+
+
+## Protected candidates (high risk)
+
+- `OHJE-ETUSIVU-TEST-MODUULIT.md` — Could relate to homepage rendering
+- `js/mobile-menu.js` — Likely navigation dependency
+- `modules/global_footer.module/fields.json` — Likely shared/global structure
+- `modules/global_footer.module/meta.json` — Likely shared/global structure
+- `modules/global_footer.module/module.css` — Likely shared/global structure
+- `modules/global_footer.module/module.html` — Likely shared/global structure
+- `modules/global_footer.module/module.js` — Likely shared/global structure
+- `modules/global_header.module/fields.json` — Likely shared/global structure
+- `modules/global_header.module/meta.json` — Likely shared/global structure
+- `modules/global_header.module/module.css` — Likely shared/global structure
+- `modules/global_header.module/module.html` — Likely shared/global structure
+- `modules/global_header.module/module.js` — Likely shared/global structure
+- `templates/home.html` — Could relate to homepage rendering
+- `templates/homepage-cinematic-v2.html` — Could relate to homepage rendering
+- `templates/homepage-cinematic-v3.html` — Could relate to homepage rendering
+- `templates/homepage-cinematic-v4.html` — Could relate to homepage rendering
+- `templates/homepage-cinematic-v5.html` — Could relate to homepage rendering
+- `templates/homepage-cinematic-v6-backup-2026-02-27.html` — Could relate to homepage rendering
+- `templates/homepage-cinematic-v6.html` — Could relate to homepage rendering
+- `templates/homepage-cinematic-webinar.html` — Could relate to homepage rendering
+- `templates/homepage-cinematic.html` — Could relate to homepage rendering
+- `templates/homepage-dev-2026-02-11.html` — Could relate to homepage rendering
+- `templates/homepage-modules.html` — Could relate to homepage rendering
+- `templates/homepage-new.html` — Could relate to homepage rendering
+- `templates/index.html` — Could relate to homepage rendering
+- `templates/partials/footer-cinematic.html` — Likely shared/global structure
+- `templates/partials/footer-module.html` — Likely shared/global structure
+- `templates/partials/header-cinematic.html` — Likely shared/global structure
+
+## Template list
+
+- `modules/case-study-showcase.module/module.html` (low)
+- `modules/cinematic_accordion_cards.module/module.html` (low)
+- `modules/cinematic_animated_counter.module/module.html` (low)
+- `modules/cinematic_authority.module/module.html` (low)
+- `modules/cinematic_before_after.module/module.html` (low)
+- `modules/cinematic_bento_grid.module/module.html` (low)
+- `modules/cinematic_case_study_card.module/module.html` (low)
+- `modules/cinematic_checklist.module/module.html` (low)
+- `modules/cinematic_comparison_table.module/module.html` (low)
+- `modules/cinematic_contact_cta.module/module.html` (low)
+- `modules/cinematic_cta_cards.module/module.html` (low)
+- `modules/cinematic_early_bird.module/module.html` (low)
+- `modules/cinematic_floating_cta.module/module.html` (low)
+- `modules/cinematic_footer.module/module.html` (low)
+- `modules/cinematic_header.module/module.html` (low)
+- `modules/cinematic_hero.module/module.html` (low)
+- `modules/cinematic_horizontal_scroll.module/module.html` (low)
+- `modules/cinematic_koulutus_form.module/module.html` (low)
+- `modules/cinematic_marquee_logos.module/module.html` (low)
+- `modules/cinematic_metrics.module/module.html` (low)
+- `modules/cinematic_pricing.module/module.html` (low)
+- `modules/cinematic_problem_list.module/module.html` (low)
+- `modules/cinematic_referenssit.module/module.html` (low)
+- `modules/cinematic_rich_pricing.module/module.html` (low)
+- `modules/cinematic_rich_text.module/module.html` (low)
+- `modules/cinematic_roi_calculator.module/module.html` (low)
+- `modules/cinematic_steps.module/module.html` (low)
+- `modules/cinematic_sticky_nav.module/module.html` (low)
+- `modules/cinematic_testimonial_slider.module/module.html` (low)
+- `modules/cinematic_text_image.module/module.html` (low)
+- `modules/cinematic_timeline.module/module.html` (low)
+- `modules/cinematic_two_engines.module/module.html` (low)
+- `modules/cinematic_vertical_timeline.module/module.html` (low)
+- `modules/global_footer.module/module.html` (high)
+- `modules/global_header.module/module.html` (high)
+- `modules/hero-banner.module/module.html` (low)
+- `modules/person-profile.module/module.html` (low)
+- `modules/services-grid.module/module.html` (low)
+- `modules/video-showcase.module/module.html` (low)
+- `templates/animaatiot-test-2026-02-13.html` (low)
+- `templates/blog-test-2026-02-12.html` (low)
+- `templates/brandays-ja-tarinankerronta-test-2026-02-13.html` (low)
+- `templates/brandivideot-test-2026-02-13.html` (low)
+- `templates/copilotin-kiihdytyskaista-test-2026-02-13.html` (low)
+- `templates/digimarkkinointi-test-2026-02-11.html` (low)
+- `templates/energia-alan-markkinointi-test-2026-02-13.html` (low)
+- `templates/gif-animaatiot-test-2026-02-13.html` (low)
+- `templates/google-ads-test-2026-02-13.html` (low)
+- `templates/home.html` (high)
+- `templates/homepage-cinematic-v2.html` (high)
+- `templates/homepage-cinematic-v3.html` (high)
+- `templates/homepage-cinematic-v4.html` (high)
+- `templates/homepage-cinematic-v5.html` (high)
+- `templates/homepage-cinematic-v6-backup-2026-02-27.html` (high)
+- `templates/homepage-cinematic-v6.html` (high)
+- `templates/homepage-cinematic-webinar.html` (high)
+- `templates/homepage-cinematic.html` (high)
+- `templates/homepage-dev-2026-02-11.html` (high)
+- `templates/homepage-modules.html` (high)
+- `templates/homepage-new.html` (high)
+- `templates/index.html` (high)
+- `templates/koulutus-test-2026-02-11.html` (low)
+- `templates/kuulunautti-test-2026-02-13.html` (low)
+- `templates/layouts/base-cinematic.html` (low)
+- `templates/layouts/base.html` (low)
+- `templates/liidien-hankinta-test-2026-02-13.html` (low)
+- `templates/mainosvideot-test-2026-02-13.html` (low)
+- `templates/matkailuvideot-test-2026-02-13.html` (low)
+- `templates/module-system-test.html` (low)
+- `templates/module-test-v3.html` (low)
+- `templates/module-test-v4.html` (low)
+- `templates/partials/accordion-cards.html` (low)
+- `templates/partials/animated-counter.html` (low)
+- `templates/partials/aurora-overlay.html` (low)
+- `templates/partials/before-after.html` (low)
+- `templates/partials/bento-grid.html` (low)
+- `templates/partials/blog-grid.html` (low)
+- `templates/partials/blog-pagination.html` (low)
+- `templates/partials/blog-topics.html` (low)
+- `templates/partials/case-study-card.html` (low)
+- `templates/partials/client-logos.html` (low)
+- `templates/partials/comparison-table.html` (low)
+- `templates/partials/contact-form.html` (low)
+- `templates/partials/cta-banner.html` (low)
+- `templates/partials/faq-accordion.html` (low)
+- `templates/partials/floating-cta.html` (low)
+- `templates/partials/footer-cinematic.html` (high)
+- `templates/partials/footer-module.html` (high)
+- `templates/partials/header-cinematic.html` (high)
+- `templates/partials/hero-section.html` (low)
+- `templates/partials/horizontal-scroll.html` (low)
+- `templates/partials/icon-text-grid.html` (low)
+- `templates/partials/marquee-logos.html` (low)
+- `templates/partials/media-gallery.html` (low)
+- `templates/partials/newsletter-cta.html` (low)
+- `templates/partials/notification-bar.html` (low)
+- `templates/partials/portfolio-grid.html` (low)
+- `templates/partials/pricing-cards.html` (low)
+- `templates/partials/pricing-section.html` (low)
+- `templates/partials/process-steps.html` (low)
+- `templates/partials/reference-grid.html` (low)
+- `templates/partials/rich-text.html` (low)
+- `templates/partials/roi-calculator.html` (low)
+- `templates/partials/scripts-cinematic.html` (low)
+- `templates/partials/scroll-animations.html` (low)
+- `templates/partials/service-cards.html` (low)
+- `templates/partials/spacing-divider.html` (low)
+- `templates/partials/stats-section.html` (low)
+- `templates/partials/sticky-nav.html` (low)
+- `templates/partials/team-grid.html` (low)
+- `templates/partials/testimonial-slider.html` (low)
+- `templates/partials/testimonials.html` (low)
+- `templates/partials/timeline.html` (low)
+- `templates/partials/two-column-content.html` (low)
+- `templates/partials/video-embed.html` (low)
+- `templates/perjantaipulssi-agentit-test-2026-02-17.html` (low)
+- `templates/perjantaipulssi-test-2026-02-11.html` (low)
+- `templates/person-profile.html` (low)
+- `templates/referenssit-test-2026-02-12.html` (low)
+- `templates/rekrymarkkinointi-test-2026-02-13.html` (low)
+- `templates/seo-analyysi-test-2026-02-13.html` (low)
+- `templates/sisaltopankki-test-2026-02-13.html` (low)
+- `templates/someauditointi-test-2026-02-13.html` (low)
+- `templates/team.html` (low)
+- `templates/tekoalykuvapankki-test-2026-02-13.html` (low)
+- `templates/tekoalyn-mestarikurssi-test-2026-02-13.html` (low)
+- `templates/tekoalyn-perjantaipulssi-test-2026-02-13.html` (low)
+- `templates/tv-mainosvideot-test-2026-02-13.html` (low)
+- `templates/video-production.html` (low)
+- `templates/videotuotanto-modules-test-2026-03-22.html` (low)
+- `templates/videotuotanto-test-2026-02-11.html` (low)
+- `templates/webinar-ilmoittautuminen.html` (low)
+- `templates/yhdistys-ja-hankevideot-test-2026-02-13.html` (low)
+- `templates/yhteystiedot-test-2026-02-12.html` (low)
+- `templates/yritysvideot-test-2026-02-13.html` (low)
+
+## Module roots
+
+- `modules/case-study-showcase.module` (low) — no explicit reasons
+- `modules/cinematic_accordion_cards.module` (low) — no explicit reasons
+- `modules/cinematic_animated_counter.module` (low) — no explicit reasons
+- `modules/cinematic_authority.module` (low) — no explicit reasons
+- `modules/cinematic_before_after.module` (low) — no explicit reasons
+- `modules/cinematic_bento_grid.module` (low) — no explicit reasons
+- `modules/cinematic_case_study_card.module` (low) — no explicit reasons
+- `modules/cinematic_checklist.module` (low) — no explicit reasons
+- `modules/cinematic_comparison_table.module` (low) — no explicit reasons
+- `modules/cinematic_contact_cta.module` (low) — no explicit reasons
+- `modules/cinematic_cta_cards.module` (low) — no explicit reasons
+- `modules/cinematic_early_bird.module` (low) — no explicit reasons
+- `modules/cinematic_floating_cta.module` (low) — no explicit reasons
+- `modules/cinematic_footer.module` (low) — no explicit reasons
+- `modules/cinematic_header.module` (low) — no explicit reasons
+- `modules/cinematic_hero.module` (low) — no explicit reasons
+- `modules/cinematic_horizontal_scroll.module` (low) — no explicit reasons
+- `modules/cinematic_koulutus_form.module` (low) — no explicit reasons
+- `modules/cinematic_marquee_logos.module` (low) — no explicit reasons
+- `modules/cinematic_metrics.module` (low) — no explicit reasons
+- `modules/cinematic_pricing.module` (low) — no explicit reasons
+- `modules/cinematic_problem_list.module` (low) — no explicit reasons
+- `modules/cinematic_referenssit.module` (low) — no explicit reasons
+- `modules/cinematic_rich_pricing.module` (low) — no explicit reasons
+- `modules/cinematic_rich_text.module` (low) — no explicit reasons
+- `modules/cinematic_roi_calculator.module` (low) — no explicit reasons
+- `modules/cinematic_steps.module` (low) — no explicit reasons
+- `modules/cinematic_sticky_nav.module` (low) — no explicit reasons
+- `modules/cinematic_testimonial_slider.module` (low) — no explicit reasons
+- `modules/cinematic_text_image.module` (low) — no explicit reasons
+- `modules/cinematic_timeline.module` (low) — no explicit reasons
+- `modules/cinematic_two_engines.module` (low) — no explicit reasons
+- `modules/cinematic_vertical_timeline.module` (low) — no explicit reasons
+- `modules/global_footer.module` (high) — Likely shared/global structure
+- `modules/global_header.module` (high) — Likely shared/global structure
+- `modules/hero-banner.module` (low) — no explicit reasons
+- `modules/person-profile.module` (low) — no explicit reasons
+- `modules/services-grid.module` (low) — no explicit reasons
+- `modules/video-showcase.module` (low) — no explicit reasons

@@ -1,0 +1,135 @@
+[ {
+  "id" : "section_title",
+  "name" : "section_title",
+  "label" : "Osion otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Mitä asiakkaat sanovat"
+}, {
+  "id" : "section_subtitle",
+  "name" : "section_subtitle",
+  "label" : "Osion alaotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Lue asiakaskokemuksia"
+}, {
+  "id" : "testimonials",
+  "name" : "testimonials",
+  "label" : "Testimonials",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 20,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "quote",
+    "name" : "quote",
+    "label" : "Sitaatti",
+    "required" : true,
+    "locked" : false,
+    "display_width" : null,
+    "type" : "richtext",
+    "default" : "Kuulu on auttanut meitä saavuttamaan merkittäviä tuloksia digimarkkinoinnissa."
+  }, {
+    "id" : "author_name",
+    "name" : "author_name",
+    "label" : "Henkilön nimi",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Matti Meikäläinen"
+  }, {
+    "id" : "author_title",
+    "name" : "author_title",
+    "label" : "Titteli",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Toimitusjohtaja"
+  }, {
+    "id" : "company_name",
+    "name" : "company_name",
+    "label" : "Yrityksen nimi",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Yritys Oy"
+  }, {
+    "id" : "profile_image",
+    "name" : "profile_image",
+    "label" : "Profiilikuva",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "display_width" : null,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : ""
+    }
+  }, {
+    "id" : "company_logo",
+    "name" : "company_logo",
+    "label" : "Yrityksen logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "display_width" : null,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : ""
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ {
+    "quote" : "Kuulu on ollut korvaamaton kumppani digimarkkinoinnin kehittämisessä.",
+    "author_name" : "Matti Meikäläinen",
+    "author_title" : "Toimitusjohtaja",
+    "company_name" : "Yritys Oy"
+  } ]
+}, {
+  "id" : "autoplay",
+  "name" : "autoplay",
+  "label" : "Autoplay käytössä",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "autoplay_speed",
+  "name" : "autoplay_speed",
+  "label" : "Autoplay nopeus (ms)",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 5000
+} ]

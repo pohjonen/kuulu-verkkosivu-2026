@@ -1,0 +1,2485 @@
+{
+  "source_theme_path": "/workspace/hubspot/source-theme",
+  "summary": {
+    "file_count": 350,
+    "template_count": 135,
+    "module_count": 39,
+    "asset_count": 175,
+    "high_risk_count": 28,
+    "medium_risk_count": 4,
+    "matched_public_asset_count": 0
+  },
+  "theme_signals": {
+    "has_theme_json": true,
+    "has_header_like_files": true,
+    "has_footer_like_files": true,
+    "has_navigation_like_files": true,
+    "has_cinematic_signal": true,
+    "has_token_signal": true,
+    "has_legacy_style_signal": false
+  },
+  "matched_public_assets": [],
+  "templates": [
+    {
+      "path": "modules/case-study-showcase.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_accordion_cards.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_animated_counter.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_authority.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_before_after.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_bento_grid.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_case_study_card.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_checklist.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_comparison_table.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_contact_cta.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_cta_cards.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_early_bird.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_floating_cta.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_footer.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_header.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_hero.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_horizontal_scroll.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_koulutus_form.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_marquee_logos.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_metrics.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_pricing.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_problem_list.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_referenssit.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_pricing.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_text.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_roi_calculator.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_steps.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_sticky_nav.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_testimonial_slider.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_text_image.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_timeline.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_two_engines.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_vertical_timeline.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/global_footer.module/module.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/module.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/hero-banner.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/person-profile.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/services-grid.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/video-showcase.module/module.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/animaatiot-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/blog-test-2026-02-12.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/brandays-ja-tarinankerronta-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/brandivideot-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/copilotin-kiihdytyskaista-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/digimarkkinointi-test-2026-02-11.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/energia-alan-markkinointi-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/gif-animaatiot-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/google-ads-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/home.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v2.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v3.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v4.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v5.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v6-backup-2026-02-27.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v6.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-webinar.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-dev-2026-02-11.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-modules.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-new.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/index.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/koulutus-test-2026-02-11.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/kuulunautti-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/layouts/base-cinematic.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/layouts/base.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/liidien-hankinta-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/mainosvideot-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/matkailuvideot-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/module-system-test.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/module-test-v3.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/module-test-v4.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/accordion-cards.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/animated-counter.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/aurora-overlay.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/before-after.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/bento-grid.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/blog-grid.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/blog-pagination.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/blog-topics.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/case-study-card.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/client-logos.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/comparison-table.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/contact-form.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/cta-banner.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/faq-accordion.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/floating-cta.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/footer-cinematic.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "templates/partials/footer-module.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "templates/partials/header-cinematic.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "templates/partials/hero-section.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/horizontal-scroll.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/icon-text-grid.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/marquee-logos.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/media-gallery.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/newsletter-cta.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/notification-bar.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/portfolio-grid.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/pricing-cards.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/pricing-section.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/process-steps.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/reference-grid.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/rich-text.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/roi-calculator.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/scripts-cinematic.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/scroll-animations.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/service-cards.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/spacing-divider.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/stats-section.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/sticky-nav.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/team-grid.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/testimonial-slider.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/testimonials.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/timeline.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/two-column-content.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/partials/video-embed.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/perjantaipulssi-agentit-test-2026-02-17.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/perjantaipulssi-test-2026-02-11.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/person-profile.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/referenssit-test-2026-02-12.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/rekrymarkkinointi-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/seo-analyysi-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/sisaltopankki-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/someauditointi-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/team.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/tekoalykuvapankki-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/tekoalyn-mestarikurssi-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/tekoalyn-perjantaipulssi-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/tv-mainosvideot-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/video-production.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/videotuotanto-modules-test-2026-03-22.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/videotuotanto-test-2026-02-11.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/webinar-ilmoittautuminen.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/yhdistys-ja-hankevideot-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/yhteystiedot-test-2026-02-12.html",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "templates/yritysvideot-test-2026-02-13.html",
+      "risk": "low",
+      "reasons": []
+    }
+  ],
+  "modules": [
+    {
+      "module_root": "modules/case-study-showcase.module",
+      "files": [
+        "modules/case-study-showcase.module/fields.json",
+        "modules/case-study-showcase.module/meta.json",
+        "modules/case-study-showcase.module/module.js",
+        "modules/case-study-showcase.module/module.css",
+        "modules/case-study-showcase.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_accordion_cards.module",
+      "files": [
+        "modules/cinematic_accordion_cards.module/fields.json",
+        "modules/cinematic_accordion_cards.module/meta.json",
+        "modules/cinematic_accordion_cards.module/module.js",
+        "modules/cinematic_accordion_cards.module/module.css",
+        "modules/cinematic_accordion_cards.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_animated_counter.module",
+      "files": [
+        "modules/cinematic_animated_counter.module/fields.json",
+        "modules/cinematic_animated_counter.module/meta.json",
+        "modules/cinematic_animated_counter.module/module.js",
+        "modules/cinematic_animated_counter.module/module.css",
+        "modules/cinematic_animated_counter.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_authority.module",
+      "files": [
+        "modules/cinematic_authority.module/fields.json",
+        "modules/cinematic_authority.module/meta.json",
+        "modules/cinematic_authority.module/module.js",
+        "modules/cinematic_authority.module/module.css",
+        "modules/cinematic_authority.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_before_after.module",
+      "files": [
+        "modules/cinematic_before_after.module/fields.json",
+        "modules/cinematic_before_after.module/meta.json",
+        "modules/cinematic_before_after.module/module.js",
+        "modules/cinematic_before_after.module/module.css",
+        "modules/cinematic_before_after.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_bento_grid.module",
+      "files": [
+        "modules/cinematic_bento_grid.module/fields.json",
+        "modules/cinematic_bento_grid.module/meta.json",
+        "modules/cinematic_bento_grid.module/module.js",
+        "modules/cinematic_bento_grid.module/module.css",
+        "modules/cinematic_bento_grid.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_case_study_card.module",
+      "files": [
+        "modules/cinematic_case_study_card.module/fields.json",
+        "modules/cinematic_case_study_card.module/meta.json",
+        "modules/cinematic_case_study_card.module/module.js",
+        "modules/cinematic_case_study_card.module/module.css",
+        "modules/cinematic_case_study_card.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_checklist.module",
+      "files": [
+        "modules/cinematic_checklist.module/fields.json",
+        "modules/cinematic_checklist.module/meta.json",
+        "modules/cinematic_checklist.module/module.js",
+        "modules/cinematic_checklist.module/module.css",
+        "modules/cinematic_checklist.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_comparison_table.module",
+      "files": [
+        "modules/cinematic_comparison_table.module/fields.json",
+        "modules/cinematic_comparison_table.module/meta.json",
+        "modules/cinematic_comparison_table.module/module.js",
+        "modules/cinematic_comparison_table.module/module.css",
+        "modules/cinematic_comparison_table.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_contact_cta.module",
+      "files": [
+        "modules/cinematic_contact_cta.module/fields.json",
+        "modules/cinematic_contact_cta.module/meta.json",
+        "modules/cinematic_contact_cta.module/module.js",
+        "modules/cinematic_contact_cta.module/module.css",
+        "modules/cinematic_contact_cta.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_cta_cards.module",
+      "files": [
+        "modules/cinematic_cta_cards.module/fields.json",
+        "modules/cinematic_cta_cards.module/meta.json",
+        "modules/cinematic_cta_cards.module/module.js",
+        "modules/cinematic_cta_cards.module/module.css",
+        "modules/cinematic_cta_cards.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_early_bird.module",
+      "files": [
+        "modules/cinematic_early_bird.module/fields.json",
+        "modules/cinematic_early_bird.module/meta.json",
+        "modules/cinematic_early_bird.module/module.js",
+        "modules/cinematic_early_bird.module/module.css",
+        "modules/cinematic_early_bird.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_floating_cta.module",
+      "files": [
+        "modules/cinematic_floating_cta.module/fields.json",
+        "modules/cinematic_floating_cta.module/meta.json",
+        "modules/cinematic_floating_cta.module/module.js",
+        "modules/cinematic_floating_cta.module/module.css",
+        "modules/cinematic_floating_cta.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_footer.module",
+      "files": [
+        "modules/cinematic_footer.module/fields.json",
+        "modules/cinematic_footer.module/meta.json",
+        "modules/cinematic_footer.module/module.js",
+        "modules/cinematic_footer.module/module.css",
+        "modules/cinematic_footer.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_header.module",
+      "files": [
+        "modules/cinematic_header.module/fields.json",
+        "modules/cinematic_header.module/meta.json",
+        "modules/cinematic_header.module/module.js",
+        "modules/cinematic_header.module/module.css",
+        "modules/cinematic_header.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_hero.module",
+      "files": [
+        "modules/cinematic_hero.module/fields.json",
+        "modules/cinematic_hero.module/meta.json",
+        "modules/cinematic_hero.module/module.js",
+        "modules/cinematic_hero.module/module.css",
+        "modules/cinematic_hero.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_horizontal_scroll.module",
+      "files": [
+        "modules/cinematic_horizontal_scroll.module/fields.json",
+        "modules/cinematic_horizontal_scroll.module/meta.json",
+        "modules/cinematic_horizontal_scroll.module/module.js",
+        "modules/cinematic_horizontal_scroll.module/module.css",
+        "modules/cinematic_horizontal_scroll.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_koulutus_form.module",
+      "files": [
+        "modules/cinematic_koulutus_form.module/fields.json",
+        "modules/cinematic_koulutus_form.module/meta.json",
+        "modules/cinematic_koulutus_form.module/module.js",
+        "modules/cinematic_koulutus_form.module/module.css",
+        "modules/cinematic_koulutus_form.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_marquee_logos.module",
+      "files": [
+        "modules/cinematic_marquee_logos.module/fields.json",
+        "modules/cinematic_marquee_logos.module/meta.json",
+        "modules/cinematic_marquee_logos.module/module.js",
+        "modules/cinematic_marquee_logos.module/module.css",
+        "modules/cinematic_marquee_logos.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_metrics.module",
+      "files": [
+        "modules/cinematic_metrics.module/fields.json",
+        "modules/cinematic_metrics.module/meta.json",
+        "modules/cinematic_metrics.module/module.js",
+        "modules/cinematic_metrics.module/module.css",
+        "modules/cinematic_metrics.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_pricing.module",
+      "files": [
+        "modules/cinematic_pricing.module/fields.json",
+        "modules/cinematic_pricing.module/meta.json",
+        "modules/cinematic_pricing.module/module.js",
+        "modules/cinematic_pricing.module/module.css",
+        "modules/cinematic_pricing.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_problem_list.module",
+      "files": [
+        "modules/cinematic_problem_list.module/fields.json",
+        "modules/cinematic_problem_list.module/meta.json",
+        "modules/cinematic_problem_list.module/module.js",
+        "modules/cinematic_problem_list.module/module.css",
+        "modules/cinematic_problem_list.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_referenssit.module",
+      "files": [
+        "modules/cinematic_referenssit.module/fields.json",
+        "modules/cinematic_referenssit.module/meta.json",
+        "modules/cinematic_referenssit.module/module.js",
+        "modules/cinematic_referenssit.module/module.css",
+        "modules/cinematic_referenssit.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_rich_pricing.module",
+      "files": [
+        "modules/cinematic_rich_pricing.module/fields.json",
+        "modules/cinematic_rich_pricing.module/meta.json",
+        "modules/cinematic_rich_pricing.module/module.js",
+        "modules/cinematic_rich_pricing.module/module.css",
+        "modules/cinematic_rich_pricing.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_rich_text.module",
+      "files": [
+        "modules/cinematic_rich_text.module/fields.json",
+        "modules/cinematic_rich_text.module/meta.json",
+        "modules/cinematic_rich_text.module/module.js",
+        "modules/cinematic_rich_text.module/module.css",
+        "modules/cinematic_rich_text.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_roi_calculator.module",
+      "files": [
+        "modules/cinematic_roi_calculator.module/fields.json",
+        "modules/cinematic_roi_calculator.module/meta.json",
+        "modules/cinematic_roi_calculator.module/module.js",
+        "modules/cinematic_roi_calculator.module/module.css",
+        "modules/cinematic_roi_calculator.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_steps.module",
+      "files": [
+        "modules/cinematic_steps.module/fields.json",
+        "modules/cinematic_steps.module/meta.json",
+        "modules/cinematic_steps.module/module.js",
+        "modules/cinematic_steps.module/module.css",
+        "modules/cinematic_steps.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_sticky_nav.module",
+      "files": [
+        "modules/cinematic_sticky_nav.module/fields.json",
+        "modules/cinematic_sticky_nav.module/meta.json",
+        "modules/cinematic_sticky_nav.module/module.js",
+        "modules/cinematic_sticky_nav.module/module.css",
+        "modules/cinematic_sticky_nav.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_testimonial_slider.module",
+      "files": [
+        "modules/cinematic_testimonial_slider.module/fields.json",
+        "modules/cinematic_testimonial_slider.module/meta.json",
+        "modules/cinematic_testimonial_slider.module/module.js",
+        "modules/cinematic_testimonial_slider.module/module.css",
+        "modules/cinematic_testimonial_slider.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_text_image.module",
+      "files": [
+        "modules/cinematic_text_image.module/fields.json",
+        "modules/cinematic_text_image.module/meta.json",
+        "modules/cinematic_text_image.module/module.js",
+        "modules/cinematic_text_image.module/module.css",
+        "modules/cinematic_text_image.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_timeline.module",
+      "files": [
+        "modules/cinematic_timeline.module/fields.json",
+        "modules/cinematic_timeline.module/meta.json",
+        "modules/cinematic_timeline.module/module.js",
+        "modules/cinematic_timeline.module/module.css",
+        "modules/cinematic_timeline.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_two_engines.module",
+      "files": [
+        "modules/cinematic_two_engines.module/fields.json",
+        "modules/cinematic_two_engines.module/meta.json",
+        "modules/cinematic_two_engines.module/module.js",
+        "modules/cinematic_two_engines.module/module.css",
+        "modules/cinematic_two_engines.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/cinematic_vertical_timeline.module",
+      "files": [
+        "modules/cinematic_vertical_timeline.module/fields.json",
+        "modules/cinematic_vertical_timeline.module/meta.json",
+        "modules/cinematic_vertical_timeline.module/module.js",
+        "modules/cinematic_vertical_timeline.module/module.css",
+        "modules/cinematic_vertical_timeline.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/global_footer.module",
+      "files": [
+        "modules/global_footer.module/fields.json",
+        "modules/global_footer.module/meta.json",
+        "modules/global_footer.module/module.js",
+        "modules/global_footer.module/module.css",
+        "modules/global_footer.module/module.html"
+      ],
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "module_root": "modules/global_header.module",
+      "files": [
+        "modules/global_header.module/fields.json",
+        "modules/global_header.module/meta.json",
+        "modules/global_header.module/module.js",
+        "modules/global_header.module/module.css",
+        "modules/global_header.module/module.html"
+      ],
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "module_root": "modules/hero-banner.module",
+      "files": [
+        "modules/hero-banner.module/fields.json",
+        "modules/hero-banner.module/meta.json",
+        "modules/hero-banner.module/module.js",
+        "modules/hero-banner.module/module.css",
+        "modules/hero-banner.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/person-profile.module",
+      "files": [
+        "modules/person-profile.module/fields.json",
+        "modules/person-profile.module/meta.json",
+        "modules/person-profile.module/module.js",
+        "modules/person-profile.module/module.css",
+        "modules/person-profile.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/services-grid.module",
+      "files": [
+        "modules/services-grid.module/fields.json",
+        "modules/services-grid.module/meta.json",
+        "modules/services-grid.module/module.js",
+        "modules/services-grid.module/module.css",
+        "modules/services-grid.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "module_root": "modules/video-showcase.module",
+      "files": [
+        "modules/video-showcase.module/fields.json",
+        "modules/video-showcase.module/meta.json",
+        "modules/video-showcase.module/module.js",
+        "modules/video-showcase.module/module.css",
+        "modules/video-showcase.module/module.html"
+      ],
+      "risk": "low",
+      "reasons": []
+    }
+  ],
+  "assets": [
+    {
+      "path": "child.css",
+      "filename": "child.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "child.js",
+      "filename": "child.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "css/accessibility-performance.css",
+      "filename": "accessibility-performance.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "css/cinematic-main.css",
+      "filename": "cinematic-main.css",
+      "risk": "medium",
+      "reasons": [
+        "Shared asset or theme-level asset"
+      ]
+    },
+    {
+      "path": "css/cinematic-responsive.css",
+      "filename": "cinematic-responsive.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "css/cinematic.css",
+      "filename": "cinematic.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "css/design-tokens.css",
+      "filename": "design-tokens.css",
+      "risk": "medium",
+      "reasons": [
+        "Shared asset or theme-level asset"
+      ]
+    },
+    {
+      "path": "css/force-override.css",
+      "filename": "force-override.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "css/kuulu-2025-brand.css",
+      "filename": "kuulu-2025-brand.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "css/module-fixes.css",
+      "filename": "module-fixes.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "css/theme-overrides.css",
+      "filename": "theme-overrides.css",
+      "risk": "medium",
+      "reasons": [
+        "Shared asset or theme-level asset"
+      ]
+    },
+    {
+      "path": "fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "js/aurora-background.js",
+      "filename": "aurora-background.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "js/force-remove-wave.js",
+      "filename": "force-remove-wave.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "js/init.js",
+      "filename": "init.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "js/jquery-3.5.1.min.js",
+      "filename": "jquery-3.5.1.min.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "js/main.js",
+      "filename": "main.js",
+      "risk": "medium",
+      "reasons": [
+        "Shared asset or theme-level asset"
+      ]
+    },
+    {
+      "path": "js/mobile-menu.js",
+      "filename": "mobile-menu.js",
+      "risk": "high",
+      "reasons": [
+        "Likely navigation dependency"
+      ]
+    },
+    {
+      "path": "modules/case-study-showcase.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/case-study-showcase.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/case-study-showcase.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/case-study-showcase.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_accordion_cards.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_accordion_cards.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_accordion_cards.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_accordion_cards.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_animated_counter.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_animated_counter.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_animated_counter.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_animated_counter.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_authority.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_authority.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_authority.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_authority.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_before_after.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_before_after.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_before_after.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_before_after.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_bento_grid.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_bento_grid.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_bento_grid.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_bento_grid.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_case_study_card.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_case_study_card.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_case_study_card.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_case_study_card.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_checklist.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_checklist.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_checklist.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_checklist.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_comparison_table.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_comparison_table.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_comparison_table.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_comparison_table.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_contact_cta.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_contact_cta.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_contact_cta.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_contact_cta.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_cta_cards.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_cta_cards.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_cta_cards.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_cta_cards.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_early_bird.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_early_bird.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_early_bird.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_early_bird.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_floating_cta.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_floating_cta.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_floating_cta.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_floating_cta.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_footer.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_footer.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_footer.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_footer.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_header.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_header.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_header.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_header.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_hero.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_hero.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_hero.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_hero.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_horizontal_scroll.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_horizontal_scroll.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_horizontal_scroll.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_horizontal_scroll.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_koulutus_form.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_koulutus_form.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_koulutus_form.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_koulutus_form.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_marquee_logos.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_marquee_logos.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_marquee_logos.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_marquee_logos.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_metrics.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_metrics.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_metrics.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_metrics.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_pricing.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_pricing.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_pricing.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_pricing.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_problem_list.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_problem_list.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_problem_list.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_problem_list.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_referenssit.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_referenssit.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_referenssit.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_referenssit.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_pricing.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_pricing.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_pricing.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_pricing.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_text.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_text.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_text.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_rich_text.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_roi_calculator.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_roi_calculator.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_roi_calculator.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_roi_calculator.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_steps.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_steps.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_steps.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_steps.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_sticky_nav.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_sticky_nav.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_sticky_nav.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_sticky_nav.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_testimonial_slider.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_testimonial_slider.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_testimonial_slider.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_testimonial_slider.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_text_image.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_text_image.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_text_image.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_text_image.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_timeline.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_timeline.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_timeline.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_timeline.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_two_engines.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_two_engines.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_two_engines.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_two_engines.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_vertical_timeline.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_vertical_timeline.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_vertical_timeline.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/cinematic_vertical_timeline.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/global_footer.module/fields.json",
+      "filename": "fields.json",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_footer.module/meta.json",
+      "filename": "meta.json",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_footer.module/module.css",
+      "filename": "module.css",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_footer.module/module.js",
+      "filename": "module.js",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/fields.json",
+      "filename": "fields.json",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/meta.json",
+      "filename": "meta.json",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/module.css",
+      "filename": "module.css",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/module.js",
+      "filename": "module.js",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/hero-banner.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/hero-banner.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/hero-banner.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/hero-banner.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/person-profile.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/person-profile.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/person-profile.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/person-profile.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/services-grid.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/services-grid.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/services-grid.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/services-grid.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/video-showcase.module/fields.json",
+      "filename": "fields.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/video-showcase.module/meta.json",
+      "filename": "meta.json",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/video-showcase.module/module.css",
+      "filename": "module.css",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "modules/video-showcase.module/module.js",
+      "filename": "module.js",
+      "risk": "low",
+      "reasons": []
+    },
+    {
+      "path": "theme.json",
+      "filename": "theme.json",
+      "risk": "low",
+      "reasons": []
+    }
+  ],
+  "protected_candidates": [
+    {
+      "path": "OHJE-ETUSIVU-TEST-MODUULIT.md",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "js/mobile-menu.js",
+      "risk": "high",
+      "reasons": [
+        "Likely navigation dependency"
+      ]
+    },
+    {
+      "path": "modules/global_footer.module/fields.json",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_footer.module/meta.json",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_footer.module/module.css",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_footer.module/module.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_footer.module/module.js",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/fields.json",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/meta.json",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/module.css",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/module.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "modules/global_header.module/module.js",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "templates/home.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v2.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v3.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v4.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v5.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v6-backup-2026-02-27.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-v6.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic-webinar.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-cinematic.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-dev-2026-02-11.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-modules.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/homepage-new.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/index.html",
+      "risk": "high",
+      "reasons": [
+        "Could relate to homepage rendering"
+      ]
+    },
+    {
+      "path": "templates/partials/footer-cinematic.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "templates/partials/footer-module.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    },
+    {
+      "path": "templates/partials/header-cinematic.html",
+      "risk": "high",
+      "reasons": [
+        "Likely shared/global structure"
+      ]
+    }
+  ]
+}

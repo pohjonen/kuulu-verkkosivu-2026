@@ -1,0 +1,35 @@
+<section class="cinematic-vertical-timeline">
+  <div class="timeline-container">
+    {% if module.section_tag %}
+    <div class="section-tag">{{ module.section_tag }}</div>
+    {% endif %}
+
+    <h2 class="timeline-headline">
+      {{ module.headline }}<span class="highlight">{{ module.headline_highlight }}</span>
+    </h2>
+
+    <div class="timeline">
+      {% for step in module.steps %}
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="marker-circle">
+            <i class="{{ step.step_icon }}"></i>
+          </div>
+          {% if not loop.last %}
+          <div class="marker-line"></div>
+          {% endif %}
+        </div>
+        <div class="timeline-content">
+          <h3 class="step-title">{{ loop.index }}. {{ step.step_title }}</h3>
+          <div class="step-description">{{ step.step_description }}</div>
+          {% if step.step_image.src %}
+          <div class="step-image">
+            <img src="{{ step.step_image.src }}" alt="{{ step.step_image.alt }}" loading="lazy">
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

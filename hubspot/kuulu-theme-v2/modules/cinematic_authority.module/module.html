@@ -1,0 +1,54 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media() %}
+  {% set mt = module.media_type|default("none") %}
+  {% if mt == "image" and module.media_image and module.media_image.src %}
+    <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt|default('') }}" style="width: 100%; height: auto; display: block; border-radius: 16px;">
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("none") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+
+<style>
+.authority-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+@media (max-width: 768px) { .authority-media-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <div class="hero-glass-box" style="text-align: center; max-width: {% if has_media %}1100px{% else %}900px{% endif %}; margin: 0 auto; padding: 3rem;">
+      {% if has_media %}
+      <div class="authority-media-grid" style="text-align: left;">
+        {% if mp == "left" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+        <div style="text-align: center;">
+      {% endif %}
+
+      <span class="section-tag">{{ module.section_tag }}</span>
+      <h2 class="section-header">{{ module.headline }} <span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+      {% if module.lead_text %}
+      <div style="color: var(--cinematic-text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+        {{ module.lead_text }}
+      </div>
+      {% endif %}
+      {% if module.body_text %}
+      <div style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.8;">
+        {{ module.body_text }}
+      </div>
+      {% endif %}
+
+      {% if has_media %}
+        </div>
+        {% if mp == "right" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
