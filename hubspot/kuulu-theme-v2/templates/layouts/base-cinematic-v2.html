@@ -1,0 +1,61 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page_meta.html_title }}</title>
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Font Awesome (loaded first for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Design Tokens (single source of truth for colors, fonts, spacing) -->
+    {{ require_css(get_asset_url('../../css/design-tokens.css')) }}
+    {{ require_css(get_asset_url('../../css/module-fixes.css')) }}
+    
+    <!-- Theme CSS (loaded BEFORE standard_header_includes for priority) -->
+    <!-- cinematic-main.css REMOVED: old light theme conflicts with dark cinematic theme -->
+    {{ require_css(get_asset_url('../../css/cinematic.css')) }}
+    {{ require_css(get_asset_url('../../css/cinematic-responsive.css')) }}
+    {{ require_css(get_asset_url('../assets/css/theme-tokens.css')) }}
+    {{ require_css(get_asset_url('../assets/css/theme-base.css')) }}
+    {{ require_css(get_asset_url('../assets/css/theme-utilities.css')) }}
+    {{ require_css(get_asset_url('../assets/css/theme-components.css')) }}
+    
+    <!-- HubSpot Forms SDK -->
+    <script charset="utf-8" type="text/javascript" data-hs-allowed="true" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+
+    <!-- HubSpot Standard Header (loads after theme CSS) -->
+    {{ standard_header_includes }}
+    
+    <!-- Custom CSS -->
+    {% if theme.custom_css %}
+    <style>{{ theme.custom_css }}</style>
+    {% endif %}
+  </head>
+
+<body class="{{ builtin_body_classes }} cinematic-body">
+  <!-- Main Content - No default header/footer for cinematic pages -->
+  <main role="main">
+    {% block body %}
+    {% endblock body %}
+  </main>
+  
+  <!-- HubSpot Standard Footer -->
+  {{ standard_footer_includes }}
+  
+  <!-- Theme JS (loaded in footer for performance) -->
+  {{ require_js(get_asset_url('../../js/main.js'), 'footer') }}
+  {{ require_js(get_asset_url('../assets/js/theme-base.js'), 'footer') }}
+  
+  <!-- Custom JS -->
+  {% if theme.custom_js %}
+  <script>{{ theme.custom_js }}</script>
+  {% endif %}
+</body>
+</html>

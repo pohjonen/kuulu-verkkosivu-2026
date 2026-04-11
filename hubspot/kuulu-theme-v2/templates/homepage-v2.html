@@ -1,0 +1,82 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+  label: "Homepage V2"
+-->
+{% extends "./layouts/base-cinematic-v2.html" %}
+
+{% block body %}
+<div class="aurora-background"></div>
+<div class="cinematic-page has-aurora-bg">
+  <div class="grain-overlay"></div>
+
+  {% include "./partials/header-cinematic-v2.html" %}
+  <div class="header-observer-sentinel"></div>
+
+  {% dnd_area "main" label="Homepage V2 content" %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/hero-cinematic-v2.module"
+            label="Hero Cinematic V2"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/problem-grid-v2.module"
+            label="Problem Grid V2"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/service-pillars-v2.module"
+            label="Service Pillars V2"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/stats-trust-band-v2.module"
+            label="Stats Trust Band V2"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/lead-capture-form-cta-v2.module"
+            label="Lead Capture Form CTA V2"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+  {% end_dnd_area %}
+
+  {% include "./partials/footer-cinematic-v2.html" %}
+</div>
+{% endblock body %}
