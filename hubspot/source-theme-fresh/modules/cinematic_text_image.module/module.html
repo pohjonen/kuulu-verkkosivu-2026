@@ -1,0 +1,122 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% set img_left = module.image_position == "left" %}
+{% set mt = module.media_type|default("none") %}
+{% set has_media = mt != "none" %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <div class="cinematic-section-rounded glass-card" style="border: 1px solid rgba(0,255,135,0.15);">
+      <div class="person-profile-grid" style="display: grid; grid-template-columns: {% if has_media %}1fr 1fr{% else %}1fr{% endif %}; gap: 3rem; align-items: center;">
+
+        {% if img_left and has_media %}
+        {# Media vasemmalla #}
+        <div class="person-profile-image" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green);">
+          {% if mt == "image" and module.image and module.image.src %}
+            <img src="{{ module.image.src }}" alt="{{ module.image.alt|default(module.headline) }}" style="width: 100%; height: auto; display: block;">
+          {% elif mt == "video_url" and module.video_url %}
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+              <iframe src="{{ module.video_url }}" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 16px;" loading="lazy"></iframe>
+            </div>
+          {% elif mt == "video_file" and module.video_file %}
+            <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;">
+              <source src="{{ module.video_file }}" type="video/mp4">
+            </video>
+          {% endif %}
+        </div>
+        {% endif %}
+
+        {# Tekstisisältö #}
+        <div>
+          <span class="section-tag">{{ module.section_tag }}</span>
+          <h2 class="section-header" style="font-size: 2.5rem;">{{ module.headline }}{% if module.headline_highlight %} <span class="text-gradient-green">{{ module.headline_highlight }}</span>{% endif %}</h2>
+          {% if module.lead_text %}
+          <p style="color: var(--cinematic-text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            {{ module.lead_text }}
+          </p>
+          {% endif %}
+          {% if module.body_text %}
+          <p style="color: var(--cinematic-text); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+            {{ module.body_text }}
+          </p>
+          {% endif %}
+
+          {# Tagit (1–5) #}
+          {% set tags = [
+            {"icon": module.tag_1_icon, "label": module.tag_1_label},
+            {"icon": module.tag_2_icon, "label": module.tag_2_label},
+            {"icon": module.tag_3_icon, "label": module.tag_3_label},
+            {"icon": module.tag_4_icon, "label": module.tag_4_label},
+            {"icon": module.tag_5_icon, "label": module.tag_5_label}
+          ] %}
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            {% for tag in tags %}
+              {% if tag.label %}
+              <div style="background: rgba(255,255,255,0.05); padding: 0.7rem 1.1rem; border-radius: 12px; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="{{ tag.icon }}" style="color: var(--cinematic-green); font-size: 0.95rem;"></i>
+                <span style="color: white; font-weight: 500; font-size: 0.95rem;">{{ tag.label }}</span>
+              </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          {# Some-linkit #}
+          {% set socials = [
+            {"url": module.social_linkedin, "icon": "fab fa-linkedin-in", "name": "LinkedIn"},
+            {"url": module.social_x, "icon": "fab fa-x-twitter", "name": "X"},
+            {"url": module.social_instagram, "icon": "fab fa-instagram", "name": "Instagram"},
+            {"url": module.social_facebook, "icon": "fab fa-facebook-f", "name": "Facebook"},
+            {"url": module.social_youtube, "icon": "fab fa-youtube", "name": "YouTube"},
+            {"url": module.social_tiktok, "icon": "fab fa-tiktok", "name": "TikTok"},
+            {"url": module.social_website, "icon": "fas fa-globe", "name": "Verkkosivusto"}
+          ] %}
+          {% set has_social = false %}
+          {% for s in socials %}{% if s.url %}{% set has_social = true %}{% endif %}{% endfor %}
+          {% if has_social %}
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            {% for s in socials %}
+              {% if s.url %}
+              <a href="{{ s.url }}" target="_blank" rel="noopener noreferrer" title="{{ s.name }}" style="width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #ffffff; font-size: 1.1rem; transition: all 0.3s ease; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);" onmouseover="this.style.background='var(--cinematic-green)';this.style.color='#0a0a0a'" onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='#ffffff'">
+                <i class="{{ s.icon }}"></i>
+              </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+
+        {% if not img_left and has_media %}
+        {# Media oikealla (oletus) #}
+        <div class="person-profile-image" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green);">
+          {% if mt == "image" and module.image and module.image.src %}
+            <img src="{{ module.image.src }}" alt="{{ module.image.alt|default(module.headline) }}" style="width: 100%; height: auto; display: block;">
+          {% elif mt == "video_url" and module.video_url %}
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+              <iframe src="{{ module.video_url }}" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 16px;" loading="lazy"></iframe>
+            </div>
+          {% elif mt == "video_file" and module.video_file %}
+            <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;">
+              <source src="{{ module.video_file }}" type="video/mp4">
+            </video>
+          {% endif %}
+        </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .person-profile-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .person-profile-image {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
+</style>

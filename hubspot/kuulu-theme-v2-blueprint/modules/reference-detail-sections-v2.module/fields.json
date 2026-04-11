@@ -1,0 +1,105 @@
+{
+  "module_label": "reference-detail-sections-v2",
+  "build_wave": 4,
+  "field_groups": [
+    {
+      "name": "content",
+      "label": "Content",
+      "help_text": "Blueprint group for reference-detail-sections-v2: content"
+    },
+    {
+      "name": "media",
+      "label": "Media",
+      "help_text": "Blueprint group for reference-detail-sections-v2: media"
+    },
+    {
+      "name": "layout",
+      "label": "Layout",
+      "help_text": "Blueprint group for reference-detail-sections-v2: layout"
+    },
+    {
+      "name": "style",
+      "label": "Style",
+      "help_text": "Blueprint group for reference-detail-sections-v2: style"
+    },
+    {
+      "name": "advanced",
+      "label": "Advanced",
+      "help_text": "Blueprint group for reference-detail-sections-v2: advanced"
+    }
+  ],
+  "required_fields": [
+    {
+      "name": "case_hero",
+      "label": "Case Hero",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "key_facts",
+      "label": "Key Facts",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "challenge",
+      "label": "Challenge",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "solution",
+      "label": "Solution",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "execution",
+      "label": "Execution",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "results",
+      "label": "Results",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "testimonial",
+      "label": "Testimonial",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    },
+    {
+      "name": "final_cta",
+      "label": "Final Cta",
+      "required": true,
+      "type_hint": "determine in real HubSpot implementation"
+    }
+  ],
+  "optional_fields": [
+    {
+      "name": "related_cases",
+      "label": "Related Cases",
+      "required": false,
+      "type_hint": "determine in real HubSpot implementation"
+    }
+  ],
+  "guardrails": {
+    "enforced_order": [
+      "case-hero",
+      "key-facts",
+      "challenge",
+      "solution",
+      "execution",
+      "results",
+      "testimonial",
+      "cta"
+    ]
+  },
+  "notes": [
+    "Blueprint-only scaffold. Convert into valid HubSpot fields.json in the real v2 theme.",
+    "Keep editor guardrails strict; do not expose free-form styling without a strong reason."
+  ]
+}

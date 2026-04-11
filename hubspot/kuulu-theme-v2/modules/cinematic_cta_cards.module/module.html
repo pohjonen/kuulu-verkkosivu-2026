@@ -1,0 +1,79 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media() %}
+  {% set mt = module.media_type|default("none") %}
+  {% if mt == "image" and module.media_image and module.media_image.src %}
+    <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt|default('') }}" style="width: 100%; height: auto; display: block; border-radius: 16px;">
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("none") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+{% set cc = module.card_count|default("2") %}
+{% set ch = module.card_height|default("460px") %}
+
+<style>
+.ctacards-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+@media (max-width: 768px) { .ctacards-media-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="cinematic-section" id="koulutukset" data-koulutukset-version="v6-suosituimmat-only">
+  <div class="container-cinematic">
+    {% if has_media %}
+    <div class="ctacards-media-grid">
+      {% if mp == "left" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+      <div>
+    {% endif %}
+
+    <span class="section-tag">{{ module.section_tag }}</span>
+    <h2 class="section-header">{{ module.headline }} <span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+    <p style="color: var(--cinematic-text-muted); max-width: 760px; margin-bottom: 2rem;">
+      {{ module.description }}
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; align-items: start;">
+      {% set img1_src = module.card_1_image.src if module.card_1_image and module.card_1_image.src else module.card_1_image_url %}
+      {% set img1_alt = module.card_1_image.alt if module.card_1_image and module.card_1_image.alt else module.card_1_alt_text|default('') %}
+      {% if module.card_1_link_url and img1_src %}
+      <a href="{{ module.card_1_link_url }}" style="display:block; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-green-sm);">
+        <img src="{{ img1_src }}" alt="{{ img1_alt }}" style="display:block; width:100%; height:{{ ch }}; object-fit:cover; object-position: top center;">
+      </a>
+      {% endif %}
+      {% set img2_src = module.card_2_image.src if module.card_2_image and module.card_2_image.src else module.card_2_image_url %}
+      {% set img2_alt = module.card_2_image.alt if module.card_2_image and module.card_2_image.alt else module.card_2_alt_text|default('') %}
+      {% if module.card_2_link_url and img2_src %}
+      <a href="{{ module.card_2_link_url }}" style="display:block; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-green-sm);">
+        <img src="{{ img2_src }}" alt="{{ img2_alt }}" style="display:block; width:100%; height:{{ ch }}; object-fit:cover; object-position: top center;">
+      </a>
+      {% endif %}
+      {% if cc == "4" %}
+      {% set img3_src = module.card_3_image.src if module.card_3_image and module.card_3_image.src else module.card_3_image_url %}
+      {% set img3_alt = module.card_3_image.alt if module.card_3_image and module.card_3_image.alt else module.card_3_alt_text|default('') %}
+      {% if module.card_3_link_url and img3_src %}
+      <a href="{{ module.card_3_link_url }}" style="display:block; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-green-sm);">
+        <img src="{{ img3_src }}" alt="{{ img3_alt }}" style="display:block; width:100%; height:{{ ch }}; object-fit:cover; object-position: top center;">
+      </a>
+      {% endif %}
+      {% set img4_src = module.card_4_image.src if module.card_4_image and module.card_4_image.src else module.card_4_image_url %}
+      {% set img4_alt = module.card_4_image.alt if module.card_4_image and module.card_4_image.alt else module.card_4_alt_text|default('') %}
+      {% if module.card_4_link_url and img4_src %}
+      <a href="{{ module.card_4_link_url }}" style="display:block; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-green-sm);">
+        <img src="{{ img4_src }}" alt="{{ img4_alt }}" style="display:block; width:100%; height:{{ ch }}; object-fit:cover; object-position: top center;">
+      </a>
+      {% endif %}
+      {% endif %}
+    </div>
+
+    {% if has_media %}
+      </div>
+      {% if mp == "right" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>

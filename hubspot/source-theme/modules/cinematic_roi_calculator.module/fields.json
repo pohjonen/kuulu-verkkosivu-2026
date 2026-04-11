@@ -1,0 +1,182 @@
+[ {
+  "id" : "title",
+  "name" : "title",
+  "label" : "Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Laske säästösi"
+}, {
+  "id" : "subtitle",
+  "name" : "subtitle",
+  "label" : "Alaotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Katso kuinka paljon säästät Kuulu Flow:n avulla"
+}, {
+  "id" : "slider_1_label",
+  "name" : "slider_1_label",
+  "label" : "Slider 1 - Nimi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Kuukausittainen markkinointibudjetti"
+}, {
+  "id" : "slider_1_min",
+  "name" : "slider_1_min",
+  "label" : "Slider 1 - Min",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 1000
+}, {
+  "id" : "slider_1_max",
+  "name" : "slider_1_max",
+  "label" : "Slider 1 - Max",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 50000
+}, {
+  "id" : "slider_1_default",
+  "name" : "slider_1_default",
+  "label" : "Slider 1 - Oletusarvo",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 10000
+}, {
+  "id" : "slider_2_label",
+  "name" : "slider_2_label",
+  "label" : "Slider 2 - Nimi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Markkinointitiimin koko"
+}, {
+  "id" : "slider_2_min",
+  "name" : "slider_2_min",
+  "label" : "Slider 2 - Min",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 1
+}, {
+  "id" : "slider_2_max",
+  "name" : "slider_2_max",
+  "label" : "Slider 2 - Max",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 20
+}, {
+  "id" : "slider_2_default",
+  "name" : "slider_2_default",
+  "label" : "Slider 2 - Oletusarvo",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 3
+}, {
+  "id" : "slider_3_label",
+  "name" : "slider_3_label",
+  "label" : "Slider 3 - Nimi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Sisältöjen määrä kuukaudessa"
+}, {
+  "id" : "slider_3_min",
+  "name" : "slider_3_min",
+  "label" : "Slider 3 - Min",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 1
+}, {
+  "id" : "slider_3_max",
+  "name" : "slider_3_max",
+  "label" : "Slider 3 - Max",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 100
+}, {
+  "id" : "slider_3_default",
+  "name" : "slider_3_default",
+  "label" : "Slider 3 - Oletusarvo",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 20
+}, {
+  "id" : "result_title",
+  "name" : "result_title",
+  "label" : "Tuloksen otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Arvioidut säästösi"
+}, {
+  "id" : "cta_text",
+  "name" : "cta_text",
+  "label" : "CTA-teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Varaa ilmainen sparraus"
+}, {
+  "id" : "cta_url",
+  "name" : "cta_url",
+  "label" : "CTA-linkki",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "display_width" : null,
+  "type" : "url",
+  "default" : {
+    "href" : "#"
+  }
+} ]

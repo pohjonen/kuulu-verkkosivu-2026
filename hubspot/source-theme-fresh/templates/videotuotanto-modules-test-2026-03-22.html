@@ -1,0 +1,130 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+  label: "Videotuotanto Modules Test 2026-03-22"
+-->
+{% extends "./layouts/base-cinematic.html" %}
+
+{% block body %}
+<div class="aurora-background"></div>
+<div class="cinematic-page has-aurora-bg">
+  <div class="grain-overlay"></div>
+
+  {% include "./partials/header-cinematic.html" %}
+  <div class="header-observer-sentinel"></div>
+
+  {% dnd_area "main" label="Videotuotanto testisisalto (moduulit)" %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_hero.module" label="01 – Hero-osio" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_early_bird.module" label="02 – Lomakeosio" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_problem_list.module" label="03 – Listaus (kuvake + teksti)" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_two_engines.module" label="04 – Korttipari" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_text_image.module" label="05 – Teksti + kuva" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_steps.module" label="06 – Askeleet / prosessi" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_metrics.module" label="07 – Mittarit + kuva" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_authority.module" label="08 – Tekstiosio (levea)" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_rich_pricing.module" label="09 – Hinnoittelu / FAQ" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_cta_cards.module" label="10 – Kuva-CTA-kortit" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_referenssit.module" label="11 – Referenssit / caset" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_contact_cta.module" label="12 – CTA-osio" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+  {% end_dnd_area %}
+
+  {% include "./partials/footer-cinematic.html" %}
+</div>
+{% endblock body %}

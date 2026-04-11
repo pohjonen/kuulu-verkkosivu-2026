@@ -1,0 +1,139 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Horizontal Scroll - Sideways Card Carousel"
+-->
+{#
+  Vaakasuuntainen scroll-osio
+
+  Käyttö:
+    {% set hs_tag = '// Palvelut' %}
+    {% set hs_title = 'Tutustu <span class="text-gradient-green">palveluihin</span>' %}
+    {% set hs_1_title = 'Videotuotanto' %}
+    {% set hs_1_text = 'Brändivideot, mainokset, lyhytvideot, animaatiot.' %}
+    {% set hs_1_icon = 'fas fa-video' %}
+    {% set hs_1_image = 'https://images.unsplash.com/photo...' %}
+    {% set hs_1_url = '/palvelut/videotuotanto' %}
+    {% set hs_2_title = 'Digimarkkinointi' %}
+    {% set hs_2_text = 'Google, Meta, LinkedIn — mainontaa ja sisältöjä.' %}
+    {% set hs_2_icon = 'fas fa-bullhorn' %}
+    {% set hs_2_url = '/palvelut/digimarkkinointi' %}
+    ... (max 8 korttia)
+    {% include './partials/horizontal-scroll.html' %}
+#}
+
+{% set h_tag = hs_tag|default('') %}
+{% set h_title = hs_title|default('') %}
+{% set h_desc = hs_description|default('') %}
+
+{% set cards = [] %}
+{% if hs_1_title|default('') %}{% set cards = cards + [{'title': hs_1_title, 'text': hs_1_text|default(''), 'icon': hs_1_icon|default(''), 'image': hs_1_image|default(''), 'url': hs_1_url|default('')}] %}{% endif %}
+{% if hs_2_title|default('') %}{% set cards = cards + [{'title': hs_2_title, 'text': hs_2_text|default(''), 'icon': hs_2_icon|default(''), 'image': hs_2_image|default(''), 'url': hs_2_url|default('')}] %}{% endif %}
+{% if hs_3_title|default('') %}{% set cards = cards + [{'title': hs_3_title, 'text': hs_3_text|default(''), 'icon': hs_3_icon|default(''), 'image': hs_3_image|default(''), 'url': hs_3_url|default('')}] %}{% endif %}
+{% if hs_4_title|default('') %}{% set cards = cards + [{'title': hs_4_title, 'text': hs_4_text|default(''), 'icon': hs_4_icon|default(''), 'image': hs_4_image|default(''), 'url': hs_4_url|default('')}] %}{% endif %}
+{% if hs_5_title|default('') %}{% set cards = cards + [{'title': hs_5_title, 'text': hs_5_text|default(''), 'icon': hs_5_icon|default(''), 'image': hs_5_image|default(''), 'url': hs_5_url|default('')}] %}{% endif %}
+{% if hs_6_title|default('') %}{% set cards = cards + [{'title': hs_6_title, 'text': hs_6_text|default(''), 'icon': hs_6_icon|default(''), 'image': hs_6_image|default(''), 'url': hs_6_url|default('')}] %}{% endif %}
+{% if hs_7_title|default('') %}{% set cards = cards + [{'title': hs_7_title, 'text': hs_7_text|default(''), 'icon': hs_7_icon|default(''), 'image': hs_7_image|default(''), 'url': hs_7_url|default('')}] %}{% endif %}
+{% if hs_8_title|default('') %}{% set cards = cards + [{'title': hs_8_title, 'text': hs_8_text|default(''), 'icon': hs_8_icon|default(''), 'image': hs_8_image|default(''), 'url': hs_8_url|default('')}] %}{% endif %}
+
+<section class="cinematic-section" style="overflow: hidden;">
+  <div class="container-cinematic">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        {% if h_tag %}<span class="section-tag">{{ h_tag }}</span>{% endif %}
+        {% if h_title %}<h2 class="section-header" style="margin-bottom: 0;">{{ h_title }}</h2>{% endif %}
+        {% if h_desc %}<p style="color: var(--cinematic-text-muted); max-width: 500px; margin-top: 0.75rem; font-size: 0.95rem; line-height: 1.6;">{{ h_desc }}</p>{% endif %}
+      </div>
+      {% if cards|length > 3 %}
+      <div class="hs-arrows">
+        <button class="hs-arrow" onclick="hsScroll(-1)" aria-label="Edellinen"><i class="fas fa-chevron-left"></i></button>
+        <button class="hs-arrow" onclick="hsScroll(1)" aria-label="Seuraava"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="hs-track-wrapper">
+    <div class="hs-track" id="hsTrack">
+      {% for card in cards %}
+      {% if card.url %}<a href="{{ card.url }}" class="hs-card" style="text-decoration: none;">{% else %}<div class="hs-card">{% endif %}
+        {% if card.image %}
+        <div class="hs-card-img">
+          <img src="{{ card.image }}" alt="{{ card.title }}" loading="lazy">
+        </div>
+        {% endif %}
+        <div class="hs-card-body">
+          {% if card.icon %}
+          <div class="hs-card-icon"><i class="{{ card.icon }}"></i></div>
+          {% endif %}
+          <h3 class="hs-card-title">{{ card.title }}</h3>
+          {% if card.text %}<p class="hs-card-text">{{ card.text }}</p>{% endif %}
+          {% if card.url %}<span class="hs-card-link">Lue lisää <i class="fas fa-arrow-right" style="font-size: 0.7rem;"></i></span>{% endif %}
+        </div>
+      {% if card.url %}</a>{% else %}</div>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.hs-track-wrapper { overflow: hidden; padding: 0 max(2rem, calc((100vw - 1200px)/2)); }
+.hs-track {
+  display: flex; gap: 1.25rem; overflow-x: auto;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; padding-bottom: 1rem;
+}
+.hs-track::-webkit-scrollbar { display: none; }
+.hs-card {
+  flex: 0 0 320px; scroll-snap-align: start;
+  background: transparent; border: none;
+  border-radius: 0; overflow: visible;
+  transition: transform 0.3s;
+  display: flex; flex-direction: column;
+}
+.hs-card:hover { transform: translateY(-4px); }
+.hs-card-img { height: 180px; overflow: hidden; border-radius: 16px; }
+.hs-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.hs-card:hover .hs-card-img img { transform: scale(1.05); }
+.hs-card-body { padding: 0.75rem 0; flex: 1; display: flex; flex-direction: column; }
+.hs-card-icon {
+  width: 38px; height: 38px; border-radius: 10px;
+  background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.15);
+  display: flex; align-items: center; justify-content: center; margin-bottom: 0.75rem;
+}
+.hs-card-icon i { font-size: 0.9rem; color: var(--cinematic-green); }
+.hs-card-title {
+  font-family: var(--font-display); color: var(--cinematic-text);
+  font-size: 1.05rem; font-weight: 700; margin: 0 0 0.4rem;
+}
+.hs-card-text { color: var(--cinematic-text-muted); font-size: 0.85rem; line-height: 1.6; margin: 0; flex: 1; }
+.hs-card-link {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  color: var(--cinematic-green); font-size: 0.82rem; font-weight: 600;
+  margin-top: 1rem;
+}
+.hs-arrows { display: flex; gap: 0.5rem; }
+.hs-arrow {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  color: var(--cinematic-text-muted); cursor: pointer; font-size: 0.85rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s;
+}
+.hs-arrow:hover { background: var(--cinematic-green); color: #0a0a0a; border-color: var(--cinematic-green); }
+
+@media (max-width: 640px) {
+  .hs-card { flex: 0 0 280px; }
+  .hs-card-img { height: 140px; }
+}
+</style>
+
+<script>
+function hsScroll(dir) {
+  var track = document.getElementById('hsTrack');
+  if (track) {
+    var cardW = track.querySelector('.hs-card').offsetWidth + 20;
+    track.scrollBy({ left: dir * cardW, behavior: 'smooth' });
+  }
+}
+</script>

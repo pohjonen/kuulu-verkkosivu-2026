@@ -1,0 +1,233 @@
+{
+  "name": "kuulu-website",
+  "label": "Kuulu2026 - pääteema",
+  "preview_path": "./templates/homepage-new.html",
+  "css_files": [
+    "css/design-tokens.css",
+    "css/cinematic.css",
+    "css/cinematic-main.css",
+    "css/kuulu-2025-brand.css",
+    "css/cinematic-responsive.css",
+    "css/accessibility-performance.css",
+    "css/module-fixes.css",
+    "css/theme-overrides.css",
+    "css/force-override.css"
+  ],
+  "js_files": [
+    "js/jquery-3.5.1.min.js",
+    "js/init.js",
+    "js/aurora-background.js",
+    "js/force-remove-wave.js",
+    "js/mobile-menu.js",
+    "js/main.js"
+  ],
+  "other_assets": [],
+  "smart_type": "NOT_SMART",
+  "is_available_for_new_content": true,
+  "templates": [
+    {
+      "path": "templates/homepage-modules.html",
+      "name": "homepage-modules.html",
+      "label": "Cinematic – Sivu"
+    },
+    {
+      "path": "templates/homepage-cinematic-v6.html",
+      "name": "homepage-cinematic-v6.html",
+      "label": "Etusivu – live (nykyinen kuulu.fi)"
+    },
+    {
+      "path": "templates/home.html",
+      "name": "home.html",
+      "label": "Yleissivu (DEV)"
+    },
+    {
+      "path": "templates/homepage-dev-2026-02-11.html",
+      "name": "homepage-dev-2026-02-11.html",
+      "label": "Etusivu DEV - 2026-02-11"
+    },
+    {
+      "path": "templates/koulutus-test-2026-02-11.html",
+      "name": "koulutus-test-2026-02-11.html",
+      "label": "Koulutus Test 2026-02-11"
+    },
+    {
+      "path": "templates/perjantaipulssi-test-2026-02-11.html",
+      "name": "perjantaipulssi-test-2026-02-11.html",
+      "label": "Perjantaipulssi Test 2026-02-11"
+    },
+    {
+      "path": "templates/digimarkkinointi-test-2026-02-11.html",
+      "name": "digimarkkinointi-test-2026-02-11.html",
+      "label": "Digimarkkinointi Test 2026-02-11"
+    },
+    {
+      "path": "templates/videotuotanto-test-2026-02-11.html",
+      "name": "videotuotanto-test-2026-02-11.html",
+      "label": "Videotuotanto Test 2026-02-11"
+    },
+    {
+      "path": "templates/videotuotanto-modules-test-2026-03-22.html",
+      "name": "videotuotanto-modules-test-2026-03-22.html",
+      "label": "Videotuotanto Modules Test 2026-03-22"
+    },
+    {
+      "path": "templates/referenssit-test-2026-02-12.html",
+      "name": "referenssit-test-2026-02-12.html",
+      "label": "Referenssit Test 2026-02-12"
+    },
+    {
+      "path": "templates/blog-test-2026-02-12.html",
+      "name": "blog-test-2026-02-12.html",
+      "label": "Blog Test 2026-02-12"
+    },
+    {
+      "path": "templates/yhteystiedot-test-2026-02-12.html",
+      "name": "yhteystiedot-test-2026-02-12.html",
+      "label": "Yhteystiedot Test 2026-02-12"
+    },
+    {
+      "path": "templates/homepage-new.html",
+      "name": "homepage-new.html",
+      "label": "Etusivu - Uusi (2026)"
+    },
+    {
+      "path": "templates/index.html",
+      "name": "index.html",
+      "label": "Etusivu (vanha)"
+    },
+    {
+      "path": "templates/person-profile.html",
+      "name": "person-profile.html",
+      "label": "Henkilöprofiili"
+    },
+    {
+      "path": "templates/team.html",
+      "name": "team.html",
+      "label": "Tiimi"
+    },
+    {
+      "path": "templates/video-production.html",
+      "name": "video-production.html",
+      "label": "Videotuotanto"
+    },
+    {
+      "path": "templates/copilotin-kiihdytyskaista-test-2026-02-13.html",
+      "name": "copilotin-kiihdytyskaista-test-2026-02-13.html",
+      "label": "Copilotin Kiihdytyskaista Test 2026-02-13"
+    },
+    {
+      "path": "templates/tekoalyn-mestarikurssi-test-2026-02-13.html",
+      "name": "tekoalyn-mestarikurssi-test-2026-02-13.html",
+      "label": "Tekoälyn Mestarikurssi Test 2026-02-13"
+    },
+    {
+      "path": "templates/tekoalyn-perjantaipulssi-test-2026-02-13.html",
+      "name": "tekoalyn-perjantaipulssi-test-2026-02-13.html",
+      "label": "Tekoälyn Perjantaipulssi Test 2026-02-13"
+    },
+    {
+      "path": "templates/brandays-ja-tarinankerronta-test-2026-02-13.html",
+      "name": "brandays-ja-tarinankerronta-test-2026-02-13.html",
+      "label": "Brändäys ja tarinankerronta Test 2026-02-13"
+    },
+    {
+      "path": "templates/sisaltopankki-test-2026-02-13.html",
+      "name": "sisaltopankki-test-2026-02-13.html",
+      "label": "Sisältöpankki Test 2026-02-13"
+    },
+    {
+      "path": "templates/tekoalykuvapankki-test-2026-02-13.html",
+      "name": "tekoalykuvapankki-test-2026-02-13.html",
+      "label": "Tekoälykuvapankki Test 2026-02-13"
+    },
+    {
+      "path": "templates/liidien-hankinta-test-2026-02-13.html",
+      "name": "liidien-hankinta-test-2026-02-13.html",
+      "label": "Liidien hankinta Test 2026-02-13"
+    },
+    {
+      "path": "templates/rekrymarkkinointi-test-2026-02-13.html",
+      "name": "rekrymarkkinointi-test-2026-02-13.html",
+      "label": "Rekrymarkkinointi Test 2026-02-13"
+    },
+    {
+      "path": "templates/energia-alan-markkinointi-test-2026-02-13.html",
+      "name": "energia-alan-markkinointi-test-2026-02-13.html",
+      "label": "Energia-alan markkinointi Test 2026-02-13"
+    },
+    {
+      "path": "templates/someauditointi-test-2026-02-13.html",
+      "name": "someauditointi-test-2026-02-13.html",
+      "label": "Someauditointi Test 2026-02-13"
+    },
+    {
+      "path": "templates/seo-analyysi-test-2026-02-13.html",
+      "name": "seo-analyysi-test-2026-02-13.html",
+      "label": "SEO Analyysi Test 2026-02-13"
+    },
+    {
+      "path": "templates/google-ads-test-2026-02-13.html",
+      "name": "google-ads-test-2026-02-13.html",
+      "label": "Google Ads Test 2026-02-13"
+    },
+    {
+      "path": "templates/kuulunautti-test-2026-02-13.html",
+      "name": "kuulunautti-test-2026-02-13.html",
+      "label": "Kuulunautti Test 2026-02-13"
+    },
+    {
+      "path": "templates/yritysvideot-test-2026-02-13.html",
+      "name": "yritysvideot-test-2026-02-13.html",
+      "label": "Yritysvideot Test 2026-02-13"
+    },
+    {
+      "path": "templates/animaatiot-test-2026-02-13.html",
+      "name": "animaatiot-test-2026-02-13.html",
+      "label": "Animaatiot Test 2026-02-13"
+    },
+    {
+      "path": "templates/brandivideot-test-2026-02-13.html",
+      "name": "brandivideot-test-2026-02-13.html",
+      "label": "Brändivideot Test 2026-02-13"
+    },
+    {
+      "path": "templates/mainosvideot-test-2026-02-13.html",
+      "name": "mainosvideot-test-2026-02-13.html",
+      "label": "Mainosvideot Test 2026-02-13"
+    },
+    {
+      "path": "templates/tv-mainosvideot-test-2026-02-13.html",
+      "name": "tv-mainosvideot-test-2026-02-13.html",
+      "label": "TV-mainosvideot Test 2026-02-13"
+    },
+    {
+      "path": "templates/yhdistys-ja-hankevideot-test-2026-02-13.html",
+      "name": "yhdistys-ja-hankevideot-test-2026-02-13.html",
+      "label": "Yhdistys- ja hankevideot Test 2026-02-13"
+    },
+    {
+      "path": "templates/gif-animaatiot-test-2026-02-13.html",
+      "name": "gif-animaatiot-test-2026-02-13.html",
+      "label": "Gif-animaatiot Test 2026-02-13"
+    },
+    {
+      "path": "templates/matkailuvideot-test-2026-02-13.html",
+      "name": "matkailuvideot-test-2026-02-13.html",
+      "label": "Matkailuvideot Test 2026-02-13"
+    },
+    {
+      "path": "templates/module-system-test.html",
+      "name": "module-system-test.html",
+      "label": "Module System Test (Partiaali-testi)"
+    }
+  ],
+  "author": {
+    "name": "Kuulu",
+    "email": "info@kuulu.fi",
+    "url": "https://kuulu.fi"
+  },
+  "version": "2.0.0",
+  "description": "Kuulu Theme 2026 - moderni ja responsiivinen HubSpot-teema digimarkkinointitoimistolle",
+  "documentation": "README.md",
+  "keywords": ["kuulu", "digimarkkinointi", "videotuotanto", "koulutus", "2026"]
+} 

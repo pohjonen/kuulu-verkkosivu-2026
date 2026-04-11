@@ -1,0 +1,219 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Otsikko tähän"
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Korostus (vihreä)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "heading_level",
+  "name" : "heading_level",
+  "label" : "Otsikkotaso",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "h2", "H2" ], [ "h3", "H3" ], [ "h4", "H4" ], [ "h5", "H5" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "h2"
+}, {
+  "id" : "columns",
+  "name" : "columns",
+  "label" : "Sisällön sarakkeet",
+  "help_text" : "Valitse kuinka moneen sarakkeeseen sisältö jaetaan. Käytä 2–3 saraketta kun haluat esittää sisältöä rinnakkain.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "none",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "radio",
+  "choices" : [ [ "1", "1 sarake" ], [ "2", "2 saraketta" ], [ "3", "3 saraketta" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "1"
+}, {
+  "id" : "content_body",
+  "name" : "content_body",
+  "label" : "Sisältö (rich text)",
+  "help_text" : "Pääsisältö. Jos valitset 2–3 saraketta, tämä on 1. sarake.",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "<p>Kirjoita sisältö tähän.</p>"
+}, {
+  "id" : "content_body_2",
+  "name" : "content_body_2",
+  "label" : "2. sarake (rich text)",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "columns",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "2|3",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : ""
+}, {
+  "id" : "content_body_3",
+  "name" : "content_body_3",
+  "label" : "3. sarake (rich text)",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "columns",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "3",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : ""
+}, {
+  "id" : "max_width",
+  "name" : "max_width",
+  "label" : "Maksimileveys (px)",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 800
+}, {
+  "id" : "media_type",
+  "name" : "media_type",
+  "label" : "Media (valinnainen)",
+  "help_text" : "Lisää halutessasi kuva tai video sisällön viereen.",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "none", "Ei mediaa" ], [ "image", "Kuva" ], [ "video_url", "Video (URL)" ], [ "video_file", "Video (tiedosto)" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "none"
+}, {
+  "id" : "media_position",
+  "name" : "media_position",
+  "label" : "Median sijainti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image|video_url|video_file",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null
+  },
+  "display" : "radio",
+  "choices" : [ [ "right", "Oikealla" ], [ "left", "Vasemmalla" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "right"
+}, {
+  "id" : "media_image",
+  "name" : "media_image",
+  "label" : "Kuva",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : ""
+  }
+}, {
+  "id" : "media_video_url",
+  "name" : "media_video_url",
+  "label" : "Videon URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_url",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "picker" : "file",
+  "id" : "media_video_file",
+  "name" : "media_video_file",
+  "label" : "Videotiedosto",
+  "help_text" : "Lataa tai valitse videotiedosto tiedostohallinnasta.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_file",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "file"
+} ]

@@ -1,0 +1,328 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Hinnoittelu"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Valitse "
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "sopiva paketti"
+}, {
+  "id" : "intro_text",
+  "name" : "intro_text",
+  "label" : "Ingressi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Läpinäkyvä hinnoittelu, ei yllätyksiä. Voit irtisanoa milloin vain."
+}, {
+  "id" : "header_media_type",
+  "name" : "header_media_type",
+  "label" : "Hero-media tyyppi",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "none", "Ei mediaa" ], [ "image", "Kuva" ], [ "video", "Video" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "none"
+}, {
+  "id" : "header_image",
+  "name" : "header_image",
+  "label" : "Hero-kuva",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "header_media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "header_video_url",
+  "name" : "header_video_url",
+  "label" : "Video URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "header_media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text"
+}, {
+  "id" : "tier_1_name",
+  "name" : "tier_1_name",
+  "label" : "Taso 1 – nimi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Starter"
+}, {
+  "id" : "tier_1_price",
+  "name" : "tier_1_price",
+  "label" : "Taso 1 – hinta",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "990€"
+}, {
+  "id" : "tier_1_period",
+  "name" : "tier_1_period",
+  "label" : "Taso 1 – jakso",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "/kk"
+}, {
+  "id" : "tier_1_description",
+  "name" : "tier_1_description",
+  "label" : "Taso 1 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Startti"
+}, {
+  "id" : "tier_1_features",
+  "name" : "tier_1_features",
+  "label" : "Taso 1 – ominaisuudet (yksi per rivi)",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "3-5 sisältöä/kk\nPerusstrategia\nKuukausiraportit"
+}, {
+  "id" : "tier_1_cta_text",
+  "name" : "tier_1_cta_text",
+  "label" : "Taso 1 – CTA",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Aloita"
+}, {
+  "id" : "tier_1_cta_url",
+  "name" : "tier_1_cta_url",
+  "label" : "Taso 1 – CTA linkki",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "#"
+}, {
+  "id" : "tier_2_name",
+  "name" : "tier_2_name",
+  "label" : "Taso 2 – nimi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Pro"
+}, {
+  "id" : "tier_2_price",
+  "name" : "tier_2_price",
+  "label" : "Taso 2 – hinta",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "2490€"
+}, {
+  "id" : "tier_2_period",
+  "name" : "tier_2_period",
+  "label" : "Taso 2 – jakso",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "/kk"
+}, {
+  "id" : "tier_2_description",
+  "name" : "tier_2_description",
+  "label" : "Taso 2 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Suosituin valinta"
+}, {
+  "id" : "tier_2_highlighted",
+  "name" : "tier_2_highlighted",
+  "label" : "Taso 2 – korostettu",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "tier_2_badge",
+  "name" : "tier_2_badge",
+  "label" : "Taso 2 – badge-teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Suosituin"
+}, {
+  "id" : "tier_2_features",
+  "name" : "tier_2_features",
+  "label" : "Taso 2 – ominaisuudet (yksi per rivi)",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "8-12 sisältöä/kk\nTäysi strategia\nReaaliaikainen dashboard\nOma tiimi"
+}, {
+  "id" : "tier_2_cta_text",
+  "name" : "tier_2_cta_text",
+  "label" : "Taso 2 – CTA",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "VARAA SPARRAUS"
+}, {
+  "id" : "tier_2_cta_url",
+  "name" : "tier_2_cta_url",
+  "label" : "Taso 2 – CTA linkki",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "#"
+}, {
+  "id" : "tier_3_name",
+  "name" : "tier_3_name",
+  "label" : "Taso 3 – nimi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Enterprise"
+}, {
+  "id" : "tier_3_price",
+  "name" : "tier_3_price",
+  "label" : "Taso 3 – hinta",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Räätälöity"
+}, {
+  "id" : "tier_3_period",
+  "name" : "tier_3_period",
+  "label" : "Taso 3 – jakso",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "tier_3_description",
+  "name" : "tier_3_description",
+  "label" : "Taso 3 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Täyden skaalan tuotanto"
+}, {
+  "id" : "tier_3_features",
+  "name" : "tier_3_features",
+  "label" : "Taso 3 – ominaisuudet (yksi per rivi)",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "Rajaton sisältö\nMulti-brand strategia\nDedicated tiimi\nPriority-tuki"
+}, {
+  "id" : "tier_3_cta_text",
+  "name" : "tier_3_cta_text",
+  "label" : "Taso 3 – CTA",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "OTA YHTEYTTÄ"
+}, {
+  "id" : "tier_3_cta_url",
+  "name" : "tier_3_cta_url",
+  "label" : "Taso 3 – CTA linkki",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "#"
+} ]

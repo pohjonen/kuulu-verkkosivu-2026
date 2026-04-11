@@ -1,0 +1,40 @@
+{
+  "module": "process-steps-v2",
+  "module_key": "process-steps-v2",
+  "category": "system",
+  "used_on": [
+    "homepage-v2",
+    "service-landing-v2",
+    "training-landing-v2",
+    "video-service-landing-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "steps"
+  ],
+  "optional_fields": [
+    "intro_text"
+  ],
+  "build_wave": 2,
+  "depends_on": [
+    "repeater-step-logic-v2",
+    "heading-hierarchy-v2"
+  ],
+  "field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "step_min": 3,
+    "step_max": 6,
+    "auto_numbering": true
+  }
+}

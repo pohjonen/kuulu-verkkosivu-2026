@@ -1,0 +1,48 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<section class="case-study-showcase">
+  <div class="container">
+    {% if module.section_title %}
+      <div class="section-header">
+        <h2 class="section-title">{{ module.section_title }}</h2>
+        {% if module.section_subtitle %}
+          <p class="section-subtitle">{{ module.section_subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+    
+    <div class="case-studies-container">
+      <div class="case-study-card">
+        {% if module.case_study_1_category %}
+          <span class="case-category">{{ module.case_study_1_category }}</span>
+        {% endif %}
+        {% if module.case_study_1_title %}
+          <h3 class="case-title">{{ module.case_study_1_title }}</h3>
+        {% endif %}
+        {% if module.case_study_1_description %}
+          <p class="case-description">{{ module.case_study_1_description }}</p>
+        {% endif %}
+        {% if module.case_study_1_link %}
+          <a href="{{ module.case_study_1_link }}" class="case-link">Lue case study</a>
+        {% endif %}
+      </div>
+      
+      <div class="case-study-card">
+        {% if module.case_study_2_category %}
+          <span class="case-category">{{ module.case_study_2_category }}</span>
+        {% endif %}
+        {% if module.case_study_2_title %}
+          <h3 class="case-title">{{ module.case_study_2_title }}</h3>
+        {% endif %}
+        {% if module.case_study_2_description %}
+          <p class="case-description">{{ module.case_study_2_description }}</p>
+        {% endif %}
+        {% if module.case_study_2_link %}
+          <a href="{{ module.case_study_2_link }}" class="case-link">Lue case study</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section> 

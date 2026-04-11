@@ -1,0 +1,88 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% set form_target = module.form_target_id|default("hs-form-koulutus") %}
+
+<style>
+.koulutus-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+@media (max-width: 768px) { .koulutus-form-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="cinematic-section section-with-blobs gradient-section-tl grain-section" id="ota-yhteytta">
+  <div class="glow-orb" style="width: 800px; height: 800px; top: -300px; left: 50%; transform: translateX(-50%);"></div>
+  <div class="glow-orb-subtle" style="width: 400px; height: 400px; bottom: 0; left: -100px;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="koulutus-form-grid">
+
+      <!-- Vasen sarake: teksti + tilastot + edustaja -->
+      <div>
+        <span class="section-tag">{{ module.section_tag }}</span>
+        <h2 class="section-header">{{ module.headline }} <span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+        {% if module.description_1 %}<p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1rem;">{{ module.description_1 }}</p>{% endif %}
+        {% if module.description_2 %}<p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1rem;">{{ module.description_2 }}</p>{% endif %}
+        {% if module.description_3 %}<p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">{{ module.description_3 }}</p>{% endif %}
+
+        <!-- Tilastokortti -->
+        {% if module.stat_1_value or module.stat_2_value or module.stat_3_value %}
+        <div class="hero-glass-box" style="padding: 1.5rem; margin-bottom: 1.5rem;">
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center;">
+            {% if module.stat_1_value %}
+            <div>
+              <span style="font-size: 1.8rem; font-weight: 700; font-family: var(--font-display);" class="text-gradient-green">{{ module.stat_1_value }}</span>
+              <p style="color: var(--cinematic-text-muted); font-size: 0.8rem; margin-top: 0.25rem;">{{ module.stat_1_label }}</p>
+            </div>
+            {% endif %}
+            {% if module.stat_2_value %}
+            <div>
+              <span style="font-size: 1.8rem; font-weight: 700; font-family: var(--font-display);" class="text-gradient-green">{{ module.stat_2_value }}</span>
+              <p style="color: var(--cinematic-text-muted); font-size: 0.8rem; margin-top: 0.25rem;">{{ module.stat_2_label }}</p>
+            </div>
+            {% endif %}
+            {% if module.stat_3_value %}
+            <div>
+              <span style="font-size: 1.8rem; font-weight: 700; font-family: var(--font-display);" class="text-gradient-green">{{ module.stat_3_value }}</span>
+              <p style="color: var(--cinematic-text-muted); font-size: 0.8rem; margin-top: 0.25rem;">{{ module.stat_3_label }}</p>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+
+        <!-- Edustajakortti -->
+        <div class="hero-glass-box" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+          {% if module.rep_image and module.rep_image.src %}
+          <img src="{{ module.rep_image.src }}" alt="{{ module.rep_image.alt|default(module.rep_name) }}" style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid rgba(0,255,135,0.15);">
+          {% else %}
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <i class="fas fa-user" style="font-size: 1.2rem; color: var(--cinematic-green);"></i>
+          </div>
+          {% endif %}
+          <div>
+            <p style="color: var(--cinematic-text); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.15rem;">{{ module.rep_name }}</p>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.85rem;">{{ module.rep_subtitle }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oikea sarake: HubSpot-lomake -->
+      <div>
+        <div class="hero-glass-box" style="padding: 2rem;">
+          <div id="{{ form_target }}"></div>
+          <script charset="utf-8" src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "{{ module.form_region|default('eu1') }}",
+              portalId: "{{ module.form_portal_id|default('450584') }}",
+              formId: "{{ module.form_id|default('805f07bd-a002-45f0-9aa5-af329327fcba') }}",
+              target: "#{{ form_target }}",
+              css: "",
+              inlineMessage: "{{ module.form_success_message|default('<p><strong>Hei, kiitokset yhteydenotostasi, olemme sinuun yhteydessä niin pian kuin mahdollista!</strong></p>')|escape }}"
+            });
+          </script>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

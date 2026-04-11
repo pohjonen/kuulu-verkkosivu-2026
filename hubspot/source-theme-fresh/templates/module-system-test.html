@@ -1,0 +1,404 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Module System Test (Partiaali-testi)
+  screenshotPath: ../images/template-previews/ThemeChallengeHome.png
+-->
+<!-- Updated: 2026-02-15T17:00:00 - 27 modules v3 -->
+{% extends './layouts/base-cinematic.html' %}
+
+{% block body %}
+{# HubSpot validation: {{ standard_header_includes }} {{ standard_footer_includes }} #}
+{# ============================================== #}
+{# AURORA OVERLAY (partial) #}
+{# ============================================== #}
+{% include './partials/aurora-overlay.html' %}
+
+  {# ============================================== #}
+  {# NOTIFICATION BAR (partial) - UUSI #}
+  {# ============================================== #}
+  {% set notif_text = 'Uusi koulutus: Tekoälyn Mestarikurssi alkaa maaliskuussa 2026!' %}
+  {% set notif_url = '/koulutus/tekoalyn-mestarikurssi' %}
+  {% set notif_btn_text = 'Ilmoittaudu' %}
+  {% set notif_style = 'green' %}
+  {% set notif_dismissable = true %}
+  {% include './partials/notification-bar.html' %}
+
+  {# ============================================== #}
+  {# HEADER (partial) #}
+  {# ============================================== #}
+  {% include './partials/header-cinematic.html' %}
+
+  {# ============================================== #}
+  {# HERO SECTION (partial) - UUSI #}
+  {# ============================================== #}
+  {% set hero_tag = '// MODUULISYSTEEMI TESTI v3' %}
+  {% set hero_title = '<span class="text-gradient-green">27 Partiaalimoduulia</span>' %}
+  {% set hero_subtitle = 'Tämä sivu testaa kaikki cinematic-teeman partiaalimoduulit. Yhteensä 27 moduulia – 20 alkuperäistä + 7 uutta.' %}
+  {% set hero_btn_text = 'Katso moduulikartta' %}
+  {% set hero_btn_url = '#moduulikartta' %}
+  {% set hero_btn2_text = 'Testaa lomake' %}
+  {% set hero_btn2_url = '#ota-yhteytta' %}
+  {% set hero_badge = 'Full Stack' %}
+  {% set hero_min_height = '70vh' %}
+  {% include './partials/hero-section.html' %}
+
+  {# ============================================== #}
+  {# MODUULIKARTTA #}
+  {# ============================================== #}
+  <section class="cinematic-section" id="moduulikartta">
+    <div class="container-cinematic">
+      <span class="section-tag">// Moduulirakenne</span>
+      <h2 class="section-header">K&auml;yt&ouml;ss&auml; <span class="text-gradient-green">27 partiaalimoduulia</span></h2>
+      <p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem; max-width: 700px;">
+        Alla lista kaikista partiaaleista. Jokainen on erillinen tiedosto, jota p&auml;ivitet&auml;&auml;n yhdest&auml; paikasta.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem;">
+        {# Perusrakenne #}
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">1.</span> header-cinematic <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Mega menu</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">2.</span> footer-cinematic <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Alatunniste</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">3.</span> aurora-overlay <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Taustatehoste</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">4.</span> contact-form <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Yhteydenotto</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">5.</span> scripts-cinematic <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; JS-kokoelma</span></div>
+
+        {# Sisältömoduulit #}
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">6.</span> stats-section <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Tilastot</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">7.</span> service-cards <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Kortit</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">8.</span> faq-accordion <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; UKK</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">9.</span> process-steps <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Vaiheet</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">10.</span> testimonials <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Palautteet</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">11.</span> client-logos <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Logot</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">12.</span> cta-banner <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; CTA</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">13.</span> pricing-section <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Hinnoittelu</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">14.</span> blog-grid <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Blogilistaus</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">15.</span> blog-topics <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Aihefiltterit</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">16.</span> blog-pagination <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Sivutus</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">17.</span> newsletter-cta <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Uutiskirje</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">18.</span> reference-grid <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Referenssit</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">19.</span> team-grid <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Tiimi</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem;"><span style="color: var(--cinematic-green); font-weight: 700;">20.</span> footer-module <span style="color: var(--cinematic-text-muted); font-size: 0.8rem;">&ndash; Footer mod</span></div>
+
+        {# 7 UUTTA moduulia #}
+        <div class="hero-glass-box" style="padding: 1.25rem; border: 1px solid rgba(0,255,135,0.3);"><span style="color: var(--cinematic-green); font-weight: 700;">21.</span> hero-section <span style="color: var(--cinematic-green); font-size: 0.75rem; font-weight: 600;">UUSI</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem; border: 1px solid rgba(0,255,135,0.3);"><span style="color: var(--cinematic-green); font-weight: 700;">22.</span> two-column-content <span style="color: var(--cinematic-green); font-size: 0.75rem; font-weight: 600;">UUSI</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem; border: 1px solid rgba(0,255,135,0.3);"><span style="color: var(--cinematic-green); font-weight: 700;">23.</span> icon-text-grid <span style="color: var(--cinematic-green); font-size: 0.75rem; font-weight: 600;">UUSI</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem; border: 1px solid rgba(0,255,135,0.3);"><span style="color: var(--cinematic-green); font-weight: 700;">24.</span> video-embed <span style="color: var(--cinematic-green); font-size: 0.75rem; font-weight: 600;">UUSI</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem; border: 1px solid rgba(0,255,135,0.3);"><span style="color: var(--cinematic-green); font-weight: 700;">25.</span> spacing-divider <span style="color: var(--cinematic-green); font-size: 0.75rem; font-weight: 600;">UUSI</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem; border: 1px solid rgba(0,255,135,0.3);"><span style="color: var(--cinematic-green); font-weight: 700;">26.</span> notification-bar <span style="color: var(--cinematic-green); font-size: 0.75rem; font-weight: 600;">UUSI</span></div>
+        <div class="hero-glass-box" style="padding: 1.25rem; border: 1px solid rgba(0,255,135,0.3);"><span style="color: var(--cinematic-green); font-weight: 700;">27.</span> scroll-animations <span style="color: var(--cinematic-green); font-size: 0.75rem; font-weight: 600;">UUSI</span></div>
+      </div>
+    </div>
+  </section>
+
+  {# ============================================== #}
+  {# SPACING DIVIDER - gradient (partial) - UUSI #}
+  {# ============================================== #}
+  {% set divider_style = 'gradient' %}
+  {% set divider_glow = true %}
+  {% include './partials/spacing-divider.html' %}
+
+  {# ============================================== #}
+  {# TWO COLUMN CONTENT (partial) - UUSI #}
+  {# ============================================== #}
+  {% set twocol_tag = '// Esimerkki: Kaksipalstainen' %}
+  {% set twocol_title = 'Two Column Content <span class="text-gradient-green">-moduuli</span>' %}
+  {% set twocol_text = '<p>Kaksipalstainen asettelu kuvalla ja tekstill&auml;. Sopii palvelukuvauksiin, tiimiesittelyihin ja sis&auml;lt&ouml;osioihin.</p><p style="margin-top: 1rem;">Kuvan ja tekstin j&auml;rjestys on flipattavissa <code>twocol_reverse</code> -parametrilla.</p>' %}
+  {% set twocol_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set twocol_image_alt = 'Kuulu logo' %}
+  {% set twocol_btn_text = 'Lue lis&auml;&auml;' %}
+  {% set twocol_btn_url = '#' %}
+  {% include './partials/two-column-content.html' %}
+
+  {# ============================================== #}
+  {# TWO COLUMN CONTENT - reversed + dark bg #}
+  {# ============================================== #}
+  {% set twocol_tag = '// Esimerkki: Käännetty versio' %}
+  {% set twocol_title = 'Flipattava <span class="text-gradient-green">asettelu</span>' %}
+  {% set twocol_text = '<p>Sama moduuli, mutta kuva oikealla ja teksti vasemmalla. Tumma tausta p&auml;&auml;ll&auml;.</p>' %}
+  {% set twocol_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set twocol_reverse = true %}
+  {% set twocol_dark_bg = true %}
+  {% set twocol_btn_text = '' %}
+  {% include './partials/two-column-content.html' %}
+
+  {# ============================================== #}
+  {# ICON TEXT GRID (partial) - UUSI #}
+  {# ============================================== #}
+  {% set it_tag = '// Esimerkki: Pikahyödyt' %}
+  {% set it_title = 'Icon Text Grid <span class="text-gradient-green">-moduuli</span>' %}
+  {% set it_columns = 3 %}
+  {% set it_1_icon = 'fas fa-rocket' %}
+  {% set it_1_title = 'Nopea k&auml;ynnistys' %}
+  {% set it_1_text = 'Aloitamme yhteisty&ouml;n 48 tunnissa.' %}
+  {% set it_2_icon = 'fas fa-shield-alt' %}
+  {% set it_2_title = 'Luotettava kumppani' %}
+  {% set it_2_text = '15+ vuoden kokemus digimarkkinoinnista.' %}
+  {% set it_3_icon = 'fas fa-chart-line' %}
+  {% set it_3_title = 'Mitattavat tulokset' %}
+  {% set it_3_text = 'Kaikki optimoinnit perustuvat dataan.' %}
+  {% set it_4_icon = 'fas fa-users' %}
+  {% set it_4_title = 'Omistautunut tiimi' %}
+  {% set it_4_text = '20+ asiantuntijaa k&auml;yt&ouml;ss&auml;si.' %}
+  {% set it_5_icon = 'fas fa-headset' %}
+  {% set it_5_title = 'Jatkuva tuki' %}
+  {% set it_5_text = 'Oma yhteyshenkilö jokaiselle asiakkaalle.' %}
+  {% set it_6_icon = 'fas fa-lightbulb' %}
+  {% set it_6_title = 'Innovaatiot' %}
+  {% set it_6_text = 'Hy&ouml;dynn&auml;mme uusimmat teknologiat.' %}
+  {% include './partials/icon-text-grid.html' %}
+
+  {# ============================================== #}
+  {# STATS SECTION (partial) #}
+  {# ============================================== #}
+  {% include './partials/stats-section.html' %}
+
+  {# ============================================== #}
+  {# SERVICE CARDS (partial) #}
+  {# ============================================== #}
+  {% set cards_tag = '// Esimerkkipalvelut' %}
+  {% set cards_title = 'Service Cards <span class="text-gradient-green">-moduuli</span>' %}
+  {% set cards_description = 'Palvelukortit gridiss&auml;. Jokaisella sivulla on oma sis&auml;lt&ouml;ns&auml;.' %}
+  {% set card_1_icon = 'fas fa-bullhorn' %}
+  {% set card_1_title = 'Br&auml;nd&auml;ys' %}
+  {% set card_1_text = 'Rakennamme br&auml;nditarinan, joka erottuu kilpailijoista.' %}
+  {% set card_2_icon = 'fas fa-chart-line' %}
+  {% set card_2_title = 'Analytiikka' %}
+  {% set card_2_text = 'Mittaamme ja optimoimme tuloksia dataohjautuvasti.' %}
+  {% set card_3_icon = 'fas fa-video' %}
+  {% set card_3_title = 'Videotuotanto' %}
+  {% set card_3_text = 'Ammattimaista videosis&auml;lt&ouml;&auml; kaikille kanaville.' %}
+  {% include './partials/service-cards.html' %}
+
+  {# ============================================== #}
+  {# SPACING DIVIDER - dots #}
+  {# ============================================== #}
+  {% set divider_style = 'dots' %}
+  {% set divider_glow = false %}
+  {% set divider_height = '2rem' %}
+  {% include './partials/spacing-divider.html' %}
+
+  {# ============================================== #}
+  {# PROCESS STEPS (partial) #}
+  {# ============================================== #}
+  {% set process_tag = '// Esimerkki: Prosessivaiheet' %}
+  {% set process_title = 'N&auml;in <span class="text-gradient-green">yhteisty&ouml; etenee</span>' %}
+  {% set step_1_title = 'Kartoitus' %}
+  {% set step_1_text = 'Selvit&auml;mme tavoitteet ja kohderyhm&auml;n.' %}
+  {% set step_2_title = 'Suunnittelu' %}
+  {% set step_2_text = 'Rakennamme strategian ja sis&auml;lt&ouml;suunnitelman.' %}
+  {% set step_3_title = 'Toteutus' %}
+  {% set step_3_text = 'Tuotamme sis&auml;ll&ouml;t ja kampanjat.' %}
+  {% set step_4_title = 'Optimointi' %}
+  {% set step_4_text = 'Seuraamme tuloksia ja hienos&auml;&auml;d&auml;mme.' %}
+  {% include './partials/process-steps.html' %}
+
+  {# ============================================== #}
+  {# VIDEO EMBED (partial) - UUSI #}
+  {# ============================================== #}
+  {% set video_tag = '// Esimerkki: Video' %}
+  {% set video_title = 'Video Embed <span class="text-gradient-green">-moduuli</span>' %}
+  {% set video_description = 'YouTube, Vimeo tai oma video. Responsiivinen 16:9 upotus.' %}
+  {% set video_url = 'https://www.youtube.com/embed/dQw4w9WgXcQ' %}
+  {% set video_dark_bg = true %}
+  {% include './partials/video-embed.html' %}
+
+  {# ============================================== #}
+  {# TESTIMONIALS (partial) #}
+  {# ============================================== #}
+  {% set testimonials_tag = '// Esimerkki: Palautteet' %}
+  {% set testimonials_title = 'Testimonials <span class="text-gradient-green">-moduuli</span>' %}
+  {% set t1_quote = 'Kuulun tiimi ylitti kaikki odotuksemme. Videotuotanto oli ammattitaitoista ja lopputulos upea.' %}
+  {% set t1_company = 'Oulun Energia' %}
+  {% set t1_detail = 'Videotuotanto' %}
+  {% set t2_quote = 'Koulutus avasi silm&auml;t tekoälyn mahdollisuuksille.' %}
+  {% set t2_company = 'Pohjolan Voima' %}
+  {% set t2_detail = 'Koulutus' %}
+  {% set t3_quote = 'Digimarkkinoinnin tulokset paranivat merkitt&auml;v&auml;sti.' %}
+  {% set t3_company = 'Nordic Koivu' %}
+  {% set t3_detail = 'Digimarkkinointi' %}
+  {% include './partials/testimonials.html' %}
+
+  {# ============================================== #}
+  {# CLIENT LOGOS (partial) #}
+  {# ============================================== #}
+  {% set logos_tag = '// Esimerkki: Asiakaslogot' %}
+  {% set logos_title = 'Client Logos <span class="text-gradient-green">-moduuli</span>' %}
+  {% set logo_1_src = 'https://www.kuulu.fi/hs-fs/hubfs/Kuulu_logo_RGB-4.png?width=100' %}
+  {% set logo_1_alt = 'Kuulu' %}
+  {% set logo_2_src = 'https://www.kuulu.fi/hs-fs/hubfs/Kuulu_logo_RGB-4.png?width=100' %}
+  {% set logo_2_alt = 'Kuulu 2' %}
+  {% set logo_3_src = 'https://www.kuulu.fi/hs-fs/hubfs/Kuulu_logo_RGB-4.png?width=100' %}
+  {% set logo_3_alt = 'Kuulu 3' %}
+  {% include './partials/client-logos.html' %}
+
+  {# ============================================== #}
+  {# SPACING DIVIDER - line #}
+  {# ============================================== #}
+  {% set divider_style = 'line' %}
+  {% set divider_glow = false %}
+  {% set divider_height = '3rem' %}
+  {% include './partials/spacing-divider.html' %}
+
+  {# ============================================== #}
+  {# PRICING (partial) #}
+  {# ============================================== #}
+  {% set pricing_tag = '// Esimerkki: Hinnoittelu' %}
+  {% set pricing_title = 'Pricing Section <span class="text-gradient-green">-moduuli</span>' %}
+  {% set pricing_description = 'Hinnoittelukortit parametreilla.' %}
+  {% set price_1_title = 'Perus' %}
+  {% set price_1_amount = '500 &euro;' %}
+  {% set price_1_unit = '/ kk' %}
+  {% set price_2_title = 'Pro' %}
+  {% set price_2_amount = '1 200 &euro;' %}
+  {% set price_2_unit = '/ kk' %}
+  {% set price_2_highlight = true %}
+  {% set price_3_title = 'Enterprise' %}
+  {% set price_3_amount = 'Kysy tarjous' %}
+  {% set pricing_footer = 'Hintoihin lis&auml;t&auml;&auml;n arvonlis&auml;vero 25,5 %.' %}
+  {% include './partials/pricing-section.html' %}
+
+  {# ============================================== #}
+  {# FAQ ACCORDION (partial) #}
+  {# ============================================== #}
+  {% set faq_tag = '// Esimerkki: UKK' %}
+  {% set faq_title = 'FAQ Accordion <span class="text-gradient-green">-moduuli</span>' %}
+  {% set faq_1_q = 'Miten partiaalimoduulit toimivat?' %}
+  {% set faq_1_a = 'Jokainen moduuli on erillinen HTML-tiedosto, joka ladataan include-komennolla. Parametrit asetetaan set-komennoilla ennen include-kutsua.' %}
+  {% set faq_2_q = 'Kuinka monta parametria moduuleilla voi olla?' %}
+  {% set faq_2_a = 'Ei rajoitusta, mutta kaikilla on j&auml;rkev&auml;t oletusarvot.' %}
+  {% set faq_3_q = 'Miten moduuleja p&auml;ivitet&auml;&auml;n?' %}
+  {% set faq_3_a = 'Muokkaat yht&auml; tiedostoa partials-kansiossa, lataat HubSpotiin, ja kaikki sivut p&auml;ivittyv&auml;t automaattisesti.' %}
+  {% include './partials/faq-accordion.html' %}
+
+  {# ============================================== #}
+  {# CTA BANNER (partial) #}
+  {# ============================================== #}
+  {% set cta_tag = '// Esimerkki: CTA' %}
+  {% set cta_title = 'CTA Banner <span class="text-gradient-green">-moduuli</span>' %}
+  {% set cta_description = 'Toimintakehotusbanneri kahdella painikkeella. Sopii sivun loppuun tai keskelle.' %}
+  {% set cta_button_text = 'Ota yhteytt&auml;' %}
+  {% set cta_button_url = '#ota-yhteytta' %}
+  {% set cta_secondary_text = 'Katso referenssit' %}
+  {% set cta_secondary_url = 'https://www.kuulu.fi/case-studies' %}
+  {% include './partials/cta-banner.html' %}
+
+  {# ============================================== #}
+  {# BLOG TOPICS (partial) #}
+  {# ============================================== #}
+  {% set topics_title = 'Blog Topics -moduuli' %}
+  {% set topic_1_label = 'Kaikki' %}
+  {% set topic_1_url = '#' %}
+  {% set topic_1_active = true %}
+  {% set topic_2_label = 'Tekoäly' %}
+  {% set topic_2_url = '#' %}
+  {% set topic_3_label = 'Some' %}
+  {% set topic_3_url = '#' %}
+  {% set topic_4_label = 'SEO' %}
+  {% set topic_4_url = '#' %}
+  {% set topic_5_label = 'Video' %}
+  {% set topic_5_url = '#' %}
+  {% include './partials/blog-topics.html' %}
+
+  {# ============================================== #}
+  {# BLOG GRID (partial) #}
+  {# ============================================== #}
+  {% set blog_grid_tag = '// Esimerkki: Blogilistaus' %}
+  {% set blog_grid_title = 'Blog Grid <span class="text-gradient-green">-moduuli</span>' %}
+  {% set blog_1_url = 'https://blog.kuulu.fi' %}
+  {% set blog_1_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set blog_1_title = 'Esimerkkiartikkeli: Tekoäly markkinoinnissa 2026' %}
+  {% set blog_1_excerpt = 'Miten tekoäly muuttaa digimarkkinointia t&auml;n&auml; vuonna?' %}
+  {% set blog_1_author = 'Jonna Muurinen' %}
+  {% set blog_1_date = '1.2.2026' %}
+  {% set blog_2_url = 'https://blog.kuulu.fi' %}
+  {% set blog_2_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set blog_2_title = 'Esimerkkiartikkeli: Copilot yrityskaytossa' %}
+  {% set blog_2_excerpt = 'Miten Microsoft 365 Copilot tehostaa tiimity&ouml;skentely&auml;?' %}
+  {% set blog_2_author = 'Ville Pohjonen' %}
+  {% set blog_2_date = '28.1.2026' %}
+  {% set blog_3_url = 'https://blog.kuulu.fi' %}
+  {% set blog_3_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set blog_3_title = 'Esimerkkiartikkeli: Videomarkkinoinnin trendit' %}
+  {% set blog_3_excerpt = 'Lyhytvideot jatkavat dominointia somekanavissa.' %}
+  {% set blog_3_author = 'Kuulun tiimi' %}
+  {% set blog_3_date = '20.1.2026' %}
+  {% include './partials/blog-grid.html' %}
+
+  {# ============================================== #}
+  {# BLOG PAGINATION (partial) #}
+  {# ============================================== #}
+  {% set current_page = 1 %}
+  {% set total_pages = 5 %}
+  {% set base_url = '/blogi' %}
+  {% include './partials/blog-pagination.html' %}
+
+  {# ============================================== #}
+  {# REFERENCE GRID (partial) #}
+  {# ============================================== #}
+  {% set ref_tag = '// Esimerkki: Referenssit' %}
+  {% set ref_title = 'Reference Grid <span class="text-gradient-green">-moduuli</span>' %}
+  {% set ref_1_url = '#' %}
+  {% set ref_1_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set ref_1_title = 'Esimerkkicase: Featured (koko leveys)' %}
+  {% set ref_1_size = 'featured' %}
+  {% set ref_2_url = '#' %}
+  {% set ref_2_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set ref_2_title = 'Esimerkkicase: Half 1' %}
+  {% set ref_2_size = 'half' %}
+  {% set ref_3_url = '#' %}
+  {% set ref_3_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set ref_3_title = 'Esimerkkicase: Half 2' %}
+  {% set ref_3_size = 'half' %}
+  {% include './partials/reference-grid.html' %}
+
+  {# ============================================== #}
+  {# TEAM GRID (partial) #}
+  {# ============================================== #}
+  {% set team_tag = '// Esimerkki: Tiimi' %}
+  {% set team_title = 'Team Grid <span class="text-gradient-green">-moduuli</span>' %}
+  {% set member_1_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set member_1_name = 'Jonna Muurinen' %}
+  {% set member_1_role = 'CEO &amp; Perustaja' %}
+  {% set member_1_email = 'jonna@kuulu.fi' %}
+  {% set member_1_linkedin = 'https://www.linkedin.com/in/jonnamuurinen/' %}
+  {% set member_2_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set member_2_name = 'Esimerkkihenkilö' %}
+  {% set member_2_role = 'Digimarkkinoija' %}
+  {% set member_2_email = 'esimerkki@kuulu.fi' %}
+  {% set member_3_image = 'https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png' %}
+  {% set member_3_name = 'Toinen Henkilö' %}
+  {% set member_3_role = 'Videotuottaja' %}
+  {% set member_3_email = 'toinen@kuulu.fi' %}
+  {% include './partials/team-grid.html' %}
+
+  {# ============================================== #}
+  {# NEWSLETTER CTA (partial) #}
+  {# ============================================== #}
+  {% set nl_tag = '// Esimerkki: Uutiskirje' %}
+  {% set nl_title = 'Newsletter CTA <span class="text-gradient-green">-moduuli</span>' %}
+  {% set nl_description = 'Uutiskirjetilaus-komponentti. K&auml;ytt&auml;&auml; HubSpot-lomaketta.' %}
+  {% include './partials/newsletter-cta.html' %}
+
+  {# ============================================== #}
+  {# CONTACT FORM (partial - oletusasetuksin) #}
+  {# ============================================== #}
+  {% include './partials/contact-form.html' %}
+
+  {# ============================================== #}
+  {# FOOTER (partial) #}
+  {# ============================================== #}
+  {% include './partials/footer-cinematic.html' %}
+
+  {# ============================================== #}
+  {# SCROLL ANIMATIONS (partial) - UUSI #}
+  {# ============================================== #}
+  {% include './partials/scroll-animations.html' %}
+
+  {# ============================================== #}
+  {# SCRIPTS (partial) #}
+  {# ============================================== #}
+  {% include './partials/scripts-cinematic.html' %}
+
+</div>{# Sulkee aurora-overlay.html:n avaaman .cinematic-page divin #}
+{% endblock body %}

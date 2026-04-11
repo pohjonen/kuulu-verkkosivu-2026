@@ -1,0 +1,282 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Koulutukset 2026 (DnD)
+  screenshotPath: ../images/template-previews/ThemeChallengeHome.png
+-->
+{% extends './layouts/base-cinematic.html' %}
+
+{% block body %}
+<div class="aurora-background"></div>
+<div class="cinematic-page has-aurora-bg">
+  <div class="grain-overlay"></div>
+  <!-- Kuulu Cinematic Mega Menu Navigation -->
+  <header class="header custom-header cinematic-header">
+    <div class="custom-header__container">
+        <div class="custom-header__logo">
+          <a href="https://www.kuulu.fi" aria-label="Kuulu - Etusivu">
+            <img src="https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png" alt="Kuulu Lettermark Logo">
+          </a>
+        </div>
+        <nav class="custom-header__navigation" aria-label="Main navigation">
+            <ul role="menu">
+                <li role="none">
+                    <a href="https://www.kuulu.fi/koulutus" aria-haspopup="true" aria-expanded="false" role="menuitem">Koulutus</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/copilotin-kiihdytyskaista"><div class="mega-menu-icon"><i class="fas fa-graduation-cap"></i></div><div class="mega-menu-text"><h4>Copilotin kiihdytyskaista</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi"><div class="mega-menu-icon"><i class="fas fa-graduation-cap"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-perjantaipulssi"><div class="mega-menu-icon"><i class="fas fa-lightbulb"></i></div><div class="mega-menu-text"><h4>Tekoälyn Perjantaipulssi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/zero-click-ajan-digimarkkinointi"><div class="mega-menu-icon"><i class="fas fa-bolt"></i></div><div class="mega-menu-text"><h4>Zero Click -ajan digimarkkinointi</h4></div></a></li>
+                                <li class="mega-menu-item" style="padding-top: 0.75rem; margin-top: 0.25rem; border-top: 1px solid rgba(255,255,255,0.12);">
+                                  <div class="mega-menu-text"><h4 style="margin:0; color: var(--cinematic-green); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.04em;">Jäsenille</h4></div>
+                                </li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (01-26)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-8-jasenille-10-2025"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (10-2025)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-08-2025"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Tekoälyn Mestarikurssi - Jäsenille (08-2025)</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25"><div class="mega-menu-icon"><i class="fas fa-user-lock"></i></div><div class="mega-menu-text"><h4>Copilotin Kiihdytyskaista - Jäsenille (12-25)</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <a href="https://www.kuulu.fi/digimarkkinointi" aria-haspopup="true" aria-expanded="false" role="menuitem">Digimarkkinointi</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/tarinankerronta"><div class="mega-menu-icon"><i class="fas fa-bullhorn"></i></div><div class="mega-menu-text"><h4>Brändäys ja tarinankerronta</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/sisaltopankki"><div class="mega-menu-icon"><i class="fas fa-database"></i></div><div class="mega-menu-text"><h4>Sisältöpankki</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/tekoaly-kuvapankki"><div class="mega-menu-icon"><i class="fas fa-robot"></i></div><div class="mega-menu-text"><h4>Tekoälykuvapankki</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/liidien-hankinta"><div class="mega-menu-icon"><i class="fas fa-magnet"></i></div><div class="mega-menu-text"><h4>Liidien hankinta</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/rekrymarkkinointi"><div class="mega-menu-icon"><i class="fas fa-users"></i></div><div class="mega-menu-text"><h4>Rekrymarkkinointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/energia-alan-markkinointi"><div class="mega-menu-icon"><i class="fas fa-bolt"></i></div><div class="mega-menu-text"><h4>Energia-alan markkinointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi"><div class="mega-menu-icon"><i class="fas fa-search"></i></div><div class="mega-menu-text"><h4>Someauditointi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/hakukoneoptimointi-ja-seo-analyysi"><div class="mega-menu-icon"><i class="fas fa-chart-line"></i></div><div class="mega-menu-text"><h4>SEO Analyysi</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/google-ads-mainonta"><div class="mega-menu-icon"><i class="fab fa-google"></i></div><div class="mega-menu-text"><h4>Google Ads</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/kuulunautti"><div class="mega-menu-icon"><i class="fas fa-user-astronaut"></i></div><div class="mega-menu-text"><h4>Kuulunautti</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none">
+                    <a href="https://www.kuulu.fi/videotuotanto" aria-haspopup="true" aria-expanded="false" role="menuitem">Videosisällöt</a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/fi-fi/yritysvideot"><div class="mega-menu-icon"><i class="fas fa-video"></i></div><div class="mega-menu-text"><h4>Yritysvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/animaatiot"><div class="mega-menu-icon"><i class="fas fa-film"></i></div><div class="mega-menu-text"><h4>Animaatiot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/brandivideo"><div class="mega-menu-icon"><i class="fas fa-gem"></i></div><div class="mega-menu-text"><h4>Brändivideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/mainosvideot"><div class="mega-menu-icon"><i class="fas fa-play-circle"></i></div><div class="mega-menu-text"><h4>Mainosvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://www.kuulu.fi/tv-mainos-tuotanto"><div class="mega-menu-icon"><i class="fas fa-tv"></i></div><div class="mega-menu-text"><h4>TV-mainosvideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/yhdistys-ja-hankevideot"><div class="mega-menu-icon"><i class="fas fa-hands-helping"></i></div><div class="mega-menu-text"><h4>Yhdistys- ja hankevideot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/gif-animaatiot-markkinointiin"><div class="mega-menu-icon"><i class="fas fa-file-video"></i></div><div class="mega-menu-text"><h4>Gif-animaatiot</h4></div></a></li>
+                                <li class="mega-menu-item"><a href="https://palvelut.kuulu.fi/matkailuvideot"><div class="mega-menu-icon"><i class="fas fa-plane"></i></div><div class="mega-menu-text"><h4>Matkailuvideot</h4></div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li role="none"><a href="https://www.kuulu.fi/case-studies" role="menuitem">Kokemuksia Kuulusta</a></li>
+                <li role="none"><a href="https://blog.kuulu.fi" role="menuitem">Blogi</a></li>
+                <li role="none"><a href="https://mukaantiimiin.kuulu.fi/" role="menuitem">Mukaan tiimiin</a></li>
+                <li role="none"><a href="https://www.kuulu.fi/case-studies" role="menuitem">Asiakas caset</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <div class="hamburger" id="mobile-menu-toggle" role="button" tabindex="0" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-nav-panel">
+            <span></span><span></span><span></span>
+          </div>
+          <div id="mobile-nav-panel" class="mobile-nav__panel" role="dialog" aria-modal="true" hidden>
+            <ul class="mobile-nav__list">
+              <li>
+                <a href="https://www.kuulu.fi/koulutus">Koulutus</a>
+                <ul style="list-style:none; margin:0.5rem 0 0 0.75rem; padding:0 0 0 0.75rem; border-left:1px solid rgba(255,255,255,0.2);">
+                  <li style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--cinematic-green); margin:0.25rem 0 0.5rem 0;">Jäsenille</li>
+                  <li><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26" style="font-size:0.95rem;">Tekoälyn Mestarikurssi (01-26)</a></li>
+                  <li><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-8-jasenille-10-2025" style="font-size:0.95rem;">Tekoälyn Mestarikurssi (10-2025)</a></li>
+                  <li><a href="https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-08-2025" style="font-size:0.95rem;">Tekoälyn Mestarikurssi (08-2025)</a></li>
+                  <li><a href="https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25" style="font-size:0.95rem;">Copilotin Kiihdytyskaista (12-25)</a></li>
+                </ul>
+              </li>
+              <li><a href="https://www.kuulu.fi/digimarkkinointi">Digimarkkinointi</a></li>
+              <li><a href="https://www.kuulu.fi/videotuotanto">Videosisällöt</a></li>
+              <li><a href="https://www.kuulu.fi/case-studies">Kokemuksia Kuulusta</a></li>
+              <li><a href="https://blog.kuulu.fi">Blogi</a></li>
+              <li><a href="https://mukaantiimiin.kuulu.fi">Mukaan tiimiin</a></li>
+              <li><a href="https://www.kuulu.fi/case-studies">Asiakas caset</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="ota-yhteytta-button">
+           <a href="https://www.kuulu.fi/yhteystiedot" class="ota-yhteytta-btn">
+                <span class="ota-yhteytta-text">Ota yhteyttä</span>
+           </a>
+        </div>
+    </div>
+  </header>
+  <div class="header-observer-sentinel"></div>
+  {% dnd_area "main" label="Sivun sisältö" %}
+
+    {# 1. HERO #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_hero.module" label="Hero" background_type="image" section_tag="// KUULUN KOULUTUKSET" headline="Kuulu kouluttaa." headline_highlight="Inspiroidu. Kehity." lead_text="Kuulu on kouluttanut tuhansia ammattilaisia ympäri Suomen. Koulutuksemme keskittyvät tekoälyyn, digimarkkinointiin, sosiaaliseen mediaan ja sisällöntuotantoon." cta_count="2" cta_primary_text="Pyydä tarjous koulutuksesta" cta_primary_url="#ota-yhteytta" cta_secondary_text="Kutsu Someagentti™ apuun" cta_secondary_url="https://palvelut.kuulu.fi/someagentti" show_stats=true stat_1_value="300+" stat_1_label="koulutusta vuodessa" stat_2_value="98%" stat_2_label="suosittelisi" stat_3_value="10+" stat_3_label="vuotta kokemusta" %}
+            {% module_attribute "background_image" is_json="true" %}{"src": "{{ get_asset_url('../images/koulutus/hero-bg.jpg') }}", "alt": ""}{% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 2. INTRO 1 — Jonna video + prosessi #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_rich_text.module" label="Intro: Jonna video + prosessi" media_type="none" columns="2" heading_level="h2" headline="Löydä teille sopivin koulutus –" headline_highlight="näin rakennamme toimivia koulutuksia" %}
+            {% module_attribute "content_body" %}<p>Kuulun perustaja, Jonna Muurinen, kertoo tällä videolla Kuulun koulutusprosessin vaiheet tarvekartoituksesta toteutukseen ja siihen, miten räätälöinti tehdään osallistujien osaamistason mukaan.</p><h3 style='font-family:var(--font-display);'>Näin varmistamme, että koulutus vastaa tarpeisiinne</h3><ol><li><strong>Teemme tarvekartoituksen</strong> ja valitsemme teille sopivimman asiantuntijan</li><li><strong>Räätälöimme koulutusmateriaalin</strong> ennakkotietokyselyä hyödyntäen</li><li><strong>Koulutamme käytännönläheisesti</strong>, jotta jokainen saa tukea juuri siihen, missä sitä tarvitsee</li></ol>{% end_module_attribute %}
+            {% module_attribute "content_body_2" %}<div style='position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;'><iframe src='https://player.vimeo.com/video/630986255?h=b53c8a6d0d&amp;app_id=122963' style='position:absolute;top:0;left:0;width:100%;height:100%;border:none;' allow='autoplay; fullscreen; picture-in-picture' allowfullscreen></iframe></div>{% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 3. INTRO 2 — tiimikuva + koulutusvaihtoehdot #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_rich_text.module" label="Intro: Tiimikuva + vaihtoehdot" media_type="image" media_position="left" %}
+            {% module_attribute "media_image" is_json="true" %}{"src": "{{ get_asset_url('../images/koulutus/koulutus-tiimi.png') }}", "alt": "Kuulun koulutustiimi työskentelee yhdessä"}{% end_module_attribute %}
+            {% module_attribute "content_body" %}<h3>Kuulun koulutusvaihtoehdot</h3><p>Kouluttautumisen pitäisi mielestämme olla sujuvaa, vaikuttavaa ja innostavaa. Siksi räätälöimme koulutukset juuri teidän organisaationne tarpeisiin. Aiheena voi olla esimerkiksi:</p><ul><li>tekoäly</li><li>digimarkkinointi</li><li>sosiaalinen media</li><li>sisällöntuotanto</li><li>viestintä</li><li>visuaalinen tuotanto</li><li>jokin johtamisen kehitystarve</li></ul><p>Pian teillä on käytössä taidot ja työkalut, jotka vievät työnne seuraavalle tasolle.</p>{% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 4. STEPS — 4-vaiheinen koulutusprosessi #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_steps.module" label="Koulutusprosessi 4 vaihetta" media_type="none" step_count="4" section_tag="// Koulutusvaihtoehdot" headline="Kuulun" headline_highlight="koulutusvaihtoehdot" description="Monipuoliset koulutukset räätälöitynä juuri sinun tarpeisiisi" step_1_title="Tarvekartoitus" step_1_description="Selvitämme yhdessä tavoitteenne ja kohderyhmänne tarpeet." step_2_title="Räätälöinti" step_2_description="Suunnittelemme koulutuksen sisällön ja harjoitukset tarpeisiinne sopiviksi." step_3_title="Käytännönläheinen koulutus" step_3_description="Koulutus sisältää konkreettisia harjoituksia ja aitoja esimerkkejä." step_4_title="Uudet taidot käyttöön" step_4_description="Osallistujat saavat valmiudet soveltaa oppimaansa heti käytännössä." %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 5. AI CTAs — 2 korttia tekoälykoulutuksiin #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_cta_cards.module" label="Tekoälykoulutukset 2 korttia" media_type="none" card_count="2" card_height="auto" section_tag="// Tekoälykoulutukset" headline="Tutustu tuleviin" headline_highlight="tekoälykoulutuksiimme" description="Toteutamme ympäri vuoden tekoälykoulutuksia, jotka ovat valmiita kokonaisuuksia, mutta tarjoavat joustavasti myös räätälöityjä ominaisuuksia." card_1_image_url="https://450584.fs1.hubspotusercontent-eu1.net/hub/450584/hubfs/Canvan%20teko%C3%A4lyominaisuudet%20Koulutus%20CTA.webp?height=1000&width=1000" card_1_link_url="https://palvelut.kuulu.fi/canvan-tekoalyominaisuudet-webinaari" card_1_alt_text="Canvan tekoälyominaisuudet koulutus" card_2_image_url="https://450584.fs1.hubspotusercontent-eu1.net/hub/450584/hubfs/Teko%C3%A4lykoodaus-Koulutus-CTA.webp?height=1000&width=1000" card_2_link_url="https://palvelut.kuulu.fi/tekoalyn-perjantaipulssi-tekoalykoodaus" card_2_alt_text="Tekoälykoodaus ilman ohjelmointitaustaa koulutus" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 6. SUOSITUIMMAT — 4 korttia #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_cta_cards.module" label="Suosituimmat koulutukset 4 korttia" media_type="none" card_count="4" card_height="auto" section_tag="// Suosituimmat koulutukset" headline="Suosituimmat" headline_highlight="koulutukset" description="Nopeat ilmoittautumislinkit suosituimpiin koulutuksiin." card_1_image_url="https://450584.fs1.hubspotusercontent-eu1.net/hub/450584/hubfs/Copilotin%20kiihdytyskaista%20Koulutus%20CTA%20(1).webp?height=1000&width=1000" card_1_link_url="https://palvelut.kuulu.fi/copilotin-kiihdytyskaista" card_1_alt_text="Copilotin kiihdytyskaista" card_2_image_url="https://450584.fs1.hubspotusercontent-eu1.net/hub/450584/hubfs/Teko%C3%A4lyn%20perjantaipulssi%20Koulutus%20CTA%20(1)%20(1).webp?height=1000&width=1000" card_2_link_url="https://www.kuulu.fi/tekoalyn-perjantaipulssi" card_2_alt_text="Tekoälyn Perjantaipulssi" card_3_image_url="https://450584.fs1.hubspotusercontent-eu1.net/hub/450584/hubfs/Teko%C3%A4lyn%20mestarikurssi%20CTA.webp?height=1000&width=1000" card_3_link_url="https://www.kuulu.fi/tekoalyn-mestarikurssi" card_3_alt_text="Tekoälyn Mestarikurssi" card_4_image_url="https://450584.fs1.hubspotusercontent-na1.net/hubfs/450584/hub_generated/resized/adb0be98-da1c-4375-a171-b096aa85b625.png" card_4_link_url="https://www.kuulu.fi/tekoaly-markkinoinnin-ja-myynnin-tukena" card_4_alt_text="Tekoäly markkinoinnin ja myynnin tukena" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 7. KOULUTUSTALO CTA #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_contact_cta.module" label="Koulutustalo CTA" media_type="none" cta_count="1" section_tag="// Koulutustaloille" headline="Oletko koulutustalon" headline_highlight="edustaja?" description="" cta_primary_text="Koulutustaloille suunnatut koulutukset" cta_primary_url="https://palvelut.kuulu.fi/kuulun-koulutukset-koulutustaloille" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 8. TESTIMONIALS #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_testimonial_slider.module" label="Asiakaskokemukset" section_title="Kokemuksia koulutuksistamme" section_subtitle="Asiakkaamme kertovat" autoplay=true autoplay_speed="5000" %}
+            {% module_attribute "testimonials" is_json="true" %}[
+              {"quote": "<p>Koulutettava porukka oli todella kirjava: mukana oli niin eri alojen asiantuntijoita kuin esihenkilöitäkin. Kuulun kouluttaja sai kaikki mukaan ja osallistujat olivat innostuneita kokeilemaan uusia työkaluja heti koulutuksen aikana.</p>", "author_name": "Limingan kunta", "author_title": "Tekoälykoulutus", "company_name": ""},
+              {"quote": "<p>Erittäin antoisat ja inspiroivat koulutuspäivät! Kouluttaja toi konkreettisia esimerkkejä ja harjoituksia, joita pystyimme soveltamaan suoraan omaan työhömme. Suosittelen lämpimästi jokaiselle.</p>", "author_name": "SASKY", "author_title": "Digijohtaminen", "company_name": ""},
+              {"quote": "<p>Nämä tekoälyesitykset räjäyttivät aivan tajunnan! Käytännönläheiset demot ja konkreettiset vinkit saivat yleisön todella innostumaan. Paras palaute mitä olemme tapahtumastamme saaneet.</p>", "author_name": "Kuntaviestijäpäivät", "author_title": "Tekoälyesitys", "company_name": ""}
+            ]{% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 9. CONTACT FORM — tarjouspyyntö #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_koulutus_form.module" label="Tarjouspyyntölomake" section_tag="// Ota yhteyttä" headline="Pyydä tarjous" headline_highlight="koulutuksesta" description_1="Saat meiltä 1–2 arkipäivässä ehdotuksen koulutuksesta, sisällöistä, kestosta ja hinnasta." description_2="Pyydä alla olevalla lomakkeella tarjous ja kerro meille tarpeistasi ja rakennamme teille nopeassa aikataulussa sopivan ratkaisun." description_3="Pidämme noin 300 koulutusta vuodessa, ja 98 % palautteen antaneista koulutettavista suosittelisi meitä edelleen." stat_1_value="300+" stat_1_label="koulutusta/v" stat_2_value="98%" stat_2_label="suosittelisi" stat_3_value="10+" stat_3_label="vuotta kokemusta" rep_name="Koulutustalon edustaja" rep_subtitle="Vastaa koulutustiedusteluihin arkisin" form_portal_id="450584" form_id="805f07bd-a002-45f0-9aa5-af329327fcba" form_region="eu1" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 10. KOULUTUSAIHEET — accordion 6 kategoriaa #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_accordion_cards.module" label="Koulutusaiheet kategorioittain" section_title="Tutustu räätälöitäviin koulutuksiimme" section_subtitle="Valitse kiinnostavat aiheet — me räätälöimme koulutuksen tarpeidenne mukaan" columns="2" open_first=true %}
+            {% module_attribute "accordion_items" is_json="true" %}[
+              {
+                "title": "Sosiaalinen media",
+                "content": "<ul><li><a href='https://palvelut.kuulu.fi/somekoulutus'>Some-strategia ja kanavavalinnat</a></li><li><a href='https://palvelut.kuulu.fi/instagram-koulutus'>Instagram-markkinointi</a></li><li><a href='https://palvelut.kuulu.fi/linkedin-yritykselle-koulutus'>LinkedIn yritysviestintä</a></li><li><a href='https://palvelut.kuulu.fi/tiktok-koulutus'>TikTok-sisällöt</a></li><li><a href='https://palvelut.kuulu.fi/facebook-koulutus'>Facebook-mainonta</a></li><li><a href='https://palvelut.kuulu.fi/monikanavainen-kampanjointi-koulutus'>Yhteisömanagerointi</a></li><li><a href='https://palvelut.kuulu.fi/markkinoinnin-analytiikka-webinaari-0'>Some-analytiikka</a></li><li><a href='https://palvelut.kuulu.fi/somekoulutus'>Vaikuttajamarkkinointi</a></li></ul>"
+              },
+              {
+                "title": "Digimarkkinointi",
+                "content": "<ul><li><a href='https://www.kuulu.fi/digimarkkinointi'>Digimarkkinoinnin strategia</a></li><li><a href='https://www.kuulu.fi/google-ads-mainonta'>Google Ads -mainonta</a></li><li><a href='https://palvelut.kuulu.fi/hakukoneoptimointi-ja-seo-analyysi'>Hakukoneoptimointi (SEO)</a></li><li><a href='https://palvelut.kuulu.fi/b2b-yrityksen-digitaalinen-myynti-koulutus-webinaari'>Sähköpostimarkkinointi</a></li><li><a href='https://palvelut.kuulu.fi/sisaltostrategia-koulutus-webinaari'>Sisältömarkkinointi</a></li><li><a href='https://palvelut.kuulu.fi/koulutus/markkinoinnin-automaatio-koulutus'>Markkinoinnin automaatio</a></li><li><a href='https://palvelut.kuulu.fi/brandin-kehittaminen-palvelumuotoilu-metodeilla'>Brändin rakentaminen</a></li><li><a href='https://palvelut.kuulu.fi/liidien-hankinta'>Liidien generointi</a></li></ul>"
+              },
+              {
+                "title": "Sisällöntuotanto",
+                "content": "<ul><li><a href='https://palvelut.kuulu.fi/copywriting-koulutus-webinaari'>Copywriting ja tekstisisällöt</a></li><li><a href='https://palvelut.kuulu.fi/koulutus/mobiilivideo-koulutus'>Videotuotanto mobiililla</a></li><li><a href='https://palvelut.kuulu.fi/koulutus/canva-koulutus/'>Valokuvaus ja Canva</a></li><li><a href='https://palvelut.kuulu.fi/podcast-koulutus'>Podcastin tekeminen</a></li><li><a href='https://palvelut.kuulu.fi/koulutus/canva-koulutus/'>Canva-koulutus</a></li><li><a href='https://palvelut.kuulu.fi/tarinankerronta'>Tarinankerronta</a></li></ul>"
+              },
+              {
+                "title": "Viestintä",
+                "content": "<ul><li><a href='https://palvelut.kuulu.fi/vaikuttava-asiantuntijaviestinta-koulutus'>Kriisiviestintä</a></li><li><a href='https://palvelut.kuulu.fi/rekrymarkkinointi-ja-tyonantajamielikuva'>Työnantajabrändi</a></li><li><a href='https://palvelut.kuulu.fi/sisaltostrategia-koulutus-webinaari'>Viestintästrategia</a></li><li><a href='https://palvelut.kuulu.fi/sisainen-viestinta-koulutus'>Sisäinen viestintä</a></li><li><a href='https://palvelut.kuulu.fi/vaikuttava-asiantuntijaviestinta-koulutus'>Mediasuhteet</a></li><li><a href='https://palvelut.kuulu.fi/asiantuntijan-henkilobrandays-koulutus'>Asiantuntijaviestintä</a></li></ul>"
+              },
+              {
+                "title": "Tekoäly",
+                "content": "<ul><li><a href='https://www.kuulu.fi/tekoaly-markkinoinnin-ja-myynnin-tukena'>Tekoäly markkinoinnin ja myynnin tukena</a></li><li><a href='https://www.kuulu.fi/tekoalyn-mestarikurssi'>Tekoälyn Mestarikurssi</a></li><li><a href='https://palvelut.kuulu.fi/copilotin-kiihdytyskaista'>Copilotin kiihdytyskaista</a></li><li><a href='https://www.kuulu.fi/tekoalyn-perjantaipulssi'>Tekoälyn Perjantaipulssi</a></li></ul>"
+              },
+              {
+                "title": "Analytiikka & UX",
+                "content": "<ul><li><a href='https://palvelut.kuulu.fi/google-analytics-koulutus'>Google Analytics 4</a></li><li><a href='https://palvelut.kuulu.fi/palvelumuotoilu-ja-digitaalinen-asiakaskokemus-koulutus'>Verkkosivujen käytettävyys</a></li><li><a href='https://palvelut.kuulu.fi/hakukoneoptimointi-ja-seo-analyysi'>Konversio-optimointi</a></li></ul>"
+              }
+            ]{% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 11. FAQ #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_accordion_cards.module" label="UKK – Usein kysytyt kysymykset" section_title="Usein kysytyt kysymykset" section_subtitle="" columns="1" open_first=true %}
+            {% module_attribute "accordion_items" is_json="true" %}[
+              {"title": "Mistä aiheista Kuulu kouluttaa?", "content": "<p>Kuulu kouluttaa laajasti digimarkkinoinnin, sosiaalisen median, tekoälyn, sisällöntuotannon, viestinnän, analytiikan ja johtamisen aiheista. Kaikki koulutukset räätälöidään asiakkaan tarpeiden mukaan.</p>"},
+              {"title": "Kenelle Kuulun koulutukset sopivat?", "content": "<p>Koulutuksemme sopivat kaikille — yksittäisille ammattilaisille, tiimeille, esihenkilöille ja kokonaisille organisaatioille. Räätälöimme sisällön osallistujien osaamistason ja tarpeiden mukaan.</p>"},
+              {"title": "Miten Kuulu räätälöi koulutukset?", "content": "<p>Aloitamme aina tarvekartoituksella, jossa selvitämme osallistujien osaamistason, tavoitteet ja toiveet. Sen pohjalta suunnittelemme koulutuksen sisällön, harjoitukset ja esimerkit juuri teidän organisaatiollenne sopiviksi.</p>"},
+              {"title": "Voiko koulutuksen toteuttaa etänä?", "content": "<p>Kyllä! Tarjoamme koulutuksia sekä lähitoteutuksena että etänä Teamsin tai Zoomin kautta. Etäkoulutuksetkin ovat interaktiivisia ja sisältävät käytännön harjoituksia.</p>"},
+              {"title": "Kuka Kuululla kouluttaa?", "content": "<p>Kouluttajamme ovat kokeneita alan ammattilaisia, jotka tekevät päivittäin käytännön työtä digimarkkinoinnin, tekoälyn ja sisällöntuotannon parissa. He tuovat koulutuksiin aitoja esimerkkejä omasta työstään.</p>"},
+              {"title": "Paljonko koulutus maksaa?", "content": "<p>Koulutuksen hinta riippuu kestosta, sisällöstä ja osallistujamäärästä. Pyydä meiltä tarjous — vastaamme mielellämme ja kerromme tarkemman hinnan tarpeenne perusteella.</p>"},
+              {"title": "Voimmeko yhdistää useita aiheita?", "content": "<p>Ehdottomasti! Voimme yhdistää esimerkiksi tekoälyn ja sisällöntuotannon, some-markkinoinnin ja analytiikan tai minkä tahansa aiheyhdistelmän, joka palvelee teidän tarpeitanne.</p>"},
+              {"title": "Tarjoatteko koulutuksia koulutustaloille?", "content": "<p>Kyllä, teemme yhteistyötä useiden koulutustalojen kanssa. Olemme toteuttaneet koulutuksia mm. avoimina koulutuksina eri koulutusorganisaatioiden ohjelmiin. Ota yhteyttä, niin kerromme lisää.</p>"}
+            ]{% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+  {% end_dnd_area %}
+
+  {% include './partials/footer-cinematic.html' %}
+</div>
+{% endblock body %}
+

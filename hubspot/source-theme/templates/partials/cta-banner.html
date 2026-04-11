@@ -1,0 +1,44 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "CTA Banner - Call to Action"
+-->
+{#
+  Toimintakehotus / CTA-banneri -partiaali
+
+  Käyttö:
+    {% include './partials/cta-banner.html' with {
+      cta_tag: '// Aloita nyt',
+      cta_title: 'Valmis <span class="text-gradient-green">kasvattamaan</span> liiketoimintaasi?',
+      cta_description: 'Ota yhteyttä ja aloitetaan yhteistyö.',
+      cta_button_text: 'Ota yhteyttä',
+      cta_button_url: '#ota-yhteytta',
+      cta_secondary_text: 'Katso referenssit',
+      cta_secondary_url: 'https://www.kuulu.fi/case-studies'
+    } %}
+#}
+
+{% set active_tag = cta_tag|default('// Seuraava askel') %}
+{% set active_title = cta_title|default('Valmis <span class="text-gradient-green">aloittamaan</span>?') %}
+{% set active_desc = cta_description|default('Kerro meille tarpeistasi, niin rakennamme sopivan ratkaisun.') %}
+{% set btn_text = cta_button_text|default('Ota yhteyttä') %}
+{% set btn_url = cta_button_url|default('#ota-yhteytta') %}
+{% set sec_text = cta_secondary_text|default('') %}
+{% set sec_url = cta_secondary_url|default('') %}
+
+<section class="cinematic-section section-with-blobs gradient-section-tl grain-section">
+  <div class="glow-orb" style="width: 600px; height: 600px; top: -200px; left: 50%; transform: translateX(-50%);"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10; text-align: center;">
+    <span class="section-tag">{{ active_tag }}</span>
+    <h2 class="section-header" style="max-width: 700px; margin-left: auto; margin-right: auto;">{{ active_title }}</h2>
+    <p style="color: var(--cinematic-text-muted); font-size: 1.1rem; line-height: 1.7; max-width: 600px; margin: 0 auto 2rem;">
+      {{ active_desc }}
+    </p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="{{ btn_url }}" class="btn-cinematic-primary">{{ btn_text }}</a>
+      {% if sec_text %}
+      <a href="{{ sec_url }}" class="btn-cinematic-secondary">{{ sec_text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>

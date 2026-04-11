@@ -1,0 +1,66 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Contact Form Section - Cinematic"
+-->
+{# 
+  Contact Form Partial
+  
+  Käyttö: {% include './partials/contact-form.html' with { form_id: 'oma-form-id' } %}
+  
+  Jos form_id ei ole annettu, käytetään yleistä yhteystietolomaketta.
+  Voit myös override:ata otsikon ja kuvauksen:
+    {% include './partials/contact-form.html' with { 
+      form_id: '805f07bd-a002-45f0-9aa5-af329327fcba',
+      contact_title: 'Varaa paikkasi',
+      contact_description: 'Täytä lomake niin otamme yhteyttä.'
+    } %}
+#}
+
+{% set default_form_id = '805f07bd-a002-45f0-9aa5-af329327fcba' %}
+{% set active_form_id = form_id|default(default_form_id) %}
+{% set active_title = contact_title|default('Kiinnostuitko? <span class="text-gradient-green">Ota yhteyttä</span>') %}
+{% set active_description = contact_description|default('Kerro meille tarpeistasi, niin rakennamme teille sopivan ratkaisun. Vastaamme 1–2 arkipäivässä.') %}
+
+<section class="cinematic-section section-with-blobs gradient-section-tl grain-section" id="ota-yhteytta">
+  <div class="glow-orb" style="width: 800px; height: 800px; top: -300px; left: 50%; transform: translateX(-50%);"></div>
+  <div class="glow-orb-subtle" style="width: 400px; height: 400px; bottom: 0; left: -100px;"></div>
+  
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="grid-2" style="gap: 3rem;">
+      <div>
+        <span class="section-tag">// Ota yhteyttä</span>
+        <h2 class="section-header">{{ active_title }}</h2>
+        <p style="color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
+          {{ active_description }}
+        </p>
+        <div class="hero-glass-box" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(0, 255, 135, 0.1); border: 1px solid rgba(0, 255, 135, 0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <i class="fas fa-envelope" style="font-size: 1.2rem; color: var(--cinematic-green);"></i>
+          </div>
+          <div>
+            <p style="color: var(--cinematic-text); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.15rem;">Kuulun myyntitiimi</p>
+            <p style="color: var(--cinematic-text-muted); font-size: 0.85rem;">Vastaamme 1&ndash;2 arkipäivässä</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-glass-box" style="padding: 2rem;">
+          <div id="hs-form-{{ active_form_id }}"></div>
+          <script charset="utf-8" src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "eu1",
+              portalId: "450584",
+              formId: "{{ active_form_id }}",
+              target: "#hs-form-{{ active_form_id }}",
+              css: "",
+              inlineMessage: "<p><strong>Hei, kiitokset yhteydenotostasi, olemme sinuun yhteydessä niin pian kuin mahdollista! Terveisin Kuulun väki.</strong></p>"
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

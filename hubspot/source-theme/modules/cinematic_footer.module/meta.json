@@ -1,0 +1,15 @@
+{
+  "content_tags" : [ {
+    "name" : "CINEMATIC",
+    "source" : "USER"
+  } ],
+  "global" : true,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "smart_type" : "NOT_SMART",
+  "categories" : [ "DESIGN" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 382165003452,
+  "label" : "Globaali Footer",
+  "icon" : "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/navigation.svg",
+  "is_available_for_new_content" : true
+}

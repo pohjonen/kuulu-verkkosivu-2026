@@ -1,0 +1,267 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+  label: "Perjantaipulssi – Agentit Test 2026-02-17"
+-->
+{% extends "./layouts/base-cinematic.html" %}
+
+{% block body %}
+<div class="aurora-background"></div>
+<div class="cinematic-page has-aurora-bg">
+  <div class="grain-overlay"></div>
+
+  {% include "./partials/header-cinematic.html" %}
+  <div class="header-observer-sentinel"></div>
+
+  {% dnd_area "main" label="Sivun sisältö" %}
+
+    {# 1. HERO #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_hero.module"
+            label="01 – Hero"
+            background_type="video_url"
+            background_video_url="https://www.kuulu.fi/hubfs/Kuulu%20Showreel%202025%20l%C3%A4nd%C3%A4ri%202_1080p.mp4"
+            section_tag="Perjantaipulssi"
+            headline="Assistentti, workflow vai agentti?"
+            headline_highlight=""
+            lead_text="Erot, hyödyt ja 3 konkreettista agenttiesimerkkiä markkinoinnista"
+            sub_text="Pe 13.3.2026 klo 13–14.30"
+            cta_count="1"
+            cta_primary_text="Ilmoittaudu nyt"
+            cta_primary_url="#ilmoittautuminen"
+            cta_secondary_text=""
+            cta_secondary_url=""
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 2. SISÄLTÖKUVAUS #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_rich_text.module"
+            label="02 – Sisältökuvaus"
+            section_tag=""
+            headline="Ymmärrä tekoälyn kolme tasoa"
+            headline_highlight="ja valitse oikea markkinointiisi"
+            heading_level="h3"
+            max_width=800
+          %}
+            {% module_attribute "content_body" %}
+              <p>Tekoälyassistentti, workflow ja agentti — termejä vilisee kaikkialla, mutta mitä ne oikeasti tarkoittavat? Ja mikä niistä sopii sinun markkinointiisi?</p>
+              <p>Tässä 90 minuutin webinaarissa käymme selkeästi läpi, miten nämä kolme tekoälyn hyödyntämistasoa eroavat toisistaan, mihin kukin sopii ja milloin kannattaa siirtyä seuraavalle tasolle.</p>
+              <p>Näet <strong>3 konkreettista esimerkkiä</strong> siitä, miten tekoälyagentteja voi käyttää markkinoinnin automatisoinnissa — sisällöntuotannosta liidien käsittelyyn ja kampanjoiden optimointiin.</p>
+              <p>Saat tallenteen ja materiaalit mukaan. Voit lähettää kysymyksiä etukäteen tai kysyä webinaarissa.</p>
+              <p>Et tarvitse aiempaa kokemusta tekoälyagenteista tai koodaamisesta.</p>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 3. MITÄ OPIT #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_checklist.module"
+            label="03 – Mitä opit"
+            headline="Mitä opit?"
+            headline_highlight=""
+            icon_style="check"
+            item_1="Mitä eroa on assistentilla, workflowlla ja agentilla — ja miksi sillä on väliä"
+            item_2="Milloin riittää yksinkertainen assistentti ja milloin tarvitset agentin"
+            item_3="3 käytännön esimerkkiä: miten agentit automatisoivat markkinointia"
+            item_4="Miten rakennat oman ensimmäisen workflow- tai agenttiputken"
+            item_5="Mitkä työkalut sopivat aloittelijalle (ja mihin ammattilainen panostaa)"
+            item_6="Miten tekoälyagentit muuttavat markkinoijan roolia lähivuosina"
+            item_7=""
+            item_8=""
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 4. CTA-BANNERI #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_contact_cta.module"
+            label="04 – CTA-banneri"
+            section_tag=""
+            headline="Tekoälyn hyödyntäminen on taito,"
+            headline_highlight="joka säästää aikaa joka päivä"
+            description="Opi erottamaan assistentti, workflow ja agentti toisistaan — ja valitse oikea taso omaan markkinointiisi."
+            cta_count="1"
+            cta_primary_text="Ilmoittaudu nyt"
+            cta_primary_url="#ilmoittautuminen"
+            cta_secondary_text=""
+            cta_secondary_url=""
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 5. KENELLE SOPII #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_rich_text.module"
+            label="05 – Kenelle sopii"
+            section_tag=""
+            headline="Kenelle koulutus sopii?"
+            headline_highlight=""
+            heading_level="h4"
+            max_width=800
+          %}
+            {% module_attribute "content_body" %}
+              <p>Tämä webinaari on tehty erityisesti markkinoinnin, myynnin ja viestinnän tekijöille, jotka haluavat ymmärtää tekoälyn eri hyödyntämistasot ja valita oikean lähestymistavan omaan työhönsä.</p>
+              <p><strong>Koulutus sopii sinulle, jos haluat:</strong></p>
+              <ul>
+                <li>Ymmärtää, miten assistentti, workflow ja agentti eroavat toisistaan käytännössä</li>
+                <li>Nähdä konkreettisia esimerkkejä tekoälyn hyödyntämisestä markkinoinnissa</li>
+                <li>Tietää, mistä aloittaa oman tekoälyagentin rakentaminen</li>
+                <li>Automatisoida toistuvia markkinoinnin prosesseja</li>
+                <li>Pysyä ajan tasalla tekoälyn nopeasta kehityksestä</li>
+              </ul>
+              <p>Aiempaa kokemusta tekoälyagenteista tai koodaamisesta ei tarvita. Riittää, että haluat ymmärtää, mihin suuntaan markkinoinnin tekoäly on menossa.</p>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 6. KOULUTTAJA #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_text_image.module"
+            label="06 – Kouluttaja"
+            section_tag="// Kouluttaja"
+            headline="Tuomas Muurinen"
+            headline_highlight=""
+            lead_text="Toimitusjohtaja ja perustaja, Kuulu Oy"
+            body_text="Tuomas Muurinen on Kuulun toimitusjohtaja ja perustaja. Hänellä on yli 15 vuoden kokemus digimarkkinoinnista ja liiketoiminnan kehittämisestä. Tuomas on Euroopan ensimmäinen sertifioitu StoryBrand-konsultti ja kouluttanut satoja yrityksiä tekoälyn hyödyntämiseen markkinoinnissa."
+            tag_1_icon="fas fa-award"
+            tag_1_label="StoryBrand-sertifioitu"
+            tag_2_icon="fas fa-users"
+            tag_2_label="500+ koulutettua yritystä"
+            tag_3_icon="fas fa-robot"
+            tag_3_label="Tekoäly + markkinointi"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 7. TEKOÄLYPOLKU #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_timeline.module"
+            label="07 – Tekoälypolku"
+            section_tag=""
+            headline="Perjantaipulssien talven 2026"
+            headline_highlight="Tekoälypolku"
+            description="Toteutamme Perjantaipulssin talven 2026 sarjan, jossa etenemme loogisesti:"
+            item_1_tag="Tallenne"
+            item_1_title="16.1. Tekoälylliset työnkulut ja automaatiot"
+            item_1_description="Workflow-ajattelu ja automaatioiden perusteet"
+            item_2_tag="Tallenne"
+            item_2_title="13.2. Tekoälykoodaus – ratkaisuja ilman ohjelmointitaustaa"
+            item_2_description="Mihin tekoälykoodaus sopii ja mihin ei?"
+            item_3_tag="Tulossa"
+            item_3_title="13.3. Assistentti, workflow vai agentti?"
+            item_3_description="Erot, hyödyt ja 3 konkreettista agenttiesimerkkiä markkinoinnista"
+            highlight_item=3
+            summary_text="Kaikki kolme Perjantaipulssia yhteishintaan 329 € (412,90 sis. alv 25,5 %). Säästösi jopa 58 €!"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 8. HINTA JA AJANKOHTA #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_pricing.module"
+            label="08 – Hinta ja ajankohta"
+            section_tag=""
+            headline="Ajankohta"
+            headline_highlight="ja hinta"
+            date_text="Pe 13.3.2026 klo 13–14.30"
+            price="129 €"
+            price_note="161,90 € sis. alv. 25,5 % · laskulla"
+            cta_count="1"
+            cta_primary_text="Ilmoittaudu nyt"
+            cta_primary_url="#ilmoittautuminen"
+          %}
+            {% module_attribute "content_body" %}
+              <ul>
+                <li>Koulutuksen jälkeen saat käyttöösi <strong>tallenteen</strong>, joka on katsottavissa 3 kk.</li>
+                <li>Maksamalla kortilla Holvissa säästät yksittäisestä Perjantaipulssista 15 €. Hinta kortilla maksettaessa <strong>114 € (143,07 € sis. alv. 25,5 %)</strong>.</li>
+                <li>Ilmoittautumisen jälkeen saat sähköpostiisi maksulinkin kortilla maksamiseen.</li>
+                <li>Perjantaipulssin vuosijäsenyys sisältyy Tekoälyn Mestarikurssiin.</li>
+              </ul>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {# 9. ILMOITTAUTUMISLOMAKE #}
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_early_bird.module"
+            label="09 – Ilmoittautuminen"
+            section_tag=""
+            headline="Ilmoittaudu"
+            headline_highlight="Perjantaipulssiin"
+            description="Täytä tietosi alla ja ilmoittaudu 13.3. Perjantaipulssiin."
+            benefit_1="Tallenne käyttöösi 3 kuukaudeksi"
+            benefit_2="Materiaalit ja työkalulista mukaan"
+            benefit_3="Voit lähettää kysymyksiä etukäteen"
+            form_id="f481b6f9-7101-4229-bec5-d9b9d54c1b04"
+            portal_id="450584"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+  {% end_dnd_area %}
+
+  <style>
+    /* Rich text module styles */
+    .cinematic-rich-text-body h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--cinematic-text);
+      margin-bottom: 0.75rem;
+    }
+    .cinematic-rich-text-body p { margin-bottom: 1rem; }
+    .cinematic-rich-text-body ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+    .cinematic-rich-text-body li { margin-bottom: 0.5rem; color: #ffffff; }
+    .cinematic-rich-text-body strong { color: var(--cinematic-text); }
+    .cinematic-rich-text-body a { color: var(--cinematic-green); text-decoration: underline; }
+  </style>
+
+  {% include "./partials/footer-cinematic.html" %}
+</div>
+{% endblock body %}

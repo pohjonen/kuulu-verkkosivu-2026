@@ -1,0 +1,29 @@
+{
+  "label": "navigation-v2",
+  "notes": [
+    "Blueprint-only navigation structure for v2.",
+    "Keep separate from live navigation until approved cutover."
+  ],
+  "items": [
+    {
+      "label": "Koulutus",
+      "url": "https://www.kuulu.fi/koulutus"
+    },
+    {
+      "label": "Digimarkkinointi",
+      "url": "https://www.kuulu.fi/digimarkkinointi"
+    },
+    {
+      "label": "Videotuotanto",
+      "url": "https://www.kuulu.fi/videotuotanto"
+    },
+    {
+      "label": "Referenssit",
+      "url": "https://www.kuulu.fi/case-studies"
+    },
+    {
+      "label": "Ota yhteyttä",
+      "url": "https://www.kuulu.fi/yhteystiedot"
+    }
+  ]
+}

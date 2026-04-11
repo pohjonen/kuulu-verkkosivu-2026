@@ -1,0 +1,91 @@
+<section class="cinematic-animated-counter">
+  <div class="counter-container">
+    {% if module.section_tag %}
+    <div class="section-tag">{{ module.section_tag }}</div>
+    {% endif %}
+
+    <h2 class="counter-headline">
+      {{ module.headline }}<span class="highlight">{{ module.headline_highlight }}</span>
+    </h2>
+
+    {% if module.intro_text %}
+    <p class="counter-intro">{{ module.intro_text }}</p>
+    {% endif %}
+
+    <div class="stats-grid">
+      {% for i in range(1, 5) %}
+      {% set stat_number = "stat_" ~ i ~ "_number" %}
+      {% set stat_suffix = "stat_" ~ i ~ "_suffix" %}
+      {% set stat_label = "stat_" ~ i ~ "_label" %}
+      {% set stat_description = "stat_" ~ i ~ "_description" %}
+
+      {% if module[stat_number] %}
+      <div class="stat-card" data-aos="fade-up" data-aos-delay="{{ (i - 1) * 100 }}">
+        <div class="stat-number-wrapper">
+          <span class="stat-number"
+                data-target="{{ module[stat_number] }}"
+                data-suffix="{{ module[stat_suffix] }}">0</span><span class="stat-suffix">{{ module[stat_suffix] }}</span>
+        </div>
+        <div class="stat-label">{{ module[stat_label] }}</div>
+        {% if module[stat_description] %}
+        <div class="stat-description">{{ module[stat_description] }}</div>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const duration = {{ module.animation_duration|default(2000) }};
+
+  function animateCounter(element, target, suffix) {
+    const startTime = Date.now();
+    const startValue = 0;
+
+    function update() {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Easing function (ease-out)
+      const easeProgress = 1 - Math.pow(1 - progress, 3);
+      const currentValue = Math.floor(startValue + (target - startValue) * easeProgress);
+
+      element.textContent = currentValue;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        element.textContent = target;
+      }
+    }
+
+    update();
+  }
+
+  function initCounters() {
+    const counters = document.querySelectorAll('.cinematic-animated-counter .stat-number');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+          entry.target.classList.add('animated');
+          const target = parseInt(entry.target.getAttribute('data-target'));
+          const suffix = entry.target.getAttribute('data-suffix') || '';
+          animateCounter(entry.target, target, suffix);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => observer.observe(counter));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCounters);
+  } else {
+    initCounters();
+  }
+})();
+</script>

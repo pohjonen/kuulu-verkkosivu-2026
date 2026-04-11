@@ -1,0 +1,10 @@
+{
+  "label": "brand-settings",
+  "token_source": "docs/hubspot-theme-token-map.md",
+  "defaults": {
+    "theme_mode": "cinematic-dark",
+    "accent_mode": "green",
+    "show_grain": true,
+    "show_aurora": true
+  }
+}

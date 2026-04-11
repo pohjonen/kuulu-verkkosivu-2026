@@ -1,0 +1,595 @@
+{
+  "page_id": "v2_ihmiset_jonna_muurinen__person-profile",
+  "template": "person-profile-v2",
+  "preview_slug": "/v2-ihmiset-jonna-muurinen",
+  "url": "https://www.kuulu.fi/ihmiset/jonna-muurinen",
+  "page_type": "person-profile",
+  "current_theme": "legacy-vaalea",
+  "primary_goal": "Turn the expert profile into a trust and authority asset: Jonna Muurinen.",
+  "core_message": "Jonna Muurinen Jonna Muurinen Remove blog feed dependency, keep authority and CTA.",
+  "hero_direction": {
+    "headline": "Jonna Muurinen",
+    "supporting_angle": "Asiantuntija toimii luottamuksen ja osaamisen kantajana.",
+    "cta_goal": "yhteydenotto tai profiilin osaamiseen liittyvä CTA"
+  },
+  "mandatory_signals": [
+    "Asiantuntijuus näkyy",
+    "Blogiriippuvuutta ei ole",
+    "Seuraava askel on selkeä"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_ihmiset_jonna_muurinen__person-profile__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type person-profile using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "service-pillars-v2",
+      "module_instance_key": "v2_ihmiset_jonna_muurinen__person-profile__service-pillars-v2__2",
+      "content_job": "Apply service-pillars-v2 to page type person-profile using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "reference-grid-v2",
+      "module_instance_key": "v2_ihmiset_jonna_muurinen__person-profile__reference-grid-v2__3",
+      "content_job": "Apply reference-grid-v2 to page type person-profile using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_ihmiset_jonna_muurinen__person-profile__final-cta-v2__4",
+      "content_job": "Apply final-cta-v2 to page type person-profile using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Jonna Muurinen",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Jonna Muurinen"
+      },
+      {
+        "level": "h2",
+        "text": "Mitä social SEO tarkoittaa ja miten optimoit somesisällöt hakuun?"
+      },
+      {
+        "level": "h2",
+        "text": "Saako LinkedIn Premium-tili enemmän näkyvyyttä kuin ilmainen tili?"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälyn ympäristövaikutukset: käytännön opas käyttäjälle"
+      },
+      {
+        "level": "h2",
+        "text": "Maksettu ja orgaaninen some zero click -aikana"
+      },
+      {
+        "level": "h2",
+        "text": "Zero click -somestrategia: playbook 2026 markkinoinnille ja myynnille"
+      },
+      {
+        "level": "h2",
+        "text": "5 tekoälytyökalua, jotka pilkkovat pitkät videot someklipeiksi – vertailu ja vinkit"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoäly arjessa: tiedonhaku, gpt-assistentit ja bugit"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoäly luovassa työssä – tekoälyn tuomat mahdollisuudet"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälykuvat rekrytointiviestinnässä ja työnantajabrändäyksessä"
+      },
+      {
+        "level": "h2",
+        "text": "Tekijänoikeus ja tekoäly – mitä markkinoinnin on hyvä tietää"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoäly yrittäjälle"
+      },
+      {
+        "level": "h2",
+        "text": "Miten voit hyödyntää tekoälyä työssäsi – Kuulu Sarasvuon haastattelussa"
+      },
+      {
+        "level": "h2",
+        "text": "Markkinointimateriaalit tekoälyllä: ChatGPT, Canva ja Midjourney apuna"
+      },
+      {
+        "level": "h2",
+        "text": "Nämä 5 asiaa jokaisen johtajan pitää tietää tekoälystä"
+      },
+      {
+        "level": "h2",
+        "text": "Markkinointisuunnitelma ChatGPT:n avulla"
+      },
+      {
+        "level": "h2",
+        "text": "Canvan tekoälyominaisuudet sisällöntuotannossa ja kuvankäsittelyssä"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälyn hyödyntäminen markkinoinnin suunnittelussa ja toteutuksessa"
+      },
+      {
+        "level": "h2",
+        "text": "Leadfeeder b2b-liiketoiminnan markkinoinnin ja myynnin tukena"
+      },
+      {
+        "level": "h2",
+        "text": "Facebookin liidimainostyyppi – kerää liidit suoraan Facebookista"
+      },
+      {
+        "level": "h2",
+        "text": "Strateginen sisällöntuotanto b2b-alalla"
+      },
+      {
+        "level": "h2",
+        "text": "Pinterest-mainonta – näin kohdennat, budjetoit ja toteutat mainokset"
+      },
+      {
+        "level": "h2",
+        "text": "Hootsuite – somehallinta ja analytiikka yhdeltä luukulta"
+      },
+      {
+        "level": "h2",
+        "text": "Facebook ja Instagram live shopping – osta tai myy livelähetyksen aikana"
+      },
+      {
+        "level": "h2",
+        "text": "Verkkosivuston kehittäminen analytiikan avulla – kävijätieto hyötykäyttöön"
+      },
+      {
+        "level": "h2",
+        "text": "LinkedIn-mainonnan kohdennusmahdollisuudet - Kuulu"
+      },
+      {
+        "level": "h2",
+        "text": "Kuulutukset, osa 4: aiheina Instagram, YouTube ja Linkedin-mainonta"
+      },
+      {
+        "level": "h2",
+        "text": "Kuulutukset, osa 3: FB-, Google- ja Pinterest-uutuuksia verkkokauppiaille"
+      },
+      {
+        "level": "h2",
+        "text": "Kuulutukset, osa 2: Uutuuksia Linkedinissä, Instagramissa & YouTubessa"
+      },
+      {
+        "level": "h2",
+        "text": "Kuulutukset, osa 1: Uutuuksia Instagramissa, Twitterissä & YouTubessa"
+      },
+      {
+        "level": "h2",
+        "text": "Kuulu oli Vuoden Toimisto -finalisti – osallistumisen syynä asiakaskokemuksen kehittäminen - Kuulu"
+      },
+      {
+        "level": "h2",
+        "text": "Facebook-mainonta – mihin kaikkialle saan mainokseni näkyviin?"
+      },
+      {
+        "level": "h2",
+        "text": "Yrityksen näkyvyys Googlessa. Miten hakukoneoptimointi toimii?"
+      },
+      {
+        "level": "h2",
+        "text": "Hyödynnä loppuvuoden juhlasesonki sosiaalisessa mediassa"
+      },
+      {
+        "level": "h2",
+        "text": "Sisältöstrategia – Markkinoinnin kivijalka vai turhaa paperinpyörittelyä?"
+      },
+      {
+        "level": "h2",
+        "text": "Google My Business auttaa yrityksiä löytymään Googlesta"
+      },
+      {
+        "level": "h2",
+        "text": "Vinkit sosiaalisen median sisällöntuotantoon kesällä"
+      },
+      {
+        "level": "h2",
+        "text": "Instagram-markkinointi yritykselle, osa 2"
+      },
+      {
+        "level": "h2",
+        "text": "Facebook Tykkää ja jaa -kilpailut ovat sääntöjenvastaisia"
+      },
+      {
+        "level": "h2",
+        "text": "Yrityksen Facebook-sivu – 10 nyrkkisääntöä markkinointisisältöihin"
+      }
+    ],
+    "paragraphs": [
+      "Kuulun perustaja, toimitusjohtaja ja pääkouluttaja.",
+      "Olen Kuulun perustaja ja digitaalisen markkinoinnin asiantuntija, työskentelen pääasiassa tekoälykouluttajana ja puhujana. Olen kouluttanut yli 40 000 tietotyöläistä ja tarjonnut käytännönläheisiä työkaluja ja strategioita tekoälyn hyödyntämiseen työelämässä.",
+      "Minut tunnetaan parhaiten inspiroivista ja konkreettisista koulutuksista, joissa yhdistyy vankka digimarkkinoinnin kokemus ja ajankohtainen tekoälyosaaminen. Lähestymistapani keskittyy siihen, miten tekoäly voi tukea luovuutta, tehostaa työntekoa ja parantaa markkinoinnin tuloksellisuutta.",
+      "Erityisosaaminen",
+      "• Tekoäly ja sen sovellukset markkinoinnissa • Tietotyöläisten työn tehostaminen tekoälytyökaluilla • Luovuuden ja tekoälyn yhdistäminen yritysviestinnässä",
+      "Olen kiinnostunut digimarkkinoinnin kokonaisuuksien suunnittelusta sekä markkinoinnin mittaamisesta ja hakukoneoptimoinnista sekä tekoälyllä tehostetusta markkinoinnista. Suunnittelen mielelläni juuri teidän yrityksellenne sopivan koulutuskokonaisuuden.",
+      "Tältä sivulta löydät myös kirjoittamiani blogiartikkeleita tekoälyyn, digimarkkinointiin, sisällöntuotantoon ja sosiaaliseen mediaan liittyen!",
+      "jonna@kuulu.fi",
+      "18 maaliskuuta 2026",
+      "Social SEO tarkoittaa someprofiilien ja somejulkaisujen optimointia niin, että ne löytyvät paremmin somehaussa, Googlessa ja tekoälyhaussa. Lue lisää!",
+      "8 maaliskuuta 2026",
+      "Nostaako LinkedIn Premium -tili orgaanista näkyvyyttä? Lue miten LinkedIn Premium-tili vaikuttaa henkilötileihin ja yritystileihin.",
+      "3 maaliskuuta 2026",
+      "Mistä tekoälyn ympäristövaikutukset syntyvät? Konkreettinen opas: chat vs kuvat vs agentit, viihde vs hyöty ja miten pienennät kuormaa arjessa.",
+      "26 helmikuuta 2026",
+      "Orgaaninen ja maksettu some tukevat toisiaan zero click -maailmassa. Opi roolit, yhdistelmästrategia ja mittarit, joilla saat enemmän irti.",
+      "25 tammikuuta 2026",
+      "Zero click -aika muuttaa somemarkkinointia 2026. Käytännön mallit B2B- ja B2C-someen: sisältötyypit, mittarit ja aktivointi, joilla kasvatat kysyntää ilman klikkejä.",
+      "20 huhtikuuta 2025",
+      "Vertailu: Riverside, Captions, OpusClip, VEED ja CapCut. Katso vahvuudet, käyttötapaukset ja valintavinkit pitkien videoiden pilkkomiseen someklippeiksi.",
+      "8 joulukuuta 2024",
+      "Tekoäly arjen työvälineenä: miten AI auttaa markkinoinnissa, tiedonhaussa ja sisällöntuotannossa? Lue myös vinkit MyGPT-assistenttien hyödyntämiseen!",
+      "5 joulukuuta 2024",
+      "Hyödynnä tekoälyä luovassa työssä! Opi Rakenna-Luo-Analysoi-mallista ja löydä käytännön vinkkejä tekoälyn hyödyntämiseen markkinoinnissa.",
+      "10 marraskuuta 2024",
+      "Tekoälykuvat mahdollistavat eri työtehtävien esittelyn sekä monimuotoisuuden esiin tuomisen. Sopii rekrytointiviestintään ja työnantajabrändäykseen.",
+      "31 lokakuuta 2024",
+      "Lue, miten tekoäly ja tekijänoikeudet kohtaavat markkinoinnissa. Juristit kertovat riskien hallinnasta ja vastuullisesta tekoälyn käytöstä.",
+      "12 heinäkuuta 2024",
+      "Lue, kuuntele tai katso, miten ihan tavallinen yrittäjä voi tekoälyä hyödyntää. Haastattelussamme yrittäjä, joka kertoo konkreettisista käyttötavoistaan."
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/mita-social-seo-tarkoittaa-ja-miten-optimoit-somesisallot-hakuun?hsLang=fi-fi",
+        "label": "18 maaliskuuta 2026 Mitä social SEO tarkoittaa ja miten optimoit somesisällöt hakuun? Social SEO tarkoittaa someprofiilien ja somejulkaisujen optimointia niin, että ne löytyvät paremmin somehaussa, Googlessa ja tekoälyhaussa. Lue lisää!"
+      },
+      {
+        "href": "https://blog.kuulu.fi/videon-automaattiseen-lyhentaminen-tekoalylla-vertailussa-5-ai-videotyokalua?hsLang=fi-fi",
+        "label": "20 huhtikuuta 2025 5 tekoälytyökalua, jotka pilkkovat pitkät videot someklipeiksi – vertailu ja vinkit Vertailu: Riverside, Captions, OpusClip, VEED ja CapCut. Katso vahvuudet, käyttötapaukset ja valintavinkit pitkien videoiden pilkkomiseen someklippeiksi."
+      },
+      {
+        "href": "https://blog.kuulu.fi/tekoaly-yrittajalle?hsLang=fi-fi",
+        "label": "12 heinäkuuta 2024 Tekoäly yrittäjälle Lue, kuuntele tai katso, miten ihan tavallinen yrittäjä voi tekoälyä hyödyntää. Haastattelussamme yrittäjä, joka kertoo konkreettisista käyttötavoistaan."
+      },
+      {
+        "href": "https://blog.kuulu.fi/tekoaly-tyossa-kuulu-jari-sarasvuon-haastattelussa?hsLang=fi-fi",
+        "label": "25 kesäkuuta 2024 Miten voit hyödyntää tekoälyä työssäsi – Kuulu Sarasvuon haastattelussa Tutustu, miten tekoäly mullistaa työn: tehokkuutta, luovuutta ja uusia näkökulmia. Mukana käytännön esimerkkejä. Katso Kuulu Jari Sarasvuon haastattelussa!"
+      },
+      {
+        "href": "https://blog.kuulu.fi/canva-tekoalyominaisuudet-sisallontuotannossa-ja-kuvankasittelyssa?hsLang=fi-fi",
+        "label": "31 toukokuuta 2023 Canvan tekoälyominaisuudet sisällöntuotannossa ja kuvankäsittelyssä Kuvankäsittelytyökalu Canva on uudistunut tekoälyominaisuuksien myötä. Lue ja katso videoilta, kuinka luot tekstiä, esityksiä ja kuvia tekoälyn avulla."
+      },
+      {
+        "href": "https://blog.kuulu.fi/hootsuite-somehallinta-ja-analytiikka-yhdelta-luukulta?hsLang=fi-fi",
+        "label": "10 huhtikuuta 2022 Hootsuite – somehallinta ja analytiikka yhdeltä luukulta Hootsuite tunnetaan ajastustyökaluna, mutta se on myös mainio työkalu tiimityöhön sekä someviestinnän tehokkuuden analysointiin. Katso video aiheesta!"
+      },
+      {
+        "href": "https://blog.kuulu.fi/kuulutukset-4-aiheina-instagram-youtube-ja-linkedin-mainonta?hsLang=fi-fi",
+        "label": "2 kesäkuuta 2021 Kuulutukset, osa 4: aiheina Instagram, YouTube ja Linkedin-mainonta Katso tai kuuntele Kuulutukset. Nyt esittelemme mm. Instagram dropsin, Instagram Reels statistiikan ja Linkedin-mainonnan uuden muodon."
+      },
+      {
+        "href": "https://blog.kuulu.fi/kuulutukset-osa-3-facebook-google-pinterest-uutuudet-verkkokauppiaille?hsLang=fi-fi",
+        "label": "25 toukokuuta 2021 Kuulutukset, osa 3: FB-, Google- ja Pinterest-uutuuksia verkkokauppiaille Katso tai kuuntele Kuulutukset. Nyt esittelemme mm. Facebook live shopping -konseptin, Googlen ja Shopifyn yhteistyön ja Pinterestin ideapinnaukset."
+      },
+      {
+        "href": "https://blog.kuulu.fi/kuulutukset-osa-2-linkedin-instagram-ja-youtube-uutuuksia?hsLang=fi-fi",
+        "label": "16 toukokuuta 2021 Kuulutukset, osa 2: Uutuuksia Linkedinissä, Instagramissa & YouTubessa Katso tai kuuntele Kuulutukset. Tällä kertaa esittelemme mm. LinkedIn creator moden, Instagramin reshare stickerin ja YouTube shorts -sisältömuodon."
+      },
+      {
+        "href": "https://blog.kuulu.fi/kuulutukset-1-instagram-twitter-youtube-uutuuksia?hsLang=fi-fi",
+        "label": "12 toukokuuta 2021 Kuulutukset, osa 1: Uutuuksia Instagramissa, Twitterissä & YouTubessa Katso tai kuuntele Kuulutukset. Tällä kertaa esittelemme mm. Instagramin hakukoneoptimointia, Twitterin äänihuoneita ja YouTuben Avainhetket."
+      },
+      {
+        "href": "https://blog.kuulu.fi/10-nyrkkisaantoa-yrityksen-facebookiin?hsLang=fi-fi",
+        "label": "Yrityksen Facebook-sivu – 10 nyrkkisääntöä markkinointisisältöihin Yritysten Facebook-sivujen sisällöissä on usein toivomisen varaa. Listasimme kymmenen perusohjetta miten saat yrityksen Facebook-sivun toimimaan paremmin."
+      },
+      {
+        "href": "https://blog.kuulu.fi/facebook-mainonta-mainostyypin-valinta?hsLang=fi-fi",
+        "label": "Facebook-mainonta - mainostyypit. Mikä mainostyyppi toimii parhaiten? Ennen kuin mainostat, tutustu Facebook-mainonnan mainostyyppeihin, kohdennukseen ja mainoksen tulosten seuraamiseen, jotta Facebook-mainonta tehostuu!"
+      },
+      {
+        "href": "https://blog.kuulu.fi/linkedin-mahdollisuudet-yritykselle?hsLang=fi-fi",
+        "label": "18 maaliskuuta 2020 LinkedIn yritykselle – mitä mahdollisuuksia LinkedIn tarjoaa? Kannattaako perustaa yritystili LinkedIniin? LinkedIn tarjoaa hyötyjä niin rekrytointiin kuin työnantajamielikuvan luontiin. Lue lisää hyötyjä blogista!"
+      },
+      {
+        "href": "https://blog.kuulu.fi/youtube-mainosten-kohdennus?hsLang=fi-fi",
+        "label": "27 joulukuuta 2016 YouTube-mainosten kohdennus – kenelle voin kohdentaa mainontaa? YouTube-mainos – miten videon mainonnan kohdennus tapahtuu ja kuka niitä näkee? Lue lisää YouTuben erilaisista mainosmuodoista."
+      },
+      {
+        "href": "https://blog.kuulu.fi/vaikuttavaa-videomarkkinointia?hsLang=fi-fi",
+        "label": "9 toukokuuta 2016 Vaikuttava videomarkkinointi – miksi käyttäisit videota markkinoinnissa? Videomarkkinointi on nyt kovassa nosteessa, miksi? Lue blogistamme videon statistiikkaa ja analytiikkaa ja katso pieni opasvideo videon tekemiseen."
+      }
+    ]
+  },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "",
+    "content_name": "",
+    "content_path": "",
+    "hs_form_count": 0,
+    "form_ids": [],
+    "meeting_links": [],
+    "video_embeds": [
+      "https://blog.kuulu.fi/kuulutukset-1-instagram-twitter-youtube-uutuuksia?hsLang=fi-fi",
+      "https://blog.kuulu.fi/kuulutukset-4-aiheina-instagram-youtube-ja-linkedin-mainonta?hsLang=fi-fi",
+      "https://blog.kuulu.fi/kuulutukset-osa-2-linkedin-instagram-ja-youtube-uutuuksia?hsLang=fi-fi",
+      "https://blog.kuulu.fi/youtube-live-puhelimella?hsLang=fi-fi",
+      "https://blog.kuulu.fi/youtube-mainosten-kohdennus?hsLang=fi-fi",
+      "https://player.vimeo.com/video/663256117?h=aa48f44f1f&amp;app_id=122963",
+      "https://www.kuulu.fi/hubfs/Imported_Blog_Media/Kuulutus-osa-1-Uutisia-Instagramista-Twitterista-ja-YouTubesta-Aug-04-2022-10-17-54-94-AM.webp",
+      "https://www.kuulu.fi/hubfs/Imported_Blog_Media/Kuulutus-osa-1-Uutisia-Instagramista-Twitterista-ja-YouTubesta-Aug-04-2022-10-23-44-56-AM.webp",
+      "https://www.kuulu.fi/hubfs/Imported_Blog_Media/Kuulutus-osa-1-Uutisia-Instagramista-Twitterista-ja-YouTubesta-Aug-04-2022-10-28-47-11-AM.webp",
+      "https://www.kuulu.fi/hubfs/Imported_Blog_Media/Kuulutus-osa-1-Uutisia-Instagramista-Twitterista-ja-YouTubesta-Aug-04-2022-10-36-12-85-AM.webp",
+      "https://www.kuulu.fi/hubfs/Imported_Blog_Media/YouTube-live-puhelimella-3.webp",
+      "https://www.kuulu.fi/hubfs/Imported_Blog_Media/Youtube-mainosten-kohdennus-3.webp",
+      "https://www.kuulu.fi/hubfs/website_files/icons/green_mask_youtube.svg",
+      "https://www.youtube.com/c/KuuluFi"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "18 maaliskuuta 2026 Mitä social SEO tarkoittaa ja miten optimoit somesisällöt hakuun? Social SEO tarkoittaa someprofiilien ja somejulkaisujen optimointia niin, että ne löytyvät paremmin somehaussa, Googlessa ja tekoälyhaussa. Lue lisää!",
+        "href": "https://blog.kuulu.fi/mita-social-seo-tarkoittaa-ja-miten-optimoit-somesisallot-hakuun?hsLang=fi-fi"
+      },
+      {
+        "label": "20 huhtikuuta 2025 5 tekoälytyökalua, jotka pilkkovat pitkät videot someklipeiksi – vertailu ja vinkit Vertailu: Riverside, Captions, OpusClip, VEED ja CapCut. Katso vahvuudet, käyttötapaukset ja valintavinkit pitkien videoiden pilkkomiseen someklippeiksi.",
+        "href": "https://blog.kuulu.fi/videon-automaattiseen-lyhentaminen-tekoalylla-vertailussa-5-ai-videotyokalua?hsLang=fi-fi"
+      },
+      {
+        "label": "12 heinäkuuta 2024 Tekoäly yrittäjälle Lue, kuuntele tai katso, miten ihan tavallinen yrittäjä voi tekoälyä hyödyntää. Haastattelussamme yrittäjä, joka kertoo konkreettisista käyttötavoistaan.",
+        "href": "https://blog.kuulu.fi/tekoaly-yrittajalle?hsLang=fi-fi"
+      },
+      {
+        "label": "25 kesäkuuta 2024 Miten voit hyödyntää tekoälyä työssäsi – Kuulu Sarasvuon haastattelussa Tutustu, miten tekoäly mullistaa työn: tehokkuutta, luovuutta ja uusia näkökulmia. Mukana käytännön esimerkkejä. Katso Kuulu Jari Sarasvuon haastattelussa!",
+        "href": "https://blog.kuulu.fi/tekoaly-tyossa-kuulu-jari-sarasvuon-haastattelussa?hsLang=fi-fi"
+      },
+      {
+        "label": "31 toukokuuta 2023 Canvan tekoälyominaisuudet sisällöntuotannossa ja kuvankäsittelyssä Kuvankäsittelytyökalu Canva on uudistunut tekoälyominaisuuksien myötä. Lue ja katso videoilta, kuinka luot tekstiä, esityksiä ja kuvia tekoälyn avulla.",
+        "href": "https://blog.kuulu.fi/canva-tekoalyominaisuudet-sisallontuotannossa-ja-kuvankasittelyssa?hsLang=fi-fi"
+      },
+      {
+        "label": "10 huhtikuuta 2022 Hootsuite – somehallinta ja analytiikka yhdeltä luukulta Hootsuite tunnetaan ajastustyökaluna, mutta se on myös mainio työkalu tiimityöhön sekä someviestinnän tehokkuuden analysointiin. Katso video aiheesta!",
+        "href": "https://blog.kuulu.fi/hootsuite-somehallinta-ja-analytiikka-yhdelta-luukulta?hsLang=fi-fi"
+      },
+      {
+        "label": "2 kesäkuuta 2021 Kuulutukset, osa 4: aiheina Instagram, YouTube ja Linkedin-mainonta Katso tai kuuntele Kuulutukset. Nyt esittelemme mm. Instagram dropsin, Instagram Reels statistiikan ja Linkedin-mainonnan uuden muodon.",
+        "href": "https://blog.kuulu.fi/kuulutukset-4-aiheina-instagram-youtube-ja-linkedin-mainonta?hsLang=fi-fi"
+      },
+      {
+        "label": "25 toukokuuta 2021 Kuulutukset, osa 3: FB-, Google- ja Pinterest-uutuuksia verkkokauppiaille Katso tai kuuntele Kuulutukset. Nyt esittelemme mm. Facebook live shopping -konseptin, Googlen ja Shopifyn yhteistyön ja Pinterestin ideapinnaukset.",
+        "href": "https://blog.kuulu.fi/kuulutukset-osa-3-facebook-google-pinterest-uutuudet-verkkokauppiaille?hsLang=fi-fi"
+      },
+      {
+        "label": "16 toukokuuta 2021 Kuulutukset, osa 2: Uutuuksia Linkedinissä, Instagramissa &amp; YouTubessa Katso tai kuuntele Kuulutukset. Tällä kertaa esittelemme mm. LinkedIn creator moden, Instagramin reshare stickerin ja YouTube shorts -sisältömuodon.",
+        "href": "https://blog.kuulu.fi/kuulutukset-osa-2-linkedin-instagram-ja-youtube-uutuuksia?hsLang=fi-fi"
+      },
+      {
+        "label": "12 toukokuuta 2021 Kuulutukset, osa 1: Uutuuksia Instagramissa, Twitterissä &amp; YouTubessa Katso tai kuuntele Kuulutukset. Tällä kertaa esittelemme mm. Instagramin hakukoneoptimointia, Twitterin äänihuoneita ja YouTuben Avainhetket.",
+        "href": "https://blog.kuulu.fi/kuulutukset-1-instagram-twitter-youtube-uutuuksia?hsLang=fi-fi"
+      },
+      {
+        "label": "Yrityksen Facebook-sivu – 10 nyrkkisääntöä markkinointisisältöihin Yritysten Facebook-sivujen sisällöissä on usein toivomisen varaa. Listasimme kymmenen perusohjetta miten saat yrityksen Facebook-sivun toimimaan paremmin.",
+        "href": "https://blog.kuulu.fi/10-nyrkkisaantoa-yrityksen-facebookiin?hsLang=fi-fi"
+      },
+      {
+        "label": "Facebook-mainonta - mainostyypit. Mikä mainostyyppi toimii parhaiten? Ennen kuin mainostat, tutustu Facebook-mainonnan mainostyyppeihin, kohdennukseen ja mainoksen tulosten seuraamiseen, jotta Facebook-mainonta tehostuu!",
+        "href": "https://blog.kuulu.fi/facebook-mainonta-mainostyypin-valinta?hsLang=fi-fi"
+      },
+      {
+        "label": "18 maaliskuuta 2020 LinkedIn yritykselle – mitä mahdollisuuksia LinkedIn tarjoaa? Kannattaako perustaa yritystili LinkedIniin? LinkedIn tarjoaa hyötyjä niin rekrytointiin kuin työnantajamielikuvan luontiin. Lue lisää hyötyjä blogista!",
+        "href": "https://blog.kuulu.fi/linkedin-mahdollisuudet-yritykselle?hsLang=fi-fi"
+      },
+      {
+        "label": "27 joulukuuta 2016 YouTube-mainosten kohdennus – kenelle voin kohdentaa mainontaa? YouTube-mainos – miten videon mainonnan kohdennus tapahtuu ja kuka niitä näkee? Lue lisää YouTuben erilaisista mainosmuodoista.",
+        "href": "https://blog.kuulu.fi/youtube-mainosten-kohdennus?hsLang=fi-fi"
+      },
+      {
+        "label": "9 toukokuuta 2016 Vaikuttava videomarkkinointi – miksi käyttäisit videota markkinoinnissa? Videomarkkinointi on nyt kovassa nosteessa, miksi? Lue blogistamme videon statistiikkaa ja analytiikkaa ja katso pieni opasvideo videon tekemiseen.",
+        "href": "https://blog.kuulu.fi/vaikuttavaa-videomarkkinointia?hsLang=fi-fi"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 17,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "legal",
+        "labels": [
+          "Tietosuojaseloste"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ],
+        "strength": "navigational"
+      }
+    ]
+  }
+}

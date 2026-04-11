@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 382164972792,
+  "label" : "Video Showcase",
+  "icon" : "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/video.svg",
+  "is_available_for_new_content" : false
+}

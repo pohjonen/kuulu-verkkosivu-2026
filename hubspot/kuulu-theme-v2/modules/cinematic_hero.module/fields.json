@@ -1,0 +1,297 @@
+[ {
+  "id" : "background_type",
+  "name" : "background_type",
+  "label" : "Taustan tyyppi",
+  "help_text" : "Valitse haluatko käyttää videon URL-osoitetta, ladata videotiedoston vai käyttää taustakuvaa.",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "video_url", "Videon URL" ], [ "video_file", "Videotiedosto (upload)" ], [ "image", "Taustakuva" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "video_url"
+}, {
+  "id" : "background_video_url",
+  "name" : "background_video_url",
+  "label" : "Taustavideon URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "background_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_url",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.kuulu.fi/hubfs/Kuulu%20Showreel%202025%20l%C3%A4nd%C3%A4ri%202_1080p.mp4"
+}, {
+  "picker" : "file",
+  "id" : "background_video_file",
+  "name" : "background_video_file",
+  "label" : "Videotiedosto",
+  "help_text" : "Lataa tai valitse videotiedosto tiedostohallinnasta.",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "background_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_file",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "file"
+}, {
+  "id" : "background_image",
+  "name" : "background_image",
+  "label" : "Taustakuva",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "background_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : "Taustakuva"
+  }
+}, {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// SYSTEMAATTINEN MARKKINOINTIKONEISTO"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Markkinointia, joka tuottaa liidejä ja rakentaa brändiä"
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa (vihreä)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "— ennustettavasti"
+}, {
+  "id" : "lead_text",
+  "name" : "lead_text",
+  "label" : "Ingressi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Lopeta arvaileminen. Rakennamme teille markkinointikoneiston, joka yhdistää videon, digin ja tekoälyn mitattaviksi tuloksiksi."
+}, {
+  "id" : "sub_text",
+  "name" : "sub_text",
+  "label" : "Alateksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Ei enää yksittäisiä projekteja, vaan systeemi joka toimii kuukaudesta toiseen."
+}, {
+  "id" : "cta_count",
+  "name" : "cta_count",
+  "label" : "CTA-nappien määrä",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "1", "1 nappi" ], [ "2", "2 nappia" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "2"
+}, {
+  "id" : "cta_primary_text",
+  "name" : "cta_primary_text",
+  "label" : "Ensisijainen CTA -teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "VARAA SPARRAUS"
+}, {
+  "id" : "cta_primary_url",
+  "name" : "cta_primary_url",
+  "label" : "Ensisijainen CTA -linkki",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+}, {
+  "id" : "cta_secondary_text",
+  "name" : "cta_secondary_text",
+  "label" : "Toissijainen CTA -teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Ilmoittaudu maksuttomaan webinaariin"
+}, {
+  "id" : "cta_secondary_url",
+  "name" : "cta_secondary_url",
+  "label" : "Toissijainen CTA -linkki",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "#zero-click-earlybird"
+}, {
+  "id" : "show_stats",
+  "name" : "show_stats",
+  "label" : "Näytä tilastot",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "stat_1_value",
+  "name" : "stat_1_value",
+  "label" : "Tilasto 1 – arvo",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "show_stats",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "300+"
+}, {
+  "id" : "stat_1_label",
+  "name" : "stat_1_label",
+  "label" : "Tilasto 1 – teksti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "show_stats",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "koulutusta vuodessa"
+}, {
+  "id" : "stat_2_value",
+  "name" : "stat_2_value",
+  "label" : "Tilasto 2 – arvo",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "show_stats",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "98%"
+}, {
+  "id" : "stat_2_label",
+  "name" : "stat_2_label",
+  "label" : "Tilasto 2 – teksti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "show_stats",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "suosittelisi"
+}, {
+  "id" : "stat_3_value",
+  "name" : "stat_3_value",
+  "label" : "Tilasto 3 – arvo",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "show_stats",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "10+"
+}, {
+  "id" : "stat_3_label",
+  "name" : "stat_3_label",
+  "label" : "Tilasto 3 – teksti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "show_stats",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "vuotta kokemusta"
+} ]

@@ -1,0 +1,39 @@
+{
+  "module": "stats-trust-band-v2",
+  "module_key": "stats-trust-band-v2",
+  "category": "system",
+  "used_on": [
+    "homepage-v2",
+    "training-landing-v2",
+    "video-service-landing-v2",
+    "reference-detail-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "stat_items"
+  ],
+  "optional_fields": [
+    "section_tag",
+    "heading"
+  ],
+  "build_wave": 2,
+  "depends_on": [
+    "typography-tokens-v2",
+    "spacing-tokens-v2"
+  ],
+  "field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "stat_min": 2,
+    "stat_max": 5
+  }
+}

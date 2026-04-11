@@ -1,0 +1,144 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% set has_media = module.media_type and module.media_type != "none" %}
+{% set media_left = has_media and module.media_position == "left" %}
+{% set col_count = module.columns|default("1") %}
+
+{# Media-renderöintimakro (ei toisteta koodia) #}
+{% macro render_media() %}
+  <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green);">
+    {% if module.media_type == "image" and module.media_image.src %}
+      <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt }}" style="width: 100%; height: auto; display: block;">
+    {% elif module.media_type == "video_url" and module.media_video_url %}
+      {% set vurl = module.media_video_url|trim %}
+      {% if "player.vimeo.com" in vurl or "youtube.com/embed" in vurl %}
+        {# Already an embed URL - use directly #}
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+          <iframe src="{{ vurl }}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="autoplay; fullscreen; picture-in-picture; accelerometer; clipboard-write; encrypted-media; gyroscope" allowfullscreen></iframe>
+        </div>
+      {% elif "vimeo.com" in vurl %}
+        {# Convert vimeo.com/ID/HASH to player.vimeo.com/video/ID?h=HASH #}
+        {% set clean_url = vurl|split("?")|first %}
+        {% set path_part = clean_url|replace("https://vimeo.com/", "")|replace("http://vimeo.com/", "")|replace("www.vimeo.com/", "") %}
+        {% set url_parts = path_part|split("/") %}
+        {% set video_id = url_parts[0] %}
+        {% set video_hash = url_parts[1]|default("") %}
+        {% if video_hash %}
+          {% set embed_url = "https://player.vimeo.com/video/" ~ video_id ~ "?h=" ~ video_hash %}
+        {% else %}
+          {% set embed_url = "https://player.vimeo.com/video/" ~ video_id %}
+        {% endif %}
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+          <iframe src="{{ embed_url }}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      {% elif "youtu.be" in vurl %}
+        {# Short YouTube URL #}
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+          <iframe src="{{ vurl|replace('youtu.be/', 'www.youtube.com/embed/') }}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      {% elif "youtube.com/watch" in vurl %}
+        {# Standard YouTube URL - convert watch?v= to embed #}
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+          <iframe src="{{ vurl|replace('youtube.com/watch?v=', 'youtube.com/embed/')|replace('www.', '') |replace('youtube.com', 'www.youtube.com') }}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      {% else %}
+        <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+          <source src="{{ vurl }}" type="video/mp4">
+        </video>
+      {% endif %}
+    {% elif module.media_type == "video_file" and module.media_video_file %}
+      <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+        <source src="{{ module.media_video_file }}" type="video/mp4">
+      </video>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+<section class="cinematic-section grain-section">
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="cinematic-section-rounded glass-card" style="{% if not has_media and col_count == '1' %}max-width: {{ module.max_width }}px; margin: 0 auto;{% endif %}">
+
+      {# Otsikko – aina ylhäällä #}
+      {% if module.section_tag %}
+        <span class="section-tag">{{ module.section_tag }}</span>
+      {% endif %}
+      {% if module.headline %}
+        <{{ module.heading_level }} class="section-header">{{ module.headline }}{% if module.headline_highlight %} <span class="text-gradient-green">{{ module.headline_highlight }}</span>{% endif %}</{{ module.heading_level }}>
+      {% endif %}
+
+      {% if has_media %}
+      {# ===== MEDIA-LAYOUT (teksti + media vierekkäin) ===== #}
+      {% set ratio = module.media_ratio|default("equal") %}
+      {% if ratio == "text_narrow" %}
+        {% set text_col = "1fr" %}
+        {% set media_col = "2fr" %}
+      {% elif ratio == "text_wide" %}
+        {% set text_col = "2fr" %}
+        {% set media_col = "1fr" %}
+      {% else %}
+        {% set text_col = "1fr" %}
+        {% set media_col = "1fr" %}
+      {% endif %}
+      {% if media_left %}
+        {% set grid_cols = media_col ~ " " ~ text_col %}
+      {% else %}
+        {% set grid_cols = text_col ~ " " ~ media_col %}
+      {% endif %}
+      <div class="rich-text-media-grid" style="display: grid; grid-template-columns: {{ grid_cols }}; gap: 3rem; align-items: center; margin-top: 1.5rem;">
+        {% if media_left %}
+          {{ render_media() }}
+        {% endif %}
+        <div class="cinematic-rich-text-body" style="color: #ffffff; font-size: 1.05rem; line-height: 1.8;">
+          {{ module.content_body }}
+        </div>
+        {% if not media_left %}
+          {{ render_media() }}
+        {% endif %}
+      </div>
+
+      {% elif col_count == "2" %}
+      {# ===== 2-SARAKE LAYOUT ===== #}
+      <div class="rich-text-columns-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 1.5rem;">
+        <div class="cinematic-rich-text-body" style="color: #ffffff; font-size: 1.05rem; line-height: 1.8;">
+          {{ module.content_body }}
+        </div>
+        <div class="cinematic-rich-text-body" style="color: #ffffff; font-size: 1.05rem; line-height: 1.8;">
+          {{ module.content_body_2 }}
+        </div>
+      </div>
+
+      {% elif col_count == "3" %}
+      {# ===== 3-SARAKE LAYOUT ===== #}
+      <div class="rich-text-columns-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
+        <div class="cinematic-rich-text-body" style="color: #ffffff; font-size: 1.05rem; line-height: 1.8;">
+          {{ module.content_body }}
+        </div>
+        <div class="cinematic-rich-text-body" style="color: #ffffff; font-size: 1.05rem; line-height: 1.8;">
+          {{ module.content_body_2 }}
+        </div>
+        <div class="cinematic-rich-text-body" style="color: #ffffff; font-size: 1.05rem; line-height: 1.8;">
+          {{ module.content_body_3 }}
+        </div>
+      </div>
+
+      {% else %}
+      {# ===== 1-SARAKE LAYOUT (oletus) ===== #}
+      <div class="cinematic-rich-text-body" style="color: #ffffff; font-size: 1.05rem; line-height: 1.8;">
+        {{ module.content_body }}
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .rich-text-media-grid,
+    .rich-text-columns-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

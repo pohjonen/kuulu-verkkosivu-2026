@@ -1,0 +1,42 @@
+{
+  "module": "video-model-comparison-v2",
+  "module_key": "video-model-comparison-v2",
+  "category": "specialized",
+  "used_on": [
+    "video-service-landing-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "section_tag",
+    "heading",
+    "intro_text",
+    "model_cards"
+  ],
+  "optional_fields": [],
+  "build_wave": 3,
+  "depends_on": [
+    "card-grid-v2",
+    "media-wrapper-v2"
+  ],
+  "field_groups": [
+    "content",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "fixed_cards": 3,
+    "locked_order": [
+      "captured",
+      "hybrid",
+      "ai-enhanced"
+    ]
+  }
+}

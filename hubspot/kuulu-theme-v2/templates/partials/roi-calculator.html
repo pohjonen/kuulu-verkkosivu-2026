@@ -1,0 +1,179 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "ROI Calculator - Interactive Savings"
+-->
+{#
+  Interaktiivinen ROI-laskuri
+
+  Käyttö:
+    {% set roi_tag = '// Laske säästösi' %}
+    {% set roi_title = 'Paljonko <span class="text-gradient-green">säästäisit?</span>' %}
+    {% set roi_description = 'Vertaa in-house-tiimin kustannuksia Kuulu Flow -malliin.' %}
+
+    {% set roi_slider_1_label = 'Kuukausibudjetti markkinointiin (€)' %}
+    {% set roi_slider_1_min = '2000' %}
+    {% set roi_slider_1_max = '30000' %}
+    {% set roi_slider_1_default = '8000' %}
+    {% set roi_slider_1_step = '500' %}
+
+    {% set roi_slider_2_label = 'In-house henkilöt (lkm)' %}
+    {% set roi_slider_2_min = '1' %}
+    {% set roi_slider_2_max = '10' %}
+    {% set roi_slider_2_default = '3' %}
+    {% set roi_slider_2_step = '1' %}
+
+    {% set roi_slider_3_label = 'Sisältöjä kuukaudessa (kpl)' %}
+    {% set roi_slider_3_min = '5' %}
+    {% set roi_slider_3_max = '60' %}
+    {% set roi_slider_3_default = '15' %}
+    {% set roi_slider_3_step = '5' %}
+
+    {% set roi_avg_salary = '4500' %}
+    {% set roi_flow_base = '2900' %}
+
+    {% set roi_cta = 'Varaa sparraus — katsotaan luvut yhdessä' %}
+    {% set roi_cta_url = '#ota-yhteytta' %}
+    {% include './partials/roi-calculator.html' %}
+#}
+
+{% set r_tag = roi_tag|default('// Laske säästösi') %}
+{% set r_title = roi_title|default('Paljonko <span class="text-gradient-green">säästäisit?</span>') %}
+{% set r_desc = roi_description|default('') %}
+
+{% set s1_label = roi_slider_1_label|default('Kuukausibudjetti (€)') %}
+{% set s1_min = roi_slider_1_min|default('2000') %}
+{% set s1_max = roi_slider_1_max|default('30000') %}
+{% set s1_def = roi_slider_1_default|default('8000') %}
+{% set s1_step = roi_slider_1_step|default('500') %}
+
+{% set s2_label = roi_slider_2_label|default('In-house henkilöt') %}
+{% set s2_min = roi_slider_2_min|default('1') %}
+{% set s2_max = roi_slider_2_max|default('10') %}
+{% set s2_def = roi_slider_2_default|default('3') %}
+{% set s2_step = roi_slider_2_step|default('1') %}
+
+{% set s3_label = roi_slider_3_label|default('Sisältöjä / kk') %}
+{% set s3_min = roi_slider_3_min|default('5') %}
+{% set s3_max = roi_slider_3_max|default('60') %}
+{% set s3_def = roi_slider_3_default|default('15') %}
+{% set s3_step = roi_slider_3_step|default('5') %}
+
+{% set avg_salary = roi_avg_salary|default('4500') %}
+{% set flow_base = roi_flow_base|default('2900') %}
+
+{% set r_cta = roi_cta|default('') %}
+{% set r_cta_url = roi_cta_url|default('#ota-yhteytta') %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section" id="roi-calc">
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    {% if r_tag %}<span class="section-tag">{{ r_tag }}</span>{% endif %}
+    {% if r_title %}<h2 class="section-header">{{ r_title }}</h2>{% endif %}
+    {% if r_desc %}<p style="color: var(--cinematic-text-muted); max-width: 650px; margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.7;">{{ r_desc }}</p>{% endif %}
+
+    <div class="roi-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 900px; margin: 0 auto; align-items: start;">
+
+      <div class="roi-sliders">
+        <div class="roi-slider-group">
+          <label class="roi-label">{{ s1_label }}: <span class="roi-val" id="roiVal1">{{ s1_def }}</span> €</label>
+          <input type="range" id="roiSlider1" min="{{ s1_min }}" max="{{ s1_max }}" value="{{ s1_def }}" step="{{ s1_step }}" class="roi-range" oninput="roiUpdate()">
+        </div>
+        <div class="roi-slider-group">
+          <label class="roi-label">{{ s2_label }}: <span class="roi-val" id="roiVal2">{{ s2_def }}</span></label>
+          <input type="range" id="roiSlider2" min="{{ s2_min }}" max="{{ s2_max }}" value="{{ s2_def }}" step="{{ s2_step }}" class="roi-range" oninput="roiUpdate()">
+        </div>
+        <div class="roi-slider-group">
+          <label class="roi-label">{{ s3_label }}: <span class="roi-val" id="roiVal3">{{ s3_def }}</span></label>
+          <input type="range" id="roiSlider3" min="{{ s3_min }}" max="{{ s3_max }}" value="{{ s3_def }}" step="{{ s3_step }}" class="roi-range" oninput="roiUpdate()">
+        </div>
+      </div>
+
+      <div class="roi-results">
+        <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+          <p class="roi-result-label">In-house kustannus / vuosi</p>
+          <p class="roi-result-num roi-neg" id="roiInhouse">0 €</p>
+        </div>
+        <div class="hero-glass-box" style="padding: 2rem; text-align: center; margin-top: 1rem; border-color: rgba(0,255,135,0.2);">
+          <p class="roi-result-label">Kuulu Flow / vuosi</p>
+          <p class="roi-result-num roi-pos" id="roiFlow">0 €</p>
+        </div>
+        <div class="hero-glass-box" style="padding: 2rem; text-align: center; margin-top: 1rem; background: rgba(0,255,135,0.05); border-color: rgba(0,255,135,0.25);">
+          <p class="roi-result-label">Vuosisäästö</p>
+          <p class="roi-result-num roi-save" id="roiSaving" style="font-size: 2.2rem;">0 €</p>
+        </div>
+      </div>
+    </div>
+
+    {% if r_cta %}
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="{{ r_cta_url }}" class="btn-cinematic-primary">{{ r_cta }}</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+.roi-slider-group { margin-bottom: 1.5rem; }
+.roi-label {
+  display: block; color: var(--cinematic-text); font-size: 0.9rem;
+  font-weight: 600; margin-bottom: 0.75rem;
+}
+.roi-val { color: var(--cinematic-green); font-weight: 700; }
+.roi-range {
+  -webkit-appearance: none; appearance: none; width: 100%; height: 6px;
+  background: rgba(255,255,255,0.1); border-radius: 3px; outline: none;
+  cursor: pointer;
+}
+.roi-range::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--cinematic-green); border: 3px solid #0a0a0a;
+  cursor: pointer; box-shadow: 0 0 10px rgba(0,255,135,0.3);
+}
+.roi-range::-moz-range-thumb {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--cinematic-green); border: 3px solid #0a0a0a;
+  cursor: pointer;
+}
+.roi-result-label { color: var(--cinematic-text-muted); font-size: 0.82rem; margin: 0 0 0.5rem; }
+.roi-result-num { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; margin: 0; }
+.roi-neg { color: rgba(255,100,100,0.8); }
+.roi-pos { color: var(--cinematic-text); }
+.roi-save { color: var(--cinematic-green); }
+@media (max-width: 768px) {
+  .roi-layout { grid-template-columns: 1fr !important; }
+}
+</style>
+
+<script>
+var roiAvgSalary = {{ avg_salary }};
+var roiFlowBase = {{ flow_base }};
+
+function roiUpdate() {
+  var budget = parseInt(document.getElementById('roiSlider1').value);
+  var people = parseInt(document.getElementById('roiSlider2').value);
+  var content = parseInt(document.getElementById('roiSlider3').value);
+
+  document.getElementById('roiVal1').textContent = budget.toLocaleString('fi-FI');
+  document.getElementById('roiVal2').textContent = people;
+  document.getElementById('roiVal3').textContent = content;
+
+  var inhouseMonthlySalary = people * roiAvgSalary;
+  var inhouseTools = people * 200;
+  var inhouseTotal = (inhouseMonthlySalary + inhouseTools + budget) * 12;
+
+  var flowCredits = Math.ceil(content / 3);
+  var flowMonthly = Math.max(roiFlowBase, roiFlowBase + (flowCredits - 10) * 250);
+  var flowTotal = (flowMonthly + budget * 0.6) * 12;
+
+  var saving = inhouseTotal - flowTotal;
+
+  document.getElementById('roiInhouse').textContent = Math.round(inhouseTotal).toLocaleString('fi-FI') + ' €';
+  document.getElementById('roiFlow').textContent = Math.round(flowTotal).toLocaleString('fi-FI') + ' €';
+  document.getElementById('roiSaving').textContent = (saving > 0 ? '' : '') + Math.round(saving).toLocaleString('fi-FI') + ' €';
+}
+
+roiUpdate();
+</script>

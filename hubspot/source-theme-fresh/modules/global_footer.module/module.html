@@ -1,0 +1,115 @@
+<footer class="global-footer">
+  <div class="footer-main">
+    <div class="footer-container">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <h3 class="footer-brand-name">{{ module.company_name }}</h3>
+        <p class="footer-tagline">{{ module.tagline }}</p>
+        {% if module.description %}
+        <div class="footer-description">{{ module.description }}</div>
+        {% endif %}
+
+        <!-- Social Links -->
+        <div class="footer-social">
+          {% if module.social_linkedin %}
+          <a href="{{ module.social_linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {% endif %}
+          {% if module.social_facebook %}
+          <a href="{{ module.social_facebook }}" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          {% endif %}
+          {% if module.social_instagram %}
+          <a href="{{ module.social_instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          {% endif %}
+          {% if module.social_youtube %}
+          <a href="{{ module.social_youtube }}" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Menu Columns -->
+      {% if module.footer_menu_1_title %}
+      <div class="footer-menu-column">
+        <h4 class="footer-menu-title">{{ module.footer_menu_1_title }}</h4>
+        {% menu "footer_menu_1" overrideable=True, root_type='site_root', flyouts='false', max_levels='1', id=module.footer_menu_1 %}
+      </div>
+      {% endif %}
+
+      {% if module.footer_menu_2_title %}
+      <div class="footer-menu-column">
+        <h4 class="footer-menu-title">{{ module.footer_menu_2_title }}</h4>
+        {% menu "footer_menu_2" overrideable=True, root_type='site_root', flyouts='false', max_levels='1', id=module.footer_menu_2 %}
+      </div>
+      {% endif %}
+
+      {% if module.footer_menu_3_title %}
+      <div class="footer-menu-column">
+        <h4 class="footer-menu-title">{{ module.footer_menu_3_title }}</h4>
+        {% menu "footer_menu_3" overrideable=True, root_type='site_root', flyouts='false', max_levels='1', id=module.footer_menu_3 %}
+      </div>
+      {% endif %}
+
+      <!-- Newsletter Column -->
+      {% if module.show_newsletter %}
+      <div class="footer-newsletter">
+        <h4 class="footer-menu-title">{{ module.newsletter_title }}</h4>
+        <p class="newsletter-description">{{ module.newsletter_description }}</p>
+
+        {% if module.newsletter_form_id %}
+        {% form
+          form_to_use="{{ module.newsletter_form_id }}",
+          response_type="inline",
+          form_theme_style="default"
+        %}
+        {% else %}
+        <div class="newsletter-form-placeholder">
+          <input type="email" placeholder="Sähköpostiosoite" class="newsletter-input">
+          <button class="newsletter-submit">Tilaa →</button>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="footer-container">
+      <div class="footer-bottom-content">
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          {% if module.address %}
+          <span class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            {{ module.address }}
+          </span>
+          {% endif %}
+          {% if module.phone %}
+          <span class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:{{ module.phone }}">{{ module.phone }}</a>
+          </span>
+          {% endif %}
+          {% if module.email %}
+          <span class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:{{ module.email }}">{{ module.email }}</a>
+          </span>
+          {% endif %}
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+          {{ module.copyright_text|replace("{{ year }}", local_dt.year|string) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

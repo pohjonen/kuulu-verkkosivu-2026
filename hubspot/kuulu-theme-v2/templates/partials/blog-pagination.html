@@ -1,0 +1,37 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Blog Pagination"
+-->
+{#
+  Blogisivutus -partiaali
+
+  Käyttö:
+    {% include './partials/blog-pagination.html' with {
+      current_page: 1,
+      total_pages: 5,
+      base_url: '/blogi'
+    } %}
+#}
+
+{% set current = current_page|default(1) %}
+{% set total = total_pages|default(3) %}
+{% set base = base_url|default('/blogi') %}
+
+<nav class="blog-pagination" aria-label="Sivunavigaatio" style="display: flex; justify-content: center; align-items: center; gap: 0.5rem; padding: 2rem 0;">
+  {% if current > 1 %}
+  <a href="{{ base }}?page={{ current - 1 }}" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 8px; text-decoration: none; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s;">&larr;</a>
+  {% endif %}
+
+  {% for page_num in range(1, total + 1) %}
+  <a href="{{ base }}{% if page_num > 1 %}?page={{ page_num }}{% endif %}" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.3s; {% if page_num == current %}background: var(--cinematic-green); color: #0a0a0a;{% else %}background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);{% endif %}">{{ page_num }}</a>
+  {% endfor %}
+
+  {% if current < total %}
+  <a href="{{ base }}?page={{ current + 1 }}" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 8px; text-decoration: none; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s;">&rarr;</a>
+  {% endif %}
+</nav>
+
+<style>
+.blog-pagination a:hover { background: rgba(0, 255, 135, 0.15); color: var(--cinematic-green); border-color: rgba(0, 255, 135, 0.3); }
+</style>

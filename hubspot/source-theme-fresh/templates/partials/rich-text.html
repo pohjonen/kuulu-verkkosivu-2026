@@ -1,0 +1,90 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Rich Text - Long Content Block"
+-->
+{#
+  Pitkä sisältöblokki -partiaali (vapaalle tekstille)
+
+  Käyttö:
+    {% set rt_tag = '// Tietoa' %}
+    {% set rt_title = 'Kuulun <span class="text-gradient-green">tarina</span>' %}
+    {% set rt_content = '<p>Kuulu perustettiin 2013 Oulussa...</p><h3>Missio</h3><p>Teemme asiakkaistamme kuuluisia.</p><blockquote>Paras digimarkkinointitoimisto.</blockquote><ul><li>Videotuotanto</li><li>Digimarkkinointi</li></ul>' %}
+    {% set rt_max_width = '720px' %}
+    {% set rt_dark_bg = false %}
+    {% include './partials/rich-text.html' %}
+#}
+
+{% set r_tag = rt_tag|default('') %}
+{% set r_title = rt_title|default('') %}
+{% set r_content = rt_content|default('') %}
+{% set r_width = rt_max_width|default('720px') %}
+{% set r_dark = rt_dark_bg|default(false) %}
+
+<section class="cinematic-section{% if r_dark %} section-with-blobs gradient-section-dark grain-section{% endif %}">
+  {% if r_dark %}
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  {% endif %}
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="rt-wrapper" style="max-width: {{ r_width }}; margin: 0 auto;">
+      {% if r_tag %}<span class="section-tag">{{ r_tag }}</span>{% endif %}
+      {% if r_title %}<h2 class="section-header" style="text-align: left;">{{ r_title }}</h2>{% endif %}
+
+      <div class="rt-body">
+        {{ r_content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.rt-body { color: var(--cinematic-text-muted); font-size: 1.05rem; line-height: 1.85; }
+.rt-body p { margin: 0 0 1.5rem; }
+.rt-body h2 {
+  font-family: var(--font-display); color: var(--cinematic-text);
+  font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 1rem; line-height: 1.3;
+}
+.rt-body h3 {
+  font-family: var(--font-display); color: var(--cinematic-text);
+  font-size: 1.25rem; font-weight: 700; margin: 2rem 0 0.75rem; line-height: 1.3;
+}
+.rt-body h4 {
+  font-family: var(--font-display); color: var(--cinematic-green);
+  font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.rt-body ul, .rt-body ol { padding-left: 1.5rem; margin: 0 0 1.5rem; }
+.rt-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+.rt-body ul li::marker { color: var(--cinematic-green); }
+.rt-body ol li::marker { color: var(--cinematic-green); font-weight: 700; }
+.rt-body strong { color: var(--cinematic-text); font-weight: 600; }
+.rt-body a { color: var(--cinematic-green); text-decoration: underline; text-underline-offset: 3px; transition: opacity 0.3s; }
+.rt-body a:hover { opacity: 0.8; }
+.rt-body blockquote {
+  margin: 2rem 0; padding: 1.5rem 2rem;
+  border-left: 3px solid var(--cinematic-green);
+  background: rgba(0,255,135,0.03); border-radius: 0 12px 12px 0;
+  font-size: 1.1rem; font-style: italic; color: var(--cinematic-text);
+}
+.rt-body blockquote p { margin-bottom: 0; }
+.rt-body img {
+  max-width: 100%; height: auto; border-radius: 12px; margin: 1.5rem 0;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.rt-body hr {
+  border: none; height: 1px; background: rgba(255,255,255,0.08); margin: 2.5rem 0;
+}
+.rt-body code {
+  background: rgba(255,255,255,0.06); padding: 0.2rem 0.5rem; border-radius: 4px;
+  font-size: 0.9em; color: var(--cinematic-green);
+}
+.rt-body table {
+  width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+.rt-body th, .rt-body td {
+  padding: 0.75rem 1rem; border: 1px solid rgba(255,255,255,0.08); text-align: left;
+}
+.rt-body th { background: rgba(255,255,255,0.04); color: var(--cinematic-text); font-weight: 600; }
+</style>

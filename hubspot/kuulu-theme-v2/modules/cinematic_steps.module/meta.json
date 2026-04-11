@@ -1,0 +1,14 @@
+{
+  "content_tags" : [ {
+    "name" : "CINEMATIC",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "SITE_PAGE" ],
+  "categories" : [ "design" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 382164972780,
+  "label" : "06 – Askeleet / prosessi",
+  "icon" : "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/process.svg",
+  "is_available_for_new_content" : true
+}

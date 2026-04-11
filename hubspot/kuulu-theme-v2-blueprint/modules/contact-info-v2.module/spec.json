@@ -1,0 +1,38 @@
+{
+  "module": "contact-info-v2",
+  "module_key": "contact-info-v2",
+  "category": "specialized",
+  "used_on": [
+    "company-info-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "cta",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "office_cards"
+  ],
+  "optional_fields": [
+    "billing_info_rich_text",
+    "meeting_link",
+    "form_id"
+  ],
+  "build_wave": 3,
+  "depends_on": [
+    "structured-office-fields-v2",
+    "safe-link-field-v2"
+  ],
+  "field_groups": [
+    "content",
+    "cta",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "rich_text_scope": "billing-only"
+  }
+}

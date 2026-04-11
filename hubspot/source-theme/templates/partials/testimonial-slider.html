@@ -1,0 +1,205 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Testimonial Slider - Carousel Reviews"
+-->
+{#
+  Testimoniaali-slider / karuselli
+
+  Käyttö:
+    {% set ts_tag = '// Kokemuksia' %}
+    {% set ts_title = 'Asiakkaamme <span class="text-gradient-green">kertovat</span>' %}
+    {% set ts_1_quote = 'Kuulun tiimi ylitti kaikki odotuksemme.' %}
+    {% set ts_1_name = 'Matti Meikäläinen' %}
+    {% set ts_1_role = 'Markkinointijohtaja' %}
+    {% set ts_1_company = 'Yritys Oy' %}
+    {% set ts_1_image = 'https://example.com/photo.jpg' %}
+    {% set ts_1_logo = 'https://example.com/logo.png' %}
+    ... (max 6 slidea)
+    {% set ts_autoplay = true %}
+    {% set ts_interval = 5000 %}
+    {% include './partials/testimonial-slider.html' %}
+#}
+
+{% set s_tag = ts_tag|default('') %}
+{% set s_title = ts_title|default('') %}
+{% set s_auto = ts_autoplay|default(true) %}
+{% set s_interval = ts_interval|default(5000) %}
+
+{% set slides = [] %}
+{% if ts_1_quote|default('') %}{% set slides = slides + [{'quote': ts_1_quote, 'name': ts_1_name|default(''), 'role': ts_1_role|default(''), 'company': ts_1_company|default(''), 'image': ts_1_image|default(''), 'logo': ts_1_logo|default('')}] %}{% endif %}
+{% if ts_2_quote|default('') %}{% set slides = slides + [{'quote': ts_2_quote, 'name': ts_2_name|default(''), 'role': ts_2_role|default(''), 'company': ts_2_company|default(''), 'image': ts_2_image|default(''), 'logo': ts_2_logo|default('')}] %}{% endif %}
+{% if ts_3_quote|default('') %}{% set slides = slides + [{'quote': ts_3_quote, 'name': ts_3_name|default(''), 'role': ts_3_role|default(''), 'company': ts_3_company|default(''), 'image': ts_3_image|default(''), 'logo': ts_3_logo|default('')}] %}{% endif %}
+{% if ts_4_quote|default('') %}{% set slides = slides + [{'quote': ts_4_quote, 'name': ts_4_name|default(''), 'role': ts_4_role|default(''), 'company': ts_4_company|default(''), 'image': ts_4_image|default(''), 'logo': ts_4_logo|default('')}] %}{% endif %}
+{% if ts_5_quote|default('') %}{% set slides = slides + [{'quote': ts_5_quote, 'name': ts_5_name|default(''), 'role': ts_5_role|default(''), 'company': ts_5_company|default(''), 'image': ts_5_image|default(''), 'logo': ts_5_logo|default('')}] %}{% endif %}
+{% if ts_6_quote|default('') %}{% set slides = slides + [{'quote': ts_6_quote, 'name': ts_6_name|default(''), 'role': ts_6_role|default(''), 'company': ts_6_company|default(''), 'image': ts_6_image|default(''), 'logo': ts_6_logo|default('')}] %}{% endif %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    {% if s_tag %}<span class="section-tag" style="text-align: center; display: block;">{{ s_tag }}</span>{% endif %}
+    {% if s_title %}<h2 class="section-header" style="text-align: center;">{{ s_title }}</h2>{% endif %}
+
+    <div class="tslider" style="max-width: 800px; margin: 2rem auto 0; position: relative;">
+      <div class="tslider-track">
+        {% for slide in slides %}
+        <div class="tslider-slide{% if loop.first %} active{% endif %}" data-index="{{ loop.index0 }}">
+          <div class="tslider-card">
+            <div class="tslider-quote-mark">&ldquo;</div>
+            <p class="tslider-quote">{{ slide.quote }}</p>
+            <div class="tslider-author">
+              {% if slide.image %}
+              <img src="{{ slide.image }}" alt="{{ slide.name }}" class="tslider-avatar" loading="lazy">
+              {% endif %}
+              <div class="tslider-info">
+                {% if slide.name %}<p class="tslider-name">{{ slide.name }}</p>{% endif %}
+                <p class="tslider-meta">
+                  {% if slide.role %}{{ slide.role }}{% endif %}
+                  {% if slide.role and slide.company %}, {% endif %}
+                  {% if slide.company %}{{ slide.company }}{% endif %}
+                </p>
+              </div>
+              {% if slide.logo %}
+              <img src="{{ slide.logo }}" alt="{{ slide.company }}" class="tslider-logo" loading="lazy">
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      {% if slides|length > 1 %}
+      <button class="tslider-arrow tslider-prev" onclick="tsliderNav(-1)" aria-label="Edellinen">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="tslider-arrow tslider-next" onclick="tsliderNav(1)" aria-label="Seuraava">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="tslider-dots">
+        {% for slide in slides %}
+        <button class="tslider-dot{% if loop.first %} active{% endif %}" onclick="tsliderGo({{ loop.index0 }})" aria-label="Slide {{ loop.index }}"></button>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+.tslider { overflow: visible; position: relative; }
+.tslider-track {
+  position: relative; min-height: 280px;
+  overflow: hidden; border-radius: 24px;
+}
+.tslider-slide {
+  position: absolute; inset: 0; opacity: 0; transform: translateX(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+.tslider-slide.active {
+  opacity: 1; transform: translateX(0); pointer-events: all;
+  position: relative;
+}
+.tslider-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px; padding: 3rem; text-align: center;
+  overflow: hidden;
+}
+.tslider-quote-mark {
+  font-size: 4rem; line-height: 1; color: var(--cinematic-green); opacity: 0.4;
+  margin-bottom: 0.5rem;
+}
+.tslider-quote {
+  font-size: 1.2rem; line-height: 1.8; color: var(--cinematic-text);
+  font-style: italic; max-width: 600px; margin: 0 auto 2rem;
+}
+.tslider-author {
+  display: flex; align-items: center; justify-content: center; gap: 1rem;
+  flex-wrap: wrap;
+}
+.tslider-avatar {
+  width: 52px; height: 52px; border-radius: 50%; object-fit: cover;
+  border: 2px solid rgba(0,255,135,0.2);
+}
+.tslider-info { text-align: left; }
+.tslider-name {
+  color: var(--cinematic-text); font-weight: 700; font-size: 0.95rem;
+  font-family: var(--font-display); margin: 0 0 0.15rem;
+}
+.tslider-meta { color: var(--cinematic-text-muted); font-size: 0.82rem; margin: 0; }
+.tslider-logo {
+  height: 28px; width: auto; filter: brightness(0) invert(1); opacity: 0.5;
+  margin-left: 1rem;
+}
+.tslider-arrow {
+  position: absolute; top: calc(50% - 1.25rem); transform: translateY(-50%);
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  color: var(--cinematic-text-muted); width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.3s; font-size: 0.9rem; z-index: 5;
+}
+.tslider-arrow:hover { background: var(--cinematic-green); color: #0a0a0a; border-color: var(--cinematic-green); }
+.tslider-prev { left: -60px; }
+.tslider-next { right: -60px; }
+.tslider-dots {
+  display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem; padding-bottom: 0.5rem;
+}
+.tslider-dot {
+  width: 10px; height: 10px; border-radius: 50%; border: none;
+  background: rgba(255,255,255,0.15); cursor: pointer; transition: all 0.3s;
+  padding: 0;
+}
+.tslider-dot.active { background: var(--cinematic-green); transform: scale(1.2); }
+
+@media (max-width: 960px) {
+  .tslider-prev { left: 12px; }
+  .tslider-next { right: 12px; }
+  .tslider-card { padding: 2.5rem 3.5rem; }
+  .tslider-quote { font-size: 1.05rem; }
+}
+@media (max-width: 640px) {
+  .tslider-arrow { width: 36px; height: 36px; font-size: 0.75rem; }
+  .tslider-prev { left: 10px; }
+  .tslider-next { right: 10px; }
+  .tslider-card { padding: 2rem 3rem; }
+  .tslider-quote { font-size: 0.95rem; }
+}
+@media (max-width: 480px) {
+  .tslider-arrow { width: 32px; height: 32px; font-size: 0.7rem; }
+  .tslider-prev { left: 8px; }
+  .tslider-next { right: 8px; }
+  .tslider-card { padding: 1.5rem 2.5rem; }
+}
+</style>
+
+<script>
+(function() {
+  var current = 0;
+  var slides = document.querySelectorAll('.tslider-slide');
+  var dots = document.querySelectorAll('.tslider-dot');
+  var total = slides.length;
+  if (total < 2) return;
+
+  window.tsliderGo = function(idx) {
+    slides[current].classList.remove('active');
+    if (dots[current]) dots[current].classList.remove('active');
+    current = ((idx % total) + total) % total;
+    slides[current].classList.add('active');
+    if (dots[current]) dots[current].classList.add('active');
+  };
+
+  window.tsliderNav = function(dir) {
+    tsliderGo(current + dir);
+  };
+
+  {% if s_auto %}
+  var autoTimer = setInterval(function() { tsliderNav(1); }, {{ s_interval }});
+  var slider = document.querySelector('.tslider');
+  if (slider) {
+    slider.addEventListener('mouseenter', function() { clearInterval(autoTimer); });
+    slider.addEventListener('mouseleave', function() {
+      autoTimer = setInterval(function() { tsliderNav(1); }, {{ s_interval }});
+    });
+  }
+  {% endif %}
+})();
+</script>

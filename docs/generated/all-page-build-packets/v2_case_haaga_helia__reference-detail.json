@@ -1,0 +1,342 @@
+{
+  "page_id": "v2_case_haaga_helia__reference-detail",
+  "template": "reference-detail-v2",
+  "preview_slug": "/v2-case-haaga-helia",
+  "url": "https://www.kuulu.fi/referenssit/haaga-helia-tekoalykuvapankki",
+  "page_type": "reference-detail",
+  "current_theme": "legacy-vaalea",
+  "primary_goal": "Prove the case logic through challenge, solution and results: Haaga-Helia Tekoälykuvapankki - Kuulun referenssit.",
+  "core_message": "Haaga-Helia Haaga-Helia Tekoälykuvapankki - Kuulun referenssit Important AI visual production proof point.",
+  "hero_direction": {
+    "headline": "Haaga-Helia",
+    "supporting_angle": "Case näyttää haasteen, ratkaisun ja mitattavan tuloksen.",
+    "cta_goal": "seuraava askel caseen liittyvästä kiinnostuksesta sparraukseen"
+  },
+  "mandatory_signals": [
+    "Haaste näkyy",
+    "Ratkaisu näkyy",
+    "Tulokset näkyvät"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_case_haaga_helia__reference-detail__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type reference-detail using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "stats-trust-band-v2",
+      "module_instance_key": "v2_case_haaga_helia__reference-detail__stats-trust-band-v2__2",
+      "content_job": "Apply stats-trust-band-v2 to page type reference-detail using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "reference-detail-sections-v2",
+      "module_instance_key": "v2_case_haaga_helia__reference-detail__reference-detail-sections-v2__3",
+      "content_job": "Apply reference-detail-sections-v2 to page type reference-detail using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_case_haaga_helia__reference-detail__final-cta-v2__4",
+      "content_job": "Apply final-cta-v2 to page type reference-detail using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Haaga-Helia Tekoälykuvapankki - Kuulun referenssit",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Haaga-Helia"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälykuvapankki ratkaisi Haaga-Helian viestinnän kuvahaasteet"
+      },
+      {
+        "level": "h2",
+        "text": "Tarve monipuoliselle kuvasisällölle"
+      },
+      {
+        "level": "h2",
+        "text": "Nopea ja joustava prosessi"
+      },
+      {
+        "level": "h2",
+        "text": "Brändinmukaista kuvasisältöä, vaikeasti kuvattavista aiheista"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälykuvapankki on otettu positiivisesti vastaan"
+      },
+      {
+        "level": "h2",
+        "text": "Lue lisää Tekoälykuvapankista"
+      },
+      {
+        "level": "h2",
+        "text": "Ota yhteyttä"
+      },
+      {
+        "level": "h3",
+        "text": "Tältä kuvat näyttävät käytännössä"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Tekoälykuvapankki toi Haaga-Helialle nopean ja monipuolisen ratkaisun viestinnän kuvahaasteisiin, erityisesti abstrakteihin ja vaikeasti kuvattaviin aiheisiin.",
+      "Kuvia tarvittiin nopeasti ja paljon. Haaga-Helian viestintä nojaa visuaaliseen sisältöön, jota käytetään laajasti muun muassa uutiskirjeissä, PowerPoint-esityksissä, markkinointimateriaaleissa sekä sisäisessä viestinnässä. Erityisen haastaviksi osoittautuivat abstraktit ja sensitiiviset aiheet, kuten mielenterveys ja hyvinvointi. – Emme halunneet käyttää oikeita ihmisiä näiden teemojen kuvituksessa, sillä kukaan ei halua tulla leimatuksi jonkun aiheen puolestapuhujaksi, Huuskonen selittää. Tekoälyn avulla luodut avatar-hahmot tarjosivat ratkaisun tähän, tuoden visuaalista tukea ilman, että kenenkään kasvot yhdistetään herkkään aiheeseen.",
+      "Tekoälykuvapankin luomisprosessi oli sujuva ja tehokas. Haaga-Helian tiimi täytti ensin esitietolomakkeen, jossa he määrittelivät, minkä tyyppisiä kuvia he tarvitsivat ja mihin tarkoitukseen. Tämä vaihe auttoi kirkastamaan kuvatarpeet ja varmistamaan, että lopputulos vastaisi odotuksia. – Annoimme värikartat ja vanhat brändikuvat tekoälylle käyttöön, ja niiden avulla luotiin kuvia, jotka olivat täysin meidän tyyliä. Asiakas saa 400–700 kuvaa, riippuen hieman aiheiden määrästä, ja asiakas valitsee lopulta näistä itse 50 kpl.",
+      "Tekoälykuvapankista saatu palaute on ollut erittäin positiivista. – Saatiin monipuolistettua meidän vanhaa kuvapankkia ja lisäksi kuvitettiin sellaisia aiheita, joihin ennen ei ollut helppoa löytää kuvia, Huuskonen iloitsee. Kuvapankki on nyt laajasti käytössä Haaga-Helian sisäisessä ja ulkoisessa viestinnässä, ja sen avulla he voivat vastata entistä paremmin organisaation monipuolisiin visuaalisiin tarpeisiin.",
+      "Haaga-Helia aikoo jatkaa tekoälykuvien käyttöä myös tulevaisuudessa, ja se tulee toimimaan rinnakkain perinteisten valokuvien kanssa. \"Vaikka tekoälykuvat ovat erinomainen lisä visuaaliseen viestintäämme, ihmiskontakti on meille tärkeää, ja haluamme edelleen käyttää oikeita ihmisiä kuvissa. Nämä kaksi tyyliä tukevat toisiaan,\" Huuskonen summaa.",
+      "Haaga-Helian Linkedin",
+      "K-Market Ruukin Ruustinna-olut: brändi, tarina, visuaalinen ilme ja lanseerauskampanja",
+      "Sievin Jalkine: Digimarkkinoinnin palvelut ja videotuotanto",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://palvelut.kuulu.fi/tekoaly-kuvapankki?hsLang=fi-fi",
+        "label": "Lue lisää tekoälykuvapankistamme"
+      }
+    ]
+  },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "",
+    "content_name": "",
+    "content_path": "",
+    "hs_form_count": 0,
+    "form_ids": [
+      "805f07bd-a002-45f0-9aa5-af329327fcba"
+    ],
+    "meeting_links": [],
+    "video_embeds": [
+      "https://www.kuulu.fi/hubfs/website_files/icons/green_mask_youtube.svg",
+      "https://www.youtube.com/c/KuuluFi"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Lue lisää tekoälykuvapankistamme",
+        "href": "https://palvelut.kuulu.fi/tekoaly-kuvapankki?hsLang=fi-fi"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 18,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/referenssit/sievin-jalkine-digimarkkinointi",
+        "target_type": "reference-detail",
+        "labels": [
+          "Sievin Jalkine: Digimarkkinoinnin palvelut ja videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "legal",
+        "labels": [
+          "Tietosuojaseloste"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ],
+        "strength": "navigational"
+      }
+    ]
+  }
+}

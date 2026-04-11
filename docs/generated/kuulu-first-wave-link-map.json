@@ -1,0 +1,960 @@
+[
+  {
+    "page_id": "homepage-v2",
+    "source_url": "https://www.kuulu.fi/",
+    "link_count": 20,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Referenssit"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Asiakas caset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (12-25)",
+          "Copilotin Kiihdytyskaista (12-25)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Digimarkkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Energia-alan markkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service-or-other",
+        "labels": [
+          "Google Ads"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Someauditointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-8-jasenille-10-2025",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (10-2025)",
+          "Tekoälyn Mestarikurssi (10-2025)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (01-26)",
+          "Tekoälyn Mestarikurssi (01-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-08-2025",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (08-2025)",
+          "Tekoälyn Mestarikurssi (08-2025)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "company-info",
+        "labels": [
+          "Tietosuojaseloste"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt",
+          "LUE LISÄÄ",
+          "Videotuotanto"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero Click -ajan digimarkkinointi",
+          "Tutustu ja osallistu Zero Click -koulutukseen",
+          "Ilmoittaudu Zero Click -koulutukseen"
+        ]
+      }
+    ]
+  },
+  {
+    "page_id": "video-service-v2",
+    "source_url": "https://www.kuulu.fi/videotuotanto",
+    "link_count": 20,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Referenssit"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Asiakas caset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (12-25)",
+          "Copilotin Kiihdytyskaista (12-25)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Digimarkkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Energia-alan markkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service-or-other",
+        "labels": [
+          "Google Ads"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Someauditointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-8-jasenille-10-2025",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (10-2025)",
+          "Tekoälyn Mestarikurssi (10-2025)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (01-26)",
+          "Tekoälyn Mestarikurssi (01-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-08-2025",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (08-2025)",
+          "Tekoälyn Mestarikurssi (08-2025)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "company-info",
+        "labels": [
+          "Tietosuojaseloste"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt",
+          "LUE LISÄÄ",
+          "Videotuotanto"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero Click -ajan digimarkkinointi"
+        ]
+      }
+    ]
+  },
+  {
+    "page_id": "training-v2",
+    "source_url": "https://www.kuulu.fi/koulutus",
+    "link_count": 22,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (12-25)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Digimarkkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Energia-alan markkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service-or-other",
+        "labels": [
+          "Google Ads"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Pyydä tarjous koulutuksesta",
+          "Koulutukset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Someauditointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoaly-markkinoinnin-ja-myynnin-tukena",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn hyödyntäminen markkinoinnissa"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (01-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoälyn-mestarikurssi-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "company-info",
+        "labels": [
+          "Tietosuojaseloste"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ]
+      }
+    ]
+  },
+  {
+    "page_id": "digimarkkinointi-v2",
+    "source_url": "https://www.kuulu.fi/digimarkkinointi",
+    "link_count": 24,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/kuulu-auttoi-elisaa-tavoittamaan-70000-nuorta-superdigikoululla",
+        "target_type": "reference-detail",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/kuulu-energiequelle-tehokas-visuaalinen-viestinta",
+        "target_type": "reference-detail",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/solar-kaihdin-kymmenkertaisti-verkkokauppamyynnin-kuulun-avulla",
+        "target_type": "reference-detail",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (12-25)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Digimarkkinointi",
+          "Ota yhteyttä"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Energia-alan markkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service-or-other",
+        "labels": [
+          "Google Ads"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Someauditointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (01-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoälyn-mestarikurssi-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "company-info",
+        "labels": [
+          "Tietosuojaseloste"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ]
+      }
+    ]
+  },
+  {
+    "page_id": "case-studies-v2",
+    "source_url": "https://www.kuulu.fi/case-studies",
+    "link_count": 22,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [
+          "Homepage"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset",
+          "1"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/kuulu-auttoi-elisaa-tavoittamaan-70000-nuorta-superdigikoululla",
+        "target_type": "reference-detail",
+        "labels": [
+          "Technology Kuulu auttoi Elisaa edistämään digitaalista hyvinvointia - SuperDigikoulu tavoitti 70 000 nuorta"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/kuulu-energiequelle-tehokas-visuaalinen-viestinta",
+        "target_type": "reference-detail",
+        "labels": [
+          "Energia Kuulu auttaa Energiequellea viestimään tehokkaasti"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies/solar-kaihdin-kymmenkertaisti-verkkokauppamyynnin-kuulun-avulla",
+        "target_type": "reference-detail",
+        "labels": [
+          "Tuotanto Solar Kaihdin kymmenkertaisti verkkokaupan myynnin jatkuvalla digimarkkinoinnilla"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (12-25)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Digimarkkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Energia-alan markkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service-or-other",
+        "labels": [
+          "Google Ads"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Someauditointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/teko%C3%A4lyn-mestarikurssi-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (01-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ]
+      }
+    ]
+  },
+  {
+    "page_id": "yhteystiedot-v2",
+    "source_url": "https://www.kuulu.fi/yhteystiedot",
+    "link_count": 21,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (12-25)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Digimarkkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Energia-alan markkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service-or-other",
+        "labels": [
+          "Google Ads"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "koulutamme yrityksiä räätälöidysti sekä avoimilla koulutuksilla",
+          "Koulutukset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Someauditointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (01-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoälyn-mestarikurssi-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "company-info",
+        "labels": [
+          "Tietosuojaseloste"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt",
+          "videotuotantoon"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ]
+      }
+    ]
+  }
+]

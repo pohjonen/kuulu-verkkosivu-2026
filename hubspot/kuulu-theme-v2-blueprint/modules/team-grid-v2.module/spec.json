@@ -1,0 +1,36 @@
+{
+  "module": "team-grid-v2",
+  "module_key": "team-grid-v2",
+  "category": "specialized",
+  "used_on": [
+    "company-info-v2",
+    "person-profile-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "people"
+  ],
+  "optional_fields": [],
+  "build_wave": 3,
+  "depends_on": [
+    "people-card-v2",
+    "image-ratio-v2"
+  ],
+  "field_groups": [
+    "content",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "supports_free_rich_text": false
+  }
+}

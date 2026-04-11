@@ -1,0 +1,203 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Newsletter CTA - Email Signup"
+-->
+{#
+  Uutiskirje-tilaus CTA -partiaali
+
+  Kaytto:
+    {% set nl_tag = '// Pysy ajan tasalla' %}
+    {% set nl_title = 'Tilaa <span class="text-gradient-green">Kuulun uutiskirje</span>' %}
+    {% set nl_description = 'Saat blogiartikkelit suoraan sahkopostiisi.' %}
+    {% set nl_form_id = 'newsletter-form-id-here' %}
+    {% include './partials/newsletter-cta.html' %}
+#}
+
+{% set active_tag = nl_tag|default('// Pysy ajan tasalla') %}
+{% set active_title = nl_title|default('Tilaa <span class="text-gradient-green">Kuulun uutiskirje</span>') %}
+{% set active_desc = nl_description|default('Saat blogiartikkelit ja muut digimarkkinoinnin kuulumiset suoraan sahkopostiisi.') %}
+{% set active_form_id = nl_form_id|default('805f07bd-a002-45f0-9aa5-af329327fcba') %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+  <div class="blob-shape-1" style="top: -30%; left: -10%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="nl-wrapper">
+      <span class="section-tag" style="display: block; text-align: center;">{{ active_tag }}</span>
+      <h2 class="section-header" style="text-align: center;">{{ active_title }}</h2>
+      <p class="nl-desc">{{ active_desc }}</p>
+      <div class="nl-form-container">
+        <div id="hs-form-newsletter-{{ active_form_id }}"></div>
+        <script charset="utf-8" src="https://js-eu1.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "eu1",
+            portalId: "450584",
+            formId: "{{ active_form_id }}",
+            target: "#hs-form-newsletter-{{ active_form_id }}",
+            css: "",
+            inlineMessage: "<p><strong>Kiitos tilauksestasi! Saat pian ensimmaisen uutiskirjeen.</strong></p>"
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.nl-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.nl-desc {
+  color: var(--cinematic-text-muted);
+  font-size: 1.05rem; line-height: 1.7;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.nl-form-container {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* HubSpot form overrides */
+.nl-form-container .hs-form,
+.nl-form-container form {
+  text-align: center !important;
+}
+.nl-form-container .hs-form-field {
+  margin-bottom: 1.25rem !important;
+  text-align: left !important;
+}
+.nl-form-container .hs-form-field > label {
+  color: var(--cinematic-text, #fff) !important;
+  font-family: var(--font-display) !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  margin-bottom: 0.4rem !important;
+  display: block !important;
+  text-align: center !important;
+}
+.nl-form-container .hs-input,
+.nl-form-container input[type="text"],
+.nl-form-container input[type="email"],
+.nl-form-container input[type="tel"],
+.nl-form-container textarea {
+  width: 100% !important;
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  border-radius: 12px !important;
+  color: #fff !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 0.95rem !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.2s !important;
+}
+.nl-form-container .hs-input:focus,
+.nl-form-container input:focus,
+.nl-form-container textarea:focus {
+  border-color: rgba(0,255,135,0.4) !important;
+  outline: none !important;
+}
+.nl-form-container textarea {
+  min-height: 120px !important;
+  resize: vertical !important;
+}
+/* Two-column layout for name/email rows */
+.nl-form-container .form-columns-2 {
+  display: flex !important;
+  gap: 1rem !important;
+}
+.nl-form-container .form-columns-2 .hs-form-field {
+  flex: 1 !important;
+}
+/* Remove list bullet from checkboxes */
+.nl-form-container .hs-form-booleancheckbox,
+.nl-form-container .hs-form-checkbox,
+.nl-form-container .inputs-list,
+.nl-form-container ul.inputs-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0.5rem 0 !important;
+}
+.nl-form-container .inputs-list li,
+.nl-form-container .hs-form-booleancheckbox-display {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+}
+.nl-form-container .inputs-list li::before,
+.nl-form-container .inputs-list li::marker {
+  content: none !important;
+  display: none !important;
+}
+.nl-form-container .hs-form-booleancheckbox-display span,
+.nl-form-container .inputs-list label span {
+  color: var(--cinematic-text-muted, #aaa) !important;
+  font-size: 0.85rem !important;
+}
+/* Submit button */
+.nl-form-container .hs-submit {
+  text-align: center !important;
+  margin-top: 1.5rem !important;
+}
+.nl-form-container input[type="submit"],
+.nl-form-container .hs-button {
+  display: inline-block !important;
+  padding: 0.9rem 2.5rem !important;
+  background: var(--gradient-green, linear-gradient(135deg, #00ff87, #16F98A)) !important;
+  color: #0a0a0a !important;
+  -webkit-text-fill-color: #0a0a0a !important;
+  font-family: var(--font-display) !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  border: none !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+  transition: all 0.3s !important;
+  box-shadow: 0 0 20px rgba(0,255,135,0.25) !important;
+}
+.nl-form-container input[type="submit"]:hover,
+.nl-form-container .hs-button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 0 35px rgba(0,255,135,0.4) !important;
+}
+/* Privacy text */
+.nl-form-container .legal-consent-container,
+.nl-form-container .hs-richtext {
+  color: var(--cinematic-text-muted, #888) !important;
+  font-size: 0.78rem !important;
+  line-height: 1.6 !important;
+  text-align: center !important;
+  margin-top: 1rem !important;
+  opacity: 0.7;
+}
+.nl-form-container .legal-consent-container p {
+  color: var(--cinematic-text-muted, #888) !important;
+  font-size: 0.78rem !important;
+}
+/* Success message */
+.nl-form-container .submitted-message {
+  color: var(--cinematic-green) !important;
+  font-size: 1.1rem !important;
+  text-align: center !important;
+  padding: 2rem 0 !important;
+}
+@media (max-width: 640px) {
+  .nl-form-container .form-columns-2 {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+}
+</style>

@@ -1,0 +1,65 @@
+[ {
+  "id" : "logo",
+  "name" : "logo",
+  "label" : "Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.kuulu.fi/hubfs/kuulu-logo.svg",
+    "alt" : "Kuulu"
+  }
+}, {
+  "id" : "menu_items",
+  "name" : "menu_items",
+  "label" : "Valikkokohteet",
+  "required" : false,
+  "locked" : true,
+  "display_width" : null,
+  "type" : "menu",
+  "default" : "main_menu"
+}, {
+  "id" : "cta_text",
+  "name" : "cta_text",
+  "label" : "CTA-teksti",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "VARAA SPARRAUS"
+}, {
+  "id" : "cta_url",
+  "name" : "cta_url",
+  "label" : "CTA-linkki",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://meetings-eu1.hubspot.com/hermanni-haerkoenen/hermanni-harkonen-30min"
+}, {
+  "id" : "sticky_header",
+  "name" : "sticky_header",
+  "label" : "Kiinnittyvä header scrollauksessa",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "transparent_on_hero",
+  "name" : "transparent_on_hero",
+  "label" : "Läpinäkyvä hero-osion päällä",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+} ]

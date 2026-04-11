@@ -1,0 +1,1065 @@
+{
+  "source_theme_path": "/workspace/hubspot/source-theme",
+  "summary": {
+    "template_counts": {
+      "protect": 18,
+      "fork": 2,
+      "review": 83,
+      "replace": 32
+    },
+    "module_counts": {
+      "protect": 5,
+      "fork": 9,
+      "review": 25,
+      "replace": 0
+    }
+  },
+  "templates": [
+    {
+      "path": "modules/case-study-showcase.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_accordion_cards.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_animated_counter.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_authority.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_before_after.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_bento_grid.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_case_study_card.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_checklist.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_comparison_table.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_contact_cta.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_cta_cards.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_early_bird.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_floating_cta.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_footer.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_header.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_hero.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_horizontal_scroll.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_koulutus_form.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_marquee_logos.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_metrics.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_pricing.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_problem_list.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_referenssit.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_rich_pricing.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_rich_text.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_roi_calculator.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_steps.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_sticky_nav.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_testimonial_slider.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_text_image.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_timeline.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_two_engines.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/cinematic_vertical_timeline.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/global_footer.module/module.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "High-risk template from audit."
+    },
+    {
+      "path": "modules/global_header.module/module.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "High-risk template from audit."
+    },
+    {
+      "path": "modules/hero-banner.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/person-profile.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/services-grid.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "modules/video-showcase.module/module.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/animaatiot-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/blog-test-2026-02-12.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/brandays-ja-tarinankerronta-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/brandivideot-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/copilotin-kiihdytyskaista-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/digimarkkinointi-test-2026-02-11.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/energia-alan-markkinointi-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/gif-animaatiot-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/google-ads-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/home.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-cinematic-v2.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-cinematic-v3.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-cinematic-v4.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-cinematic-v5.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-cinematic-v6-backup-2026-02-27.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-cinematic-v6.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-cinematic-webinar.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-cinematic.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-dev-2026-02-11.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-modules.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/homepage-new.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/index.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Homepage-related template, do not edit directly."
+    },
+    {
+      "path": "templates/koulutus-test-2026-02-11.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/kuulunautti-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/layouts/base-cinematic.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/layouts/base.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/liidien-hankinta-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/mainosvideot-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/matkailuvideot-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/module-system-test.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/module-test-v3.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/module-test-v4.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/partials/accordion-cards.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/animated-counter.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/aurora-overlay.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/before-after.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/bento-grid.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/blog-grid.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/blog-pagination.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/blog-topics.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/case-study-card.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/client-logos.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/comparison-table.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/contact-form.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/cta-banner.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/faq-accordion.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/floating-cta.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/footer-cinematic.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Shared partial candidate, keep isolated until v2 fork."
+    },
+    {
+      "path": "templates/partials/footer-module.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Shared partial candidate, keep isolated until v2 fork."
+    },
+    {
+      "path": "templates/partials/header-cinematic.html",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Shared partial candidate, keep isolated until v2 fork."
+    },
+    {
+      "path": "templates/partials/hero-section.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/horizontal-scroll.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/icon-text-grid.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/marquee-logos.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/media-gallery.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/newsletter-cta.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/notification-bar.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/portfolio-grid.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/pricing-cards.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/pricing-section.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/process-steps.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/reference-grid.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/rich-text.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/roi-calculator.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/scripts-cinematic.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/scroll-animations.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/service-cards.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/spacing-divider.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/stats-section.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/sticky-nav.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/team-grid.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/testimonial-slider.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/testimonials.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/timeline.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/two-column-content.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/partials/video-embed.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/perjantaipulssi-agentit-test-2026-02-17.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/perjantaipulssi-test-2026-02-11.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/person-profile.html",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Likely useful base template for v2 mapping."
+    },
+    {
+      "path": "templates/referenssit-test-2026-02-12.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/rekrymarkkinointi-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/seo-analyysi-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/sisaltopankki-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/someauditointi-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/team.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/tekoalykuvapankki-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/tekoalyn-mestarikurssi-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/tekoalyn-perjantaipulssi-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/tv-mainosvideot-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/video-production.html",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Likely useful base template for v2 mapping."
+    },
+    {
+      "path": "templates/videotuotanto-modules-test-2026-03-22.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/videotuotanto-test-2026-02-11.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/webinar-ilmoittautuminen.html",
+      "risk": "low",
+      "decision": "review",
+      "reason": "Needs manual review during template mapping."
+    },
+    {
+      "path": "templates/yhdistys-ja-hankevideot-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/yhteystiedot-test-2026-02-12.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    },
+    {
+      "path": "templates/yritysvideot-test-2026-02-13.html",
+      "risk": "low",
+      "decision": "replace",
+      "reason": "Test/dev/backup template; keep only as reference if needed."
+    }
+  ],
+  "modules": [
+    {
+      "module_root": "modules/case-study-showcase.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    },
+    {
+      "module_root": "modules/cinematic_accordion_cards.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_animated_counter.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_authority.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_before_after.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_bento_grid.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_case_study_card.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_checklist.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_comparison_table.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_contact_cta.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_cta_cards.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_early_bird.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_floating_cta.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_footer.module",
+      "risk": "low",
+      "decision": "protect",
+      "reason": "Navigation/global presentation risk."
+    },
+    {
+      "module_root": "modules/cinematic_header.module",
+      "risk": "low",
+      "decision": "protect",
+      "reason": "Navigation/global presentation risk."
+    },
+    {
+      "module_root": "modules/cinematic_hero.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    },
+    {
+      "module_root": "modules/cinematic_horizontal_scroll.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_koulutus_form.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    },
+    {
+      "module_root": "modules/cinematic_marquee_logos.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_metrics.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    },
+    {
+      "module_root": "modules/cinematic_pricing.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_problem_list.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    },
+    {
+      "module_root": "modules/cinematic_referenssit.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_rich_pricing.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_rich_text.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_roi_calculator.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_steps.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_sticky_nav.module",
+      "risk": "low",
+      "decision": "protect",
+      "reason": "Navigation/global presentation risk."
+    },
+    {
+      "module_root": "modules/cinematic_testimonial_slider.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_text_image.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_timeline.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/cinematic_two_engines.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    },
+    {
+      "module_root": "modules/cinematic_vertical_timeline.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/global_footer.module",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Global live structure; isolate before changes."
+    },
+    {
+      "module_root": "modules/global_header.module",
+      "risk": "high",
+      "decision": "protect",
+      "reason": "Global live structure; isolate before changes."
+    },
+    {
+      "module_root": "modules/hero-banner.module",
+      "risk": "low",
+      "decision": "review",
+      "reason": "May be reusable, but needs manual check."
+    },
+    {
+      "module_root": "modules/person-profile.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    },
+    {
+      "module_root": "modules/services-grid.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    },
+    {
+      "module_root": "modules/video-showcase.module",
+      "risk": "low",
+      "decision": "fork",
+      "reason": "Promising source module for v2 adaptation."
+    }
+  ]
+}

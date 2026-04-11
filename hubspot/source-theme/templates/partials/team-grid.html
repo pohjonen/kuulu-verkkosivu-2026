@@ -1,0 +1,133 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Kuulu – Tiimigrid"
+-->
+{#
+  Tiimiesittely -partiaali
+
+  Käyttö:
+    {% include './partials/team-grid.html' with {
+      team_tag: '// Tiimimme',
+      team_title: 'Kuulun <span class="text-gradient-green">asiantuntijat</span>',
+      member_1_image: 'https://example.com/photo.jpg',
+      member_1_name: 'Jonna Muurinen',
+      member_1_role: 'CEO & Perustaja',
+      member_1_email: 'jonna@kuulu.fi',
+      member_1_phone: '+358 40 123 4567',
+      member_1_linkedin: 'https://linkedin.com/in/jonna'
+    } %}
+#}
+
+{% set active_tag = team_tag|default('// Tiimimme') %}
+{% set active_title = team_title|default('Kuulun <span class="text-gradient-green">asiantuntijat</span>') %}
+
+{% set m1_img = member_1_image|default('') %}
+{% set m1_name = member_1_name|default('') %}
+{% set m1_role = member_1_role|default('') %}
+{% set m1_email = member_1_email|default('') %}
+{% set m1_phone = member_1_phone|default('') %}
+{% set m1_li = member_1_linkedin|default('') %}
+
+{% set m2_img = member_2_image|default('') %}
+{% set m2_name = member_2_name|default('') %}
+{% set m2_role = member_2_role|default('') %}
+{% set m2_email = member_2_email|default('') %}
+{% set m2_phone = member_2_phone|default('') %}
+{% set m2_li = member_2_linkedin|default('') %}
+
+{% set m3_img = member_3_image|default('') %}
+{% set m3_name = member_3_name|default('') %}
+{% set m3_role = member_3_role|default('') %}
+{% set m3_email = member_3_email|default('') %}
+{% set m3_phone = member_3_phone|default('') %}
+{% set m3_li = member_3_linkedin|default('') %}
+
+{% set m4_img = member_4_image|default('') %}
+{% set m4_name = member_4_name|default('') %}
+{% set m4_role = member_4_role|default('') %}
+{% set m4_email = member_4_email|default('') %}
+{% set m4_phone = member_4_phone|default('') %}
+{% set m4_li = member_4_linkedin|default('') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <span class="section-tag">{{ active_tag }}</span>
+    <h2 class="section-header">{{ active_title }}</h2>
+
+    <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      {% if m1_name %}
+      <div class="hero-glass-box" style="padding: 0; overflow: hidden; text-align: center;">
+        {% if m1_img %}<img src="{{ m1_img }}" alt="{{ m1_name }}" style="width: 100%; height: 280px; object-fit: cover;" loading="lazy">{% endif %}
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.25rem;">{{ m1_name }}</h3>
+          <p style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem;">{{ m1_role }}</p>
+          <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            {% if m1_email %}<a href="mailto:{{ m1_email }}" style="color: var(--cinematic-text-muted); font-size: 0.85rem; text-decoration: none; transition: color 0.3s;"><i class="fas fa-envelope" style="margin-right: 0.25rem;"></i> {{ m1_email }}</a>{% endif %}
+          </div>
+          {% if m1_phone or m1_li %}
+          <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.75rem;">
+            {% if m1_phone %}<a href="tel:{{ m1_phone }}" style="color: var(--cinematic-text-muted); font-size: 0.85rem; text-decoration: none;"><i class="fas fa-phone"></i></a>{% endif %}
+            {% if m1_li %}<a href="{{ m1_li }}" target="_blank" rel="noopener" style="color: var(--cinematic-text-muted); font-size: 1rem; text-decoration: none; transition: color 0.3s;"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+      {% if m2_name %}
+      <div class="hero-glass-box" style="padding: 0; overflow: hidden; text-align: center;">
+        {% if m2_img %}<img src="{{ m2_img }}" alt="{{ m2_name }}" style="width: 100%; height: 280px; object-fit: cover;" loading="lazy">{% endif %}
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.25rem;">{{ m2_name }}</h3>
+          <p style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem;">{{ m2_role }}</p>
+          <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            {% if m2_email %}<a href="mailto:{{ m2_email }}" style="color: var(--cinematic-text-muted); font-size: 0.85rem; text-decoration: none;"><i class="fas fa-envelope" style="margin-right: 0.25rem;"></i> {{ m2_email }}</a>{% endif %}
+          </div>
+          {% if m2_phone or m2_li %}
+          <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.75rem;">
+            {% if m2_phone %}<a href="tel:{{ m2_phone }}" style="color: var(--cinematic-text-muted); font-size: 0.85rem; text-decoration: none;"><i class="fas fa-phone"></i></a>{% endif %}
+            {% if m2_li %}<a href="{{ m2_li }}" target="_blank" rel="noopener" style="color: var(--cinematic-text-muted); font-size: 1rem; text-decoration: none;"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+      {% if m3_name %}
+      <div class="hero-glass-box" style="padding: 0; overflow: hidden; text-align: center;">
+        {% if m3_img %}<img src="{{ m3_img }}" alt="{{ m3_name }}" style="width: 100%; height: 280px; object-fit: cover;" loading="lazy">{% endif %}
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.25rem;">{{ m3_name }}</h3>
+          <p style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem;">{{ m3_role }}</p>
+          <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            {% if m3_email %}<a href="mailto:{{ m3_email }}" style="color: var(--cinematic-text-muted); font-size: 0.85rem; text-decoration: none;"><i class="fas fa-envelope" style="margin-right: 0.25rem;"></i> {{ m3_email }}</a>{% endif %}
+          </div>
+          {% if m3_phone or m3_li %}
+          <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.75rem;">
+            {% if m3_phone %}<a href="tel:{{ m3_phone }}" style="color: var(--cinematic-text-muted); font-size: 0.85rem; text-decoration: none;"><i class="fas fa-phone"></i></a>{% endif %}
+            {% if m3_li %}<a href="{{ m3_li }}" target="_blank" rel="noopener" style="color: var(--cinematic-text-muted); font-size: 1rem; text-decoration: none;"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+      {% if m4_name %}
+      <div class="hero-glass-box" style="padding: 0; overflow: hidden; text-align: center;">
+        {% if m4_img %}<img src="{{ m4_img }}" alt="{{ m4_name }}" style="width: 100%; height: 280px; object-fit: cover;" loading="lazy">{% endif %}
+        <div style="padding: 1.5rem;">
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.25rem;">{{ m4_name }}</h3>
+          <p style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem;">{{ m4_role }}</p>
+          <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            {% if m4_email %}<a href="mailto:{{ m4_email }}" style="color: var(--cinematic-text-muted); font-size: 0.85rem; text-decoration: none;"><i class="fas fa-envelope" style="margin-right: 0.25rem;"></i> {{ m4_email }}</a>{% endif %}
+          </div>
+          {% if m4_phone or m4_li %}
+          <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.75rem;">
+            {% if m4_phone %}<a href="tel:{{ m4_phone }}" style="color: var(--cinematic-text-muted); font-size: 0.85rem; text-decoration: none;"><i class="fas fa-phone"></i></a>{% endif %}
+            {% if m4_li %}<a href="{{ m4_li }}" target="_blank" rel="noopener" style="color: var(--cinematic-text-muted); font-size: 1rem; text-decoration: none;"><i class="fab fa-linkedin-in"></i></a>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

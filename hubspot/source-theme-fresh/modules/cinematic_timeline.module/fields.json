@@ -1,0 +1,442 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Etenemispolku"
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Korostus (vihreä)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "description",
+  "name" : "description",
+  "label" : "Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_1_title",
+  "name" : "item_1_title",
+  "label" : "Kohta 1 – Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Vaihe 1"
+}, {
+  "id" : "item_1_description",
+  "name" : "item_1_description",
+  "label" : "Kohta 1 – Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_1_tag",
+  "name" : "item_1_tag",
+  "label" : "Kohta 1 – Tagi (esim. 'Tallenne')",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_1_highlight",
+  "name" : "item_1_highlight",
+  "label" : "Kohta 1 – Korostus",
+  "help_text" : "Korostaa tämän kohdan kirkkaammalla vihreällä",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "item_1_title",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "display" : "toggle",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "item_2_title",
+  "name" : "item_2_title",
+  "label" : "Kohta 2 – Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Vaihe 2"
+}, {
+  "id" : "item_2_description",
+  "name" : "item_2_description",
+  "label" : "Kohta 2 – Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_2_tag",
+  "name" : "item_2_tag",
+  "label" : "Kohta 2 – Tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_2_highlight",
+  "name" : "item_2_highlight",
+  "label" : "Kohta 2 – Korostus",
+  "help_text" : "Korostaa tämän kohdan kirkkaammalla vihreällä",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "item_2_title",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "display" : "toggle",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "item_3_title",
+  "name" : "item_3_title",
+  "label" : "Kohta 3 – Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Vaihe 3"
+}, {
+  "id" : "item_3_description",
+  "name" : "item_3_description",
+  "label" : "Kohta 3 – Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_3_tag",
+  "name" : "item_3_tag",
+  "label" : "Kohta 3 – Tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_3_highlight",
+  "name" : "item_3_highlight",
+  "label" : "Kohta 3 – Korostus",
+  "help_text" : "Korostaa tämän kohdan kirkkaammalla vihreällä",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "item_3_title",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "display" : "toggle",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "item_4_title",
+  "name" : "item_4_title",
+  "label" : "Kohta 4 – Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_4_description",
+  "name" : "item_4_description",
+  "label" : "Kohta 4 – Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_4_tag",
+  "name" : "item_4_tag",
+  "label" : "Kohta 4 – Tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_4_highlight",
+  "name" : "item_4_highlight",
+  "label" : "Kohta 4 – Korostus",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "item_4_title",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "display" : "toggle",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "item_5_title",
+  "name" : "item_5_title",
+  "label" : "Kohta 5 – Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_5_description",
+  "name" : "item_5_description",
+  "label" : "Kohta 5 – Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_5_tag",
+  "name" : "item_5_tag",
+  "label" : "Kohta 5 – Tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_5_highlight",
+  "name" : "item_5_highlight",
+  "label" : "Kohta 5 – Korostus",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "item_5_title",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "display" : "toggle",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "item_6_title",
+  "name" : "item_6_title",
+  "label" : "Kohta 6 – Otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_6_description",
+  "name" : "item_6_description",
+  "label" : "Kohta 6 – Kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_6_tag",
+  "name" : "item_6_tag",
+  "label" : "Kohta 6 – Tagi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "item_6_highlight",
+  "name" : "item_6_highlight",
+  "label" : "Kohta 6 – Korostus",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "item_6_title",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "display" : "toggle",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "summary_text",
+  "name" : "summary_text",
+  "label" : "Yhteenveto (valinnainen)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "media_type",
+  "name" : "media_type",
+  "label" : "Media",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "none", "Ei mediaa" ], [ "image", "Kuva" ], [ "video_url", "Video (URL)" ], [ "video_file", "Video (upload)" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "none"
+}, {
+  "id" : "media_position",
+  "name" : "media_position",
+  "label" : "Median sijainti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image|video_url|video_file",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null
+  },
+  "display" : "radio",
+  "choices" : [ [ "left", "Vasen" ], [ "right", "Oikea" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "right"
+}, {
+  "id" : "media_image",
+  "name" : "media_image",
+  "label" : "Kuva",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "media_video_url",
+  "name" : "media_video_url",
+  "label" : "Videon URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_url",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "picker" : "file",
+  "id" : "media_video_file",
+  "name" : "media_video_file",
+  "label" : "Videotiedosto",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_file",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "file"
+} ]

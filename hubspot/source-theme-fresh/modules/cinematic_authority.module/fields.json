@@ -1,0 +1,151 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Miksi Kuulu"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Euroopan ensimmäinen"
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa (vihreä)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "sertifioitu StoryBrand-toimisto"
+}, {
+  "id" : "lead_text",
+  "name" : "lead_text",
+  "label" : "Ingressi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Yli <strong class=\"text-gradient-green\">500 yritystä</strong> luottaa Kuuluun vuosittain. Toimistomme sijaitsevat <strong style=\"color: var(--cinematic-text);\">Oulussa ja Helsingissä</strong> — toimimme koko Suomessa."
+}, {
+  "id" : "body_text",
+  "name" : "body_text",
+  "label" : "Runkoteksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Yli 10 vuoden kokemus. Video + digi + tekoäly saman katon alla. Mittaamme tulokset kuukausittain — ei arvailua, vaan dataa."
+}, {
+  "id" : "media_type",
+  "name" : "media_type",
+  "label" : "Media",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "none", "Ei mediaa" ], [ "image", "Kuva" ], [ "video_url", "Video (URL)" ], [ "video_file", "Video (upload)" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "none"
+}, {
+  "id" : "media_position",
+  "name" : "media_position",
+  "label" : "Median sijainti",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image|video_url|video_file",
+    "property" : null,
+    "operator" : "MATCHES_REGEX",
+    "access" : null
+  },
+  "display" : "radio",
+  "choices" : [ [ "left", "Vasen" ], [ "right", "Oikea" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "right"
+}, {
+  "id" : "media_image",
+  "name" : "media_image",
+  "label" : "Kuva",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "media_video_url",
+  "name" : "media_video_url",
+  "label" : "Videon URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_url",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "picker" : "file",
+  "id" : "media_video_file",
+  "name" : "media_video_file",
+  "label" : "Videotiedosto",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "media_type",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "video_file",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display_width" : null,
+  "type" : "file"
+} ]

@@ -1,0 +1,501 @@
+{
+  "page_id": "v2_zero_click_ajan_digimarkkinointi__training",
+  "template": "training-landing-v2",
+  "preview_slug": "/v2-zero-click-ajan-digimarkkinointi",
+  "url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+  "page_type": "training",
+  "current_theme": "muu/sekalainen",
+  "primary_goal": "Position this training page as a practical answer to competence gaps: Zero click -ajan digimarkkinointi.",
+  "core_message": "zero click -ajan digimarkkinointi Zero click -ajan digimarkkinointi Deep anchor page for Zero Click framework.",
+  "hero_direction": {
+    "headline": "zero click -ajan digimarkkinointi",
+    "supporting_angle": "Osaamisvaje, tekoäly ja muuttuvat alustat pakottavat päivittämään tekemisen.",
+    "cta_goal": "tarjouspyyntö tai ilmoittautuminen"
+  },
+  "mandatory_signals": [
+    "Osaamisvaje näkyy ennen agendaa",
+    "Käytännön hyöty näkyy",
+    "AI / Zero Click -murros näkyy"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_zero_click_ajan_digimarkkinointi__training__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "problem-grid-v2",
+      "module_instance_key": "v2_zero_click_ajan_digimarkkinointi__training__problem-grid-v2__2",
+      "content_job": "Apply problem-grid-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "service-pillars-v2",
+      "module_instance_key": "v2_zero_click_ajan_digimarkkinointi__training__service-pillars-v2__3",
+      "content_job": "Apply service-pillars-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "process-steps-v2",
+      "module_instance_key": "v2_zero_click_ajan_digimarkkinointi__training__process-steps-v2__4",
+      "content_job": "Apply process-steps-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 5,
+      "module": "training-agenda-v2",
+      "module_instance_key": "v2_zero_click_ajan_digimarkkinointi__training__training-agenda-v2__5",
+      "content_job": "Apply training-agenda-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 6,
+      "module": "stats-trust-band-v2",
+      "module_instance_key": "v2_zero_click_ajan_digimarkkinointi__training__stats-trust-band-v2__6",
+      "content_job": "Apply stats-trust-band-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 7,
+      "module": "faq-v2",
+      "module_instance_key": "v2_zero_click_ajan_digimarkkinointi__training__faq-v2__7",
+      "content_job": "Apply faq-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 8,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_zero_click_ajan_digimarkkinointi__training__final-cta-v2__8",
+      "content_job": "Apply final-cta-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Zero click -ajan digimarkkinointi",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "zero click -ajan digimarkkinointi"
+      },
+      {
+        "level": "h1",
+        "text": "Mitä aiheita koulutuksissa käsitellään?"
+      },
+      {
+        "level": "h2",
+        "text": "Miksi näkyvyys ei enää tarkoita liikennettä?"
+      },
+      {
+        "level": "h2",
+        "text": "Core (2 x 3 h)"
+      },
+      {
+        "level": "h2",
+        "text": "Track A & B (3 h & 3 h)"
+      },
+      {
+        "level": "h2",
+        "text": "zero click -ajan digimarkkinointi"
+      },
+      {
+        "level": "h2",
+        "text": "on koulutuksen ydin:"
+      },
+      {
+        "level": "h2",
+        "text": "Zero-click -ajan digimarkkinointistrategia"
+      },
+      {
+        "level": "h2",
+        "text": "Core 2: Mittaaminen ja budjetointi Zero click -ajassa"
+      },
+      {
+        "level": "h2",
+        "text": "syventävät Corea käytännön toteutuksen kannalta kriittisiin teemoihin."
+      },
+      {
+        "level": "h2",
+        "text": "Track A: Löydettävyyden uudet painopisteet: SEO + GEO + Social SEO"
+      },
+      {
+        "level": "h2",
+        "text": "Track B: Asiantuntijaviestintä ja lyhytvideo"
+      },
+      {
+        "level": "h2",
+        "text": "{ module.section_title }}"
+      },
+      {
+        "level": "h2",
+        "text": "Osallistu koulutukseen!"
+      },
+      {
+        "level": "h3",
+        "text": "Koulutus 9.4. alkaen:"
+      },
+      {
+        "level": "h3",
+        "text": "Kun Core antaa suunnan ja mittaamisen, trackit tekevät mallista teille toimivan moottorin: löydettävyys, asiantuntijuus ja sisältö kytkeytyvät suoraan strategiaan, budjettiin ja tuloksiin."
+      },
+      {
+        "level": "h3",
+        "text": "Zero click -ajan digimarkkinointistrategia"
+      },
+      {
+        "level": "h3",
+        "text": "Mittaaminen ja budjetointi Zero click -ajassa"
+      },
+      {
+        "level": "h3",
+        "text": "Löydettävyys – SEO, GEO ja social search"
+      },
+      {
+        "level": "h3",
+        "text": "Asiantuntijaviestintä ja lyhytvideot"
+      },
+      {
+        "level": "h3",
+        "text": "Kouluttaja: Jonna muurinen"
+      },
+      {
+        "level": "h3",
+        "text": "Core (2 x 3 h)"
+      },
+      {
+        "level": "h3",
+        "text": "Core + 1 Track (A tai B) (3 x 3 h)"
+      },
+      {
+        "level": "h3",
+        "text": "Core + 2 Trackia (A ja B) (4 x 3 h)"
+      },
+      {
+        "level": "h3",
+        "text": "Yksittäinen Track (A tai B) (1 x 3 h)"
+      },
+      {
+        "level": "h3",
+        "text": "Molemmat Trackit (A ja B) (2 x 3 h)"
+      },
+      {
+        "level": "h3",
+        "text": "osallistutteko tiiminä?"
+      },
+      {
+        "level": "h3",
+        "text": "To 9.4. klo 9-12"
+      },
+      {
+        "level": "h3",
+        "text": "Ke 29.4. klo 9-12"
+      },
+      {
+        "level": "h3",
+        "text": "Ke 6.5. klo 13-16"
+      },
+      {
+        "level": "h3",
+        "text": "Ti 19.5. klo 9-12"
+      },
+      {
+        "level": "h3",
+        "text": "PALVELUT"
+      },
+      {
+        "level": "h3",
+        "text": "YRITYS"
+      },
+      {
+        "level": "h3",
+        "text": "SISÄLLÖT"
+      }
+    ],
+    "paragraphs": [
+      "Strategia ja mittaaminen (2×3 h)",
+      "Löydettävyys (3 h)",
+      "Asiantuntijasisällöt (3 h)",
+      "Tässä koulutuskokonaisuudessa päivität digimarkkinoinnin toimintamallin Zero click -aikaan, jossa näkyvyys ja kysyntä syntyvät yhä useammin ilman suoria klikkejä. Koulutus ei jää ilmiötasolle, vaan rakentaa sinulle käytännön pelikirjan , jolla teet parempia päätöksiä: mitä kannattaa tehdä, missä kanavissa, millä prioriteeteilla ja miten vaikutus osoitetaan t uloksina .",
+      "Koulutuksen aikana rakennat konkreettiset työkalut omaan työhösi ja organisaatiosi käyttöön: saat kanavaroolikartan ja priorisointimallin , joiden avulla päätät mihin panostetaan seuraavaksi (ja mitä voidaan lopettaa), sekä Z ero click -mittariston ja budjettimallin , joilla markkinointia voi johtaa ilman klikkikeskeistä raportointia. Lisäksi saat valmiita mallipohjia ja käytännön esimerkkejä, joilla viet opit suoraan arkeen. Koulutuksen lopuksi kokoat 90 päivän toteutussuunnitelman , jonka voit viedä heti kalenteriin.",
+      "Katso videolta, miten Jonna kuvaa koulutuksen sisältöä:",
+      "Kokonaisuus rakentuu siis kahdesta Core-päivästä ja kahdesta valinnaisesta Track-päivästä . Vaikka et ehtisi mukaan kaikkiin koulutuskertoihin, saat kuitenkin tallenteen ja materiaalit käyttöösi määräajaksi.",
+      "Core on koulutuksen ydin: se antaa yhteisen rungon, jotta tekeminen ei jää irrallisiksi toimenpiteiksi.",
+      "Core 1 keskittyy zero-click-ajan strategiaan ja kanavien rooleihin , siihen miten digimarkkinoinnin kokonaisuus suunnitellaan ja priorisoidaan uudessa ympäristössä.",
+      "Core 2 vie mallin johtamiseen: mittaaminen ja budjetointi , siihen miten osoitat vaikutuksen, rakennat toimivan mittariston (ennakoivat mittarit + tulosmittarit) ja kohdistat budjetin niin, että opit ja tulokset kasvavat systemaattisesti.",
+      "Tracki t A & B ovat valinnaisia , koska organisaatioiden suurimmat pullonkaulat vaihtelevat ja haluamme, että voit syventää juuri sitä osa-aluetta, joka tuottaa sinulle nopeimman hyödyn.",
+      "Track A keskittyy löydettävyyteen: SEO, GEO ja social search , eli miten sisällöt ja rakenteet rakennetaan niin, että ne löytyvät hakukoneissa ja tekoälyn hakutuloksissa.",
+      "Track B puolestaan keskittyy tekemiseen ja vaikuttavuuteen: miten asiantuntijaviestinnän ja lyhytvideoiden avulla rakennat toistettavan sisältöjärjestelmän, joka kasvattaa luottamusta ja kysyntää Zero click -ympäristössä.",
+      "Core on siis koulutuksen ydin: kahdessa koulutuskerrassa rakennat Zero click -ajan digimarkkinoinnin kokonaismallin. Päätät kanavien roolit ja prioriteetit sekä teet mittaamisen ja budjetoinnin rungon, jolla markkinointia voidaan johtaa ja perustella. Lopputuloksena saat selkeän suunnan ja 90 päivän etenemissuunnitelman.",
+      "✅ Core 1: To 9.4. klo 9-12",
+      "Tavoite: Rakennat selkeän mallin ja prioriteetit digimarkkinointiin, kun klikki ei ole enää oletus.",
+      "Käsitellään: Zero click -asiakaspolku, kanavien roolit (owned/paid/earned), priorisointi 90 päivälle, teemat ja kohderyhmän kysymykset, mitä lopetetaan/aloitetaan/jatketaan.",
+      "Saat mukaan: kanavaroolikartan + 90 päivän prioriteettilistan + ydinviestien/sisältöteemojen rungon. Tallenne ja materiaalit 3 kk.",
+      "✅ Core 2: Ke 29.4. klo 9-12",
+      "Tavoite: Opit johtamaan markkinointia mittareilla ja budjetilla niin, että vaikutus näkyy tuloksissa myös ilman klikkikeskeisyyttä.",
+      "Käsitellään: ennakoivat mittarit vs. tulosmittarit, mittaristo polun eri vaiheisiin (huomio–kiinnostus–luottamus–intentio–tulos), kanavakohtaiset signaalit, budjetointi (ylläpito/kasvu/kokeilut), testaus ja raportointirytmi.",
+      "Saat mukaan: Zero click -mittariston + budjettimallin + testipankin (hypoteesi → toteutus → mittari → oppi). Tallenne ja materiaalit 3 kk.",
+      "Ilmoittaudu nyt",
+      "Trackit syventävät Corea käytännön toteutuksen kannalta kriittisiin teemoihin. Voit valita löydettävyyden (SEO + GEO + social search) tai asiantuntijaviestinnän ja lyhytvideon (brändi, formaatit, toistettava tekemisen malli) – tai molemmat. Trackien jälkeen sinulla on valmiit mallit ja checklistit, joilla viet suunnitelman arkeen nopeasti.",
+      "✅ Track A: Ke 6.5. klo 13-16",
+      "Tavoite: Päivität löydettävyyden pelikirjasi hakukonehakuihin, tekoälyhakuihin ja alustojen sisäisiin hakuihin.",
+      "Käsitellään: SEO:n ja AI-löydettävyyden (GEO) periaatteet käytännössä, sisällön rakenne ja muotoilu, social search -optimointi, sisältöinventaario ja päivitysprioriteetit.",
+      "Saat mukaan: AI-löydettävyyden checklistin + priorisoidun “päivitettävät sisällöt” -listan + sisältöbrief-pohjan. Tallenne ja materiaalit 3 kk.",
+      "✅ Track B: Ti 19.5. klo 9-12",
+      "Tavoite: Rakennat toistettavan sisältöjärjestelmän, joka kasvattaa luottamusta ja kysyntää Zero click -ympäristössä."
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "#Ilmoittaudu-121225",
+        "label": "Ilmoittaudu nyt"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      }
+    ]
+  },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "369593835713",
+    "content_name": "zero-click-ajan-digimarkkinointi-pääsivu  ",
+    "content_path": "zero-click-ajan-digimarkkinointi hs-content-name-zero-click-ajan-digimarkkinointi-pääsivu  ",
+    "hs_form_count": 1,
+    "form_ids": [],
+    "meeting_links": [],
+    "video_embeds": [],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi#Ilmoittaudu-121225"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi#Ilmoittaudu-121225"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi#Ilmoittaudu-121225"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi#Ilmoittaudu-121225"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi#Ilmoittaudu-121225"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi#Ilmoittaudu-121225"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi#Ilmoittaudu-121225"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 14,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt",
+          "Videotuotannot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      }
+    ]
+  }
+}

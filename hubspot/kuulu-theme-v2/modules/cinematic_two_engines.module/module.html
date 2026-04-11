@@ -1,0 +1,82 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media_block() %}
+  {% set mt = module.media_type|default("image") %}
+  {% if mt == "image" %}
+    {% if module.main_image and module.main_image.src %}
+      <img src="{{ module.main_image.src }}" alt="{{ module.main_image.alt|default('') }}" style="width: 100%; height: auto; display: block;">
+    {% else %}
+      <img src="{{ get_asset_url('../../images/v4/kaksi-koneistoa-v4.png') }}" alt="Kaksi koneistoa" style="width: 100%; height: auto; display: block;">
+    {% endif %}
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% else %}
+    <img src="{{ get_asset_url('../../images/v4/kaksi-koneistoa-v4.png') }}" alt="Kaksi koneistoa" style="width: 100%; height: auto; display: block;">
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("image") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+
+<section class="cinematic-section section-with-blobs gradient-section-tl grain-section" id="services">
+  <div class="glow-orb" style="width: 700px; height: 700px; top: -200px; left: 50%; transform: translateX(-50%);"></div>
+  <div class="blob-shape-3"></div>
+  <div class="glow-orb-subtle" style="width: 500px; height: 500px; bottom: -150px; right: -100px;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <span class="section-tag">{{ module.section_tag }}</span>
+    <h2 class="section-header">{{ module.headline }}<span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+    <p style="color: var(--cinematic-text-muted); max-width: 700px; margin-bottom: 3rem; font-size: 1.1rem; line-height: 1.8;">
+      {{ module.intro_text }}
+    </p>
+
+    {% if has_media %}
+    <div class="hero-glass-box" style="margin-bottom: 3rem; padding: 0; overflow: hidden; border: 1px solid rgba(0,255,135,0.1);">
+      {{ render_media_block() }}
+    </div>
+    {% endif %}
+
+    <div class="grid-2" style="gap: 3rem; margin-top: 1rem;">
+      <div class="hero-glass-box" style="padding: 2.5rem;">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="width: 70px; height: 70px; background: var(--gradient-green); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-green-sm);">
+            <i class="{{ module.engine_1_icon }}" style="font-size: 1.75rem; color: var(--cinematic-bg);"></i>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.75rem; margin: 0;">{{ module.engine_1_title }}</h3>
+            <span style="font-size: 0.9rem; color: var(--cinematic-green); text-transform: uppercase; letter-spacing: 0.05em;">{{ module.engine_1_subtitle }}</span>
+          </div>
+        </div>
+        <p style="color: var(--cinematic-text-muted); margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.7;">{{ module.engine_1_description }}</p>
+        <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin-bottom: 1.5rem;">
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> {{ module.engine_1_benefit_1 }}</li>
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> {{ module.engine_1_benefit_2 }}</li>
+          <li style="display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> {{ module.engine_1_benefit_3 }}</li>
+        </ul>
+        <a href="{{ module.engine_1_cta_url }}" class="btn-cinematic-primary" style="display: inline-block;">{{ module.engine_1_cta_text }}</a>
+      </div>
+      <div class="hero-glass-box" style="padding: 2.5rem;">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="width: 70px; height: 70px; background: var(--gradient-green); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-green-sm);">
+            <i class="{{ module.engine_2_icon }}" style="font-size: 1.75rem; color: var(--cinematic-bg);"></i>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.75rem; margin: 0;">{{ module.engine_2_title }}</h3>
+            <span style="font-size: 0.9rem; color: var(--cinematic-green); text-transform: uppercase; letter-spacing: 0.05em;">{{ module.engine_2_subtitle }}</span>
+          </div>
+        </div>
+        <p style="color: var(--cinematic-text-muted); margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.7;">{{ module.engine_2_description }}</p>
+        <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin-bottom: 1.5rem;">
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> {{ module.engine_2_benefit_1 }}</li>
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> {{ module.engine_2_benefit_2 }}</li>
+          <li style="display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: var(--cinematic-green);"></i> {{ module.engine_2_benefit_3 }}</li>
+        </ul>
+        <a href="{{ module.engine_2_cta_url }}" class="btn-cinematic-outline" style="display: inline-block;">{{ module.engine_2_cta_text }}</a>
+      </div>
+    </div>
+  </div>
+</section>

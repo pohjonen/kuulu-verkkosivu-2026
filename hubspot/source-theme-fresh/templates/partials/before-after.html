@@ -1,0 +1,151 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Before After - Comparison Cards"
+-->
+{#
+  Ennen / Jälkeen -vertailuosio
+
+  Käyttö:
+    {% set ba_tag = '// Muutos' %}
+    {% set ba_title = 'Ennen ja <span class="text-gradient-green">jälkeen</span>' %}
+    {% set ba_before_title = 'Ennen Kuulua' %}
+    {% set ba_before_items = 'Sisältöjä satunnaisesti;;Ei mitattavia tuloksia;;3 eri toimistoa;;Budjetit arvausta' %}
+    {% set ba_after_title = 'Kuulun jälkeen' %}
+    {% set ba_after_items = '15 sisältöä/kk systemaattisesti;;Dashboard näyttää ROIn reaaliajassa;;1 tiimi, 1 lasku;;Joka euro seurataan' %}
+    {% set ba_before_stat = '' %}
+    {% set ba_after_stat = '+340% liidejä' %}
+    {% include './partials/before-after.html' %}
+
+    Itemit erotetaan ;;-merkinnällä: item1;;item2;;item3
+#}
+
+{% set b_tag = ba_tag|default('') %}
+{% set b_title = ba_title|default('') %}
+{% set b_desc = ba_description|default('') %}
+
+{% set before_t = ba_before_title|default('Ennen') %}
+{% set before_items = ba_before_items|default('') %}
+{% set before_stat = ba_before_stat|default('') %}
+{% set before_icon = ba_before_icon|default('fas fa-times-circle') %}
+
+{% set after_t = ba_after_title|default('Jälkeen') %}
+{% set after_items = ba_after_items|default('') %}
+{% set after_stat = ba_after_stat|default('') %}
+{% set after_icon = ba_after_icon|default('fas fa-check-circle') %}
+
+{% set b_cta = ba_cta_text|default('') %}
+{% set b_cta_url = ba_cta_url|default('#') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    {% if b_tag %}<span class="section-tag">{{ b_tag }}</span>{% endif %}
+    {% if b_title %}<h2 class="section-header">{{ b_title }}</h2>{% endif %}
+    {% if b_desc %}<p style="color: var(--cinematic-text-muted); max-width: 650px; margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.7;">{{ b_desc }}</p>{% endif %}
+
+    <div class="ba-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 900px; margin: 0 auto; align-items: stretch;">
+
+      <div class="ba-card ba-before">
+        <div class="ba-card-header ba-header-before">
+          <i class="{{ before_icon }}" style="font-size: 1.2rem;"></i>
+          <h3>{{ before_t }}</h3>
+        </div>
+        {% if before_items %}
+        <ul class="ba-list">
+          {% for item in before_items|split(';;') %}
+          <li><span class="ba-icon ba-icon-neg">✗</span> {{ item|trim }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if before_stat %}
+        <div class="ba-stat ba-stat-neg">{{ before_stat }}</div>
+        {% endif %}
+      </div>
+
+      <div class="ba-card ba-after">
+        <div class="ba-card-header ba-header-after">
+          <i class="{{ after_icon }}" style="font-size: 1.2rem;"></i>
+          <h3>{{ after_t }}</h3>
+        </div>
+        {% if after_items %}
+        <ul class="ba-list">
+          {% for item in after_items|split(';;') %}
+          <li><span class="ba-icon ba-icon-pos">✓</span> {{ item|trim }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if after_stat %}
+        <div class="ba-stat ba-stat-pos">{{ after_stat }}</div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if b_cta %}
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="{{ b_cta_url }}" class="btn-cinematic-primary">{{ b_cta }}</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+.ba-card {
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  display: flex; flex-direction: column;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: border-color 0.3s, background 0.3s;
+}
+.ba-card:hover {
+  border-color: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+}
+.ba-before { }
+.ba-after {
+  border-color: rgba(0,255,135,0.12);
+}
+.ba-after:hover {
+  border-color: rgba(0,255,135,0.2);
+  background: rgba(0,255,135,0.02);
+}
+.ba-card-header {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding-bottom: 1rem; margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.ba-header-before i { color: rgba(255,80,80,0.7); }
+.ba-header-after i { color: var(--cinematic-green); }
+.ba-card-header h3 {
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 700;
+  color: var(--cinematic-text); margin: 0; text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.ba-list { list-style: none; padding: 0; margin: 0; flex: 1; }
+.ba-list li {
+  display: flex; align-items: flex-start; gap: 0.6rem;
+  color: var(--cinematic-text-muted); font-size: 0.95rem; line-height: 1.6;
+  padding: 0.5rem 0;
+}
+.ba-icon { flex-shrink: 0; font-size: 0.85rem; margin-top: 0.2rem; }
+.ba-icon-neg { color: rgba(255,80,80,0.7); }
+.ba-icon-pos { color: var(--cinematic-green); font-weight: 700; }
+.ba-stat {
+  margin-top: 1.5rem; padding: 1.1rem 1.5rem; border-radius: 14px; text-align: center;
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.ba-stat-neg {
+  background: rgba(255,60,60,0.06); color: rgba(255,100,100,0.8);
+  border: 1px solid rgba(255,60,60,0.1);
+}
+.ba-stat-pos {
+  background: rgba(0,255,135,0.08); color: var(--cinematic-green);
+  border: 1px solid rgba(0,255,135,0.15);
+}
+@media (max-width: 768px) {
+  .ba-grid { grid-template-columns: 1fr !important; }
+  .ba-card { padding: 1.5rem 1.5rem; border-radius: 16px; }
+  .ba-stat { padding: 0.9rem 1.2rem; border-radius: 12px; font-size: 1.15rem; }
+}
+</style>

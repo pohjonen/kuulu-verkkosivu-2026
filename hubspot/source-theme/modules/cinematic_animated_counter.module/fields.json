@@ -1,0 +1,216 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Luvut"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tulokset "
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "puhuvat puolestaan"
+}, {
+  "id" : "intro_text",
+  "name" : "intro_text",
+  "label" : "Ingressi",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Olemme auttaneet satoja yrityksiä kasvamaan. Tässä faktoja."
+}, {
+  "id" : "stat_1_number",
+  "name" : "stat_1_number",
+  "label" : "Luku 1 – arvo",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 500
+}, {
+  "id" : "stat_1_suffix",
+  "name" : "stat_1_suffix",
+  "label" : "Luku 1 – loppuosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "+"
+}, {
+  "id" : "stat_1_label",
+  "name" : "stat_1_label",
+  "label" : "Luku 1 – selite",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Asiakasta"
+}, {
+  "id" : "stat_1_description",
+  "name" : "stat_1_description",
+  "label" : "Luku 1 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Luottaa Kuulu Flow:hun"
+}, {
+  "id" : "stat_2_number",
+  "name" : "stat_2_number",
+  "label" : "Luku 2 – arvo",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 300
+}, {
+  "id" : "stat_2_suffix",
+  "name" : "stat_2_suffix",
+  "label" : "Luku 2 – loppuosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "+"
+}, {
+  "id" : "stat_2_label",
+  "name" : "stat_2_label",
+  "label" : "Luku 2 – selite",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Liidiä/vuosi"
+}, {
+  "id" : "stat_2_description",
+  "name" : "stat_2_description",
+  "label" : "Luku 2 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Keskimäärin asiakkaalle"
+}, {
+  "id" : "stat_3_number",
+  "name" : "stat_3_number",
+  "label" : "Luku 3 – arvo",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 98
+}, {
+  "id" : "stat_3_suffix",
+  "name" : "stat_3_suffix",
+  "label" : "Luku 3 – loppuosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "%"
+}, {
+  "id" : "stat_3_label",
+  "name" : "stat_3_label",
+  "label" : "Luku 3 – selite",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tyytyväisyys"
+}, {
+  "id" : "stat_3_description",
+  "name" : "stat_3_description",
+  "label" : "Luku 3 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Asiakaspalaute vuodelta 2025"
+}, {
+  "id" : "stat_4_number",
+  "name" : "stat_4_number",
+  "label" : "Luku 4 – arvo",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 3000
+}, {
+  "id" : "stat_4_suffix",
+  "name" : "stat_4_suffix",
+  "label" : "Luku 4 – loppuosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "+"
+}, {
+  "id" : "stat_4_label",
+  "name" : "stat_4_label",
+  "label" : "Luku 4 – selite",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tuotettua videota"
+}, {
+  "id" : "stat_4_description",
+  "name" : "stat_4_description",
+  "label" : "Luku 4 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Vuodesta 2015 lähtien"
+}, {
+  "id" : "animation_duration",
+  "name" : "animation_duration",
+  "label" : "Animaation kesto (ms)",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 2000
+} ]

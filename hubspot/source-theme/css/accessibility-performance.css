@@ -1,0 +1,142 @@
+/* Accessibility and Performance Optimizations for KuuluTemplate2025-V1 */
+
+/* === LAZY LOADING KUVAT === */
+/* Varmista että kaikki kuvat (paitsi hero) käyttävät lazy loadingia */
+img:not([loading]) {
+  loading: lazy;
+}
+
+/* Hero-kuvat latautuvat heti */
+.hero-section img,
+.custom-header__logo img,
+[role="img"] {
+  loading: eager;
+}
+
+/* Iframe-videot lazy loadingilla */
+iframe[src*="youtube"],
+iframe[src*="vimeo"],
+iframe[src*="video"] {
+  loading: lazy;
+}
+
+/* === PREFER-REDUCED-MOTION TUKI === */
+/* Tuki käyttäjille, jotka ovat ottaneet käyttöön "vähennetty liike" -asetuksen */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Piilota automaattiset videot ja korvaa niitä kuvilla */
+  .hero-section video,
+  .hero-video,
+  video[autoplay] {
+    display: none !important;
+  }
+  
+  /* Näytä staattinen kuva videon sijaan */
+  .hero-section::before {
+    display: block !important;
+  }
+  
+  /* Poista parallax-efektit */
+  .parallax,
+  [data-simple-parallax] {
+    transform: none !important;
+  }
+  
+  /* Poista scroll-animaatiot */
+  .fade-in,
+  .slide-in,
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* === SAavutettavuus parannukset === */
+/* Varmista että kaikki interaktiiviset elementit ovat näppäimistöllä käytettäviä */
+a:focus,
+button:focus,
+[tabindex]:focus {
+  outline: 2px solid #009F4E !important;
+  outline-offset: 2px !important;
+}
+
+/* Skip to content link - piilotettu mutta näkyy fokuksessa */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #009F4E;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 10000;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* === SEMANTTINEN HTML PARANNUKSET === */
+/* Korvaa div-painikkeet oikeilla button-elementeillä */
+button.cta-button,
+a.cta-button {
+  cursor: pointer;
+  border: none;
+  padding: 12px 24px;
+  font-family: inherit;
+}
+
+/* Varmista että nav-elementit ovat oikein merkitty */
+nav[aria-label],
+nav[aria-labelledby] {
+  display: block;
+}
+
+/* === RESPONSIIVISTA KUVAT === */
+/* Varmista että kuvat skaalautuvat responsiivisesti */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === PERFORMANCE OPTIMIZATIONS === */
+/* Varmista että animaatiot eivät laske renderöintia */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* === VIDEO ACCESSIBILITY === */
+/* Varmista että videot ovat saavutettavia */
+video {
+  width: 100%;
+  height: auto;
+}
+
+video:focus {
+  outline: 2px solid #009F4E;
+  outline-offset: 2px;
+}
+
+/* Piilota automaattinen toisto jos käyttäjä haluaa vähentää liikettä */
+@media (prefers-reduced-motion: reduce) {
+  video[autoplay] {
+    display: none;
+  }
+  
+  video {
+    display: block;
+  }
+}
+

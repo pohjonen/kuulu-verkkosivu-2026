@@ -1,0 +1,44 @@
+{
+  "module": "audience-split-v2",
+  "module_key": "audience-split-v2",
+  "category": "system",
+  "used_on": [
+    "homepage-v2",
+    "service-landing-v2",
+    "training-landing-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "cta",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "left_audience_block",
+    "right_audience_block"
+  ],
+  "optional_fields": [
+    "conclusion_text"
+  ],
+  "build_wave": 2,
+  "depends_on": [
+    "grid-two-column-v2",
+    "stats-labels-v2"
+  ],
+  "field_groups": [
+    "content",
+    "cta",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "fixed_blocks": 2,
+    "default_percentages": [
+      "95",
+      "5"
+    ]
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "page_id": "v2_someauditointi__service",
+  "template": "service-landing-v2",
+  "preview_slug": "/v2-someauditointi",
+  "url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+  "page_type": "service",
+  "current_theme": "legacy-vaalea",
+  "primary_goal": "Clarify how this service solves a specific growth bottleneck: Someagentti eli somekanavien auditointi.",
+  "core_message": "Kuulun Someagentti Someagentti eli somekanavien auditointi Audit / startti-type service.",
+  "hero_direction": {
+    "headline": "Kuulun Someagentti",
+    "supporting_angle": "Sivu näyttää miten palvelu ratkaisee kitkan eikä jää irralliseksi toimenpiteeksi.",
+    "cta_goal": "sparraus tai tarjous"
+  },
+  "mandatory_signals": [
+    "Palvelu kytkeytyy selvästi pullonkaulaan",
+    "Sisältö ei jää irralliseksi listaukseksi",
+    "Seuraava askel on selkeä"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_someauditointi__service__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "problem-grid-v2",
+      "module_instance_key": "v2_someauditointi__service__problem-grid-v2__2",
+      "content_job": "Apply problem-grid-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "audience-split-v2",
+      "module_instance_key": "v2_someauditointi__service__audience-split-v2__3",
+      "content_job": "Apply audience-split-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "service-pillars-v2",
+      "module_instance_key": "v2_someauditointi__service__service-pillars-v2__4",
+      "content_job": "Apply service-pillars-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 5,
+      "module": "process-steps-v2",
+      "module_instance_key": "v2_someauditointi__service__process-steps-v2__5",
+      "content_job": "Apply process-steps-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 6,
+      "module": "reference-grid-v2",
+      "module_instance_key": "v2_someauditointi__service__reference-grid-v2__6",
+      "content_job": "Apply reference-grid-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 7,
+      "module": "faq-v2",
+      "module_instance_key": "v2_someauditointi__service__faq-v2__7",
+      "content_job": "Apply faq-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 8,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_someauditointi__service__final-cta-v2__8",
+      "content_job": "Apply final-cta-v2 to page type service using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Someagentti eli somekanavien auditointi",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Kuulun Someagentti"
+      },
+      {
+        "level": "h2",
+        "text": "Tuntuuko teistä, että..."
+      },
+      {
+        "level": "h2",
+        "text": "Kutsukaa apuun Kuulun Someagentti"
+      },
+      {
+        "level": "h2",
+        "text": "Miten Someagentin prosessi etenee?"
+      },
+      {
+        "level": "h2",
+        "text": "Mitä saatte?"
+      },
+      {
+        "level": "h2",
+        "text": "Mitä raportin jälkeen?"
+      },
+      {
+        "level": "h2",
+        "text": "Näin saatte parhaan hyödyn irti Someagentista"
+      },
+      {
+        "level": "h2",
+        "text": "100 % käyttäjistä suosittelee palvelua"
+      },
+      {
+        "level": "h2",
+        "text": "Pyydä tarjous Someagentista"
+      },
+      {
+        "level": "h3",
+        "text": "Omaa aikaanne kuluu noin 3 tuntia!"
+      },
+      {
+        "level": "h3",
+        "text": "Katso Luupin referenssivideo alta"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Kuulun asiantuntija selvittää yrityksenne somekanavien tai muiden digikanavienne nykytilan. Saatte ajankohtaisen tiedon, miten digiviestintäkanavillanne menee. Lisäksi saatte konkreettiset kehitysideat ja toimintaohjeet, jotka helpottavat arkeanne.",
+      "Kuulun asiantuntija selvittää yrityksenne somekanavien nykytilan. Saatte ajankohtaisen tiedon, miten somekanavillanne menee. Lisäksi saatte konkreettiset kehitysideat ja toimintaohjeet, jotka käymme yhdessä läpi.",
+      "Saatte konkreettisia ja yrityksellenne räätälöityä ehdotuksia, kuinka somemarkkinoinnin avulla:",
+      "Projektiin kuuluu:",
+      "Millaisen koulutuksen sinun yrityksesi tarvitsisi some- ja digimarkkinoinnista tai videoista ja kuvista? Ota yhteyttä sivun alareunan lomakkeella, niin räätälöidään yrityksellesi sopiva koulutus!",
+      "Someagentti -palvelun käyttö ei sido teitä mihinkään jatkotoimenpiteisiin kanssamme. Tuotamme teille mahdollisimman kattavan analyysin ja toimenpide-ehdotukset.",
+      "Voitte itse analyysin jälkeen päättää kuinka toimia, kuten:",
+      "Someagentin prosessi muovautuu täysin tarpeidenne mukaisesti, ja siitä voi rakentaa teille sopivimman kokonaisuuden ketterästi ja vaivattomasti.",
+      "Useat asiakkaamme ovatkin yhdistäneet Someagentin helposti erilaisiin koulutuksiimme, joiden sisältö on räätälöity yhdessä heidän tarpeidensa ja analyysissa nousseiden toimenpide-ehdotusten pohjalta.",
+      "Olemme myös Someagentin analyysin avulla tuottaneet erilaisia someohjeistuksia sekä -strategioita, rakentaneet konsepteja, uudistaneet brändin visuaalista ilmettä ja aloittaneet jopa strategisia kumppanuuksia.",
+      "Yhdistämällä Someagentin osaksi laajempaa kokonaisuutta, voit olla varma, ettet jää analyysissa nousseiden kehitysideoiden kanssa yksin!",
+      "\"Kuulun someagentti auttoi meitä kartoittamaan somekanaviemme nykytilanteen sekä antoi konkreettisia kehitysideoita. Saimme myös neuvoja, miten meidän kannattaa tulevaisuudessa kohdistaa resurssimme, jotta pääsemme entistä parempiin tuloksiin.",
+      "Someagentti sai meidät iloisella persoonallaan ja asiantuntevalla otteella inspiroitumaan ja innostumaan somesta ja sen erilaisista mahdollisuuksista. Iso kiitos!\" Riikka Harjula, Museo- ja tiedekeskus Luuppi",
+      "”Selkeä ja olennaisiin asioihin keskittyvä analyysi. Erittäin hyvää yhteistyötä :)”",
+      "”Parasta oli asiantuntijuus. Kerätty tieto kerrottiin meille asiantuntevasti, mutta niin että kaikki ymmärtää mistä puhutaan. Palaute/Keskustelu oli informatiivista, mutta myös tarpeeksi lyhyttä että muistiin jää hyvin ne pääkohdat.”",
+      "Kajaanin Kaupunki",
+      "\"Someagentti-palvelussa parasta oli k äytännölliset ehdotukset ja palaute. Asioita oli selvitetty ja ymmärretty asiakkaan näkökulma. Ei tarjottu pelkästään esimerkiksi staattista raporttia. Tämä oli parhaimmillaan sellainen \"kuolleiden kulmien\" tarkistus ja nosto asioista, joita emme huomanneet tai joihin olimme tyytyneet.\" B2C-tuotekauppaa tekevä yritys",
+      "\"Meille oli eniten hyötyä argumenteista, jolla saamme lisää resursseja tietynlaiseen tekemiseen ja seikkaperäiset ratkaisuehdotukset näihin. Eri organisaatiot suhtautuvat tiettyihin asioihin tietyllä tavalla asenteellisesti ja näiden asenteiden murtamiseen tarvitaan monesti myös ulkopuolista apua.\" B2C-tuotekauppaa (verkkokauppa ja kivijalka) tekevä yritys",
+      "\"Koen, että saimme neuvoillanne uutta suuntaa sekä intoa tekemiseen. Aiomme ehdottomasti hyödyntää palautetta tulevaisuudessa, kun suunnittelemme ja toteutamme sisällöntuotantoa.\" B2C-tuotekauppaa (verkkokauppa ja kivijalka) tekevä yritys",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://share.hsforms.com/1p4z4pChyTLiQo9cavQai4A9no8",
+        "label": "Pyydä tarjous Someagentista"
+      }
+    ]
+  },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "",
+    "content_name": "",
+    "content_path": "",
+    "hs_form_count": 0,
+    "form_ids": [
+      "a78cf8a4-2872-4cb8-90a3-d71abd06a2e0"
+    ],
+    "meeting_links": [],
+    "video_embeds": [
+      "https://www.kuulu.fi/hubfs/website_files/icons/green_mask_youtube.svg",
+      "https://www.youtube.com/c/KuuluFi"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Pyydä tarjous Someagentista",
+        "href": "https://share.hsforms.com/1p4z4pChyTLiQo9cavQai4A9no8"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 17,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "legal",
+        "labels": [
+          "Tietosuojaseloste"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ],
+        "strength": "navigational"
+      }
+    ]
+  }
+}

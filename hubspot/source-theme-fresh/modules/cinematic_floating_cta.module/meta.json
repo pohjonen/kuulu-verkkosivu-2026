@@ -1,0 +1,13 @@
+{
+  "content_tags" : [ {
+    "name" : "CINEMATIC",
+    "source" : "USER"
+  } ],
+  "global" : true,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "smart_type" : "NOT_SMART",
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 382165003450,
+  "label" : "Cinematic Floating CTA",
+  "is_available_for_new_content" : true
+}

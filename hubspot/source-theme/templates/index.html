@@ -1,0 +1,262 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="/">
+            <img src="{{ get_asset_url('images/kuulu-logo.png') }}" alt="Kuulu" onerror="this.style.display='none'">
+            <span class="logo-text">Kuulu</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">Tietoja meistä</a></li>
+            <li><a href="#services">Palvelut</a></li>
+            <li><a href="#case-study">Case study</a></li>
+            <li><a href="#contact">Yhteystiedot</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="campaign-badge">DIGIMARKKINOINTI- JA VIDEOTOIMISTO</div>
+      <h1>Kuuluisalle kaikki on helpompaa</h1>
+      <p class="hero-subtitle">Kuulu tekee asiakashankinnasta sujuvaa ja tuloksellista. Olemme kokenut digimarkkinointin asiantuntijatoimisto, joka auttaa sinua loistamaan oikeissa kanavissa.</p>
+      
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Ota yhteyttä</a>
+        <a href="#services" class="btn btn-secondary">Katso referenssimme</a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">500+</span>
+          <span class="hero-stat-label">Asiakasprojektia</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">10+</span>
+          <span class="hero-stat-label">Vuotta kokemusta</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">98%</span>
+          <span class="hero-stat-label">Asiakastyytyväisyyttä</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="about-content">
+            <h2>Kuulu on digimarkkinointi- ja videotoimisto markkinoinnin ja myynnin tukena</h2>
+            <p>Toimistomme sijaitsevat Oulussa ja Helsingissä. Toimimme koko maassa. Suunnitellut, strategian mukaiset, kiinnostavat ja tuloksia tuovat sisällöt eri muodoissaan ovat ydinosaamistamme.</p>
+            
+            <div class="about-stats">
+              <div class="stat">
+                <h3>500+</h3>
+                <p>Asiakasprojektia</p>
+              </div>
+              <div class="stat">
+                <h3>10+</h3>
+                <p>Vuotta kokemusta</p>
+              </div>
+              <div class="stat">
+                <h3>98%</h3>
+                <p>Asiakastyytyväisyyttä</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="about-image">
+            <img src="{{ get_asset_url('images/about-placeholder.jpg') }}" alt="Kuulu tiimi" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Kuulun palvelut</h2>
+        <p>Lue alta lisää Kuulun palveluista ja tutustu asiakasprojekteihimme.</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3>Digimarkkinointi</h3>
+            <p>Strateginen digimarkkinointi, joka tuottaa tuloksia. Sosiaalinen media, hakukoneoptimointi ja mainoskampanjat.</p>
+            <a href="/digimarkkinointi" class="btn btn-primary">Lue lisää</a>
+          </div>
+        </div>
+        
+        <div class="col-4">
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M23 7l-7-4-7 4M23 7v10l-7 4M23 7l-7 4M16 3v10M9 11l7 4"/>
+              </svg>
+            </div>
+            <h3>Videotuotanto</h3>
+            <p>Ammattimainen videotuotanto mainoksiin, sosiaaliseen mediaan ja sisällömarkkinointiin.</p>
+            <a href="/videotuotanto" class="btn btn-primary">Lue lisää</a>
+          </div>
+        </div>
+        
+        <div class="col-4">
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              </svg>
+            </div>
+            <h3>Koulutus</h3>
+            <p>Tekoälyn mestarikurssit ja digimarkkinointikoulutukset yrityksille ja yksityishenkilöille.</p>
+            <a href="/koulutus" class="btn btn-primary">Lue lisää</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Section -->
+  <section class="case-study" id="case-study">
+    <div class="container">
+      <div class="section-title">
+        <h2>VIIMEISIN CASE STUDY</h2>
+        <p>Näin luova konsepti ja rohkea kannanotto synnyttivät liikkeen lasten puolesta</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-6">
+          <div class="case-study-card animate-on-scroll">
+            <h3>Lapsuus on parasta livenä</h3>
+            <p>Elisan kampanja älylaitteiden ikärajoista ylitti kaikki odotukset. 3.2M kokonaiskontaktia, 22% reach tavoitteen yli ja 47% mediahinnat alle tavoitteen.</p>
+            
+            <div class="case-study-stats">
+              <div class="case-stat">
+                <span class="case-stat-number">3.2M</span>
+                <span class="case-stat-label">Kokonaiskontaktit</span>
+              </div>
+              <div class="case-stat">
+                <span class="case-stat-number">+22%</span>
+                <span class="case-stat-label">Reach tavoitteen yli</span>
+              </div>
+              <div class="case-stat">
+                <span class="case-stat-number">-47%</span>
+                <span class="case-stat-label">Mediahinnat alle tavoitteen</span>
+              </div>
+            </div>
+            
+            <a href="/case-studies/elisa" class="btn btn-primary">Lue koko case study</a>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="video-container animate-on-scroll">
+            <div class="video-placeholder">
+              <div class="play-button">▶</div>
+              <p>Case study video</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Ota yhteyttä</h2>
+        <p>Haluatko kuulla lisää Kuulun palveluista? Ota rohkeasti yhteyttä!</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-6">
+          <div class="contact-info">
+            <h3>Yhteystiedot</h3>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@kuulu.fi</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+358 40 123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Oulu & Helsinki</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="contact-form">
+            <h3>Lähetä viesti</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Nimi" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Sähköposti" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Viesti" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span>Kuulu</span>
+        </div>
+        <div class="footer-links">
+          <a href="/tietoja">Tietoja meistä</a>
+          <a href="/palvelut">Palvelut</a>
+          <a href="/case-studies">Case studies</a>
+          <a href="/yhteystiedot">Yhteystiedot</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kuulu. Kaikki oikeudet pidätetään.</p>
+      </div>
+    </div>
+  </footer>
+{% endblock body %}
+ 

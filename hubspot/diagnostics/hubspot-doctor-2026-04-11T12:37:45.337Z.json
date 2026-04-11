@@ -1,0 +1,35 @@
+{
+    "platform": "linux",
+    "arch": "x64",
+    "config": "/home/ubuntu/.hscli/config.yml",
+    "defaultAccountOverrideFile": null,
+    "configSettings": {
+        "httpUseLocalhost": false
+    },
+    "versions": {
+        "@hubspot/cli": "8.4.0",
+        "node": "22.22.1",
+        "npm": "10.9.4"
+    },
+    "account": {
+        "accountId": 450584,
+        "accountType": "STANDARD",
+        "authType": "personalaccesskey"
+    },
+    "project": {
+        "config": {
+            "projectConfig": null,
+            "projectDir": null
+        }
+    },
+    "files": [],
+    "configFiles": [],
+    "hsMetaFiles": [],
+    "packageFiles": [],
+    "packageLockFiles": [],
+    "envFiles": [],
+    "jsonFiles": [],
+    "diagnosis": "\nHubSpot CLI install\n  ✔ SUCCESS node v22.22.1 is installed\n  ✔ SUCCESS npm v10.9.4 is installed\n  ✔ SUCCESS HubSpot CLI v8.4.0 up to date\n\nCLI configuration\nConfig File: /home/ubuntu/.hscli/config.yml\nDefault Account: kuulun [standard] (450584)\n  ✔ SUCCESS Default account active\n  ✔ SUCCESS Personal Access Key is valid. View selected scopes: https://app.hubspot.com/personal-access-key/450584\n\nNetwork & API connectivity\n  ✔ SUCCESS HubSpot API is reachable\n  ✔ SUCCESS npm registry is reachable\n\nErrors: 0\nWarning: 0\n",
+    "errorCount": 0,
+    "warningCount": 0
+}

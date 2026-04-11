@@ -1,0 +1,126 @@
+[ {
+  "id" : "section_title",
+  "name" : "section_title",
+  "label" : "Osion otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tutustu palveluihimme"
+}, {
+  "id" : "section_subtitle",
+  "name" : "section_subtitle",
+  "label" : "Osion alaotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Scroll sivusuunnassa nähdäksesi kaikki"
+}, {
+  "id" : "cards",
+  "name" : "cards",
+  "label" : "Kortit",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 20,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "image",
+    "name" : "image",
+    "label" : "Kuva",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "display_width" : null,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : ""
+    }
+  }, {
+    "id" : "icon_svg",
+    "name" : "icon_svg",
+    "label" : "SVG-ikoni (vaihtoehto kuvalle)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "title",
+    "name" : "title",
+    "label" : "Otsikko",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "description",
+    "name" : "description",
+    "label" : "Kuvaus",
+    "required" : false,
+    "locked" : false,
+    "display_width" : null,
+    "type" : "richtext",
+    "default" : ""
+  }, {
+    "id" : "link_url",
+    "name" : "link_url",
+    "label" : "Linkki",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "display_width" : null,
+    "type" : "url",
+    "default" : {
+      "href" : "#"
+    }
+  }, {
+    "id" : "link_text",
+    "name" : "link_text",
+    "label" : "Linkin teksti",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "LUE LISÄÄ"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Digimarkkinointi",
+    "description" : "<p>Strategia, sisältö ja mainonta – yhden kumppanin kautta.</p>",
+    "link_text" : "LUE LISÄÄ"
+  }, {
+    "title" : "Videotuotanto",
+    "description" : "<p>Mainokset, case videot ja sisältö videona.</p>",
+    "link_text" : "LUE LISÄÄ"
+  }, {
+    "title" : "Koulutus",
+    "description" : "<p>Live- ja verkkokoulutukset tiimille ja johdolle.</p>",
+    "link_text" : "LUE LISÄÄ"
+  }, {
+    "title" : "Perjantaipulssi",
+    "description" : "<p>Viikoittainen tekoäly- ja markkinointiuutiskirje.</p>",
+    "link_text" : "LUE LISÄÄ"
+  }, {
+    "title" : "Sparraus",
+    "description" : "<p>Varaa ilmainen sparraus ja löydä potentiaali.</p>",
+    "link_text" : "LUE LISÄÄ"
+  } ]
+} ]

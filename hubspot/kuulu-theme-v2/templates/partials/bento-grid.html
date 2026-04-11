@@ -1,0 +1,121 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Bento Grid - Asymmetric Feature Cards"
+-->
+{#
+  Bento Grid -partiaali (epäsymmetrinen feature-ruudukko)
+
+  Käyttö:
+    {% set bg_tag = '// Miksi Kuulu' %}
+    {% set bg_title = 'Kaikki yhdestä <span class="text-gradient-green">paikasta</span>' %}
+    {% set bg_1_title = 'Video + AI + Markkinointi' %}
+    {% set bg_1_text = 'Yksi tiimi hallitsee kaiken.' %}
+    {% set bg_1_icon = 'fas fa-film' %}
+    {% set bg_1_size = 'large' %}
+    {% set bg_2_title = '15+ vuotta' %}
+    {% set bg_2_text = 'Kokemusta digimarkkinoinnista.' %}
+    {% set bg_2_icon = 'fas fa-trophy' %}
+    {% set bg_3_title = '2 studiota' %}
+    {% set bg_3_text = 'Oulu & Helsinki.' %}
+    {% set bg_3_icon = 'fas fa-building' %}
+    ... (max 6 itemiä)
+    Koot: 'large' (2 saraketta), 'normal' (1 sarake)
+    {% include './partials/bento-grid.html' %}
+#}
+
+{% set b_tag = bg_tag|default('') %}
+{% set b_title = bg_title|default('') %}
+{% set b_desc = bg_description|default('') %}
+
+{% set items = [] %}
+{% if bg_1_title|default('') %}{% set items = items + [{'title': bg_1_title, 'text': bg_1_text|default(''), 'icon': bg_1_icon|default(''), 'size': bg_1_size|default('normal'), 'image': bg_1_image|default(''), 'url': bg_1_url|default('')}] %}{% endif %}
+{% if bg_2_title|default('') %}{% set items = items + [{'title': bg_2_title, 'text': bg_2_text|default(''), 'icon': bg_2_icon|default(''), 'size': bg_2_size|default('normal'), 'image': bg_2_image|default(''), 'url': bg_2_url|default('')}] %}{% endif %}
+{% if bg_3_title|default('') %}{% set items = items + [{'title': bg_3_title, 'text': bg_3_text|default(''), 'icon': bg_3_icon|default(''), 'size': bg_3_size|default('normal'), 'image': bg_3_image|default(''), 'url': bg_3_url|default('')}] %}{% endif %}
+{% if bg_4_title|default('') %}{% set items = items + [{'title': bg_4_title, 'text': bg_4_text|default(''), 'icon': bg_4_icon|default(''), 'size': bg_4_size|default('normal'), 'image': bg_4_image|default(''), 'url': bg_4_url|default('')}] %}{% endif %}
+{% if bg_5_title|default('') %}{% set items = items + [{'title': bg_5_title, 'text': bg_5_text|default(''), 'icon': bg_5_icon|default(''), 'size': bg_5_size|default('normal'), 'image': bg_5_image|default(''), 'url': bg_5_url|default('')}] %}{% endif %}
+{% if bg_6_title|default('') %}{% set items = items + [{'title': bg_6_title, 'text': bg_6_text|default(''), 'icon': bg_6_icon|default(''), 'size': bg_6_size|default('normal'), 'image': bg_6_image|default(''), 'url': bg_6_url|default('')}] %}{% endif %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    {% if b_tag %}<span class="section-tag">{{ b_tag }}</span>{% endif %}
+    {% if b_title %}<h2 class="section-header">{{ b_title }}</h2>{% endif %}
+    {% if b_desc %}<p style="color: var(--cinematic-text-muted); max-width: 650px; margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.7;">{{ b_desc }}</p>{% endif %}
+
+    <div class="bento-grid">
+      {% for item in items %}
+      {% if item.url %}
+      <a href="{{ item.url }}" class="bento-card{% if item.size == 'large' %} bento-large{% endif %}{% if item.image %} bento-has-img{% endif %}" style="text-decoration: none;">
+      {% else %}
+      <div class="bento-card{% if item.size == 'large' %} bento-large{% endif %}{% if item.image %} bento-has-img{% endif %}">
+      {% endif %}
+        {% if item.image %}
+        <img src="{{ item.image }}" alt="{{ item.title }}" class="bento-bg-img" loading="lazy">
+        <div class="bento-img-overlay"></div>
+        {% endif %}
+        <div class="bento-inner">
+          {% if item.icon %}
+          <div class="bento-icon">
+            <i class="{{ item.icon }}"></i>
+          </div>
+          {% endif %}
+          <h3 class="bento-title">{{ item.title }}</h3>
+          {% if item.text %}<p class="bento-text">{{ item.text }}</p>{% endif %}
+        </div>
+      {% if item.url %}</a>{% else %}</div>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.bento-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+  grid-auto-rows: minmax(180px, auto);
+}
+.bento-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px; padding: 2rem; position: relative; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.bento-card:hover {
+  transform: translateY(-3px); border-color: rgba(0,255,135,0.2);
+  box-shadow: 0 8px 30px rgba(0,255,135,0.06);
+}
+.bento-large { grid-column: span 2; }
+.bento-has-img { min-height: 250px; }
+.bento-bg-img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.5s;
+}
+.bento-card:hover .bento-bg-img { transform: scale(1.05); }
+.bento-img-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.3) 60%, transparent 100%);
+}
+.bento-inner { position: relative; z-index: 2; }
+.bento-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+}
+.bento-icon i { font-size: 1.1rem; color: var(--cinematic-green); }
+.bento-title {
+  font-family: var(--font-display); color: var(--cinematic-text);
+  font-size: 1.15rem; font-weight: 700; margin: 0 0 0.4rem; line-height: 1.3;
+}
+.bento-text {
+  color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;
+}
+@media (max-width: 768px) {
+  .bento-grid { grid-template-columns: 1fr; }
+  .bento-large { grid-column: span 1; }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+}
+</style>

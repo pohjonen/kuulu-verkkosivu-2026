@@ -1,0 +1,193 @@
+[ {
+  "id" : "client_name",
+  "name" : "client_name",
+  "label" : "Asiakkaan nimi",
+  "required" : true,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Asiakas Oy"
+}, {
+  "id" : "client_logo",
+  "name" : "client_logo",
+  "label" : "Asiakkaan logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : ""
+  }
+}, {
+  "id" : "industry",
+  "name" : "industry",
+  "label" : "Toimiala",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Teknologia"
+}, {
+  "id" : "media_type",
+  "name" : "media_type",
+  "label" : "Media-tyyppi",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "image", "Kuva" ], [ "video", "Video" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "image"
+}, {
+  "id" : "media_image",
+  "name" : "media_image",
+  "label" : "Kuva",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : ""
+  }
+}, {
+  "id" : "media_video",
+  "name" : "media_video",
+  "label" : "Video URL (YouTube/Vimeo)",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "challenge_title",
+  "name" : "challenge_title",
+  "label" : "Haasteen otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Haaste"
+}, {
+  "id" : "challenge_text",
+  "name" : "challenge_text",
+  "label" : "Haasteen kuvaus",
+  "required" : true,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "<p>Asiakkaalla oli haaste saada digitaalinen näkyvyys ja liidit skaalautumaan. Markkinointi oli hajallaan usean toimijan välillä ja tuloksia oli vaikea mitata.</p>"
+}, {
+  "id" : "solution_title",
+  "name" : "solution_title",
+  "label" : "Ratkaisun otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Ratkaisu"
+}, {
+  "id" : "solution_text",
+  "name" : "solution_text",
+  "label" : "Ratkaisun kuvaus",
+  "required" : true,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "<p>Rakensimme yhdessä selkeän markkinointikoneiston: yhden yhteyshenkilön kautta tuli strategia, sisältö ja mittaus. Tulokset seurattiin dashboardissa kuukausittain.</p>"
+}, {
+  "id" : "metrics",
+  "name" : "metrics",
+  "label" : "Tulokset (Metriikka)",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "value",
+    "name" : "value",
+    "label" : "Arvo",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "+150%"
+  }, {
+    "id" : "item_label",
+    "name" : "item_label",
+    "label" : "Selite",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Liidien kasvu"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ {
+    "value" : "+150%",
+    "item_label" : "Liidien kasvu"
+  }, {
+    "value" : "3x",
+    "item_label" : "ROI"
+  }, {
+    "value" : "-40%",
+    "item_label" : "Kustannukset"
+  } ]
+}, {
+  "id" : "cta_text",
+  "name" : "cta_text",
+  "label" : "CTA-napin teksti",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Lue koko case"
+}, {
+  "id" : "cta_url",
+  "name" : "cta_url",
+  "label" : "CTA-linkki",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "display_width" : null,
+  "type" : "url",
+  "default" : {
+    "href" : "#"
+  }
+}, {
+  "id" : "reverse_layout",
+  "name" : "reverse_layout",
+  "label" : "Käänteinen layout (media oikealla)",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+} ]

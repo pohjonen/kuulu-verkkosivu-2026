@@ -1,0 +1,114 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<section class="person-profile">
+  <div class="container">
+    <div class="profile-header">
+      {% if module.person_image %}
+        <div class="profile-image">
+          <img src="{{ module.person_image.src }}" alt="{{ module.person_name }}">
+        </div>
+      {% endif %}
+      
+      <div class="profile-info">
+        {% if module.person_name %}
+          <h1 class="person-name">{{ module.person_name }}</h1>
+        {% endif %}
+        {% if module.person_title %}
+          <h2 class="person-title">{{ module.person_title }}</h2>
+        {% endif %}
+        {% if module.person_department %}
+          <p class="person-department">{{ module.person_department }}</p>
+        {% endif %}
+        {% if module.person_bio %}
+          <p class="person-bio">{{ module.person_bio }}</p>
+        {% endif %}
+      </div>
+    </div>
+    
+    {% if module.show_stats %}
+      <div class="profile-stats">
+        {% if module.years_experience %}
+          <div class="stat-item">
+            <span class="stat-number">{{ module.years_experience }}</span>
+            <span class="stat-label">vuotta kokemusta</span>
+          </div>
+        {% endif %}
+        {% if module.projects_completed %}
+          <div class="stat-item">
+            <span class="stat-number">{{ module.projects_completed }}</span>
+            <span class="stat-label">projektia</span>
+          </div>
+        {% endif %}
+        {% if module.specializations_count %}
+          <div class="stat-item">
+            <span class="stat-number">{{ module.specializations_count }}</span>
+            <span class="stat-label">erikoisalaa</span>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    
+    {% if module.show_experience and module.expertise_text %}
+      <div class="profile-section">
+        <h3>Osaamisalueet</h3>
+        <p>{{ module.expertise_text }}</p>
+      </div>
+    {% endif %}
+    
+    {% if module.show_experience and module.experience_text %}
+      <div class="profile-section">
+        <h3>Työkokemus</h3>
+        <p>{{ module.experience_text }}</p>
+      </div>
+    {% endif %}
+    
+    {% if module.show_portfolio and module.portfolio_text %}
+      <div class="profile-section">
+        <h3>Portfolio</h3>
+        <p>{{ module.portfolio_text }}</p>
+      </div>
+    {% endif %}
+    
+    <div class="profile-contact">
+      <div class="contact-info">
+        {% if module.email %}
+          <a href="mailto:{{ module.email }}" class="contact-link">
+            <i class="fas fa-envelope"></i> {{ module.email }}
+          </a>
+        {% endif %}
+        {% if module.phone %}
+          <a href="tel:{{ module.phone }}" class="contact-link">
+            <i class="fas fa-phone"></i> {{ module.phone }}
+          </a>
+        {% endif %}
+      </div>
+      
+      <div class="social-links">
+        {% if module.linkedin_url %}
+          <a href="{{ module.linkedin_url }}" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        {% endif %}
+        {% if module.twitter_url %}
+          <a href="{{ module.twitter_url }}" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        {% endif %}
+      </div>
+      
+      {% if module.calendar_link %}
+        <a href="{{ module.calendar_link }}" target="_blank" class="btn btn-primary">
+          Varaa aika
+        </a>
+      {% endif %}
+      
+      {% if module.contact_cta_text %}
+        <a href="/yhteystiedot" class="btn btn-secondary">
+          {{ module.contact_cta_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section> 

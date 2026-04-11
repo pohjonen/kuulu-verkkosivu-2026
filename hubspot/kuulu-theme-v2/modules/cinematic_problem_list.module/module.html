@@ -1,0 +1,158 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media_block() %}
+  {% set mt = module.media_type|default("image") %}
+  {% if mt == "image" %}
+    {% if module.image and module.image.src %}
+      <img src="{{ module.image.src }}" alt="{{ module.image.alt|default('') }}" style="width: 100%; height: auto; display: block;">
+    {% else %}
+      <img src="{{ get_asset_url('../../images/v4/puuttuuko-yhteinen-kieli.png') }}" alt="Ongelmalista" style="width: 100%; height: auto; display: block;">
+    {% endif %}
+  {% elif mt == "video_url" and module.media_video_url %}
+    {% set vurl = module.media_video_url|trim %}
+    {% if "player.vimeo.com" in vurl or "youtube.com/embed" in vurl %}
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe src="{{ vurl }}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    {% elif "vimeo.com" in vurl %}
+      {% set clean_url = vurl|split("?")|first %}
+      {% set path_part = clean_url|replace("https://vimeo.com/", "")|replace("http://vimeo.com/", "")|replace("www.vimeo.com/", "") %}
+      {% set url_parts = path_part|split("/") %}
+      {% set video_id = url_parts[0] %}
+      {% set video_hash = url_parts[1]|default("") %}
+      {% if video_hash %}
+        {% set embed_url = "https://player.vimeo.com/video/" ~ video_id ~ "?h=" ~ video_hash %}
+      {% else %}
+        {% set embed_url = "https://player.vimeo.com/video/" ~ video_id %}
+      {% endif %}
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe src="{{ embed_url }}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    {% elif "youtu.be" in vurl %}
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe src="{{ vurl|replace('youtu.be/', 'www.youtube.com/embed/') }}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    {% elif "youtube.com/watch" in vurl %}
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe src="{{ vurl|replace('youtube.com/watch?v=', 'youtube.com/embed/')|replace('www.', '')|replace('youtube.com', 'www.youtube.com') }}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    {% else %}
+      <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;"><source src="{{ vurl }}" type="video/mp4"></video>
+    {% endif %}
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% else %}
+    <img src="{{ get_asset_url('../../images/v4/puuttuuko-yhteinen-kieli.png') }}" alt="Ongelmalista" style="width: 100%; height: auto; display: block;">
+  {% endif %}
+{% endmacro %}
+
+{# Icon style setup #}
+{% set icon = module.icon_style|default("cross") %}
+{% set custom_color = module.icon_color.color|default("") %}
+
+{% if icon == "cross" %}
+  {% set icon_symbol = "&#x2717;" %}
+  {% set default_color = "rgba(255,100,100,0.8)" %}
+{% elif icon == "check" %}
+  {% set icon_symbol = "&#x2713;" %}
+  {% set default_color = "rgba(100,255,150,0.8)" %}
+{% elif icon == "warning" %}
+  {% set icon_symbol = "&#x26A0;" %}
+  {% set default_color = "rgba(255,200,50,0.8)" %}
+{% elif icon == "arrow" %}
+  {% set icon_symbol = "&#x2192;" %}
+  {% set default_color = "rgba(100,255,150,0.8)" %}
+{% elif icon == "bullet" %}
+  {% set icon_symbol = "&#x25CF;" %}
+  {% set default_color = "rgba(100,200,255,0.8)" %}
+{% elif icon == "number" %}
+  {% set icon_symbol = "" %}
+  {% set default_color = "rgba(100,255,150,0.8)" %}
+{% else %}
+  {% set icon_symbol = "" %}
+  {% set default_color = "transparent" %}
+{% endif %}
+
+{% if custom_color %}
+  {% set icon_color = custom_color %}
+{% else %}
+  {% set icon_color = default_color %}
+{% endif %}
+
+{% set mt = module.media_type|default("image") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+
+{# Media ratio #}
+{% set ratio = module.media_ratio|default("equal") %}
+{% if ratio == "text_narrow" %}
+  {% set text_col = "1fr" %}
+  {% set media_col = "2fr" %}
+{% elif ratio == "text_wide" %}
+  {% set text_col = "2fr" %}
+  {% set media_col = "1fr" %}
+{% else %}
+  {% set text_col = "1fr" %}
+  {% set media_col = "1fr" %}
+{% endif %}
+{% if mp == "left" %}
+  {% set grid_cols = media_col ~ " " ~ text_col %}
+{% else %}
+  {% set grid_cols = text_col ~ " " ~ media_col %}
+{% endif %}
+
+{# Collect items into list #}
+{% set items = [] %}
+{% if module.problem_1_title %}{% do items.append({"title": module.problem_1_title, "desc": module.problem_1_description}) %}{% endif %}
+{% if module.problem_2_title %}{% do items.append({"title": module.problem_2_title, "desc": module.problem_2_description}) %}{% endif %}
+{% if module.problem_3_title %}{% do items.append({"title": module.problem_3_title, "desc": module.problem_3_description}) %}{% endif %}
+{% if module.problem_4_title %}{% do items.append({"title": module.problem_4_title, "desc": module.problem_4_description}) %}{% endif %}
+{% if module.problem_5_title %}{% do items.append({"title": module.problem_5_title, "desc": module.problem_5_description}) %}{% endif %}
+{% if module.problem_6_title %}{% do items.append({"title": module.problem_6_title, "desc": module.problem_6_description}) %}{% endif %}
+
+<section class="cinematic-section section-with-blobs gradient-section-deep grain-section">
+  <div class="blob-shape-1"></div>
+  <div class="blob-shape-2"></div>
+  <div class="glow-orb" style="width: 600px; height: 600px; top: 30%; right: -200px;"></div>
+  <div class="glow-orb-subtle" style="width: 400px; height: 400px; bottom: 10%; left: -100px;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="cinematic-section-rounded glass-card">
+      <span class="section-tag">{{ module.section_tag }}</span>
+      <h2 class="section-header">{{ module.headline }} <span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+      <div class="problem-list-grid" style="display: grid; grid-template-columns: {% if has_media %}{{ grid_cols }}{% else %}1fr{% endif %}; gap: 3rem; align-items: center; margin-top: 2rem;">
+        <div style="order: {% if has_media and mp == 'left' %}2{% else %}1{% endif %};">
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            {% for item in items %}
+            <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
+              {% if icon != "none" %}
+              <span style="color: {{ icon_color }}; font-size: 1.2rem; flex-shrink: 0; min-width: 1.5rem; text-align: center;">
+                {% if icon == "number" %}{{ loop.index }}{% else %}{{ icon_symbol }}{% endif %}
+              </span>
+              {% endif %}
+              <div>
+                <strong style="color: var(--cinematic-text); display: block; margin-bottom: 0.25rem;">{{ item.title }}</strong>
+                <span style="color: var(--cinematic-text-muted);">{{ item.desc }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% if has_media %}
+        <div style="order: {% if mp == 'left' %}1{% else %}2{% endif %}; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green-sm); border: 1px solid rgba(255,255,255,0.1);">
+          {{ render_media_block() }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .problem-list-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

@@ -1,0 +1,34 @@
+{
+  "module": "faq-v2",
+  "module_key": "faq-v2",
+  "category": "specialized",
+  "used_on": [
+    "training-landing-v2",
+    "service-landing-v2",
+    "video-service-landing-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "faq_items"
+  ],
+  "optional_fields": [],
+  "build_wave": 3,
+  "depends_on": [
+    "accordion-v2"
+  ],
+  "field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "faq_recommended_max": 8
+  }
+}

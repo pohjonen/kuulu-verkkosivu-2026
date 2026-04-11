@@ -1,0 +1,115 @@
+<nav class="cinematic-sticky-nav position-{{ module.position }}" data-show-progress="{{ module.show_progress }}">
+  <div class="sticky-nav-container">
+    {% if module.show_progress %}
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    {% endif %}
+
+    <ul class="nav-list">
+      {% for item in module.nav_items %}
+        <li class="nav-item">
+          <a href="#{{ item.anchor }}" class="nav-link" data-anchor="{{ item.anchor }}">
+            <span class="nav-dot"></span>
+            <span class="nav-label">{{ item.item_label }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
+
+<script>
+(function() {
+  const stickyNav = document.querySelector('.cinematic-sticky-nav');
+  if (!stickyNav) return;
+
+  const navLinks = stickyNav.querySelectorAll('.nav-link');
+  const progressFill = stickyNav.querySelector('.progress-fill');
+  const showProgress = stickyNav.dataset.showProgress === 'true';
+  
+  let sections = [];
+  let ticking = false;
+
+  // Collect sections
+  navLinks.forEach(link => {
+    const anchor = link.dataset.anchor;
+    const section = document.getElementById(anchor);
+    if (section) {
+      sections.push({
+        id: anchor,
+        element: section,
+        link: link
+      });
+    }
+  });
+
+  // Smooth scroll
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const anchor = link.dataset.anchor;
+      const target = document.getElementById(anchor);
+      
+      if (target) {
+        const yOffset = -100;
+        const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        
+        window.scrollTo({
+          top: y,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Update active state and progress
+  function updateNavigation() {
+    const scrollPosition = window.scrollY + window.innerHeight / 3;
+    const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (window.scrollY / documentHeight) * 100;
+
+    // Update progress bar
+    if (showProgress && progressFill) {
+      progressFill.style.height = scrollPercent + '%';
+    }
+
+    // Update active section
+    let activeSection = null;
+    
+    sections.forEach(section => {
+      const rect = section.element.getBoundingClientRect();
+      const elementTop = rect.top + window.pageYOffset;
+      const elementBottom = elementTop + rect.height;
+      
+      if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
+        activeSection = section;
+      }
+    });
+
+    // Remove all active states
+    navLinks.forEach(link => link.classList.remove('active'));
+
+    // Add active state
+    if (activeSection) {
+      activeSection.link.classList.add('active');
+    }
+
+    ticking = false;
+  }
+
+  // Throttle scroll events
+  function requestTick() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateNavigation);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', requestTick, { passive: true });
+  window.addEventListener('resize', requestTick);
+  
+  // Initial update
+  updateNavigation();
+})();
+</script>

@@ -1,0 +1,13 @@
+{
+  "label": "process-steps-v2",
+  "icon": "module",
+  "categories": [
+    "kuulu-v2",
+    "system"
+  ],
+  "is_available_for_new_content": false,
+  "blueprint_only": true,
+  "notes": [
+    "Generated as a local planning scaffold before real HubSpot module implementation."
+  ]
+}

@@ -1,0 +1,111 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Floating CTA - Sticky Bottom Bar"
+-->
+{#
+  Kelluva CTA -partiaali (ilmestyy kun scrollataan hero-osion ohi)
+
+  Käyttö:
+    {% set float_text = 'Varaa maksuton sparraus' %}
+    {% set float_url = '#ota-yhteytta' %}
+    {% set float_icon = 'fas fa-calendar-alt' %}
+    {% set float_show_after = 600 %}
+    {% include './partials/floating-cta.html' %}
+#}
+
+{% set f_text = float_text|default('Varaa sparraus') %}
+{% set f_url = float_url|default('#ota-yhteytta') %}
+{% set f_icon = float_icon|default('') %}
+{% set f_secondary = float_secondary_text|default('') %}
+{% set f_secondary_url = float_secondary_url|default('') %}
+{% set f_show = float_show_after|default(600) %}
+
+<div class="fcta-bar" id="fctaBar">
+  <div class="fcta-inner">
+    {% if f_secondary %}
+    <a href="{{ f_secondary_url }}" class="fcta-secondary">{{ f_secondary }}</a>
+    {% endif %}
+    <a href="{{ f_url }}" class="fcta-btn" style="color: #0a0a0a !important; -webkit-text-fill-color: #0a0a0a !important;">
+      {% if f_icon %}<i class="{{ f_icon }}"></i> {% endif %}{{ f_text }}
+    </a>
+  </div>
+</div>
+
+<style>
+.fcta-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+  transform: translateY(100%); opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+  pointer-events: none;
+}
+.fcta-bar.visible {
+  transform: translateY(0); opacity: 1; pointer-events: all;
+}
+.fcta-inner {
+  display: flex; align-items: center; justify-content: center; gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(0, 255, 135, 0.15);
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.4);
+}
+.fcta-btn,
+.cinematic-page .fcta-btn,
+.cinematic-page .body-container .fcta-btn,
+.cinematic-page .cinematic-dnd-content .fcta-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--cinematic-green, #00ff87); color: #0a0a0a !important;
+  font-family: var(--font-display, sans-serif); font-weight: 700; font-size: 0.85rem;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  padding: 0.7rem 1.8rem; border-radius: 100px;
+  text-decoration: none !important; transition: all 0.3s;
+  white-space: nowrap;
+  -webkit-text-fill-color: #0a0a0a !important;
+}
+.fcta-btn:hover,
+.cinematic-page .fcta-btn:hover,
+.cinematic-page .body-container .fcta-btn:hover {
+  background: #fff; box-shadow: 0 0 20px rgba(0, 255, 135, 0.3);
+  color: #0a0a0a !important; -webkit-text-fill-color: #0a0a0a !important;
+}
+.fcta-secondary {
+  color: var(--cinematic-text-muted, #999); font-size: 0.85rem;
+  text-decoration: none; white-space: nowrap;
+  transition: color 0.3s;
+}
+.fcta-secondary:hover { color: var(--cinematic-green, #00ff87); }
+
+@media (max-width: 640px) {
+  .fcta-inner { padding: 0.6rem 1rem; }
+  .fcta-btn { font-size: 0.78rem; padding: 0.6rem 1.4rem; }
+  .fcta-secondary { display: none; }
+}
+</style>
+
+<script>
+(function() {
+  var bar = document.getElementById('fctaBar');
+  var threshold = {{ f_show }};
+  var visible = false;
+  var ticking = false;
+
+  function checkScroll() {
+    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight;
+    var winHeight = window.innerHeight;
+    var nearBottom = scrollY + winHeight > docHeight - 300;
+
+    if (scrollY > threshold && !nearBottom) {
+      if (!visible) { bar.classList.add('visible'); visible = true; }
+    } else {
+      if (visible) { bar.classList.remove('visible'); visible = false; }
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) { requestAnimationFrame(checkScroll); ticking = true; }
+  }, { passive: true });
+})();
+</script>

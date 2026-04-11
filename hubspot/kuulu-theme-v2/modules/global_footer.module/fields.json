@@ -1,0 +1,207 @@
+[ {
+  "id" : "company_name",
+  "name" : "company_name",
+  "label" : "Yrityksen nimi",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Kuulu Oy"
+}, {
+  "id" : "tagline",
+  "name" : "tagline",
+  "label" : "Tagline",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tuloksia, ei projekteja."
+}, {
+  "id" : "description",
+  "name" : "description",
+  "label" : "Kuvaus",
+  "required" : false,
+  "locked" : true,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "Rakennamme koneiston, joka tuottaa liidejä ja sisältöä systemaattisesti. Ei kampanjoita, vaan jatkuvaa tulosta."
+}, {
+  "id" : "address",
+  "name" : "address",
+  "label" : "Osoite",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Keskuskatu 1, 00100 Helsinki"
+}, {
+  "id" : "phone",
+  "name" : "phone",
+  "label" : "Puhelin",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "+358 40 123 4567"
+}, {
+  "id" : "email",
+  "name" : "email",
+  "label" : "Sähköposti",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "info@kuulu.fi"
+}, {
+  "id" : "social_linkedin",
+  "name" : "social_linkedin",
+  "label" : "LinkedIn URL",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.linkedin.com/company/kuulu"
+}, {
+  "id" : "social_facebook",
+  "name" : "social_facebook",
+  "label" : "Facebook URL",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "social_instagram",
+  "name" : "social_instagram",
+  "label" : "Instagram URL",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "social_youtube",
+  "name" : "social_youtube",
+  "label" : "YouTube URL",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.youtube.com/@kuulu"
+}, {
+  "id" : "footer_menu_1_title",
+  "name" : "footer_menu_1_title",
+  "label" : "Valikko 1 – otsikko",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Palvelut"
+}, {
+  "id" : "footer_menu_1",
+  "name" : "footer_menu_1",
+  "label" : "Valikko 1 – linkit",
+  "required" : false,
+  "locked" : true,
+  "display_width" : null,
+  "type" : "menu",
+  "default" : "footer_services"
+}, {
+  "id" : "footer_menu_2_title",
+  "name" : "footer_menu_2_title",
+  "label" : "Valikko 2 – otsikko",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Yritys"
+}, {
+  "id" : "footer_menu_2",
+  "name" : "footer_menu_2",
+  "label" : "Valikko 2 – linkit",
+  "required" : false,
+  "locked" : true,
+  "display_width" : null,
+  "type" : "menu",
+  "default" : "footer_company"
+}, {
+  "id" : "footer_menu_3_title",
+  "name" : "footer_menu_3_title",
+  "label" : "Valikko 3 – otsikko",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tuki"
+}, {
+  "id" : "footer_menu_3",
+  "name" : "footer_menu_3",
+  "label" : "Valikko 3 – linkit",
+  "required" : false,
+  "locked" : true,
+  "display_width" : null,
+  "type" : "menu",
+  "default" : "footer_support"
+}, {
+  "id" : "show_newsletter",
+  "name" : "show_newsletter",
+  "label" : "Näytä uutiskirjeen tilaus",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "newsletter_title",
+  "name" : "newsletter_title",
+  "label" : "Uutiskirje – otsikko",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tilaa Perjantaipulssi"
+}, {
+  "id" : "newsletter_description",
+  "name" : "newsletter_description",
+  "label" : "Uutiskirje – kuvaus",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Viikon parhaat AI- ja markkinointivinkit suoraan sähköpostiisi."
+}, {
+  "id" : "newsletter_form_id",
+  "name" : "newsletter_form_id",
+  "label" : "HubSpot-lomakkeen ID",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : ""
+}, {
+  "id" : "copyright_text",
+  "name" : "copyright_text",
+  "label" : "Copyright-teksti",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "© {{ year }} Kuulu Oy. Kaikki oikeudet pidätetään."
+} ]

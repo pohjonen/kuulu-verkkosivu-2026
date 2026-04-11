@@ -1,0 +1,165 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Timeline - Vertical Process Steps"
+-->
+{#
+  Pystyaikajana -partiaali
+
+  Käyttö:
+    {% set tl_tag = '// Prosessi' %}
+    {% set tl_title = 'Näin <span class="text-gradient-green">etenee</span>' %}
+    {% set tl_1_title = 'Sparraus' %}
+    {% set tl_1_text = 'Kartoitamme tavoitteesi ja rakennamme suunnitelman.' %}
+    {% set tl_1_icon = 'fas fa-comments' %}
+    {% set tl_2_title = 'Käynnistys' %}
+    {% set tl_2_text = 'Tiimi aloittaa tuotannon ensimmäisellä viikolla.' %}
+    {% set tl_3_title = 'Tuotanto' %}
+    {% set tl_3_text = 'Sisällöt, videot ja kampanjat pyörivät kuukausittain.' %}
+    {% set tl_4_title = 'Optimointi' %}
+    {% set tl_4_text = 'Data ohjaa. Kehitämme jatkuvasti parempaa.' %}
+    ... (max 6 vaihetta)
+    {% include './partials/timeline.html' %}
+#}
+
+{% set t_tag = tl_tag|default('') %}
+{% set t_title = tl_title|default('') %}
+{% set t_desc = tl_description|default('') %}
+
+{% set s1_t = tl_1_title|default('') %}
+{% set s1_d = tl_1_text|default('') %}
+{% set s1_i = tl_1_icon|default('') %}
+{% set s2_t = tl_2_title|default('') %}
+{% set s2_d = tl_2_text|default('') %}
+{% set s2_i = tl_2_icon|default('') %}
+{% set s3_t = tl_3_title|default('') %}
+{% set s3_d = tl_3_text|default('') %}
+{% set s3_i = tl_3_icon|default('') %}
+{% set s4_t = tl_4_title|default('') %}
+{% set s4_d = tl_4_text|default('') %}
+{% set s4_i = tl_4_icon|default('') %}
+{% set s5_t = tl_5_title|default('') %}
+{% set s5_d = tl_5_text|default('') %}
+{% set s5_i = tl_5_icon|default('') %}
+{% set s6_t = tl_6_title|default('') %}
+{% set s6_d = tl_6_text|default('') %}
+{% set s6_i = tl_6_icon|default('') %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    {% if t_tag %}<span class="section-tag">{{ t_tag }}</span>{% endif %}
+    {% if t_title %}<h2 class="section-header">{{ t_title }}</h2>{% endif %}
+    {% if t_desc %}<p style="color: var(--cinematic-text-muted); max-width: 650px; margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.7;">{{ t_desc }}</p>{% endif %}
+
+    <div class="tl-container" style="max-width: 700px; margin: 0 auto; position: relative; box-sizing: border-box;">
+      <div class="tl-line"></div>
+
+      {% macro tl_step(num, title, text, icon) %}
+      {% if title %}
+      <div class="tl-item">
+        <div class="tl-dot">
+          {% if icon %}
+          <i class="{{ icon }}"></i>
+          {% else %}
+          <span>{{ num }}</span>
+          {% endif %}
+        </div>
+        <div class="tl-content">
+          <h3 class="tl-step-title">{{ title }}</h3>
+          {% if text %}<p class="tl-step-text">{{ text }}</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+      {% endmacro %}
+
+      {{ tl_step(1, s1_t, s1_d, s1_i) }}
+      {{ tl_step(2, s2_t, s2_d, s2_i) }}
+      {{ tl_step(3, s3_t, s3_d, s3_i) }}
+      {{ tl_step(4, s4_t, s4_d, s4_i) }}
+      {{ tl_step(5, s5_t, s5_d, s5_i) }}
+      {{ tl_step(6, s6_t, s6_d, s6_i) }}
+    </div>
+  </div>
+</section>
+
+<style>
+.tl-container {
+  padding-left: 80px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.tl-line {
+  position: absolute; left: 31px; top: 0; bottom: 0; width: 2px;
+  background: linear-gradient(to bottom, rgba(0,255,135,0.4) 0%, rgba(0,255,135,0.1) 100%);
+}
+.tl-item {
+  position: relative; display: flex; align-items: stretch;
+  padding-bottom: 2.5rem;
+}
+.tl-item:last-child { padding-bottom: 0; }
+.tl-dot {
+  position: absolute; left: -68px;
+  top: 50%; transform: translateY(-50%);
+  width: 40px; height: 40px; border-radius: 50%;
+  background: #0c1a0e;
+  border: 2px solid rgba(0,255,135,0.3);
+  box-shadow: inset 0 0 12px rgba(0,255,135,0.08);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 2; flex-shrink: 0;
+  transition: all 0.3s;
+}
+.tl-dot span {
+  font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;
+  color: var(--cinematic-green);
+}
+.tl-dot i { font-size: 0.85rem; color: var(--cinematic-green); }
+.tl-item:hover .tl-dot {
+  background: var(--cinematic-green); border-color: var(--cinematic-green);
+  box-shadow: 0 0 20px rgba(0,255,135,0.3);
+}
+.tl-item:hover .tl-dot span,
+.tl-item:hover .tl-dot i { color: #0a0a0a; }
+.tl-content {
+  padding: 1.25rem 1.5rem;
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  flex: 1; min-width: 0; box-sizing: border-box;
+  overflow-wrap: break-word; word-wrap: break-word;
+  transition: border-color 0.3s, background 0.3s;
+}
+.tl-item:hover .tl-content {
+  border-color: rgba(0,255,135,0.15); background: rgba(0,255,135,0.02);
+}
+.tl-step-title {
+  font-family: var(--font-display); color: var(--cinematic-text);
+  font-size: 1.05rem; font-weight: 700; margin: 0 0 0.4rem;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.tl-step-text {
+  color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+
+@media (max-width: 640px) {
+  .tl-container {
+    padding-left: 60px !important;
+    max-width: 100% !important;
+  }
+  .tl-line { left: 23px; }
+  .tl-dot {
+    left: -50px !important;
+    width: 28px !important; height: 28px !important;
+    top: 50% !important; transform: translateY(-50%) !important;
+  }
+  .tl-dot span { font-size: 0.6rem; }
+  .tl-dot i { font-size: 0.6rem; }
+  .tl-content {
+    padding: 0.75rem 0.85rem;
+    min-width: 0; box-sizing: border-box;
+  }
+  .tl-step-title { font-size: 0.85rem; }
+  .tl-step-text { font-size: 0.78rem; }
+}
+</style>

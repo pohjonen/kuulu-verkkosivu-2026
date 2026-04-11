@@ -1,0 +1,35 @@
+{
+  "label": "Kuulu Theme V2 Blueprint",
+  "preview_path": "./templates/homepage-v2.html",
+  "version": 1,
+  "author": "AI scaffold for Kuulu v2",
+  "documentation": [
+    "docs/hubspot-theme-token-map.md",
+    "docs/hubspot-module-hubl-mapping.md"
+  ],
+  "token_strategy": {
+    "background": {
+      "primary": "#0a0a0a",
+      "surface": "#141414"
+    },
+    "accent": {
+      "primary": "#00FF87",
+      "mid": "#00D46A",
+      "deep": "#009F4E"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A0A0A0",
+      "dim": "#6B6B6B"
+    },
+    "fonts": {
+      "display": "Bebas Neue",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    }
+  },
+  "notes": [
+    "Blueprint-only theme.json placeholder before real source theme export.",
+    "Map these tokens into the fetched source theme, do not treat this file as production-ready."
+  ]
+}

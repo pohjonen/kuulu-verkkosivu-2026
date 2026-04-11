@@ -1,0 +1,14 @@
+{
+  "content_tags" : [ {
+    "name" : "CINEMATIC",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "categories" : [ "text" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 382164972790,
+  "label" : "Etenemispolku",
+  "icon" : "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/text.svg",
+  "is_available_for_new_content" : true
+}

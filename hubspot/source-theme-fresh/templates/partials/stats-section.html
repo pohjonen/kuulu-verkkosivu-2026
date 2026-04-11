@@ -1,0 +1,65 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Stats Section - Miksi Kuulu"
+-->
+{#
+  Tilastot / Miksi Kuulu -partiaali
+
+  Käyttö (oletusarvoin):
+    {% include './partials/stats-section.html' %}
+
+  Käyttö (räätälöity):
+    {% include './partials/stats-section.html' with {
+      stats_tag: '// Lukuja',
+      stats_title: 'Tuloksia <span class="text-gradient-green">numeroina</span>',
+      stat_1_number: '10x',
+      stat_1_label: 'enemmän liidejä',
+      stat_2_number: '300%',
+      stat_2_label: 'ROI kasvu',
+      stat_3_number: '24/7',
+      stat_3_label: 'jatkuvaa optimointia',
+      stat_4_number: '50+',
+      stat_4_label: 'onnistunutta kampanjaa'
+    } %}
+#}
+
+{% set active_tag = stats_tag|default('// Miksi Kuulu?') %}
+{% set active_title = stats_title|default('Miksi valita <span class="text-gradient-green">Kuulu</span>?') %}
+{% set s1_num = stat_1_number|default('15+') %}
+{% set s1_lbl = stat_1_label|default('vuotta kokemusta') %}
+{% set s2_num = stat_2_number|default('500+') %}
+{% set s2_lbl = stat_2_label|default('tyytyväistä asiakasta') %}
+{% set s3_num = stat_3_number|default('20+') %}
+{% set s3_lbl = stat_3_label|default('asiantuntijaa') %}
+{% set s4_num = stat_4_number|default('') %}
+{% set s4_lbl = stat_4_label|default('') %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <span class="section-tag">{{ active_tag }}</span>
+    <h2 class="section-header">{{ active_title }}</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">{{ s1_num }}</span>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin-top: 0.5rem;">{{ s1_lbl }}</p>
+      </div>
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">{{ s2_num }}</span>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin-top: 0.5rem;">{{ s2_lbl }}</p>
+      </div>
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">{{ s3_num }}</span>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin-top: 0.5rem;">{{ s3_lbl }}</p>
+      </div>
+      {% if s4_num %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">{{ s4_num }}</span>
+        <p style="color: var(--cinematic-text-muted); font-size: 0.85rem; margin-top: 0.5rem;">{{ s4_lbl }}</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

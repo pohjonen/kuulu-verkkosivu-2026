@@ -1,0 +1,15 @@
+{
+  "content_tags" : [ {
+    "name" : "GLOBAL",
+    "source" : "USER"
+  } ],
+  "global" : true,
+  "content_types" : [ "SITE_PAGE" ],
+  "smart_type" : "NOT_SMART",
+  "categories" : [ "DESIGN" ],
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 382165003474,
+  "label" : "🌐 GLOBAL – Footer",
+  "icon" : "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/footer.svg",
+  "is_available_for_new_content" : true
+}

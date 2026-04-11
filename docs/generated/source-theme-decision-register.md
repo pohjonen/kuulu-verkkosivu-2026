@@ -1,0 +1,183 @@
+# Source theme decision register
+
+- Source path: `/workspace/hubspot/source-theme`
+
+## Template decisions
+
+- `modules/case-study-showcase.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_accordion_cards.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_animated_counter.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_authority.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_before_after.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_bento_grid.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_case_study_card.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_checklist.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_comparison_table.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_contact_cta.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_cta_cards.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_early_bird.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_floating_cta.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_footer.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_header.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_hero.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_horizontal_scroll.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_koulutus_form.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_marquee_logos.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_metrics.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_pricing.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_problem_list.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_referenssit.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_rich_pricing.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_rich_text.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_roi_calculator.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_steps.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_sticky_nav.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_testimonial_slider.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_text_image.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_timeline.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_two_engines.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/cinematic_vertical_timeline.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/global_footer.module/module.html` → **protect** (high) — High-risk template from audit.
+- `modules/global_header.module/module.html` → **protect** (high) — High-risk template from audit.
+- `modules/hero-banner.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/person-profile.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/services-grid.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `modules/video-showcase.module/module.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/animaatiot-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/blog-test-2026-02-12.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/brandays-ja-tarinankerronta-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/brandivideot-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/copilotin-kiihdytyskaista-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/digimarkkinointi-test-2026-02-11.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/energia-alan-markkinointi-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/gif-animaatiot-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/google-ads-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/home.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-cinematic-v2.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-cinematic-v3.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-cinematic-v4.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-cinematic-v5.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-cinematic-v6-backup-2026-02-27.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-cinematic-v6.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-cinematic-webinar.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-cinematic.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-dev-2026-02-11.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-modules.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/homepage-new.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/index.html` → **protect** (high) — Homepage-related template, do not edit directly.
+- `templates/koulutus-test-2026-02-11.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/kuulunautti-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/layouts/base-cinematic.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/layouts/base.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/liidien-hankinta-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/mainosvideot-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/matkailuvideot-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/module-system-test.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/module-test-v3.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/module-test-v4.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/partials/accordion-cards.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/animated-counter.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/aurora-overlay.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/before-after.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/bento-grid.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/blog-grid.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/blog-pagination.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/blog-topics.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/case-study-card.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/client-logos.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/comparison-table.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/contact-form.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/cta-banner.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/faq-accordion.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/floating-cta.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/footer-cinematic.html` → **protect** (high) — Shared partial candidate, keep isolated until v2 fork.
+- `templates/partials/footer-module.html` → **protect** (high) — Shared partial candidate, keep isolated until v2 fork.
+- `templates/partials/header-cinematic.html` → **protect** (high) — Shared partial candidate, keep isolated until v2 fork.
+- `templates/partials/hero-section.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/horizontal-scroll.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/icon-text-grid.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/marquee-logos.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/media-gallery.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/newsletter-cta.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/notification-bar.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/portfolio-grid.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/pricing-cards.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/pricing-section.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/process-steps.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/reference-grid.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/rich-text.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/roi-calculator.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/scripts-cinematic.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/scroll-animations.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/service-cards.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/spacing-divider.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/stats-section.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/sticky-nav.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/team-grid.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/testimonial-slider.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/testimonials.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/timeline.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/two-column-content.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/partials/video-embed.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/perjantaipulssi-agentit-test-2026-02-17.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/perjantaipulssi-test-2026-02-11.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/person-profile.html` → **fork** (low) — Likely useful base template for v2 mapping.
+- `templates/referenssit-test-2026-02-12.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/rekrymarkkinointi-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/seo-analyysi-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/sisaltopankki-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/someauditointi-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/team.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/tekoalykuvapankki-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/tekoalyn-mestarikurssi-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/tekoalyn-perjantaipulssi-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/tv-mainosvideot-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/video-production.html` → **fork** (low) — Likely useful base template for v2 mapping.
+- `templates/videotuotanto-modules-test-2026-03-22.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/videotuotanto-test-2026-02-11.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/webinar-ilmoittautuminen.html` → **review** (low) — Needs manual review during template mapping.
+- `templates/yhdistys-ja-hankevideot-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/yhteystiedot-test-2026-02-12.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+- `templates/yritysvideot-test-2026-02-13.html` → **replace** (low) — Test/dev/backup template; keep only as reference if needed.
+
+## Module decisions
+
+- `modules/case-study-showcase.module` → **fork** (low) — Promising source module for v2 adaptation.
+- `modules/cinematic_accordion_cards.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_animated_counter.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_authority.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_before_after.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_bento_grid.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_case_study_card.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_checklist.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_comparison_table.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_contact_cta.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_cta_cards.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_early_bird.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_floating_cta.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_footer.module` → **protect** (low) — Navigation/global presentation risk.
+- `modules/cinematic_header.module` → **protect** (low) — Navigation/global presentation risk.
+- `modules/cinematic_hero.module` → **fork** (low) — Promising source module for v2 adaptation.
+- `modules/cinematic_horizontal_scroll.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_koulutus_form.module` → **fork** (low) — Promising source module for v2 adaptation.
+- `modules/cinematic_marquee_logos.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_metrics.module` → **fork** (low) — Promising source module for v2 adaptation.
+- `modules/cinematic_pricing.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_problem_list.module` → **fork** (low) — Promising source module for v2 adaptation.
+- `modules/cinematic_referenssit.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_rich_pricing.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_rich_text.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_roi_calculator.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_steps.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_sticky_nav.module` → **protect** (low) — Navigation/global presentation risk.
+- `modules/cinematic_testimonial_slider.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_text_image.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_timeline.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/cinematic_two_engines.module` → **fork** (low) — Promising source module for v2 adaptation.
+- `modules/cinematic_vertical_timeline.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/global_footer.module` → **protect** (high) — Global live structure; isolate before changes.
+- `modules/global_header.module` → **protect** (high) — Global live structure; isolate before changes.
+- `modules/hero-banner.module` → **review** (low) — May be reusable, but needs manual check.
+- `modules/person-profile.module` → **fork** (low) — Promising source module for v2 adaptation.
+- `modules/services-grid.module` → **fork** (low) — Promising source module for v2 adaptation.
+- `modules/video-showcase.module` → **fork** (low) — Promising source module for v2 adaptation.

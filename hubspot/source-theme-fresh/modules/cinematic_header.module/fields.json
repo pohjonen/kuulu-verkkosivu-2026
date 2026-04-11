@@ -1,0 +1,195 @@
+[ {
+  "id" : "logo_image",
+  "name" : "logo_image",
+  "label" : "Logokuva",
+  "required" : false,
+  "locked" : true,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.kuulu.fi/hubfs/raw_assets/public/VideoLandingPage_2025/images/kuulu-logo-lettermark.png",
+    "alt" : "Kuulu Lettermark Logo",
+    "width" : 0,
+    "height" : 0
+  }
+}, {
+  "id" : "logo_url",
+  "name" : "logo_url",
+  "label" : "Logon linkki",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.kuulu.fi"
+}, {
+  "id" : "mega_sections",
+  "name" : "mega_sections",
+  "label" : "Mega-menu osiot (dropdown)",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "section_label",
+    "name" : "section_label",
+    "label" : "Osion nimi (navigaatiossa näkyvä teksti)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Koulutus"
+  }, {
+    "id" : "section_url",
+    "name" : "section_url",
+    "label" : "Osion pääsivun URL (klikkauksessa)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "https://www.kuulu.fi/koulutus"
+  }, {
+    "id" : "items",
+    "name" : "items",
+    "label" : "Alavalikkolinkit",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 15,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "is_separator",
+      "name" : "is_separator",
+      "label" : "Tämä on erotinrivi (ei linkki)",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "display_width" : null,
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "separator_text",
+      "name" : "separator_text",
+      "label" : "Erottimen teksti (esim. Jäsenille)",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "display_width" : null,
+      "type" : "text",
+      "default" : "Jäsenille"
+    }, {
+      "id" : "icon",
+      "name" : "icon",
+      "label" : "Font Awesome -luokka (esim. fas fa-graduation-cap)",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "display_width" : null,
+      "type" : "text",
+      "default" : "fas fa-graduation-cap"
+    }, {
+      "id" : "item_label",
+      "name" : "item_label",
+      "label" : "Linkin teksti",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "display_width" : null,
+      "type" : "text",
+      "default" : "Linkki"
+    }, {
+      "id" : "item_url",
+      "name" : "item_url",
+      "label" : "URL",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "display_width" : null,
+      "type" : "text",
+      "default" : "#"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "display_width" : null,
+    "type" : "group",
+    "default" : [ ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ ]
+}, {
+  "id" : "simple_links",
+  "name" : "simple_links",
+  "label" : "Yksinkertaiset linkit (ei dropdown)",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 8,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "link_label",
+    "name" : "link_label",
+    "label" : "Linkin teksti",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Linkki"
+  }, {
+    "id" : "link_url",
+    "name" : "link_url",
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "#"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ ]
+}, {
+  "id" : "cta_text",
+  "name" : "cta_text",
+  "label" : "CTA-napin teksti",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Ota yhteyttä"
+}, {
+  "id" : "cta_url",
+  "name" : "cta_url",
+  "label" : "CTA-napin URL",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "https://www.kuulu.fi/yhteystiedot"
+} ]

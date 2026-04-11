@@ -1,0 +1,111 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Blog Grid - Post Listing"
+-->
+{#
+  Blogilistaus -partiaali
+
+  Näyttää esimerkkiblogikortit. Tuotannossa nämä korvataan HubL blog-loopilla.
+
+  Käyttö:
+    {% include './partials/blog-grid.html' with {
+      blog_grid_tag: '// Uusimmat artikkelit',
+      blog_grid_title: 'Kuulun <span class="text-gradient-green">blogi</span>',
+      blog_1_url: 'https://blog.kuulu.fi/artikkeli-1',
+      blog_1_image: 'https://example.com/img1.jpg',
+      blog_1_title: 'Artikkelin otsikko',
+      blog_1_excerpt: 'Lyhyt kuvaus...',
+      blog_1_author: 'Kirjoittaja',
+      blog_1_date: '1.2.2026'
+    } %}
+#}
+
+{% set active_tag = blog_grid_tag|default('// Uusimmat artikkelit') %}
+{% set active_title = blog_grid_title|default('Kuulun <span class="text-gradient-green">blogi</span>') %}
+
+{% set b1_url = blog_1_url|default('') %}
+{% set b1_img = blog_1_image|default('') %}
+{% set b1_title = blog_1_title|default('') %}
+{% set b1_excerpt = blog_1_excerpt|default('') %}
+{% set b1_author = blog_1_author|default('') %}
+{% set b1_date = blog_1_date|default('') %}
+
+{% set b2_url = blog_2_url|default('') %}
+{% set b2_img = blog_2_image|default('') %}
+{% set b2_title = blog_2_title|default('') %}
+{% set b2_excerpt = blog_2_excerpt|default('') %}
+{% set b2_author = blog_2_author|default('') %}
+{% set b2_date = blog_2_date|default('') %}
+
+{% set b3_url = blog_3_url|default('') %}
+{% set b3_img = blog_3_image|default('') %}
+{% set b3_title = blog_3_title|default('') %}
+{% set b3_excerpt = blog_3_excerpt|default('') %}
+{% set b3_author = blog_3_author|default('') %}
+{% set b3_date = blog_3_date|default('') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <span class="section-tag">{{ active_tag }}</span>
+    <h2 class="section-header">{{ active_title }}</h2>
+
+    <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      {% if b1_title %}
+      <a href="{{ b1_url }}" class="blog-card hero-glass-box" style="padding: 0; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: transform 0.3s, box-shadow 0.3s;">
+        {% if b1_img %}<img src="{{ b1_img }}" alt="{{ b1_title }}" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">{% endif %}
+        <div style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+          {% if b1_author or b1_date %}
+          <div style="color: var(--cinematic-text-muted); font-size: 0.8rem; margin-bottom: 0.5rem;">
+            {% if b1_author %}<span>{{ b1_author }}</span>{% endif %}
+            {% if b1_author and b1_date %} &mdash; {% endif %}
+            {% if b1_date %}<span>{{ b1_date }}</span>{% endif %}
+          </div>
+          {% endif %}
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.75rem; line-height: 1.4;">{{ b1_title }}</h3>
+          {% if b1_excerpt %}<p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; flex: 1;">{{ b1_excerpt }}</p>{% endif %}
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600; margin-top: 1rem;">Lue lisää &rarr;</span>
+        </div>
+      </a>
+      {% endif %}
+      {% if b2_title %}
+      <a href="{{ b2_url }}" class="blog-card hero-glass-box" style="padding: 0; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: transform 0.3s, box-shadow 0.3s;">
+        {% if b2_img %}<img src="{{ b2_img }}" alt="{{ b2_title }}" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">{% endif %}
+        <div style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+          {% if b2_author or b2_date %}
+          <div style="color: var(--cinematic-text-muted); font-size: 0.8rem; margin-bottom: 0.5rem;">
+            {% if b2_author %}<span>{{ b2_author }}</span>{% endif %}
+            {% if b2_author and b2_date %} &mdash; {% endif %}
+            {% if b2_date %}<span>{{ b2_date }}</span>{% endif %}
+          </div>
+          {% endif %}
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.75rem; line-height: 1.4;">{{ b2_title }}</h3>
+          {% if b2_excerpt %}<p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; flex: 1;">{{ b2_excerpt }}</p>{% endif %}
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600; margin-top: 1rem;">Lue lisää &rarr;</span>
+        </div>
+      </a>
+      {% endif %}
+      {% if b3_title %}
+      <a href="{{ b3_url }}" class="blog-card hero-glass-box" style="padding: 0; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: transform 0.3s, box-shadow 0.3s;">
+        {% if b3_img %}<img src="{{ b3_img }}" alt="{{ b3_title }}" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">{% endif %}
+        <div style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+          {% if b3_author or b3_date %}
+          <div style="color: var(--cinematic-text-muted); font-size: 0.8rem; margin-bottom: 0.5rem;">
+            {% if b3_author %}<span>{{ b3_author }}</span>{% endif %}
+            {% if b3_author and b3_date %} &mdash; {% endif %}
+            {% if b3_date %}<span>{{ b3_date }}</span>{% endif %}
+          </div>
+          {% endif %}
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.75rem; line-height: 1.4;">{{ b3_title }}</h3>
+          {% if b3_excerpt %}<p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; flex: 1;">{{ b3_excerpt }}</p>{% endif %}
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600; margin-top: 1rem;">Lue lisää &rarr;</span>
+        </div>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+.blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0, 255, 135, 0.08); }
+</style>

@@ -1,0 +1,120 @@
+[ {
+  "id" : "section_title",
+  "name" : "section_title",
+  "label" : "Osion otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Usein kysytyt kysymykset"
+}, {
+  "id" : "section_subtitle",
+  "name" : "section_subtitle",
+  "label" : "Osion alaotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Klikkaa korttia nähdäksesi lisää"
+}, {
+  "id" : "accordion_items",
+  "name" : "accordion_items",
+  "label" : "Accordion-kortit",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : 15,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "icon_svg",
+    "name" : "icon_svg",
+    "label" : "SVG-ikoni",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>"
+  }, {
+    "id" : "title",
+    "name" : "title",
+    "label" : "Otsikko",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Kysymys tai otsikko"
+  }, {
+    "id" : "content",
+    "name" : "content",
+    "label" : "Sisältö",
+    "required" : true,
+    "locked" : false,
+    "display_width" : null,
+    "type" : "richtext",
+    "default" : "<p>Vastaus tai sisältö, joka näytetään kun kortti avataan.</p>"
+  }, {
+    "id" : "card_image",
+    "name" : "card_image",
+    "label" : "Kuva (valinnainen)",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "display_width" : null,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : null,
+      "size_type" : null,
+      "width" : null,
+      "height" : null,
+      "max_width" : null,
+      "max_height" : null,
+      "loading" : "disabled"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Mikä on Kuulu Flow?",
+    "content" : "<p>Kuulu Flow on kattava digimarkkinoinnin ratkaisu, joka yhdistää strategian, sisällöntuotannon ja mittaamisen.</p>"
+  }, {
+    "title" : "Kuinka nopeasti näen tuloksia?",
+    "content" : "<p>Ensimmäiset tulokset näkyvät yleensä 2-3 kuukauden aikana, mutta pitkäaikaiset hyödyt realisoituvat 6-12 kuukauden kuluttua.</p>"
+  } ]
+}, {
+  "id" : "columns",
+  "name" : "columns",
+  "label" : "Sarakkeiden määrä",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "1 sarake" ], [ "2", "2 saraketta" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "1"
+}, {
+  "id" : "open_first",
+  "name" : "open_first",
+  "label" : "Avaa ensimmäinen kortti oletuksena",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : false
+} ]

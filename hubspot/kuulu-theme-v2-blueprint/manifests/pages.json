@@ -1,0 +1,144 @@
+[
+  {
+    "slug": "/v2-etusivu",
+    "id": "homepage-v2",
+    "url": "https://www.kuulu.fi/",
+    "source_url": "https://www.kuulu.fi/",
+    "page_type": "homepage",
+    "template": "homepage-v2",
+    "section_stack": [
+      "hero-cinematic-v2",
+      "problem-grid-v2",
+      "audience-split-v2",
+      "service-pillars-v2",
+      "process-steps-v2",
+      "stats-trust-band-v2",
+      "reference-grid-v2",
+      "final-cta-v2"
+    ],
+    "content_sources": [
+      "live",
+      "notion:Etusivu",
+      "notion:Kuulu etusivu draft",
+      "pdf:Zero Click"
+    ],
+    "criticality": "highest",
+    "must_not_touch_live_dependencies": true
+  },
+  {
+    "slug": "/v2-videotuotanto",
+    "id": "video-service-v2",
+    "url": "https://www.kuulu.fi/videotuotanto",
+    "source_url": "https://www.kuulu.fi/videotuotanto",
+    "page_type": "video-service",
+    "template": "video-service-landing-v2",
+    "section_stack": [
+      "hero-cinematic-v2",
+      "problem-grid-v2",
+      "video-model-comparison-v2",
+      "service-pillars-v2",
+      "process-steps-v2",
+      "stats-trust-band-v2",
+      "reference-grid-v2",
+      "faq-v2",
+      "final-cta-v2"
+    ],
+    "content_sources": [
+      "live",
+      "notion:Kuulu Videotuotanto — Sivuteksti v1",
+      "pdf:Zero Click"
+    ],
+    "criticality": "high",
+    "must_not_touch_live_dependencies": true
+  },
+  {
+    "slug": "/v2-koulutus",
+    "id": "training-v2",
+    "url": "https://www.kuulu.fi/koulutus",
+    "source_url": "https://www.kuulu.fi/koulutus",
+    "page_type": "training",
+    "template": "training-landing-v2",
+    "section_stack": [
+      "hero-cinematic-v2",
+      "problem-grid-v2",
+      "service-pillars-v2",
+      "process-steps-v2",
+      "training-agenda-v2",
+      "stats-trust-band-v2",
+      "faq-v2",
+      "final-cta-v2"
+    ],
+    "content_sources": [
+      "live",
+      "notion:Koulutus",
+      "pdf:Zero Click"
+    ],
+    "criticality": "high",
+    "must_not_touch_live_dependencies": true
+  },
+  {
+    "slug": "/v2-digimarkkinointi",
+    "id": "digimarkkinointi-v2",
+    "url": "https://www.kuulu.fi/digimarkkinointi",
+    "source_url": "https://www.kuulu.fi/digimarkkinointi",
+    "page_type": "service",
+    "template": "service-landing-v2",
+    "section_stack": [
+      "hero-cinematic-v2",
+      "problem-grid-v2",
+      "audience-split-v2",
+      "service-pillars-v2",
+      "process-steps-v2",
+      "reference-grid-v2",
+      "faq-v2",
+      "final-cta-v2"
+    ],
+    "content_sources": [
+      "live",
+      "pdf:Zero Click"
+    ],
+    "criticality": "high",
+    "must_not_touch_live_dependencies": true
+  },
+  {
+    "slug": "/v2-case-studies",
+    "id": "case-studies-v2",
+    "url": "https://www.kuulu.fi/case-studies",
+    "source_url": "https://www.kuulu.fi/case-studies",
+    "page_type": "reference-index",
+    "template": "reference-index-v2",
+    "section_stack": [
+      "hero-cinematic-v2",
+      "reference-grid-v2",
+      "reference-grid-v2",
+      "final-cta-v2"
+    ],
+    "content_sources": [
+      "live",
+      "brand"
+    ],
+    "criticality": "medium",
+    "must_not_touch_live_dependencies": true
+  },
+  {
+    "slug": "/v2-yhteystiedot",
+    "id": "yhteystiedot-v2",
+    "url": "https://www.kuulu.fi/yhteystiedot",
+    "source_url": "https://www.kuulu.fi/yhteystiedot",
+    "page_type": "company-info",
+    "template": "company-info-v2",
+    "section_stack": [
+      "hero-cinematic-v2",
+      "lead-capture-form-cta-v2",
+      "team-grid-v2",
+      "contact-info-v2",
+      "final-cta-v2"
+    ],
+    "content_sources": [
+      "live",
+      "brand"
+    ],
+    "criticality": "medium",
+    "must_not_touch_live_dependencies": true
+  }
+]

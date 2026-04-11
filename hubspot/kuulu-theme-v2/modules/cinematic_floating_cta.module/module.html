@@ -1,0 +1,70 @@
+<div 
+  class="cinematic-floating-cta position-{{ module.position }}" 
+  data-trigger="{{ module.trigger_offset }}"
+  data-hide-footer="{{ module.hide_on_footer }}"
+>
+  <a href="{{ module.cta_url.href }}" class="floating-cta-button">
+    <span class="cta-text">{{ module.cta_text }}</span>
+    
+    {% if module.show_icon %}
+      <span class="cta-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    {% endif %}
+  </a>
+</div>
+
+<script>
+(function() {
+  const floatingCTA = document.querySelector('.cinematic-floating-cta');
+  if (!floatingCTA) return;
+
+  const triggerOffset = parseInt(floatingCTA.dataset.trigger) || 800;
+  const hideOnFooter = floatingCTA.dataset.hideFooter === 'true';
+  const footer = document.querySelector('footer');
+
+  let ticking = false;
+
+  function updateCTAVisibility() {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Show after scrolling past trigger offset
+    if (scrollY > triggerOffset) {
+      floatingCTA.classList.add('visible');
+    } else {
+      floatingCTA.classList.remove('visible');
+    }
+
+    // Hide when footer is in view
+    if (hideOnFooter && footer) {
+      const footerRect = footer.getBoundingClientRect();
+      const footerInView = footerRect.top < windowHeight;
+      
+      if (footerInView) {
+        floatingCTA.classList.add('hidden-by-footer');
+      } else {
+        floatingCTA.classList.remove('hidden-by-footer');
+      }
+    }
+
+    ticking = false;
+  }
+
+  function requestTick() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateCTAVisibility);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', requestTick, { passive: true });
+  window.addEventListener('resize', requestTick);
+  
+  // Initial check
+  updateCTAVisibility();
+})();
+</script>

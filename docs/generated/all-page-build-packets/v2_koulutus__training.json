@@ -1,0 +1,435 @@
+{
+  "page_id": "v2_koulutus__training",
+  "template": "training-landing-v2",
+  "preview_slug": "/v2-koulutus",
+  "url": "https://www.kuulu.fi/koulutus",
+  "page_type": "training",
+  "current_theme": "legacy-vaalea",
+  "primary_goal": "Position this training page as a practical answer to competence gaps: Koulutukset Kuulu: somekoulutus, digimarkkinointi- ja tekoälykoulutus.",
+  "core_message": "Inspiroidu. Kehity. Kuulu kouluttaa. Koulutukset Kuulu: somekoulutus, digimarkkinointi- ja tekoälykoulutus Should foreground competence gap and practical outcomes.",
+  "hero_direction": {
+    "headline": "Inspiroidu. Kehity. Kuulu kouluttaa.",
+    "supporting_angle": "Osaamisvaje, tekoäly ja muuttuvat alustat pakottavat päivittämään tekemisen.",
+    "cta_goal": "tarjouspyyntö tai ilmoittautuminen"
+  },
+  "mandatory_signals": [
+    "Osaamisvaje näkyy ennen agendaa",
+    "Käytännön hyöty näkyy",
+    "AI / Zero Click -murros näkyy"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_koulutus__training__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "problem-grid-v2",
+      "module_instance_key": "v2_koulutus__training__problem-grid-v2__2",
+      "content_job": "Apply problem-grid-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "service-pillars-v2",
+      "module_instance_key": "v2_koulutus__training__service-pillars-v2__3",
+      "content_job": "Apply service-pillars-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "process-steps-v2",
+      "module_instance_key": "v2_koulutus__training__process-steps-v2__4",
+      "content_job": "Apply process-steps-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 5,
+      "module": "training-agenda-v2",
+      "module_instance_key": "v2_koulutus__training__training-agenda-v2__5",
+      "content_job": "Apply training-agenda-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 6,
+      "module": "stats-trust-band-v2",
+      "module_instance_key": "v2_koulutus__training__stats-trust-band-v2__6",
+      "content_job": "Apply stats-trust-band-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 7,
+      "module": "faq-v2",
+      "module_instance_key": "v2_koulutus__training__faq-v2__7",
+      "content_job": "Apply faq-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 8,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_koulutus__training__final-cta-v2__8",
+      "content_job": "Apply final-cta-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "notion",
+        "pdf"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Koulutukset Kuulu: somekoulutus, digimarkkinointi- ja tekoälykoulutus",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Inspiroidu. Kehity. Kuulu kouluttaa."
+      },
+      {
+        "level": "h2",
+        "text": "Löydä teille sopivin koulutus – näin rakennamme toimivia koulutuksia"
+      },
+      {
+        "level": "h2",
+        "text": "Kuulun koulutusvaihtoehdot"
+      },
+      {
+        "level": "h2",
+        "text": "Näin varmistamme, että koulutus vastaa tarpeisiinne"
+      },
+      {
+        "level": "h2",
+        "text": "Pyydä tarjous koulutuksesta"
+      },
+      {
+        "level": "h2",
+        "text": "Pyydä tarjous koulutuksesta"
+      },
+      {
+        "level": "h2",
+        "text": "Tutustu tuleviin tekoälykoulutuksiimme:"
+      },
+      {
+        "level": "h2",
+        "text": "Tutustu räätälöitäviin koulutuksiimme:"
+      },
+      {
+        "level": "h3",
+        "text": "Oletko koulutustalon edustaja?"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Etsitkö itsellesi tai tiimillesi sopivaa koulutusta? Tervetuloa tutustumaan Kuulun koulutuksiin!",
+      "Kuulu toteuttaa vuosittain satoja koulutuksia, joista suuri osa räätälöidään yritysten ja organisaatioiden tarpeisiin. Kun pyydät meiltä tarjouksen, kartoitamme ensin koulutuksen tavoitteen, osallistujien lähtötason ja sen, halutaanko keskittyä tiedon lisäämiseen vai käytännön tekemiseen. Valitsemme teille sopivimman kouluttajan ja räätälöimme sisällön ennakkotietojen perusteella.",
+      "Tarjoamme yrityskohtaisia livekoulutuksia ja etäkoulutuksia kaikkialla Suomessa. Etäkoulutuksista voimme halutessanne tallentaa videon osallistujille. Voit tilata yksittäisen täsmäkoulutuksen tai rakentaa laajemman kokonaisuuden – toteutamme koulutuksia myös koulutustaloille.",
+      "Tutustu vaihtoehtoihin ja kerro meille tarpeistanne, niin rakennamme juuri teille toimivan koulutusratkaisun.",
+      "Kuulun perustaja, Jonna Muurinen, kertoo tällä videolla Kuulun koulutusprosessin vaiheet tarvekartoituksesta toteutukseen ja siihen, miten räätälöinti tehdään osallistujien osaamistason mukaan.",
+      "Kouluttautumisen pitäisi mielestämme olla sujuvaa, vaikuttavaa ja innostavaa.",
+      "Siksi räätälöimme koulutukset juuri teidän organisaationne tarpeisiin. Aiheena voi olla esimerkiksi:",
+      "Pian teillä on käytössä taidot ja työkalut, jotka vievät työnne seuraavalle tasolle.",
+      "Kuulun koulutukset ovat räätälöityjä, käytännönläheisiä ja vaikuttavia valmennuksia, jotka auttavat organisaatioita kehittämään digiosaamista, viestintää ja tekoälyvalmiuksia.",
+      "Saat meiltä 1–2 arkipäivässä ehdotuksen koulutuksesta, sisällöistä, kestosta ja hinnasta.",
+      "Pyydä alla olevalla lomakkeella tarjous ja kerro meille tarpeistasi ja rakennamme teille nopeassa aikataulussa sopivan ratkaisun.",
+      "Pidämme noin 300 koulutusta vuodessa, ja 98 % palautteen antaneista koulutettavista suosittelisi meitä edelleen.",
+      "Koulutettava porukka oli todella kirjava, mutta koulutuksesta oli hyötyä niin vasta-alkajalle kuin jo tekoälyä hieman enemmän käyttäneille. Kouluttaja osasi antaa konkretisoivia esimerkkejä ja valmiit promptiesimerkit olivat loistava apu tekoälyn tehokäytön starttaamiseen. Koulutus inspiroi, tarjosi oivalluksia ja auttoi ottamaan ensimmäiset askeleet tekoälyn tehokäyttöön.",
+      "Limingan kunta / Tekoälykoulutus",
+      "Erittäin antoisat ja inspiroivat koulupäivät. Aihe oli tärkeä ja ajankohtainen, josta sain paljon \"paranneltavia\" asioita töihin mukaan vietäväksi.",
+      "SASKY / Digijohtaminen",
+      "Nämä tekoälyesitykset räjäyttivät oman rajoittuneen ymmärrykseni tekoälyn hyödyntämisen mahdollisuuksista käsittömään lentoon, enkä ole vieläkään laskeutunut maan pinnalle! Ihanaa huomata, että nämä ehkä ennakolta omassa mielessä kuiviksi aiheiksi mieltämäni aiheet sytyttivätkin kaikista eniten!",
+      "Kuntaviestijäpäivät",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '72ffc198-ef81-4b69-94c5-6fc3739abe4f', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "Toteutamme ympäri vuoden tekoälykoulutuksia, jotka ovat valmiita kokonaisuuksia, mutta tarjoavat joustavasti myös räätälöityjä ominaisuuksia.",
+      "Meillä on useitä valmiita tekoälykoulutuskokonaisuuksia, jotka yhdistävät käytännönläheisen opetuksen ja osallistujien tarpeiden huomioimisen.",
+      "Koulutukset perustuvat kokeneimpien tekoälyasiantuntijoidemme pitkään kokemukseen ja ne toteutetaan etänä pienissä ryhmissä. Tallenteet ja materiaalit ovat osallistujien käytettävissä webinaarien jälkeen.",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '5f977445-15d0-4a39-b70f-4af299f50a1f', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '4d40a291-f012-4d33-a97d-29512629c627', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '32b66a76-f6cd-465c-9a17-daef459347e8', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '327efe9c-be19-4ea2-917c-cff8d9791d7b', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '4f888504-3dcc-4d82-84f3-08b5e416b2a2', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, 'c7ac5511-c6c6-4187-afd4-28b92a774963', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "hbspt.cta._relativeUrls=true;hbspt.cta.load(450584, '99b39e0a-94b9-45e6-99c1-8ef590d23799', {\"useNewLoader\":\"true\",\"region\":\"eu1\"});",
+      "Asiantuntijaviestintä, henkilöbrändäys ja sosiaalinen myynti Asiantuntijaviestintä ja vaikuttava viestintä Asiakaspalvelu ja -viestintä digitaalisissa kanavissa B2B-yrityksen digitaalinen markkinointi ja myynti Brändin kehittäminen palvelumuotoilun metodeilla Canva ja visuaalinen sisällöntuotanto Copywriting ja tuotetekstien kirjoittaminen Facebook-markkinointi ja mainonta Google Analytics / GA4 Hakukoneoptimointikoulutus Instagram-koulutukset Linkedin-koulutukset Linkedin maksettu mainonta Markkinoinnin analytiikka Markkinoinnin automaatio b2b-yrityksille Matkailumarkkinointi Markkinointi Aasiaan Markkinointi Yhdysvaltoihin Mobiilivideot ja stoorit -työpaja Monikanavainen kampanjointi Monipuoliset haastattelutaidot Palvelumuotoilu ja digitaalinen asiakaskokemus Pinterest-markkinointi Podcast koulutus Rekrymarkkinointi ja työnantajamielikuva Sisäinen viestintä Sisältöstrategia Somekoulutus Systemaattinen sisällöntuotanto Tekoälyn hyödyntäminen markkinoinnissa TikTok-markkinointi ja mainonta Twitter asiantuntijaviestinnässä ja Twitter-mainonta"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://www.kuulu.fi/koulutus?hsLang=fi-fi#hs_cos_wrapper_widget_1661810560096",
+        "label": "Pyydä tarjous koulutuksesta"
+      }
+    ]
+  },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "",
+    "content_name": "",
+    "content_path": "",
+    "hs_form_count": 0,
+    "form_ids": [
+      "805f07bd-a002-45f0-9aa5-af329327fcba"
+    ],
+    "meeting_links": [],
+    "video_embeds": [
+      "https://player.vimeo.com/video/630986255?h=b53c8a6d0d&amp;app_id=122963",
+      "https://www.kuulu.fi/hubfs/website_files/icons/green_mask_youtube.svg",
+      "https://www.youtube.com/c/KuuluFi"
+    ],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Pyydä tarjous koulutuksesta",
+        "href": "https://www.kuulu.fi/koulutus?hsLang=fi-fi#hs_cos_wrapper_widget_1661810560096"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 18,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Pyydä tarjous koulutuksesta",
+          "Koulutukset"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoaly-markkinoinnin-ja-myynnin-tukena",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn hyödyntäminen markkinoinnissa"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "legal",
+        "labels": [
+          "Tietosuojaseloste"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ],
+        "strength": "navigational"
+      }
+    ]
+  }
+}

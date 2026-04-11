@@ -1,0 +1,273 @@
+.cinematic-horizontal-scroll {
+  padding: 120px 0;
+  background: var(--cinematic-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.container-wide {
+  max-width: 100%;
+  padding: 0 24px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--cinematic-text);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.scroll-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 40px 24px;
+  margin: -40px -24px;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-track::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-track {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-card {
+  flex: 0 0 450px;
+  scroll-snap-align: start;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.scroll-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, var(--cinematic-green), rgba(0, 255, 135, 0.3));
+  border-radius: 24px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.scroll-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 255, 135, 0.3);
+}
+
+.scroll-card:hover::before {
+  opacity: 0.2;
+}
+
+.card-media {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.scroll-card:hover .card-media img {
+  transform: scale(1.1);
+}
+
+.card-icon {
+  color: var(--cinematic-green);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cinematic-text);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--cinematic-text-muted);
+  flex: 1;
+}
+
+.card-description p {
+  margin: 0 0 12px 0;
+}
+
+.card-description p:last-child {
+  margin-bottom: 0;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--cinematic-green);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.card-link:hover {
+  gap: 12px;
+}
+
+.card-link svg {
+  transition: transform 0.3s ease;
+}
+
+.card-link:hover svg {
+  transform: translateX(4px);
+}
+
+.scroll-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.progress-track {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cinematic-green), #00cc6a);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
+}
+
+.progress-text {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.progress-text .current-slide {
+  color: var(--cinematic-green);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cinematic-horizontal-scroll {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .section-header {
+    margin-bottom: 48px;
+  }
+
+  .scroll-card {
+    flex: 0 0 320px;
+  }
+
+  .card-media {
+    height: 200px;
+  }
+
+  .card-content {
+    padding: 24px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+
+  .scroll-track {
+    gap: 20px;
+    padding: 20px 12px;
+    margin: -20px -12px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .scroll-card {
+    flex: 0 0 500px;
+  }
+}

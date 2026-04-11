@@ -1,0 +1,84 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Two Column Content - Image & Text"
+-->
+{#
+  Kaksipalstainen sisältö -partiaali (kuva + teksti)
+
+  Käyttö:
+    {% set twocol_tag = '// Palvelumme' %}
+    {% set twocol_title = 'Otsikko <span class="text-gradient-green">tähän</span>' %}
+    {% set twocol_text = 'Sisältöteksti tähän. Voit käyttää HTML-merkkausta.' %}
+    {% set twocol_image = 'https://example.com/kuva.jpg' %}
+    {% set twocol_image_alt = 'Kuvan alt-teksti' %}
+    {% set twocol_reverse = true %}
+    {% set twocol_dark_bg = false %}
+    {% set twocol_btn_text = 'Lue lisää' %}
+    {% set twocol_btn_url = '/palvelu' %}
+    {% include './partials/two-column-content.html' %}
+#}
+
+{% set tc_tag = twocol_tag|default('') %}
+{% set tc_title = twocol_title|default('') %}
+{% set tc_text = twocol_text|default('') %}
+{% set tc_img = twocol_image|default('') %}
+{% set tc_img_alt = twocol_image_alt|default('') %}
+{% set tc_reverse = twocol_reverse|default(false) %}
+{% set tc_dark = twocol_dark_bg|default(false) %}
+{% set tc_btn = twocol_btn_text|default('') %}
+{% set tc_btn_url = twocol_btn_url|default('#') %}
+
+<section class="cinematic-section{% if tc_dark %} section-with-blobs gradient-section-dark grain-section{% endif %}">
+  {% if tc_dark %}
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  {% endif %}
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    {% if tc_tag %}
+    <span class="section-tag">{{ tc_tag }}</span>
+    {% endif %}
+
+    <div class="two-col-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;{% if tc_reverse %} direction: rtl;{% endif %}">
+      {# Kuva-puoli #}
+      <div style="{% if tc_reverse %}direction: ltr;{% endif %} border-radius: 16px; overflow: hidden;">
+        {% if tc_img %}
+        <img src="{{ tc_img }}" alt="{{ tc_img_alt }}" style="width: 100%; height: auto; display: block; border-radius: 16px; aspect-ratio: 4/3; object-fit: cover;" loading="lazy">
+        {% else %}
+        <div style="width: 100%; aspect-ratio: 4/3; background: rgba(255,255,255,0.04); border-radius: 16px; border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="color: var(--cinematic-text-muted); font-size: 0.85rem;">Kuva</span>
+        </div>
+        {% endif %}
+      </div>
+
+      {# Teksti-puoli #}
+      <div style="{% if tc_reverse %}direction: ltr;{% endif %}">
+        {% if tc_title %}
+        <h2 class="section-header" style="text-align: left; margin-bottom: 1.25rem;">{{ tc_title }}</h2>
+        {% endif %}
+        {% if tc_text %}
+        <div style="color: var(--cinematic-text-muted); font-size: 1rem; line-height: 1.8;">
+          {{ tc_text }}
+        </div>
+        {% endif %}
+        {% if tc_btn %}
+        <div style="margin-top: 2rem;">
+          <a href="{{ tc_btn_url }}" class="btn-cinematic-primary" style="font-size: 1rem; padding: 0.85rem 2rem;">{{ tc_btn }}</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+@media (max-width: 768px) {
+  .two-col-layout {
+    grid-template-columns: 1fr !important;
+    direction: ltr !important;
+  }
+  .two-col-layout > div {
+    direction: ltr !important;
+  }
+}
+</style>

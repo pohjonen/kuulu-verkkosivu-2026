@@ -1,0 +1,68 @@
+[ {
+  "id" : "cta_text",
+  "name" : "cta_text",
+  "label" : "CTA-teksti",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "VARAA SPARRAUS"
+}, {
+  "id" : "cta_url",
+  "name" : "cta_url",
+  "label" : "CTA-linkki",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "display_width" : null,
+  "type" : "url",
+  "default" : {
+    "href" : "#contact"
+  }
+}, {
+  "id" : "show_icon",
+  "name" : "show_icon",
+  "label" : "Näytä ikoni",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "position",
+  "name" : "position",
+  "label" : "Sijainti",
+  "required" : false,
+  "locked" : true,
+  "display" : "select",
+  "choices" : [ [ "center", "Keskellä" ], [ "left", "Vasemmalla" ], [ "right", "Oikealla" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "display_width" : null,
+  "type" : "choice",
+  "default" : "center"
+}, {
+  "id" : "trigger_offset",
+  "name" : "trigger_offset",
+  "label" : "Näytä vasta kun scrollattu (px)",
+  "required" : false,
+  "locked" : true,
+  "display" : "text",
+  "step" : 1,
+  "display_width" : null,
+  "type" : "number",
+  "default" : 800
+}, {
+  "id" : "hide_on_footer",
+  "name" : "hide_on_footer",
+  "label" : "Piilota footerissa",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "display_width" : null,
+  "type" : "boolean",
+  "default" : true
+} ]

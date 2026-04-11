@@ -1,0 +1,77 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media() %}
+  {% set mt = module.media_type|default("none") %}
+  {% if mt == "image" and module.media_image and module.media_image.src %}
+    <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt|default('') }}" style="width: 100%; height: auto; display: block; border-radius: 16px;">
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("none") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+
+<style>
+.checklist-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+@media (max-width: 768px) { .checklist-media-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="cinematic-section grain-section">
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="cinematic-section-rounded glass-card" style="max-width: {% if has_media %}1100px{% else %}800px{% endif %}; margin: 0 auto;">
+      {% if has_media %}
+      <div class="checklist-media-grid">
+        {% if mp == "left" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+        <div>
+      {% endif %}
+
+      {% if module.section_tag %}
+        <span class="section-tag">{{ module.section_tag }}</span>
+      {% endif %}
+      {% if module.headline %}
+        <h2 class="section-header">{{ module.headline }}{% if module.headline_highlight %} <span class="text-gradient-green">{{ module.headline_highlight }}</span>{% endif %}</h2>
+      {% endif %}
+      {% if module.description %}
+        <p style="color: var(--cinematic-text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">{{ module.description }}</p>
+      {% endif %}
+
+      {% set items = [
+        {"text": module.item_1, "icon": module.item_1_icon},
+        {"text": module.item_2, "icon": module.item_2_icon},
+        {"text": module.item_3, "icon": module.item_3_icon},
+        {"text": module.item_4, "icon": module.item_4_icon},
+        {"text": module.item_5, "icon": module.item_5_icon},
+        {"text": module.item_6, "icon": module.item_6_icon},
+        {"text": module.item_7, "icon": module.item_7_icon},
+        {"text": module.item_8, "icon": module.item_8_icon}
+      ] %}
+
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+        {% for item in items %}
+          {% if item.text %}
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem; color: var(--cinematic-text); font-size: 1.05rem; line-height: 1.6;">
+              {% if item.icon == "cross" %}
+                <span style="color: #ff4444; font-weight: bold; flex-shrink: 0; margin-top: 2px; font-size: 1.15em;">&#x2717;</span>
+              {% else %}
+                <span style="color: var(--cinematic-green); font-weight: bold; flex-shrink: 0; margin-top: 2px; font-size: 1.15em;">&#x2713;</span>
+              {% endif %}
+              <span>{{ item.text }}</span>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      {% if has_media %}
+        </div>
+        {% if mp == "right" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

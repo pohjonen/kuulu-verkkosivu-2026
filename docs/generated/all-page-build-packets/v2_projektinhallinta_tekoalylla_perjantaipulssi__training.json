@@ -1,0 +1,391 @@
+{
+  "page_id": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training",
+  "template": "training-landing-v2",
+  "preview_slug": "/v2-projektinhallinta-tekoalylla-perjantaipulssi",
+  "url": "https://www.kuulu.fi/projektinhallinta-tekoalylla-perjantaipulssi-17.4.2026-kuulu",
+  "page_type": "training",
+  "current_theme": "cinematic-uusi",
+  "primary_goal": "Position this training page as a practical answer to competence gaps: Projektinhallinta tekoälyllä | Perjantaipulssi 17.4.2026 | Kuulu.",
+  "core_message": "Projektinhallinta tekoälyllä Projektinhallinta tekoälyllä | Perjantaipulssi 17.4.2026 | Kuulu Campaign-style training page already near new direction.",
+  "hero_direction": {
+    "headline": "Projektinhallinta tekoälyllä",
+    "supporting_angle": "Osaamisvaje, tekoäly ja muuttuvat alustat pakottavat päivittämään tekemisen.",
+    "cta_goal": "tarjouspyyntö tai ilmoittautuminen"
+  },
+  "mandatory_signals": [
+    "Osaamisvaje näkyy ennen agendaa",
+    "Käytännön hyöty näkyy",
+    "AI / Zero Click -murros näkyy"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training__hero-cinematic-v2__1",
+      "content_job": "Apply hero-cinematic-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "problem-grid-v2",
+      "module_instance_key": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training__problem-grid-v2__2",
+      "content_job": "Apply problem-grid-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "service-pillars-v2",
+      "module_instance_key": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training__service-pillars-v2__3",
+      "content_job": "Apply service-pillars-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "process-steps-v2",
+      "module_instance_key": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training__process-steps-v2__4",
+      "content_job": "Apply process-steps-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 5,
+      "module": "training-agenda-v2",
+      "module_instance_key": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training__training-agenda-v2__5",
+      "content_job": "Apply training-agenda-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 6,
+      "module": "stats-trust-band-v2",
+      "module_instance_key": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training__stats-trust-band-v2__6",
+      "content_job": "Apply stats-trust-band-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 7,
+      "module": "faq-v2",
+      "module_instance_key": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training__faq-v2__7",
+      "content_job": "Apply faq-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 8,
+      "module": "final-cta-v2",
+      "module_instance_key": "v2_projektinhallinta_tekoalylla_perjantaipulssi__training__final-cta-v2__8",
+      "content_job": "Apply final-cta-v2 to page type training using the page's strategic role and source extracts.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Säilytä nykyisen sivun kriittiset CTA-polut.",
+        "Älä riko Zero Click / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Projektinhallinta tekoälyllä | Perjantaipulssi 17.4.2026 | Kuulu",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Projektinhallinta tekoälyllä"
+      },
+      {
+        "level": "h2",
+        "text": "Tekoälyn hyödyntäminen on taito, joka säästää aikaa joka päivä"
+      },
+      {
+        "level": "h2",
+        "text": "Mitä opit?"
+      },
+      {
+        "level": "h2",
+        "text": "Ville Pohjonen"
+      },
+      {
+        "level": "h2",
+        "text": "Ajankohta ja hinta"
+      },
+      {
+        "level": "h2",
+        "text": "Ilmoittaudu Perjantaipulssiin"
+      },
+      {
+        "level": "h3",
+        "text": "Projektinhallinta tekoälyllä: 3 työnkulkua jotka vapauttavat tunteja viikossa"
+      },
+      {
+        "level": "h3",
+        "text": "Pe 17.4.2026 klo 13–14.30"
+      }
+    ],
+    "paragraphs": [
+      "Enemmän hallintaa arkeen tekoälyllä tehostetun projektinhallinnan avulla",
+      "Pe 17.4.2026 klo 13–14.30",
+      "Tässä koulutuksessa Ville Pohjonen avaa oman tekoälyllä tehostetun projektinhallinnan järjestelmänsä. Saman jolla hän pyörittää parhaimmillaan yli 40 asiakasprojektia samanaikaisesti.",
+      "Näet miten projekti käynnistetään, miten viikko pysyy hallinnassa ja miten tekoäly hoitaa sen osan työstä joka tuottaa sinulle stressiä sekä turhautumista.",
+      "Lähdet 90 minuutin jälkeen kolmen käytännöllisen työnkulun ja valmiiden pohjien kanssa. Jokaisen voit ottaa käyttöösi vaikka samana päivänä.",
+      "1. Tekoälyllä tehostetun projektinhallinnan käynnistys ja 360-näkymä minuuteissa",
+      "Opit luomaan projektillesi tekoälyllä tehostetun kotipesän sekä 360-näkymän projektiin, jota voi oikeasti käyttää. Ville näyttää livenä miten hän tekee tekoälyllä tehostetun projektitilan asiakasprojektiin ja mitä tietoja AI tarvitsee auttaakseen sinua parhaalla mahdollisella tavalla.",
+      "2. Palaverista toimenpiteisiin automaattisesti",
+      "Opimme rakentamaan työnkulun jossa palaverin transkripti muuttuu tehtävälistaksi, vastuuhenkilöineen ja dediksineen käden käänteessä. Ei käsin kopiointia, ei unohdettuja action itemeja.",
+      "3. Priorisointi ilman tunnekuormaa",
+      "Anna tekoälylle tehtävälista. Se järjestää, perustelee ja nostaa esiin sen mikä menee oikeasti ensin. AI arvioi kiireellisyyden, riippuvuudet ja työmäärän tavalla joka poistaa sen ikuisen \"mitä tekisin ensin\" -pähkäilyn.",
+      "+ Oma tietopankki AI:lle",
+      "Annamme selkeän näkymän eri työkalujen vahvuuksiin ja käyttötapoihin, jotta tiedät mikä toimii juuri sinulle elämän hallintaa lisääväksi kaveriksi. Käymme läpi mm. Geminin NotebookLM:n (ilmainen, lähteisiin sidottu, ei hallusinoi), Claude projektitilat (paras analyysi ja kirjoittaminen) ja ChatGPT projektitilat (tiimin jaettu assistentti). Mikä sopii mihinkin ja miten pääset alkuun 10 minuutissa.",
+      "+ Miten vältät tekoälyn sudenkuopat",
+      "Projektinhallinta on tarkkaa ja arvokasta työtä, jota et halua sokeasti luovuttaa tekoälyn hallinnoitavaksi. Käymme myös läpi mitkä asiat pitää omassa tiukassa kontrollissa, miten tarkistaa ja varmistaa tekoälyn antamat vastaukset ja miten tehdä tekoälyn kanssa tehtävästä yhteistyöstä mahdollisimman saumatonta sekä varmaa.",
+      "Vähemmän säätöä, parempi tilannekuva ja enemmän aikaa oikealle työlle.",
+      "Koulutus on suunniteltu meille kaikille, jotka yritämme selviytyä kiireisessä arjessa. Eli kaikille, jotka haluavat lisää hallinnan tunnetta arkeensa. Erityisen hyödyllinen tämä on tietenkin ihmisille, jotka työskentelevät millään tavalla erilaisten projektien kanssa.",
+      "Tunnistatko nämä tilanteet?",
+      "Näiden 90 minuutin jälkeen sinulla on kolme toimivaa työnkulkua ja promptipohjat niiden tueksi.",
+      "Luova johtaja ja yksi omistajista, Kuulu Oy",
+      "Ville Pohjonen on Kuulun luova johtaja ja yksi omistajista. Hänellä on 15 vuoden kokemus markkinoinnista ja videotuotannosta. Ville on vetänyt yli 200 koulutusta vuodesta 2016 ja tekoäly on ollut mukana jokaisessa viimeisen kolmen vuoden aikana. Ville tunnetaan käytännönläheisestä koulutustyylistään: \"Ei pelkkää teoriaa. Näytetään miten hommat oikeasti tehdään.\"",
+      "Hinta: 129 € (161,90 € sis. alv. 25,5 %) laskulla.",
+      "Täytä tietosi alla ja ilmoittaudu 17.4. Perjantaipulssiin.",
+      "⚠️ Lomake ID puuttuu. Aseta se moduulin asetuksissa (HubSpot → Marketing → Forms → valitse lomake → Form ID).",
+      "Kuulu on digimarkkinointitoimisto, joka tekee asiakkaistaan kuuluisia.",
+      "Vanhantullinkatu 4 90100 Oulu",
+      "Konepajankuja 7 D 00510 Helsinki",
+      "Copyright © Markkinointiviestintätoimisto Kuulu Oy 2026. All Rights Reserved."
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "#ilmoittautuminen",
+        "label": "Ilmoittaudu nyt"
+      }
+    ]
+  },
+  "cms_metadata": {
+    "portal_id": "450584",
+    "content_id": "388789697731",
+    "content_name": "tekoälyn-perjantaipulssi-17-4-2026-projektinhallin   cinematic-body",
+    "content_path": "projektinhallinta-tekoalylla-perjantaipulssi-17-4- hs-content-name-tekoälyn-perjantaipulssi-17-4-2026-projektinhallin   cinematic-body",
+    "hs_form_count": 0,
+    "form_ids": [
+      "f481b6f9-7101-4229-bec5-d9b9d54c1b04"
+    ],
+    "meeting_links": [],
+    "video_embeds": [],
+    "cta_links": [
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ota yhteyttä",
+        "href": "https://www.kuulu.fi/yhteystiedot?hsLang=fi-fi"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/projektinhallinta-tekoalylla-perjantaipulssi-17.4.2026-kuulu#ilmoittautuminen"
+      },
+      {
+        "label": "Ilmoittaudu nyt",
+        "href": "https://www.kuulu.fi/projektinhallinta-tekoalylla-perjantaipulssi-17.4.2026-kuulu#ilmoittautuminen"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 16,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": [],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Referenssit"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Asiakas caset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service",
+        "labels": [
+          "Digimarkkinointi"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service",
+        "labels": [
+          "Energia-alan markkinointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service",
+        "labels": [
+          "Google Ads"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "Koulutukset"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service",
+        "labels": [
+          "Someauditointi"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi",
+          "Tekoälyn Mestarikurssiin"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi",
+          "Perjantaipulssin"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "legal",
+        "labels": [
+          "Tietosuojaseloste"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ],
+        "strength": "contextual"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt",
+          "Videotuotanto"
+        ],
+        "strength": "navigational"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ],
+        "strength": "cta"
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero Click -ajan digimarkkinointi"
+        ],
+        "strength": "navigational"
+      }
+    ]
+  }
+}

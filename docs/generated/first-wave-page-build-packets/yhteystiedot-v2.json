@@ -1,0 +1,459 @@
+{
+  "page_id": "yhteystiedot-v2",
+  "template": "company-info-v2",
+  "preview_slug": "/v2-yhteystiedot",
+  "url": "https://www.kuulu.fi/yhteystiedot",
+  "primary_goal": "Remove the final friction from contact and make trust tangible through people and offices.",
+  "core_message": "Yhteydenoton pitää tuntua helpolta, inhimilliseltä ja korkealaatuiselta.",
+  "hero_direction": {
+    "headline": "Ota yhteyttä.",
+    "supporting_angle": "Selkeä yhteydenotto, oikeat ihmiset ja matala kitka.",
+    "cta_goal": "lomake tai sparraus"
+  },
+  "mandatory_signals": [
+    "Yhteydenotto tuntuu helpolta",
+    "Ihmiset näkyvät luottamuksen rakentajina",
+    "Sivu ei tunnu hallinnolliselta jäännökseltä"
+  ],
+  "page_settings": {
+    "title_strategy": "derive from approved copy",
+    "meta_description_strategy": "write after content finalization",
+    "noindex_preview": true,
+    "canonical_strategy": "self canonical on preview, production canonical on cutover"
+  },
+  "module_plan": [
+    {
+      "order": 1,
+      "module": "hero-cinematic-v2",
+      "module_instance_key": "yhteystiedot-v2__hero-cinematic-v2__1",
+      "content_job": "Avaa yhteydenoton matalan kynnyksen näkökulman.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Pidä CTA-tekstit lyhyinä ja toimintolähtöisinä.",
+        "Älä riko 95/5 / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 2,
+      "module": "lead-capture-form-cta-v2",
+      "module_instance_key": "yhteystiedot-v2__lead-capture-form-cta-v2__2",
+      "content_job": "Näyttää päälomakkeen / ensisijaisen yhteydenottoreitin.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Pidä CTA-tekstit lyhyinä ja toimintolähtöisinä.",
+        "Älä riko 95/5 / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 3,
+      "module": "team-grid-v2",
+      "module_instance_key": "yhteystiedot-v2__team-grid-v2__3",
+      "content_job": "Tekee yhteyshenkilöistä konkreettisia ja helposti lähestyttäviä.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Pidä CTA-tekstit lyhyinä ja toimintolähtöisinä.",
+        "Älä riko 95/5 / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 4,
+      "module": "contact-info-v2",
+      "module_instance_key": "yhteystiedot-v2__contact-info-v2__4",
+      "content_job": "Nostaa toimistot ja laskutustiedot rakenteisena datana.",
+      "source_priority": [
+        "live"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Pidä CTA-tekstit lyhyinä ja toimintolähtöisinä.",
+        "Älä riko 95/5 / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    },
+    {
+      "order": 5,
+      "module": "final-cta-v2",
+      "module_instance_key": "yhteystiedot-v2__final-cta-v2__5",
+      "content_job": "Viimeinen matalan kitkan yhteydenottopolku.",
+      "source_priority": [
+        "live",
+        "brand"
+      ],
+      "editor_notes": [
+        "Täytä sisältö moduulikohtaisten guardrailien mukaan.",
+        "Pidä CTA-tekstit lyhyinä ja toimintolähtöisinä.",
+        "Älä riko 95/5 / Brand DNA / Sisältökoneisto / Liidimoottori -linjaa sivun roolista riippuen."
+      ]
+    }
+  ],
+  "source_extract": {
+    "title": "Yhteystiedot Kuulu Oy",
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Ota yhteyttä"
+      },
+      {
+        "level": "h2",
+        "text": "Ota yhteyttä lomakkeella tai katso yhteystiedot alta."
+      },
+      {
+        "level": "h2",
+        "text": "Kuulu tarjoaa kokonaisratkaisut digimarkkinoinnin tarpeisiin"
+      },
+      {
+        "level": "h2",
+        "text": "Meidän tiimi Oulussa"
+      },
+      {
+        "level": "h2",
+        "text": "Meidän tiimi Helsingissä"
+      },
+      {
+        "level": "h2",
+        "text": "Jos haluat hakea meille töihin freelanceriksi, klikkaa alta."
+      },
+      {
+        "level": "h2",
+        "text": "Laskutustiedot"
+      },
+      {
+        "level": "h3",
+        "text": "Tiina Stjerna-Kinnunen"
+      },
+      {
+        "level": "h3",
+        "text": "Hermanni Härkönen"
+      },
+      {
+        "level": "h3",
+        "text": "Teija Lämpsä"
+      },
+      {
+        "level": "h3",
+        "text": "Mari Kellokumpu"
+      },
+      {
+        "level": "h3",
+        "text": "Jonna Muurinen"
+      },
+      {
+        "level": "h3",
+        "text": "Tuomas Muurinen"
+      },
+      {
+        "level": "h3",
+        "text": "Katarina Laaksonen"
+      },
+      {
+        "level": "h3",
+        "text": "Laura Kesti"
+      },
+      {
+        "level": "h3",
+        "text": "Lasse Virtanen"
+      },
+      {
+        "level": "h3",
+        "text": "Jani Pylväs"
+      },
+      {
+        "level": "h3",
+        "text": "Elias Litmanen"
+      },
+      {
+        "level": "h3",
+        "text": "Kasperi Kivistö"
+      },
+      {
+        "level": "h3",
+        "text": "Tuomas Hautamäki"
+      },
+      {
+        "level": "h3",
+        "text": "Mikael Kunnari"
+      },
+      {
+        "level": "h3",
+        "text": "Henna Kuvaja"
+      },
+      {
+        "level": "h3",
+        "text": "Laia Muurinen"
+      },
+      {
+        "level": "h3",
+        "text": "Ville Pohjonen"
+      },
+      {
+        "level": "h3",
+        "text": "Samuli Luoso"
+      },
+      {
+        "level": "h3",
+        "text": "Sami Harjunen"
+      },
+      {
+        "level": "h3",
+        "text": "Ville Laitinen"
+      },
+      {
+        "level": "h3",
+        "text": "Oulu"
+      },
+      {
+        "level": "h3",
+        "text": "Helsinki"
+      }
+    ],
+    "paragraphs": [
+      "Autamme mielellämme!",
+      "Ajattelemme digimarkkinoinnin aina sisältöjen kautta, eli mietitään millaisilla sisällöillä voimme tuottaa teille enemmän liidejä ja myyntiä verkossa. Jos haluatte itse oppia tekemään näitä kustannustehokkaasti, koulutamme yrityksiä räätälöidysti sekä avoimilla koulutuksilla .",
+      "Olemme erikoistuneet videotuotantoon ja sosiaaliseen mediaan ja toimistomme sijaitsevat Oulussa ja Helsingissä. Työskentelemme silti koko Suomessa ja toteutamme myös kansainvälisiä kampanjoita asiakkaillemme, joilla on omia asiakkaita Suomen ulkopuolella. Kaikessa markkinoinnissa lähtökohtana on tavoitteellisuus ja mitattavuus.",
+      "Täytä sivun yhteydenottolomake, niin olemme pian yhteydessä!",
+      "Myyntijohtaja",
+      "tiina@kuulu.fi",
+      "040 577 3297",
+      "Lue lisää henkilöstä",
+      "Account Manager",
+      "hermanni@kuulu.fi",
+      "045 333 6960",
+      "teija@kuulu.fi",
+      "040 553 4558",
+      "Operatiivinen johtaja",
+      "mari@kuulu.fi",
+      "044 531 9760",
+      "Toimitusjohtaja",
+      "jonna@kuulu.fi",
+      "Hallituksen puheenjohtaja",
+      "tuomas@kuulu.fi",
+      "040 54 333 64",
+      "katarina@kuulu.fi",
+      "Digimarkkinoinnin asiantuntija",
+      "laura@kuulu.fi",
+      "lasse@kuulu.fi",
+      "jani@kuulu.fi",
+      "elias@kuulu.fi",
+      "Account Manager, tuottaja",
+      "kasperi@kuulu.fi",
+      "050 469 1074"
+    ],
+    "cta_candidates": [
+      {
+        "href": "https://www.kuulu.fi/yhteystiedot",
+        "label": "Ota yhteyttä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/tiina-stjerna-kinnunen?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/mari-kellokumpu?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/jonna-muurinen?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/tuomas-muurinen?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/katarina-laaksonen?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/jani-pylvas?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/kasperi-kivisto?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/tuomas-hautam%C3%A4ki?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/mikael-kunnari?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/henna-kuvaja?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/ville-pohjonen?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      },
+      {
+        "href": "https://blog.kuulu.fi/author/ville-laitinen?hsLang=fi-fi",
+        "label": "Lue lisää henkilöstä"
+      }
+    ]
+  },
+  "link_map": {
+    "link_count": 21,
+    "internal_links": [
+      {
+        "target_url": "https://www.kuulu.fi/",
+        "target_type": "homepage",
+        "labels": []
+      },
+      {
+        "target_url": "https://www.kuulu.fi/asiakasreferenssit",
+        "target_type": "reference-index",
+        "labels": [
+          "Kokemuksia Kuulusta",
+          "Referenssit"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/brandivideo",
+        "target_type": "video-service",
+        "labels": [
+          "Brändivideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/case-studies",
+        "target_type": "reference-index",
+        "labels": [
+          "Asiakas caset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/copilotin-kiihdytyskaista-jasenille-10-12-25",
+        "target_type": "service-or-other",
+        "labels": [
+          "Copilotin Kiihdytyskaista - Jäsenille (12-25)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/digimarkkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Digimarkkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/energia-alan-markkinointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Energia-alan markkinointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/google-ads-mainonta",
+        "target_type": "service-or-other",
+        "labels": [
+          "Google Ads"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/koulutus",
+        "target_type": "training",
+        "labels": [
+          "Koulutus",
+          "koulutamme yrityksiä räätälöidysti sekä avoimilla koulutuksilla",
+          "Koulutukset"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/someagentti-eli-somekanavien-auditointi",
+        "target_type": "service-or-other",
+        "labels": [
+          "Someauditointi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-mestarikurssi-jasenille-01-26",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (01-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoalyn-perjantaipulssi",
+        "target_type": "training",
+        "labels": [
+          "Tekoälyn Perjantaipulssi"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tekoälyn-mestarikurssi-jasenille-03-26",
+        "target_type": "service-or-other",
+        "labels": [
+          "Tekoälyn Mestarikurssi - Jäsenille (03-26)"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tietosuojaseloste",
+        "target_type": "company-info",
+        "labels": [
+          "Tietosuojaseloste"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/tv-mainos-tuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "TV-mainosvideot"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto",
+        "target_type": "video-service",
+        "labels": [
+          "Videosisällöt",
+          "videotuotantoon"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/videotuotanto_vanha",
+        "target_type": "video-service",
+        "labels": [
+          "Videotuotanto"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/yhteystiedot",
+        "target_type": "company-info",
+        "labels": [
+          "Ota yhteyttä"
+        ]
+      },
+      {
+        "target_url": "https://www.kuulu.fi/zero-click-ajan-digimarkkinointi",
+        "target_type": "training",
+        "labels": [
+          "Zero click -ajan digimarkkinointi"
+        ]
+      }
+    ]
+  }
+}

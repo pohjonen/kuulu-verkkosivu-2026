@@ -1,0 +1,37 @@
+{
+  "portal_id": "450584",
+  "auth_status": "missing",
+  "source_theme_status": "not_fetched",
+  "public_inventory_pages": 35,
+  "v2_page_manifest_count": 6,
+  "v2_module_manifest_count": 15,
+  "first_wave_packet_count": 6,
+  "all_page_packet_count": 35,
+  "key_artifacts": {
+    "inventory": [
+      "docs/generated/kuulu-public-site-inventory.csv",
+      "docs/generated/kuulu-public-site-inventory.json"
+    ],
+    "manifests": [
+      "docs/generated/kuulu-v2-page-manifest.json",
+      "docs/generated/kuulu-v2-module-manifest.json"
+    ],
+    "build_packets": [
+      "docs/generated/first-wave-page-build-packets/index.json",
+      "docs/generated/all-page-build-packets/index.json"
+    ],
+    "safety": [
+      "docs/generated/kuulu-redirect-register.json",
+      "docs/generated/kuulu-cutover-checklist.json",
+      "docs/generated/kuulu-full-link-graph.json",
+      "docs/generated/kuulu-public-asset-signature.json",
+      "docs/generated/kuulu-public-cms-metadata.json"
+    ],
+    "blueprint": [
+      "hubspot/kuulu-theme-v2-blueprint/",
+      "scripts/bootstrap_v2_blueprint.py",
+      "scripts/validate_blueprint_scaffold.py"
+    ]
+  },
+  "next_blocker": "Run hs account auth or provide current HubSpot theme export."
+}

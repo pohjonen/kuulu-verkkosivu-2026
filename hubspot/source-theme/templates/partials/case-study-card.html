@@ -1,0 +1,200 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Case Study Card - Rich Reference"
+-->
+{#
+  Rikas case study -kortti (yksittäinen iso referenssiesittely)
+
+  Käyttö:
+    {% set cs_tag = '// Case Study' %}
+    {% set cs_client = 'Oulun Energia' %}
+    {% set cs_logo = 'https://cdn.brandfetch.io/oulunenergia.fi/w/400/h/80/theme/light/logo' %}
+    {% set cs_image = 'https://images.unsplash.com/photo...' %}
+    {% set cs_video_url = '' %}
+    {% set cs_challenge = 'Sosiaalisen median läsnäolo oli hajanainen ja mittaamaton.' %}
+    {% set cs_solution = 'Rakensimme Content Enginen: 15 sisältöä/kk, mainosstrategia ja dashboard.' %}
+    {% set cs_result_1_number = '+340%' %}
+    {% set cs_result_1_label = 'orgaaninen näkyvyys' %}
+    {% set cs_result_2_number = '+180%' %}
+    {% set cs_result_2_label = 'verkkosivuliikenne' %}
+    {% set cs_result_3_number = '45' %}
+    {% set cs_result_3_label = 'liidiä / kvartaali' %}
+    {% set cs_quote = 'Kuulun tiimi toi markkinointiimme systemaattisuuden jota olimme etsineet.' %}
+    {% set cs_quote_author = 'Markkinointipäällikkö, Oulun Energia' %}
+    {% set cs_url = '/referenssit/oulun-energia' %}
+    {% set cs_cta = 'Lue koko tarina' %}
+    {% include './partials/case-study-card.html' %}
+#}
+
+{% set c_tag = cs_tag|default('') %}
+{% set c_client = cs_client|default('') %}
+{% set c_logo = cs_logo|default('') %}
+{% set c_img = cs_image|default('') %}
+{% set c_vid = cs_video_url|default('') %}
+{% set c_challenge = cs_challenge|default('') %}
+{% set c_solution = cs_solution|default('') %}
+
+{% set r1_n = cs_result_1_number|default('') %}
+{% set r1_l = cs_result_1_label|default('') %}
+{% set r2_n = cs_result_2_number|default('') %}
+{% set r2_l = cs_result_2_label|default('') %}
+{% set r3_n = cs_result_3_number|default('') %}
+{% set r3_l = cs_result_3_label|default('') %}
+
+{% set c_quote = cs_quote|default('') %}
+{% set c_qa = cs_quote_author|default('') %}
+{% set c_url = cs_url|default('') %}
+{% set c_cta = cs_cta|default('Lue lisää') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    {% if c_tag %}<span class="section-tag">{{ c_tag }}</span>{% endif %}
+
+    <div class="cs-card">
+      <div class="cs-layout">
+        <div class="cs-media">
+          {% if c_img %}
+          <img src="{{ c_img }}" alt="{{ c_client }}" class="cs-image" loading="lazy">
+          {% endif %}
+          {% if c_vid %}
+          <a href="{{ c_vid }}" class="cs-play-btn" target="_blank" rel="noopener">
+            <i class="fas fa-play"></i>
+          </a>
+          {% endif %}
+        </div>
+
+        <div class="cs-content">
+          <div class="cs-header">
+            {% if c_logo %}
+            <img src="{{ c_logo }}" alt="{{ c_client }}" class="cs-logo" loading="lazy">
+            {% endif %}
+            {% if c_client %}<h3 class="cs-client-name">{{ c_client }}</h3>{% endif %}
+          </div>
+
+          {% if c_challenge %}
+          <div class="cs-section">
+            <h4 class="cs-label">Haaste</h4>
+            <p class="cs-text">{{ c_challenge }}</p>
+          </div>
+          {% endif %}
+
+          {% if c_solution %}
+          <div class="cs-section">
+            <h4 class="cs-label">Ratkaisu</h4>
+            <p class="cs-text">{{ c_solution }}</p>
+          </div>
+          {% endif %}
+
+          {% if r1_n %}
+          <div class="cs-results">
+            <div class="cs-result">
+              <span class="cs-result-num">{{ r1_n }}</span>
+              <span class="cs-result-label">{{ r1_l }}</span>
+            </div>
+            {% if r2_n %}
+            <div class="cs-result">
+              <span class="cs-result-num">{{ r2_n }}</span>
+              <span class="cs-result-label">{{ r2_l }}</span>
+            </div>
+            {% endif %}
+            {% if r3_n %}
+            <div class="cs-result">
+              <span class="cs-result-num">{{ r3_n }}</span>
+              <span class="cs-result-label">{{ r3_l }}</span>
+            </div>
+            {% endif %}
+          </div>
+          {% endif %}
+
+          {% if c_quote %}
+          <div class="cs-quote-block">
+            <span class="cs-q-mark">&ldquo;</span>
+            <p class="cs-q-text">{{ c_quote }}</p>
+            {% if c_qa %}<p class="cs-q-author">— {{ c_qa }}</p>{% endif %}
+          </div>
+          {% endif %}
+
+          {% if c_url %}
+          <a href="{{ c_url }}" class="cs-cta-btn">{{ c_cta }} &#8594;</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.cs-card {
+  background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px; overflow: hidden;
+}
+.cs-layout { display: grid; grid-template-columns: 1fr 1fr; }
+.cs-media { position: relative; min-height: 400px; overflow: hidden; }
+.cs-image { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cs-play-btn {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 72px; height: 72px; border-radius: 50%;
+  background: rgba(0,0,0,0.6); backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--cinematic-green); font-size: 1.3rem; text-decoration: none;
+  transition: all 0.3s; z-index: 3;
+}
+.cs-play-btn i { margin-left: 3px; }
+.cs-play-btn:hover { background: var(--cinematic-green); color: #0a0a0a; border-color: var(--cinematic-green); }
+.cs-content { padding: 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+.cs-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+.cs-logo { height: 30px; width: auto; filter: brightness(0) invert(1); opacity: 0.7; }
+.cs-client-name { font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.2rem; font-weight: 700; margin: 0; }
+.cs-label {
+  font-family: var(--font-display); font-size: 0.75rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--cinematic-green);
+  margin: 0 0 0.35rem;
+}
+.cs-text { color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+.cs-results {
+  display: flex; gap: 1.5rem; padding: 1.25rem 0;
+  border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.cs-result { text-align: center; flex: 1; }
+.cs-result-num {
+  display: block; font-family: var(--font-display); font-size: 1.6rem; font-weight: 800;
+  color: var(--cinematic-green); line-height: 1.2;
+}
+.cs-result-label { color: var(--cinematic-text-muted); font-size: 0.75rem; margin-top: 0.2rem; display: block; }
+.cs-quote-block {
+  background: rgba(0,255,135,0.03); border-left: 3px solid rgba(0,255,135,0.3);
+  padding: 1rem 1.25rem; border-radius: 0 12px 12px 0;
+}
+.cs-q-mark { color: var(--cinematic-green); font-size: 1.5rem; line-height: 1; opacity: 0.5; }
+.cs-q-text { color: var(--cinematic-text); font-size: 0.9rem; line-height: 1.6; font-style: italic; margin: 0.25rem 0 0.5rem; }
+.cs-q-author { color: var(--cinematic-text-muted); font-size: 0.8rem; margin: 0; }
+.cs-cta-btn {
+  margin-top: auto; display: inline-flex; align-items: center; width: fit-content;
+  gap: 0.5rem; padding: 0.9rem 2rem;
+  font-family: var(--font-display); font-size: 1rem; font-weight: 700;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  color: #0a0a0a !important; -webkit-text-fill-color: #0a0a0a !important;
+  background: var(--gradient-green, linear-gradient(135deg, #00ff87, #16F98A));
+  border: none; border-radius: 50px; text-decoration: none !important;
+  cursor: pointer; transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0,255,135,0.25);
+}
+.cs-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(0,255,135,0.4);
+  color: #0a0a0a !important; -webkit-text-fill-color: #0a0a0a !important;
+  text-decoration: none !important;
+}
+.cs-cta-btn::after,
+.cs-cta-btn::before {
+  content: none !important; display: none !important;
+}
+
+@media (max-width: 768px) {
+  .cs-layout { grid-template-columns: 1fr; }
+  .cs-media { min-height: 250px; }
+  .cs-results { flex-direction: column; gap: 1rem; }
+}
+</style>

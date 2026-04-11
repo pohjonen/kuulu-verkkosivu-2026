@@ -1,0 +1,45 @@
+{
+  "module": "service-pillars-v2",
+  "module_key": "service-pillars-v2",
+  "category": "foundation",
+  "used_on": [
+    "homepage-v2",
+    "service-landing-v2",
+    "training-landing-v2",
+    "video-service-landing-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "cta",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "cards"
+  ],
+  "optional_fields": [
+    "intro_text",
+    "card_media",
+    "card_micro_cta"
+  ],
+  "build_wave": 1,
+  "depends_on": [
+    "card-grid-v2",
+    "micro-cta-v2"
+  ],
+  "field_groups": [
+    "content",
+    "cta",
+    "media",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "card_max": 4,
+    "supports_free_rich_text": false
+  }
+}

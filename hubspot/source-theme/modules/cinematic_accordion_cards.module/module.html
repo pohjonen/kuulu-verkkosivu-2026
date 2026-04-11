@@ -1,0 +1,89 @@
+<section class="cinematic-accordion-cards">
+  <div class="container">
+    {% if module.section_title %}
+      <div class="section-header">
+        <h2 class="section-title">{{ module.section_title }}</h2>
+        {% if module.section_subtitle %}
+          <p class="section-subtitle">{{ module.section_subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="accordion-grid columns-{{ module.columns }}">
+      {% for item in module.accordion_items %}
+        <div class="accordion-card {% if loop.first and module.open_first %}active{% endif %}">
+          <button class="accordion-header" aria-expanded="{% if loop.first and module.open_first %}true{% else %}false{% endif %}">
+            {% if item.icon_svg %}
+              <div class="accordion-icon">
+                {{ item.icon_svg }}
+              </div>
+            {% endif %}
+            
+            <h3 class="accordion-title">{{ item.title }}</h3>
+            
+            <div class="accordion-toggle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path class="toggle-line horizontal" d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path class="toggle-line vertical" d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </button>
+          
+          <div class="accordion-content" {% if loop.first and module.open_first %}style="max-height: 1000px;"{% endif %}>
+            <div class="accordion-inner">
+              {% if item.card_image.src %}
+              <div class="accordion-image">
+                <img src="{{ item.card_image.src }}" alt="{{ item.card_image.alt }}" loading="lazy">
+              </div>
+              {% endif %}
+              {{ item.content }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const accordions = document.querySelectorAll('.cinematic-accordion-cards');
+  
+  accordions.forEach(accordion => {
+    const cards = accordion.querySelectorAll('.accordion-card');
+    
+    cards.forEach(card => {
+      const header = card.querySelector('.accordion-header');
+      const content = card.querySelector('.accordion-content');
+      const inner = card.querySelector('.accordion-inner');
+      
+      header.addEventListener('click', () => {
+        const isActive = card.classList.contains('active');
+        
+        // Close all cards
+        cards.forEach(c => {
+          c.classList.remove('active');
+          c.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+          c.querySelector('.accordion-content').style.maxHeight = '0';
+        });
+        
+        // Open clicked card if it wasn't active
+        if (!isActive) {
+          card.classList.add('active');
+          header.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = inner.scrollHeight + 'px';
+        }
+      });
+    });
+    
+    // Set initial max-height for open cards
+    cards.forEach(card => {
+      if (card.classList.contains('active')) {
+        const content = card.querySelector('.accordion-content');
+        const inner = card.querySelector('.accordion-inner');
+        content.style.maxHeight = inner.scrollHeight + 'px';
+      }
+    });
+  });
+})();
+</script>

@@ -1,0 +1,20 @@
+Local theme dir: /workspace/hubspot/source-theme
+Known public portal(s): 450584
+
+Matched by filename: 0
+
+Missing from local fetch: 10
+  - module_Vast_FAQ_Module.min.css
+  - module_Vast_FAQ_Module.min.js
+  - module_cinematic_early_bird.min.css
+  - module_cinematic_rich_pricing.min.css
+  - template_cinematic-responsive.min.css
+  - template_cinematic.min.css
+  - template_design-tokens.min.css
+  - template_main.min.js
+  - template_module-fixes.min.css
+  - template_styles.min.css
+
+Interpretation:
+  No direct filename matches found. Either the fetched theme is different,
+  assets are renamed during build, or the wrong remote path was fetched.

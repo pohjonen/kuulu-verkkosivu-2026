@@ -1,0 +1,124 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Scroll Animations - Reveal & Counters"
+-->
+{#
+  Scroll-animaatiot ja laskurit -partiaali
+
+  Lisää tämä sivun loppuun (ennen scripts-cinematic.html):
+    {% include './partials/scroll-animations.html' %}
+
+  Tämä aktivoi:
+  1. Scroll reveal -animaatiot: lisää class="reveal" elementteihin, jotka haluat animoida sisään scrollatessa
+  2. Laskurit: lisää class="counter" ja data-target="500" elementteihin, joiden luvut haluat animoida
+
+  Esimerkit:
+    <div class="reveal">Tämä fade-in:aa scrollatessa</div>
+    <div class="reveal reveal-left">Tämä liukuu vasemmalta</div>
+    <div class="reveal reveal-right">Tämä liukuu oikealta</div>
+    <div class="reveal reveal-scale">Tämä skaalautuu sisään</div>
+    <span class="counter" data-target="500">0</span>
+#}
+
+<style>
+/* Scroll reveal -animaatiot */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.reveal-left {
+  transform: translateX(-40px);
+}
+.reveal.reveal-right {
+  transform: translateX(40px);
+}
+.reveal.reveal-scale {
+  transform: scale(0.9);
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Staggered-viive lapsielementeille */
+.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0s; }
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 0.2s; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.3s; }
+.reveal-stagger > .reveal:nth-child(5) { transition-delay: 0.4s; }
+.reveal-stagger > .reveal:nth-child(6) { transition-delay: 0.5s; }
+
+/* Counter-animaatio */
+.counter {
+  font-variant-numeric: tabular-nums;
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  // Scroll Reveal
+  var revealElements = document.querySelectorAll('.reveal');
+  if (revealElements.length > 0) {
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(function(el) {
+      revealObserver.observe(el);
+    });
+  }
+
+  // Counter Animation
+  var counterElements = document.querySelectorAll('.counter');
+  if (counterElements.length > 0) {
+    var counterObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+          var suffix = el.getAttribute('data-suffix') || '';
+          var prefix = el.getAttribute('data-prefix') || '';
+          var duration = parseInt(el.getAttribute('data-duration'), 10) || 2000;
+          var start = 0;
+          var startTime = null;
+
+          function animate(timestamp) {
+            if (!startTime) startTime = timestamp;
+            var progress = Math.min((timestamp - startTime) / duration, 1);
+            // Ease out cubic
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = Math.floor(eased * target);
+            el.textContent = prefix + current.toLocaleString('fi-FI') + suffix;
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            } else {
+              el.textContent = prefix + target.toLocaleString('fi-FI') + suffix;
+            }
+          }
+
+          requestAnimationFrame(animate);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    counterElements.forEach(function(el) {
+      counterObserver.observe(el);
+    });
+  }
+})();
+</script>

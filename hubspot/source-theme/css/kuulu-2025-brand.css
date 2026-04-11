@@ -1,0 +1,397 @@
+/* Kuulu 2025 Brand Guide Implementation - FIXED VERSION */
+
+/* ========== 1. Font Imports ========== */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300..800&display=swap");
+
+/* ========== 2. CSS Variables/Tokens ========== */
+:root {
+  /* Brand Colors */
+  --kuulu-green: #009f4e;
+  --soft-peach: #f9ae8f;
+  --electric-tq: #00e5c6;
+
+  /* Deep Surfaces */
+  --midnight-teal: #002e27;
+  --gunmetal: #122125;
+  --ink-black: #0b0d0c;
+
+  /* Neutrals */
+  --off-white: #f4f1ea;
+  --ash-grey: #c8cfd0;
+
+  /* Functional */
+  --success-green: #10b97e;
+  --warning-amber: #ffb200;
+  --error-red: #ff4e42;
+  
+  /* Font Families */
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ========== 3. Typography - EXTREMELY TARGETED ========== */
+/* CTA buttons - Maximum specificity selectors */
+.custom-header__navigation > ul > li > a.hs-button,
+.custom-header a.ota-yhteytta-button,
+.custom-header a[href*="ota-yhteytta"],
+a.cta_button[href*="ota-yhteytta"],
+#hs_cos_wrapper_widget_86739730478 a,
+.custom-header__navigation a.cta_button,
+.custom-header__navigation .hs-cta-wrapper a,
+body .custom-header a.hs-button,
+a.hs-button,
+.hs-button,
+.ota-yhteytta-button a,
+.ota-yhteytta-button a span,
+.hero-cta-button a,
+.hero-cta-button a span,
+a.cta_button,
+a.cta_button span,
+a.btn,
+a.btn span,
+button.cta,
+button.cta span,
+a[href*="ota-yhteytta"],
+.header__cta,
+.header__cta-container a,
+.custom-header__cta,
+.custom-header__cta a,
+a[class*="cta"],
+a[class*="button"],
+.custom-header a.cta_button {
+  /* !important on every property for maximum specificity */
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: bold !important;
+  letter-spacing: 0 !important;
+  text-transform: uppercase !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Main headings */
+.hero-section h1,
+.hero-section h2,
+.hero-section-headline,
+.header-container h1,
+.headline {
+  font-family: var(--font-heading) !important;
+}
+
+/* Body text - targeted */
+.body-container p:not(.hero-section p),
+.body-container li,
+.body-container div.text-container {
+  font-family: var(--font-body) !important;
+}
+
+/* ========== 4. Remove Blue Elements ========== */
+/* Remove blue jobbies/SVG image */
+[src*="hero-jobbies-7.svg"],
+img[src*="hero-jobbies-7"],
+.hero-section-jobbies-3,
+img.section-img.hero-section-jobbies-3,
+img.section-img.img-parallax-overflow[src*="jobbies"],
+.img-parallax-overflow[src*="jobbies"],
+img[src*="blue_lady_background_jobbies"],
+img[src*="blue-striped-semicircle"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* ========== 5. CTA Button Styling - EXTREMELY TARGETED ========== */
+/* DIRECT INLINE STYLE APPROACH FOR CTA BUTTON */
+/* This is the most aggressive approach to force white text */
+
+/* Force white button text everywhere */
+.custom-header__navigation > ul > li > a.hs-button,
+.custom-header a.ota-yhteytta-button,
+.custom-header a[href*="ota-yhteytta"],
+a.cta_button[href*="ota-yhteytta"],
+#hs_cos_wrapper_widget_86739730478 a,
+.custom-header__navigation a.cta_button,
+.custom-header__navigation .hs-cta-wrapper a,
+body .custom-header a.hs-button,
+a.hs-button,
+.hs-button,
+a.cta_button,
+.ota-yhteytta-button a,
+.hero-cta a,
+.header__cta,
+.header__cta-container a,
+.custom-header__cta,
+.custom-header__cta a,
+a[href*="ota-yhteytta"],
+a[class*="cta"],
+a[class*="button"],
+div[class*="cta"] a,
+.custom-header a.cta_button,
+.cta_button * {
+  color: #FFFFFF !important;
+}
+
+/* Extra specificity for the CTA button styles */
+.custom-header__navigation > ul > li > a.hs-button,
+.custom-header a.ota-yhteytta-button,
+.custom-header a[href*="ota-yhteytta"],
+a.cta_button[href*="ota-yhteytta"],
+#hs_cos_wrapper_widget_86739730478 a,
+.custom-header__navigation a.cta_button,
+.custom-header__navigation .hs-cta-wrapper a,
+body .custom-header a.hs-button,
+a.hs-button,
+.hs-button,
+a.cta_button,
+.ota-yhteytta-button a,
+.hero-cta a,
+.header__cta,
+.header__cta-container a,
+.custom-header__cta,
+.custom-header__cta a,
+a[href*="ota-yhteytta"],
+a[class*="cta"],
+a[class*="button"],
+div[class*="cta"] a,
+.custom-header a.cta_button {
+  background-color: var(--kuulu-green) !important;
+  border: 2px solid var(--kuulu-green) !important;
+  border-radius: 30px !important;
+  font-family: "Bebas Neue", sans-serif !important;
+  color: #FFFFFF !important;
+  text-shadow: none !important;
+  letter-spacing: 1px !important;
+  -webkit-text-fill-color: white !important;
+  fill: white !important;
+}
+
+/* Fix hover state - EXTREMELY TARGETED */
+.custom-header__navigation > ul > li > a.hs-button:hover,
+.custom-header a.ota-yhteytta-button:hover,
+.custom-header a[href*="ota-yhteytta"]:hover,
+a.cta_button[href*="ota-yhteytta"]:hover,
+#hs_cos_wrapper_widget_86739730478 a:hover,
+.custom-header__navigation a.cta_button:hover,
+.custom-header__navigation .hs-cta-wrapper a:hover,
+body .custom-header a.hs-button:hover,
+a.hs-button:hover,
+.hs-button:hover,
+a.cta_button:hover,
+.ota-yhteytta-button a:hover,
+.hero-cta a:hover,
+.header__cta:hover,
+.header__cta-container a:hover,
+.custom-header__cta:hover,
+.custom-header__cta a:hover,
+a[href*="ota-yhteytta"]:hover,
+a[class*="cta"]:hover,
+a[class*="button"]:hover,
+.custom-header a.cta_button:hover {
+  background-color: #007a3d !important; /* Darker green */
+  border-color: #007a3d !important;
+}
+
+/* ========== 5.1. Ota Yhteyttä Button - Header CTA ========== */
+.ota-yhteytta-button {
+  display: inline-block !important;
+}
+
+.ota-yhteytta-button a,
+.ota-yhteytta-btn {
+  display: inline-block !important;
+  position: relative !important;
+  width: 180px !important;
+  height: 50px !important;
+  background-color: #009F4E !important;
+  color: white !important;
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 20px !important;
+  border: 2px solid #009F4E !important;
+  border-radius: 30px !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  --hover-bg: transparent !important;
+}
+
+.ota-yhteytta-text {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 10 !important;
+  transition: color 0.3s ease !important;
+  color: white !important;
+}
+
+.ota-yhteytta-button a::before,
+.ota-yhteytta-btn::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: white !important;
+  transform: scaleX(0) !important;
+  transform-origin: right !important;
+  transition: transform 0.3s ease !important;
+  z-index: 1 !important;
+}
+
+.ota-yhteytta-button a:hover::before,
+.ota-yhteytta-btn:hover::before {
+  transform: scaleX(1) !important;
+  transform-origin: left !important;
+}
+
+.ota-yhteytta-button a:hover .ota-yhteytta-text,
+.ota-yhteytta-btn:hover .ota-yhteytta-text {
+  color: #009F4E !important;
+  -webkit-text-fill-color: #009F4E !important;
+}
+
+/* Maximum specificity override */
+html body .dnd-section .ota-yhteytta-button .ota-yhteytta-btn:hover .ota-yhteytta-text,
+html body .dnd-section .ota-yhteytta-btn:hover .ota-yhteytta-text,
+html body .ota-yhteytta-btn:hover .ota-yhteytta-text,
+body .dnd-section .ota-yhteytta-btn:hover .ota-yhteytta-text,
+.dnd-section .ota-yhteytta-btn:hover .ota-yhteytta-text,
+html body .dnd-section .ota-yhteytta-button a:hover span,
+html body .dnd-section .ota-yhteytta-button a span:hover {
+  color: #009F4E !important;
+  -webkit-text-fill-color: #009F4E !important;
+  z-index: 999 !important;
+  position: relative !important;
+}
+
+/* ========== 6. Header/Navigation ========== */
+/* Keep the header visible but styled */
+.custom-header {
+  background-color: var(--gunmetal) !important;
+}
+
+/* Logo link styling */
+.custom-header__logo a {
+  display: inline-block !important;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.custom-header__logo a:hover {
+  opacity: 0.8 !important;
+}
+
+.custom-header__logo img {
+  display: block !important;
+  height: 40px !important;
+  width: auto !important;
+}
+
+/* Make sure navigation links are visible */
+.custom-header__navigation a,
+nav a {
+  color: var(--off-white) !important;
+}
+
+/* ========== 7. Hero Section Video ========== */
+/* Green translucent overlay for videos */
+.hero-section .vsc-controller + video,
+div.vsc-controller + video {
+  position: relative;
+}
+
+.hero-section .vsc-controller::after,
+div.vsc-controller::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 159, 78, 0.2);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ========== 8. Hide Blue Semicircle ========== */
+.hero-section-divider-wave-1 {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  z-index: -9999 !important;
+}
+
+/* SIMPLER WAVE DIVIDER VERSION - NO ARTIFACTS */
+.hero-section {
+  position: relative !important;
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 50px !important;
+  overflow: visible !important;
+  z-index: 1 !important;
+}
+
+/* Remove the SVG wave entirely and replace with a solid angled divider - DISABLED */
+/* .hero-section:after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -20px !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 60px !important;
+  background-color: white !important;
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%) !important;
+  -webkit-clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%) !important;
+  z-index: 9 !important;
+  pointer-events: none !important;
+} */
+
+/* Fix for source tag artifacts in video */
+source, source[src*=".mov"], source[type="video/mp4"] {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Fix additional wave artifacts in video container */
+.hero-section video::before,
+.hero-section video::after,
+video::before,
+video::after,
+.video-container::before,
+.video-container::after {
+  display: none !important;
+  content: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  background: transparent !important;
+}
+
+/* White block to prevent any gaps */
+.hero-section + * {
+  position: relative !important;
+  margin-top: -1px !important;
+  background-color: white !important;
+  z-index: 2 !important;
+}
+
+/* Fix for mobile and different screen sizes */
+@media (max-width: 768px) {
+  .hero-section:after {
+    height: 50px !important;
+  }
+}
+

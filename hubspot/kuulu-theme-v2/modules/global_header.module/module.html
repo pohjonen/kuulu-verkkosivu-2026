@@ -1,0 +1,82 @@
+<header class="global-header{% if module.sticky_header %} sticky{% endif %}{% if module.transparent_on_hero %} transparent-hero{% endif %}"
+        data-sticky="{{ module.sticky_header }}">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="/" class="header-logo">
+      {% if module.logo.src %}
+      <img src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" height="40">
+      {% else %}
+      <img src="https://www.kuulu.fi/hubfs/kuulu-logo.svg" alt="Kuulu" height="40">
+      {% endif %}
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      {% menu "default_menu" overrideable=True, root_type='site_root', flyouts='true', max_levels='2', id=module.menu_items %}
+    </nav>
+
+    <!-- CTA Button -->
+    {% if module.cta_text and module.cta_url %}
+    <a href="{{ module.cta_url }}" class="header-cta">
+      {{ module.cta_text }}
+      <span class="arrow">→</span>
+    </a>
+    {% endif %}
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Avaa valikko" aria-expanded="false">
+      <span class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    {% menu "default_menu" overrideable=True, root_type='site_root', flyouts='false', max_levels='1', id=module.menu_items %}
+
+    {% if module.cta_text and module.cta_url %}
+    <a href="{{ module.cta_url }}" class="mobile-cta">
+      {{ module.cta_text }}
+      <span class="arrow">→</span>
+    </a>
+    {% endif %}
+  </nav>
+</header>
+
+<script>
+(function() {
+  const header = document.querySelector('.global-header');
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+
+  // Mobile menu toggle
+  if (toggle && mobileNav) {
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !isOpen);
+      mobileNav.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    });
+  }
+
+  // Sticky header on scroll
+  if (header && header.dataset.sticky === 'true') {
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      lastScroll = currentScroll;
+    });
+  }
+})();
+</script>

@@ -1,0 +1,41 @@
+{
+  "module": "training-agenda-v2",
+  "module_key": "training-agenda-v2",
+  "category": "specialized",
+  "used_on": [
+    "training-landing-v2"
+  ],
+  "required_field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "required_fields": [
+    "heading",
+    "agenda_items"
+  ],
+  "optional_fields": [
+    "intro_text"
+  ],
+  "build_wave": 3,
+  "depends_on": [
+    "grouped-repeater-v2",
+    "heading-hierarchy-v2"
+  ],
+  "field_groups": [
+    "content",
+    "layout",
+    "style",
+    "advanced"
+  ],
+  "guardrails": {
+    "allowed_item_types": [
+      "day",
+      "core",
+      "track",
+      "module"
+    ],
+    "supports_free_rich_text": false
+  }
+}
