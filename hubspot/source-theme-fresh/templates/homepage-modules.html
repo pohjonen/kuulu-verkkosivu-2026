@@ -1,0 +1,144 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+  label: "Cinematic – Sivu"
+-->
+{% extends "./layouts/base-cinematic.html" %}
+
+{% block body %}
+<div class="aurora-background"></div>
+<div class="cinematic-page has-aurora-bg">
+  <div class="grain-overlay"></div>
+
+  {% include "./partials/header-cinematic.html" %}
+  <div class="header-observer-sentinel"></div>
+
+  {% dnd_area "main" label="Sivun sisältö" %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_hero.module" label="01 – Hero-osio" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module
+            path="../modules/cinematic_early_bird.module"
+            label="02 – Lomakeosio"
+            cta_image={ "src": "https://hubspot-no-cache-eu1-prod.s3.amazonaws.com/cta/default/450584/f2486522-70f4-4da2-9ccb-7e6e84a62a20.png", "alt": "Zero Click -ajan digimarkkinointi – ilmoittaudu webinaariin" }
+            cta_link_url="https://www.kuulu.fi/maksuton-zero-click-webinaari"
+            cta_button_text="Lue lisää ja ilmoittaudu"
+            cta_image_position="left"
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_problem_list.module" label="03 – Listaus (kuvake + teksti)" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_two_engines.module" label="04 – Korttipari" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_text_image.module" label="05 – Teksti + kuva" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_steps.module" label="06 – Askeleet / prosessi" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_metrics.module" label="07 – Mittarit + kuva" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_authority.module" label="08 – Tekstiosio (leveä)" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_cta_cards.module" label="09 – Kuva-CTA-kortit" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_referenssit.module" label="10 – Referenssit / caset" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+    {% dnd_section %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/cinematic_contact_cta.module" label="11 – CTA-osio" %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+
+  {% end_dnd_area %}
+
+  <style>
+    #zero-click-earlybird-form,
+    #zero-click-earlybird-form .hsfc-Form,
+    #zero-click-earlybird-form form,
+    #zero-click-earlybird-form .hs-form-frame { display: block !important; width: 100% !important; min-width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; }
+    #zero-click-earlybird-form iframe { display: block !important; width: 100% !important; min-width: 100% !important; max-width: 100% !important; }
+    #zero-click-earlybird-form .hs-form-field,
+    #zero-click-earlybird-form .input,
+    #zero-click-earlybird-form .hs-input,
+    #zero-click-earlybird-form input,
+    #zero-click-earlybird-form textarea,
+    #zero-click-earlybird-form select { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; }
+    .zero-click-form-wrap { width: 100%; max-width: 760px; }
+  </style>
+
+  {% include "./partials/footer-cinematic.html" %}
+</div>
+<script src="https://js-eu1.hsforms.net/forms/embed/450584.js" defer></script>
+{% endblock body %}

@@ -1,0 +1,392 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% set has_media = module.media_type and module.media_type != "none" %}
+{% set pos = module.media_position|default("right") %}
+{% set side_media = has_media and (pos == "left" or pos == "right") %}
+{% set form_container_id = "hs-form-" ~ module.section_id|default("ilmoittautuminen") %}
+
+{% macro render_media() %}
+  {% if module.cta_link_url %}
+  <a href="{{ module.cta_link_url }}" rel="noopener noreferrer" style="display: block; text-decoration: none; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green); cursor: pointer; position: relative; z-index: 10;">
+    {% if module.media_type == "image" and module.media_image.src %}
+      <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt }}" style="width: 100%; height: auto; display: block; pointer-events: none;">
+    {% elif module.media_type == "video_url" and module.media_video_url %}
+      <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; pointer-events: none;">
+        <source src="{{ module.media_video_url }}" type="video/mp4">
+      </video>
+    {% elif module.media_type == "video_file" and module.media_video_file %}
+      <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; pointer-events: none;">
+        <source src="{{ module.media_video_file }}" type="video/mp4">
+      </video>
+    {% endif %}
+  </a>
+  {% else %}
+  <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green);">
+    {% if module.media_type == "image" and module.media_image.src %}
+      <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt }}" style="width: 100%; height: auto; display: block;">
+    {% elif module.media_type == "video_url" and module.media_video_url %}
+      <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+        <source src="{{ module.media_video_url }}" type="video/mp4">
+      </video>
+    {% elif module.media_type == "video_file" and module.media_video_file %}
+      <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+        <source src="{{ module.media_video_file }}" type="video/mp4">
+      </video>
+    {% endif %}
+  </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro render_form_content() %}
+  <div>
+    {% if module.section_tag %}
+      <span class="section-tag">{{ module.section_tag }}</span>
+    {% endif %}
+    <h2 class="section-header">{{ module.headline }}{% if module.headline_highlight %} <span class="text-gradient-green">{{ module.headline_highlight }}</span>{% endif %}</h2>
+    {% if module.description %}
+      <p style="color: #ffffff; max-width: 760px; margin-bottom: 1.5rem; font-size: 1.05rem;">{{ module.description }}</p>
+    {% endif %}
+
+    {% set benefits = [module.benefit_1, module.benefit_2, module.benefit_3, module.benefit_4, module.benefit_5] %}
+    {% set has_benefits = false %}
+    {% for b in benefits %}{% if b %}{% set has_benefits = true %}{% endif %}{% endfor %}
+    {% if has_benefits %}
+    <ul style="list-style: none; padding: 0; margin: 0 0 2rem 0; color: #ffffff;">
+      {% for b in benefits %}
+        {% if b %}
+        <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+          <span style="color: var(--cinematic-green); font-weight: bold; flex-shrink: 0;">✓</span>
+          <span>{{ b }}</span>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div style="width: 100%; box-sizing: border-box;">
+      <div id="{{ form_container_id }}"></div>
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro render_cta_button_only() %}
+  {% if module.cta_link_url and module.cta_button_text %}
+    <div class="early-bird-cta-button-wrap" style="margin-top: 1.5rem;">
+      <a href="{{ module.cta_link_url }}" class="early-bird-cta-button" rel="noopener noreferrer">{{ module.cta_button_text }}</a>
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro render_cta_image() %}
+  <div class="early-bird-cta-image">
+    {% if module.cta_image and module.cta_image.src %}
+      {% if module.cta_link_url %}
+        <a href="{{ module.cta_link_url }}" class="early-bird-cta-link" rel="noopener noreferrer" style="display: block; cursor: pointer; position: relative; z-index: 10; pointer-events: auto; text-decoration: none;">
+          <img src="{{ module.cta_image.src }}" alt="{{ module.cta_image.alt|default('') }}" style="width: 100%; height: auto; border-radius: 12px; display: block; pointer-events: none;">
+        </a>
+      {% else %}
+        <img src="{{ module.cta_image.src }}" alt="{{ module.cta_image.alt|default('') }}" style="width: 100%; height: auto; border-radius: 12px; display: block;">
+      {% endif %}
+    {% endif %}
+    {% if module.cta_link_url and module.cta_button_text %}
+      <a href="{{ module.cta_link_url }}" class="early-bird-cta-button" rel="noopener noreferrer">{{ module.cta_button_text }}</a>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section" id="{{ module.section_id|default('ilmoittautuminen') }}">
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="cinematic-section-rounded glass-card">
+
+      {# Media yläpuolella #}
+      {% if has_media and pos == "above" %}
+        <div style="margin-bottom: 2rem;">
+          {{ render_media() }}
+        </div>
+        {{ render_form_content() }}
+
+      {# Media alapuolella #}
+      {% elif has_media and pos == "below" %}
+        {{ render_form_content() }}
+        <div style="margin-top: 2rem;">
+          {{ render_media() }}
+        </div>
+
+      {# Media vasemmalla tai oikealla #}
+      {% elif side_media %}
+        <div class="form-media-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+          {% if pos == "left" %}
+            {{ render_media() }}
+            {{ render_form_content() }}
+          {% else %}
+            {{ render_form_content() }}
+            {{ render_media() }}
+          {% endif %}
+        </div>
+
+      {# Ei mediaa — jos CTA-kuva on asetettu, näytetään vierekkäin; muuten lomake täysleveänä #}
+      {% else %}
+        {% set has_cta_img = module.cta_image and module.cta_image.src %}
+        {% if has_cta_img %}
+          {% set cta_pos = module.cta_image_position|default("left") %}
+          <div class="early-bird-main-grid">
+            {% if cta_pos == "left" %}
+              {{ render_cta_image() }}
+              {{ render_form_content() }}
+            {% else %}
+              {{ render_form_content() }}
+              {{ render_cta_image() }}
+            {% endif %}
+          </div>
+        {% else %}
+          {{ render_form_content() }}
+        {% endif %}
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ── Perusta ── */
+  #{{ form_container_id }} { width: 100%; }
+  #{{ form_container_id }} form { width: 100%; }
+  #{{ form_container_id }} .hs-form-field { margin-bottom: 1.5rem; }
+
+  /* ── Kenttäotsikot ── */
+  #{{ form_container_id }} .hs-form-field > label {
+    display: block; color: #ffffff !important;
+    font-family: var(--font-body); font-size: 0.95rem;
+    font-weight: 600; margin-bottom: 0.5rem;
+  }
+
+  /* ── Tekstikentät ── */
+  #{{ form_container_id }} .hs-input,
+  #{{ form_container_id }} input[type="text"],
+  #{{ form_container_id }} input[type="email"],
+  #{{ form_container_id }} input[type="tel"],
+  #{{ form_container_id }} textarea,
+  #{{ form_container_id }} select {
+    width: 100% !important; max-width: 100% !important; box-sizing: border-box !important;
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px;
+    padding: 0.9rem 1rem; font-size: 1rem; color: #ffffff; font-family: var(--font-body);
+    transition: border-color 0.2s;
+  }
+  #{{ form_container_id }} .hs-input:focus,
+  #{{ form_container_id }} input[type="text"]:focus,
+  #{{ form_container_id }} input[type="email"]:focus {
+    outline: none; border-color: var(--cinematic-green);
+    background: rgba(255,255,255,0.09);
+  }
+  #{{ form_container_id }} textarea {
+    min-height: 100px; resize: vertical;
+  }
+
+  /* ── Radio-buttonit ── */
+  #{{ form_container_id }} .hs-form-radio,
+  #{{ form_container_id }} .hs-form-checkbox {
+    margin-bottom: 0.6rem;
+  }
+  #{{ form_container_id }} .hs-form-radio label,
+  #{{ form_container_id }} .hs-form-checkbox label,
+  #{{ form_container_id }} .hs-form-booleancheckbox label {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 0.6rem;
+    cursor: pointer;
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  #{{ form_container_id }} .hs-form-radio input[type="radio"],
+  #{{ form_container_id }} .hs-form-checkbox input[type="checkbox"],
+  #{{ form_container_id }} .hs-form-booleancheckbox input[type="checkbox"] {
+    width: 18px !important; height: 18px !important;
+    min-width: 18px;
+    margin: 2px 0 0 0 !important;
+    accent-color: var(--cinematic-green);
+    cursor: pointer;
+  }
+  #{{ form_container_id }} .hs-form-radio label span,
+  #{{ form_container_id }} .hs-form-checkbox label span,
+  #{{ form_container_id }} .hs-form-booleancheckbox label span,
+  #{{ form_container_id }} .hs-form-radio-display span,
+  #{{ form_container_id }} .hs-form-booleancheckbox-display span,
+  #{{ form_container_id }} .hs-form-checkbox-display span { color: #ffffff !important; }
+
+  /* ── Radio/checkbox lista: poista ylimääräiset paddingt ── */
+  #{{ form_container_id }} ul.inputs-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #{{ form_container_id }} ul.inputs-list li {
+    padding: 0 !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  /* ── Rich text (lomakkeen sisäiset tekstit) ── */
+  #{{ form_container_id }} .hs-richtext,
+  #{{ form_container_id }} .hs-richtext p {
+    color: rgba(255,255,255,0.6) !important; font-size: 0.9rem; margin-bottom: 1rem;
+  }
+  #{{ form_container_id }} .hs-richtext a { color: var(--cinematic-green) !important; text-decoration: underline; }
+
+  /* ── Legal consent ── */
+  #{{ form_container_id }} .legal-consent-container,
+  #{{ form_container_id }} .legal-consent-container p {
+    color: rgba(255,255,255,0.6) !important; font-size: 0.88rem; line-height: 1.5;
+  }
+  #{{ form_container_id }} .legal-consent-container a { color: var(--cinematic-green) !important; text-decoration: underline; }
+  #{{ form_container_id }} .legal-consent-container .hs-form-booleancheckbox label {
+    align-items: flex-start !important; gap: 0.6rem;
+  }
+
+  /* ── Virheviestit ── */
+  #{{ form_container_id }} .hs-error-msgs {
+    color: #ff6b6b; font-size: 0.85rem; margin-top: 0.3rem; list-style: none; padding: 0;
+  }
+
+  /* ── Lähetä-nappi ── */
+  #{{ form_container_id }} .hs-submit .hs-button,
+  #{{ form_container_id }} input[type="submit"],
+  #{{ form_container_id }} .hs_submit .hs-button {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 1rem 2.5rem; font-family: var(--font-display); font-size: 1.1rem;
+    letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700;
+    color: #0a0a0a !important; background: linear-gradient(135deg, #00ff87, #00e676) !important;
+    border: none !important; border-radius: 50px !important; cursor: pointer;
+    transition: all 0.3s ease; box-shadow: 0 0 30px rgba(0, 255, 135, 0.3);
+    margin-top: 1.5rem; width: auto;
+  }
+  #{{ form_container_id }} .hs-submit .hs-button:hover,
+  #{{ form_container_id }} input[type="submit"]:hover {
+    transform: translateY(-3px); box-shadow: 0 0 50px rgba(0, 255, 135, 0.5);
+  }
+
+  /* CTA-kuva + formi vierekkäin */
+  .early-bird-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .early-bird-cta-image {
+    position: sticky;
+    top: 2rem;
+  }
+  .early-bird-cta-image .early-bird-cta-link {
+    display: block !important;
+    cursor: pointer !important;
+    position: relative !important;
+    z-index: 10 !important;
+    pointer-events: auto !important;
+  }
+  .early-bird-cta-image .early-bird-cta-link img {
+    pointer-events: none;
+  }
+  .early-bird-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #0a0a0a;
+    background: linear-gradient(135deg, #00ff87, #00e676);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 30px rgba(0, 255, 135, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  .early-bird-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 50px rgba(0, 255, 135, 0.5);
+    color: #0a0a0a;
+  }
+
+  @media (max-width: 768px) {
+    .form-media-grid { grid-template-columns: 1fr !important; }
+    .early-bird-main-grid { grid-template-columns: 1fr !important; gap: 2rem; }
+    .early-bird-cta-image { position: static; }
+  }
+</style>
+
+<script>
+(function() {
+  var portalId = "{{ module.portal_id }}";
+  var formId = "{{ module.form_id }}";
+  var targetId = "{{ form_container_id }}";
+
+  if (!formId || formId === "") {
+    var target = document.getElementById(targetId);
+    if (target) {
+      target.innerHTML = '<p style="color: rgba(255,255,255,0.5); font-style: italic; padding: 2rem; text-align: center; border: 1px dashed rgba(255,255,255,0.2); border-radius: 12px;">⚠️ Lomake ID puuttuu. Aseta se moduulin asetuksissa (HubSpot → Marketing → Forms → valitse lomake → Form ID).</p>';
+    }
+    return;
+  }
+
+  var formCreated = false;
+  var attempts = 0;
+
+  function createForm() {
+    if (formCreated) return;
+    var target = document.getElementById(targetId);
+    if (target && !target.querySelector("form")) {
+      formCreated = true;
+      hbspt.forms.create({
+        region: "eu1",
+        portalId: portalId,
+        formId: formId,
+        target: "#" + targetId,
+        css: "",
+        cssClass: "hs-form stacked hs-custom-form",
+        contentType: "landing-page",
+        formsBaseUrl: "/_hcms/forms/",
+        formData: { cssClass: "hs-form stacked hs-custom-form" }
+      });
+    }
+  }
+
+  function initForm() {
+    attempts++;
+    if (typeof hbspt !== "undefined" && hbspt.forms && hbspt.forms.create) {
+      createForm();
+    } else if (attempts < 50) {
+      setTimeout(initForm, 200);
+    }
+  }
+
+  function start() {
+    // Yritetään heti
+    initForm();
+    // Lisäksi kuunnellaan HubSpot cookie consent -callbackia
+    // jos auto-blocking.js estää skriptin, se vapautetaan consentin jälkeen
+    var _hsp = window._hsp = window._hsp || [];
+    _hsp.push(['addPrivacyConsentListener', function(consent) {
+      if (!formCreated) {
+        attempts = 0;
+        initForm();
+      }
+    }]);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
+</script>

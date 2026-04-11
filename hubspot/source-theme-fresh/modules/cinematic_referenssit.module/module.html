@@ -1,0 +1,85 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media() %}
+  {% set mt = module.media_type|default("none") %}
+  {% if mt == "image" and module.media_image and module.media_image.src %}
+    <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt|default('') }}" style="width: 100%; height: auto; display: block; border-radius: 16px;">
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("none") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+
+<style>
+.refs-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+@media (max-width: 768px) { .refs-media-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="cinematic-section" id="portfolio">
+  <div class="container-cinematic">
+    <div class="cinematic-section-rounded">
+      {% if has_media %}
+      <div class="refs-media-grid">
+        {% if mp == "left" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+        <div>
+      {% endif %}
+
+      <span class="section-tag">{{ module.section_tag }}</span>
+      <h2 class="section-header">{{ module.headline }} <span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+      <div class="case-grid" style="margin-top: 3rem;">
+        <div class="case-card">
+          <div class="case-image">
+            {% if module.case_1_image and module.case_1_image.src %}
+            <img src="{{ module.case_1_image.src }}" alt="{{ module.case_1_image.alt|default(module.case_1_title) }}">
+            {% else %}
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="{{ module.case_1_title }}">
+            {% endif %}
+          </div>
+          <div class="case-content">
+            {% if module.case_1_badge %}<span class="case-badge">{{ module.case_1_badge }}</span>{% endif %}
+            <h3 class="case-title">{{ module.case_1_title }}</h3>
+            <p class="case-description">{{ module.case_1_description }}</p>
+            {% if module.case_1_link_url %}
+            <a href="{{ module.case_1_link_url }}" style="color: var(--cinematic-green); text-decoration: none; font-weight: 500;">{{ module.case_1_link_text|default('Lue lisää') }} <i class="fas fa-arrow-right"></i></a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-image">
+            {% if module.case_2_image and module.case_2_image.src %}
+            <img src="{{ module.case_2_image.src }}" alt="{{ module.case_2_image.alt|default(module.case_2_title) }}">
+            {% else %}
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop" alt="{{ module.case_2_title }}">
+            {% endif %}
+          </div>
+          <div class="case-content">
+            {% if module.case_2_badge %}<span class="case-badge">{{ module.case_2_badge }}</span>{% endif %}
+            <h3 class="case-title">{{ module.case_2_title }}</h3>
+            <p class="case-description">{{ module.case_2_description }}</p>
+            {% if module.case_2_link_url %}
+            <a href="{{ module.case_2_link_url }}" style="color: var(--cinematic-green); text-decoration: none; font-weight: 500;">{{ module.case_2_link_text|default('Lue lisää') }} <i class="fas fa-arrow-right"></i></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% if module.cta_text and module.cta_url %}
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="{{ module.cta_url }}" class="btn-cinematic-primary">{{ module.cta_text }}</a>
+      </div>
+      {% endif %}
+
+      {% if has_media %}
+        </div>
+        {% if mp == "right" %}<div style="border-radius: 16px; overflow: hidden;">{{ render_media() }}</div>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

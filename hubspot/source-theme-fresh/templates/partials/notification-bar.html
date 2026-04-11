@@ -1,0 +1,54 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Notification Bar - Alert/Promo"
+-->
+{#
+  Ilmoituspalkki / promobanneri -partiaali
+
+  Käyttö:
+    {% set notif_text = 'Uusi koulutus: Tekoälyn Mestarikurssi alkaa maaliskuussa!' %}
+    {% set notif_url = '/koulutus/tekoalyn-mestarikurssi' %}
+    {% set notif_btn_text = 'Ilmoittaudu' %}
+    {% set notif_style = 'green' %}
+    {% set notif_dismissable = true %}
+    {% include './partials/notification-bar.html' %}
+
+    Tyylit: 'green' (vihreä CTA), 'dark' (tumma neutraali), 'gradient' (gradient-tausta)
+#}
+
+{% set n_text = notif_text|default('Tervetuloa Kuulun sivuille!') %}
+{% set n_url = notif_url|default('') %}
+{% set n_btn = notif_btn_text|default('') %}
+{% set n_style = notif_style|default('green') %}
+{% set n_dismiss = notif_dismissable|default(false) %}
+
+{% if n_style == 'green' %}
+  {% set bg_css = 'background: linear-gradient(135deg, rgba(0, 255, 135, 0.15) 0%, rgba(0, 255, 135, 0.05) 100%); border-bottom: 1px solid rgba(0, 255, 135, 0.2);' %}
+{% elif n_style == 'gradient' %}
+  {% set bg_css = 'background: linear-gradient(135deg, rgba(0, 255, 135, 0.1) 0%, rgba(0, 128, 255, 0.1) 100%); border-bottom: 1px solid rgba(255,255,255,0.08);' %}
+{% else %}
+  {% set bg_css = 'background: rgba(20, 20, 20, 0.95); border-bottom: 1px solid rgba(255,255,255,0.08);' %}
+{% endif %}
+
+<div class="notification-bar" style="{{ bg_css }} padding: 0.65rem 2rem; display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 100;">
+  <p style="color: var(--cinematic-text); font-size: 0.85rem; font-weight: 500; margin: 0; text-align: center;">
+    {{ n_text }}
+  </p>
+
+  {% if n_btn and n_url %}
+  <a href="{{ n_url }}" style="display: inline-flex; align-items: center; gap: 0.35rem; background: var(--cinematic-green); color: #0a0a0a; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.3rem 0.85rem; border-radius: 100px; text-decoration: none; transition: all 0.3s; white-space: nowrap;">
+    {{ n_btn }} <i class="fas fa-arrow-right" style="font-size: 0.65rem;"></i>
+  </a>
+  {% elif n_url %}
+  <a href="{{ n_url }}" style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600; text-decoration: none; white-space: nowrap;">
+    Lue lis&auml;&auml; &rarr;
+  </a>
+  {% endif %}
+
+  {% if n_dismiss %}
+  <button onclick="this.closest('.notification-bar').style.display='none'" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--cinematic-text-muted); font-size: 1rem; cursor: pointer; padding: 0.25rem; line-height: 1;" aria-label="Sulje ilmoitus">
+    &times;
+  </button>
+  {% endif %}
+</div>

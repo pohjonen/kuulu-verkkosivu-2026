@@ -1,0 +1,145 @@
+<section class="cinematic-testimonial-slider">
+  <div class="container">
+    {% if module.section_title %}
+      <div class="slider-header">
+        <h2 class="section-title">{{ module.section_title }}</h2>
+        {% if module.section_subtitle %}
+          <p class="section-subtitle">{{ module.section_subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="testimonial-slider-wrapper">
+      <div class="testimonial-track" data-autoplay="{{ module.autoplay }}" data-speed="{{ module.autoplay_speed }}">
+        {% set testimonial_list = module.testimonials if module.testimonials and module.testimonials|length > 0 else [{"quote":"<p>Kuulu on auttanut meitä saavuttamaan selkeitä tuloksia – asiantuntemus ja yhteistyö ovat olleet erinomaiset.</p>","author_name":"Esimerkkiasiakas","author_title":"Toimitusjohtaja","company_name":"Esimerkki Oy"}] %}
+        {% for item in testimonial_list %}
+          <div class="testimonial-slide {% if loop.first %}active{% endif %}">
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <path d="M12 28C12 24.6863 14.6863 22 18 22V18C12.4772 18 8 22.4772 8 28V36C8 37.1046 8.89543 38 10 38H18C19.1046 38 20 37.1046 20 36V28C20 26.8954 19.1046 26 18 26H12ZM32 28C32 24.6863 34.6863 22 38 22V18C32.4772 18 28 22.4772 28 28V36C28 37.1046 28.8954 38 30 38H38C39.1046 38 40 37.1046 40 36V28C40 26.8954 39.1046 26 38 26H32Z" fill="currentColor"/>
+                </svg>
+              </div>
+              
+              <div class="testimonial-content">
+                {{ item.quote }}
+              </div>
+
+              <div class="testimonial-footer">
+                <div class="author-info">
+                  {% if item.profile_image.src %}
+                    <div class="profile-image">
+                      <img src="{{ item.profile_image.src }}" alt="{{ item.profile_image.alt }}" loading="lazy">
+                    </div>
+                  {% endif %}
+                  
+                  <div class="author-text">
+                    <div class="author-name">{{ item.author_name }}</div>
+                    {% if item.author_title %}
+                      <div class="author-title">{{ item.author_title }}</div>
+                    {% endif %}
+                    {% if item.company_name %}
+                      <div class="company-name">{{ item.company_name }}</div>
+                    {% endif %}
+                  </div>
+                </div>
+
+                {% if item.company_logo.src %}
+                  <div class="company-logo">
+                    <img src="{{ item.company_logo.src }}" alt="{{ item.company_logo.alt }}" loading="lazy">
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if testimonial_list|length > 1 %}
+        <div class="slider-controls">
+          <button class="slider-arrow prev" aria-label="Edellinen testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          
+          <div class="slider-dots">
+            {% for item in testimonial_list %}
+              <button class="dot {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}" aria-label="Siirry testimoniaaliin {{ loop.index }}"></button>
+            {% endfor %}
+          </div>
+          
+          <button class="slider-arrow next" aria-label="Seuraava testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const sliders = document.querySelectorAll('.cinematic-testimonial-slider');
+  
+  sliders.forEach(slider => {
+    const track = slider.querySelector('.testimonial-track');
+    const slides = slider.querySelectorAll('.testimonial-slide');
+    const dots = slider.querySelectorAll('.dot');
+    const prevBtn = slider.querySelector('.slider-arrow.prev');
+    const nextBtn = slider.querySelector('.slider-arrow.next');
+    
+    // Ei käynnistetä jos ei ole dioja
+    if (!track || slides.length === 0) return;
+    
+    let currentIndex = 0;
+    let autoplayInterval;
+    const autoplay = track.dataset.autoplay === 'true';
+    const speed = parseInt(track.dataset.speed) || 5000;
+    
+    function goToSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      currentIndex = (index + slides.length) % slides.length;
+      slides[currentIndex].classList.add('active');
+      dots[currentIndex].classList.add('active');
+      
+      resetAutoplay();
+    }
+    
+    function nextSlide() {
+      goToSlide(currentIndex + 1);
+    }
+    
+    function prevSlide() {
+      goToSlide(currentIndex - 1);
+    }
+    
+    function resetAutoplay() {
+      if (autoplay) {
+        clearInterval(autoplayInterval);
+        autoplayInterval = setInterval(nextSlide, speed);
+      }
+    }
+    
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goToSlide(parseInt(dot.dataset.index));
+      });
+    });
+    
+    if (autoplay) {
+      autoplayInterval = setInterval(nextSlide, speed);
+      
+      slider.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+      slider.addEventListener('mouseleave', resetAutoplay);
+    }
+  });
+})();
+</script>

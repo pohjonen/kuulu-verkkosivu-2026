@@ -1,0 +1,95 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Pricing Section - Tiers"
+-->
+{#
+  Hinnoittelu -partiaali
+
+  Käyttö:
+    {% include './partials/pricing-section.html' with {
+      pricing_tag: '// Hinnoittelu',
+      pricing_title: 'Koulutuksen <span class="text-gradient-green">hinta</span>',
+      pricing_description: 'Hinta määräytyy osallistujamäärän mukaan.',
+      price_1_title: '1 henkilö',
+      price_1_amount: '950 &euro;',
+      price_1_unit: '',
+      price_2_title: '2–5 henkilöä',
+      price_2_amount: '750 &euro;',
+      price_2_unit: '/ henkilö',
+      price_3_title: '6+ henkilöä',
+      price_3_amount: '500 &euro;',
+      price_3_unit: '/ henkilö',
+      pricing_footer: 'Hintoihin lisätään arvonlisävero 25,5 %.'
+    } %}
+#}
+
+{% set active_tag = pricing_tag|default('// Hinnoittelu') %}
+{% set active_title = pricing_title|default('Palvelun <span class="text-gradient-green">hinnoittelu</span>') %}
+{% set active_desc = pricing_description|default('') %}
+
+{% set p1_t = price_1_title|default('') %}
+{% set p1_a = price_1_amount|default('') %}
+{% set p1_u = price_1_unit|default('') %}
+{% set p1_h = price_1_highlight|default(false) %}
+{% set p2_t = price_2_title|default('') %}
+{% set p2_a = price_2_amount|default('') %}
+{% set p2_u = price_2_unit|default('') %}
+{% set p2_h = price_2_highlight|default(false) %}
+{% set p3_t = price_3_title|default('') %}
+{% set p3_a = price_3_amount|default('') %}
+{% set p3_u = price_3_unit|default('') %}
+{% set p3_h = price_3_highlight|default(false) %}
+{% set p4_t = price_4_title|default('') %}
+{% set p4_a = price_4_amount|default('') %}
+{% set p4_u = price_4_unit|default('') %}
+{% set footer_note = pricing_footer|default('') %}
+
+<section class="cinematic-section section-with-blobs gradient-section-dark grain-section">
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <span class="section-tag">{{ active_tag }}</span>
+    <h2 class="section-header">{{ active_title }}</h2>
+    {% if active_desc %}
+    <p style="color: var(--cinematic-text-muted); max-width: 600px; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.7;">{{ active_desc }}</p>
+    {% endif %}
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 900px;">
+      {% if p1_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;{% if p1_h %} border: 1px solid rgba(0, 255, 135, 0.3);{% endif %}">
+        {% if p1_h %}<span style="display: inline-block; background: rgba(0, 255, 135, 0.1); color: var(--cinematic-green); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.75rem; border-radius: 100px; margin-bottom: 0.75rem;">Suosituin</span>{% endif %}
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.5rem;">{{ p1_t }}</h3>
+        <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">{{ p1_a }}</span>
+        {% if p1_u %}<p style="color: var(--cinematic-text-muted); font-size: 0.85rem;">{{ p1_u }}</p>{% endif %}
+      </div>
+      {% endif %}
+      {% if p2_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;{% if p2_h %} border: 1px solid rgba(0, 255, 135, 0.3);{% endif %}">
+        {% if p2_h %}<span style="display: inline-block; background: rgba(0, 255, 135, 0.1); color: var(--cinematic-green); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.75rem; border-radius: 100px; margin-bottom: 0.75rem;">Suosituin</span>{% endif %}
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.5rem;">{{ p2_t }}</h3>
+        <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">{{ p2_a }}</span>
+        {% if p2_u %}<p style="color: var(--cinematic-text-muted); font-size: 0.85rem;">{{ p2_u }}</p>{% endif %}
+      </div>
+      {% endif %}
+      {% if p3_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;{% if p3_h %} border: 1px solid rgba(0, 255, 135, 0.3);{% endif %}">
+        {% if p3_h %}<span style="display: inline-block; background: rgba(0, 255, 135, 0.1); color: var(--cinematic-green); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.25rem 0.75rem; border-radius: 100px; margin-bottom: 0.75rem;">Suosituin</span>{% endif %}
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.5rem;">{{ p3_t }}</h3>
+        <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">{{ p3_a }}</span>
+        {% if p3_u %}<p style="color: var(--cinematic-text-muted); font-size: 0.85rem;">{{ p3_u }}</p>{% endif %}
+      </div>
+      {% endif %}
+      {% if p4_t %}
+      <div class="hero-glass-box" style="padding: 2rem; text-align: center;">
+        <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1.1rem; margin-bottom: 0.5rem;">{{ p4_t }}</h3>
+        <span style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display);" class="text-gradient-green">{{ p4_a }}</span>
+        {% if p4_u %}<p style="color: var(--cinematic-text-muted); font-size: 0.85rem;">{{ p4_u }}</p>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+    {% if footer_note %}
+    <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; margin-top: 1rem;">{{ footer_note }}</p>
+    {% endif %}
+  </div>
+</section>

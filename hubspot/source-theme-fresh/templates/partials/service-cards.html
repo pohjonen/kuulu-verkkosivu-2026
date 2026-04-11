@@ -1,0 +1,167 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Service Cards Grid"
+-->
+{#
+  Palvelukortti-grid -partiaali (ilman bokseja)
+
+  Kaytto:
+    {% set cards_tag = '// Palvelut' %}
+    {% set card_1_icon = 'fas fa-bullhorn' %}
+    {% set card_1_title = 'Brandays' %}
+    {% set card_1_text = 'Kuvaus...' %}
+    {% set card_1_url = '/palvelut/brandays' %}
+    {% include './partials/service-cards.html' %}
+#}
+
+{% set active_tag = cards_tag|default('// Palvelut') %}
+{% set active_title = cards_title|default('Mita <span class="text-gradient-green">tarjoamme</span>') %}
+{% set active_desc = cards_description|default('') %}
+{% set dark_bg = cards_dark_bg|default(false) %}
+
+{% set c1_icon = card_1_icon|default('') %}
+{% set c1_title = card_1_title|default('') %}
+{% set c1_text = card_1_text|default('') %}
+{% set c1_url = card_1_url|default('') %}
+{% set c2_icon = card_2_icon|default('') %}
+{% set c2_title = card_2_title|default('') %}
+{% set c2_text = card_2_text|default('') %}
+{% set c2_url = card_2_url|default('') %}
+{% set c3_icon = card_3_icon|default('') %}
+{% set c3_title = card_3_title|default('') %}
+{% set c3_text = card_3_text|default('') %}
+{% set c3_url = card_3_url|default('') %}
+{% set c4_icon = card_4_icon|default('') %}
+{% set c4_title = card_4_title|default('') %}
+{% set c4_text = card_4_text|default('') %}
+{% set c4_url = card_4_url|default('') %}
+{% set c5_icon = card_5_icon|default('') %}
+{% set c5_title = card_5_title|default('') %}
+{% set c5_text = card_5_text|default('') %}
+{% set c5_url = card_5_url|default('') %}
+{% set c6_icon = card_6_icon|default('') %}
+{% set c6_title = card_6_title|default('') %}
+{% set c6_text = card_6_text|default('') %}
+{% set c6_url = card_6_url|default('') %}
+
+{% macro sc_card(icon, title, text, url) %}
+{% if title %}
+<div class="sc-card">
+  {% if icon %}
+  <div class="sc-icon">
+    <i class="{{ icon }}"></i>
+  </div>
+  {% endif %}
+  <h3 class="sc-title">{{ title }}</h3>
+  {% if text %}<p class="sc-text">{{ text }}</p>{% endif %}
+  {% if url %}<a href="{{ url }}" class="sc-link">Lue lisaa &#8594;</a>{% endif %}
+</div>
+{% endif %}
+{% endmacro %}
+
+<section class="cinematic-section{% if dark_bg %} section-with-blobs gradient-section-dark grain-section{% endif %}">
+  {% if dark_bg %}
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  {% endif %}
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <span class="section-tag">{{ active_tag }}</span>
+    <h2 class="section-header">{{ active_title }}</h2>
+    {% if active_desc %}
+    <p style="color: var(--cinematic-text-muted); max-width: 700px; margin-bottom: 3rem; font-size: 1.05rem; line-height: 1.7;">{{ active_desc }}</p>
+    {% endif %}
+
+    <div class="sc-grid">
+      {{ sc_card(c1_icon, c1_title, c1_text, c1_url) }}
+      {{ sc_card(c2_icon, c2_title, c2_text, c2_url) }}
+      {{ sc_card(c3_icon, c3_title, c3_text, c3_url) }}
+      {{ sc_card(c4_icon, c4_title, c4_text, c4_url) }}
+      {{ sc_card(c5_icon, c5_title, c5_text, c5_url) }}
+      {{ sc_card(c6_icon, c6_title, c6_text, c6_url) }}
+    </div>
+  </div>
+</section>
+
+<style>
+.sc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem 1.5rem;
+}
+.sc-card,
+.cinematic-page .sc-card,
+.cinematic-page .body-container .sc-card,
+.cinematic-page .cinematic-dnd-content .sc-card {
+  background: rgba(255,255,255,0.03) !important;
+  background-color: rgba(255,255,255,0.03) !important;
+  background-image: none !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 2rem !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: border-color 0.3s, background 0.3s !important;
+}
+.sc-card::before, .sc-card::after {
+  content: none !important;
+  display: none !important;
+}
+.sc-card:hover,
+.cinematic-page .sc-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: rgba(255,255,255,0.04) !important;
+  border-color: rgba(0,255,135,0.15) !important;
+}
+.sc-icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  background: rgba(0, 255, 135, 0.08);
+  border: 1px solid rgba(0, 255, 135, 0.15);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.25rem;
+}
+.sc-icon i {
+  font-size: 1.2rem; color: var(--cinematic-green);
+}
+.sc-title {
+  font-family: var(--font-display);
+  color: var(--cinematic-text);
+  font-size: 1.1rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.03em;
+  margin: 0 0 0.6rem;
+}
+.sc-text {
+  color: var(--cinematic-text-muted);
+  font-size: 0.9rem; line-height: 1.65;
+  margin: 0 0 1rem;
+}
+.sc-link {
+  color: var(--cinematic-green) !important;
+  -webkit-text-fill-color: var(--cinematic-green) !important;
+  font-family: var(--font-display);
+  font-size: 0.85rem; font-weight: 700;
+  text-decoration: none !important;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s;
+  margin-top: auto;
+}
+.sc-link:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+.sc-link::after, .sc-link::before {
+  content: none !important; display: none !important;
+}
+@media (max-width: 640px) {
+  .sc-grid { gap: 1.5rem 1rem; }
+  .sc-card,
+  .cinematic-page .sc-card { padding: 1.5rem !important; border-radius: 16px !important; }
+  .sc-title { font-size: 1rem; }
+  .sc-text { font-size: 0.85rem; }
+}
+</style>

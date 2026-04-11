@@ -1,0 +1,181 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Media Gallery - Images & Videos"
+-->
+{# Media Gallery - tukee 12 mediaitemia (kuva tai video), lightbox, masonry/grid layout #}
+
+{% set mg_tag = gallery_tag|default('// Galleria') %}
+{% set mg_title = gallery_title|default('') %}
+{% set mg_desc = gallery_description|default('') %}
+{% set mg_cols = gallery_columns|default(3) %}
+{% set mg_layout = gallery_layout|default('grid') %}
+{% set mg_dark = gallery_dark_bg|default(false) %}
+
+{% set m1_src = media_1_src|default('') %}
+{% set m1_thumb = media_1_thumb|default('') %}
+{% set m1_type = media_1_type|default('image') %}
+{% set m1_cap = media_1_caption|default('') %}
+{% set m2_src = media_2_src|default('') %}
+{% set m2_thumb = media_2_thumb|default('') %}
+{% set m2_type = media_2_type|default('image') %}
+{% set m2_cap = media_2_caption|default('') %}
+{% set m3_src = media_3_src|default('') %}
+{% set m3_thumb = media_3_thumb|default('') %}
+{% set m3_type = media_3_type|default('image') %}
+{% set m3_cap = media_3_caption|default('') %}
+{% set m4_src = media_4_src|default('') %}
+{% set m4_thumb = media_4_thumb|default('') %}
+{% set m4_type = media_4_type|default('image') %}
+{% set m4_cap = media_4_caption|default('') %}
+{% set m5_src = media_5_src|default('') %}
+{% set m5_thumb = media_5_thumb|default('') %}
+{% set m5_type = media_5_type|default('image') %}
+{% set m5_cap = media_5_caption|default('') %}
+{% set m6_src = media_6_src|default('') %}
+{% set m6_thumb = media_6_thumb|default('') %}
+{% set m6_type = media_6_type|default('image') %}
+{% set m6_cap = media_6_caption|default('') %}
+{% set m7_src = media_7_src|default('') %}
+{% set m7_type = media_7_type|default('image') %}
+{% set m7_cap = media_7_caption|default('') %}
+{% set m8_src = media_8_src|default('') %}
+{% set m8_type = media_8_type|default('image') %}
+{% set m8_cap = media_8_caption|default('') %}
+
+<section class="cinematic-section{% if mg_dark %} section-with-blobs gradient-section-dark grain-section{% endif %}">
+  {% if mg_dark %}
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  {% endif %}
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    {% if mg_tag %}<span class="section-tag">{{ mg_tag }}</span>{% endif %}
+    {% if mg_title %}<h2 class="section-header">{{ mg_title }}</h2>{% endif %}
+    {% if mg_desc %}<p style="color: var(--cinematic-text-muted); max-width: 700px; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.7;">{{ mg_desc }}</p>{% endif %}
+
+    <div class="mg-grid {% if mg_layout == 'masonry' %}mg-masonry{% endif %}" style="display: grid; grid-template-columns: repeat({{ mg_cols }}, 1fr); gap: 1rem;">
+
+      {% if m1_src %}
+      <div class="mg-item" onclick="openLightbox('{{ m1_src }}', '{{ m1_type }}', '{{ m1_cap }}')">
+        <img src="{{ m1_thumb|default(m1_src) }}" alt="{{ m1_cap }}" loading="lazy">
+        {% if m1_type == 'video' %}<div class="mg-play-btn"></div>{% endif %}
+        {% if m1_cap %}<div class="mg-caption">{{ m1_cap }}</div>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if m2_src %}
+      <div class="mg-item" onclick="openLightbox('{{ m2_src }}', '{{ m2_type }}', '{{ m2_cap }}')">
+        <img src="{{ m2_thumb|default(m2_src) }}" alt="{{ m2_cap }}" loading="lazy">
+        {% if m2_type == 'video' %}<div class="mg-play-btn"></div>{% endif %}
+        {% if m2_cap %}<div class="mg-caption">{{ m2_cap }}</div>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if m3_src %}
+      <div class="mg-item" onclick="openLightbox('{{ m3_src }}', '{{ m3_type }}', '{{ m3_cap }}')">
+        <img src="{{ m3_thumb|default(m3_src) }}" alt="{{ m3_cap }}" loading="lazy">
+        {% if m3_type == 'video' %}<div class="mg-play-btn"></div>{% endif %}
+        {% if m3_cap %}<div class="mg-caption">{{ m3_cap }}</div>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if m4_src %}
+      <div class="mg-item" onclick="openLightbox('{{ m4_src }}', '{{ m4_type }}', '{{ m4_cap }}')">
+        <img src="{{ m4_thumb|default(m4_src) }}" alt="{{ m4_cap }}" loading="lazy">
+        {% if m4_type == 'video' %}<div class="mg-play-btn"></div>{% endif %}
+        {% if m4_cap %}<div class="mg-caption">{{ m4_cap }}</div>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if m5_src %}
+      <div class="mg-item" onclick="openLightbox('{{ m5_src }}', '{{ m5_type }}', '{{ m5_cap }}')">
+        <img src="{{ m5_thumb|default(m5_src) }}" alt="{{ m5_cap }}" loading="lazy">
+        {% if m5_type == 'video' %}<div class="mg-play-btn"></div>{% endif %}
+        {% if m5_cap %}<div class="mg-caption">{{ m5_cap }}</div>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if m6_src %}
+      <div class="mg-item" onclick="openLightbox('{{ m6_src }}', '{{ m6_type }}', '{{ m6_cap }}')">
+        <img src="{{ m6_thumb|default(m6_src) }}" alt="{{ m6_cap }}" loading="lazy">
+        {% if m6_type == 'video' %}<div class="mg-play-btn"></div>{% endif %}
+        {% if m6_cap %}<div class="mg-caption">{{ m6_cap }}</div>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if m7_src %}
+      <div class="mg-item" onclick="openLightbox('{{ m7_src }}', '{{ m7_type }}', '{{ m7_cap }}')">
+        <img src="{{ m7_src }}" alt="{{ m7_cap }}" loading="lazy">
+        {% if m7_type == 'video' %}<div class="mg-play-btn"></div>{% endif %}
+        {% if m7_cap %}<div class="mg-caption">{{ m7_cap }}</div>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if m8_src %}
+      <div class="mg-item" onclick="openLightbox('{{ m8_src }}', '{{ m8_type }}', '{{ m8_cap }}')">
+        <img src="{{ m8_src }}" alt="{{ m8_cap }}" loading="lazy">
+        {% if m8_type == 'video' %}<div class="mg-play-btn"></div>{% endif %}
+        {% if m8_cap %}<div class="mg-caption">{{ m8_cap }}</div>{% endif %}
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox overlay -->
+<div id="mgLightbox" class="mg-lightbox" onclick="closeLightbox(event)">
+  <button class="mg-lb-close" onclick="closeLightbox(event)" aria-label="Sulje">&times;</button>
+  <div class="mg-lb-content" id="mgLbContent"></div>
+  <p class="mg-lb-caption" id="mgLbCaption"></p>
+</div>
+
+<style>
+.mg-item { position: relative; border-radius: 12px; overflow: hidden; cursor: pointer; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); }
+.mg-item img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3; display: block; transition: transform 0.4s ease; }
+.mg-masonry .mg-item:nth-child(1) { grid-row: span 2; }
+.mg-masonry .mg-item:nth-child(1) img { aspect-ratio: auto; height: 100%; }
+.mg-item:hover img { transform: scale(1.04); }
+.mg-play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 56px; height: 56px; background: rgba(0,0,0,0.5); backdrop-filter: blur(6px); border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); z-index: 3; }
+.mg-play-btn::after { content: ''; position: absolute; top: 50%; left: 54%; transform: translate(-50%,-50%); width: 0; height: 0; border-style: solid; border-width: 9px 0 9px 16px; border-color: transparent transparent transparent var(--cinematic-green); }
+.mg-item:hover .mg-play-btn { background: var(--cinematic-green); border-color: var(--cinematic-green); }
+.mg-item:hover .mg-play-btn::after { border-color: transparent transparent transparent #0a0a0a; }
+.mg-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); color: var(--cinematic-text); font-size: 0.85rem; font-weight: 500; opacity: 0; transition: opacity 0.3s; }
+.mg-item:hover .mg-caption { opacity: 1; }
+
+.mg-lightbox { display: none; position: fixed; inset: 0; z-index: 10000; background: rgba(0,5,3,0.95); backdrop-filter: blur(20px); align-items: center; justify-content: center; flex-direction: column; padding: 2rem; }
+.mg-lightbox.active { display: flex; }
+.mg-lb-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: var(--cinematic-text); font-size: 2.5rem; cursor: pointer; z-index: 10001; line-height: 1; padding: 0.5rem; }
+.mg-lb-content { max-width: 90vw; max-height: 80vh; display: flex; align-items: center; justify-content: center; }
+.mg-lb-content img { max-width: 100%; max-height: 80vh; border-radius: 12px; }
+.mg-lb-content iframe { width: 80vw; height: 45vw; max-height: 80vh; border: none; border-radius: 12px; }
+.mg-lb-caption { color: var(--cinematic-text-muted); margin-top: 1rem; font-size: 0.9rem; text-align: center; }
+
+@media (max-width: 1024px) { .mg-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+@media (max-width: 640px) { .mg-grid { grid-template-columns: 1fr !important; } }
+</style>
+
+<script>
+function openLightbox(src, type, caption) {
+  var lb = document.getElementById('mgLightbox');
+  var content = document.getElementById('mgLbContent');
+  var cap = document.getElementById('mgLbCaption');
+  if (type === 'video') {
+    content.innerHTML = '<iframe src="' + src + '?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+  } else {
+    content.innerHTML = '<img src="' + src + '" alt="' + (caption || '') + '">';
+  }
+  cap.textContent = caption || '';
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(e) {
+  if (e.target === document.getElementById('mgLightbox') || e.target.classList.contains('mg-lb-close')) {
+    var lb = document.getElementById('mgLightbox');
+    lb.classList.remove('active');
+    document.getElementById('mgLbContent').innerHTML = '';
+    document.body.style.overflow = '';
+  }
+}
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { closeLightbox({target: document.getElementById('mgLightbox')}); } });
+</script>

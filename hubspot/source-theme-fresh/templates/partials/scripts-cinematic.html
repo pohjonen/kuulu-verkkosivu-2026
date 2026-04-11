@@ -1,0 +1,125 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Cinematic Scripts - Mobile Menu + Cursor Glow + Form Embed"
+-->
+
+<!-- Mobile Menu Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var mobileToggle = document.getElementById('mobile-menu-toggle');
+    var mobilePanel = document.getElementById('mobile-nav-panel');
+    
+    if (mobileToggle && mobilePanel) {
+      mobileToggle.addEventListener('click', function() {
+        var isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+        mobileToggle.setAttribute('aria-expanded', !isExpanded);
+        mobilePanel.hidden = isExpanded;
+        mobilePanel.style.maxHeight = isExpanded ? '0px' : '500px';
+      });
+    }
+  });
+</script>
+
+<!-- HubSpot Forms Embed (global) -->
+<script src="https://js-eu1.hsforms.net/forms/embed/450584.js" defer></script>
+
+<!-- Interactive Cursor Glow + Ambient Scroll Particles -->
+<canvas id="cursor-glow-canvas"></canvas>
+<script>
+(function() {
+  'use strict';
+  var canvas = document.getElementById('cursor-glow-canvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var mouse = { x: -500, y: -500 };
+  var smoothMouse = { x: -500, y: -500 };
+  var scrollY = 0;
+  var prevScrollY = 0;
+  var scrollSpeed = 0;
+  var raf;
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  
+  function resize() {
+    canvas.width = window.innerWidth * dpr;
+    canvas.height = window.innerHeight * dpr;
+    canvas.style.width = window.innerWidth + 'px';
+    canvas.style.height = window.innerHeight + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize();
+  window.addEventListener('resize', resize);
+  document.addEventListener('mousemove', function(e) { mouse.x = e.clientX; mouse.y = e.clientY; });
+  document.addEventListener('mouseleave', function() { mouse.x = -500; mouse.y = -500; });
+  window.addEventListener('scroll', function() { scrollY = window.pageYOffset || document.documentElement.scrollTop; });
+  
+  var particles = [];
+  var particleCount = 6;
+  for (var i = 0; i < particleCount; i++) {
+    particles.push({
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      baseX: Math.random() * window.innerWidth,
+      baseY: Math.random() * window.innerHeight,
+      size: 150 + Math.random() * 250,
+      speed: 0.0003 + Math.random() * 0.0005,
+      offset: Math.random() * Math.PI * 2,
+      opacity: 0.03 + Math.random() * 0.04,
+      hue: 140 + Math.random() * 30,
+      drift: 80 + Math.random() * 120
+    });
+  }
+  
+  function draw(time) {
+    smoothMouse.x += (mouse.x - smoothMouse.x) * 0.06;
+    smoothMouse.y += (mouse.y - smoothMouse.y) * 0.06;
+    scrollSpeed = Math.abs(scrollY - prevScrollY);
+    prevScrollY += (scrollY - prevScrollY) * 0.1;
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      var t = time * p.speed + p.offset;
+      p.x = p.baseX + Math.sin(t) * p.drift + Math.cos(t * 0.7) * (p.drift * 0.5);
+      p.y = p.baseY + Math.cos(t * 0.8) * p.drift + Math.sin(t * 0.5) * (p.drift * 0.3);
+      var scrollOffset = (prevScrollY * (0.02 + i * 0.01)) % window.innerHeight;
+      var drawY = ((p.y - scrollOffset) % (window.innerHeight + p.size * 2));
+      if (drawY < -p.size) drawY += window.innerHeight + p.size * 2;
+      var dx = smoothMouse.x - p.x;
+      var dy = smoothMouse.y - drawY;
+      var dist = Math.sqrt(dx * dx + dy * dy);
+      var influence = Math.max(0, 1 - dist / 500);
+      var reactiveOpacity = p.opacity + influence * 0.04;
+      var reactiveSize = p.size + influence * 40 + Math.min(scrollSpeed, 10) * 2;
+      var gradient = ctx.createRadialGradient(p.x, drawY, 0, p.x, drawY, reactiveSize);
+      gradient.addColorStop(0, 'hsla(' + p.hue + ', 80%, 45%, ' + (reactiveOpacity * 1.2) + ')');
+      gradient.addColorStop(0.4, 'hsla(' + p.hue + ', 70%, 35%, ' + (reactiveOpacity * 0.6) + ')');
+      gradient.addColorStop(1, 'hsla(' + p.hue + ', 60%, 25%, 0)');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(p.x - reactiveSize, drawY - reactiveSize, reactiveSize * 2, reactiveSize * 2);
+    }
+    
+    if (smoothMouse.x > -100 && smoothMouse.y > -100) {
+      var glowSize = 250 + Math.min(scrollSpeed, 15) * 8;
+      var cursorGrad = ctx.createRadialGradient(smoothMouse.x, smoothMouse.y, 0, smoothMouse.x, smoothMouse.y, glowSize);
+      cursorGrad.addColorStop(0, 'rgba(0, 220, 110, 0.10)');
+      cursorGrad.addColorStop(0.3, 'rgba(0, 200, 100, 0.05)');
+      cursorGrad.addColorStop(0.6, 'rgba(0, 180, 90, 0.02)');
+      cursorGrad.addColorStop(1, 'rgba(0, 160, 80, 0)');
+      ctx.fillStyle = cursorGrad;
+      ctx.fillRect(smoothMouse.x - glowSize, smoothMouse.y - glowSize, glowSize * 2, glowSize * 2);
+    }
+    raf = requestAnimationFrame(draw);
+  }
+  raf = requestAnimationFrame(draw);
+  window.addEventListener('resize', function() {
+    for (var i = 0; i < particles.length; i++) {
+      particles[i].baseX = Math.random() * window.innerWidth;
+      particles[i].baseY = Math.random() * window.innerHeight;
+    }
+  });
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) cancelAnimationFrame(raf); else raf = requestAnimationFrame(draw);
+  });
+})();
+</script>

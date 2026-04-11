@@ -1,0 +1,110 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Polku"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Miten "
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "pääsemme tuloksiin"
+}, {
+  "id" : "steps",
+  "name" : "steps",
+  "label" : "Vaiheet",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 8,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "step_title",
+    "name" : "step_title",
+    "label" : "Vaiheen otsikko",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Vaihe"
+  }, {
+    "id" : "step_description",
+    "name" : "step_description",
+    "label" : "Kuvaus",
+    "required" : false,
+    "locked" : false,
+    "display_width" : null,
+    "type" : "richtext",
+    "default" : "<p>Kuvaus tästä vaiheesta</p>"
+  }, {
+    "id" : "step_icon",
+    "name" : "step_icon",
+    "label" : "Ikoni (Font Awesome)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "fas fa-check-circle"
+  }, {
+    "id" : "step_image",
+    "name" : "step_image",
+    "label" : "Kuva (valinnainen)",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "display_width" : null,
+    "type" : "image",
+    "default" : {
+      "src" : "",
+      "alt" : ""
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ {
+    "step_title" : "Kartoitus",
+    "step_description" : "<p>Ymmärrämme tavoitteesi ja nykytilanteen.</p>",
+    "step_icon" : "fas fa-check-circle"
+  }, {
+    "step_title" : "Strategia",
+    "step_description" : "<p>Rakennamme yhdessä toimivan suunnitelman.</p>",
+    "step_icon" : "fas fa-check-circle"
+  }, {
+    "step_title" : "Toteutus",
+    "step_description" : "<p>Tuotamme sisältöä ja kampanjat käyntiin.</p>",
+    "step_icon" : "fas fa-check-circle"
+  }, {
+    "step_title" : "Seuranta",
+    "step_description" : "<p>Mittaamme tuloksia ja optimoimme jatkuvasti.</p>",
+    "step_icon" : "fas fa-check-circle"
+  } ]
+} ]

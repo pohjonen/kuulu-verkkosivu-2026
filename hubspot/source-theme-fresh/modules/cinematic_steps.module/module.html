@@ -1,0 +1,154 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media_block() %}
+  {% set mt = module.media_type|default("image") %}
+  {% if mt == "image" %}
+    {% if module.image and module.image.src %}
+      <img src="{{ module.image.src }}" alt="{{ module.image.alt|default('') }}" style="width: 100%; height: auto; display: block;">
+    {% else %}
+      <img src="{{ get_asset_url('../../images/v4/yhteistyon-tasot-v2.png') }}" alt="Portaat: Startti → Koneisto" style="width: 100%; height: auto; display: block;">
+    {% endif %}
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("image") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+{% set sc = module.step_count|default("2") %}
+
+<style>
+.steps-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+@media (max-width: 768px) { .steps-media-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <div class="cinematic-section-rounded glass-card">
+      <span class="section-tag">{{ module.section_tag }}</span>
+      <h2 class="section-header">{{ module.headline }} <span class="text-gradient-green">{{ module.headline_highlight }}</span></h2>
+      <p style="color: var(--cinematic-text-muted); max-width: 700px; margin-bottom: 3rem; font-size: 1.1rem; line-height: 1.8;">
+        {{ module.description }}
+      </p>
+
+      {# Kuva YLHÄÄLLÄ: täysleveys yllä, kortit alla #}
+      {% if has_media and mp == "above" %}
+      <div style="margin-bottom: 3rem; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green-sm); border: 1px solid rgba(0,255,135,0.1);">
+        {{ render_media_block() }}
+      </div>
+      {% endif %}
+
+      {# Kuva SIVUSSA: kortit + kuva vierekkäin #}
+      {% if has_media and (mp == "left" or mp == "right") %}
+      <div class="steps-media-grid" style="margin-bottom: 0; align-items: start;">
+        {% if mp == "left" %}
+        <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green-sm); border: 1px solid rgba(0,255,135,0.1);">
+          {{ render_media_block() }}
+        </div>
+        {% endif %}
+        <div>
+      {% endif %}
+
+      {% if sc == "4" %}
+      {# 4 askelta: auto-fit grid, pienet kortit #}
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+        <div class="hero-glass-box" style="padding: 2rem; text-align: center; display: flex; flex-direction: column; min-width: 0;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">1</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--cinematic-text);">{{ module.step_1_title }}</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; flex: 1;">{{ module.step_1_description }}</p>
+          {% if module.step_1_benefit_1 or module.step_1_benefit_2 or module.step_1_benefit_3 %}
+          <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin: 1rem 0; text-align: left;">
+            {% if module.step_1_benefit_1 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_1_benefit_1 }}</li>{% endif %}
+            {% if module.step_1_benefit_2 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_1_benefit_2 }}</li>{% endif %}
+            {% if module.step_1_benefit_3 %}<li>&bull; {{ module.step_1_benefit_3 }}</li>{% endif %}
+          </ul>
+          {% endif %}
+          {% if module.step_1_cta_text and module.step_1_cta_url %}<a href="{{ module.step_1_cta_url }}" class="btn-cinematic-outline" style="margin-top: auto;">{{ module.step_1_cta_text }}</a>{% endif %}
+        </div>
+        <div class="hero-glass-box" style="padding: 2rem; text-align: center; display: flex; flex-direction: column; min-width: 0;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">2</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--cinematic-text);">{{ module.step_2_title }}</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; flex: 1;">{{ module.step_2_description }}</p>
+          {% if module.step_2_benefit_1 or module.step_2_benefit_2 or module.step_2_benefit_3 %}
+          <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin: 1rem 0; text-align: left;">
+            {% if module.step_2_benefit_1 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_2_benefit_1 }}</li>{% endif %}
+            {% if module.step_2_benefit_2 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_2_benefit_2 }}</li>{% endif %}
+            {% if module.step_2_benefit_3 %}<li>&bull; {{ module.step_2_benefit_3 }}</li>{% endif %}
+          </ul>
+          {% endif %}
+          {% if module.step_2_cta_text and module.step_2_cta_url %}<a href="{{ module.step_2_cta_url }}" class="btn-cinematic-outline" style="margin-top: auto;">{{ module.step_2_cta_text }}</a>{% endif %}
+        </div>
+        <div class="hero-glass-box" style="padding: 2rem; text-align: center; display: flex; flex-direction: column; min-width: 0;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">3</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--cinematic-text);">{{ module.step_3_title }}</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; flex: 1;">{{ module.step_3_description }}</p>
+          {% if module.step_3_benefit_1 or module.step_3_benefit_2 or module.step_3_benefit_3 %}
+          <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin: 1rem 0; text-align: left;">
+            {% if module.step_3_benefit_1 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_3_benefit_1 }}</li>{% endif %}
+            {% if module.step_3_benefit_2 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_3_benefit_2 }}</li>{% endif %}
+            {% if module.step_3_benefit_3 %}<li>&bull; {{ module.step_3_benefit_3 }}</li>{% endif %}
+          </ul>
+          {% endif %}
+          {% if module.step_3_cta_text and module.step_3_cta_url %}<a href="{{ module.step_3_cta_url }}" class="btn-cinematic-outline" style="margin-top: auto;">{{ module.step_3_cta_text }}</a>{% endif %}
+        </div>
+        <div class="hero-glass-box" style="padding: 2rem; text-align: center; display: flex; flex-direction: column; min-width: 0;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0,255,135,0.1); border: 1px solid rgba(0,255,135,0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.2rem; font-weight: 700; color: var(--cinematic-green); font-family: var(--font-display);">4</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--cinematic-text);">{{ module.step_4_title }}</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.9rem; line-height: 1.6; flex: 1;">{{ module.step_4_description }}</p>
+          {% if module.step_4_benefit_1 or module.step_4_benefit_2 or module.step_4_benefit_3 %}
+          <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin: 1rem 0; text-align: left;">
+            {% if module.step_4_benefit_1 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_4_benefit_1 }}</li>{% endif %}
+            {% if module.step_4_benefit_2 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_4_benefit_2 }}</li>{% endif %}
+            {% if module.step_4_benefit_3 %}<li>&bull; {{ module.step_4_benefit_3 }}</li>{% endif %}
+          </ul>
+          {% endif %}
+          {% if module.step_4_cta_text and module.step_4_cta_url %}<a href="{{ module.step_4_cta_url }}" class="btn-cinematic-outline" style="margin-top: auto;">{{ module.step_4_cta_text }}</a>{% endif %}
+        </div>
+      </div>
+      {% else %}
+      {# 2 askelta: nykyinen layout #}
+      <div class="grid-2" style="gap: 3rem; align-items: stretch;">
+        <div class="hero-glass-box" style="padding: 2rem; text-align: left; display: flex; flex-direction: column; min-width: 0;">
+          <h3 style="font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 1rem;">{{ module.step_1_title }}</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ module.step_1_description }}</p>
+          <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin-bottom: 1.5rem;">
+            {% if module.step_1_benefit_1 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_1_benefit_1 }}</li>{% endif %}
+            {% if module.step_1_benefit_2 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_1_benefit_2 }}</li>{% endif %}
+            {% if module.step_1_benefit_3 %}<li>&bull; {{ module.step_1_benefit_3 }}</li>{% endif %}
+          </ul>
+          {% if module.step_1_cta_text and module.step_1_cta_url %}
+          <a href="{{ module.step_1_cta_url }}" class="btn-cinematic-outline" style="width:100%; max-width:100%; box-sizing:border-box; justify-content: center; margin-top: auto; flex-shrink: 0;">{{ module.step_1_cta_text }}</a>
+          {% endif %}
+        </div>
+        <div class="hero-glass-box" style="padding: 2rem; border: 1px solid var(--cinematic-green); background: rgba(0, 159, 78, 0.05); text-align: left; display: flex; flex-direction: column; min-width: 0;">
+          <h3 style="font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 1rem; color: var(--cinematic-green);">{{ module.step_2_title }}</h3>
+          <p style="color: var(--cinematic-text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ module.step_2_description }}</p>
+          <ul style="color: var(--cinematic-text); list-style: none; padding: 0; margin-bottom: 1.5rem;">
+            {% if module.step_2_benefit_1 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_2_benefit_1 }}</li>{% endif %}
+            {% if module.step_2_benefit_2 %}<li style="margin-bottom: 0.5rem;">&bull; {{ module.step_2_benefit_2 }}</li>{% endif %}
+            {% if module.step_2_benefit_3 %}<li>&bull; {{ module.step_2_benefit_3 }}</li>{% endif %}
+          </ul>
+          {% if module.step_2_cta_text and module.step_2_cta_url %}
+          <a href="{{ module.step_2_cta_url }}" class="btn-cinematic-primary" style="width:100%; max-width:100%; box-sizing:border-box; justify-content: center; margin-top: auto; flex-shrink: 0;">{{ module.step_2_cta_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if has_media and (mp == "left" or mp == "right") %}
+        </div>
+        {% if mp == "right" %}
+        <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-green-sm); border: 1px solid rgba(0,255,135,0.1);">
+          {{ render_media_block() }}
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

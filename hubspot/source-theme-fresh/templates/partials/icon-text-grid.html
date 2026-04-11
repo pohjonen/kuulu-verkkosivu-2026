@@ -1,0 +1,149 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Icon Text Grid - Feature Highlights"
+-->
+{#
+  Ikoni + teksti -ruudukko (pienet feature-nostot)
+
+  Käyttö:
+    {% set it_tag = '// Miksi meidät' %}
+    {% set it_title = 'Etumme <span class="text-gradient-green">sinulle</span>' %}
+    {% set it_columns = 3 %}
+    {% set it_1_icon = 'fas fa-rocket' %}
+    {% set it_1_title = 'Nopeus' %}
+    {% set it_1_text = 'Tuloksia 30 päivässä.' %}
+    {% set it_2_icon = 'fas fa-shield-alt' %}
+    {% set it_2_title = 'Luotettavuus' %}
+    {% set it_2_text = '15+ vuoden kokemus.' %}
+    {% include './partials/icon-text-grid.html' %}
+#}
+
+{% set active_tag = it_tag|default('') %}
+{% set active_title = it_title|default('') %}
+{% set cols = it_columns|default(3) %}
+
+{% set i1_icon = it_1_icon|default('') %}
+{% set i1_title = it_1_title|default('') %}
+{% set i1_text = it_1_text|default('') %}
+{% set i2_icon = it_2_icon|default('') %}
+{% set i2_title = it_2_title|default('') %}
+{% set i2_text = it_2_text|default('') %}
+{% set i3_icon = it_3_icon|default('') %}
+{% set i3_title = it_3_title|default('') %}
+{% set i3_text = it_3_text|default('') %}
+{% set i4_icon = it_4_icon|default('') %}
+{% set i4_title = it_4_title|default('') %}
+{% set i4_text = it_4_text|default('') %}
+{% set i5_icon = it_5_icon|default('') %}
+{% set i5_title = it_5_title|default('') %}
+{% set i5_text = it_5_text|default('') %}
+{% set i6_icon = it_6_icon|default('') %}
+{% set i6_title = it_6_title|default('') %}
+{% set i6_text = it_6_text|default('') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    {% if active_tag %}
+    <span class="section-tag">{{ active_tag }}</span>
+    {% endif %}
+    {% if active_title %}
+    <h2 class="section-header">{{ active_title }}</h2>
+    {% endif %}
+
+    <div style="display: grid; grid-template-columns: repeat({{ cols }}, 1fr); gap: 2rem; margin-top: 2rem;" class="icon-text-grid-responsive">
+      {% if i1_title %}
+      <div style="display: flex; gap: 1rem; align-items: flex-start;">
+        {% if i1_icon %}
+        <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: rgba(0, 255, 135, 0.08); border: 1px solid rgba(0, 255, 135, 0.15); display: flex; align-items: center; justify-content: center;">
+          <i class="{{ i1_icon }}" style="font-size: 1rem; color: var(--cinematic-green);"></i>
+        </div>
+        {% endif %}
+        <div>
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1rem; margin-bottom: 0.35rem;">{{ i1_title }}</h3>
+          {% if i1_text %}<p style="color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">{{ i1_text }}</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if i2_title %}
+      <div style="display: flex; gap: 1rem; align-items: flex-start;">
+        {% if i2_icon %}
+        <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: rgba(0, 255, 135, 0.08); border: 1px solid rgba(0, 255, 135, 0.15); display: flex; align-items: center; justify-content: center;">
+          <i class="{{ i2_icon }}" style="font-size: 1rem; color: var(--cinematic-green);"></i>
+        </div>
+        {% endif %}
+        <div>
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1rem; margin-bottom: 0.35rem;">{{ i2_title }}</h3>
+          {% if i2_text %}<p style="color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">{{ i2_text }}</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if i3_title %}
+      <div style="display: flex; gap: 1rem; align-items: flex-start;">
+        {% if i3_icon %}
+        <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: rgba(0, 255, 135, 0.08); border: 1px solid rgba(0, 255, 135, 0.15); display: flex; align-items: center; justify-content: center;">
+          <i class="{{ i3_icon }}" style="font-size: 1rem; color: var(--cinematic-green);"></i>
+        </div>
+        {% endif %}
+        <div>
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1rem; margin-bottom: 0.35rem;">{{ i3_title }}</h3>
+          {% if i3_text %}<p style="color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">{{ i3_text }}</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if i4_title %}
+      <div style="display: flex; gap: 1rem; align-items: flex-start;">
+        {% if i4_icon %}
+        <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: rgba(0, 255, 135, 0.08); border: 1px solid rgba(0, 255, 135, 0.15); display: flex; align-items: center; justify-content: center;">
+          <i class="{{ i4_icon }}" style="font-size: 1rem; color: var(--cinematic-green);"></i>
+        </div>
+        {% endif %}
+        <div>
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1rem; margin-bottom: 0.35rem;">{{ i4_title }}</h3>
+          {% if i4_text %}<p style="color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">{{ i4_text }}</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if i5_title %}
+      <div style="display: flex; gap: 1rem; align-items: flex-start;">
+        {% if i5_icon %}
+        <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: rgba(0, 255, 135, 0.08); border: 1px solid rgba(0, 255, 135, 0.15); display: flex; align-items: center; justify-content: center;">
+          <i class="{{ i5_icon }}" style="font-size: 1rem; color: var(--cinematic-green);"></i>
+        </div>
+        {% endif %}
+        <div>
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1rem; margin-bottom: 0.35rem;">{{ i5_title }}</h3>
+          {% if i5_text %}<p style="color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">{{ i5_text }}</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if i6_title %}
+      <div style="display: flex; gap: 1rem; align-items: flex-start;">
+        {% if i6_icon %}
+        <div style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: rgba(0, 255, 135, 0.08); border: 1px solid rgba(0, 255, 135, 0.15); display: flex; align-items: center; justify-content: center;">
+          <i class="{{ i6_icon }}" style="font-size: 1rem; color: var(--cinematic-green);"></i>
+        </div>
+        {% endif %}
+        <div>
+          <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 1rem; margin-bottom: 0.35rem;">{{ i6_title }}</h3>
+          {% if i6_text %}<p style="color: var(--cinematic-text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0;">{{ i6_text }}</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+@media (max-width: 768px) {
+  .icon-text-grid-responsive { grid-template-columns: 1fr !important; }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .icon-text-grid-responsive { grid-template-columns: repeat(2, 1fr) !important; }
+}
+</style>

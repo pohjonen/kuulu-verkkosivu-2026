@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 382165003482,
+  "label" : "Palvelut Grid",
+  "icon" : "https://cdn2.hubspot.net/hubfs/6326501/boilerplate/Module%20Icons/grid.svg",
+  "is_available_for_new_content" : false
+}

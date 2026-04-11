@@ -1,0 +1,64 @@
+<section class="cinematic-rich-pricing">
+  <div class="pricing-container">
+    {% if module.section_tag %}
+    <div class="section-tag">{{ module.section_tag }}</div>
+    {% endif %}
+
+    <h2 class="pricing-headline">
+      {{ module.headline }}<span class="highlight">{{ module.headline_highlight }}</span>
+    </h2>
+
+    {% if module.intro_text %}
+    <p class="pricing-intro">{{ module.intro_text }}</p>
+    {% endif %}
+
+    {% if module.header_media_type == "image" and module.header_image.src %}
+    <div class="pricing-hero-media">
+      <img src="{{ module.header_image.src }}" alt="{{ module.header_image.alt }}" loading="lazy">
+    </div>
+    {% elif module.header_media_type == "video" and module.header_video_url %}
+    <div class="pricing-hero-media">
+      <div class="video-wrapper">
+        <iframe src="{{ module.header_video_url }}" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="pricing-grid">
+      {% for i in range(1, 4) %}
+      {% set tier_name = "tier_" ~ i ~ "_name" %}
+      {% set tier_price = "tier_" ~ i ~ "_price" %}
+      {% set tier_period = "tier_" ~ i ~ "_period" %}
+      {% set tier_description = "tier_" ~ i ~ "_description" %}
+      {% set tier_features = "tier_" ~ i ~ "_features" %}
+      {% set tier_cta_text = "tier_" ~ i ~ "_cta_text" %}
+      {% set tier_cta_url = "tier_" ~ i ~ "_cta_url" %}
+      {% set tier_highlighted = "tier_" ~ i ~ "_highlighted" %}
+      {% set tier_badge = "tier_" ~ i ~ "_badge" %}
+
+      <div class="pricing-card{% if module[tier_highlighted] %} highlighted{% endif %}">
+        {% if module[tier_highlighted] and module[tier_badge] %}
+        <div class="badge">{{ module[tier_badge] }}</div>
+        {% endif %}
+
+        <div class="pricing-header">
+          <h3 class="tier-name">{{ module[tier_name] }}</h3>
+          <div class="price-wrapper">
+            <span class="price">{{ module[tier_price] }}</span>
+            <span class="period">{{ module[tier_period] }}</span>
+          </div>
+          <p class="tier-description">{{ module[tier_description] }}</p>
+        </div>
+
+        <div class="features-list">
+          {{ module[tier_features] }}
+        </div>
+
+        <a href="{{ module[tier_cta_url] }}" class="pricing-cta">
+          {{ module[tier_cta_text] }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

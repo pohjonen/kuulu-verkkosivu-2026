@@ -1,0 +1,76 @@
+<section class="cinematic-before-after">
+  <div class="before-after-container">
+    {% if module.section_tag %}
+    <div class="section-tag">{{ module.section_tag }}</div>
+    {% endif %}
+
+    <h2 class="before-after-headline">
+      {{ module.headline }}<span class="highlight">{{ module.headline_highlight }}</span>
+    </h2>
+
+    <div class="comparison-grid">
+      <!-- Before Card -->
+      <div class="comparison-card before-card">
+        {% if module.before_image.src %}
+        <div class="card-image">
+          <img src="{{ module.before_image.src }}" alt="{{ module.before_image.alt }}" loading="lazy">
+        </div>
+        {% endif %}
+
+        <div class="card-header">
+          <span class="status-icon">⚠️</span>
+          <h3 class="card-title">{{ module.before_title }}</h3>
+        </div>
+
+        <div class="card-description">{{ module.before_description }}</div>
+
+        <ul class="bullet-list">
+          {% if module.before_bullet_1 %}<li>{{ module.before_bullet_1 }}</li>{% endif %}
+          {% if module.before_bullet_2 %}<li>{{ module.before_bullet_2 }}</li>{% endif %}
+          {% if module.before_bullet_3 %}<li>{{ module.before_bullet_3 }}</li>{% endif %}
+        </ul>
+
+        {% if module.before_metric %}
+        <div class="metric-box">
+          <div class="metric-number">{{ module.before_metric }}</div>
+          <div class="metric-label">{{ module.before_metric_label }}</div>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Arrow -->
+      <div class="arrow-divider">
+        <div class="arrow-circle">→</div>
+      </div>
+
+      <!-- After Card -->
+      <div class="comparison-card after-card">
+        {% if module.after_image.src %}
+        <div class="card-image">
+          <img src="{{ module.after_image.src }}" alt="{{ module.after_image.alt }}" loading="lazy">
+        </div>
+        {% endif %}
+
+        <div class="card-header">
+          <span class="status-icon">✓</span>
+          <h3 class="card-title">{{ module.after_title }}</h3>
+        </div>
+
+        <div class="card-description">{{ module.after_description }}</div>
+
+        <ul class="bullet-list">
+          {% if module.after_bullet_1 %}<li>{{ module.after_bullet_1 }}</li>{% endif %}
+          {% if module.after_bullet_2 %}<li>{{ module.after_bullet_2 }}</li>{% endif %}
+          {% if module.after_bullet_3 %}<li>{{ module.after_bullet_3 }}</li>{% endif %}
+        </ul>
+
+        {% if module.after_metric %}
+        <div class="metric-box">
+          <div class="metric-number">{{ module.after_metric }}</div>
+          <div class="metric-label">{{ module.after_metric_label }}</div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

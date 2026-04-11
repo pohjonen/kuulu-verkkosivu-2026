@@ -1,0 +1,178 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_meta.html_title or "Tiimi - Kuulu" }}</title>
+  <meta name="description" content="{{ page_meta.meta_description or 'Tutustu Kuulun tiimiin - digimarkkinointi- ja videotuotannon ammattilaisiin.' }}">
+  
+  <!-- HubSpot CSS -->
+  {{ require_css(get_asset_url('css/main.css')) }}
+  {{ require_css(get_asset_url('css/responsive.css')) }}
+  
+  <!-- HubSpot JS -->
+  {{ require_js(get_asset_url('js/main.js')) }}
+</head>
+<body class="team-page">
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="/">
+            <img src="{{ get_asset_url('images/kuulu-logo.png') }}" alt="Kuulu" onerror="this.style.display='none'">
+            <span class="logo-text">Kuulu</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="/">Etusivu</a></li>
+            <li><a href="/tiimi">Tiimi</a></li>
+            <li><a href="/palvelut">Palvelut</a></li>
+            <li><a href="/yhteystiedot">Yhteystiedot</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="team-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Kuulun tiimi</h1>
+        <p>Digimarkkinointi- ja videotuotannon ammattilaiset, jotka auttavat sinua menestymään</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="{{ get_asset_url('images/team-1.jpg') }}" alt="Ville Pohjonen" onerror="this.style.display='none'">
+          </div>
+          <div class="member-info">
+            <h3>Ville Pohjonen</h3>
+            <p class="member-title">Toimitusjohtaja</p>
+            <p class="member-bio">Kokenut digimarkkinointiasiantuntija, joka on auttanut satoja yrityksiä menestymään digitaalisessa maailmassa.</p>
+            <div class="member-social">
+              <a href="https://linkedin.com/in/villepohjonen" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:ville@kuulu.fi"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="{{ get_asset_url('images/team-2.jpg') }}" alt="Anna Asiantuntija" onerror="this.style.display='none'">
+          </div>
+          <div class="member-info">
+            <h3>Anna Asiantuntija</h3>
+            <p class="member-title">Kreatiivinen johtaja</p>
+            <p class="member-bio">Luova asiantuntija, joka yhdistää strategian ja luovuuden menestykseen.</p>
+            <div class="member-social">
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:anna@kuulu.fi"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="{{ get_asset_url('images/team-3.jpg') }}" alt="Matti Meikäläinen" onerror="this.style.display='none'">
+          </div>
+          <div class="member-info">
+            <h3>Matti Meikäläinen</h3>
+            <p class="member-title">Videotuottaja</p>
+            <p class="member-bio">Ammattimainen videotuottaja, joka luo korkealaatuista sisältöä kaikkiin tarpeisiin.</p>
+            <div class="member-social">
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:matti@kuulu.fi"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Ota yhteyttä tiimiin</h2>
+        <p>Haluatko kuulla lisää Kuulun palveluista? Ota rohkeasti yhteyttä!</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-6">
+          <div class="contact-info">
+            <h3>Yhteystiedot</h3>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@kuulu.fi</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+358 40 123 4567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Oulu & Helsinki</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="contact-form">
+            <h3>Lähetä viesti</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Nimi" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Sähköposti" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Viesti" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span>Kuulu</span>
+        </div>
+        <div class="footer-links">
+          <a href="/">Etusivu</a>
+          <a href="/tiimi">Tiimi</a>
+          <a href="/palvelut">Palvelut</a>
+          <a href="/yhteystiedot">Yhteystiedot</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kuulu. Kaikki oikeudet pidätetään.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html> 

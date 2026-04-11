@@ -1,0 +1,211 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Muutos"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Näin "
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "muutamme peliä"
+}, {
+  "id" : "before_image",
+  "name" : "before_image",
+  "label" : "Ennen – kuva",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "before_title",
+  "name" : "before_title",
+  "label" : "Ennen – otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Ennen Kuulua"
+}, {
+  "id" : "before_description",
+  "name" : "before_description",
+  "label" : "Ennen – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "Satunnaista sisältöä ilman strategiaa. Ei mittareita, ei tuloksia."
+}, {
+  "id" : "before_bullet_1",
+  "name" : "before_bullet_1",
+  "label" : "Ennen – kohta 1",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Epäsäännöllinen julkaisu"
+}, {
+  "id" : "before_bullet_2",
+  "name" : "before_bullet_2",
+  "label" : "Ennen – kohta 2",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Ei dataa päätöksille"
+}, {
+  "id" : "before_bullet_3",
+  "name" : "before_bullet_3",
+  "label" : "Ennen – kohta 3",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Sisäinen tiimi ylikuormittunut"
+}, {
+  "id" : "before_metric",
+  "name" : "before_metric",
+  "label" : "Ennen – luku",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "2-3"
+}, {
+  "id" : "before_metric_label",
+  "name" : "before_metric_label",
+  "label" : "Ennen – luvun selite",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "sisältöä/kk"
+}, {
+  "id" : "after_image",
+  "name" : "after_image",
+  "label" : "Jälkeen – kuva",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "after_title",
+  "name" : "after_title",
+  "label" : "Jälkeen – otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Kuulu Flow:n kanssa"
+}, {
+  "id" : "after_description",
+  "name" : "after_description",
+  "label" : "Jälkeen – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "Strateginen sisältökone joka tuottaa tuloksia. Reaaliaikaiset mittarit."
+}, {
+  "id" : "after_bullet_1",
+  "name" : "after_bullet_1",
+  "label" : "Jälkeen – kohta 1",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "12-15 sisältöä monikanavaisesti"
+}, {
+  "id" : "after_bullet_2",
+  "name" : "after_bullet_2",
+  "label" : "Jälkeen – kohta 2",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Data ohjaa joka askelta"
+}, {
+  "id" : "after_bullet_3",
+  "name" : "after_bullet_3",
+  "label" : "Jälkeen – kohta 3",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Oma tiimi + AI-tuotanto"
+}, {
+  "id" : "after_metric",
+  "name" : "after_metric",
+  "label" : "Jälkeen – luku",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "12-15"
+}, {
+  "id" : "after_metric_label",
+  "name" : "after_metric_label",
+  "label" : "Jälkeen – luvun selite",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "sisältöä/kk"
+} ]

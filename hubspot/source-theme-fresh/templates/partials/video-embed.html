@@ -1,0 +1,80 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Video Embed - YouTube/Vimeo/Custom"
+-->
+{#
+  Video-upotus -partiaali
+
+  Käyttö:
+    {% set video_tag = '// Katso video' %}
+    {% set video_title = 'Miten <span class="text-gradient-green">työskentelemme</span>' %}
+    {% set video_description = 'Katso 2 minuutin esittelyvideo.' %}
+    {% set video_url = 'https://www.youtube.com/embed/VIDEO_ID' %}
+    {% set video_poster = 'https://example.com/poster.jpg' %}
+    {% set video_aspect = '16/9' %}
+    {% set video_dark_bg = true %}
+    {% include './partials/video-embed.html' %}
+
+    YouTube embed URL muoto: https://www.youtube.com/embed/VIDEO_ID
+    Vimeo embed URL muoto: https://player.vimeo.com/video/VIDEO_ID
+#}
+
+{% set v_tag = video_tag|default('') %}
+{% set v_title = video_title|default('') %}
+{% set v_desc = video_description|default('') %}
+{% set v_url = video_url|default('') %}
+{% set v_poster = video_poster|default('') %}
+{% set v_aspect = video_aspect|default('16/9') %}
+{% set v_dark = video_dark_bg|default(false) %}
+
+<section class="cinematic-section{% if v_dark %} section-with-blobs gradient-section-dark grain-section{% endif %}">
+  {% if v_dark %}
+  <div class="blob-shape-1" style="top: -25%; left: -15%;"></div>
+  <div class="blob-shape-2" style="bottom: -35%; right: -20%;"></div>
+  {% endif %}
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    {% if v_tag %}
+    <span class="section-tag">{{ v_tag }}</span>
+    {% endif %}
+    {% if v_title %}
+    <h2 class="section-header">{{ v_title }}</h2>
+    {% endif %}
+    {% if v_desc %}
+    <p style="color: var(--cinematic-text-muted); max-width: 600px; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.7;">{{ v_desc }}</p>
+    {% endif %}
+
+    <div class="video-embed-wrapper" style="position: relative; max-width: 900px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 8px 40px rgba(0,0,0,0.4);">
+      {% if v_url %}
+      <div style="position: relative; width: 100%; aspect-ratio: {{ v_aspect }};">
+        <iframe
+          src="{{ v_url }}"
+          style="position: absolute; inset: 0; width: 100%; height: 100%; border: none;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+          title="{{ v_title|striptags }}">
+        </iframe>
+      </div>
+      {% elif v_poster %}
+      {# Poster-kuva ilman videota (placeholder) #}
+      <div style="position: relative; width: 100%; aspect-ratio: {{ v_aspect }};">
+        <img src="{{ v_poster }}" alt="{{ v_title|striptags }}" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(10,10,10,0.4);">
+          <div style="width: 72px; height: 72px; border-radius: 50%; background: rgba(0, 255, 135, 0.2); border: 2px solid rgba(0, 255, 135, 0.5); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s;">
+            <i class="fas fa-play" style="color: var(--cinematic-green); font-size: 1.5rem; margin-left: 4px;"></i>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      {# Placeholder kun ei ole videota #}
+      <div style="width: 100%; aspect-ratio: {{ v_aspect }}; background: rgba(255,255,255,0.03); display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center;">
+          <i class="fas fa-video" style="font-size: 2rem; color: var(--cinematic-text-muted); margin-bottom: 0.5rem;"></i>
+          <p style="color: var(--cinematic-text-muted); font-size: 0.85rem;">Video tulossa</p>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

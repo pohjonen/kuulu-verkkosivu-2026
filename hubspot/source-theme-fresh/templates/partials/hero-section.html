@@ -1,0 +1,75 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Hero Section - Reusable"
+-->
+{#
+  Uudelleenkäytettävä Hero -partiaali
+
+  Käyttö (oletuksin):
+    {% set hero_tag = '// Tervetuloa' %}
+    {% set hero_title = 'Otsikko <span class="text-gradient-green">tähän</span>' %}
+    {% set hero_subtitle = 'Alaotsikko tai ingressi tähän.' %}
+    {% set hero_btn_text = 'Ota yhteyttä' %}
+    {% set hero_btn_url = '#ota-yhteytta' %}
+    {% set hero_btn2_text = 'Katso referenssit' %}
+    {% set hero_btn2_url = '/referenssit' %}
+    {% set hero_bg_image = '' %}
+    {% set hero_bg_video = '' %}
+    {% set hero_badge = '' %}
+    {% set hero_min_height = '80vh' %}
+    {% include './partials/hero-section.html' %}
+#}
+
+{% set h_tag = hero_tag|default('') %}
+{% set h_title = hero_title|default('Otsikko <span class="text-gradient-green">tähän</span>') %}
+{% set h_subtitle = hero_subtitle|default('') %}
+{% set h_btn = hero_btn_text|default('Ota yhteyttä') %}
+{% set h_btn_url = hero_btn_url|default('#ota-yhteytta') %}
+{% set h_btn2 = hero_btn2_text|default('') %}
+{% set h_btn2_url = hero_btn2_url|default('') %}
+{% set h_bg_img = hero_bg_image|default('') %}
+{% set h_bg_vid = hero_bg_video|default('') %}
+{% set h_badge = hero_badge|default('') %}
+{% set h_height = hero_min_height|default('80vh') %}
+
+<section class="cinematic-hero" style="position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; min-height: {{ h_height }}; padding: 2rem; padding-top: clamp(6rem, 12vh, 15vh);">
+  {# Taustakuva tai -video #}
+  <div style="position: absolute; inset: 0; z-index: 0;">
+    {% if h_bg_vid %}
+    <video autoplay muted loop playsinline style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+      <source src="{{ h_bg_vid }}" type="video/mp4">
+    </video>
+    {% elif h_bg_img %}
+    <div style="position: absolute; inset: 0; background-image: url('{{ h_bg_img }}'); background-size: cover; background-position: center;"></div>
+    {% endif %}
+    <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.4) 40%, rgba(10,10,10,0.9) 100%);"></div>
+  </div>
+
+  <div class="hero-glass-box" style="width: min(100%, 750px); max-width: 750px; box-sizing: border-box; text-align: center; z-index: 3; position: relative; margin: 0 auto;">
+    {% if h_badge %}
+    <span style="display: inline-block; background: rgba(0, 255, 135, 0.1); color: var(--cinematic-green); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.35rem 1rem; border-radius: 100px; border: 1px solid rgba(0, 255, 135, 0.2); margin-bottom: 1rem;">{{ h_badge }}</span>
+    {% endif %}
+
+    {% if h_tag %}
+    <span class="section-tag">{{ h_tag }}</span>
+    {% endif %}
+
+    <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); margin: 1rem 0; letter-spacing: 0.02em;">
+      {{ h_title }}
+    </h1>
+
+    {% if h_subtitle %}
+    <p style="color: var(--cinematic-text-muted); line-height: 1.7; margin-bottom: 1.5rem; font-size: 1.05rem;">
+      {{ h_subtitle }}
+    </p>
+    {% endif %}
+
+    <div style="display: flex; gap: 1rem; justify-content: center; align-items: stretch; flex-wrap: wrap; width: 100%;">
+      <a href="{{ h_btn_url }}" class="btn-cinematic-primary" style="white-space: normal; text-align: center; flex: 1 1 260px; min-width: 220px;">{{ h_btn }}</a>
+      {% if h_btn2 %}
+      <a href="{{ h_btn2_url }}" class="btn-cinematic-secondary" style="white-space: normal; text-align: center; flex: 1 1 260px; min-width: 220px;">{{ h_btn2 }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>

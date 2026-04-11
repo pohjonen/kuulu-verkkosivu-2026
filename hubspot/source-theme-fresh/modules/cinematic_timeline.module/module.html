@@ -1,0 +1,90 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: true
+-->
+{% macro render_media() %}
+  {% set mt = module.media_type|default("none") %}
+  {% if mt == "image" and module.media_image and module.media_image.src %}
+    <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt|default('') }}" style="width: 100%; height: auto; display: block; border-radius: 16px;">
+  {% elif mt == "video_url" and module.media_video_url %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_url }}" type="video/mp4"></video>
+  {% elif mt == "video_file" and module.media_video_file %}
+    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block; border-radius: 16px;"><source src="{{ module.media_video_file }}" type="video/mp4"></video>
+  {% endif %}
+{% endmacro %}
+
+{% set mt = module.media_type|default("none") %}
+{% set has_media = mt != "none" %}
+{% set mp = module.media_position|default("right") %}
+
+<style>
+.timeline-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+@media (max-width: 768px) { .timeline-media-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="cinematic-section grain-section">
+  <div class="container-cinematic" style="position: relative; z-index: 10;">
+    <div class="cinematic-section-rounded glass-card" style="max-width: {% if has_media %}1100px{% else %}800px{% endif %}; margin: 0 auto;">
+      {% if has_media %}
+      <div class="timeline-media-grid">
+        {% if mp == "left" %}<div style="border-radius: 16px; overflow: hidden; position: sticky; top: 2rem;">{{ render_media() }}</div>{% endif %}
+        <div>
+      {% endif %}
+
+      {% if module.section_tag %}
+        <span class="section-tag">{{ module.section_tag }}</span>
+      {% endif %}
+      {% if module.headline %}
+        <h3 class="section-header" style="font-size: 1.6rem;">{{ module.headline }}{% if module.headline_highlight %} <span class="text-gradient-green">{{ module.headline_highlight }}</span>{% endif %}</h3>
+      {% endif %}
+      {% if module.description %}
+        <p style="color: #ffffff; margin-bottom: 2rem; font-size: 1.05rem;">{{ module.description }}</p>
+      {% endif %}
+
+      <div class="cinematic-timeline" style="display: flex; flex-direction: column; gap: 1.25rem;">
+        {% set items = [
+          {"num": 1, "title": module.item_1_title, "desc": module.item_1_description, "tag": module.item_1_tag, "hl": module.item_1_highlight},
+          {"num": 2, "title": module.item_2_title, "desc": module.item_2_description, "tag": module.item_2_tag, "hl": module.item_2_highlight},
+          {"num": 3, "title": module.item_3_title, "desc": module.item_3_description, "tag": module.item_3_tag, "hl": module.item_3_highlight},
+          {"num": 4, "title": module.item_4_title, "desc": module.item_4_description, "tag": module.item_4_tag, "hl": module.item_4_highlight},
+          {"num": 5, "title": module.item_5_title, "desc": module.item_5_description, "tag": module.item_5_tag, "hl": module.item_5_highlight},
+          {"num": 6, "title": module.item_6_title, "desc": module.item_6_description, "tag": module.item_6_tag, "hl": module.item_6_highlight}
+        ] %}
+
+        {% for item in items %}
+          {% if item.title %}
+            {% set is_highlight = item.hl %}
+            <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem 1.5rem; border-radius: 16px; background: {% if is_highlight %}rgba(0, 255, 135, 0.12){% else %}rgba(0, 80, 40, 0.35){% endif %}; border: 1px solid {% if is_highlight %}rgba(0, 255, 135, 0.4){% else %}rgba(0, 255, 135, 0.12){% endif %}; transition: all 0.3s ease; {% if is_highlight %}box-shadow: 0 0 20px rgba(0, 255, 135, 0.1);{% endif %}">
+              <div style="flex-shrink: 0; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: {% if is_highlight %}var(--cinematic-green){% else %}rgba(0, 255, 135, 0.2){% endif %}; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: {% if is_highlight %}#0a0a0a{% else %}var(--cinematic-green){% endif %};">
+                {{ item.num }}
+              </div>
+              <div style="flex: 1;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                  {% if item.tag %}
+                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: {% if is_highlight %}#0a0a0a{% else %}var(--cinematic-green){% endif %}; background: {% if is_highlight %}var(--cinematic-green){% else %}rgba(0, 255, 135, 0.15){% endif %}; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 600;">{{ item.tag }}</span>
+                  {% endif %}
+                  <strong style="color: #ffffff; font-size: 1.05rem;">{{ item.title }}</strong>
+                </div>
+                {% if item.desc %}
+                  <p style="color: rgba(255, 255, 255, 0.75); font-size: 0.95rem; margin: 0.35rem 0 0 0; line-height: 1.5;">{{ item.desc }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if module.summary_text %}
+        <p style="color: var(--cinematic-green); font-weight: 600; margin-top: 1.5rem; font-size: 1.05rem; padding: 1rem 1.5rem; background: rgba(0, 255, 135, 0.05); border-radius: 12px; border: 1px solid rgba(0, 255, 135, 0.15);">
+          {{ module.summary_text }}
+        </p>
+      {% endif %}
+
+      {% if has_media %}
+        </div>
+        {% if mp == "right" %}<div style="border-radius: 16px; overflow: hidden; position: sticky; top: 2rem;">{{ render_media() }}</div>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

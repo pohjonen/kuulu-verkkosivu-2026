@@ -1,0 +1,60 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Blog Topics - Tag Filter"
+-->
+{#
+  Blogiaiheet / suodatintagit -partiaali
+
+  Käyttö:
+    {% include './partials/blog-topics.html' with {
+      topics_title: 'Aiheet',
+      topic_1_label: 'Kaikki aiheet',
+      topic_1_url: '/blogi',
+      topic_1_active: true,
+      topic_2_label: 'Tekoäly',
+      topic_2_url: '/blogi/tag/tekoaly',
+      topic_3_label: 'Some-markkinointi',
+      topic_3_url: '/blogi/tag/some'
+    } %}
+#}
+
+{% set title = topics_title|default('Aiheet') %}
+
+{% set t1_l = topic_1_label|default('Kaikki aiheet') %}
+{% set t1_u = topic_1_url|default('#') %}
+{% set t1_a = topic_1_active|default(true) %}
+{% set t2_l = topic_2_label|default('') %}
+{% set t2_u = topic_2_url|default('#') %}
+{% set t3_l = topic_3_label|default('') %}
+{% set t3_u = topic_3_url|default('#') %}
+{% set t4_l = topic_4_label|default('') %}
+{% set t4_u = topic_4_url|default('#') %}
+{% set t5_l = topic_5_label|default('') %}
+{% set t5_u = topic_5_url|default('#') %}
+{% set t6_l = topic_6_label|default('') %}
+{% set t6_u = topic_6_url|default('#') %}
+{% set t7_l = topic_7_label|default('') %}
+{% set t7_u = topic_7_url|default('#') %}
+{% set t8_l = topic_8_label|default('') %}
+{% set t8_u = topic_8_url|default('#') %}
+
+<section class="cinematic-section" style="padding-top: 2rem; padding-bottom: 1rem;">
+  <div class="container-cinematic">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem;">
+      <h3 style="font-family: var(--font-display); color: var(--cinematic-text); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 0.5rem;">{{ title }}</h3>
+      <a href="{{ t1_u }}" class="blog-topic-tag{% if t1_a %} active{% endif %}" style="display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s; {% if t1_a %}background: var(--cinematic-green); color: #0a0a0a; font-weight: 600;{% else %}background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);{% endif %}">{{ t1_l }}</a>
+      {% if t2_l %}<a href="{{ t2_u }}" class="blog-topic-tag" style="display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);">{{ t2_l }}</a>{% endif %}
+      {% if t3_l %}<a href="{{ t3_u }}" class="blog-topic-tag" style="display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);">{{ t3_l }}</a>{% endif %}
+      {% if t4_l %}<a href="{{ t4_u }}" class="blog-topic-tag" style="display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);">{{ t4_l }}</a>{% endif %}
+      {% if t5_l %}<a href="{{ t5_u }}" class="blog-topic-tag" style="display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);">{{ t5_l }}</a>{% endif %}
+      {% if t6_l %}<a href="{{ t6_u }}" class="blog-topic-tag" style="display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);">{{ t6_l }}</a>{% endif %}
+      {% if t7_l %}<a href="{{ t7_u }}" class="blog-topic-tag" style="display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);">{{ t7_l }}</a>{% endif %}
+      {% if t8_l %}<a href="{{ t8_u }}" class="blog-topic-tag" style="display: inline-block; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.06); color: var(--cinematic-text-muted); border: 1px solid rgba(255,255,255,0.1);">{{ t8_l }}</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+.blog-topic-tag:hover { background: rgba(0, 255, 135, 0.15) !important; color: var(--cinematic-green) !important; border-color: rgba(0, 255, 135, 0.3) !important; }
+</style>

@@ -1,0 +1,97 @@
+<section class="cinematic-case-study-card">
+  <div class="container">
+    <div class="case-study-wrapper {% if module.reverse_layout %}reverse{% endif %}">
+      <!-- Media Column -->
+      <div class="media-column">
+        <div class="media-container">
+          {% if module.media_type == "video" and module.media_video %}
+            <div class="video-wrapper">
+              <iframe 
+                src="{{ module.media_video }}" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          {% elif module.media_image.src %}
+            <div class="image-wrapper">
+              <img src="{{ module.media_image.src }}" alt="{{ module.media_image.alt }}" loading="lazy">
+            </div>
+          {% else %}
+            <div class="image-wrapper">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80" alt="Case study - lisää oma kuva editorissa" loading="lazy">
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Content Column -->
+      <div class="content-column">
+        <div class="case-header">
+          {% if module.client_logo.src %}
+            <div class="client-logo">
+              <img src="{{ module.client_logo.src }}" alt="{{ module.client_logo.alt }}" loading="lazy">
+            </div>
+          {% endif %}
+          <div class="client-info">
+            <h2 class="client-name">{{ module.client_name }}</h2>
+            {% if module.industry %}
+              <div class="industry-tag">{{ module.industry }}</div>
+            {% endif %}
+          </div>
+        </div>
+
+        <!-- Challenge Section -->
+        <div class="case-section challenge-section">
+          <div class="section-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 9V13M12 17H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="section-title">{{ module.challenge_title }}</h3>
+          <div class="section-content">
+            {{ module.challenge_text }}
+          </div>
+        </div>
+
+        <!-- Solution Section -->
+        <div class="case-section solution-section">
+          <div class="section-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="section-title">{{ module.solution_title }}</h3>
+          <div class="section-content">
+            {{ module.solution_text }}
+          </div>
+        </div>
+
+        <!-- Metrics Section -->
+        {% if module.metrics %}
+          <div class="metrics-grid">
+            {% for metric in module.metrics %}
+              <div class="metric-box">
+                <div class="metric-value">{{ metric.value }}</div>
+                <div class="metric-label">{{ metric.item_label }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <!-- CTA -->
+        {% if module.cta_url.href and module.cta_text %}
+          <div class="case-cta">
+            <a href="{{ module.cta_url.href }}" class="cta-button">
+              <span>{{ module.cta_text }}</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

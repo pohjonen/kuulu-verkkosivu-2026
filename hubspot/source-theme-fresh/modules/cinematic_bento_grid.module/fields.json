@@ -1,0 +1,171 @@
+[ {
+  "id" : "section_tag",
+  "name" : "section_tag",
+  "label" : "Osion tunniste",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "// Ominaisuudet"
+}, {
+  "id" : "headline",
+  "name" : "headline",
+  "label" : "Pääotsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Kaikki mitä "
+}, {
+  "id" : "headline_highlight",
+  "name" : "headline_highlight",
+  "label" : "Otsikon korostusosa",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "tarvitset"
+}, {
+  "id" : "hero_title",
+  "name" : "hero_title",
+  "label" : "Pääkortti – otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Reaaliaikainen dashboard"
+}, {
+  "id" : "hero_description",
+  "name" : "hero_description",
+  "label" : "Pääkortti – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "Seuraa tuloksia live-dashboardista"
+}, {
+  "id" : "hero_icon",
+  "name" : "hero_icon",
+  "label" : "Pääkortti – ikoni",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "fas fa-chart-line"
+}, {
+  "id" : "hero_image",
+  "name" : "hero_image",
+  "label" : "Pääkortti – kuva (opt.)",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "size_type" : null,
+    "width" : null,
+    "height" : null,
+    "max_width" : null,
+    "max_height" : null,
+    "loading" : "disabled"
+  }
+}, {
+  "id" : "feature_1_title",
+  "name" : "feature_1_title",
+  "label" : "Ominaisuus 1 – otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "AI-tuotanto"
+}, {
+  "id" : "feature_1_description",
+  "name" : "feature_1_description",
+  "label" : "Ominaisuus 1 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tekoäly tehostaa tuotantoa"
+}, {
+  "id" : "feature_1_icon",
+  "name" : "feature_1_icon",
+  "label" : "Ominaisuus 1 – ikoni",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "fas fa-robot"
+}, {
+  "id" : "feature_2_title",
+  "name" : "feature_2_title",
+  "label" : "Ominaisuus 2 – otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Oma tiimi"
+}, {
+  "id" : "feature_2_description",
+  "name" : "feature_2_description",
+  "label" : "Ominaisuus 2 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Dedikoidut ammattilaiset"
+}, {
+  "id" : "feature_2_icon",
+  "name" : "feature_2_icon",
+  "label" : "Ominaisuus 2 – ikoni",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "fas fa-users"
+}, {
+  "id" : "feature_3_title",
+  "name" : "feature_3_title",
+  "label" : "Ominaisuus 3 – otsikko",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Tuloksiin keskittyminen"
+}, {
+  "id" : "feature_3_description",
+  "name" : "feature_3_description",
+  "label" : "Ominaisuus 3 – kuvaus",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Mitataan kaikkea"
+}, {
+  "id" : "feature_3_icon",
+  "name" : "feature_3_icon",
+  "label" : "Ominaisuus 3 – ikoni",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "fas fa-bullseye"
+} ]

@@ -1,0 +1,121 @@
+<!--
+  templateType: "global_partial"
+  isAvailableForNewContent: false
+  label: "Reference Grid - Case Studies"
+-->
+{#
+  Referenssi / Case study -grid -partiaali
+
+  Käyttö:
+    {% include './partials/reference-grid.html' with {
+      ref_tag: '// Asiakascaset',
+      ref_title: 'Kokemuksia <span class="text-gradient-green">Kuulusta</span>',
+      ref_1_url: '/case/yritys-1',
+      ref_1_image: 'https://example.com/case1.jpg',
+      ref_1_title: 'Yritys 1 – 300% kasvu somessa',
+      ref_1_size: 'featured',
+      ref_2_url: '/case/yritys-2',
+      ref_2_image: 'https://example.com/case2.jpg',
+      ref_2_title: 'Yritys 2 – Brändivideo',
+      ref_2_size: 'wide'
+    } %}
+
+    Koot: 'featured' (koko leveys), 'wide' (2 saraketta), 'half' (1 sarake)
+#}
+
+{% set active_tag = ref_tag|default('// Referenssit') %}
+{% set active_title = ref_title|default('Kokemuksia <span class="text-gradient-green">Kuulusta</span>') %}
+
+{% set r1_url = ref_1_url|default('') %}
+{% set r1_img = ref_1_image|default('') %}
+{% set r1_t = ref_1_title|default('') %}
+{% set r1_s = ref_1_size|default('featured') %}
+{% set r2_url = ref_2_url|default('') %}
+{% set r2_img = ref_2_image|default('') %}
+{% set r2_t = ref_2_title|default('') %}
+{% set r2_s = ref_2_size|default('wide') %}
+{% set r3_url = ref_3_url|default('') %}
+{% set r3_img = ref_3_image|default('') %}
+{% set r3_t = ref_3_title|default('') %}
+{% set r3_s = ref_3_size|default('half') %}
+{% set r4_url = ref_4_url|default('') %}
+{% set r4_img = ref_4_image|default('') %}
+{% set r4_t = ref_4_title|default('') %}
+{% set r4_s = ref_4_size|default('half') %}
+{% set r5_url = ref_5_url|default('') %}
+{% set r5_img = ref_5_image|default('') %}
+{% set r5_t = ref_5_title|default('') %}
+{% set r5_s = ref_5_size|default('wide') %}
+{% set r6_url = ref_6_url|default('') %}
+{% set r6_img = ref_6_image|default('') %}
+{% set r6_t = ref_6_title|default('') %}
+{% set r6_s = ref_6_size|default('half') %}
+
+<section class="cinematic-section">
+  <div class="container-cinematic">
+    <span class="section-tag">{{ active_tag }}</span>
+    <h2 class="section-header">{{ active_title }}</h2>
+
+    <div class="ref-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem;">
+      {% if r1_t %}
+      <a href="{{ r1_url }}" class="ref-card" style="{% if r1_s == 'featured' %}grid-column: 1 / -1; min-height: 400px;{% elif r1_s == 'wide' %}grid-column: span 2; min-height: 300px;{% else %}min-height: 280px;{% endif %} background-image: url('{{ r1_img }}'); background-size: cover; background-position: center; border-radius: 16px; overflow: hidden; position: relative; display: flex; align-items: flex-end; text-decoration: none; transition: transform 0.3s;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.2) 60%, transparent 100%);"></div>
+        <div style="position: relative; z-index: 2; padding: 2rem; width: 100%;">
+          <p style="color: var(--cinematic-text); font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">{{ r1_t }}</p>
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600;">Lue lisää <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i></span>
+        </div>
+      </a>
+      {% endif %}
+      {% if r2_t %}
+      <a href="{{ r2_url }}" class="ref-card" style="{% if r2_s == 'featured' %}grid-column: 1 / -1; min-height: 400px;{% elif r2_s == 'wide' %}grid-column: span 2; min-height: 300px;{% else %}min-height: 280px;{% endif %} background-image: url('{{ r2_img }}'); background-size: cover; background-position: center; border-radius: 16px; overflow: hidden; position: relative; display: flex; align-items: flex-end; text-decoration: none; transition: transform 0.3s;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.2) 60%, transparent 100%);"></div>
+        <div style="position: relative; z-index: 2; padding: 2rem; width: 100%;">
+          <p style="color: var(--cinematic-text); font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">{{ r2_t }}</p>
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600;">Lue lisää <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i></span>
+        </div>
+      </a>
+      {% endif %}
+      {% if r3_t %}
+      <a href="{{ r3_url }}" class="ref-card" style="{% if r3_s == 'featured' %}grid-column: 1 / -1; min-height: 400px;{% elif r3_s == 'wide' %}grid-column: span 2; min-height: 300px;{% else %}min-height: 280px;{% endif %} background-image: url('{{ r3_img }}'); background-size: cover; background-position: center; border-radius: 16px; overflow: hidden; position: relative; display: flex; align-items: flex-end; text-decoration: none; transition: transform 0.3s;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.2) 60%, transparent 100%);"></div>
+        <div style="position: relative; z-index: 2; padding: 2rem; width: 100%;">
+          <p style="color: var(--cinematic-text); font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">{{ r3_t }}</p>
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600;">Lue lisää <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i></span>
+        </div>
+      </a>
+      {% endif %}
+      {% if r4_t %}
+      <a href="{{ r4_url }}" class="ref-card" style="{% if r4_s == 'featured' %}grid-column: 1 / -1; min-height: 400px;{% elif r4_s == 'wide' %}grid-column: span 2; min-height: 300px;{% else %}min-height: 280px;{% endif %} background-image: url('{{ r4_img }}'); background-size: cover; background-position: center; border-radius: 16px; overflow: hidden; position: relative; display: flex; align-items: flex-end; text-decoration: none; transition: transform 0.3s;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.2) 60%, transparent 100%);"></div>
+        <div style="position: relative; z-index: 2; padding: 2rem; width: 100%;">
+          <p style="color: var(--cinematic-text); font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">{{ r4_t }}</p>
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600;">Lue lisää <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i></span>
+        </div>
+      </a>
+      {% endif %}
+      {% if r5_t %}
+      <a href="{{ r5_url }}" class="ref-card" style="{% if r5_s == 'featured' %}grid-column: 1 / -1; min-height: 400px;{% elif r5_s == 'wide' %}grid-column: span 2; min-height: 300px;{% else %}min-height: 280px;{% endif %} background-image: url('{{ r5_img }}'); background-size: cover; background-position: center; border-radius: 16px; overflow: hidden; position: relative; display: flex; align-items: flex-end; text-decoration: none; transition: transform 0.3s;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.2) 60%, transparent 100%);"></div>
+        <div style="position: relative; z-index: 2; padding: 2rem; width: 100%;">
+          <p style="color: var(--cinematic-text); font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">{{ r5_t }}</p>
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600;">Lue lisää <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i></span>
+        </div>
+      </a>
+      {% endif %}
+      {% if r6_t %}
+      <a href="{{ r6_url }}" class="ref-card" style="{% if r6_s == 'featured' %}grid-column: 1 / -1; min-height: 400px;{% elif r6_s == 'wide' %}grid-column: span 2; min-height: 300px;{% else %}min-height: 280px;{% endif %} background-image: url('{{ r6_img }}'); background-size: cover; background-position: center; border-radius: 16px; overflow: hidden; position: relative; display: flex; align-items: flex-end; text-decoration: none; transition: transform 0.3s;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.2) 60%, transparent 100%);"></div>
+        <div style="position: relative; z-index: 2; padding: 2rem; width: 100%;">
+          <p style="color: var(--cinematic-text); font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">{{ r6_t }}</p>
+          <span style="color: var(--cinematic-green); font-size: 0.85rem; font-weight: 600;">Lue lisää <i class="fas fa-arrow-right" style="margin-left: 0.25rem;"></i></span>
+        </div>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+.ref-card:hover { transform: translateY(-4px); }
+@media (max-width: 768px) { .ref-grid { grid-template-columns: 1fr !important; } .ref-card { grid-column: 1 !important; } }
+</style>

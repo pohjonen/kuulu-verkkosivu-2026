@@ -1,0 +1,46 @@
+<section class="cinematic-bento-grid">
+  <div class="bento-container">
+    {% if module.section_tag %}
+    <div class="section-tag">{{ module.section_tag }}</div>
+    {% endif %}
+
+    <h2 class="bento-headline">
+      {{ module.headline }}<span class="highlight">{{ module.headline_highlight }}</span>
+    </h2>
+
+    <div class="bento-grid">
+      <!-- Hero Card (Large) -->
+      <div class="bento-card bento-hero">
+        {% if module.hero_image and module.hero_image.src %}
+        <div class="bento-image">
+          <img src="{{ module.hero_image.src }}" alt="{{ module.hero_image.alt }}">
+        </div>
+        {% endif %}
+        <div class="bento-content">
+          <div class="bento-icon">
+            <i class="{{ module.hero_icon }}"></i>
+          </div>
+          <h3 class="bento-title">{{ module.hero_title }}</h3>
+          <div class="bento-description">{{ module.hero_description }}</div>
+        </div>
+      </div>
+
+      <!-- Feature Cards (Small) -->
+      {% for i in range(1, 4) %}
+      {% set feature_title = "feature_" ~ i ~ "_title" %}
+      {% set feature_description = "feature_" ~ i ~ "_description" %}
+      {% set feature_icon = "feature_" ~ i ~ "_icon" %}
+
+      <div class="bento-card bento-feature">
+        <div class="bento-content">
+          <div class="bento-icon">
+            <i class="{{ module[feature_icon] }}"></i>
+          </div>
+          <h3 class="bento-title">{{ module[feature_title] }}</h3>
+          <div class="bento-description">{{ module[feature_description] }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
